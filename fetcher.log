@@ -442,3 +442,18 @@
 [2024-04-13 00:25:47] INFO root fetch - processPackages [inewave]: Remove: archive file [/home/abi/fetcher/tmp/inewave-1.7.4.tar.gz]
 [2024-04-13 00:25:47] INFO root fetch - main [MainThread]: End processing [inewave]: success
 [2024-04-13 00:25:47] INFO root fetch - main [MainThread]: Store serial: [22746451]
+[2024-04-13 00:27:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746451]
+[2024-04-13 00:27:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 00:27:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EnhancedWebdriver
+[2024-04-13 00:27:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: duplocloud-client
+[2024-04-13 00:27:56] WARNING root fetch - processPackages [EnhancedWebdriver]: Skipping, unable to determine old version
+[2024-04-13 00:27:56] INFO root fetch - main [MainThread]: End processing [EnhancedWebdriver] error
+[2024-04-13 00:27:56] INFO root fetch - processPackages [duplocloud-client]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-13 00:27:56] INFO root fetch - processPackages [duplocloud-client]: Downloading https://files.pythonhosted.org/packages/64/0f/f0e4cb432dfe138a961e25d188529a8aba71feacc3de9b5cc75bdf4ba425/duplocloud-client-0.2.8.tar.gz
+[2024-04-13 00:27:56] INFO root fetch - processPackages [duplocloud-client]: Downloading https://files.pythonhosted.org/packages/0c/31/a8708e76b68aa59189985ed13cb066f0d6af56d2928f45b56eaed3dcb105/duplocloud-client-0.2.9.tar.gz
+[2024-04-13 00:27:56] INFO root fetch - processPackages [duplocloud-client]: executing diffoscope
+[2024-04-13 00:27:56] INFO root fetch - processPackages [duplocloud-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duplocloud-client-0.2.8.tar.gz tmp/duplocloud-client-0.2.9.tar.gz --markdown 20240413/d/duplocloud-client/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-13 00:27:57] INFO root fetch - processPackages [duplocloud-client]: Remove: archive file [/home/abi/fetcher/tmp/duplocloud-client-0.2.8.tar.gz]
+[2024-04-13 00:27:57] INFO root fetch - processPackages [duplocloud-client]: Remove: archive file [/home/abi/fetcher/tmp/duplocloud-client-0.2.9.tar.gz]
+[2024-04-13 00:27:57] INFO root fetch - main [MainThread]: End processing [duplocloud-client]: success
+[2024-04-13 00:27:57] INFO root fetch - main [MainThread]: Store serial: [22746459]
