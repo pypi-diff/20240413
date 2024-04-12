@@ -1509,3 +1509,24 @@
 [2024-04-13 01:41:54] INFO root fetch - processPackages [quicfire-tools]: Remove: archive file [/home/abi/fetcher/tmp/quicfire-tools-0.7.1.tar.gz]
 [2024-04-13 01:41:54] INFO root fetch - main [MainThread]: End processing [quicfire-tools]: success
 [2024-04-13 01:41:54] INFO root fetch - main [MainThread]: Store serial: [22746949]
+[2024-04-13 01:43:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746949]
+[2024-04-13 01:44:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 01:44:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: layrz-forms
+[2024-04-13 01:44:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: objd
+[2024-04-13 01:44:03] INFO root fetch - processPackages [objd]: New version: [2] Old Version: [1]
+[2024-04-13 01:44:03] INFO root fetch - processPackages [layrz-forms]: New version: [2.0.0] Old Version: [1.0.9]
+[2024-04-13 01:44:03] INFO root fetch - processPackages [objd]: Downloading https://files.pythonhosted.org/packages/e3/ed/4d4b4a83bda71a17e267907084d0f3bd7889cd369f183b82256d4e3fc940/objd-1.tar.gz
+[2024-04-13 01:44:03] INFO root fetch - processPackages [layrz-forms]: Downloading https://files.pythonhosted.org/packages/28/0e/596e64f2072eb2d9efbaedc0aa512f11208e966fda00eb9f3135730f4e3f/layrz-forms-1.0.9.tar.gz
+[2024-04-13 01:44:03] INFO root fetch - processPackages [objd]: Downloading https://files.pythonhosted.org/packages/f1/a0/d2ac18314344841f6541ad040b2e5cb1839527e129d6fe38f8cf57d48d60/objd-2.tar.gz
+[2024-04-13 01:44:03] INFO root fetch - processPackages [objd]: executing diffoscope
+[2024-04-13 01:44:03] INFO root fetch - processPackages [objd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/objd-1.tar.gz tmp/objd-2.tar.gz --markdown 20240413/o/objd/1-2/README.md --exclude *.pyd
+[2024-04-13 01:44:03] INFO root fetch - processPackages [layrz-forms]: Downloading https://files.pythonhosted.org/packages/c9/b2/2adf10b0fa7f3ca79e205eb4c8860b5290c768b8fbf9a21ecf50de5bb472/layrz-forms-2.0.0.tar.gz
+[2024-04-13 01:44:03] INFO root fetch - processPackages [layrz-forms]: executing diffoscope
+[2024-04-13 01:44:03] INFO root fetch - processPackages [layrz-forms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/layrz-forms-1.0.9.tar.gz tmp/layrz-forms-2.0.0.tar.gz --markdown 20240413/l/layrz-forms/1.0.9-2.0.0/README.md --exclude *.pyd
+[2024-04-13 01:44:04] INFO root fetch - processPackages [objd]: Remove: archive file [/home/abi/fetcher/tmp/objd-1.tar.gz]
+[2024-04-13 01:44:04] INFO root fetch - processPackages [objd]: Remove: archive file [/home/abi/fetcher/tmp/objd-2.tar.gz]
+[2024-04-13 01:44:04] INFO root fetch - main [MainThread]: End processing [objd]: success
+[2024-04-13 01:44:04] INFO root fetch - processPackages [layrz-forms]: Remove: archive file [/home/abi/fetcher/tmp/layrz-forms-1.0.9.tar.gz]
+[2024-04-13 01:44:04] INFO root fetch - processPackages [layrz-forms]: Remove: archive file [/home/abi/fetcher/tmp/layrz-forms-2.0.0.tar.gz]
+[2024-04-13 01:44:04] INFO root fetch - main [MainThread]: End processing [layrz-forms]: success
+[2024-04-13 01:44:04] INFO root fetch - main [MainThread]: Store serial: [22746954]
