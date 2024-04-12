@@ -76,3 +76,18 @@
 [2024-04-13 00:01:37] INFO root fetch - processPackages [draggable-line-chart]: Remove: archive file [/home/abi/fetcher/tmp/draggable-line-chart-0.3.3.tar.gz]
 [2024-04-13 00:01:37] INFO root fetch - main [MainThread]: End processing [draggable-line-chart]: success
 [2024-04-13 00:01:37] INFO root fetch - main [MainThread]: Store serial: [22746304]
+[2024-04-13 00:03:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746304]
+[2024-04-13 00:03:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 00:03:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-eks
+[2024-04-13 00:03:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: goodpy
+[2024-04-13 00:03:46] WARNING root fetch - processPackages [goodpy]: Skipping, unable to determine old version
+[2024-04-13 00:03:46] INFO root fetch - main [MainThread]: End processing [goodpy] error
+[2024-04-13 00:03:46] INFO root fetch - processPackages [pulumi-eks]: New version: [2.4.0a1712955188] Old Version: [2.4.0a1712814062]
+[2024-04-13 00:03:47] INFO root fetch - processPackages [pulumi-eks]: Downloading https://files.pythonhosted.org/packages/1f/f7/f2eb2d47974426c48d5827d97212c31c65674194fe6502fc024b9d546d93/pulumi_eks-2.4.0a1712814062.tar.gz
+[2024-04-13 00:03:47] INFO root fetch - processPackages [pulumi-eks]: Downloading https://files.pythonhosted.org/packages/80/fa/3387edd8906f7d76eeb33d274ca20f5cefc97f03113fdfa863557b5075c2/pulumi_eks-2.4a1712955188.tar.gz
+[2024-04-13 00:03:47] INFO root fetch - processPackages [pulumi-eks]: executing diffoscope
+[2024-04-13 00:03:47] INFO root fetch - processPackages [pulumi-eks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_eks-2.4.0a1712814062.tar.gz tmp/pulumi_eks-2.4a1712955188.tar.gz --markdown 20240413/p/pulumi-eks/2.4.0a1712814062-2.4.0a1712955188/README.md --exclude *.pyd
+[2024-04-13 00:03:48] INFO root fetch - processPackages [pulumi-eks]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_eks-2.4.0a1712814062.tar.gz]
+[2024-04-13 00:03:48] INFO root fetch - processPackages [pulumi-eks]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_eks-2.4a1712955188.tar.gz]
+[2024-04-13 00:03:48] INFO root fetch - main [MainThread]: End processing [pulumi-eks]: success
+[2024-04-13 00:03:48] INFO root fetch - main [MainThread]: Store serial: [22746319]
