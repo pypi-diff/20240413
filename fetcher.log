@@ -1,0 +1,78 @@
+[2024-04-13 00:00:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746276]
+[2024-04-13 00:00:58] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-13 00:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: c2dataviewer
+[2024-04-13 00:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: draggable-line-chart
+[2024-04-13 00:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: caveclient
+[2024-04-13 00:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tessproposaltool
+[2024-04-13 00:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wikiwormhole
+[2024-04-13 00:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: athena-intelligence
+[2024-04-13 00:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vulcan-utils
+[2024-04-13 00:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: zeroconf
+[2024-04-13 00:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: g2papi
+[2024-04-13 00:00:58] INFO root fetch - processPackages [draggable-line-chart]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-13 00:00:58] INFO root fetch - processPackages [c2dataviewer]: New version: [1.9.1] Old Version: [1.8.4]
+[2024-04-13 00:00:58] INFO root fetch - processPackages [g2papi]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-13 00:00:58] INFO root fetch - processPackages [wikiwormhole]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-13 00:00:58] INFO root fetch - processPackages [vulcan-utils]: New version: [1.11.6] Old Version: [1.11.5]
+[2024-04-13 00:00:58] WARNING root fetch - processPackages [tessproposaltool]: Skipping, unable to determine old version
+[2024-04-13 00:00:58] INFO root fetch - main [MainThread]: End processing [tessproposaltool] error
+[2024-04-13 00:00:58] INFO root fetch - processPackages [caveclient]: New version: [5.9.0] Old Version: [5.8.1]
+[2024-04-13 00:00:58] INFO root fetch - processPackages [draggable-line-chart]: Downloading https://files.pythonhosted.org/packages/12/3e/24822d18092b39b8fc2bf0f13696a51a9b00892490f252bc014746874758/draggable-line-chart-0.3.2.tar.gz
+[2024-04-13 00:00:58] INFO root fetch - processPackages [c2dataviewer]: Downloading https://files.pythonhosted.org/packages/48/be/b690a6815551c375fa00d8bc1f29b07e826fb3aa140edf3de0a7ebd6e620/c2dataviewer-1.8.4.tar.gz
+[2024-04-13 00:00:58] INFO root fetch - processPackages [g2papi]: Downloading https://files.pythonhosted.org/packages/5d/59/e81464858d31ba146b27792b7b36b26ef1d98e156bd4de7f64b81c8b0c61/g2papi-1.0.2.tar.gz
+[2024-04-13 00:00:58] INFO root fetch - processPackages [wikiwormhole]: Downloading https://files.pythonhosted.org/packages/89/2e/a75be6522817e8ee25a8d6db59a5cc8839f78b1c2bb775a62fbe4ebcc468/wikiwormhole-0.0.1.tar.gz
+[2024-04-13 00:00:58] INFO root fetch - processPackages [athena-intelligence]: New version: [0.1.34] Old Version: [0.1.33]
+[2024-04-13 00:00:58] INFO root fetch - processPackages [vulcan-utils]: Downloading https://files.pythonhosted.org/packages/6e/72/31debecd59379067ea70b3734b5c38b6884b67b48fe73f0c5a5b06f078e2/vulcan_utils-1.11.5.tar.gz
+[2024-04-13 00:00:58] INFO root fetch - processPackages [caveclient]: Downloading https://files.pythonhosted.org/packages/f2/0a/b031b69ee9fc2d45eef79a31150b19a3c7e806d66f0f1126822484b17490/caveclient-5.8.1.tar.gz
+[2024-04-13 00:00:58] INFO root fetch - processPackages [athena-intelligence]: Downloading https://files.pythonhosted.org/packages/59/15/ac8d9f1deef62314b20d22d90648e042fd699eca0f70e2c0a95ba66f7431/athena_intelligence-0.1.33.tar.gz
+[2024-04-13 00:00:58] INFO root fetch - processPackages [c2dataviewer]: Downloading https://files.pythonhosted.org/packages/6e/d7/61e00b2c5d5314b8b13ca50d06210896507467777f521c8c76f7fdabd72d/c2dataviewer-1.9.1.tar.gz
+[2024-04-13 00:00:58] INFO root fetch - processPackages [wikiwormhole]: Downloading https://files.pythonhosted.org/packages/fb/27/6fab4c296298953f569760ed927602fcdf91fc72c7d7d389c05033b318fb/wikiwormhole-0.0.2.tar.gz
+[2024-04-13 00:00:59] INFO root fetch - processPackages [vulcan-utils]: Downloading https://files.pythonhosted.org/packages/35/a2/4758dfd4737e7271f0090e69f9a204de547bbdb6bc62a3ae6840b0a03ed1/vulcan_utils-1.11.6.tar.gz
+[2024-04-13 00:00:59] INFO root fetch - processPackages [zeroconf]: New version: [0.99.0] Old Version: [0.98.0]
+[2024-04-13 00:00:59] INFO root fetch - processPackages [c2dataviewer]: executing diffoscope
+[2024-04-13 00:00:59] INFO root fetch - processPackages [c2dataviewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2dataviewer-1.8.4.tar.gz tmp/c2dataviewer-1.9.1.tar.gz --markdown 20240413/c/c2dataviewer/1.8.4-1.9.1/README.md --exclude *.pyd
+[2024-04-13 00:00:59] INFO root fetch - processPackages [g2papi]: Downloading https://files.pythonhosted.org/packages/85/3f/6e5a9224950719ff77ae1469d3f16b89f898f6a8db14e13fa4a0cca18f63/g2papi-1.0.3.tar.gz
+[2024-04-13 00:00:59] INFO root fetch - processPackages [wikiwormhole]: executing diffoscope
+[2024-04-13 00:00:59] INFO root fetch - processPackages [wikiwormhole]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wikiwormhole-0.0.1.tar.gz tmp/wikiwormhole-0.0.2.tar.gz --markdown 20240413/w/wikiwormhole/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-13 00:00:59] INFO root fetch - processPackages [vulcan-utils]: executing diffoscope
+[2024-04-13 00:00:59] INFO root fetch - processPackages [vulcan-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vulcan_utils-1.11.5.tar.gz tmp/vulcan_utils-1.11.6.tar.gz --markdown 20240413/v/vulcan-utils/1.11.5-1.11.6/README.md --exclude *.pyd
+[2024-04-13 00:00:59] INFO root fetch - processPackages [caveclient]: Downloading https://files.pythonhosted.org/packages/74/e6/501e07ffe4a019c3404aa2436c14b0daf4a0e85a8bad106e8d4dcd21c027/caveclient-5.9.0.tar.gz
+[2024-04-13 00:00:59] INFO root fetch - processPackages [athena-intelligence]: Downloading https://files.pythonhosted.org/packages/db/fb/40b392aca1c162b93c9fe6bcfbe692bea7876ad69ba36f4e556b87c31efe/athena_intelligence-0.1.34.tar.gz
+[2024-04-13 00:00:59] INFO root fetch - processPackages [g2papi]: executing diffoscope
+[2024-04-13 00:00:59] INFO root fetch - processPackages [g2papi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g2papi-1.0.2.tar.gz tmp/g2papi-1.0.3.tar.gz --markdown 20240413/g/g2papi/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-13 00:00:59] INFO root fetch - processPackages [zeroconf]: Downloading https://files.pythonhosted.org/packages/51/db/f87ee86f977a9713da086e2d5216f7ce235030787b192aef255ba726dd9d/zeroconf-0.98.0.tar.gz
+[2024-04-13 00:00:59] INFO root fetch - processPackages [athena-intelligence]: executing diffoscope
+[2024-04-13 00:00:59] INFO root fetch - processPackages [athena-intelligence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athena_intelligence-0.1.33.tar.gz tmp/athena_intelligence-0.1.34.tar.gz --markdown 20240413/a/athena-intelligence/0.1.33-0.1.34/README.md --exclude *.pyd
+[2024-04-13 00:00:59] INFO root fetch - processPackages [caveclient]: executing diffoscope
+[2024-04-13 00:00:59] INFO root fetch - processPackages [caveclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caveclient-5.8.1.tar.gz tmp/caveclient-5.9.0.tar.gz --markdown 20240413/c/caveclient/5.8.1-5.9.0/README.md --exclude *.pyd
+[2024-04-13 00:00:59] INFO root fetch - processPackages [zeroconf]: Downloading https://files.pythonhosted.org/packages/aa/96/3c05266623786e9d27370f8a5f32d1a7cc8c6d8297849d9f3934b09b0e02/zeroconf-0.99.0.tar.gz
+[2024-04-13 00:00:59] INFO root fetch - processPackages [draggable-line-chart]: Downloading https://files.pythonhosted.org/packages/e1/ae/ddd14bf17dbb1965f6c985e061430f9967d7e40cef315981f3fdafb8f0c6/draggable-line-chart-0.3.3.tar.gz
+[2024-04-13 00:01:00] INFO root fetch - processPackages [vulcan-utils]: Remove: archive file [/home/abi/fetcher/tmp/vulcan_utils-1.11.5.tar.gz]
+[2024-04-13 00:01:00] INFO root fetch - processPackages [vulcan-utils]: Remove: archive file [/home/abi/fetcher/tmp/vulcan_utils-1.11.6.tar.gz]
+[2024-04-13 00:01:00] INFO root fetch - main [MainThread]: End processing [vulcan-utils]: success
+[2024-04-13 00:01:00] INFO root fetch - processPackages [zeroconf]: executing diffoscope
+[2024-04-13 00:01:00] INFO root fetch - processPackages [zeroconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zeroconf-0.98.0.tar.gz tmp/zeroconf-0.99.0.tar.gz --markdown 20240413/z/zeroconf/0.98.0-0.99.0/README.md --exclude *.pyd
+[2024-04-13 00:01:00] INFO root fetch - processPackages [wikiwormhole]: Remove: archive file [/home/abi/fetcher/tmp/wikiwormhole-0.0.1.tar.gz]
+[2024-04-13 00:01:00] INFO root fetch - processPackages [wikiwormhole]: Remove: archive file [/home/abi/fetcher/tmp/wikiwormhole-0.0.2.tar.gz]
+[2024-04-13 00:01:00] INFO root fetch - main [MainThread]: End processing [wikiwormhole]: success
+[2024-04-13 00:01:00] INFO root fetch - processPackages [athena-intelligence]: Remove: archive file [/home/abi/fetcher/tmp/athena_intelligence-0.1.33.tar.gz]
+[2024-04-13 00:01:00] INFO root fetch - processPackages [athena-intelligence]: Remove: archive file [/home/abi/fetcher/tmp/athena_intelligence-0.1.34.tar.gz]
+[2024-04-13 00:01:00] INFO root fetch - main [MainThread]: End processing [athena-intelligence]: success
+[2024-04-13 00:01:00] INFO root fetch - processPackages [g2papi]: Remove: archive file [/home/abi/fetcher/tmp/g2papi-1.0.2.tar.gz]
+[2024-04-13 00:01:00] INFO root fetch - processPackages [g2papi]: Remove: archive file [/home/abi/fetcher/tmp/g2papi-1.0.3.tar.gz]
+[2024-04-13 00:01:00] INFO root fetch - main [MainThread]: End processing [g2papi]: success
+[2024-04-13 00:01:00] INFO root fetch - processPackages [c2dataviewer]: Remove: archive file [/home/abi/fetcher/tmp/c2dataviewer-1.8.4.tar.gz]
+[2024-04-13 00:01:00] INFO root fetch - processPackages [c2dataviewer]: Remove: archive file [/home/abi/fetcher/tmp/c2dataviewer-1.9.1.tar.gz]
+[2024-04-13 00:01:00] INFO root fetch - main [MainThread]: End processing [c2dataviewer]: success
+[2024-04-13 00:01:00] INFO root fetch - processPackages [caveclient]: Remove: archive file [/home/abi/fetcher/tmp/caveclient-5.8.1.tar.gz]
+[2024-04-13 00:01:00] INFO root fetch - processPackages [caveclient]: Remove: archive file [/home/abi/fetcher/tmp/caveclient-5.9.0.tar.gz]
+[2024-04-13 00:01:00] INFO root fetch - main [MainThread]: End processing [caveclient]: success
+[2024-04-13 00:01:00] INFO root fetch - processPackages [draggable-line-chart]: executing diffoscope
+[2024-04-13 00:01:00] INFO root fetch - processPackages [draggable-line-chart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/draggable-line-chart-0.3.2.tar.gz tmp/draggable-line-chart-0.3.3.tar.gz --markdown 20240413/d/draggable-line-chart/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-13 00:01:01] INFO root fetch - processPackages [zeroconf]: Remove: archive file [/home/abi/fetcher/tmp/zeroconf-0.98.0.tar.gz]
+[2024-04-13 00:01:01] INFO root fetch - processPackages [zeroconf]: Remove: archive file [/home/abi/fetcher/tmp/zeroconf-0.99.0.tar.gz]
+[2024-04-13 00:01:01] INFO root fetch - main [MainThread]: End processing [zeroconf]: success
+[2024-04-13 00:01:37] INFO root fetch - processPackages [draggable-line-chart]: Remove: archive file [/home/abi/fetcher/tmp/draggable-line-chart-0.3.2.tar.gz]
+[2024-04-13 00:01:37] INFO root fetch - processPackages [draggable-line-chart]: Remove: archive file [/home/abi/fetcher/tmp/draggable-line-chart-0.3.3.tar.gz]
+[2024-04-13 00:01:37] INFO root fetch - main [MainThread]: End processing [draggable-line-chart]: success
+[2024-04-13 00:01:37] INFO root fetch - main [MainThread]: Store serial: [22746304]
