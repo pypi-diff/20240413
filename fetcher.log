@@ -795,3 +795,38 @@
 [2024-04-13 00:55:18] INFO root fetch - processPackages [mtpy-v2]: Remove: archive file [/home/abi/fetcher/tmp/mtpy-v2-2.0.7.tar.gz]
 [2024-04-13 00:55:18] INFO root fetch - main [MainThread]: End processing [mtpy-v2]: success
 [2024-04-13 00:55:18] INFO root fetch - main [MainThread]: Store serial: [22746638]
+[2024-04-13 00:57:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746638]
+[2024-04-13 00:57:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 00:57:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypar
+[2024-04-13 00:57:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DeFiPy
+[2024-04-13 00:57:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: robothub
+[2024-04-13 00:57:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: viswaternet
+[2024-04-13 00:57:28] INFO root fetch - processPackages [viswaternet]: New version: [2.0.0b0] Old Version: [1.2.0]
+[2024-04-13 00:57:28] INFO root fetch - processPackages [DeFiPy]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 00:57:28] INFO root fetch - processPackages [pypar]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-13 00:57:28] INFO root fetch - processPackages [robothub]: New version: [2.5.7] Old Version: [2.5.6]
+[2024-04-13 00:57:28] INFO root fetch - processPackages [viswaternet]: Downloading https://files.pythonhosted.org/packages/fa/e1/8845d98e173297d68b13535f60ea292dede02992f4f01f6e0ba9dc2d1476/viswaternet-1.2.0.tar.gz
+[2024-04-13 00:57:28] INFO root fetch - processPackages [robothub]: Downloading https://files.pythonhosted.org/packages/62/3b/426930fc7def86cf7898746dd3bba43ab30b6b1b3ad10decae4b6a1cd883/robothub-2.5.6.tar.gz
+[2024-04-13 00:57:28] INFO root fetch - processPackages [DeFiPy]: Downloading https://files.pythonhosted.org/packages/dc/9b/4b3c802e4dae071394ba27afe644534c7343d192519c932d9f47c592db64/DeFiPy-0.0.8.tar.gz
+[2024-04-13 00:57:28] INFO root fetch - processPackages [pypar]: Downloading https://files.pythonhosted.org/packages/b4/61/d4eb8161db19d4e7b55d584cad43e6f2274a5f1c0b6e451147a02d5f8040/pypar-0.0.5.tar.gz
+[2024-04-13 00:57:28] WARNING root fetch - processPackages [viswaternet]: Skipping package: exceeds size limit 13972335>=10485760
+[2024-04-13 00:57:28] INFO root fetch - main [MainThread]: End processing [viswaternet] error
+[2024-04-13 00:57:28] INFO root fetch - processPackages [DeFiPy]: Downloading https://files.pythonhosted.org/packages/c6/4a/9e5e65acc4c127e8cc615783ca5a1d8a5a658e0d6a8cfe61a1d50f8ed7db/DeFiPy-0.0.9.tar.gz
+[2024-04-13 00:57:28] INFO root fetch - processPackages [pypar]: Downloading https://files.pythonhosted.org/packages/92/bf/284d61e4b6ae0f3f4bf7e02194f869c5ec31cf631be3f9db9397cb76ddc6/pypar-0.0.6.tar.gz
+[2024-04-13 00:57:28] INFO root fetch - processPackages [robothub]: Downloading https://files.pythonhosted.org/packages/c4/a3/9f4b8fe0c25504b14b780ca4fdf61c21b312ceb9e005d81e0e1290439fa3/robothub-2.5.7.tar.gz
+[2024-04-13 00:57:28] INFO root fetch - processPackages [DeFiPy]: executing diffoscope
+[2024-04-13 00:57:28] INFO root fetch - processPackages [DeFiPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DeFiPy-0.0.8.tar.gz tmp/DeFiPy-0.0.9.tar.gz --markdown 20240413/D/DeFiPy/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 00:57:28] INFO root fetch - processPackages [pypar]: executing diffoscope
+[2024-04-13 00:57:28] INFO root fetch - processPackages [pypar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypar-0.0.5.tar.gz tmp/pypar-0.0.6.tar.gz --markdown 20240413/p/pypar/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-13 00:57:28] INFO root fetch - processPackages [robothub]: executing diffoscope
+[2024-04-13 00:57:28] INFO root fetch - processPackages [robothub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robothub-2.5.6.tar.gz tmp/robothub-2.5.7.tar.gz --markdown 20240413/r/robothub/2.5.6-2.5.7/README.md --exclude *.pyd
+[2024-04-13 00:57:29] INFO root fetch - processPackages [DeFiPy]: Remove: archive file [/home/abi/fetcher/tmp/DeFiPy-0.0.8.tar.gz]
+[2024-04-13 00:57:29] INFO root fetch - processPackages [DeFiPy]: Remove: archive file [/home/abi/fetcher/tmp/DeFiPy-0.0.9.tar.gz]
+[2024-04-13 00:57:29] INFO root fetch - main [MainThread]: End processing [DeFiPy]: success
+[2024-04-13 00:57:29] INFO root fetch - processPackages [robothub]: Remove: archive file [/home/abi/fetcher/tmp/robothub-2.5.6.tar.gz]
+[2024-04-13 00:57:29] INFO root fetch - processPackages [robothub]: Remove: archive file [/home/abi/fetcher/tmp/robothub-2.5.7.tar.gz]
+[2024-04-13 00:57:29] INFO root fetch - main [MainThread]: End processing [robothub]: success
+[2024-04-13 00:57:29] INFO root fetch - processPackages [pypar]: Remove: archive file [/home/abi/fetcher/tmp/pypar-0.0.5.tar.gz]
+[2024-04-13 00:57:29] INFO root fetch - processPackages [pypar]: Remove: archive file [/home/abi/fetcher/tmp/pypar-0.0.6.tar.gz]
+[2024-04-13 00:57:29] INFO root fetch - main [MainThread]: End processing [pypar]: success
+[2024-04-13 00:57:29] INFO root fetch - main [MainThread]: Store serial: [22746648]
