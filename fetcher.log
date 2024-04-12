@@ -1646,3 +1646,32 @@
 [2024-04-13 01:48:27] INFO root fetch - processPackages [tetun-lid]: Remove: archive file [/home/abi/fetcher/tmp/tetun_lid-1.1.0.tar.gz]
 [2024-04-13 01:48:27] INFO root fetch - main [MainThread]: End processing [tetun-lid]: success
 [2024-04-13 01:48:27] INFO root fetch - main [MainThread]: Store serial: [22747036]
+[2024-04-13 01:50:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22747036]
+[2024-04-13 01:50:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 01:50:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: LinguAligner
+[2024-04-13 01:50:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: music-assistant
+[2024-04-13 01:50:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ezregex
+[2024-04-13 01:50:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: LinguAligner
+[2024-04-13 01:50:36] INFO root fetch - processPackages [LinguAligner]: New version: [0.3] Old Version: [0.2]
+[2024-04-13 01:50:36] INFO root fetch - processPackages [LinguAligner]: New version: [0.3] Old Version: [0.2]
+[2024-04-13 01:50:36] INFO root fetch - processPackages [music-assistant]: New version: [2.0.0b136] Old Version: [2.0.0b135]
+[2024-04-13 01:50:36] INFO root fetch - processPackages [ezregex]: New version: [1.8.0] Old Version: [1.7.0]
+[2024-04-13 01:50:37] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/06/64/3df4233b3f03a7fb038f14d1789c271ac60b5622dfd79600fc83b64efaed/lingualigner-0.2.tar.gz
+[2024-04-13 01:50:37] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/06/64/3df4233b3f03a7fb038f14d1789c271ac60b5622dfd79600fc83b64efaed/lingualigner-0.2.tar.gz
+[2024-04-13 01:50:37] INFO root fetch - processPackages [music-assistant]: Downloading https://files.pythonhosted.org/packages/12/8d/579a1e7db013afd4eb5103317c596ad69e9e3d483ae3ebe8ef64c4b0c396/music_assistant-2.0.0b135.tar.gz
+[2024-04-13 01:50:37] INFO root fetch - processPackages [ezregex]: Downloading https://files.pythonhosted.org/packages/28/34/72d9cfe754a812822a029819cc8c53d9ac94399439512931ea061c13391d/ezregex-1.7.0.tar.gz
+[2024-04-13 01:50:37] WARNING root fetch - processPackages [music-assistant]: Skipping package: exceeds size limit 15891624>=10485760
+[2024-04-13 01:50:37] INFO root fetch - main [MainThread]: End processing [music-assistant] error
+[2024-04-13 01:50:37] WARNING root fetch - processPackages [ezregex]: Skipping package: exceeds size limit 23555120>=10485760
+[2024-04-13 01:50:37] INFO root fetch - main [MainThread]: End processing [ezregex] error
+[2024-04-13 01:50:37] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/39/f6/c7567e9c20b1872e6eb0407052c272b93f7b4f2e82fae9fb7841c27a3048/lingualigner-0.3.tar.gz
+[2024-04-13 01:50:37] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/39/f6/c7567e9c20b1872e6eb0407052c272b93f7b4f2e82fae9fb7841c27a3048/lingualigner-0.3.tar.gz
+[2024-04-13 01:50:37] INFO root fetch - processPackages [LinguAligner]: executing diffoscope
+[2024-04-13 01:50:37] INFO root fetch - processPackages [LinguAligner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lingualigner-0.2.tar.gz tmp/lingualigner-0.3.tar.gz --markdown 20240413/L/LinguAligner/0.2-0.3/README.md --exclude *.pyd
+[2024-04-13 01:50:37] INFO root fetch - processPackages [LinguAligner]: executing diffoscope
+[2024-04-13 01:50:37] INFO root fetch - processPackages [LinguAligner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lingualigner-0.2.tar.gz tmp/lingualigner-0.3.tar.gz --markdown 20240413/L/LinguAligner/0.2-0.3/README.md --exclude *.pyd
+[2024-04-13 01:50:38] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.2.tar.gz]
+[2024-04-13 01:50:38] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.3.tar.gz]
+[2024-04-13 01:50:38] INFO root fetch - main [MainThread]: End processing [LinguAligner]: success
+[2024-04-13 01:50:38] INFO root fetch - main [MainThread]: End processing [LinguAligner]: success
+[2024-04-13 01:50:38] INFO root fetch - main [MainThread]: Store serial: [22747049]
