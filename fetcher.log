@@ -522,3 +522,36 @@
 [2024-04-13 00:33:28] INFO root fetch - processPackages [biolink-model]: Remove: archive file [/home/abi/fetcher/tmp/biolink_model-4.2.0rc2.tar.gz]
 [2024-04-13 00:33:28] INFO root fetch - main [MainThread]: End processing [biolink-model]: success
 [2024-04-13 00:33:28] INFO root fetch - main [MainThread]: Store serial: [22746481]
+[2024-04-13 00:35:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746481]
+[2024-04-13 00:35:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 00:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ASRepCatcher
+[2024-04-13 00:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: carbon-python-sdk
+[2024-04-13 00:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: leadguru-jobs
+[2024-04-13 00:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyprojbtstrptest2
+[2024-04-13 00:35:40] INFO root fetch - processPackages [leadguru-jobs]: New version: [0.99.0] Old Version: [0.98.0]
+[2024-04-13 00:35:40] INFO root fetch - processPackages [ASRepCatcher]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-13 00:35:40] WARNING root fetch - processPackages [pyprojbtstrptest2]: Skipping, unable to determine old version
+[2024-04-13 00:35:40] INFO root fetch - main [MainThread]: End processing [pyprojbtstrptest2] error
+[2024-04-13 00:35:40] INFO root fetch - processPackages [carbon-python-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 00:35:40] INFO root fetch - processPackages [leadguru-jobs]: Downloading https://files.pythonhosted.org/packages/58/0a/904c1f8e92c5b6adf3bf97a755cae87648f67ca82bb52bc30055558e0ce3/leadguru_jobs-0.98.0.tar.gz
+[2024-04-13 00:35:40] INFO root fetch - processPackages [ASRepCatcher]: Downloading https://files.pythonhosted.org/packages/d8/15/00b139af952fc2b2b01fd6678fbfbbb3aa5b01672d7b22bec9cd58735179/ASRepCatcher-0.2.0.tar.gz
+[2024-04-13 00:35:40] INFO root fetch - processPackages [carbon-python-sdk]: Downloading https://files.pythonhosted.org/packages/26/57/15366437f225c4db33f10eefc2dcaaeb5785566711f4dad3fdfdad41d1c5/carbon_python_sdk-0.1.8.tar.gz
+[2024-04-13 00:35:40] INFO root fetch - processPackages [leadguru-jobs]: Downloading https://files.pythonhosted.org/packages/e4/7f/189fe7a4dc1256297dd1956413531652ee35cd4ee527f02aa7f2d608775a/leadguru_jobs-0.99.0.tar.gz
+[2024-04-13 00:35:40] INFO root fetch - processPackages [leadguru-jobs]: executing diffoscope
+[2024-04-13 00:35:40] INFO root fetch - processPackages [leadguru-jobs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leadguru_jobs-0.98.0.tar.gz tmp/leadguru_jobs-0.99.0.tar.gz --markdown 20240413/l/leadguru-jobs/0.98.0-0.99.0/README.md --exclude *.pyd
+[2024-04-13 00:35:40] INFO root fetch - processPackages [ASRepCatcher]: Downloading https://files.pythonhosted.org/packages/9e/42/b40371ff5c37bae88f2ea94cbce1acb1995ff33bcf61269ca09b7ee80663/ASRepCatcher-0.3.0.tar.gz
+[2024-04-13 00:35:40] INFO root fetch - processPackages [carbon-python-sdk]: Downloading https://files.pythonhosted.org/packages/e1/f5/2a5b19b30b427b767c9d7c7a83eccb5295f3370ba53da57b38913bff315c/carbon_python_sdk-0.1.9.tar.gz
+[2024-04-13 00:35:40] INFO root fetch - processPackages [ASRepCatcher]: executing diffoscope
+[2024-04-13 00:35:40] INFO root fetch - processPackages [ASRepCatcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ASRepCatcher-0.2.0.tar.gz tmp/ASRepCatcher-0.3.0.tar.gz --markdown 20240413/A/ASRepCatcher/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-13 00:35:41] INFO root fetch - processPackages [carbon-python-sdk]: executing diffoscope
+[2024-04-13 00:35:41] INFO root fetch - processPackages [carbon-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carbon_python_sdk-0.1.8.tar.gz tmp/carbon_python_sdk-0.1.9.tar.gz --markdown 20240413/c/carbon-python-sdk/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 00:35:41] INFO root fetch - processPackages [leadguru-jobs]: Remove: archive file [/home/abi/fetcher/tmp/leadguru_jobs-0.98.0.tar.gz]
+[2024-04-13 00:35:41] INFO root fetch - processPackages [leadguru-jobs]: Remove: archive file [/home/abi/fetcher/tmp/leadguru_jobs-0.99.0.tar.gz]
+[2024-04-13 00:35:41] INFO root fetch - main [MainThread]: End processing [leadguru-jobs]: success
+[2024-04-13 00:35:41] INFO root fetch - processPackages [ASRepCatcher]: Remove: archive file [/home/abi/fetcher/tmp/ASRepCatcher-0.2.0.tar.gz]
+[2024-04-13 00:35:41] INFO root fetch - processPackages [ASRepCatcher]: Remove: archive file [/home/abi/fetcher/tmp/ASRepCatcher-0.3.0.tar.gz]
+[2024-04-13 00:35:41] INFO root fetch - main [MainThread]: End processing [ASRepCatcher]: success
+[2024-04-13 00:35:43] INFO root fetch - processPackages [carbon-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/carbon_python_sdk-0.1.8.tar.gz]
+[2024-04-13 00:35:43] INFO root fetch - processPackages [carbon-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/carbon_python_sdk-0.1.9.tar.gz]
+[2024-04-13 00:35:43] INFO root fetch - main [MainThread]: End processing [carbon-python-sdk]: success
+[2024-04-13 00:35:43] INFO root fetch - main [MainThread]: Store serial: [22746494]
