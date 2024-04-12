@@ -1166,3 +1166,36 @@
 [2024-04-13 01:12:56] INFO root fetch - processPackages [pyfoal]: Remove: archive file [/home/abi/fetcher/tmp/pyfoal-1.0.1.tar.gz]
 [2024-04-13 01:12:56] INFO root fetch - main [MainThread]: End processing [pyfoal]: success
 [2024-04-13 01:12:56] INFO root fetch - main [MainThread]: Store serial: [22746767]
+[2024-04-13 01:15:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746767]
+[2024-04-13 01:15:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 01:15:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: np-aind-metadata
+[2024-04-13 01:15:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: the-real-genotools
+[2024-04-13 01:15:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sapiopycommons
+[2024-04-13 01:15:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: plover-controller
+[2024-04-13 01:15:06] INFO root fetch - processPackages [sapiopycommons]: New version: [31.2.0.23.12.3] Old Version: [2024.4.9a178]
+[2024-04-13 01:15:06] INFO root fetch - processPackages [plover-controller]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 01:15:06] INFO root fetch - processPackages [plover-controller]: Downloading https://files.pythonhosted.org/packages/19/36/666f16efd874a720b9c583c12a242b048bfd5291d72fcd3c4f1688fc9881/plover-controller-0.0.8.tar.gz
+[2024-04-13 01:15:06] WARNING root fetch - processPackages [np-aind-metadata]: Skipping, unable to determine old version
+[2024-04-13 01:15:06] INFO root fetch - main [MainThread]: End processing [np-aind-metadata] error
+[2024-04-13 01:15:06] INFO root fetch - processPackages [sapiopycommons]: Downloading https://files.pythonhosted.org/packages/7c/ac/eaae7793f89f370aab32ef1dc9368c9ab86e35d960d592dc9e714269267b/sapiopycommons-2024.4.9a178.tar.gz
+[2024-04-13 01:15:06] INFO root fetch - processPackages [the-real-genotools]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-04-13 01:15:06] INFO root fetch - processPackages [the-real-genotools]: Downloading https://files.pythonhosted.org/packages/5a/ae/6dcc8244947c1da6ce0f3fc9a41f00d028811f74055d6e56acf259c01dd0/the_real_genotools-1.2.1.tar.gz
+[2024-04-13 01:15:06] INFO root fetch - processPackages [sapiopycommons]: Downloading https://files.pythonhosted.org/packages/bb/8e/ffbfcdcdcdef085f3c02a0c0361d5f2b5c73f377a58d5055485920fd480d/sapiopycommons-31.2.0.23.12.3.tar.gz
+[2024-04-13 01:15:06] INFO root fetch - processPackages [plover-controller]: Downloading https://files.pythonhosted.org/packages/da/6c/b5bf3a27dbf415e3251bce9786b72b18aa23aa403a40baa81c7e63708853/plover-controller-0.0.9.tar.gz
+[2024-04-13 01:15:06] INFO root fetch - processPackages [sapiopycommons]: executing diffoscope
+[2024-04-13 01:15:06] INFO root fetch - processPackages [sapiopycommons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sapiopycommons-2024.4.9a178.tar.gz tmp/sapiopycommons-31.2.0.23.12.3.tar.gz --markdown 20240413/s/sapiopycommons/2024.4.9a178-31.2.0.23.12.3/README.md --exclude *.pyd
+[2024-04-13 01:15:06] INFO root fetch - processPackages [plover-controller]: executing diffoscope
+[2024-04-13 01:15:06] INFO root fetch - processPackages [plover-controller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plover-controller-0.0.8.tar.gz tmp/plover-controller-0.0.9.tar.gz --markdown 20240413/p/plover-controller/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 01:15:07] INFO root fetch - processPackages [the-real-genotools]: Downloading https://files.pythonhosted.org/packages/45/d6/9ab5f50a3eeba6de2bfd2dc7c2210ad16c8b06aa0d1b508318abb868f893/the_real_genotools-1.2.2.tar.gz
+[2024-04-13 01:15:07] INFO root fetch - processPackages [the-real-genotools]: executing diffoscope
+[2024-04-13 01:15:07] INFO root fetch - processPackages [the-real-genotools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/the_real_genotools-1.2.1.tar.gz tmp/the_real_genotools-1.2.2.tar.gz --markdown 20240413/t/the-real-genotools/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-04-13 01:15:07] INFO root fetch - processPackages [plover-controller]: Remove: archive file [/home/abi/fetcher/tmp/plover-controller-0.0.8.tar.gz]
+[2024-04-13 01:15:07] INFO root fetch - processPackages [plover-controller]: Remove: archive file [/home/abi/fetcher/tmp/plover-controller-0.0.9.tar.gz]
+[2024-04-13 01:15:07] INFO root fetch - main [MainThread]: End processing [plover-controller]: success
+[2024-04-13 01:15:07] INFO root fetch - processPackages [sapiopycommons]: Remove: archive file [/home/abi/fetcher/tmp/sapiopycommons-2024.4.9a178.tar.gz]
+[2024-04-13 01:15:07] INFO root fetch - processPackages [sapiopycommons]: Remove: archive file [/home/abi/fetcher/tmp/sapiopycommons-31.2.0.23.12.3.tar.gz]
+[2024-04-13 01:15:07] INFO root fetch - main [MainThread]: End processing [sapiopycommons]: success
+[2024-04-13 01:15:07] INFO root fetch - processPackages [the-real-genotools]: Remove: archive file [/home/abi/fetcher/tmp/the_real_genotools-1.2.1.tar.gz]
+[2024-04-13 01:15:07] INFO root fetch - processPackages [the-real-genotools]: Remove: archive file [/home/abi/fetcher/tmp/the_real_genotools-1.2.2.tar.gz]
+[2024-04-13 01:15:07] INFO root fetch - main [MainThread]: End processing [the-real-genotools]: success
+[2024-04-13 01:15:07] INFO root fetch - main [MainThread]: Store serial: [22746779]
