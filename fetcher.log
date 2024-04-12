@@ -885,3 +885,144 @@
 [2024-04-13 01:04:01] INFO root fetch - processPackages [unisi]: Remove: archive file [/home/abi/fetcher/tmp/unisi-0.1.9-py3-none-any.whl.zip]
 [2024-04-13 01:04:01] INFO root fetch - main [MainThread]: End processing [unisi]: success
 [2024-04-13 01:04:01] INFO root fetch - main [MainThread]: Store serial: [22746664]
+[2024-04-13 01:06:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746664]
+[2024-04-13 01:06:12] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2024-04-13 01:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pip-blame
+[2024-04-13 01:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tetun-tokenizer
+[2024-04-13 01:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: raindrop-io-py
+[2024-04-13 01:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tmnt
+[2024-04-13 01:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MobileInventoryCLI
+[2024-04-13 01:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: materialx
+[2024-04-13 01:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: paaster
+[2024-04-13 01:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: flwr-nightly
+[2024-04-13 01:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: docugami-langchain
+[2024-04-13 01:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sage-conf
+[2024-04-13 01:06:12] INFO root fetch - processPackages [paaster]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-13 01:06:12] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.50] Old Version: [0.4.49]
+[2024-04-13 01:06:12] WARNING root fetch - processPackages [pip-blame]: Skipping, unable to determine old version
+[2024-04-13 01:06:12] INFO root fetch - processPackages [pip-blame]: Start processing: sage-docbuild
+[2024-04-13 01:06:12] INFO root fetch - main [MainThread]: End processing [pip-blame] error
+[2024-04-13 01:06:12] INFO root fetch - processPackages [docugami-langchain]: New version: [0.0.7rc9] Old Version: [0.0.7rc8]
+[2024-04-13 01:06:12] INFO root fetch - processPackages [paaster]: Downloading https://files.pythonhosted.org/packages/55/fd/85a58b7167c609a879d42929a1bb6eb3fbf42171f5aed5de5b4b4ede5be7/paaster-1.1.8.tar.gz
+[2024-04-13 01:06:12] INFO root fetch - processPackages [materialx]: New version: [1.38.9] Old Version: [1.38.8]
+[2024-04-13 01:06:12] INFO root fetch - processPackages [raindrop-io-py]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-13 01:06:12] INFO root fetch - processPackages [tetun-tokenizer]: New version: [1.2] Old Version: [1.1.4]
+[2024-04-13 01:06:12] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/b9/9b/ed70bfac638b88dd0f08bc38044522c8a0c6d9a00bb449565d1fc0a5efe2/MobileInventoryCLI-0.4.49.tar.gz
+[2024-04-13 01:06:12] INFO root fetch - processPackages [sage-conf]: New version: [9.8rc0] Old Version: [9.8b7]
+[2024-04-13 01:06:12] INFO root fetch - processPackages [tmnt]: New version: [0.7.51b20240412] Old Version: [0.7.51]
+[2024-04-13 01:06:12] INFO root fetch - processPackages [flwr-nightly]: New version: [1.9.0.dev20240412] Old Version: [1.9.0.dev20240411]
+[2024-04-13 01:06:13] INFO root fetch - processPackages [sage-docbuild]: New version: [9.8rc0] Old Version: [9.8b7]
+[2024-04-13 01:06:13] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/ac/3d/17a479e5e02c02ef9fc801b3771fde4aa85d8aff0765c5748fe8d38372c1/flwr_nightly-1.9.0.dev20240411.tar.gz
+[2024-04-13 01:06:13] INFO root fetch - processPackages [materialx]: Downloading https://files.pythonhosted.org/packages/32/ae/c788e7b0feb8fb1fa2b3806d8e5ff8c53f211cdeb78ea191290b1a0002b5/materialx-1.38.8.tar.gz
+[2024-04-13 01:06:13] INFO root fetch - processPackages [paaster]: Downloading https://files.pythonhosted.org/packages/42/a6/a7cd20397267ae0ea7a89f3fa19fabeaf39eb6de877d08ba432681207d21/paaster-1.1.9.tar.gz
+[2024-04-13 01:06:13] INFO root fetch - processPackages [raindrop-io-py]: Downloading https://files.pythonhosted.org/packages/36/d2/9e206f3be92e27d21e0a124b0292adcbbb32936250198408295aa911204f/raindrop_io_py-0.2.2.tar.gz
+[2024-04-13 01:06:13] INFO root fetch - processPackages [tetun-tokenizer]: Downloading https://files.pythonhosted.org/packages/27/1a/a43ecb4264e0fd253fba50a4f21083271051f8e7449759961dd27ce2a7ab/tetun_tokenizer-1.1.4.tar.gz
+[2024-04-13 01:06:13] INFO root fetch - processPackages [docugami-langchain]: Downloading https://files.pythonhosted.org/packages/61/fb/e065e9733519fa7f9c379746d05be5069415a0888c754b8d12a4b7595069/docugami_langchain-0.0.7rc8.tar.gz
+[2024-04-13 01:06:13] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/de/91/3759363c926c86cee6477a6821f87749ea1c5141a53457be277dd4ebaf86/tmnt-0.7.51.tar.gz
+[2024-04-13 01:06:13] INFO root fetch - processPackages [sage-conf]: Downloading https://files.pythonhosted.org/packages/87/21/012f950f98f90bb49afff7f0aa106a1d0f3f83f7686b6c7639257300de07/sage-conf-9.8b7.tar.gz
+[2024-04-13 01:06:13] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/2f/9c/d0761022defb05a9363d5d3000a96623ebe4382211398b8b81c663895301/MobileInventoryCLI-0.4.50.tar.gz
+[2024-04-13 01:06:13] INFO root fetch - processPackages [sage-docbuild]: Downloading https://files.pythonhosted.org/packages/68/e5/530ac4d218aa81bb055436ab8553554b883e0e460c773cbd530d7442463a/sage-docbuild-9.8b7.tar.gz
+[2024-04-13 01:06:13] INFO root fetch - processPackages [paaster]: executing diffoscope
+[2024-04-13 01:06:13] INFO root fetch - processPackages [paaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paaster-1.1.8.tar.gz tmp/paaster-1.1.9.tar.gz --markdown 20240413/p/paaster/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-13 01:06:13] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/4a/3f/2225da10d5b7159134f7ca4995d72598b1357bf9e5a4eb9dea6818bda240/flwr_nightly-1.9.0.dev20240412.tar.gz
+[2024-04-13 01:06:13] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-04-13 01:06:13] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.49.tar.gz tmp/MobileInventoryCLI-0.4.50.tar.gz --markdown 20240413/M/MobileInventoryCLI/0.4.49-0.4.50/README.md --exclude *.pyd
+[2024-04-13 01:06:13] INFO root fetch - processPackages [tetun-tokenizer]: Downloading https://files.pythonhosted.org/packages/af/f8/59d40d66ec7e7b2f847127b00c3a9382bd7584ca745f4e82289ca0af6a48/tetun_tokenizer-1.2.tar.gz
+[2024-04-13 01:06:13] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/4a/64/868eeb6a42ed1f7dc3d113a36c8930b7525af3901cbef525c39ca2f2d374/tmnt-0.7.51b20240412.tar.gz
+[2024-04-13 01:06:13] INFO root fetch - processPackages [raindrop-io-py]: Downloading https://files.pythonhosted.org/packages/f5/19/31a42b92ebc0df69b4a7deac632fcc204c7c886623369629651099144166/raindrop_io_py-0.2.3.tar.gz
+[2024-04-13 01:06:13] INFO root fetch - processPackages [docugami-langchain]: Downloading https://files.pythonhosted.org/packages/d3/dc/ebfc94d3428173a7827916947f5e84317c665bab439e99dd9fd634dcc60f/docugami_langchain-0.0.7rc9.tar.gz
+[2024-04-13 01:06:13] INFO root fetch - processPackages [flwr-nightly]: executing diffoscope
+[2024-04-13 01:06:13] INFO root fetch - processPackages [flwr-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flwr_nightly-1.9.0.dev20240411.tar.gz tmp/flwr_nightly-1.9.0.dev20240412.tar.gz --markdown 20240413/f/flwr-nightly/1.9.0.dev20240411-1.9.0.dev20240412/README.md --exclude *.pyd
+[2024-04-13 01:06:13] INFO root fetch - processPackages [sage-docbuild]: Downloading https://files.pythonhosted.org/packages/83/bc/944e941625ce0a283b49b178d1b3dc9b9c8af78512a7f2fd8ec2c617e1eb/sage-docbuild-9.8rc0.tar.gz
+[2024-04-13 01:06:13] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2024-04-13 01:06:13] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.51.tar.gz tmp/tmnt-0.7.51b20240412.tar.gz --markdown 20240413/t/tmnt/0.7.51-0.7.51b20240412/README.md --exclude *.pyd
+[2024-04-13 01:06:13] INFO root fetch - processPackages [raindrop-io-py]: executing diffoscope
+[2024-04-13 01:06:13] INFO root fetch - processPackages [raindrop-io-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raindrop_io_py-0.2.2.tar.gz tmp/raindrop_io_py-0.2.3.tar.gz --markdown 20240413/r/raindrop-io-py/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-13 01:06:13] INFO root fetch - processPackages [docugami-langchain]: executing diffoscope
+[2024-04-13 01:06:13] INFO root fetch - processPackages [docugami-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docugami_langchain-0.0.7rc8.tar.gz tmp/docugami_langchain-0.0.7rc9.tar.gz --markdown 20240413/d/docugami-langchain/0.0.7rc8-0.0.7rc9/README.md --exclude *.pyd
+[2024-04-13 01:06:13] INFO root fetch - processPackages [sage-docbuild]: executing diffoscope
+[2024-04-13 01:06:13] INFO root fetch - processPackages [sage-docbuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-docbuild-9.8b7.tar.gz tmp/sage-docbuild-9.8rc0.tar.gz --markdown 20240413/s/sage-docbuild/9.8b7-9.8rc0/README.md --exclude *.pyd
+[2024-04-13 01:06:13] INFO root fetch - processPackages [tetun-tokenizer]: executing diffoscope
+[2024-04-13 01:06:13] INFO root fetch - processPackages [tetun-tokenizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tetun_tokenizer-1.1.4.tar.gz tmp/tetun_tokenizer-1.2.tar.gz --markdown 20240413/t/tetun-tokenizer/1.1.4-1.2/README.md --exclude *.pyd
+[2024-04-13 01:06:14] INFO root fetch - processPackages [paaster]: Remove: archive file [/home/abi/fetcher/tmp/paaster-1.1.8.tar.gz]
+[2024-04-13 01:06:14] INFO root fetch - processPackages [paaster]: Remove: archive file [/home/abi/fetcher/tmp/paaster-1.1.9.tar.gz]
+[2024-04-13 01:06:14] INFO root fetch - processPackages [paaster]: Start processing: sage-setup
+[2024-04-13 01:06:14] INFO root fetch - main [MainThread]: End processing [paaster]: success
+[2024-04-13 01:06:14] INFO root fetch - processPackages [sage-conf]: Downloading https://files.pythonhosted.org/packages/e9/96/cd18c202ff97cf2010773c4ddf2e91c5e8ec79bf2dd6466b16139b499233/sage-conf-9.8rc0.tar.gz
+[2024-04-13 01:06:14] INFO root fetch - processPackages [materialx]: Downloading https://files.pythonhosted.org/packages/e8/42/2ed624b064d0de179ce4f2b4e28ef478a5fa382501cae684fb32313e1e16/materialx-1.38.9.tar.gz
+[2024-04-13 01:06:14] INFO root fetch - processPackages [sage-setup]: New version: [9.8rc0] Old Version: [9.8b7]
+[2024-04-13 01:06:14] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.49.tar.gz]
+[2024-04-13 01:06:14] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.50.tar.gz]
+[2024-04-13 01:06:14] INFO root fetch - processPackages [MobileInventoryCLI]: Start processing: sage-sws2rst
+[2024-04-13 01:06:14] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-04-13 01:06:14] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.51.tar.gz]
+[2024-04-13 01:06:14] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.51b20240412.tar.gz]
+[2024-04-13 01:06:14] INFO root fetch - processPackages [tmnt]: Start processing: sagemath-bliss
+[2024-04-13 01:06:14] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2024-04-13 01:06:14] INFO root fetch - processPackages [raindrop-io-py]: Remove: archive file [/home/abi/fetcher/tmp/raindrop_io_py-0.2.2.tar.gz]
+[2024-04-13 01:06:14] INFO root fetch - processPackages [raindrop-io-py]: Remove: archive file [/home/abi/fetcher/tmp/raindrop_io_py-0.2.3.tar.gz]
+[2024-04-13 01:06:14] INFO root fetch - processPackages [raindrop-io-py]: Start processing: sagemath-categories
+[2024-04-13 01:06:14] INFO root fetch - main [MainThread]: End processing [raindrop-io-py]: success
+[2024-04-13 01:06:14] INFO root fetch - processPackages [sage-conf]: executing diffoscope
+[2024-04-13 01:06:14] INFO root fetch - processPackages [sage-conf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-conf-9.8b7.tar.gz tmp/sage-conf-9.8rc0.tar.gz --markdown 20240413/s/sage-conf/9.8b7-9.8rc0/README.md --exclude *.pyd
+[2024-04-13 01:06:14] INFO root fetch - processPackages [sage-setup]: Downloading https://files.pythonhosted.org/packages/bb/16/bd3221dd969ef83cdb78698299f6e3cfa8be59d749daa81b4dc97f6d24ed/sage-setup-9.8b7.tar.gz
+[2024-04-13 01:06:14] INFO root fetch - processPackages [materialx]: executing diffoscope
+[2024-04-13 01:06:14] INFO root fetch - processPackages [materialx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/materialx-1.38.8.tar.gz tmp/materialx-1.38.9.tar.gz --markdown 20240413/m/materialx/1.38.8-1.38.9/README.md --exclude *.pyd
+[2024-04-13 01:06:14] INFO root fetch - processPackages [sage-sws2rst]: New version: [9.8rc0] Old Version: [9.8b7]
+[2024-04-13 01:06:14] INFO root fetch - processPackages [sagemath-bliss]: New version: [9.8b1] Old Version: [10.4b3]
+[2024-04-13 01:06:14] INFO root fetch - processPackages [sage-docbuild]: Remove: archive file [/home/abi/fetcher/tmp/sage-docbuild-9.8b7.tar.gz]
+[2024-04-13 01:06:14] INFO root fetch - processPackages [sage-docbuild]: Remove: archive file [/home/abi/fetcher/tmp/sage-docbuild-9.8rc0.tar.gz]
+[2024-04-13 01:06:14] INFO root fetch - processPackages [sage-docbuild]: Start processing: sagemath-coxeter3
+[2024-04-13 01:06:14] INFO root fetch - main [MainThread]: End processing [sage-docbuild]: success
+[2024-04-13 01:06:14] INFO root fetch - processPackages [docugami-langchain]: Remove: archive file [/home/abi/fetcher/tmp/docugami_langchain-0.0.7rc8.tar.gz]
+[2024-04-13 01:06:14] INFO root fetch - processPackages [docugami-langchain]: Remove: archive file [/home/abi/fetcher/tmp/docugami_langchain-0.0.7rc9.tar.gz]
+[2024-04-13 01:06:14] INFO root fetch - main [MainThread]: End processing [docugami-langchain]: success
+[2024-04-13 01:06:14] INFO root fetch - processPackages [sagemath-categories]: New version: [9.8rc0] Old Version: [9.8b7]
+[2024-04-13 01:06:14] INFO root fetch - processPackages [sagemath-bliss]: Downloading https://files.pythonhosted.org/packages/b4/60/317882f7b7b73dfb92bbab6a093a7861b88fed36fa5413843df6c93eadf8/sagemath-bliss-10.4b3.tar.gz
+[2024-04-13 01:06:15] INFO root fetch - processPackages [sage-sws2rst]: Downloading https://files.pythonhosted.org/packages/c7/9a/24d44916ef366f957e246ba99527efc0b4893673067aa991646a73886e88/sage-sws2rst-9.8b7.tar.gz
+[2024-04-13 01:06:15] INFO root fetch - processPackages [sagemath-coxeter3]: New version: [9.8b1] Old Version: [10.4b3]
+[2024-04-13 01:06:15] INFO root fetch - processPackages [sage-setup]: Downloading https://files.pythonhosted.org/packages/aa/ea/ed314950f3374f03b1417e552a4f31d8618f2811e6eacf3fe3332268f07c/sage-setup-9.8rc0.tar.gz
+[2024-04-13 01:06:15] INFO root fetch - processPackages [tetun-tokenizer]: Remove: archive file [/home/abi/fetcher/tmp/tetun_tokenizer-1.1.4.tar.gz]
+[2024-04-13 01:06:15] INFO root fetch - processPackages [tetun-tokenizer]: Remove: archive file [/home/abi/fetcher/tmp/tetun_tokenizer-1.2.tar.gz]
+[2024-04-13 01:06:15] INFO root fetch - main [MainThread]: End processing [tetun-tokenizer]: success
+[2024-04-13 01:06:15] INFO root fetch - processPackages [sagemath-categories]: Downloading https://files.pythonhosted.org/packages/91/fe/5b4220d8485b9b1ea1e00d27d4033da6b77ab9bb3d90f96c2b0f69915cd9/sagemath-categories-9.8b7.tar.gz
+[2024-04-13 01:06:15] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240411.tar.gz]
+[2024-04-13 01:06:15] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240412.tar.gz]
+[2024-04-13 01:06:15] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
+[2024-04-13 01:06:15] INFO root fetch - processPackages [sage-setup]: executing diffoscope
+[2024-04-13 01:06:15] INFO root fetch - processPackages [sage-setup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-setup-9.8b7.tar.gz tmp/sage-setup-9.8rc0.tar.gz --markdown 20240413/s/sage-setup/9.8b7-9.8rc0/README.md --exclude *.pyd
+[2024-04-13 01:06:15] INFO root fetch - processPackages [sagemath-coxeter3]: Downloading https://files.pythonhosted.org/packages/3e/fc/6d8db24f72cce347efa34c46d7f0b8ba06c65f41e029b9b8dcfae95d9308/sagemath-coxeter3-10.4b3.tar.gz
+[2024-04-13 01:06:15] INFO root fetch - processPackages [sage-sws2rst]: Downloading https://files.pythonhosted.org/packages/e2/13/be8c4c1c6ddab4fd81239014b8596bd4a65576cb4ec8fd36b8295e719cd8/sage-sws2rst-9.8rc0.tar.gz
+[2024-04-13 01:06:15] INFO root fetch - processPackages [sagemath-categories]: Downloading https://files.pythonhosted.org/packages/91/dd/0daa405ce2567bb39e004c123601d2ec55ede2bc549eb306d07ba35eb456/sagemath-categories-9.8rc0.tar.gz
+[2024-04-13 01:06:15] INFO root fetch - processPackages [sage-sws2rst]: executing diffoscope
+[2024-04-13 01:06:15] INFO root fetch - processPackages [sage-sws2rst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-sws2rst-9.8b7.tar.gz tmp/sage-sws2rst-9.8rc0.tar.gz --markdown 20240413/s/sage-sws2rst/9.8b7-9.8rc0/README.md --exclude *.pyd
+[2024-04-13 01:06:15] INFO root fetch - processPackages [sagemath-bliss]: Downloading https://files.pythonhosted.org/packages/ab/1b/7da7337e59f18c9b2960c84a3752cff8a9f5f2e7997a157b36e368ea2d2d/sagemath-bliss-9.8b1.tar.gz
+[2024-04-13 01:06:15] INFO root fetch - processPackages [sagemath-categories]: executing diffoscope
+[2024-04-13 01:06:15] INFO root fetch - processPackages [sagemath-categories]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-categories-9.8b7.tar.gz tmp/sagemath-categories-9.8rc0.tar.gz --markdown 20240413/s/sagemath-categories/9.8b7-9.8rc0/README.md --exclude *.pyd
+[2024-04-13 01:06:15] INFO root fetch - processPackages [sagemath-bliss]: executing diffoscope
+[2024-04-13 01:06:15] INFO root fetch - processPackages [sagemath-bliss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-bliss-10.4b3.tar.gz tmp/sagemath-bliss-9.8b1.tar.gz --markdown 20240413/s/sagemath-bliss/10.4b3-9.8b1/README.md --exclude *.pyd
+[2024-04-13 01:06:15] INFO root fetch - processPackages [sagemath-coxeter3]: Downloading https://files.pythonhosted.org/packages/3f/01/5f1c705c13f9e31203dd08bb7cbc28220ea2a913d75ac9366eb1e9fa71c1/sagemath-coxeter3-9.8b1.tar.gz
+[2024-04-13 01:06:15] INFO root fetch - processPackages [sagemath-coxeter3]: executing diffoscope
+[2024-04-13 01:06:15] INFO root fetch - processPackages [sagemath-coxeter3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-coxeter3-10.4b3.tar.gz tmp/sagemath-coxeter3-9.8b1.tar.gz --markdown 20240413/s/sagemath-coxeter3/10.4b3-9.8b1/README.md --exclude *.pyd
+[2024-04-13 01:06:16] INFO root fetch - processPackages [sage-setup]: Remove: archive file [/home/abi/fetcher/tmp/sage-setup-9.8b7.tar.gz]
+[2024-04-13 01:06:16] INFO root fetch - processPackages [sage-setup]: Remove: archive file [/home/abi/fetcher/tmp/sage-setup-9.8rc0.tar.gz]
+[2024-04-13 01:06:16] INFO root fetch - main [MainThread]: End processing [sage-setup]: success
+[2024-04-13 01:06:16] INFO root fetch - processPackages [sage-sws2rst]: Remove: archive file [/home/abi/fetcher/tmp/sage-sws2rst-9.8b7.tar.gz]
+[2024-04-13 01:06:16] INFO root fetch - processPackages [sage-sws2rst]: Remove: archive file [/home/abi/fetcher/tmp/sage-sws2rst-9.8rc0.tar.gz]
+[2024-04-13 01:06:16] INFO root fetch - main [MainThread]: End processing [sage-sws2rst]: success
+[2024-04-13 01:06:16] INFO root fetch - processPackages [sagemath-bliss]: Remove: archive file [/home/abi/fetcher/tmp/sagemath-bliss-10.4b3.tar.gz]
+[2024-04-13 01:06:16] INFO root fetch - processPackages [sagemath-bliss]: Remove: archive file [/home/abi/fetcher/tmp/sagemath-bliss-9.8b1.tar.gz]
+[2024-04-13 01:06:16] INFO root fetch - main [MainThread]: End processing [sagemath-bliss]: success
+[2024-04-13 01:06:16] INFO root fetch - processPackages [sagemath-coxeter3]: Remove: archive file [/home/abi/fetcher/tmp/sagemath-coxeter3-10.4b3.tar.gz]
+[2024-04-13 01:06:16] INFO root fetch - processPackages [sagemath-coxeter3]: Remove: archive file [/home/abi/fetcher/tmp/sagemath-coxeter3-9.8b1.tar.gz]
+[2024-04-13 01:06:16] INFO root fetch - main [MainThread]: End processing [sagemath-coxeter3]: success
+[2024-04-13 01:06:17] INFO root fetch - processPackages [sagemath-categories]: Remove: archive file [/home/abi/fetcher/tmp/sagemath-categories-9.8b7.tar.gz]
+[2024-04-13 01:06:17] INFO root fetch - processPackages [sagemath-categories]: Remove: archive file [/home/abi/fetcher/tmp/sagemath-categories-9.8rc0.tar.gz]
+[2024-04-13 01:06:17] INFO root fetch - main [MainThread]: End processing [sagemath-categories]: success
+[2024-04-13 01:06:20] INFO root fetch - processPackages [materialx]: Remove: archive file [/home/abi/fetcher/tmp/materialx-1.38.8.tar.gz]
+[2024-04-13 01:06:20] INFO root fetch - processPackages [materialx]: Remove: archive file [/home/abi/fetcher/tmp/materialx-1.38.9.tar.gz]
+[2024-04-13 01:06:20] INFO root fetch - main [MainThread]: End processing [materialx]: success
+[2024-04-13 01:06:22] INFO root fetch - processPackages [sage-conf]: Remove: archive file [/home/abi/fetcher/tmp/sage-conf-9.8b7.tar.gz]
+[2024-04-13 01:06:22] INFO root fetch - processPackages [sage-conf]: Remove: archive file [/home/abi/fetcher/tmp/sage-conf-9.8rc0.tar.gz]
+[2024-04-13 01:06:22] INFO root fetch - main [MainThread]: End processing [sage-conf]: success
+[2024-04-13 01:06:22] INFO root fetch - main [MainThread]: Store serial: [22746714]
