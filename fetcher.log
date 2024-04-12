@@ -1389,3 +1389,42 @@
 [2024-04-13 01:35:20] INFO root fetch - processPackages [torchutil]: Remove: archive file [/home/abi/fetcher/tmp/torchutil-0.0.9.tar.gz]
 [2024-04-13 01:35:20] INFO root fetch - main [MainThread]: End processing [torchutil]: success
 [2024-04-13 01:35:20] INFO root fetch - main [MainThread]: Store serial: [22746911]
+[2024-04-13 01:37:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746911]
+[2024-04-13 01:37:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 01:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vulcan-utils
+[2024-04-13 01:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: glotter2
+[2024-04-13 01:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: core-pro
+[2024-04-13 01:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: schedulefree
+[2024-04-13 01:37:30] INFO root fetch - processPackages [vulcan-utils]: New version: [1.12.0] Old Version: [1.11.7]
+[2024-04-13 01:37:30] INFO root fetch - processPackages [core-pro]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 01:37:30] INFO root fetch - processPackages [glotter2]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-04-13 01:37:30] INFO root fetch - processPackages [schedulefree]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-04-13 01:37:30] INFO root fetch - processPackages [core-pro]: Downloading https://files.pythonhosted.org/packages/dc/86/b3c6a8d290835afc0d7b1b25dde8bd558795bdce03403c0c90b2e7da9dff/core_pro-0.0.8.tar.gz
+[2024-04-13 01:37:30] INFO root fetch - processPackages [vulcan-utils]: Downloading https://files.pythonhosted.org/packages/c2/96/4b88c8efeec71470452b7651083c9713a30d40518c074b04342fa97d0777/vulcan_utils-1.11.7.tar.gz
+[2024-04-13 01:37:30] INFO root fetch - processPackages [core-pro]: Downloading https://files.pythonhosted.org/packages/6f/4e/6f2935c9906443317c8d830ec5b4f1c67d988d87345c4ae116a0a613c079/core_pro-0.0.9.tar.gz
+[2024-04-13 01:37:30] INFO root fetch - processPackages [schedulefree]: Downloading https://files.pythonhosted.org/packages/39/01/8115220a97da3e499d286c569616bc8f1fec6c011ee5f0bbb3c588a301a5/schedulefree-1.2.1.tar.gz
+[2024-04-13 01:37:30] INFO root fetch - processPackages [glotter2]: Downloading https://files.pythonhosted.org/packages/00/ec/d7d775d6dea8f729ba9d37384fd2d1d9a84209350e2f8474b877b5516bca/glotter2-0.8.0.tar.gz
+[2024-04-13 01:37:30] INFO root fetch - processPackages [vulcan-utils]: Downloading https://files.pythonhosted.org/packages/9a/df/a446f2e57c9540ea64efe449667b781adde2ac8340bf644a758bb98eaf96/vulcan-utils-1.12.0.tar.gz
+[2024-04-13 01:37:30] INFO root fetch - processPackages [core-pro]: executing diffoscope
+[2024-04-13 01:37:30] INFO root fetch - processPackages [core-pro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/core_pro-0.0.8.tar.gz tmp/core_pro-0.0.9.tar.gz --markdown 20240413/c/core-pro/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 01:37:30] INFO root fetch - processPackages [vulcan-utils]: executing diffoscope
+[2024-04-13 01:37:30] INFO root fetch - processPackages [vulcan-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vulcan_utils-1.11.7.tar.gz tmp/vulcan-utils-1.12.0.tar.gz --markdown 20240413/v/vulcan-utils/1.11.7-1.12.0/README.md --exclude *.pyd
+[2024-04-13 01:37:31] INFO root fetch - processPackages [schedulefree]: Downloading https://files.pythonhosted.org/packages/91/fa/30c6aa6fbf7940843a2b84e2b60263f21f8ff17ad13f30c59da46d6ddde0/schedulefree-1.2.2.tar.gz
+[2024-04-13 01:37:31] INFO root fetch - processPackages [glotter2]: Downloading https://files.pythonhosted.org/packages/35/f4/e036975f8f0e0c9bd6f3fb0652b04b4e04ecf86bb687298f6f32735199ca/glotter2-0.8.1.tar.gz
+[2024-04-13 01:37:31] INFO root fetch - processPackages [glotter2]: executing diffoscope
+[2024-04-13 01:37:31] INFO root fetch - processPackages [glotter2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glotter2-0.8.0.tar.gz tmp/glotter2-0.8.1.tar.gz --markdown 20240413/g/glotter2/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-04-13 01:37:31] INFO root fetch - processPackages [schedulefree]: executing diffoscope
+[2024-04-13 01:37:31] INFO root fetch - processPackages [schedulefree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schedulefree-1.2.1.tar.gz tmp/schedulefree-1.2.2.tar.gz --markdown 20240413/s/schedulefree/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-04-13 01:37:31] INFO root fetch - processPackages [core-pro]: Remove: archive file [/home/abi/fetcher/tmp/core_pro-0.0.8.tar.gz]
+[2024-04-13 01:37:31] INFO root fetch - processPackages [core-pro]: Remove: archive file [/home/abi/fetcher/tmp/core_pro-0.0.9.tar.gz]
+[2024-04-13 01:37:31] INFO root fetch - main [MainThread]: End processing [core-pro]: success
+[2024-04-13 01:37:31] INFO root fetch - processPackages [vulcan-utils]: Remove: archive file [/home/abi/fetcher/tmp/vulcan_utils-1.11.7.tar.gz]
+[2024-04-13 01:37:31] INFO root fetch - processPackages [vulcan-utils]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-utils-1.12.0.tar.gz]
+[2024-04-13 01:37:31] INFO root fetch - main [MainThread]: End processing [vulcan-utils]: success
+[2024-04-13 01:37:31] INFO root fetch - processPackages [glotter2]: Remove: archive file [/home/abi/fetcher/tmp/glotter2-0.8.0.tar.gz]
+[2024-04-13 01:37:31] INFO root fetch - processPackages [glotter2]: Remove: archive file [/home/abi/fetcher/tmp/glotter2-0.8.1.tar.gz]
+[2024-04-13 01:37:31] INFO root fetch - main [MainThread]: End processing [glotter2]: success
+[2024-04-13 01:37:32] INFO root fetch - processPackages [schedulefree]: Remove: archive file [/home/abi/fetcher/tmp/schedulefree-1.2.1.tar.gz]
+[2024-04-13 01:37:32] INFO root fetch - processPackages [schedulefree]: Remove: archive file [/home/abi/fetcher/tmp/schedulefree-1.2.2.tar.gz]
+[2024-04-13 01:37:32] INFO root fetch - main [MainThread]: End processing [schedulefree]: success
+[2024-04-13 01:37:32] INFO root fetch - main [MainThread]: Store serial: [22746920]
