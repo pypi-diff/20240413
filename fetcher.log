@@ -147,3 +147,15 @@
 [2024-04-13 00:08:10] INFO root fetch - processPackages [pg-purepy]: Remove: archive file [/home/abi/fetcher/tmp/pg_purepy-0.9.5.tar.gz]
 [2024-04-13 00:08:10] INFO root fetch - main [MainThread]: End processing [pg-purepy]: success
 [2024-04-13 00:08:10] INFO root fetch - main [MainThread]: Store serial: [22746337]
+[2024-04-13 00:10:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746337]
+[2024-04-13 00:10:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 00:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-synologydsm-api
+[2024-04-13 00:10:19] INFO root fetch - processPackages [py-synologydsm-api]: New version: [2.4.1] Old Version: [2.4.0]
+[2024-04-13 00:10:19] INFO root fetch - processPackages [py-synologydsm-api]: Downloading https://files.pythonhosted.org/packages/40/e5/d36f9b58e78f494233539799b6ace925e22779e904140050f79ba4c9d0b4/py_synologydsm_api-2.4.0-py3-none-any.whl
+[2024-04-13 00:10:20] INFO root fetch - processPackages [py-synologydsm-api]: Downloading https://files.pythonhosted.org/packages/b0/31/37e58c1679590eb76c214e13ce5eed8cf164e660607b7b8c53c4364f15f2/py_synologydsm_api-2.4.1-py3-none-any.whl
+[2024-04-13 00:10:20] INFO root fetch - processPackages [py-synologydsm-api]: executing diffoscope
+[2024-04-13 00:10:20] INFO root fetch - processPackages [py-synologydsm-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_synologydsm_api-2.4.0-py3-none-any.whl.zip tmp/py_synologydsm_api-2.4.1-py3-none-any.whl.zip --markdown 20240413/p/py-synologydsm-api/2.4.0-2.4.1/README.md --exclude *.pyd
+[2024-04-13 00:10:20] INFO root fetch - processPackages [py-synologydsm-api]: Remove: archive file [/home/abi/fetcher/tmp/py_synologydsm_api-2.4.0-py3-none-any.whl.zip]
+[2024-04-13 00:10:20] INFO root fetch - processPackages [py-synologydsm-api]: Remove: archive file [/home/abi/fetcher/tmp/py_synologydsm_api-2.4.1-py3-none-any.whl.zip]
+[2024-04-13 00:10:20] INFO root fetch - main [MainThread]: End processing [py-synologydsm-api]: success
+[2024-04-13 00:10:20] INFO root fetch - main [MainThread]: Store serial: [22746339]
