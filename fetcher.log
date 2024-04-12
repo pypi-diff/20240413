@@ -1581,3 +1581,68 @@
 [2024-04-13 01:46:15] INFO root fetch - processPackages [onnxruntime]: Remove: archive file [/home/abi/fetcher/tmp/onnxruntime-1.9.0-cp39-cp39-win_amd64.whl.zip]
 [2024-04-13 01:46:15] INFO root fetch - main [MainThread]: End processing [onnxruntime]: success
 [2024-04-13 01:46:15] INFO root fetch - main [MainThread]: Store serial: [22746976]
+[2024-04-13 01:48:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746976]
+[2024-04-13 01:48:24] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-13 01:48:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onnxruntime-directml
+[2024-04-13 01:48:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyprjbtsttst1
+[2024-04-13 01:48:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: LinguAligner
+[2024-04-13 01:48:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tetun-lid
+[2024-04-13 01:48:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: emphases
+[2024-04-13 01:48:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lbt-dragonfly
+[2024-04-13 01:48:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dragonfly-uwg
+[2024-04-13 01:48:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: LinguAligner
+[2024-04-13 01:48:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tree-sitter-tlaplus
+[2024-04-13 01:48:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: investing-algorithm-framework
+[2024-04-13 01:48:24] WARNING root fetch - processPackages [tree-sitter-tlaplus]: Skipping, unable to determine old version
+[2024-04-13 01:48:24] INFO root fetch - main [MainThread]: End processing [tree-sitter-tlaplus] error
+[2024-04-13 01:48:24] WARNING root fetch - processPackages [LinguAligner]: Skipping, unable to determine old version
+[2024-04-13 01:48:24] INFO root fetch - main [MainThread]: End processing [LinguAligner] error
+[2024-04-13 01:48:24] WARNING root fetch - processPackages [LinguAligner]: Skipping, unable to determine old version
+[2024-04-13 01:48:24] INFO root fetch - main [MainThread]: End processing [LinguAligner] error
+[2024-04-13 01:48:24] INFO root fetch - processPackages [investing-algorithm-framework]: New version: [3.5.0] Old Version: [3.4.3]
+[2024-04-13 01:48:24] INFO root fetch - processPackages [dragonfly-uwg]: New version: [0.5.99] Old Version: [0.5.98]
+[2024-04-13 01:48:24] INFO root fetch - processPackages [tetun-lid]: New version: [1.1.0] Old Version: [1.0.6]
+[2024-04-13 01:48:24] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-04-13 01:48:24] INFO root fetch - processPackages [emphases]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-13 01:48:24] WARNING root fetch - processPackages [pyprjbtsttst1]: Skipping, unable to determine old version
+[2024-04-13 01:48:24] INFO root fetch - main [MainThread]: End processing [pyprjbtsttst1] error
+[2024-04-13 01:48:24] INFO root fetch - processPackages [onnxruntime-directml]: New version: [1.9.0] Old Version: [1.17.3]
+[2024-04-13 01:48:24] INFO root fetch - processPackages [investing-algorithm-framework]: Downloading https://files.pythonhosted.org/packages/23/3a/9543e7359ca844c871b0de30dbd8e365184cd33d8d9821cf970181a3ac7e/investing_algorithm_framework-3.4.3.tar.gz
+[2024-04-13 01:48:24] INFO root fetch - processPackages [dragonfly-uwg]: Downloading https://files.pythonhosted.org/packages/a6/3c/7afbd082f170d8d51ed57abdf8bb67058ca404ede70f9d982fd95c8bb807/dragonfly-uwg-0.5.98.tar.gz
+[2024-04-13 01:48:24] INFO root fetch - processPackages [tetun-lid]: Downloading https://files.pythonhosted.org/packages/e0/a0/af05cc25479c3eb74472ca65fd9ded1b4911d104c9184ebee25610442928/tetun_lid-1.0.6.tar.gz
+[2024-04-13 01:48:24] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-04-13 01:48:24] INFO root fetch - processPackages [onnxruntime-directml]: Downloading https://files.pythonhosted.org/packages/ba/9b/0b15aa610bf6b24ea06487d6f895af758603709d391dc6b99fca47d6ff07/onnxruntime_directml-1.17.3-cp39-cp39-win_amd64.whl
+[2024-04-13 01:48:24] INFO root fetch - processPackages [emphases]: Downloading https://files.pythonhosted.org/packages/9a/bd/b5d69a62bfe605dae4b38a0b71c46cf749aa0889823af307148be2ce2c1c/emphases-0.0.1.tar.gz
+[2024-04-13 01:48:24] WARNING root fetch - processPackages [onnxruntime-directml]: Skipping package: exceeds size limit 15406508>=10485760
+[2024-04-13 01:48:24] INFO root fetch - main [MainThread]: End processing [onnxruntime-directml] error
+[2024-04-13 01:48:24] INFO root fetch - processPackages [investing-algorithm-framework]: Downloading https://files.pythonhosted.org/packages/18/b1/49de3e2b0ec9c6552ffcf1a610e9a61e2914b42de106d1b76b12b252e491/investing_algorithm_framework-3.5.0.tar.gz
+[2024-04-13 01:48:24] INFO root fetch - processPackages [dragonfly-uwg]: Downloading https://files.pythonhosted.org/packages/55/b3/3f9a36d82b87f343d4e196e93a8cf3e838b9c80b0849f927d4f3505355af/dragonfly-uwg-0.5.99.tar.gz
+[2024-04-13 01:48:25] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-04-13 01:48:25] INFO root fetch - processPackages [investing-algorithm-framework]: executing diffoscope
+[2024-04-13 01:48:25] INFO root fetch - processPackages [investing-algorithm-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/investing_algorithm_framework-3.4.3.tar.gz tmp/investing_algorithm_framework-3.5.0.tar.gz --markdown 20240413/i/investing-algorithm-framework/3.4.3-3.5.0/README.md --exclude *.pyd
+[2024-04-13 01:48:25] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-04-13 01:48:25] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240413/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-04-13 01:48:25] INFO root fetch - processPackages [dragonfly-uwg]: executing diffoscope
+[2024-04-13 01:48:25] INFO root fetch - processPackages [dragonfly-uwg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-uwg-0.5.98.tar.gz tmp/dragonfly-uwg-0.5.99.tar.gz --markdown 20240413/d/dragonfly-uwg/0.5.98-0.5.99/README.md --exclude *.pyd
+[2024-04-13 01:48:25] INFO root fetch - processPackages [tetun-lid]: Downloading https://files.pythonhosted.org/packages/12/10/6f73339a27a38b7b4de99f0cd680c80a3b994f6f4587667e901b049972b6/tetun_lid-1.1.0.tar.gz
+[2024-04-13 01:48:25] INFO root fetch - processPackages [emphases]: Downloading https://files.pythonhosted.org/packages/28/42/59b7099715dedee08703d171c6a3ef0cadaf61e195c59c4d7d06f1ae08f5/emphases-0.0.2.tar.gz
+[2024-04-13 01:48:25] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-04-13 01:48:25] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-04-13 01:48:25] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-04-13 01:48:25] INFO root fetch - processPackages [tetun-lid]: executing diffoscope
+[2024-04-13 01:48:25] INFO root fetch - processPackages [tetun-lid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tetun_lid-1.0.6.tar.gz tmp/tetun_lid-1.1.0.tar.gz --markdown 20240413/t/tetun-lid/1.0.6-1.1.0/README.md --exclude *.pyd
+[2024-04-13 01:48:25] INFO root fetch - processPackages [emphases]: executing diffoscope
+[2024-04-13 01:48:25] INFO root fetch - processPackages [emphases]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emphases-0.0.1.tar.gz tmp/emphases-0.0.2.tar.gz --markdown 20240413/e/emphases/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-13 01:48:25] INFO root fetch - processPackages [dragonfly-uwg]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-uwg-0.5.98.tar.gz]
+[2024-04-13 01:48:25] INFO root fetch - processPackages [dragonfly-uwg]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-uwg-0.5.99.tar.gz]
+[2024-04-13 01:48:25] INFO root fetch - main [MainThread]: End processing [dragonfly-uwg]: success
+[2024-04-13 01:48:26] INFO root fetch - processPackages [investing-algorithm-framework]: Remove: archive file [/home/abi/fetcher/tmp/investing_algorithm_framework-3.4.3.tar.gz]
+[2024-04-13 01:48:26] INFO root fetch - processPackages [investing-algorithm-framework]: Remove: archive file [/home/abi/fetcher/tmp/investing_algorithm_framework-3.5.0.tar.gz]
+[2024-04-13 01:48:26] INFO root fetch - main [MainThread]: End processing [investing-algorithm-framework]: success
+[2024-04-13 01:48:26] INFO root fetch - processPackages [emphases]: Remove: archive file [/home/abi/fetcher/tmp/emphases-0.0.1.tar.gz]
+[2024-04-13 01:48:26] INFO root fetch - processPackages [emphases]: Remove: archive file [/home/abi/fetcher/tmp/emphases-0.0.2.tar.gz]
+[2024-04-13 01:48:26] INFO root fetch - main [MainThread]: End processing [emphases]: success
+[2024-04-13 01:48:27] INFO root fetch - processPackages [tetun-lid]: Remove: archive file [/home/abi/fetcher/tmp/tetun_lid-1.0.6.tar.gz]
+[2024-04-13 01:48:27] INFO root fetch - processPackages [tetun-lid]: Remove: archive file [/home/abi/fetcher/tmp/tetun_lid-1.1.0.tar.gz]
+[2024-04-13 01:48:27] INFO root fetch - main [MainThread]: End processing [tetun-lid]: success
+[2024-04-13 01:48:27] INFO root fetch - main [MainThread]: Store serial: [22747036]
