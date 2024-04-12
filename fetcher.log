@@ -1332,3 +1332,45 @@
 [2024-04-13 01:30:56] INFO root fetch - processPackages [tetun-tokenizer]: Remove: archive file [/home/abi/fetcher/tmp/tetun_tokenizer-1.2.tar.gz]
 [2024-04-13 01:30:56] INFO root fetch - main [MainThread]: End processing [tetun-tokenizer]: success
 [2024-04-13 01:30:56] INFO root fetch - main [MainThread]: Store serial: [22746827]
+[2024-04-13 01:33:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746827]
+[2024-04-13 01:33:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 01:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nodespecs
+[2024-04-13 01:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psqlpy
+[2024-04-13 01:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dragonfly-core
+[2024-04-13 01:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pkscreener
+[2024-04-13 01:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torchutil
+[2024-04-13 01:33:05] WARNING root fetch - processPackages [nodespecs]: Skipping, unable to determine old version
+[2024-04-13 01:33:05] INFO root fetch - main [MainThread]: End processing [nodespecs] error
+[2024-04-13 01:33:05] INFO root fetch - processPackages [dragonfly-core]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-04-13 01:33:05] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240412.255] Old Version: [0.44.20240412.254]
+[2024-04-13 01:33:05] INFO root fetch - processPackages [dragonfly-core]: Downloading https://files.pythonhosted.org/packages/93/fd/7cad9d4c9406e421f7ce31b725936bb32ec8a421f9b143e829c33cae55dd/dragonfly-core-1.8.1.tar.gz
+[2024-04-13 01:33:05] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/8b/82/c2acddf1f6e189360437a7e25ca0a78da295bf716c490cd2618cacab2124/pkscreener-0.44.20240412.254.tar.gz
+[2024-04-13 01:33:05] INFO root fetch - processPackages [torchutil]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 01:33:05] INFO root fetch - processPackages [dragonfly-core]: Downloading https://files.pythonhosted.org/packages/75/cb/4a1ce4726a070a188305b8d5343b4300bf24190845d85c8718cc31aa3e53/dragonfly-core-1.9.0.tar.gz
+[2024-04-13 01:33:06] INFO root fetch - processPackages [dragonfly-core]: executing diffoscope
+[2024-04-13 01:33:06] INFO root fetch - processPackages [dragonfly-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-core-1.8.1.tar.gz tmp/dragonfly-core-1.9.0.tar.gz --markdown 20240413/d/dragonfly-core/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-04-13 01:33:06] INFO root fetch - processPackages [torchutil]: Downloading https://files.pythonhosted.org/packages/54/d1/790755cc24d93012bed91327ab2e1d00b3caf425c7922c0583c28dcac4aa/torchutil-0.0.8.tar.gz
+[2024-04-13 01:33:06] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/39/6a/aa0cb381b450f430b738a5bf994c258dec55f3d0f5510f67588a7ae2b4d7/pkscreener-0.44.20240412.255.tar.gz
+[2024-04-13 01:33:06] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-04-13 01:33:06] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240412.254.tar.gz tmp/pkscreener-0.44.20240412.255.tar.gz --markdown 20240413/p/pkscreener/0.44.20240412.254-0.44.20240412.255/README.md --exclude *.pyd
+[2024-04-13 01:33:06] INFO root fetch - processPackages [psqlpy]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-13 01:33:06] INFO root fetch - processPackages [torchutil]: Downloading https://files.pythonhosted.org/packages/2d/08/444571c1693f034d7a00bbe1389f94940531a02d2f62c1db328e2dcb60c6/torchutil-0.0.9.tar.gz
+[2024-04-13 01:33:06] INFO root fetch - processPackages [torchutil]: executing diffoscope
+[2024-04-13 01:33:06] INFO root fetch - processPackages [torchutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchutil-0.0.8.tar.gz tmp/torchutil-0.0.9.tar.gz --markdown 20240413/t/torchutil/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 01:33:06] INFO root fetch - processPackages [psqlpy]: Downloading https://files.pythonhosted.org/packages/4b/95/ad9ffa46fdd5dae57de5f1b2687e295d573e78eb39000b7c0f16a17cb8dd/psqlpy-0.5.0.tar.gz
+[2024-04-13 01:33:06] INFO root fetch - processPackages [dragonfly-core]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-core-1.8.1.tar.gz]
+[2024-04-13 01:33:06] INFO root fetch - processPackages [dragonfly-core]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-core-1.9.0.tar.gz]
+[2024-04-13 01:33:06] INFO root fetch - main [MainThread]: End processing [dragonfly-core]: success
+[2024-04-13 01:33:06] INFO root fetch - processPackages [psqlpy]: Downloading https://files.pythonhosted.org/packages/e1/ef/9e4934f5b999effbbb01f00af11e30e494246fa962b326b61c34dd525d40/psqlpy-0.5.1-pp310-pypy310_pp73-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl
+[2024-04-13 01:33:07] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240412.254.tar.gz]
+[2024-04-13 01:33:07] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240412.255.tar.gz]
+[2024-04-13 01:33:07] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-04-13 01:33:07] INFO root fetch - processPackages [torchutil]: Remove: archive file [/home/abi/fetcher/tmp/torchutil-0.0.8.tar.gz]
+[2024-04-13 01:33:07] INFO root fetch - processPackages [torchutil]: Remove: archive file [/home/abi/fetcher/tmp/torchutil-0.0.9.tar.gz]
+[2024-04-13 01:33:07] INFO root fetch - main [MainThread]: End processing [torchutil]: success
+[2024-04-13 01:33:09] INFO root fetch - processPackages [psqlpy]: executing diffoscope
+[2024-04-13 01:33:09] INFO root fetch - processPackages [psqlpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psqlpy-0.5.0.tar.gz tmp/psqlpy-0.5.1-pp310-pypy310_pp73-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl.zip --markdown 20240413/p/psqlpy/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-13 01:33:09] INFO root fetch - processPackages [psqlpy]: Remove: archive file [/home/abi/fetcher/tmp/psqlpy-0.5.0.tar.gz]
+[2024-04-13 01:33:09] INFO root fetch - processPackages [psqlpy]: Remove: archive file [/home/abi/fetcher/tmp/psqlpy-0.5.1-pp310-pypy310_pp73-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl.zip]
+[2024-04-13 01:33:09] INFO root fetch - main [MainThread]: End processing [psqlpy]: success
+[2024-04-13 01:33:09] INFO root fetch - main [MainThread]: Store serial: [22746885]
