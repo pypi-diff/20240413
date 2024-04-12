@@ -1145,3 +1145,24 @@
 [2024-04-13 01:10:44] INFO root fetch - processPackages [airbyte]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-0.9.0.tar.gz]
 [2024-04-13 01:10:44] INFO root fetch - main [MainThread]: End processing [airbyte]: success
 [2024-04-13 01:10:44] INFO root fetch - main [MainThread]: Store serial: [22746761]
+[2024-04-13 01:12:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746761]
+[2024-04-13 01:12:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 01:12:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langfuse
+[2024-04-13 01:12:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyfoal
+[2024-04-13 01:12:53] INFO root fetch - processPackages [pyfoal]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-13 01:12:53] INFO root fetch - processPackages [langfuse]: New version: [2.9.2] Old Version: [2.9.1a0]
+[2024-04-13 01:12:53] INFO root fetch - processPackages [langfuse]: Downloading https://files.pythonhosted.org/packages/43/38/4a1023711cee549cb5f62c09965d08724e93f5cac8e7dcd2becd75f7b302/langfuse-2.9.1a0.tar.gz
+[2024-04-13 01:12:53] INFO root fetch - processPackages [pyfoal]: Downloading https://files.pythonhosted.org/packages/cf/ac/d128af04d519fa2e98c09b9dff3b2a0a70b271d71f9bc3ec55f6abb45937/pyfoal-1.0.0.tar.gz
+[2024-04-13 01:12:53] INFO root fetch - processPackages [langfuse]: Downloading https://files.pythonhosted.org/packages/71/c4/6571f0f3c2539390fbd49ca27636f5611971c2b1f9f15fae183b3c67838c/langfuse-2.9.2.tar.gz
+[2024-04-13 01:12:53] INFO root fetch - processPackages [langfuse]: executing diffoscope
+[2024-04-13 01:12:53] INFO root fetch - processPackages [langfuse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langfuse-2.9.1a0.tar.gz tmp/langfuse-2.9.2.tar.gz --markdown 20240413/l/langfuse/2.9.1a0-2.9.2/README.md --exclude *.pyd
+[2024-04-13 01:12:54] INFO root fetch - processPackages [pyfoal]: Downloading https://files.pythonhosted.org/packages/2c/c9/19cff9a8b51b078ebc5cc31930764a3c7ff09c7a924d53b4d9389e251735/pyfoal-1.0.1.tar.gz
+[2024-04-13 01:12:54] INFO root fetch - processPackages [langfuse]: Remove: archive file [/home/abi/fetcher/tmp/langfuse-2.9.1a0.tar.gz]
+[2024-04-13 01:12:54] INFO root fetch - processPackages [langfuse]: Remove: archive file [/home/abi/fetcher/tmp/langfuse-2.9.2.tar.gz]
+[2024-04-13 01:12:54] INFO root fetch - main [MainThread]: End processing [langfuse]: success
+[2024-04-13 01:12:55] INFO root fetch - processPackages [pyfoal]: executing diffoscope
+[2024-04-13 01:12:55] INFO root fetch - processPackages [pyfoal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfoal-1.0.0.tar.gz tmp/pyfoal-1.0.1.tar.gz --markdown 20240413/p/pyfoal/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-13 01:12:56] INFO root fetch - processPackages [pyfoal]: Remove: archive file [/home/abi/fetcher/tmp/pyfoal-1.0.0.tar.gz]
+[2024-04-13 01:12:56] INFO root fetch - processPackages [pyfoal]: Remove: archive file [/home/abi/fetcher/tmp/pyfoal-1.0.1.tar.gz]
+[2024-04-13 01:12:56] INFO root fetch - main [MainThread]: End processing [pyfoal]: success
+[2024-04-13 01:12:56] INFO root fetch - main [MainThread]: Store serial: [22746767]
