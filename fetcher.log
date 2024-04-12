@@ -1255,3 +1255,20 @@
 [2024-04-13 01:23:50] INFO root fetch - processPackages [clipkit]: Remove: archive file [/home/abi/fetcher/tmp/clipkit-2.2.6.tar.gz]
 [2024-04-13 01:23:50] INFO root fetch - main [MainThread]: End processing [clipkit]: success
 [2024-04-13 01:23:50] INFO root fetch - main [MainThread]: Store serial: [22746801]
+[2024-04-13 01:25:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746801]
+[2024-04-13 01:26:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 01:26:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sbcli-mig
+[2024-04-13 01:26:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqlmesh
+[2024-04-13 01:26:00] INFO root fetch - processPackages [sbcli-mig]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-13 01:26:00] INFO root fetch - processPackages [sqlmesh]: New version: [0.9.0] Old Version: [0.86.0]
+[2024-04-13 01:26:00] INFO root fetch - processPackages [sbcli-mig]: Downloading https://files.pythonhosted.org/packages/06/2f/2b2f1cfa7b91365cf5cd645c5967a8e8a8bd7f1c8e89f91d7e43e2aefc87/sbcli-mig-1.0.8.zip
+[2024-04-13 01:26:00] INFO root fetch - processPackages [sqlmesh]: Downloading https://files.pythonhosted.org/packages/eb/d9/1a33b1a5d6949df4dacdf2da64ed11e6f7b956b676e22fd364db9c6fbc67/sqlmesh-0.86.0.tar.gz
+[2024-04-13 01:26:00] WARNING root fetch - processPackages [sqlmesh]: Skipping package: exceeds size limit 14323358>=10485760
+[2024-04-13 01:26:00] INFO root fetch - main [MainThread]: End processing [sqlmesh] error
+[2024-04-13 01:26:01] INFO root fetch - processPackages [sbcli-mig]: Downloading https://files.pythonhosted.org/packages/4b/15/9c1afe915f08547ce582aeae079f597b2a173df003109bcd1d0f0bbf037e/sbcli-mig-1.0.9.zip
+[2024-04-13 01:26:01] INFO root fetch - processPackages [sbcli-mig]: executing diffoscope
+[2024-04-13 01:26:01] INFO root fetch - processPackages [sbcli-mig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbcli-mig-1.0.8.zip tmp/sbcli-mig-1.0.9.zip --markdown 20240413/s/sbcli-mig/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-13 01:26:02] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.8.zip]
+[2024-04-13 01:26:02] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.9.zip]
+[2024-04-13 01:26:02] INFO root fetch - main [MainThread]: End processing [sbcli-mig]: success
+[2024-04-13 01:26:02] INFO root fetch - main [MainThread]: Store serial: [22746806]
