@@ -1530,3 +1530,54 @@
 [2024-04-13 01:44:04] INFO root fetch - processPackages [layrz-forms]: Remove: archive file [/home/abi/fetcher/tmp/layrz-forms-2.0.0.tar.gz]
 [2024-04-13 01:44:04] INFO root fetch - main [MainThread]: End processing [layrz-forms]: success
 [2024-04-13 01:44:04] INFO root fetch - main [MainThread]: Store serial: [22746954]
+[2024-04-13 01:46:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746954]
+[2024-04-13 01:46:12] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 01:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tck
+[2024-04-13 01:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dragonfly-energy
+[2024-04-13 01:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unfolded.data-sdk
+[2024-04-13 01:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dragonfly-radiance
+[2024-04-13 01:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: LinguAligner
+[2024-04-13 01:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: onnxruntime
+[2024-04-13 01:46:12] INFO root fetch - processPackages [dragonfly-radiance]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-13 01:46:12] INFO root fetch - processPackages [dragonfly-energy]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-04-13 01:46:12] WARNING root fetch - processPackages [LinguAligner]: Skipping, unable to determine old version
+[2024-04-13 01:46:12] INFO root fetch - processPackages [tck]: New version: [0.4.2] Old Version: [0.4]
+[2024-04-13 01:46:12] INFO root fetch - main [MainThread]: End processing [LinguAligner] error
+[2024-04-13 01:46:12] INFO root fetch - processPackages [unfolded.data-sdk]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-04-13 01:46:12] INFO root fetch - processPackages [dragonfly-radiance]: Downloading https://files.pythonhosted.org/packages/a2/41/805cddd3de27bfc114d3b54bbf0a558b1d450bb0bc346c8bbfc9f9e1ca04/dragonfly-radiance-0.3.8.tar.gz
+[2024-04-13 01:46:12] INFO root fetch - processPackages [dragonfly-energy]: Downloading https://files.pythonhosted.org/packages/20/4e/115840f938ee254b23bd515351ba786228441464717f8557431f914e75f4/dragonfly-energy-1.9.8.tar.gz
+[2024-04-13 01:46:12] INFO root fetch - processPackages [tck]: Downloading https://files.pythonhosted.org/packages/00/58/2b34005a8dfc7a97085b00f0ff2f6b5ebab67c6ca1d5520ee9004597f012/tck-0.4.tar.gz
+[2024-04-13 01:46:12] INFO root fetch - processPackages [unfolded.data-sdk]: Downloading https://files.pythonhosted.org/packages/b4/ea/523eb8576e6d16970fce7620a78e176d28679d4797f2c0ad03498f280f80/unfolded.data-sdk-0.9.1.tar.gz
+[2024-04-13 01:46:12] INFO root fetch - processPackages [onnxruntime]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-04-13 01:46:12] INFO root fetch - processPackages [dragonfly-radiance]: Downloading https://files.pythonhosted.org/packages/a9/93/8933c5c67b8d336f624b3e7f9cb128678c38867dac08b6bb30a824b7cb3d/dragonfly-radiance-0.3.9.tar.gz
+[2024-04-13 01:46:12] INFO root fetch - processPackages [dragonfly-energy]: Downloading https://files.pythonhosted.org/packages/09/b6/c12f13159c5beb3b855a32f792faef162ad37358d2e0d3311cbd68a969db/dragonfly-energy-1.9.9.tar.gz
+[2024-04-13 01:46:13] INFO root fetch - processPackages [dragonfly-radiance]: executing diffoscope
+[2024-04-13 01:46:13] INFO root fetch - processPackages [dragonfly-radiance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-radiance-0.3.8.tar.gz tmp/dragonfly-radiance-0.3.9.tar.gz --markdown 20240413/d/dragonfly-radiance/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-13 01:46:13] INFO root fetch - processPackages [dragonfly-energy]: executing diffoscope
+[2024-04-13 01:46:13] INFO root fetch - processPackages [dragonfly-energy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-energy-1.9.8.tar.gz tmp/dragonfly-energy-1.9.9.tar.gz --markdown 20240413/d/dragonfly-energy/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-04-13 01:46:13] INFO root fetch - processPackages [onnxruntime]: Downloading https://files.pythonhosted.org/packages/c7/d4/b59694df6ca8308dea9c979520058fbcf197fc37cd5cbd9f2759e8caad3b/onnxruntime-1.8.1-cp39-cp39-win_amd64.whl
+[2024-04-13 01:46:13] INFO root fetch - processPackages [tck]: Downloading https://files.pythonhosted.org/packages/b2/56/b50d10ffed9b5a43575465b52c24b3237f15cc86a1df12240967e79406f7/tck-0.4.2.tar.gz
+[2024-04-13 01:46:13] INFO root fetch - processPackages [unfolded.data-sdk]: Downloading https://files.pythonhosted.org/packages/8f/25/eac3c1de2ecb4c8d480769fbe2060e07ed1f07590afc5f80a3b1b2a0a9f1/unfolded.data-sdk-0.9.2.tar.gz
+[2024-04-13 01:46:13] INFO root fetch - processPackages [tck]: executing diffoscope
+[2024-04-13 01:46:13] INFO root fetch - processPackages [tck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tck-0.4.tar.gz tmp/tck-0.4.2.tar.gz --markdown 20240413/t/tck/0.4-0.4.2/README.md --exclude *.pyd
+[2024-04-13 01:46:13] INFO root fetch - processPackages [unfolded.data-sdk]: executing diffoscope
+[2024-04-13 01:46:13] INFO root fetch - processPackages [unfolded.data-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unfolded.data-sdk-0.9.1.tar.gz tmp/unfolded.data-sdk-0.9.2.tar.gz --markdown 20240413/u/unfolded.data-sdk/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-04-13 01:46:13] INFO root fetch - processPackages [onnxruntime]: Downloading https://files.pythonhosted.org/packages/4b/f2/fc1fe9109358a1750996ebd16ac7666244025f1613f4e61a5fd47ca069b5/onnxruntime-1.9.0-cp39-cp39-win_amd64.whl
+[2024-04-13 01:46:13] INFO root fetch - processPackages [dragonfly-radiance]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-radiance-0.3.8.tar.gz]
+[2024-04-13 01:46:13] INFO root fetch - processPackages [dragonfly-radiance]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-radiance-0.3.9.tar.gz]
+[2024-04-13 01:46:13] INFO root fetch - main [MainThread]: End processing [dragonfly-radiance]: success
+[2024-04-13 01:46:13] INFO root fetch - processPackages [tck]: Remove: archive file [/home/abi/fetcher/tmp/tck-0.4.tar.gz]
+[2024-04-13 01:46:13] INFO root fetch - processPackages [tck]: Remove: archive file [/home/abi/fetcher/tmp/tck-0.4.2.tar.gz]
+[2024-04-13 01:46:13] INFO root fetch - main [MainThread]: End processing [tck]: success
+[2024-04-13 01:46:13] INFO root fetch - processPackages [unfolded.data-sdk]: Remove: archive file [/home/abi/fetcher/tmp/unfolded.data-sdk-0.9.1.tar.gz]
+[2024-04-13 01:46:13] INFO root fetch - processPackages [unfolded.data-sdk]: Remove: archive file [/home/abi/fetcher/tmp/unfolded.data-sdk-0.9.2.tar.gz]
+[2024-04-13 01:46:13] INFO root fetch - main [MainThread]: End processing [unfolded.data-sdk]: success
+[2024-04-13 01:46:13] INFO root fetch - processPackages [onnxruntime]: executing diffoscope
+[2024-04-13 01:46:13] INFO root fetch - processPackages [onnxruntime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxruntime-1.8.1-cp39-cp39-win_amd64.whl.zip tmp/onnxruntime-1.9.0-cp39-cp39-win_amd64.whl.zip --markdown 20240413/o/onnxruntime/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-04-13 01:46:13] INFO root fetch - processPackages [dragonfly-energy]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-energy-1.9.8.tar.gz]
+[2024-04-13 01:46:13] INFO root fetch - processPackages [dragonfly-energy]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-energy-1.9.9.tar.gz]
+[2024-04-13 01:46:13] INFO root fetch - main [MainThread]: End processing [dragonfly-energy]: success
+[2024-04-13 01:46:15] INFO root fetch - processPackages [onnxruntime]: Remove: archive file [/home/abi/fetcher/tmp/onnxruntime-1.8.1-cp39-cp39-win_amd64.whl.zip]
+[2024-04-13 01:46:15] INFO root fetch - processPackages [onnxruntime]: Remove: archive file [/home/abi/fetcher/tmp/onnxruntime-1.9.0-cp39-cp39-win_amd64.whl.zip]
+[2024-04-13 01:46:15] INFO root fetch - main [MainThread]: End processing [onnxruntime]: success
+[2024-04-13 01:46:15] INFO root fetch - main [MainThread]: Store serial: [22746976]
