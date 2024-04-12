@@ -159,3 +159,30 @@
 [2024-04-13 00:10:20] INFO root fetch - processPackages [py-synologydsm-api]: Remove: archive file [/home/abi/fetcher/tmp/py_synologydsm_api-2.4.1-py3-none-any.whl.zip]
 [2024-04-13 00:10:20] INFO root fetch - main [MainThread]: End processing [py-synologydsm-api]: success
 [2024-04-13 00:10:20] INFO root fetch - main [MainThread]: Store serial: [22746339]
+[2024-04-13 00:12:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746339]
+[2024-04-13 00:12:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 00:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ethyca-fides
+[2024-04-13 00:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pcdscalc
+[2024-04-13 00:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hanapy
+[2024-04-13 00:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: layered-config-tree
+[2024-04-13 00:12:29] INFO root fetch - processPackages [ethyca-fides]: New version: [2.9.2] Old Version: [2.9.1]
+[2024-04-13 00:12:29] WARNING root fetch - processPackages [hanapy]: Skipping, unable to determine old version
+[2024-04-13 00:12:29] INFO root fetch - main [MainThread]: End processing [hanapy] error
+[2024-04-13 00:12:29] WARNING root fetch - processPackages [layered-config-tree]: Skipping, unable to determine old version
+[2024-04-13 00:12:29] INFO root fetch - main [MainThread]: End processing [layered-config-tree] error
+[2024-04-13 00:12:29] INFO root fetch - processPackages [pcdscalc]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-13 00:12:29] INFO root fetch - processPackages [ethyca-fides]: Downloading https://files.pythonhosted.org/packages/a5/ce/6ad04dd381854d1db26960c5cc1e174a086becd7eea9daa2b89a8dde7a70/ethyca-fides-2.9.1.tar.gz
+[2024-04-13 00:12:29] INFO root fetch - processPackages [pcdscalc]: Downloading https://files.pythonhosted.org/packages/5c/ed/44408381d643ced22aa64ed6e3e59a1725ab73c957bbdb20ea4bfa76bcee/pcdscalc-0.5.0.tar.gz
+[2024-04-13 00:12:30] INFO root fetch - processPackages [ethyca-fides]: Downloading https://files.pythonhosted.org/packages/a3/0c/e979f7bc3c1a405c539d4df6c4c75896975e70d6b87777b8378ea071da2c/ethyca-fides-2.9.2.tar.gz
+[2024-04-13 00:12:30] INFO root fetch - processPackages [pcdscalc]: Downloading https://files.pythonhosted.org/packages/79/c4/72e42a8c15a9cca22188fb01131b6f7d3b211c5ee812368c6b91d35df401/pcdscalc-0.5.1.tar.gz
+[2024-04-13 00:12:30] INFO root fetch - processPackages [ethyca-fides]: executing diffoscope
+[2024-04-13 00:12:30] INFO root fetch - processPackages [ethyca-fides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ethyca-fides-2.9.1.tar.gz tmp/ethyca-fides-2.9.2.tar.gz --markdown 20240413/e/ethyca-fides/2.9.1-2.9.2/README.md --exclude *.pyd
+[2024-04-13 00:12:30] INFO root fetch - processPackages [pcdscalc]: executing diffoscope
+[2024-04-13 00:12:30] INFO root fetch - processPackages [pcdscalc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcdscalc-0.5.0.tar.gz tmp/pcdscalc-0.5.1.tar.gz --markdown 20240413/p/pcdscalc/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-13 00:12:31] INFO root fetch - processPackages [pcdscalc]: Remove: archive file [/home/abi/fetcher/tmp/pcdscalc-0.5.0.tar.gz]
+[2024-04-13 00:12:31] INFO root fetch - processPackages [pcdscalc]: Remove: archive file [/home/abi/fetcher/tmp/pcdscalc-0.5.1.tar.gz]
+[2024-04-13 00:12:31] INFO root fetch - main [MainThread]: End processing [pcdscalc]: success
+[2024-04-13 00:12:33] INFO root fetch - processPackages [ethyca-fides]: Remove: archive file [/home/abi/fetcher/tmp/ethyca-fides-2.9.1.tar.gz]
+[2024-04-13 00:12:33] INFO root fetch - processPackages [ethyca-fides]: Remove: archive file [/home/abi/fetcher/tmp/ethyca-fides-2.9.2.tar.gz]
+[2024-04-13 00:12:33] INFO root fetch - main [MainThread]: End processing [ethyca-fides]: success
+[2024-04-13 00:12:33] INFO root fetch - main [MainThread]: Store serial: [22746353]
