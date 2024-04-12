@@ -186,3 +186,33 @@
 [2024-04-13 00:12:33] INFO root fetch - processPackages [ethyca-fides]: Remove: archive file [/home/abi/fetcher/tmp/ethyca-fides-2.9.2.tar.gz]
 [2024-04-13 00:12:33] INFO root fetch - main [MainThread]: End processing [ethyca-fides]: success
 [2024-04-13 00:12:33] INFO root fetch - main [MainThread]: Store serial: [22746353]
+[2024-04-13 00:14:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746353]
+[2024-04-13 00:14:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 00:14:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: samino
+[2024-04-13 00:14:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tmnt
+[2024-04-13 00:14:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: covalent-api-sdk
+[2024-04-13 00:14:42] INFO root fetch - processPackages [tmnt]: New version: [0.7.4b20231227] Old Version: [0.7.49]
+[2024-04-13 00:14:42] INFO root fetch - processPackages [covalent-api-sdk]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-13 00:14:42] INFO root fetch - processPackages [samino]: New version: [2.6.1] Old Version: [2.6.0]
+[2024-04-13 00:14:42] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/cd/42/6ca0c93d19440fa06f2ef227d193ff469c0de9fdc6a4d12fb07ea37a09a6/tmnt-0.7.49.tar.gz
+[2024-04-13 00:14:42] INFO root fetch - processPackages [covalent-api-sdk]: Downloading https://files.pythonhosted.org/packages/98/60/c337dc843e0c0965ce4dd5014d1e5580fc2f26aa924760b11ba051361a26/covalent-api-sdk-1.0.0.tar.gz
+[2024-04-13 00:14:42] INFO root fetch - processPackages [samino]: Downloading https://files.pythonhosted.org/packages/04/90/0608c5a81006bdaa684cab604c2a4d9b7bb82198b16a7ef142a807508a9e/samino-2.6.0.tar.gz
+[2024-04-13 00:14:42] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/ea/3a/0cd54af36ea52550ab5b0361342ea6cbae9843227af8a4fe56d32695a1f3/tmnt-0.7.4b20231227.tar.gz
+[2024-04-13 00:14:43] INFO root fetch - processPackages [covalent-api-sdk]: Downloading https://files.pythonhosted.org/packages/0f/f2/45f477ddf90377314d74f3d0e985e0f10280e2324e2b0145a67a667ee7a3/covalent-api-sdk-1.0.1.tar.gz
+[2024-04-13 00:14:43] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2024-04-13 00:14:43] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.49.tar.gz tmp/tmnt-0.7.4b20231227.tar.gz --markdown 20240413/t/tmnt/0.7.49-0.7.4b20231227/README.md --exclude *.pyd
+[2024-04-13 00:14:43] INFO root fetch - processPackages [samino]: Downloading https://files.pythonhosted.org/packages/98/a8/8e011806e8aa8b1151aad8ba65b3c179adda067cf6f6032cf84c488706ce/samino-2.6.1.tar.gz
+[2024-04-13 00:14:43] INFO root fetch - processPackages [covalent-api-sdk]: executing diffoscope
+[2024-04-13 00:14:43] INFO root fetch - processPackages [covalent-api-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/covalent-api-sdk-1.0.0.tar.gz tmp/covalent-api-sdk-1.0.1.tar.gz --markdown 20240413/c/covalent-api-sdk/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-13 00:14:43] INFO root fetch - processPackages [samino]: executing diffoscope
+[2024-04-13 00:14:43] INFO root fetch - processPackages [samino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/samino-2.6.0.tar.gz tmp/samino-2.6.1.tar.gz --markdown 20240413/s/samino/2.6.0-2.6.1/README.md --exclude *.pyd
+[2024-04-13 00:14:43] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.49.tar.gz]
+[2024-04-13 00:14:43] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.4b20231227.tar.gz]
+[2024-04-13 00:14:43] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2024-04-13 00:14:43] INFO root fetch - processPackages [covalent-api-sdk]: Remove: archive file [/home/abi/fetcher/tmp/covalent-api-sdk-1.0.0.tar.gz]
+[2024-04-13 00:14:43] INFO root fetch - processPackages [covalent-api-sdk]: Remove: archive file [/home/abi/fetcher/tmp/covalent-api-sdk-1.0.1.tar.gz]
+[2024-04-13 00:14:43] INFO root fetch - main [MainThread]: End processing [covalent-api-sdk]: success
+[2024-04-13 00:14:43] INFO root fetch - processPackages [samino]: Remove: archive file [/home/abi/fetcher/tmp/samino-2.6.0.tar.gz]
+[2024-04-13 00:14:43] INFO root fetch - processPackages [samino]: Remove: archive file [/home/abi/fetcher/tmp/samino-2.6.1.tar.gz]
+[2024-04-13 00:14:43] INFO root fetch - main [MainThread]: End processing [samino]: success
+[2024-04-13 00:14:43] INFO root fetch - main [MainThread]: Store serial: [22746365]
