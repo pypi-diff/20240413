@@ -830,3 +830,24 @@
 [2024-04-13 00:57:29] INFO root fetch - processPackages [pypar]: Remove: archive file [/home/abi/fetcher/tmp/pypar-0.0.6.tar.gz]
 [2024-04-13 00:57:29] INFO root fetch - main [MainThread]: End processing [pypar]: success
 [2024-04-13 00:57:29] INFO root fetch - main [MainThread]: Store serial: [22746648]
+[2024-04-13 00:59:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746648]
+[2024-04-13 00:59:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 00:59:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: benjiamin
+[2024-04-13 00:59:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: schema-agents
+[2024-04-13 00:59:38] INFO root fetch - processPackages [benjiamin]: New version: [7.0.0] Old Version: [6.0.0]
+[2024-04-13 00:59:38] INFO root fetch - processPackages [schema-agents]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-13 00:59:38] INFO root fetch - processPackages [benjiamin]: Downloading https://files.pythonhosted.org/packages/af/43/9d0874c1148ac84ff84f32f8432d072e000fe4e7b9902cd907eeca85ed52/benjiamin-6.0.0.tar.gz
+[2024-04-13 00:59:38] INFO root fetch - processPackages [schema-agents]: Downloading https://files.pythonhosted.org/packages/39/f5/f12f7d0b2a7beec8382af5ee1c4f0a856f79a9a19bc85737fe39ee9d74f4/schema-agents-0.1.7.tar.gz
+[2024-04-13 00:59:38] INFO root fetch - processPackages [benjiamin]: Downloading https://files.pythonhosted.org/packages/3d/fa/d81966ab5992b4fadedb160bd6a39f2fbf8ba94a97892d83b0e009468c78/benjiamin-7.0.0.tar.gz
+[2024-04-13 00:59:38] INFO root fetch - processPackages [benjiamin]: executing diffoscope
+[2024-04-13 00:59:38] INFO root fetch - processPackages [schema-agents]: Downloading https://files.pythonhosted.org/packages/84/04/a30d7eb5ed4cc5024144190776629d7f818cb11a311d1c5e740e801bb722/schema-agents-0.1.8.tar.gz
+[2024-04-13 00:59:38] INFO root fetch - processPackages [benjiamin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/benjiamin-6.0.0.tar.gz tmp/benjiamin-7.0.0.tar.gz --markdown 20240413/b/benjiamin/6.0.0-7.0.0/README.md --exclude *.pyd
+[2024-04-13 00:59:38] INFO root fetch - processPackages [schema-agents]: executing diffoscope
+[2024-04-13 00:59:38] INFO root fetch - processPackages [schema-agents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schema-agents-0.1.7.tar.gz tmp/schema-agents-0.1.8.tar.gz --markdown 20240413/s/schema-agents/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-13 00:59:39] INFO root fetch - processPackages [benjiamin]: Remove: archive file [/home/abi/fetcher/tmp/benjiamin-6.0.0.tar.gz]
+[2024-04-13 00:59:39] INFO root fetch - processPackages [benjiamin]: Remove: archive file [/home/abi/fetcher/tmp/benjiamin-7.0.0.tar.gz]
+[2024-04-13 00:59:39] INFO root fetch - main [MainThread]: End processing [benjiamin]: success
+[2024-04-13 00:59:39] INFO root fetch - processPackages [schema-agents]: Remove: archive file [/home/abi/fetcher/tmp/schema-agents-0.1.7.tar.gz]
+[2024-04-13 00:59:39] INFO root fetch - processPackages [schema-agents]: Remove: archive file [/home/abi/fetcher/tmp/schema-agents-0.1.8.tar.gz]
+[2024-04-13 00:59:39] INFO root fetch - main [MainThread]: End processing [schema-agents]: success
+[2024-04-13 00:59:39] INFO root fetch - main [MainThread]: Store serial: [22746653]
