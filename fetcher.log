@@ -1687,3 +1687,26 @@
 [2024-04-13 01:52:48] INFO root fetch - processPackages [mgdl-simple-cache]: Remove: archive file [/home/abi/fetcher/tmp/mgdl-simple-cache-1.2.1.tar.gz]
 [2024-04-13 01:52:48] INFO root fetch - main [MainThread]: End processing [mgdl-simple-cache]: success
 [2024-04-13 01:52:48] INFO root fetch - main [MainThread]: Store serial: [22747052]
+[2024-04-13 01:54:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22747052]
+[2024-04-13 01:54:56] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 01:56:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22747052]
+[2024-04-13 01:57:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 01:57:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lbt-dragonfly
+[2024-04-13 01:57:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tck
+[2024-04-13 01:57:02] INFO root fetch - processPackages [tck]: New version: [0.4.2] Old Version: [0.4]
+[2024-04-13 01:57:02] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-04-13 01:57:02] INFO root fetch - processPackages [tck]: Downloading https://files.pythonhosted.org/packages/00/58/2b34005a8dfc7a97085b00f0ff2f6b5ebab67c6ca1d5520ee9004597f012/tck-0.4.tar.gz
+[2024-04-13 01:57:02] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-04-13 01:57:02] INFO root fetch - processPackages [tck]: Downloading https://files.pythonhosted.org/packages/b2/56/b50d10ffed9b5a43575465b52c24b3237f15cc86a1df12240967e79406f7/tck-0.4.2.tar.gz
+[2024-04-13 01:57:02] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-04-13 01:57:02] INFO root fetch - processPackages [tck]: executing diffoscope
+[2024-04-13 01:57:02] INFO root fetch - processPackages [tck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tck-0.4.tar.gz tmp/tck-0.4.2.tar.gz --markdown 20240413/t/tck/0.4-0.4.2/README.md --exclude *.pyd
+[2024-04-13 01:57:02] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-04-13 01:57:02] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240413/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-04-13 01:57:02] INFO root fetch - processPackages [tck]: Remove: archive file [/home/abi/fetcher/tmp/tck-0.4.tar.gz]
+[2024-04-13 01:57:02] INFO root fetch - processPackages [tck]: Remove: archive file [/home/abi/fetcher/tmp/tck-0.4.2.tar.gz]
+[2024-04-13 01:57:02] INFO root fetch - main [MainThread]: End processing [tck]: success
+[2024-04-13 01:57:03] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-04-13 01:57:03] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-04-13 01:57:03] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-04-13 01:57:03] INFO root fetch - main [MainThread]: Store serial: [22747058]
