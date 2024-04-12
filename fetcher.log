@@ -567,3 +567,24 @@
 [2024-04-13 00:37:54] INFO root fetch - processPackages [django-sceneid]: Remove: archive file [/home/abi/fetcher/tmp/django-sceneid-0.1.2.tar.gz]
 [2024-04-13 00:37:54] INFO root fetch - main [MainThread]: End processing [django-sceneid]: success
 [2024-04-13 00:37:54] INFO root fetch - main [MainThread]: Store serial: [22746497]
+[2024-04-13 00:39:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746497]
+[2024-04-13 00:40:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 00:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: instagram-reels
+[2024-04-13 00:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-awsx
+[2024-04-13 00:40:04] INFO root fetch - processPackages [pulumi-awsx]: New version: [2.7.0] Old Version: [2.6.0]
+[2024-04-13 00:40:04] INFO root fetch - processPackages [instagram-reels]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-13 00:40:04] INFO root fetch - processPackages [pulumi-awsx]: Downloading https://files.pythonhosted.org/packages/5c/70/a49b96ab9ac3f30c65cfca1ff26c7be4bf9ed2363a4fd4d66173303b5c5c/pulumi_awsx-2.6.0.tar.gz
+[2024-04-13 00:40:04] INFO root fetch - processPackages [instagram-reels]: Downloading https://files.pythonhosted.org/packages/ff/2c/089388fc1d40cb07d53b9aba8363e797f88cfcc5cb45a52dbb0b9e34cf44/instagram_reels-0.2.2.tar.gz
+[2024-04-13 00:40:04] INFO root fetch - processPackages [pulumi-awsx]: Downloading https://files.pythonhosted.org/packages/45/71/f94bc0e9f2b3da76595e8a55e513ff2cee6f324628d3a6421e53aa6ed29f/pulumi_awsx-2.7.0.tar.gz
+[2024-04-13 00:40:04] INFO root fetch - processPackages [pulumi-awsx]: executing diffoscope
+[2024-04-13 00:40:04] INFO root fetch - processPackages [pulumi-awsx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_awsx-2.6.0.tar.gz tmp/pulumi_awsx-2.7.0.tar.gz --markdown 20240413/p/pulumi-awsx/2.6.0-2.7.0/README.md --exclude *.pyd
+[2024-04-13 00:40:04] INFO root fetch - processPackages [instagram-reels]: Downloading https://files.pythonhosted.org/packages/4d/7f/85b7cb7163dac5dcae9860e9c48f608a6b2e923217f082f97e49cb9666c2/instagram_reels-0.2.3.tar.gz
+[2024-04-13 00:40:04] INFO root fetch - processPackages [instagram-reels]: executing diffoscope
+[2024-04-13 00:40:04] INFO root fetch - processPackages [instagram-reels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/instagram_reels-0.2.2.tar.gz tmp/instagram_reels-0.2.3.tar.gz --markdown 20240413/i/instagram-reels/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-13 00:40:05] INFO root fetch - processPackages [pulumi-awsx]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_awsx-2.6.0.tar.gz]
+[2024-04-13 00:40:05] INFO root fetch - processPackages [pulumi-awsx]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_awsx-2.7.0.tar.gz]
+[2024-04-13 00:40:05] INFO root fetch - main [MainThread]: End processing [pulumi-awsx]: success
+[2024-04-13 00:40:05] INFO root fetch - processPackages [instagram-reels]: Remove: archive file [/home/abi/fetcher/tmp/instagram_reels-0.2.2.tar.gz]
+[2024-04-13 00:40:05] INFO root fetch - processPackages [instagram-reels]: Remove: archive file [/home/abi/fetcher/tmp/instagram_reels-0.2.3.tar.gz]
+[2024-04-13 00:40:05] INFO root fetch - main [MainThread]: End processing [instagram-reels]: success
+[2024-04-13 00:40:05] INFO root fetch - main [MainThread]: Store serial: [22746503]
