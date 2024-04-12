@@ -1488,3 +1488,24 @@
 [2024-04-13 01:39:44] INFO root fetch - processPackages [aurora]: Remove: archive file [/home/abi/fetcher/tmp/aurora-0.3.7.tar.gz]
 [2024-04-13 01:39:44] INFO root fetch - main [MainThread]: End processing [aurora]: success
 [2024-04-13 01:39:44] INFO root fetch - main [MainThread]: Store serial: [22746943]
+[2024-04-13 01:41:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746943]
+[2024-04-13 01:41:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 01:41:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: schema-agents
+[2024-04-13 01:41:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quicfire-tools
+[2024-04-13 01:41:52] INFO root fetch - processPackages [schema-agents]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-13 01:41:52] INFO root fetch - processPackages [schema-agents]: Downloading https://files.pythonhosted.org/packages/39/f5/f12f7d0b2a7beec8382af5ee1c4f0a856f79a9a19bc85737fe39ee9d74f4/schema-agents-0.1.7.tar.gz
+[2024-04-13 01:41:52] INFO root fetch - processPackages [quicfire-tools]: New version: [0.7.1] Old Version: [0.6.4]
+[2024-04-13 01:41:53] INFO root fetch - processPackages [quicfire-tools]: Downloading https://files.pythonhosted.org/packages/b4/fe/d54c3c73431de5372223d030d4d2fe108d867e4c631dc93ee3806ca39f9f/quicfire-tools-0.6.4.tar.gz
+[2024-04-13 01:41:53] INFO root fetch - processPackages [schema-agents]: Downloading https://files.pythonhosted.org/packages/84/04/a30d7eb5ed4cc5024144190776629d7f818cb11a311d1c5e740e801bb722/schema-agents-0.1.8.tar.gz
+[2024-04-13 01:41:53] INFO root fetch - processPackages [schema-agents]: executing diffoscope
+[2024-04-13 01:41:53] INFO root fetch - processPackages [schema-agents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schema-agents-0.1.7.tar.gz tmp/schema-agents-0.1.8.tar.gz --markdown 20240413/s/schema-agents/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-13 01:41:53] INFO root fetch - processPackages [quicfire-tools]: Downloading https://files.pythonhosted.org/packages/43/d1/f7f8b64dbb214d21d7d0bc2502d75b4dece998626f788822174c1517b9a2/quicfire-tools-0.7.1.tar.gz
+[2024-04-13 01:41:53] INFO root fetch - processPackages [quicfire-tools]: executing diffoscope
+[2024-04-13 01:41:53] INFO root fetch - processPackages [quicfire-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quicfire-tools-0.6.4.tar.gz tmp/quicfire-tools-0.7.1.tar.gz --markdown 20240413/q/quicfire-tools/0.6.4-0.7.1/README.md --exclude *.pyd
+[2024-04-13 01:41:53] INFO root fetch - processPackages [schema-agents]: Remove: archive file [/home/abi/fetcher/tmp/schema-agents-0.1.7.tar.gz]
+[2024-04-13 01:41:53] INFO root fetch - processPackages [schema-agents]: Remove: archive file [/home/abi/fetcher/tmp/schema-agents-0.1.8.tar.gz]
+[2024-04-13 01:41:53] INFO root fetch - main [MainThread]: End processing [schema-agents]: success
+[2024-04-13 01:41:54] INFO root fetch - processPackages [quicfire-tools]: Remove: archive file [/home/abi/fetcher/tmp/quicfire-tools-0.6.4.tar.gz]
+[2024-04-13 01:41:54] INFO root fetch - processPackages [quicfire-tools]: Remove: archive file [/home/abi/fetcher/tmp/quicfire-tools-0.7.1.tar.gz]
+[2024-04-13 01:41:54] INFO root fetch - main [MainThread]: End processing [quicfire-tools]: success
+[2024-04-13 01:41:54] INFO root fetch - main [MainThread]: Store serial: [22746949]
