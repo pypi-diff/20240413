@@ -588,3 +588,42 @@
 [2024-04-13 00:40:05] INFO root fetch - processPackages [instagram-reels]: Remove: archive file [/home/abi/fetcher/tmp/instagram_reels-0.2.3.tar.gz]
 [2024-04-13 00:40:05] INFO root fetch - main [MainThread]: End processing [instagram-reels]: success
 [2024-04-13 00:40:05] INFO root fetch - main [MainThread]: Store serial: [22746503]
+[2024-04-13 00:42:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746503]
+[2024-04-13 00:42:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 00:42:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: duplocloud-client
+[2024-04-13 00:42:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: h5analysis
+[2024-04-13 00:42:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: typhos
+[2024-04-13 00:42:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TMC-2209-Raspberry-Pi
+[2024-04-13 00:42:13] INFO root fetch - processPackages [duplocloud-client]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-13 00:42:14] INFO root fetch - processPackages [duplocloud-client]: Downloading https://files.pythonhosted.org/packages/64/0f/f0e4cb432dfe138a961e25d188529a8aba71feacc3de9b5cc75bdf4ba425/duplocloud-client-0.2.8.tar.gz
+[2024-04-13 00:42:14] INFO root fetch - processPackages [typhos]: New version: [3.1.1] Old Version: [3.1.0]
+[2024-04-13 00:42:14] INFO root fetch - processPackages [h5analysis]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 00:42:14] INFO root fetch - processPackages [TMC-2209-Raspberry-Pi]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-04-13 00:42:14] INFO root fetch - processPackages [duplocloud-client]: Downloading https://files.pythonhosted.org/packages/0c/31/a8708e76b68aa59189985ed13cb066f0d6af56d2928f45b56eaed3dcb105/duplocloud-client-0.2.9.tar.gz
+[2024-04-13 00:42:14] INFO root fetch - processPackages [typhos]: Downloading https://files.pythonhosted.org/packages/15/88/e524a0d318db1dcbdfe37a1f805e94ae1f5b4c733ceae3b30dd94cea6578/typhos-3.1.0.tar.gz
+[2024-04-13 00:42:14] INFO root fetch - processPackages [TMC-2209-Raspberry-Pi]: Downloading https://files.pythonhosted.org/packages/cf/e5/52608ca3460931428d6100433b48b84dbbc99f8763860ded1079d40c2029/TMC_2209_Raspberry_Pi-0.4.3.tar.gz
+[2024-04-13 00:42:14] INFO root fetch - processPackages [duplocloud-client]: executing diffoscope
+[2024-04-13 00:42:14] INFO root fetch - processPackages [duplocloud-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duplocloud-client-0.2.8.tar.gz tmp/duplocloud-client-0.2.9.tar.gz --markdown 20240413/d/duplocloud-client/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-13 00:42:14] INFO root fetch - processPackages [h5analysis]: Downloading https://files.pythonhosted.org/packages/7f/06/223f03a9b5227e2cabcdf1f98cc947fba9598187d96356c06382b85286c8/h5analysis-0.0.8.tar.gz
+[2024-04-13 00:42:14] INFO root fetch - processPackages [TMC-2209-Raspberry-Pi]: Downloading https://files.pythonhosted.org/packages/54/27/873cc2874ba2c110b0b26460d98297c88aff62e73f6036a066d955b48ba4/tmc_2209_raspberry_pi-0.4.4.tar.gz
+[2024-04-13 00:42:14] INFO root fetch - processPackages [typhos]: Downloading https://files.pythonhosted.org/packages/db/b8/016e6df389f1c6896dc9a8b367751ff12f1b131ef2879b9796a166247e3d/typhos-3.1.1.tar.gz
+[2024-04-13 00:42:14] INFO root fetch - processPackages [h5analysis]: Downloading https://files.pythonhosted.org/packages/87/86/17cc06879d035e5f154ecad9530c7c01df2439dd1eb54378379f99ee122f/h5analysis-0.0.9.tar.gz
+[2024-04-13 00:42:14] INFO root fetch - processPackages [h5analysis]: executing diffoscope
+[2024-04-13 00:42:14] INFO root fetch - processPackages [h5analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/h5analysis-0.0.8.tar.gz tmp/h5analysis-0.0.9.tar.gz --markdown 20240413/h/h5analysis/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 00:42:14] INFO root fetch - processPackages [TMC-2209-Raspberry-Pi]: executing diffoscope
+[2024-04-13 00:42:14] INFO root fetch - processPackages [TMC-2209-Raspberry-Pi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TMC_2209_Raspberry_Pi-0.4.3.tar.gz tmp/tmc_2209_raspberry_pi-0.4.4.tar.gz --markdown 20240413/T/TMC-2209-Raspberry-Pi/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-04-13 00:42:14] INFO root fetch - processPackages [typhos]: executing diffoscope
+[2024-04-13 00:42:14] INFO root fetch - processPackages [typhos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typhos-3.1.0.tar.gz tmp/typhos-3.1.1.tar.gz --markdown 20240413/t/typhos/3.1.0-3.1.1/README.md --exclude *.pyd
+[2024-04-13 00:42:14] INFO root fetch - processPackages [duplocloud-client]: Remove: archive file [/home/abi/fetcher/tmp/duplocloud-client-0.2.8.tar.gz]
+[2024-04-13 00:42:14] INFO root fetch - processPackages [duplocloud-client]: Remove: archive file [/home/abi/fetcher/tmp/duplocloud-client-0.2.9.tar.gz]
+[2024-04-13 00:42:14] INFO root fetch - main [MainThread]: End processing [duplocloud-client]: success
+[2024-04-13 00:42:15] INFO root fetch - processPackages [h5analysis]: Remove: archive file [/home/abi/fetcher/tmp/h5analysis-0.0.8.tar.gz]
+[2024-04-13 00:42:15] INFO root fetch - processPackages [h5analysis]: Remove: archive file [/home/abi/fetcher/tmp/h5analysis-0.0.9.tar.gz]
+[2024-04-13 00:42:15] INFO root fetch - main [MainThread]: End processing [h5analysis]: success
+[2024-04-13 00:42:15] INFO root fetch - processPackages [TMC-2209-Raspberry-Pi]: Remove: archive file [/home/abi/fetcher/tmp/TMC_2209_Raspberry_Pi-0.4.3.tar.gz]
+[2024-04-13 00:42:15] INFO root fetch - processPackages [TMC-2209-Raspberry-Pi]: Remove: archive file [/home/abi/fetcher/tmp/tmc_2209_raspberry_pi-0.4.4.tar.gz]
+[2024-04-13 00:42:15] INFO root fetch - main [MainThread]: End processing [TMC-2209-Raspberry-Pi]: success
+[2024-04-13 00:42:15] INFO root fetch - processPackages [typhos]: Remove: archive file [/home/abi/fetcher/tmp/typhos-3.1.0.tar.gz]
+[2024-04-13 00:42:15] INFO root fetch - processPackages [typhos]: Remove: archive file [/home/abi/fetcher/tmp/typhos-3.1.1.tar.gz]
+[2024-04-13 00:42:15] INFO root fetch - main [MainThread]: End processing [typhos]: success
+[2024-04-13 00:42:15] INFO root fetch - main [MainThread]: Store serial: [22746515]
