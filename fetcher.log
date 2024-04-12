@@ -555,3 +555,15 @@
 [2024-04-13 00:35:43] INFO root fetch - processPackages [carbon-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/carbon_python_sdk-0.1.9.tar.gz]
 [2024-04-13 00:35:43] INFO root fetch - main [MainThread]: End processing [carbon-python-sdk]: success
 [2024-04-13 00:35:43] INFO root fetch - main [MainThread]: Store serial: [22746494]
+[2024-04-13 00:37:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746494]
+[2024-04-13 00:37:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 00:37:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-sceneid
+[2024-04-13 00:37:53] INFO root fetch - processPackages [django-sceneid]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 00:37:53] INFO root fetch - processPackages [django-sceneid]: Downloading https://files.pythonhosted.org/packages/d9/8e/3ec7bd7458f076556d524abaccce5290c5ee7c15f2af6a0d404a38184188/django-sceneid-0.1.1.tar.gz
+[2024-04-13 00:37:53] INFO root fetch - processPackages [django-sceneid]: Downloading https://files.pythonhosted.org/packages/a1/d9/a596282d5c87a20265a28d4b998bf7b7e923dbf473677383e47cf1e9fafb/django-sceneid-0.1.2.tar.gz
+[2024-04-13 00:37:54] INFO root fetch - processPackages [django-sceneid]: executing diffoscope
+[2024-04-13 00:37:54] INFO root fetch - processPackages [django-sceneid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-sceneid-0.1.1.tar.gz tmp/django-sceneid-0.1.2.tar.gz --markdown 20240413/d/django-sceneid/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-13 00:37:54] INFO root fetch - processPackages [django-sceneid]: Remove: archive file [/home/abi/fetcher/tmp/django-sceneid-0.1.1.tar.gz]
+[2024-04-13 00:37:54] INFO root fetch - processPackages [django-sceneid]: Remove: archive file [/home/abi/fetcher/tmp/django-sceneid-0.1.2.tar.gz]
+[2024-04-13 00:37:54] INFO root fetch - main [MainThread]: End processing [django-sceneid]: success
+[2024-04-13 00:37:54] INFO root fetch - main [MainThread]: Store serial: [22746497]
