@@ -501,3 +501,24 @@
 [2024-04-13 00:30:24] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1700084435.tar.gz]
 [2024-04-13 00:30:24] INFO root fetch - main [MainThread]: End processing [pulumi-aws]: success
 [2024-04-13 00:30:24] INFO root fetch - main [MainThread]: Store serial: [22746475]
+[2024-04-13 00:32:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746475]
+[2024-04-13 00:32:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 00:32:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: biolink-model
+[2024-04-13 00:32:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EnhancedWebdriver
+[2024-04-13 00:32:33] INFO root fetch - processPackages [EnhancedWebdriver]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 00:32:33] INFO root fetch - processPackages [biolink-model]: New version: [4.2.0rc2] Old Version: [4.2.0rc1]
+[2024-04-13 00:32:33] INFO root fetch - processPackages [EnhancedWebdriver]: Downloading https://files.pythonhosted.org/packages/72/73/e3527c231de374d127fced9d2aed20448e8b85484b2e6d1ad075e0a191f1/enhancedwebdriver-0.1.tar.gz
+[2024-04-13 00:32:33] INFO root fetch - processPackages [biolink-model]: Downloading https://files.pythonhosted.org/packages/ef/da/4513432c074d7f25a68d2f0ed3bf28f595eb1539af7669a6ae215008264c/biolink_model-4.2.0rc1.tar.gz
+[2024-04-13 00:32:34] INFO root fetch - processPackages [EnhancedWebdriver]: Downloading https://files.pythonhosted.org/packages/e0/97/32bd046918dde0a8177c9c3e8d02052c9b441ea2229d80cc648e3fabdf92/enhancedwebdriver-0.1.1.tar.gz
+[2024-04-13 00:32:34] INFO root fetch - processPackages [EnhancedWebdriver]: executing diffoscope
+[2024-04-13 00:32:34] INFO root fetch - processPackages [EnhancedWebdriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enhancedwebdriver-0.1.tar.gz tmp/enhancedwebdriver-0.1.1.tar.gz --markdown 20240413/E/EnhancedWebdriver/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 00:32:34] INFO root fetch - processPackages [biolink-model]: Downloading https://files.pythonhosted.org/packages/36/57/f57f9e37f68aa30ad628021472833a053bbab1d9f855ffb5fbdd33e62468/biolink_model-4.2.0rc2.tar.gz
+[2024-04-13 00:32:34] INFO root fetch - processPackages [biolink-model]: executing diffoscope
+[2024-04-13 00:32:34] INFO root fetch - processPackages [biolink-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biolink_model-4.2.0rc1.tar.gz tmp/biolink_model-4.2.0rc2.tar.gz --markdown 20240413/b/biolink-model/4.2.0rc1-4.2.0rc2/README.md --exclude *.pyd
+[2024-04-13 00:32:34] INFO root fetch - processPackages [EnhancedWebdriver]: Remove: archive file [/home/abi/fetcher/tmp/enhancedwebdriver-0.1.tar.gz]
+[2024-04-13 00:32:34] INFO root fetch - processPackages [EnhancedWebdriver]: Remove: archive file [/home/abi/fetcher/tmp/enhancedwebdriver-0.1.1.tar.gz]
+[2024-04-13 00:32:34] INFO root fetch - main [MainThread]: End processing [EnhancedWebdriver]: success
+[2024-04-13 00:33:28] INFO root fetch - processPackages [biolink-model]: Remove: archive file [/home/abi/fetcher/tmp/biolink_model-4.2.0rc1.tar.gz]
+[2024-04-13 00:33:28] INFO root fetch - processPackages [biolink-model]: Remove: archive file [/home/abi/fetcher/tmp/biolink_model-4.2.0rc2.tar.gz]
+[2024-04-13 00:33:28] INFO root fetch - main [MainThread]: End processing [biolink-model]: success
+[2024-04-13 00:33:28] INFO root fetch - main [MainThread]: Store serial: [22746481]
