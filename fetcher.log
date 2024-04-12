@@ -1675,3 +1675,15 @@
 [2024-04-13 01:50:38] INFO root fetch - main [MainThread]: End processing [LinguAligner]: success
 [2024-04-13 01:50:38] INFO root fetch - main [MainThread]: End processing [LinguAligner]: success
 [2024-04-13 01:50:38] INFO root fetch - main [MainThread]: Store serial: [22747049]
+[2024-04-13 01:52:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22747049]
+[2024-04-13 01:52:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 01:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mgdl-simple-cache
+[2024-04-13 01:52:46] INFO root fetch - processPackages [mgdl-simple-cache]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-04-13 01:52:47] INFO root fetch - processPackages [mgdl-simple-cache]: Downloading https://files.pythonhosted.org/packages/c4/b2/0c931e3c50a13b04d40d20c9e9086053ef19a5ae6f63e5b236542f9dc491/mgdl-simple-cache-1.2.0.tar.gz
+[2024-04-13 01:52:47] INFO root fetch - processPackages [mgdl-simple-cache]: Downloading https://files.pythonhosted.org/packages/21/01/438cb05e44e622ce8fb92e8236ca80d403f86e418a828eab8a580849825e/mgdl-simple-cache-1.2.1.tar.gz
+[2024-04-13 01:52:47] INFO root fetch - processPackages [mgdl-simple-cache]: executing diffoscope
+[2024-04-13 01:52:47] INFO root fetch - processPackages [mgdl-simple-cache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mgdl-simple-cache-1.2.0.tar.gz tmp/mgdl-simple-cache-1.2.1.tar.gz --markdown 20240413/m/mgdl-simple-cache/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-04-13 01:52:48] INFO root fetch - processPackages [mgdl-simple-cache]: Remove: archive file [/home/abi/fetcher/tmp/mgdl-simple-cache-1.2.0.tar.gz]
+[2024-04-13 01:52:48] INFO root fetch - processPackages [mgdl-simple-cache]: Remove: archive file [/home/abi/fetcher/tmp/mgdl-simple-cache-1.2.1.tar.gz]
+[2024-04-13 01:52:48] INFO root fetch - main [MainThread]: End processing [mgdl-simple-cache]: success
+[2024-04-13 01:52:48] INFO root fetch - main [MainThread]: Store serial: [22747052]
