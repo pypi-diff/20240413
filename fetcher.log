@@ -457,3 +457,47 @@
 [2024-04-13 00:27:57] INFO root fetch - processPackages [duplocloud-client]: Remove: archive file [/home/abi/fetcher/tmp/duplocloud-client-0.2.9.tar.gz]
 [2024-04-13 00:27:57] INFO root fetch - main [MainThread]: End processing [duplocloud-client]: success
 [2024-04-13 00:27:57] INFO root fetch - main [MainThread]: Store serial: [22746459]
+[2024-04-13 00:30:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746459]
+[2024-04-13 00:30:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 00:30:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: upset-alttxt
+[2024-04-13 00:30:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Medfl
+[2024-04-13 00:30:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cortix
+[2024-04-13 00:30:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-aws
+[2024-04-13 00:30:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lightpath
+[2024-04-13 00:30:07] INFO root fetch - processPackages [pulumi-aws]: New version: [6.9.0a1700084435] Old Version: [6.9.0a1699991594]
+[2024-04-13 00:30:07] INFO root fetch - processPackages [upset-alttxt]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-04-13 00:30:07] INFO root fetch - processPackages [lightpath]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-13 00:30:07] INFO root fetch - processPackages [cortix]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-13 00:30:07] INFO root fetch - processPackages [Medfl]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-13 00:30:07] INFO root fetch - processPackages [pulumi-aws]: Downloading https://files.pythonhosted.org/packages/e1/df/14b748e40340692e18bd19ad3631916881c3bfc6ab8cc9db1f79ca1fb86a/pulumi_aws-6.9.0a1699991594.tar.gz
+[2024-04-13 00:30:07] INFO root fetch - processPackages [upset-alttxt]: Downloading https://files.pythonhosted.org/packages/67/78/944b3247cc66bed7bcb291f2f8ff61bbbf6f645bd500545e9837cc4895bb/upset-alttxt-0.2.5.tar.gz
+[2024-04-13 00:30:07] INFO root fetch - processPackages [cortix]: Downloading https://files.pythonhosted.org/packages/37/0a/9081f12313305118ece4a1c77b7feb4a79e2596d6a4dcda1ab1fa21bdca3/cortix-1.1.8.tar.gz
+[2024-04-13 00:30:07] INFO root fetch - processPackages [Medfl]: Downloading https://files.pythonhosted.org/packages/6b/f6/78fcb98ebe7e5a84670319c4bd0876d08aafd6e37df6e30f48afa90bfe85/Medfl-0.1.5.tar.gz
+[2024-04-13 00:30:07] WARNING root fetch - processPackages [Medfl]: Skipping package: exceeds size limit 30632645>=10485760
+[2024-04-13 00:30:07] INFO root fetch - main [MainThread]: End processing [Medfl] error
+[2024-04-13 00:30:07] INFO root fetch - processPackages [lightpath]: Downloading https://files.pythonhosted.org/packages/1b/b9/b5269854b0f8bb5001e3495df8606a713e7f7da57469f66ab4d88a5211a7/lightpath-1.0.3.tar.gz
+[2024-04-13 00:30:07] INFO root fetch - processPackages [upset-alttxt]: Downloading https://files.pythonhosted.org/packages/78/ce/b153571a51223cdceee2cdd3474d95f485533ef5b9c9d9d56a0f73b10c3d/upset-alttxt-0.2.6.tar.gz
+[2024-04-13 00:30:08] INFO root fetch - processPackages [pulumi-aws]: Downloading https://files.pythonhosted.org/packages/f3/70/32e3669ea3bb0042d4f4aac12c2584c3217ddc25b9e1646f05b9a9e1a24f/pulumi_aws-6.9.0a1700084435.tar.gz
+[2024-04-13 00:30:08] INFO root fetch - processPackages [upset-alttxt]: executing diffoscope
+[2024-04-13 00:30:08] INFO root fetch - processPackages [upset-alttxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upset-alttxt-0.2.5.tar.gz tmp/upset-alttxt-0.2.6.tar.gz --markdown 20240413/u/upset-alttxt/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-04-13 00:30:08] INFO root fetch - processPackages [cortix]: Downloading https://files.pythonhosted.org/packages/8a/20/0dc7ff8b8ee40701bb4f342180d2f71ea4f0e79f48fdc930e9307c757bf5/cortix-1.1.9.tar.gz
+[2024-04-13 00:30:08] INFO root fetch - processPackages [lightpath]: Downloading https://files.pythonhosted.org/packages/be/da/d735b32f0de511399e4c447ed897162287af6b62b4fb35762c4eb92d690f/lightpath-1.0.4.tar.gz
+[2024-04-13 00:30:08] INFO root fetch - processPackages [lightpath]: executing diffoscope
+[2024-04-13 00:30:08] INFO root fetch - processPackages [lightpath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightpath-1.0.3.tar.gz tmp/lightpath-1.0.4.tar.gz --markdown 20240413/l/lightpath/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-13 00:30:08] INFO root fetch - processPackages [pulumi-aws]: executing diffoscope
+[2024-04-13 00:30:08] INFO root fetch - processPackages [pulumi-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aws-6.9.0a1699991594.tar.gz tmp/pulumi_aws-6.9.0a1700084435.tar.gz --markdown 20240413/p/pulumi-aws/6.9.0a1699991594-6.9.0a1700084435/README.md --exclude *.pyd
+[2024-04-13 00:30:08] INFO root fetch - processPackages [cortix]: executing diffoscope
+[2024-04-13 00:30:08] INFO root fetch - processPackages [cortix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cortix-1.1.8.tar.gz tmp/cortix-1.1.9.tar.gz --markdown 20240413/c/cortix/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-13 00:30:08] INFO root fetch - processPackages [upset-alttxt]: Remove: archive file [/home/abi/fetcher/tmp/upset-alttxt-0.2.5.tar.gz]
+[2024-04-13 00:30:08] INFO root fetch - processPackages [upset-alttxt]: Remove: archive file [/home/abi/fetcher/tmp/upset-alttxt-0.2.6.tar.gz]
+[2024-04-13 00:30:08] INFO root fetch - main [MainThread]: End processing [upset-alttxt]: success
+[2024-04-13 00:30:09] INFO root fetch - processPackages [lightpath]: Remove: archive file [/home/abi/fetcher/tmp/lightpath-1.0.3.tar.gz]
+[2024-04-13 00:30:09] INFO root fetch - processPackages [lightpath]: Remove: archive file [/home/abi/fetcher/tmp/lightpath-1.0.4.tar.gz]
+[2024-04-13 00:30:09] INFO root fetch - main [MainThread]: End processing [lightpath]: success
+[2024-04-13 00:30:09] INFO root fetch - processPackages [cortix]: Remove: archive file [/home/abi/fetcher/tmp/cortix-1.1.8.tar.gz]
+[2024-04-13 00:30:09] INFO root fetch - processPackages [cortix]: Remove: archive file [/home/abi/fetcher/tmp/cortix-1.1.9.tar.gz]
+[2024-04-13 00:30:09] INFO root fetch - main [MainThread]: End processing [cortix]: success
+[2024-04-13 00:30:24] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1699991594.tar.gz]
+[2024-04-13 00:30:24] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1700084435.tar.gz]
+[2024-04-13 00:30:24] INFO root fetch - main [MainThread]: End processing [pulumi-aws]: success
+[2024-04-13 00:30:24] INFO root fetch - main [MainThread]: Store serial: [22746475]
