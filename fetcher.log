@@ -1293,3 +1293,42 @@
 [2024-04-13 01:28:23] INFO root fetch - processPackages [bauplan]: Remove: archive file [/home/abi/fetcher/tmp/bauplan-0.0.3a9.tar.gz]
 [2024-04-13 01:28:23] INFO root fetch - main [MainThread]: End processing [bauplan]: success
 [2024-04-13 01:28:23] INFO root fetch - main [MainThread]: Store serial: [22746814]
+[2024-04-13 01:30:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746814]
+[2024-04-13 01:30:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 01:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openjsoncanvas
+[2024-04-13 01:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kgr
+[2024-04-13 01:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vulcan-utils
+[2024-04-13 01:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tetun-tokenizer
+[2024-04-13 01:30:55] INFO root fetch - processPackages [tetun-tokenizer]: New version: [1.2] Old Version: [1.1.4]
+[2024-04-13 01:30:55] INFO root fetch - processPackages [openjsoncanvas]: New version: [2.0.2] Old Version: [2.0.0]
+[2024-04-13 01:30:55] INFO root fetch - processPackages [vulcan-utils]: New version: [1.11.7] Old Version: [1.11.6]
+[2024-04-13 01:30:55] INFO root fetch - processPackages [kgr]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-13 01:30:55] INFO root fetch - processPackages [tetun-tokenizer]: Downloading https://files.pythonhosted.org/packages/27/1a/a43ecb4264e0fd253fba50a4f21083271051f8e7449759961dd27ce2a7ab/tetun_tokenizer-1.1.4.tar.gz
+[2024-04-13 01:30:55] INFO root fetch - processPackages [openjsoncanvas]: Downloading https://files.pythonhosted.org/packages/14/92/abe30cca15bfe84fd8ae5fa101d3aee98d4998bf988c4f534d55ca74380e/openjsoncanvas-2.0.0.tar.gz
+[2024-04-13 01:30:55] INFO root fetch - processPackages [vulcan-utils]: Downloading https://files.pythonhosted.org/packages/35/a2/4758dfd4737e7271f0090e69f9a204de547bbdb6bc62a3ae6840b0a03ed1/vulcan_utils-1.11.6.tar.gz
+[2024-04-13 01:30:55] INFO root fetch - processPackages [kgr]: Downloading https://files.pythonhosted.org/packages/30/77/9226f554b4381b49d440f434f8ba6a3deb183789e8f6d1ffc1557c671699/kgr-0.1.5.tar.gz
+[2024-04-13 01:30:55] INFO root fetch - processPackages [tetun-tokenizer]: Downloading https://files.pythonhosted.org/packages/af/f8/59d40d66ec7e7b2f847127b00c3a9382bd7584ca745f4e82289ca0af6a48/tetun_tokenizer-1.2.tar.gz
+[2024-04-13 01:30:55] INFO root fetch - processPackages [openjsoncanvas]: Downloading https://files.pythonhosted.org/packages/fe/a4/4b1cd331aa2456b678a1551677e9689f24fb07de42e8b8f2b9318300c45e/openjsoncanvas-2.0.2.tar.gz
+[2024-04-13 01:30:55] INFO root fetch - processPackages [vulcan-utils]: Downloading https://files.pythonhosted.org/packages/c2/96/4b88c8efeec71470452b7651083c9713a30d40518c074b04342fa97d0777/vulcan_utils-1.11.7.tar.gz
+[2024-04-13 01:30:55] INFO root fetch - processPackages [openjsoncanvas]: executing diffoscope
+[2024-04-13 01:30:55] INFO root fetch - processPackages [openjsoncanvas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openjsoncanvas-2.0.0.tar.gz tmp/openjsoncanvas-2.0.2.tar.gz --markdown 20240413/o/openjsoncanvas/2.0.0-2.0.2/README.md --exclude *.pyd
+[2024-04-13 01:30:55] INFO root fetch - processPackages [kgr]: Downloading https://files.pythonhosted.org/packages/28/2e/e48efa96d5a3ab56e20d22ea329189d521734216d6542c88736d76709ff5/kgr-0.1.6.tar.gz
+[2024-04-13 01:30:55] INFO root fetch - processPackages [vulcan-utils]: executing diffoscope
+[2024-04-13 01:30:55] INFO root fetch - processPackages [vulcan-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vulcan_utils-1.11.6.tar.gz tmp/vulcan_utils-1.11.7.tar.gz --markdown 20240413/v/vulcan-utils/1.11.6-1.11.7/README.md --exclude *.pyd
+[2024-04-13 01:30:56] INFO root fetch - processPackages [tetun-tokenizer]: executing diffoscope
+[2024-04-13 01:30:56] INFO root fetch - processPackages [tetun-tokenizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tetun_tokenizer-1.1.4.tar.gz tmp/tetun_tokenizer-1.2.tar.gz --markdown 20240413/t/tetun-tokenizer/1.1.4-1.2/README.md --exclude *.pyd
+[2024-04-13 01:30:56] INFO root fetch - processPackages [kgr]: executing diffoscope
+[2024-04-13 01:30:56] INFO root fetch - processPackages [kgr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kgr-0.1.5.tar.gz tmp/kgr-0.1.6.tar.gz --markdown 20240413/k/kgr/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-13 01:30:56] INFO root fetch - processPackages [openjsoncanvas]: Remove: archive file [/home/abi/fetcher/tmp/openjsoncanvas-2.0.0.tar.gz]
+[2024-04-13 01:30:56] INFO root fetch - processPackages [openjsoncanvas]: Remove: archive file [/home/abi/fetcher/tmp/openjsoncanvas-2.0.2.tar.gz]
+[2024-04-13 01:30:56] INFO root fetch - main [MainThread]: End processing [openjsoncanvas]: success
+[2024-04-13 01:30:56] INFO root fetch - processPackages [vulcan-utils]: Remove: archive file [/home/abi/fetcher/tmp/vulcan_utils-1.11.6.tar.gz]
+[2024-04-13 01:30:56] INFO root fetch - processPackages [vulcan-utils]: Remove: archive file [/home/abi/fetcher/tmp/vulcan_utils-1.11.7.tar.gz]
+[2024-04-13 01:30:56] INFO root fetch - main [MainThread]: End processing [vulcan-utils]: success
+[2024-04-13 01:30:56] INFO root fetch - processPackages [kgr]: Remove: archive file [/home/abi/fetcher/tmp/kgr-0.1.5.tar.gz]
+[2024-04-13 01:30:56] INFO root fetch - processPackages [kgr]: Remove: archive file [/home/abi/fetcher/tmp/kgr-0.1.6.tar.gz]
+[2024-04-13 01:30:56] INFO root fetch - main [MainThread]: End processing [kgr]: success
+[2024-04-13 01:30:56] INFO root fetch - processPackages [tetun-tokenizer]: Remove: archive file [/home/abi/fetcher/tmp/tetun_tokenizer-1.1.4.tar.gz]
+[2024-04-13 01:30:56] INFO root fetch - processPackages [tetun-tokenizer]: Remove: archive file [/home/abi/fetcher/tmp/tetun_tokenizer-1.2.tar.gz]
+[2024-04-13 01:30:56] INFO root fetch - main [MainThread]: End processing [tetun-tokenizer]: success
+[2024-04-13 01:30:56] INFO root fetch - main [MainThread]: Store serial: [22746827]
