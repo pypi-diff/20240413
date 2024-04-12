@@ -1428,3 +1428,63 @@
 [2024-04-13 01:37:32] INFO root fetch - processPackages [schedulefree]: Remove: archive file [/home/abi/fetcher/tmp/schedulefree-1.2.2.tar.gz]
 [2024-04-13 01:37:32] INFO root fetch - main [MainThread]: End processing [schedulefree]: success
 [2024-04-13 01:37:32] INFO root fetch - main [MainThread]: Store serial: [22746920]
+[2024-04-13 01:39:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746920]
+[2024-04-13 01:39:40] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-13 01:39:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: schedulefree
+[2024-04-13 01:39:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ranshark
+[2024-04-13 01:39:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: liveplotlib
+[2024-04-13 01:39:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aurora
+[2024-04-13 01:39:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: edgedb-pydantic-codegen
+[2024-04-13 01:39:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ogusa
+[2024-04-13 01:39:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dydantic
+[2024-04-13 01:39:40] INFO root fetch - processPackages [schedulefree]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-04-13 01:39:40] INFO root fetch - processPackages [schedulefree]: Downloading https://files.pythonhosted.org/packages/39/01/8115220a97da3e499d286c569616bc8f1fec6c011ee5f0bbb3c588a301a5/schedulefree-1.2.1.tar.gz
+[2024-04-13 01:39:40] INFO root fetch - processPackages [dydantic]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-13 01:39:41] INFO root fetch - processPackages [aurora]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-04-13 01:39:41] INFO root fetch - processPackages [ogusa]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-13 01:39:41] WARNING root fetch - processPackages [liveplotlib]: Skipping, unable to determine old version
+[2024-04-13 01:39:41] INFO root fetch - main [MainThread]: End processing [liveplotlib] error
+[2024-04-13 01:39:41] INFO root fetch - processPackages [ranshark]: New version: [1.0.0.9] Old Version: [1.0.0.8]
+[2024-04-13 01:39:41] INFO root fetch - processPackages [edgedb-pydantic-codegen]: New version: [2024.4.1] Old Version: [2024.4.0]
+[2024-04-13 01:39:41] INFO root fetch - processPackages [schedulefree]: Downloading https://files.pythonhosted.org/packages/91/fa/30c6aa6fbf7940843a2b84e2b60263f21f8ff17ad13f30c59da46d6ddde0/schedulefree-1.2.2.tar.gz
+[2024-04-13 01:39:41] INFO root fetch - processPackages [aurora]: Downloading https://files.pythonhosted.org/packages/08/a0/04338ce09d3e12ff630fe6fc5c3a29a5cdb7f781f85f917613eb5bc348d1/aurora-0.3.6.tar.gz
+[2024-04-13 01:39:41] INFO root fetch - processPackages [ogusa]: Downloading https://files.pythonhosted.org/packages/ca/ea/b5297b9952635f5cd71d8638737558b1b69bce8bf287e8e37c80357a7bf0/ogusa-0.1.4.tar.gz
+[2024-04-13 01:39:41] INFO root fetch - processPackages [ranshark]: Downloading https://files.pythonhosted.org/packages/62/ca/4d91bcb8a91c6cc4ba33a8efd687deae3da54c1b894e76239f3c5925977e/ranshark-1.0.0.8-py3-none-any.whl
+[2024-04-13 01:39:41] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Downloading https://files.pythonhosted.org/packages/f1/23/478668d27e67053beae06688ee87a0810a918c39526edb66e8a6137a0b36/edgedb_pydantic_codegen-2024.4.0.tar.gz
+[2024-04-13 01:39:41] INFO root fetch - processPackages [dydantic]: Downloading https://files.pythonhosted.org/packages/03/c8/0c1504cbda2e30c9a5b3b6a1e4f0245176b2b84b80ee39a73ea39ec7f8bc/dydantic-0.0.3.tar.gz
+[2024-04-13 01:39:41] INFO root fetch - processPackages [schedulefree]: executing diffoscope
+[2024-04-13 01:39:41] INFO root fetch - processPackages [schedulefree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schedulefree-1.2.1.tar.gz tmp/schedulefree-1.2.2.tar.gz --markdown 20240413/s/schedulefree/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-04-13 01:39:41] INFO root fetch - processPackages [dydantic]: Downloading https://files.pythonhosted.org/packages/03/04/d4a84f6bd8bd0290f1c4e587d44a7bb7cf96819f285809010c89f2e87a5b/dydantic-0.0.4.tar.gz
+[2024-04-13 01:39:41] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Downloading https://files.pythonhosted.org/packages/6e/a9/d053422f5cca45375ec10c991afd9eddc80a72e160d858123dbb399f9e56/edgedb_pydantic_codegen-2024.4.1.tar.gz
+[2024-04-13 01:39:41] INFO root fetch - processPackages [ranshark]: Downloading https://files.pythonhosted.org/packages/a5/92/0e9a46ccaf5cd25d0e196687e2cfce54dd180ae00a8dae0b37ef3cad2248/ranshark-1.0.0.9-py3-none-any.whl
+[2024-04-13 01:39:41] INFO root fetch - processPackages [ogusa]: Downloading https://files.pythonhosted.org/packages/ed/a4/eb964098e81e45ae77aaed74b41c4852f88fcb5f1f405544c2702ad65d83/ogusa-0.1.5.tar.gz
+[2024-04-13 01:39:41] INFO root fetch - processPackages [dydantic]: executing diffoscope
+[2024-04-13 01:39:41] INFO root fetch - processPackages [dydantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dydantic-0.0.3.tar.gz tmp/dydantic-0.0.4.tar.gz --markdown 20240413/d/dydantic/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-13 01:39:41] INFO root fetch - processPackages [edgedb-pydantic-codegen]: executing diffoscope
+[2024-04-13 01:39:41] INFO root fetch - processPackages [edgedb-pydantic-codegen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgedb_pydantic_codegen-2024.4.0.tar.gz tmp/edgedb_pydantic_codegen-2024.4.1.tar.gz --markdown 20240413/e/edgedb-pydantic-codegen/2024.4.0-2024.4.1/README.md --exclude *.pyd
+[2024-04-13 01:39:41] INFO root fetch - processPackages [aurora]: Downloading https://files.pythonhosted.org/packages/00/60/447175a577b0ceea6c3a14cd4ef01812896681de280ef3cf798077d180f2/aurora-0.3.7.tar.gz
+[2024-04-13 01:39:41] INFO root fetch - processPackages [ogusa]: executing diffoscope
+[2024-04-13 01:39:41] INFO root fetch - processPackages [ogusa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ogusa-0.1.4.tar.gz tmp/ogusa-0.1.5.tar.gz --markdown 20240413/o/ogusa/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-13 01:39:41] INFO root fetch - processPackages [ranshark]: executing diffoscope
+[2024-04-13 01:39:41] INFO root fetch - processPackages [ranshark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ranshark-1.0.0.8-py3-none-any.whl.zip tmp/ranshark-1.0.0.9-py3-none-any.whl.zip --markdown 20240413/r/ranshark/1.0.0.8-1.0.0.9/README.md --exclude *.pyd
+[2024-04-13 01:39:42] INFO root fetch - processPackages [schedulefree]: Remove: archive file [/home/abi/fetcher/tmp/schedulefree-1.2.1.tar.gz]
+[2024-04-13 01:39:42] INFO root fetch - processPackages [schedulefree]: Remove: archive file [/home/abi/fetcher/tmp/schedulefree-1.2.2.tar.gz]
+[2024-04-13 01:39:42] INFO root fetch - main [MainThread]: End processing [schedulefree]: success
+[2024-04-13 01:39:42] INFO root fetch - processPackages [dydantic]: Remove: archive file [/home/abi/fetcher/tmp/dydantic-0.0.3.tar.gz]
+[2024-04-13 01:39:42] INFO root fetch - processPackages [dydantic]: Remove: archive file [/home/abi/fetcher/tmp/dydantic-0.0.4.tar.gz]
+[2024-04-13 01:39:42] INFO root fetch - main [MainThread]: End processing [dydantic]: success
+[2024-04-13 01:39:42] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_pydantic_codegen-2024.4.0.tar.gz]
+[2024-04-13 01:39:42] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_pydantic_codegen-2024.4.1.tar.gz]
+[2024-04-13 01:39:42] INFO root fetch - main [MainThread]: End processing [edgedb-pydantic-codegen]: success
+[2024-04-13 01:39:42] INFO root fetch - processPackages [ogusa]: Remove: archive file [/home/abi/fetcher/tmp/ogusa-0.1.4.tar.gz]
+[2024-04-13 01:39:42] INFO root fetch - processPackages [ogusa]: Remove: archive file [/home/abi/fetcher/tmp/ogusa-0.1.5.tar.gz]
+[2024-04-13 01:39:42] INFO root fetch - main [MainThread]: End processing [ogusa]: success
+[2024-04-13 01:39:42] INFO root fetch - processPackages [ranshark]: Remove: archive file [/home/abi/fetcher/tmp/ranshark-1.0.0.8-py3-none-any.whl.zip]
+[2024-04-13 01:39:42] INFO root fetch - processPackages [ranshark]: Remove: archive file [/home/abi/fetcher/tmp/ranshark-1.0.0.9-py3-none-any.whl.zip]
+[2024-04-13 01:39:42] INFO root fetch - main [MainThread]: End processing [ranshark]: success
+[2024-04-13 01:39:43] INFO root fetch - processPackages [aurora]: executing diffoscope
+[2024-04-13 01:39:43] INFO root fetch - processPackages [aurora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aurora-0.3.6.tar.gz tmp/aurora-0.3.7.tar.gz --markdown 20240413/a/aurora/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-04-13 01:39:44] INFO root fetch - processPackages [aurora]: Remove: archive file [/home/abi/fetcher/tmp/aurora-0.3.6.tar.gz]
+[2024-04-13 01:39:44] INFO root fetch - processPackages [aurora]: Remove: archive file [/home/abi/fetcher/tmp/aurora-0.3.7.tar.gz]
+[2024-04-13 01:39:44] INFO root fetch - main [MainThread]: End processing [aurora]: success
+[2024-04-13 01:39:44] INFO root fetch - main [MainThread]: Store serial: [22746943]
