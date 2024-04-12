@@ -400,3 +400,45 @@
 [2024-04-13 00:23:31] INFO root fetch - processPackages [trame-client]: Remove: archive file [/home/abi/fetcher/tmp/trame-client-3.0.1.tar.gz]
 [2024-04-13 00:23:31] INFO root fetch - main [MainThread]: End processing [trame-client]: success
 [2024-04-13 00:23:31] INFO root fetch - main [MainThread]: Store serial: [22746433]
+[2024-04-13 00:25:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746433]
+[2024-04-13 00:25:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 00:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trame-client
+[2024-04-13 00:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mth5
+[2024-04-13 00:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tmnt
+[2024-04-13 00:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: inewave
+[2024-04-13 00:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: skelescope
+[2024-04-13 00:25:40] WARNING root fetch - processPackages [skelescope]: Skipping, unable to determine old version
+[2024-04-13 00:25:40] INFO root fetch - main [MainThread]: End processing [skelescope] error
+[2024-04-13 00:25:40] INFO root fetch - processPackages [trame-client]: New version: [3.0.1] Old Version: [3.0.0]
+[2024-04-13 00:25:40] INFO root fetch - processPackages [inewave]: New version: [1.7.4] Old Version: [1.7.3]
+[2024-04-13 00:25:40] INFO root fetch - processPackages [tmnt]: New version: [0.7.50] Old Version: [0.7.4b20231227]
+[2024-04-13 00:25:40] INFO root fetch - processPackages [mth5]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-04-13 00:25:40] INFO root fetch - processPackages [trame-client]: Downloading https://files.pythonhosted.org/packages/93/22/c521dc316d7e6b92c7282fa41b3f4f15b15beeaf4a5eb554ddb8dda4915e/trame-client-3.0.0.tar.gz
+[2024-04-13 00:25:40] INFO root fetch - processPackages [inewave]: Downloading https://files.pythonhosted.org/packages/9d/e5/b6d8c68a14e68ea2f13ec307b1c167f5ede2e6b7f389bd69c53d703b99a1/inewave-1.7.3.tar.gz
+[2024-04-13 00:25:40] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/ea/3a/0cd54af36ea52550ab5b0361342ea6cbae9843227af8a4fe56d32695a1f3/tmnt-0.7.4b20231227.tar.gz
+[2024-04-13 00:25:40] INFO root fetch - processPackages [mth5]: Downloading https://files.pythonhosted.org/packages/85/03/28f4a56c07b8a2d637a5fb9f148014d1090f8eeb5bb2f9ce0a9f2e9ebf6a/mth5-0.4.2.tar.gz
+[2024-04-13 00:25:40] INFO root fetch - processPackages [trame-client]: Downloading https://files.pythonhosted.org/packages/96/c9/a2f57a9fa831c96c706ad848792715c8a70febfa535cd13664e06521a14b/trame-client-3.0.1.tar.gz
+[2024-04-13 00:25:40] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/1f/01/3f15788eecb51981c0ef5946fee503f5813f8f266569c60d2cab488dd6c4/tmnt-0.7.50.tar.gz
+[2024-04-13 00:25:40] INFO root fetch - processPackages [trame-client]: executing diffoscope
+[2024-04-13 00:25:40] INFO root fetch - processPackages [trame-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trame-client-3.0.0.tar.gz tmp/trame-client-3.0.1.tar.gz --markdown 20240413/t/trame-client/3.0.0-3.0.1/README.md --exclude *.pyd
+[2024-04-13 00:25:40] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2024-04-13 00:25:40] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.4b20231227.tar.gz tmp/tmnt-0.7.50.tar.gz --markdown 20240413/t/tmnt/0.7.4b20231227-0.7.50/README.md --exclude *.pyd
+[2024-04-13 00:25:40] INFO root fetch - processPackages [inewave]: Downloading https://files.pythonhosted.org/packages/66/18/a6afa38252815f0d6bfd55c9dd86394884b1327b37c9eeedab02f8500ebb/inewave-1.7.4.tar.gz
+[2024-04-13 00:25:40] INFO root fetch - processPackages [mth5]: Downloading https://files.pythonhosted.org/packages/f3/66/960ed7b44e39e4d39c08c1d779e0ba5fb6e31a769b5cabc2476f9c6fac4a/mth5-0.4.3.tar.gz
+[2024-04-13 00:25:41] INFO root fetch - processPackages [mth5]: executing diffoscope
+[2024-04-13 00:25:41] INFO root fetch - processPackages [mth5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mth5-0.4.2.tar.gz tmp/mth5-0.4.3.tar.gz --markdown 20240413/m/mth5/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-04-13 00:25:41] INFO root fetch - processPackages [inewave]: executing diffoscope
+[2024-04-13 00:25:41] INFO root fetch - processPackages [inewave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inewave-1.7.3.tar.gz tmp/inewave-1.7.4.tar.gz --markdown 20240413/i/inewave/1.7.3-1.7.4/README.md --exclude *.pyd
+[2024-04-13 00:25:41] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.4b20231227.tar.gz]
+[2024-04-13 00:25:41] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.50.tar.gz]
+[2024-04-13 00:25:41] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2024-04-13 00:25:42] INFO root fetch - processPackages [mth5]: Remove: archive file [/home/abi/fetcher/tmp/mth5-0.4.2.tar.gz]
+[2024-04-13 00:25:42] INFO root fetch - processPackages [trame-client]: Remove: archive file [/home/abi/fetcher/tmp/trame-client-3.0.0.tar.gz]
+[2024-04-13 00:25:42] INFO root fetch - processPackages [trame-client]: Remove: archive file [/home/abi/fetcher/tmp/trame-client-3.0.1.tar.gz]
+[2024-04-13 00:25:42] INFO root fetch - processPackages [mth5]: Remove: archive file [/home/abi/fetcher/tmp/mth5-0.4.3.tar.gz]
+[2024-04-13 00:25:42] INFO root fetch - main [MainThread]: End processing [trame-client]: success
+[2024-04-13 00:25:42] INFO root fetch - main [MainThread]: End processing [mth5]: success
+[2024-04-13 00:25:47] INFO root fetch - processPackages [inewave]: Remove: archive file [/home/abi/fetcher/tmp/inewave-1.7.3.tar.gz]
+[2024-04-13 00:25:47] INFO root fetch - processPackages [inewave]: Remove: archive file [/home/abi/fetcher/tmp/inewave-1.7.4.tar.gz]
+[2024-04-13 00:25:47] INFO root fetch - main [MainThread]: End processing [inewave]: success
+[2024-04-13 00:25:47] INFO root fetch - main [MainThread]: Store serial: [22746451]
