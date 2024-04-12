@@ -258,3 +258,39 @@
 [2024-04-13 00:16:53] INFO root fetch - processPackages [duplocloud-client]: Remove: archive file [/home/abi/fetcher/tmp/duplocloud-client-0.2.9.tar.gz]
 [2024-04-13 00:16:53] INFO root fetch - main [MainThread]: End processing [duplocloud-client]: success
 [2024-04-13 00:16:53] INFO root fetch - main [MainThread]: Store serial: [22746380]
+[2024-04-13 00:18:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746380]
+[2024-04-13 00:19:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 00:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlglot
+[2024-04-13 00:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mt-metadata
+[2024-04-13 00:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reverse-engineered-apis.flatastic
+[2024-04-13 00:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tmdb-client
+[2024-04-13 00:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: facialfinder
+[2024-04-13 00:19:02] INFO root fetch - processPackages [facialfinder]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-13 00:19:02] INFO root fetch - processPackages [sqlglot]: New version: [9.0.6] Old Version: [9.0.5]
+[2024-04-13 00:19:02] WARNING root fetch - processPackages [tmdb-client]: Skipping, unable to determine old version
+[2024-04-13 00:19:02] INFO root fetch - main [MainThread]: End processing [tmdb-client] error
+[2024-04-13 00:19:02] INFO root fetch - processPackages [facialfinder]: Downloading https://files.pythonhosted.org/packages/73/73/452627566c42e037dbc27476d16f565ba25ac47ad034177fb13c474a8882/facialfinder-0.0.2.tar.gz
+[2024-04-13 00:19:02] WARNING root fetch - processPackages [reverse-engineered-apis.flatastic]: Skipping, unable to determine old version
+[2024-04-13 00:19:02] INFO root fetch - main [MainThread]: End processing [reverse-engineered-apis.flatastic] error
+[2024-04-13 00:19:02] INFO root fetch - processPackages [mt-metadata]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-04-13 00:19:02] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/20/6b/5034324cd2ac42831b5103037f6a14e518172128c4196b8d01b93dcc76c8/sqlglot-9.0.5.tar.gz
+[2024-04-13 00:19:02] INFO root fetch - processPackages [facialfinder]: Downloading https://files.pythonhosted.org/packages/1b/7d/0c4462ae0eb7f0d193436ff4779bddc6954759a437733ab3a4fe16696683/facialfinder-0.0.3.tar.gz
+[2024-04-13 00:19:02] INFO root fetch - processPackages [mt-metadata]: Downloading https://files.pythonhosted.org/packages/09/7b/60305cdc42741797728f73b7719539b4bbe392758137da224f021cc872a6/mt_metadata-0.3.4.tar.gz
+[2024-04-13 00:19:02] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/36/2a/e7389a112e1a7cfd1fcc7c7209a0f8f5ffe905ce8aad03f447367dc9b209/sqlglot-9.0.6.tar.gz
+[2024-04-13 00:19:02] INFO root fetch - processPackages [facialfinder]: executing diffoscope
+[2024-04-13 00:19:02] INFO root fetch - processPackages [facialfinder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/facialfinder-0.0.2.tar.gz tmp/facialfinder-0.0.3.tar.gz --markdown 20240413/f/facialfinder/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-13 00:19:02] INFO root fetch - processPackages [sqlglot]: executing diffoscope
+[2024-04-13 00:19:02] INFO root fetch - processPackages [sqlglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlglot-9.0.5.tar.gz tmp/sqlglot-9.0.6.tar.gz --markdown 20240413/s/sqlglot/9.0.5-9.0.6/README.md --exclude *.pyd
+[2024-04-13 00:19:03] INFO root fetch - processPackages [mt-metadata]: Downloading https://files.pythonhosted.org/packages/b8/77/b0a8b2b496aeaf25eb75d355aab46ae8dda8c799fe36aafda9522938a6aa/mt_metadata-0.3.5.tar.gz
+[2024-04-13 00:19:03] INFO root fetch - processPackages [facialfinder]: Remove: archive file [/home/abi/fetcher/tmp/facialfinder-0.0.2.tar.gz]
+[2024-04-13 00:19:03] INFO root fetch - processPackages [facialfinder]: Remove: archive file [/home/abi/fetcher/tmp/facialfinder-0.0.3.tar.gz]
+[2024-04-13 00:19:03] INFO root fetch - main [MainThread]: End processing [facialfinder]: success
+[2024-04-13 00:19:03] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.5.tar.gz]
+[2024-04-13 00:19:03] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.6.tar.gz]
+[2024-04-13 00:19:03] INFO root fetch - main [MainThread]: End processing [sqlglot]: success
+[2024-04-13 00:19:04] INFO root fetch - processPackages [mt-metadata]: executing diffoscope
+[2024-04-13 00:19:04] INFO root fetch - processPackages [mt-metadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mt_metadata-0.3.4.tar.gz tmp/mt_metadata-0.3.5.tar.gz --markdown 20240413/m/mt-metadata/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-04-13 00:19:08] INFO root fetch - processPackages [mt-metadata]: Remove: archive file [/home/abi/fetcher/tmp/mt_metadata-0.3.4.tar.gz]
+[2024-04-13 00:19:08] INFO root fetch - processPackages [mt-metadata]: Remove: archive file [/home/abi/fetcher/tmp/mt_metadata-0.3.5.tar.gz]
+[2024-04-13 00:19:08] INFO root fetch - main [MainThread]: End processing [mt-metadata]: success
+[2024-04-13 00:19:08] INFO root fetch - main [MainThread]: Store serial: [22746398]
