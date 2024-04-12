@@ -338,3 +338,65 @@
 [2024-04-13 00:21:18] INFO root fetch - processPackages [eox-tenant]: Remove: archive file [/home/abi/fetcher/tmp/eox-tenant-9.2.1.tar.gz]
 [2024-04-13 00:21:18] INFO root fetch - main [MainThread]: End processing [eox-tenant]: success
 [2024-04-13 00:21:18] INFO root fetch - main [MainThread]: Store serial: [22746411]
+[2024-04-13 00:23:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746411]
+[2024-04-13 00:23:27] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-13 00:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: samino
+[2024-04-13 00:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: panama-ruc-dv-calculator
+[2024-04-13 00:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: benjiamin
+[2024-04-13 00:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: codex
+[2024-04-13 00:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: leads
+[2024-04-13 00:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: carbonplan-data
+[2024-04-13 00:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: trame-client
+[2024-04-13 00:23:27] INFO root fetch - processPackages [carbonplan-data]: New version: [0.4.3] Old Version: [0.4.0]
+[2024-04-13 00:23:27] INFO root fetch - processPackages [benjiamin]: New version: [5.0.0] Old Version: [4.0.0]
+[2024-04-13 00:23:27] INFO root fetch - processPackages [samino]: New version: [2.6.2] Old Version: [2.6.1]
+[2024-04-13 00:23:28] INFO root fetch - processPackages [carbonplan-data]: Downloading https://files.pythonhosted.org/packages/f9/d6/c5549432dffe30c410235ef58eb870c622294bb3f3681752e88f47c265e7/carbonplan-data-0.4.0.tar.gz
+[2024-04-13 00:23:28] INFO root fetch - processPackages [panama-ruc-dv-calculator]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-13 00:23:28] INFO root fetch - processPackages [benjiamin]: Downloading https://files.pythonhosted.org/packages/df/80/9f2456d3b5019fa0988cf542acad8045a812fbfd26ecd03bf08aecee754f/benjiamin-4.0.0.tar.gz
+[2024-04-13 00:23:28] INFO root fetch - processPackages [samino]: Downloading https://files.pythonhosted.org/packages/98/a8/8e011806e8aa8b1151aad8ba65b3c179adda067cf6f6032cf84c488706ce/samino-2.6.1.tar.gz
+[2024-04-13 00:23:28] INFO root fetch - processPackages [leads]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-04-13 00:23:28] INFO root fetch - processPackages [codex]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-04-13 00:23:28] INFO root fetch - processPackages [trame-client]: New version: [3.0.1] Old Version: [3.0.0]
+[2024-04-13 00:23:28] INFO root fetch - processPackages [panama-ruc-dv-calculator]: Downloading https://files.pythonhosted.org/packages/32/7d/7ad855b1f49a205d171c5f34da5f2bda72d5421691e098ebf7ccad959e49/panama-ruc-dv-calculator-1.0.3.tar.gz
+[2024-04-13 00:23:28] INFO root fetch - processPackages [leads]: Downloading https://files.pythonhosted.org/packages/84/22/bb12180e417960ef462483ba20dfa702c1c44cabac5e47042cf8d4f7061a/leads-0.8.8.tar.gz
+[2024-04-13 00:23:28] INFO root fetch - processPackages [codex]: Downloading https://files.pythonhosted.org/packages/0c/6f/7c4b25c7a3f59e29de3052fd98dcb78a9ee044406464991bc45a1fd4a48f/codex-1.5.8.tar.gz
+[2024-04-13 00:23:28] INFO root fetch - processPackages [carbonplan-data]: Downloading https://files.pythonhosted.org/packages/35/64/b2775c79ef1acab522ef20a7ceb12234ef202738c0eceac467d466b84959/carbonplan_data-0.4.3.tar.gz
+[2024-04-13 00:23:28] INFO root fetch - processPackages [benjiamin]: Downloading https://files.pythonhosted.org/packages/e4/41/db1860197ea92331a6579baa070c89e85e267f17d703ce2f999cebde5161/benjiamin-5.0.0.tar.gz
+[2024-04-13 00:23:28] INFO root fetch - processPackages [samino]: Downloading https://files.pythonhosted.org/packages/69/9b/9f4fa41575fe62885937862dc0c0adc07c03ca9b926d54b75d42d3fff2f7/samino-2.6.2.tar.gz
+[2024-04-13 00:23:28] INFO root fetch - processPackages [carbonplan-data]: executing diffoscope
+[2024-04-13 00:23:28] INFO root fetch - processPackages [carbonplan-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carbonplan-data-0.4.0.tar.gz tmp/carbonplan_data-0.4.3.tar.gz --markdown 20240413/c/carbonplan-data/0.4.0-0.4.3/README.md --exclude *.pyd
+[2024-04-13 00:23:28] INFO root fetch - processPackages [benjiamin]: executing diffoscope
+[2024-04-13 00:23:28] INFO root fetch - processPackages [benjiamin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/benjiamin-4.0.0.tar.gz tmp/benjiamin-5.0.0.tar.gz --markdown 20240413/b/benjiamin/4.0.0-5.0.0/README.md --exclude *.pyd
+[2024-04-13 00:23:28] WARNING root fetch - processPackages [codex]: Skipping package: exceeds size limit 18232846>=10485760
+[2024-04-13 00:23:28] INFO root fetch - main [MainThread]: End processing [codex] error
+[2024-04-13 00:23:28] INFO root fetch - processPackages [panama-ruc-dv-calculator]: Downloading https://files.pythonhosted.org/packages/91/f3/692d31d6fb3d098435c04fd81e1dbb93b9ebdb23023618c83c7b6d3a0cb2/panama-ruc-dv-calculator-1.0.4.tar.gz
+[2024-04-13 00:23:28] INFO root fetch - processPackages [trame-client]: Downloading https://files.pythonhosted.org/packages/93/22/c521dc316d7e6b92c7282fa41b3f4f15b15beeaf4a5eb554ddb8dda4915e/trame-client-3.0.0.tar.gz
+[2024-04-13 00:23:28] INFO root fetch - processPackages [samino]: executing diffoscope
+[2024-04-13 00:23:28] INFO root fetch - processPackages [samino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/samino-2.6.1.tar.gz tmp/samino-2.6.2.tar.gz --markdown 20240413/s/samino/2.6.1-2.6.2/README.md --exclude *.pyd
+[2024-04-13 00:23:28] INFO root fetch - processPackages [panama-ruc-dv-calculator]: executing diffoscope
+[2024-04-13 00:23:28] INFO root fetch - processPackages [panama-ruc-dv-calculator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panama-ruc-dv-calculator-1.0.3.tar.gz tmp/panama-ruc-dv-calculator-1.0.4.tar.gz --markdown 20240413/p/panama-ruc-dv-calculator/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-13 00:23:28] INFO root fetch - processPackages [leads]: Downloading https://files.pythonhosted.org/packages/39/e8/fa2e5f7f0d11837315b2fee4d21c7cb7c4973873d9d51b4abc5b357bf19f/leads-0.8.9.tar.gz
+[2024-04-13 00:23:28] INFO root fetch - processPackages [trame-client]: Downloading https://files.pythonhosted.org/packages/96/c9/a2f57a9fa831c96c706ad848792715c8a70febfa535cd13664e06521a14b/trame-client-3.0.1.tar.gz
+[2024-04-13 00:23:28] INFO root fetch - processPackages [leads]: executing diffoscope
+[2024-04-13 00:23:28] INFO root fetch - processPackages [leads]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leads-0.8.8.tar.gz tmp/leads-0.8.9.tar.gz --markdown 20240413/l/leads/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-04-13 00:23:29] INFO root fetch - processPackages [benjiamin]: Remove: archive file [/home/abi/fetcher/tmp/benjiamin-4.0.0.tar.gz]
+[2024-04-13 00:23:29] INFO root fetch - processPackages [benjiamin]: Remove: archive file [/home/abi/fetcher/tmp/benjiamin-5.0.0.tar.gz]
+[2024-04-13 00:23:29] INFO root fetch - main [MainThread]: End processing [benjiamin]: success
+[2024-04-13 00:23:29] INFO root fetch - processPackages [trame-client]: executing diffoscope
+[2024-04-13 00:23:29] INFO root fetch - processPackages [trame-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trame-client-3.0.0.tar.gz tmp/trame-client-3.0.1.tar.gz --markdown 20240413/t/trame-client/3.0.0-3.0.1/README.md --exclude *.pyd
+[2024-04-13 00:23:29] INFO root fetch - processPackages [panama-ruc-dv-calculator]: Remove: archive file [/home/abi/fetcher/tmp/panama-ruc-dv-calculator-1.0.3.tar.gz]
+[2024-04-13 00:23:29] INFO root fetch - processPackages [panama-ruc-dv-calculator]: Remove: archive file [/home/abi/fetcher/tmp/panama-ruc-dv-calculator-1.0.4.tar.gz]
+[2024-04-13 00:23:29] INFO root fetch - main [MainThread]: End processing [panama-ruc-dv-calculator]: success
+[2024-04-13 00:23:29] INFO root fetch - processPackages [samino]: Remove: archive file [/home/abi/fetcher/tmp/samino-2.6.1.tar.gz]
+[2024-04-13 00:23:29] INFO root fetch - processPackages [samino]: Remove: archive file [/home/abi/fetcher/tmp/samino-2.6.2.tar.gz]
+[2024-04-13 00:23:29] INFO root fetch - main [MainThread]: End processing [samino]: success
+[2024-04-13 00:23:29] INFO root fetch - processPackages [leads]: Remove: archive file [/home/abi/fetcher/tmp/leads-0.8.8.tar.gz]
+[2024-04-13 00:23:29] INFO root fetch - processPackages [leads]: Remove: archive file [/home/abi/fetcher/tmp/leads-0.8.9.tar.gz]
+[2024-04-13 00:23:29] INFO root fetch - main [MainThread]: End processing [leads]: success
+[2024-04-13 00:23:30] INFO root fetch - processPackages [carbonplan-data]: Remove: archive file [/home/abi/fetcher/tmp/carbonplan-data-0.4.0.tar.gz]
+[2024-04-13 00:23:30] INFO root fetch - processPackages [carbonplan-data]: Remove: archive file [/home/abi/fetcher/tmp/carbonplan_data-0.4.3.tar.gz]
+[2024-04-13 00:23:30] INFO root fetch - main [MainThread]: End processing [carbonplan-data]: success
+[2024-04-13 00:23:31] INFO root fetch - processPackages [trame-client]: Remove: archive file [/home/abi/fetcher/tmp/trame-client-3.0.0.tar.gz]
+[2024-04-13 00:23:31] INFO root fetch - processPackages [trame-client]: Remove: archive file [/home/abi/fetcher/tmp/trame-client-3.0.1.tar.gz]
+[2024-04-13 00:23:31] INFO root fetch - main [MainThread]: End processing [trame-client]: success
+[2024-04-13 00:23:31] INFO root fetch - main [MainThread]: Store serial: [22746433]
