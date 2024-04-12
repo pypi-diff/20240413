@@ -1374,3 +1374,18 @@
 [2024-04-13 01:33:09] INFO root fetch - processPackages [psqlpy]: Remove: archive file [/home/abi/fetcher/tmp/psqlpy-0.5.1-pp310-pypy310_pp73-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl.zip]
 [2024-04-13 01:33:09] INFO root fetch - main [MainThread]: End processing [psqlpy]: success
 [2024-04-13 01:33:09] INFO root fetch - main [MainThread]: Store serial: [22746885]
+[2024-04-13 01:35:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746885]
+[2024-04-13 01:35:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 01:35:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchutil
+[2024-04-13 01:35:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: LinguAlign
+[2024-04-13 01:35:19] INFO root fetch - processPackages [torchutil]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 01:35:19] WARNING root fetch - processPackages [LinguAlign]: Skipping, unable to determine old version
+[2024-04-13 01:35:19] INFO root fetch - main [MainThread]: End processing [LinguAlign] error
+[2024-04-13 01:35:19] INFO root fetch - processPackages [torchutil]: Downloading https://files.pythonhosted.org/packages/54/d1/790755cc24d93012bed91327ab2e1d00b3caf425c7922c0583c28dcac4aa/torchutil-0.0.8.tar.gz
+[2024-04-13 01:35:19] INFO root fetch - processPackages [torchutil]: Downloading https://files.pythonhosted.org/packages/2d/08/444571c1693f034d7a00bbe1389f94940531a02d2f62c1db328e2dcb60c6/torchutil-0.0.9.tar.gz
+[2024-04-13 01:35:20] INFO root fetch - processPackages [torchutil]: executing diffoscope
+[2024-04-13 01:35:20] INFO root fetch - processPackages [torchutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchutil-0.0.8.tar.gz tmp/torchutil-0.0.9.tar.gz --markdown 20240413/t/torchutil/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 01:35:20] INFO root fetch - processPackages [torchutil]: Remove: archive file [/home/abi/fetcher/tmp/torchutil-0.0.8.tar.gz]
+[2024-04-13 01:35:20] INFO root fetch - processPackages [torchutil]: Remove: archive file [/home/abi/fetcher/tmp/torchutil-0.0.9.tar.gz]
+[2024-04-13 01:35:20] INFO root fetch - main [MainThread]: End processing [torchutil]: success
+[2024-04-13 01:35:20] INFO root fetch - main [MainThread]: Store serial: [22746911]
