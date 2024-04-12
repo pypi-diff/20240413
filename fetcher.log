@@ -1199,3 +1199,30 @@
 [2024-04-13 01:15:07] INFO root fetch - processPackages [the-real-genotools]: Remove: archive file [/home/abi/fetcher/tmp/the_real_genotools-1.2.2.tar.gz]
 [2024-04-13 01:15:07] INFO root fetch - main [MainThread]: End processing [the-real-genotools]: success
 [2024-04-13 01:15:07] INFO root fetch - main [MainThread]: Store serial: [22746779]
+[2024-04-13 01:17:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746779]
+[2024-04-13 01:17:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 01:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nodespecs
+[2024-04-13 01:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rime-sdk
+[2024-04-13 01:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prostats
+[2024-04-13 01:17:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: getlino
+[2024-04-13 01:17:17] WARNING root fetch - processPackages [nodespecs]: Skipping, unable to determine old version
+[2024-04-13 01:17:17] INFO root fetch - main [MainThread]: End processing [nodespecs] error
+[2024-04-13 01:17:17] WARNING root fetch - processPackages [prostats]: Skipping, unable to determine old version
+[2024-04-13 01:17:17] INFO root fetch - main [MainThread]: End processing [prostats] error
+[2024-04-13 01:17:17] INFO root fetch - processPackages [getlino]: New version: [24.4.0] Old Version: [24.3.0]
+[2024-04-13 01:17:17] INFO root fetch - processPackages [rime-sdk]: New version: [2.8.0rc4] Old Version: [2.8.0rc3]
+[2024-04-13 01:17:17] INFO root fetch - processPackages [getlino]: Downloading https://files.pythonhosted.org/packages/bb/bc/461910f66431be1ae51830780ffbc85c4beb114d1a1177b6078ef5b45f33/getlino-24.3.0.tar.gz
+[2024-04-13 01:17:18] INFO root fetch - processPackages [rime-sdk]: Downloading https://files.pythonhosted.org/packages/14/2d/d1fb220a831097e8102bfc3a01b27cffa87053febb74031b87ed929e614b/rime_sdk-2.8.0rc3.tar.gz
+[2024-04-13 01:17:18] INFO root fetch - processPackages [getlino]: Downloading https://files.pythonhosted.org/packages/64/c4/0c6c7af4c079c29fff1f9432b734e8a02304093eda769ebc51117b06e9aa/getlino-24.4.0.tar.gz
+[2024-04-13 01:17:18] INFO root fetch - processPackages [rime-sdk]: Downloading https://files.pythonhosted.org/packages/d8/e5/f8773b988dbeeab44697eb468b65379e93b668a57299304a100f6938db8a/rime_sdk-2.8.0rc4.tar.gz
+[2024-04-13 01:17:18] INFO root fetch - processPackages [getlino]: executing diffoscope
+[2024-04-13 01:17:18] INFO root fetch - processPackages [getlino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getlino-24.3.0.tar.gz tmp/getlino-24.4.0.tar.gz --markdown 20240413/g/getlino/24.3.0-24.4.0/README.md --exclude *.pyd
+[2024-04-13 01:17:18] INFO root fetch - processPackages [rime-sdk]: executing diffoscope
+[2024-04-13 01:17:18] INFO root fetch - processPackages [rime-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rime_sdk-2.8.0rc3.tar.gz tmp/rime_sdk-2.8.0rc4.tar.gz --markdown 20240413/r/rime-sdk/2.8.0rc3-2.8.0rc4/README.md --exclude *.pyd
+[2024-04-13 01:17:19] INFO root fetch - processPackages [getlino]: Remove: archive file [/home/abi/fetcher/tmp/getlino-24.3.0.tar.gz]
+[2024-04-13 01:17:19] INFO root fetch - processPackages [getlino]: Remove: archive file [/home/abi/fetcher/tmp/getlino-24.4.0.tar.gz]
+[2024-04-13 01:17:19] INFO root fetch - main [MainThread]: End processing [getlino]: success
+[2024-04-13 01:17:20] INFO root fetch - processPackages [rime-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rime_sdk-2.8.0rc3.tar.gz]
+[2024-04-13 01:17:20] INFO root fetch - processPackages [rime-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rime_sdk-2.8.0rc4.tar.gz]
+[2024-04-13 01:17:20] INFO root fetch - main [MainThread]: End processing [rime-sdk]: success
+[2024-04-13 01:17:20] INFO root fetch - main [MainThread]: Store serial: [22746792]
