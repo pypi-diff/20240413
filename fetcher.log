@@ -1124,3 +1124,24 @@
 [2024-04-13 01:08:34] INFO root fetch - processPackages [sagemath-objects]: Remove: archive file [/home/abi/fetcher/tmp/sagemath-objects-9.8rc0.tar.gz]
 [2024-04-13 01:08:34] INFO root fetch - main [MainThread]: End processing [sagemath-objects]: success
 [2024-04-13 01:08:34] INFO root fetch - main [MainThread]: Store serial: [22746753]
+[2024-04-13 01:10:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746753]
+[2024-04-13 01:10:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 01:10:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airbyte
+[2024-04-13 01:10:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: schema-agents
+[2024-04-13 01:10:43] INFO root fetch - processPackages [schema-agents]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-13 01:10:43] INFO root fetch - processPackages [schema-agents]: Downloading https://files.pythonhosted.org/packages/39/f5/f12f7d0b2a7beec8382af5ee1c4f0a856f79a9a19bc85737fe39ee9d74f4/schema-agents-0.1.7.tar.gz
+[2024-04-13 01:10:43] INFO root fetch - processPackages [airbyte]: New version: [0.9.0] Old Version: [0.8.4]
+[2024-04-13 01:10:43] INFO root fetch - processPackages [airbyte]: Downloading https://files.pythonhosted.org/packages/9c/15/0ed18f9974b025648515fd61318dbe0f600528ec50091886c43ef6af06b4/airbyte-0.8.4.tar.gz
+[2024-04-13 01:10:43] INFO root fetch - processPackages [schema-agents]: Downloading https://files.pythonhosted.org/packages/84/04/a30d7eb5ed4cc5024144190776629d7f818cb11a311d1c5e740e801bb722/schema-agents-0.1.8.tar.gz
+[2024-04-13 01:10:43] INFO root fetch - processPackages [airbyte]: Downloading https://files.pythonhosted.org/packages/06/cf/9fefa13386840a9fe89e98d160db3058aca5c16b50a0fbcc248f1728cc9d/airbyte-0.9.0.tar.gz
+[2024-04-13 01:10:43] INFO root fetch - processPackages [schema-agents]: executing diffoscope
+[2024-04-13 01:10:43] INFO root fetch - processPackages [schema-agents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schema-agents-0.1.7.tar.gz tmp/schema-agents-0.1.8.tar.gz --markdown 20240413/s/schema-agents/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-13 01:10:43] INFO root fetch - processPackages [airbyte]: executing diffoscope
+[2024-04-13 01:10:43] INFO root fetch - processPackages [airbyte]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-0.8.4.tar.gz tmp/airbyte-0.9.0.tar.gz --markdown 20240413/a/airbyte/0.8.4-0.9.0/README.md --exclude *.pyd
+[2024-04-13 01:10:44] INFO root fetch - processPackages [schema-agents]: Remove: archive file [/home/abi/fetcher/tmp/schema-agents-0.1.7.tar.gz]
+[2024-04-13 01:10:44] INFO root fetch - processPackages [schema-agents]: Remove: archive file [/home/abi/fetcher/tmp/schema-agents-0.1.8.tar.gz]
+[2024-04-13 01:10:44] INFO root fetch - main [MainThread]: End processing [schema-agents]: success
+[2024-04-13 01:10:44] INFO root fetch - processPackages [airbyte]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-0.8.4.tar.gz]
+[2024-04-13 01:10:44] INFO root fetch - processPackages [airbyte]: Remove: archive file [/home/abi/fetcher/tmp/airbyte-0.9.0.tar.gz]
+[2024-04-13 01:10:44] INFO root fetch - main [MainThread]: End processing [airbyte]: success
+[2024-04-13 01:10:44] INFO root fetch - main [MainThread]: Store serial: [22746761]
