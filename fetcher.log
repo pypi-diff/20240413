@@ -1226,3 +1226,17 @@
 [2024-04-13 01:17:20] INFO root fetch - processPackages [rime-sdk]: Remove: archive file [/home/abi/fetcher/tmp/rime_sdk-2.8.0rc4.tar.gz]
 [2024-04-13 01:17:20] INFO root fetch - main [MainThread]: End processing [rime-sdk]: success
 [2024-04-13 01:17:20] INFO root fetch - main [MainThread]: Store serial: [22746792]
+[2024-04-13 01:19:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746792]
+[2024-04-13 01:19:31] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 01:21:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746792]
+[2024-04-13 01:21:37] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 01:21:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MobileInventoryCLI
+[2024-04-13 01:21:37] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.51] Old Version: [0.4.50]
+[2024-04-13 01:21:37] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/2f/9c/d0761022defb05a9363d5d3000a96623ebe4382211398b8b81c663895301/MobileInventoryCLI-0.4.50.tar.gz
+[2024-04-13 01:21:38] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/c2/a8/76422afbc90e22ad7afab68701048cbc281e158d265c590238e776b860d2/MobileInventoryCLI-0.4.51.tar.gz
+[2024-04-13 01:21:38] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-04-13 01:21:38] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.50.tar.gz tmp/MobileInventoryCLI-0.4.51.tar.gz --markdown 20240413/M/MobileInventoryCLI/0.4.50-0.4.51/README.md --exclude *.pyd
+[2024-04-13 01:21:39] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.50.tar.gz]
+[2024-04-13 01:21:39] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.51.tar.gz]
+[2024-04-13 01:21:39] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-04-13 01:21:39] INFO root fetch - main [MainThread]: Store serial: [22746794]
