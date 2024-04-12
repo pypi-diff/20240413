@@ -1272,3 +1272,24 @@
 [2024-04-13 01:26:02] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.9.zip]
 [2024-04-13 01:26:02] INFO root fetch - main [MainThread]: End processing [sbcli-mig]: success
 [2024-04-13 01:26:02] INFO root fetch - main [MainThread]: Store serial: [22746806]
+[2024-04-13 01:28:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746806]
+[2024-04-13 01:28:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 01:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kmerdb
+[2024-04-13 01:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bauplan
+[2024-04-13 01:28:12] INFO root fetch - processPackages [kmerdb]: New version: [0.8.0] Old Version: [0.7.9]
+[2024-04-13 01:28:12] INFO root fetch - processPackages [bauplan]: New version: [0.0.3a9] Old Version: [0.0.3a84]
+[2024-04-13 01:28:12] INFO root fetch - processPackages [kmerdb]: Downloading https://files.pythonhosted.org/packages/38/44/e8a3f4fa47647cd72ae43761f95833dabb5830c46013c63bf96b57d4360a/kmerdb-0.7.9.tar.gz
+[2024-04-13 01:28:12] INFO root fetch - processPackages [bauplan]: Downloading https://files.pythonhosted.org/packages/89/6c/42c2df47c0ff67243c3f52bd35941f08746668cf1d147e0b82fdec9946d6/bauplan-0.0.3a84-py3-none-win_amd64.whl
+[2024-04-13 01:28:12] INFO root fetch - processPackages [kmerdb]: Downloading https://files.pythonhosted.org/packages/95/e5/118c37ee0fe862b800e4f685de88ba7642f04fc6b9ca5cdb0202811cbba1/kmerdb-0.8.0.tar.gz
+[2024-04-13 01:28:13] INFO root fetch - processPackages [kmerdb]: executing diffoscope
+[2024-04-13 01:28:13] INFO root fetch - processPackages [kmerdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kmerdb-0.7.9.tar.gz tmp/kmerdb-0.8.0.tar.gz --markdown 20240413/k/kmerdb/0.7.9-0.8.0/README.md --exclude *.pyd
+[2024-04-13 01:28:13] INFO root fetch - processPackages [bauplan]: Downloading https://files.pythonhosted.org/packages/15/cb/726ad7134b75bc6cab5597ce06747430b4320f9b764bbfd50c6ddf62a15b/bauplan-0.0.3a9.tar.gz
+[2024-04-13 01:28:14] INFO root fetch - processPackages [kmerdb]: Remove: archive file [/home/abi/fetcher/tmp/kmerdb-0.7.9.tar.gz]
+[2024-04-13 01:28:14] INFO root fetch - processPackages [kmerdb]: Remove: archive file [/home/abi/fetcher/tmp/kmerdb-0.8.0.tar.gz]
+[2024-04-13 01:28:14] INFO root fetch - main [MainThread]: End processing [kmerdb]: success
+[2024-04-13 01:28:14] INFO root fetch - processPackages [bauplan]: executing diffoscope
+[2024-04-13 01:28:14] INFO root fetch - processPackages [bauplan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bauplan-0.0.3a84-py3-none-win_amd64.whl.zip tmp/bauplan-0.0.3a9.tar.gz --markdown 20240413/b/bauplan/0.0.3a84-0.0.3a9/README.md --exclude *.pyd
+[2024-04-13 01:28:23] INFO root fetch - processPackages [bauplan]: Remove: archive file [/home/abi/fetcher/tmp/bauplan-0.0.3a84-py3-none-win_amd64.whl.zip]
+[2024-04-13 01:28:23] INFO root fetch - processPackages [bauplan]: Remove: archive file [/home/abi/fetcher/tmp/bauplan-0.0.3a9.tar.gz]
+[2024-04-13 01:28:23] INFO root fetch - main [MainThread]: End processing [bauplan]: success
+[2024-04-13 01:28:23] INFO root fetch - main [MainThread]: Store serial: [22746814]
