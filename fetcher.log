@@ -725,3 +725,52 @@
 [2024-04-13 00:50:51] INFO root fetch - processPackages [freeze-dried-data]: Remove: archive file [/home/abi/fetcher/tmp/freeze_dried_data-1.2.0.tar.gz]
 [2024-04-13 00:50:51] INFO root fetch - main [MainThread]: End processing [freeze-dried-data]: success
 [2024-04-13 00:50:51] INFO root fetch - main [MainThread]: Store serial: [22746611]
+[2024-04-13 00:52:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746611]
+[2024-04-13 00:53:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 00:53:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: viirs-tools
+[2024-04-13 00:53:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: viirs-tools
+[2024-04-13 00:53:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spaceandtime
+[2024-04-13 00:53:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: UniswapPy
+[2024-04-13 00:53:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: infrasys
+[2024-04-13 00:53:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rpi-lgpio
+[2024-04-13 00:53:00] INFO root fetch - processPackages [rpi-lgpio]: New version: [0.5] Old Version: [0.4]
+[2024-04-13 00:53:00] INFO root fetch - processPackages [spaceandtime]: New version: [1.1.8] Old Version: [1.1.7]
+[2024-04-13 00:53:00] WARNING root fetch - processPackages [infrasys]: Skipping, unable to determine old version
+[2024-04-13 00:53:00] INFO root fetch - main [MainThread]: End processing [infrasys] error
+[2024-04-13 00:53:00] INFO root fetch - processPackages [viirs-tools]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-04-13 00:53:00] INFO root fetch - processPackages [viirs-tools]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-04-13 00:53:00] INFO root fetch - processPackages [UniswapPy]: New version: [1.2.0] Old Version: [1.1.4]
+[2024-04-13 00:53:00] INFO root fetch - processPackages [spaceandtime]: Downloading https://files.pythonhosted.org/packages/db/f7/cecf5b632d3e2c0d5a55b40ee882616609ab0e9760386bc3c3cb31675f71/spaceandtime-1.1.7.tar.gz
+[2024-04-13 00:53:00] INFO root fetch - processPackages [rpi-lgpio]: Downloading https://files.pythonhosted.org/packages/bf/1e/5c7996e7690a7d7247f2b2e10f7a2d4b78e5badcb621e8f16c0e19e8f398/rpi-lgpio-0.4.tar.gz
+[2024-04-13 00:53:00] INFO root fetch - processPackages [viirs-tools]: Downloading https://files.pythonhosted.org/packages/a8/2a/38e81bfbeb9b2d2b4ec44af5715ade8119f84b995ba69a92bcb8d2ed930b/viirs-tools-0.0.1.tar.gz
+[2024-04-13 00:53:00] INFO root fetch - processPackages [UniswapPy]: Downloading https://files.pythonhosted.org/packages/2b/9b/f1043fb7ce246eb5cd7efad2b0f65b64fb392fadbfdf8de3b5b3723014eb/UniswapPy-1.1.4.tar.gz
+[2024-04-13 00:53:00] INFO root fetch - processPackages [viirs-tools]: Downloading https://files.pythonhosted.org/packages/a8/2a/38e81bfbeb9b2d2b4ec44af5715ade8119f84b995ba69a92bcb8d2ed930b/viirs-tools-0.0.1.tar.gz
+[2024-04-13 00:53:01] INFO root fetch - processPackages [viirs-tools]: Downloading https://files.pythonhosted.org/packages/79/d4/fb3d6e6048cabaaea5ee20d3a450c449a3696a8d9d83cc225a89c4f8386c/viirs-tools-0.1.0.tar.gz
+[2024-04-13 00:53:01] INFO root fetch - processPackages [viirs-tools]: Downloading https://files.pythonhosted.org/packages/79/d4/fb3d6e6048cabaaea5ee20d3a450c449a3696a8d9d83cc225a89c4f8386c/viirs-tools-0.1.0.tar.gz
+[2024-04-13 00:53:01] INFO root fetch - processPackages [UniswapPy]: Downloading https://files.pythonhosted.org/packages/24/21/8c43da8a0847c6ce34f6dbfd570c3d84767a1506258cd94c91191a766e22/UniswapPy-1.2.0.tar.gz
+[2024-04-13 00:53:01] INFO root fetch - processPackages [rpi-lgpio]: Downloading https://files.pythonhosted.org/packages/19/b6/c8709722eadaacb0c821d72b37cef57b9631b63728bba8737b73bd787021/rpi-lgpio-0.5.tar.gz
+[2024-04-13 00:53:01] INFO root fetch - processPackages [spaceandtime]: Downloading https://files.pythonhosted.org/packages/b7/4f/4cb9b80d6f282199216862cfb89c45b14d334cc8061feb5f7dce564ca32a/spaceandtime-1.1.8.tar.gz
+[2024-04-13 00:53:01] INFO root fetch - processPackages [viirs-tools]: executing diffoscope
+[2024-04-13 00:53:01] INFO root fetch - processPackages [viirs-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viirs-tools-0.0.1.tar.gz tmp/viirs-tools-0.1.0.tar.gz --markdown 20240413/v/viirs-tools/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-04-13 00:53:01] INFO root fetch - processPackages [viirs-tools]: executing diffoscope
+[2024-04-13 00:53:01] INFO root fetch - processPackages [viirs-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viirs-tools-0.0.1.tar.gz tmp/viirs-tools-0.1.0.tar.gz --markdown 20240413/v/viirs-tools/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-04-13 00:53:01] INFO root fetch - processPackages [rpi-lgpio]: executing diffoscope
+[2024-04-13 00:53:01] INFO root fetch - processPackages [rpi-lgpio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rpi-lgpio-0.4.tar.gz tmp/rpi-lgpio-0.5.tar.gz --markdown 20240413/r/rpi-lgpio/0.4-0.5/README.md --exclude *.pyd
+[2024-04-13 00:53:01] INFO root fetch - processPackages [UniswapPy]: executing diffoscope
+[2024-04-13 00:53:01] INFO root fetch - processPackages [UniswapPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UniswapPy-1.1.4.tar.gz tmp/UniswapPy-1.2.0.tar.gz --markdown 20240413/U/UniswapPy/1.1.4-1.2.0/README.md --exclude *.pyd
+[2024-04-13 00:53:01] INFO root fetch - processPackages [spaceandtime]: executing diffoscope
+[2024-04-13 00:53:01] INFO root fetch - processPackages [spaceandtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceandtime-1.1.7.tar.gz tmp/spaceandtime-1.1.8.tar.gz --markdown 20240413/s/spaceandtime/1.1.7-1.1.8/README.md --exclude *.pyd
+[2024-04-13 00:53:01] INFO root fetch - processPackages [viirs-tools]: Remove: archive file [/home/abi/fetcher/tmp/viirs-tools-0.0.1.tar.gz]
+[2024-04-13 00:53:01] INFO root fetch - processPackages [viirs-tools]: Remove: archive file [/home/abi/fetcher/tmp/viirs-tools-0.1.0.tar.gz]
+[2024-04-13 00:53:01] INFO root fetch - main [MainThread]: End processing [viirs-tools]: success
+[2024-04-13 00:53:01] INFO root fetch - main [MainThread]: End processing [viirs-tools]: success
+[2024-04-13 00:53:01] INFO root fetch - processPackages [UniswapPy]: Remove: archive file [/home/abi/fetcher/tmp/UniswapPy-1.1.4.tar.gz]
+[2024-04-13 00:53:01] INFO root fetch - processPackages [UniswapPy]: Remove: archive file [/home/abi/fetcher/tmp/UniswapPy-1.2.0.tar.gz]
+[2024-04-13 00:53:01] INFO root fetch - main [MainThread]: End processing [UniswapPy]: success
+[2024-04-13 00:53:01] INFO root fetch - processPackages [rpi-lgpio]: Remove: archive file [/home/abi/fetcher/tmp/rpi-lgpio-0.4.tar.gz]
+[2024-04-13 00:53:01] INFO root fetch - processPackages [rpi-lgpio]: Remove: archive file [/home/abi/fetcher/tmp/rpi-lgpio-0.5.tar.gz]
+[2024-04-13 00:53:01] INFO root fetch - main [MainThread]: End processing [rpi-lgpio]: success
+[2024-04-13 00:53:02] INFO root fetch - processPackages [spaceandtime]: Remove: archive file [/home/abi/fetcher/tmp/spaceandtime-1.1.7.tar.gz]
+[2024-04-13 00:53:02] INFO root fetch - processPackages [spaceandtime]: Remove: archive file [/home/abi/fetcher/tmp/spaceandtime-1.1.8.tar.gz]
+[2024-04-13 00:53:02] INFO root fetch - main [MainThread]: End processing [spaceandtime]: success
+[2024-04-13 00:53:02] INFO root fetch - main [MainThread]: Store serial: [22746632]
