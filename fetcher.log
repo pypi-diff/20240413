@@ -1240,3 +1240,18 @@
 [2024-04-13 01:21:39] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.51.tar.gz]
 [2024-04-13 01:21:39] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
 [2024-04-13 01:21:39] INFO root fetch - main [MainThread]: Store serial: [22746794]
+[2024-04-13 01:23:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22746794]
+[2024-04-13 01:23:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 01:23:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyprjbtstrptst
+[2024-04-13 01:23:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clipkit
+[2024-04-13 01:23:49] INFO root fetch - processPackages [clipkit]: New version: [2.2.6] Old Version: [2.2.5]
+[2024-04-13 01:23:49] WARNING root fetch - processPackages [pyprjbtstrptst]: Skipping, unable to determine old version
+[2024-04-13 01:23:49] INFO root fetch - main [MainThread]: End processing [pyprjbtstrptst] error
+[2024-04-13 01:23:49] INFO root fetch - processPackages [clipkit]: Downloading https://files.pythonhosted.org/packages/94/b0/811c4e08dbb10029970e9ce6b9764b515e3ab649651757b2fa2125b4f8d3/clipkit-2.2.5.tar.gz
+[2024-04-13 01:23:50] INFO root fetch - processPackages [clipkit]: Downloading https://files.pythonhosted.org/packages/8c/b8/90d904d6d6bda02baf8d4cc410d44b355c150b4476783483775b8f463449/clipkit-2.2.6.tar.gz
+[2024-04-13 01:23:50] INFO root fetch - processPackages [clipkit]: executing diffoscope
+[2024-04-13 01:23:50] INFO root fetch - processPackages [clipkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clipkit-2.2.5.tar.gz tmp/clipkit-2.2.6.tar.gz --markdown 20240413/c/clipkit/2.2.5-2.2.6/README.md --exclude *.pyd
+[2024-04-13 01:23:50] INFO root fetch - processPackages [clipkit]: Remove: archive file [/home/abi/fetcher/tmp/clipkit-2.2.5.tar.gz]
+[2024-04-13 01:23:50] INFO root fetch - processPackages [clipkit]: Remove: archive file [/home/abi/fetcher/tmp/clipkit-2.2.6.tar.gz]
+[2024-04-13 01:23:50] INFO root fetch - main [MainThread]: End processing [clipkit]: success
+[2024-04-13 01:23:50] INFO root fetch - main [MainThread]: Store serial: [22746801]
