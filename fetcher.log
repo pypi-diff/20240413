@@ -15513,3 +15513,17 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:48:11] INFO root fetch - processPackages [furtheredge]: Remove: archive file [/home/abi/fetcher/tmp/furtheredge-0.0.3.tar.gz]
 [2024-04-13 16:48:11] INFO root fetch - main [MainThread]: End processing [furtheredge]: success
 [2024-04-13 16:48:11] INFO root fetch - main [MainThread]: Store serial: [22752663]
+[2024-04-13 16:50:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752663]
+[2024-04-13 16:50:20] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 16:52:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752663]
+[2024-04-13 16:52:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 16:52:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jupyterlab-judge
+[2024-04-13 16:52:26] INFO root fetch - processPackages [jupyterlab-judge]: New version: [1.24.4] Old Version: [1.24.3]
+[2024-04-13 16:52:26] INFO root fetch - processPackages [jupyterlab-judge]: Downloading https://files.pythonhosted.org/packages/3c/3a/73763dc97cf379474376e6dba427bc26f5b4b3b879cfd8bdf0eaf77eb35b/jupyterlab_judge-1.24.3.tar.gz
+[2024-04-13 16:52:26] INFO root fetch - processPackages [jupyterlab-judge]: Downloading https://files.pythonhosted.org/packages/8d/dd/8f74b21c19dad9d4fc57de083d36db5492e185426389ef9d6dde82e6d74a/jupyterlab_judge-1.24.4.tar.gz
+[2024-04-13 16:52:26] INFO root fetch - processPackages [jupyterlab-judge]: executing diffoscope
+[2024-04-13 16:52:26] INFO root fetch - processPackages [jupyterlab-judge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab_judge-1.24.3.tar.gz tmp/jupyterlab_judge-1.24.4.tar.gz --markdown 20240413/j/jupyterlab-judge/1.24.3-1.24.4/README.md --exclude *.pyd
+[2024-04-13 16:52:28] INFO root fetch - processPackages [jupyterlab-judge]: Remove: archive file [/home/abi/fetcher/tmp/jupyterlab_judge-1.24.3.tar.gz]
+[2024-04-13 16:52:28] INFO root fetch - processPackages [jupyterlab-judge]: Remove: archive file [/home/abi/fetcher/tmp/jupyterlab_judge-1.24.4.tar.gz]
+[2024-04-13 16:52:28] INFO root fetch - main [MainThread]: End processing [jupyterlab-judge]: success
+[2024-04-13 16:52:28] INFO root fetch - main [MainThread]: Store serial: [22752666]
