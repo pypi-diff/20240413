@@ -17269,3 +17269,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:15:58] INFO root fetch - processPackages [fotolab]: Remove: archive file [/home/abi/fetcher/tmp/fotolab-0.9.1.tar.gz]
 [2024-04-13 19:15:58] INFO root fetch - main [MainThread]: End processing [fotolab]: success
 [2024-04-13 19:15:58] INFO root fetch - main [MainThread]: Store serial: [22753343]
+[2024-04-13 19:18:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753343]
+[2024-04-13 19:18:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 19:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bellek
+[2024-04-13 19:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anycrc
+[2024-04-13 19:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: restx
+[2024-04-13 19:18:07] INFO root fetch - processPackages [restx]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 19:18:07] INFO root fetch - processPackages [bellek]: New version: [0.9.0] Old Version: [0.75.0]
+[2024-04-13 19:18:07] WARNING root fetch - processPackages [anycrc]: Skipping, unable to determine old version
+[2024-04-13 19:18:07] INFO root fetch - main [MainThread]: End processing [anycrc] error
+[2024-04-13 19:18:07] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/3c/f5/f5dc21a0b56632f95302c0f9f3570a86a7ca4b9b43b10a6456b7053d7e89/bellek-0.75.0.tar.gz
+[2024-04-13 19:18:07] INFO root fetch - processPackages [restx]: Downloading https://files.pythonhosted.org/packages/db/98/416c61eab7edd1e4d8a4d08316d263dde06d1db70cbd3d82f18042cff456/restx-0.1.0.tar.gz
+[2024-04-13 19:18:08] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/ec/cb/2e453e973c51c52f57d3533e8d2f7192b8c626e0078fe08fb907191e69fb/bellek-0.9.0.tar.gz
+[2024-04-13 19:18:08] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-13 19:18:08] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.75.0.tar.gz tmp/bellek-0.9.0.tar.gz --markdown 20240413/b/bellek/0.75.0-0.9.0/README.md --exclude *.pyd
+[2024-04-13 19:18:08] INFO root fetch - processPackages [restx]: Downloading https://files.pythonhosted.org/packages/db/75/5b5795a4887b3cd4c5c1db6bd9e3e2d2385c1ae20908f5eb92dab8d52389/restx-0.1.1.tar.gz
+[2024-04-13 19:18:08] INFO root fetch - processPackages [restx]: executing diffoscope
+[2024-04-13 19:18:08] INFO root fetch - processPackages [restx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/restx-0.1.0.tar.gz tmp/restx-0.1.1.tar.gz --markdown 20240413/r/restx/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 19:18:08] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.75.0.tar.gz]
+[2024-04-13 19:18:08] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.9.0.tar.gz]
+[2024-04-13 19:18:08] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-13 19:18:08] INFO root fetch - processPackages [restx]: Remove: archive file [/home/abi/fetcher/tmp/restx-0.1.0.tar.gz]
+[2024-04-13 19:18:08] INFO root fetch - processPackages [restx]: Remove: archive file [/home/abi/fetcher/tmp/restx-0.1.1.tar.gz]
+[2024-04-13 19:18:08] INFO root fetch - main [MainThread]: End processing [restx]: success
+[2024-04-13 19:18:08] INFO root fetch - main [MainThread]: Store serial: [22753419]
