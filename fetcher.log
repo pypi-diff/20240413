@@ -12127,3 +12127,68 @@
 [2024-04-13 12:20:01] INFO root fetch - processPackages [galapy-core]: Remove: archive file [/home/abi/fetcher/tmp/galapy_core-0.2.1.tar.gz]
 [2024-04-13 12:20:01] INFO root fetch - main [MainThread]: End processing [galapy-core]: success
 [2024-04-13 12:20:01] INFO root fetch - main [MainThread]: Store serial: [22751096]
+[2024-04-13 12:22:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751096]
+[2024-04-13 12:22:09] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-13 12:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-aws
+[2024-04-13 12:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: monzo-utils
+[2024-04-13 12:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hfer
+[2024-04-13 12:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: crx-hslayers
+[2024-04-13 12:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kcli
+[2024-04-13 12:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mns-scheduler
+[2024-04-13 12:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: restx
+[2024-04-13 12:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: m-car-api
+[2024-04-13 12:22:09] WARNING root fetch - processPackages [restx]: Skipping, unable to determine old version
+[2024-04-13 12:22:09] INFO root fetch - main [MainThread]: End processing [restx] error
+[2024-04-13 12:22:09] INFO root fetch - processPackages [monzo-utils]: New version: [0.0.9] Old Version: [0.0.87]
+[2024-04-13 12:22:09] INFO root fetch - processPackages [crx-hslayers]: New version: [3.0.0b1] Old Version: [2.4.0]
+[2024-04-13 12:22:10] INFO root fetch - processPackages [m-car-api]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-13 12:22:10] INFO root fetch - processPackages [mns-scheduler]: New version: [1.0.2.2] Old Version: [1.0.2.1]
+[2024-04-13 12:22:10] INFO root fetch - processPackages [kcli]: New version: [99.0.202404131016] Old Version: [99.0.202404122133]
+[2024-04-13 12:22:10] INFO root fetch - processPackages [pulumi-aws]: New version: [6.9.0a1700084435] Old Version: [6.9.0a1699991594]
+[2024-04-13 12:22:10] INFO root fetch - processPackages [hfer]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-13 12:22:10] INFO root fetch - processPackages [monzo-utils]: Downloading https://files.pythonhosted.org/packages/74/fc/29f915490d974ae72e3c168755319517c0c61e6b1d39df38668cf6007b21/monzo_utils-0.0.87-py3-none-any.whl
+[2024-04-13 12:22:10] INFO root fetch - processPackages [crx-hslayers]: Downloading https://files.pythonhosted.org/packages/c7/05/d6b67ac5f2ec3e2ce1178a604f8d63ac0672b838c34a0920c9ce60e87b4e/crx_hslayers-2.4.0.tar.gz
+[2024-04-13 12:22:10] INFO root fetch - processPackages [m-car-api]: Downloading https://files.pythonhosted.org/packages/7e/13/edb4b521485183fc14e7cd5cc44680ebb3fbb83e1f78484df82113951767/m_car_api-1.0.0.tar.gz
+[2024-04-13 12:22:10] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/52/87/1c5ed218eeac56605686f8e3c367fe3959896547c0380212e5858d5c4a32/mns-scheduler-1.0.2.1.tar.gz
+[2024-04-13 12:22:10] INFO root fetch - processPackages [pulumi-aws]: Downloading https://files.pythonhosted.org/packages/e1/df/14b748e40340692e18bd19ad3631916881c3bfc6ab8cc9db1f79ca1fb86a/pulumi_aws-6.9.0a1699991594.tar.gz
+[2024-04-13 12:22:10] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/c7/58/44d9a1a8cbbf8fa88ffffc0a44eba3004d7a18749a6f3b4e022d7a6bae46/kcli-99.0.202404122133.tar.gz
+[2024-04-13 12:22:10] WARNING root fetch - processPackages [crx-hslayers]: Skipping package: exceeds size limit 11468667>=10485760
+[2024-04-13 12:22:10] INFO root fetch - main [MainThread]: End processing [crx-hslayers] error
+[2024-04-13 12:22:10] INFO root fetch - processPackages [hfer]: Downloading https://files.pythonhosted.org/packages/07/1f/1e77ce21d54055bb85816c8ce4dcd16729435ebc47a9ee8c791d8a029e18/hfer-0.0.3.tar.gz
+[2024-04-13 12:22:10] INFO root fetch - processPackages [monzo-utils]: Downloading https://files.pythonhosted.org/packages/85/9d/fc80e41a25817f5286aaa03c27e708a0f90ac540eced25dba10630955768/monzo_utils-0.0.9-py3-none-any.whl
+[2024-04-13 12:22:10] INFO root fetch - processPackages [m-car-api]: Downloading https://files.pythonhosted.org/packages/2a/66/dc420f33ac3fe3fd308a47c830515e5e5f5435ef5733a438187e32bb7880/m_car_api-1.0.1.tar.gz
+[2024-04-13 12:22:10] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/90/17/e114386e918ce0e2eaab56fff512329cb3bd3629282a7d4b03cf040f5756/mns-scheduler-1.0.2.2.tar.gz
+[2024-04-13 12:22:10] INFO root fetch - processPackages [monzo-utils]: executing diffoscope
+[2024-04-13 12:22:10] INFO root fetch - processPackages [monzo-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monzo_utils-0.0.87-py3-none-any.whl.zip tmp/monzo_utils-0.0.9-py3-none-any.whl.zip --markdown 20240413/m/monzo-utils/0.0.87-0.0.9/README.md --exclude *.pyd
+[2024-04-13 12:22:10] INFO root fetch - processPackages [m-car-api]: executing diffoscope
+[2024-04-13 12:22:10] INFO root fetch - processPackages [m-car-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/m_car_api-1.0.0.tar.gz tmp/m_car_api-1.0.1.tar.gz --markdown 20240413/m/m-car-api/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-13 12:22:10] INFO root fetch - processPackages [mns-scheduler]: executing diffoscope
+[2024-04-13 12:22:10] INFO root fetch - processPackages [mns-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns-scheduler-1.0.2.1.tar.gz tmp/mns-scheduler-1.0.2.2.tar.gz --markdown 20240413/m/mns-scheduler/1.0.2.1-1.0.2.2/README.md --exclude *.pyd
+[2024-04-13 12:22:10] INFO root fetch - processPackages [pulumi-aws]: Downloading https://files.pythonhosted.org/packages/f3/70/32e3669ea3bb0042d4f4aac12c2584c3217ddc25b9e1646f05b9a9e1a24f/pulumi_aws-6.9.0a1700084435.tar.gz
+[2024-04-13 12:22:10] INFO root fetch - processPackages [hfer]: Downloading https://files.pythonhosted.org/packages/a5/74/d920bfdbad66f776e9f6967ba07f4810f88aca1cd782867d053ae54cdd2b/hfer-0.0.4.tar.gz
+[2024-04-13 12:22:10] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/32/04/30e4d6bc31b6e83dbfa7d20c5c50601a592442855f4d78c92c47075144a1/kcli-99.0.202404131016.tar.gz
+[2024-04-13 12:22:10] INFO root fetch - processPackages [hfer]: executing diffoscope
+[2024-04-13 12:22:10] INFO root fetch - processPackages [hfer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hfer-0.0.3.tar.gz tmp/hfer-0.0.4.tar.gz --markdown 20240413/h/hfer/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-13 12:22:11] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2024-04-13 12:22:11] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202404122133.tar.gz tmp/kcli-99.0.202404131016.tar.gz --markdown 20240413/k/kcli/99.0.202404122133-99.0.202404131016/README.md --exclude *.pyd
+[2024-04-13 12:22:11] INFO root fetch - processPackages [pulumi-aws]: executing diffoscope
+[2024-04-13 12:22:11] INFO root fetch - processPackages [pulumi-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aws-6.9.0a1699991594.tar.gz tmp/pulumi_aws-6.9.0a1700084435.tar.gz --markdown 20240413/p/pulumi-aws/6.9.0a1699991594-6.9.0a1700084435/README.md --exclude *.pyd
+[2024-04-13 12:22:11] INFO root fetch - processPackages [m-car-api]: Remove: archive file [/home/abi/fetcher/tmp/m_car_api-1.0.0.tar.gz]
+[2024-04-13 12:22:11] INFO root fetch - processPackages [m-car-api]: Remove: archive file [/home/abi/fetcher/tmp/m_car_api-1.0.1.tar.gz]
+[2024-04-13 12:22:11] INFO root fetch - main [MainThread]: End processing [m-car-api]: success
+[2024-04-13 12:22:11] INFO root fetch - processPackages [monzo-utils]: Remove: archive file [/home/abi/fetcher/tmp/monzo_utils-0.0.87-py3-none-any.whl.zip]
+[2024-04-13 12:22:11] INFO root fetch - processPackages [monzo-utils]: Remove: archive file [/home/abi/fetcher/tmp/monzo_utils-0.0.9-py3-none-any.whl.zip]
+[2024-04-13 12:22:11] INFO root fetch - main [MainThread]: End processing [monzo-utils]: success
+[2024-04-13 12:22:11] INFO root fetch - processPackages [hfer]: Remove: archive file [/home/abi/fetcher/tmp/hfer-0.0.3.tar.gz]
+[2024-04-13 12:22:11] INFO root fetch - processPackages [hfer]: Remove: archive file [/home/abi/fetcher/tmp/hfer-0.0.4.tar.gz]
+[2024-04-13 12:22:11] INFO root fetch - main [MainThread]: End processing [hfer]: success
+[2024-04-13 12:22:11] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.2.1.tar.gz]
+[2024-04-13 12:22:11] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.2.2.tar.gz]
+[2024-04-13 12:22:11] INFO root fetch - main [MainThread]: End processing [mns-scheduler]: success
+[2024-04-13 12:22:13] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202404122133.tar.gz]
+[2024-04-13 12:22:13] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202404131016.tar.gz]
+[2024-04-13 12:22:13] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2024-04-13 12:22:27] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1699991594.tar.gz]
+[2024-04-13 12:22:27] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1700084435.tar.gz]
+[2024-04-13 12:22:27] INFO root fetch - main [MainThread]: End processing [pulumi-aws]: success
+[2024-04-13 12:22:27] INFO root fetch - main [MainThread]: Store serial: [22751118]
