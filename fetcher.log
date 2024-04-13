@@ -11204,3 +11204,15 @@
 [2024-04-13 10:59:22] INFO root fetch - processPackages [aioxdl]: Remove: archive file [/home/abi/fetcher/tmp/aioxdl-0.0.17.tar.gz]
 [2024-04-13 10:59:22] INFO root fetch - main [MainThread]: End processing [aioxdl]: success
 [2024-04-13 10:59:22] INFO root fetch - main [MainThread]: Store serial: [22750714]
+[2024-04-13 11:01:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750714]
+[2024-04-13 11:01:31] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 11:01:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PaifuLogger
+[2024-04-13 11:01:32] INFO root fetch - processPackages [PaifuLogger]: New version: [0.4.0] Old Version: [0.3.9.1]
+[2024-04-13 11:01:32] INFO root fetch - processPackages [PaifuLogger]: Downloading https://files.pythonhosted.org/packages/ab/44/03d0ed0a469cec34c267666255bc2076755f6aa8c11c750d4bdea8370cf0/PaifuLogger-0.3.9.1.tar.gz
+[2024-04-13 11:01:32] INFO root fetch - processPackages [PaifuLogger]: Downloading https://files.pythonhosted.org/packages/50/05/f9db019b9f27656ab691521d99e1404d426ab32fcaeb4ca753392b9ba358/PaifuLogger-0.4.0.tar.gz
+[2024-04-13 11:01:32] INFO root fetch - processPackages [PaifuLogger]: executing diffoscope
+[2024-04-13 11:01:32] INFO root fetch - processPackages [PaifuLogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PaifuLogger-0.3.9.1.tar.gz tmp/PaifuLogger-0.4.0.tar.gz --markdown 20240413/P/PaifuLogger/0.3.9.1-0.4.0/README.md --exclude *.pyd
+[2024-04-13 11:01:33] INFO root fetch - processPackages [PaifuLogger]: Remove: archive file [/home/abi/fetcher/tmp/PaifuLogger-0.3.9.1.tar.gz]
+[2024-04-13 11:01:33] INFO root fetch - processPackages [PaifuLogger]: Remove: archive file [/home/abi/fetcher/tmp/PaifuLogger-0.4.0.tar.gz]
+[2024-04-13 11:01:33] INFO root fetch - main [MainThread]: End processing [PaifuLogger]: success
+[2024-04-13 11:01:33] INFO root fetch - main [MainThread]: Store serial: [22750720]
