@@ -13550,3 +13550,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:15:30] INFO root fetch - processPackages [supamodel]: Remove: archive file [/home/abi/fetcher/tmp/supamodel-0.5.2.tar.gz]
 [2024-04-13 14:15:30] INFO root fetch - main [MainThread]: End processing [supamodel]: success
 [2024-04-13 14:15:30] INFO root fetch - main [MainThread]: Store serial: [22751645]
+[2024-04-13 14:17:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751645]
+[2024-04-13 14:17:39] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 14:17:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bulletroulette
+[2024-04-13 14:17:39] WARNING root fetch - processPackages [bulletroulette]: Skipping, unable to determine old version
+[2024-04-13 14:17:39] INFO root fetch - main [MainThread]: End processing [bulletroulette] error
+[2024-04-13 14:17:39] INFO root fetch - main [MainThread]: Store serial: [22751652]
