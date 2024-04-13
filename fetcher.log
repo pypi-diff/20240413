@@ -19274,3 +19274,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 21:31:52] INFO root fetch - processPackages [py-app-dev]: Remove: archive file [/home/abi/fetcher/tmp/py_app_dev-2.2.0.tar.gz]
 [2024-04-13 21:31:52] INFO root fetch - main [MainThread]: End processing [py-app-dev]: success
 [2024-04-13 21:31:52] INFO root fetch - main [MainThread]: Store serial: [22754302]
+[2024-04-13 21:33:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754302]
+[2024-04-13 21:34:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 21:34:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lazy-type-hint
+[2024-04-13 21:34:00] WARNING root fetch - processPackages [lazy-type-hint]: Skipping, unable to determine old version
+[2024-04-13 21:34:00] INFO root fetch - main [MainThread]: End processing [lazy-type-hint] error
+[2024-04-13 21:34:00] INFO root fetch - main [MainThread]: Store serial: [22754306]
