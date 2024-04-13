@@ -12216,3 +12216,42 @@
 [2024-04-13 12:24:37] INFO root fetch - processPackages [gen3-tracker]: Remove: archive file [/home/abi/fetcher/tmp/gen3_tracker-0.0.3rc4.tar.gz]
 [2024-04-13 12:24:37] INFO root fetch - main [MainThread]: End processing [gen3-tracker]: success
 [2024-04-13 12:24:37] INFO root fetch - main [MainThread]: Store serial: [22751125]
+[2024-04-13 12:26:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751125]
+[2024-04-13 12:26:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 12:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hagrid
+[2024-04-13 12:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wsidicomizer
+[2024-04-13 12:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: libsrg
+[2024-04-13 12:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: proq
+[2024-04-13 12:26:46] INFO root fetch - processPackages [libsrg]: New version: [4.1.3] Old Version: [4.1.2]
+[2024-04-13 12:26:46] INFO root fetch - processPackages [libsrg]: Downloading https://files.pythonhosted.org/packages/79/67/e0523aa8cfb5d1986205963c6c667b67c5714e4ae5580d33eb2db50d9589/libsrg-4.1.2-py3-none-any.whl
+[2024-04-13 12:26:46] INFO root fetch - processPackages [wsidicomizer]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-13 12:26:46] INFO root fetch - processPackages [hagrid]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-04-13 12:26:46] INFO root fetch - processPackages [proq]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-13 12:26:46] INFO root fetch - processPackages [hagrid]: Downloading https://files.pythonhosted.org/packages/71/5c/7118f88cf946d0a75ccbfe7faf329364c6aa329c75e795f5321774437057/hagrid-0.3.98.tar.gz
+[2024-04-13 12:26:46] INFO root fetch - processPackages [wsidicomizer]: Downloading https://files.pythonhosted.org/packages/6b/84/5916082efd279aa16c977e7f16300a4bdb6e1fdfb661beb78e4b190a393c/wsidicomizer-0.9.2.tar.gz
+[2024-04-13 12:26:46] INFO root fetch - processPackages [proq]: Downloading https://files.pythonhosted.org/packages/d9/17/d1a973b1af68fd70eaec33661190f39f8d4aff4789567cdc3c1220689cdf/proq-0.0.2.tar.gz
+[2024-04-13 12:26:46] INFO root fetch - processPackages [libsrg]: Downloading https://files.pythonhosted.org/packages/bb/43/00dcd4b5d0b4402bfc47a8cb4c5f304382e1940718305c80b54b48cd690a/libsrg-4.1.3-py3-none-any.whl
+[2024-04-13 12:26:47] INFO root fetch - processPackages [libsrg]: executing diffoscope
+[2024-04-13 12:26:47] INFO root fetch - processPackages [libsrg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libsrg-4.1.2-py3-none-any.whl.zip tmp/libsrg-4.1.3-py3-none-any.whl.zip --markdown 20240413/l/libsrg/4.1.2-4.1.3/README.md --exclude *.pyd
+[2024-04-13 12:26:47] INFO root fetch - processPackages [hagrid]: Downloading https://files.pythonhosted.org/packages/cd/59/f6d437913eeba7d4d9bb51ed14ede91b80dcb983f21bbafb63e54e220055/hagrid-0.3.99.tar.gz
+[2024-04-13 12:26:47] INFO root fetch - processPackages [wsidicomizer]: Downloading https://files.pythonhosted.org/packages/0c/8a/dcdc75bc6a23e145c8b791bdce3824f8c1df45962351ea5e4b4475342e0f/wsidicomizer-0.9.3.tar.gz
+[2024-04-13 12:26:47] INFO root fetch - processPackages [proq]: Downloading https://files.pythonhosted.org/packages/67/1a/6bed2049a5511c8290688a330353988d73e86965fa9167d4519d40e2f2d0/proq-0.0.3.tar.gz
+[2024-04-13 12:26:47] INFO root fetch - processPackages [hagrid]: executing diffoscope
+[2024-04-13 12:26:47] INFO root fetch - processPackages [hagrid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagrid-0.3.98.tar.gz tmp/hagrid-0.3.99.tar.gz --markdown 20240413/h/hagrid/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-04-13 12:26:47] INFO root fetch - processPackages [wsidicomizer]: executing diffoscope
+[2024-04-13 12:26:47] INFO root fetch - processPackages [wsidicomizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wsidicomizer-0.9.2.tar.gz tmp/wsidicomizer-0.9.3.tar.gz --markdown 20240413/w/wsidicomizer/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-13 12:26:47] INFO root fetch - processPackages [proq]: executing diffoscope
+[2024-04-13 12:26:47] INFO root fetch - processPackages [proq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proq-0.0.2.tar.gz tmp/proq-0.0.3.tar.gz --markdown 20240413/p/proq/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-13 12:26:47] INFO root fetch - processPackages [libsrg]: Remove: archive file [/home/abi/fetcher/tmp/libsrg-4.1.2-py3-none-any.whl.zip]
+[2024-04-13 12:26:47] INFO root fetch - processPackages [libsrg]: Remove: archive file [/home/abi/fetcher/tmp/libsrg-4.1.3-py3-none-any.whl.zip]
+[2024-04-13 12:26:47] INFO root fetch - main [MainThread]: End processing [libsrg]: success
+[2024-04-13 12:26:47] INFO root fetch - processPackages [hagrid]: Remove: archive file [/home/abi/fetcher/tmp/hagrid-0.3.98.tar.gz]
+[2024-04-13 12:26:47] INFO root fetch - processPackages [hagrid]: Remove: archive file [/home/abi/fetcher/tmp/hagrid-0.3.99.tar.gz]
+[2024-04-13 12:26:47] INFO root fetch - main [MainThread]: End processing [hagrid]: success
+[2024-04-13 12:26:48] INFO root fetch - processPackages [wsidicomizer]: Remove: archive file [/home/abi/fetcher/tmp/wsidicomizer-0.9.2.tar.gz]
+[2024-04-13 12:26:48] INFO root fetch - processPackages [wsidicomizer]: Remove: archive file [/home/abi/fetcher/tmp/wsidicomizer-0.9.3.tar.gz]
+[2024-04-13 12:26:48] INFO root fetch - main [MainThread]: End processing [wsidicomizer]: success
+[2024-04-13 12:26:48] INFO root fetch - processPackages [proq]: Remove: archive file [/home/abi/fetcher/tmp/proq-0.0.2.tar.gz]
+[2024-04-13 12:26:48] INFO root fetch - processPackages [proq]: Remove: archive file [/home/abi/fetcher/tmp/proq-0.0.3.tar.gz]
+[2024-04-13 12:26:48] INFO root fetch - main [MainThread]: End processing [proq]: success
+[2024-04-13 12:26:48] INFO root fetch - main [MainThread]: Store serial: [22751136]
