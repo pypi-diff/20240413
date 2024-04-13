@@ -6513,3 +6513,26 @@
 [2024-04-13 03:26:19] INFO root fetch - processPackages [micropython-senml]: Remove: archive file [/home/abi/fetcher/tmp/micropython_senml-0.1.1-py2.py3-none-any.whl.zip]
 [2024-04-13 03:26:19] INFO root fetch - main [MainThread]: End processing [micropython-senml]: success
 [2024-04-13 03:26:19] INFO root fetch - main [MainThread]: Store serial: [22748822]
+[2024-04-13 03:28:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748822]
+[2024-04-13 03:28:27] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 03:30:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748822]
+[2024-04-13 03:30:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 03:30:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: searchspotify
+[2024-04-13 03:30:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyCatFile
+[2024-04-13 03:30:33] INFO root fetch - processPackages [searchspotify]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-13 03:30:33] INFO root fetch - processPackages [PyCatFile]: New version: [0.7.8] Old Version: [0.7.6]
+[2024-04-13 03:30:33] INFO root fetch - processPackages [searchspotify]: Downloading https://files.pythonhosted.org/packages/99/f5/fa4ac27af468fbd19f213e6954338b437d9f3c3058058f3095d02a2b8190/searchspotify-0.0.7.tar.gz
+[2024-04-13 03:30:33] INFO root fetch - processPackages [PyCatFile]: Downloading https://files.pythonhosted.org/packages/01/67/a3272599ee71780b17e0c562007273595c071627384f281fe783cee2683a/PyCatFile-0.7.6.tar.gz
+[2024-04-13 03:30:33] INFO root fetch - processPackages [searchspotify]: Downloading https://files.pythonhosted.org/packages/bd/98/2610b71a195571e9cfaf7a93f948a23c3722b292a1f5f241a6d1cead81e3/searchspotify-0.0.8.tar.gz
+[2024-04-13 03:30:33] INFO root fetch - processPackages [PyCatFile]: Downloading https://files.pythonhosted.org/packages/74/c3/60c23190ace357d15652a5378678e33d4e19fd9f5170be9173f497a72c6b/PyCatFile-0.7.8.tar.gz
+[2024-04-13 03:30:33] INFO root fetch - processPackages [searchspotify]: executing diffoscope
+[2024-04-13 03:30:33] INFO root fetch - processPackages [searchspotify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchspotify-0.0.7.tar.gz tmp/searchspotify-0.0.8.tar.gz --markdown 20240413/s/searchspotify/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-13 03:30:33] INFO root fetch - processPackages [PyCatFile]: executing diffoscope
+[2024-04-13 03:30:33] INFO root fetch - processPackages [PyCatFile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyCatFile-0.7.6.tar.gz tmp/PyCatFile-0.7.8.tar.gz --markdown 20240413/P/PyCatFile/0.7.6-0.7.8/README.md --exclude *.pyd
+[2024-04-13 03:30:34] INFO root fetch - processPackages [searchspotify]: Remove: archive file [/home/abi/fetcher/tmp/searchspotify-0.0.7.tar.gz]
+[2024-04-13 03:30:34] INFO root fetch - processPackages [searchspotify]: Remove: archive file [/home/abi/fetcher/tmp/searchspotify-0.0.8.tar.gz]
+[2024-04-13 03:30:34] INFO root fetch - main [MainThread]: End processing [searchspotify]: success
+[2024-04-13 03:30:34] INFO root fetch - processPackages [PyCatFile]: Remove: archive file [/home/abi/fetcher/tmp/PyCatFile-0.7.6.tar.gz]
+[2024-04-13 03:30:34] INFO root fetch - processPackages [PyCatFile]: Remove: archive file [/home/abi/fetcher/tmp/PyCatFile-0.7.8.tar.gz]
+[2024-04-13 03:30:34] INFO root fetch - main [MainThread]: End processing [PyCatFile]: success
+[2024-04-13 03:30:34] INFO root fetch - main [MainThread]: Store serial: [22748828]
