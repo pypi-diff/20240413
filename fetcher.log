@@ -6975,3 +6975,17 @@
 [2024-04-13 04:26:39] INFO root fetch - processPackages [qcop]: Remove: archive file [/home/abi/fetcher/tmp/qcop-0.5.4.tar.gz]
 [2024-04-13 04:26:39] INFO root fetch - main [MainThread]: End processing [qcop]: success
 [2024-04-13 04:26:39] INFO root fetch - main [MainThread]: Store serial: [22748990]
+[2024-04-13 04:28:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748990]
+[2024-04-13 04:28:48] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 04:30:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748990]
+[2024-04-13 04:30:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 04:30:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bnpm
+[2024-04-13 04:30:54] INFO root fetch - processPackages [bnpm]: New version: [0.5.0] Old Version: [0.4.4]
+[2024-04-13 04:30:54] INFO root fetch - processPackages [bnpm]: Downloading https://files.pythonhosted.org/packages/e6/f6/0780f87fd4e38741c3c184c16787550279de34dd6448dbc5cb049c941303/bnpm-0.4.4.tar.gz
+[2024-04-13 04:30:54] INFO root fetch - processPackages [bnpm]: Downloading https://files.pythonhosted.org/packages/bb/a5/45f96e8bdc30b275dd8a149a479094d625a3e5709f9405aaf599e1121f93/bnpm-0.5.0.tar.gz
+[2024-04-13 04:30:54] INFO root fetch - processPackages [bnpm]: executing diffoscope
+[2024-04-13 04:30:54] INFO root fetch - processPackages [bnpm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bnpm-0.4.4.tar.gz tmp/bnpm-0.5.0.tar.gz --markdown 20240413/b/bnpm/0.4.4-0.5.0/README.md --exclude *.pyd
+[2024-04-13 04:30:55] INFO root fetch - processPackages [bnpm]: Remove: archive file [/home/abi/fetcher/tmp/bnpm-0.4.4.tar.gz]
+[2024-04-13 04:30:55] INFO root fetch - processPackages [bnpm]: Remove: archive file [/home/abi/fetcher/tmp/bnpm-0.5.0.tar.gz]
+[2024-04-13 04:30:55] INFO root fetch - main [MainThread]: End processing [bnpm]: success
+[2024-04-13 04:30:55] INFO root fetch - main [MainThread]: Store serial: [22748992]
