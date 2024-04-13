@@ -9522,3 +9522,45 @@
 [2024-04-13 08:58:35] INFO root fetch - processPackages [pulumi-postgresql]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_postgresql-3.9.0a1689896978.tar.gz]
 [2024-04-13 08:58:35] INFO root fetch - main [MainThread]: End processing [pulumi-postgresql]: success
 [2024-04-13 08:58:35] INFO root fetch - main [MainThread]: Store serial: [22750018]
+[2024-04-13 09:00:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750018]
+[2024-04-13 09:00:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 09:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: haku
+[2024-04-13 09:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ns-asphalt9
+[2024-04-13 09:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: braincore
+[2024-04-13 09:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: braintools
+[2024-04-13 09:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: elderlang
+[2024-04-13 09:00:44] INFO root fetch - processPackages [ns-asphalt9]: New version: [3.2.2] Old Version: [3.2.1]
+[2024-04-13 09:00:44] WARNING root fetch - processPackages [haku]: Skipping, unable to determine old version
+[2024-04-13 09:00:44] INFO root fetch - main [MainThread]: End processing [haku] error
+[2024-04-13 09:00:44] INFO root fetch - processPackages [elderlang]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-13 09:00:44] INFO root fetch - processPackages [braintools]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-13 09:00:44] INFO root fetch - processPackages [braincore]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-13 09:00:44] INFO root fetch - processPackages [ns-asphalt9]: Downloading https://files.pythonhosted.org/packages/fa/f4/066a15fea7682e984d369e944ccf15382dc1f337a15cefe56e7bb8a2fa96/ns_asphalt9-3.2.1.tar.gz
+[2024-04-13 09:00:44] INFO root fetch - processPackages [braintools]: Downloading https://files.pythonhosted.org/packages/61/56/c53c8da9c772cd3e992f65cc45e18d0e98e81a4edf356631e501e65f3c0d/braintools-0.0.2-py2.py3-none-any.whl
+[2024-04-13 09:00:44] INFO root fetch - processPackages [braincore]: Downloading https://files.pythonhosted.org/packages/59/7e/f985aae4816b1698c7f441bd06650f742362a64ce6926452eb376e9a81e9/braincore-0.0.2-py2.py3-none-any.whl
+[2024-04-13 09:00:44] INFO root fetch - processPackages [elderlang]: Downloading https://files.pythonhosted.org/packages/d4/e9/d2370f05e1cfbd09d5ce7313a239864a2a80f1272be6f424375704c41d86/elderlang-0.0.3.tar.gz
+[2024-04-13 09:00:44] INFO root fetch - processPackages [ns-asphalt9]: Downloading https://files.pythonhosted.org/packages/7a/37/3b5de542e0a71956913bee7413f060e376a5817fb3c2b02198e2dd8269a7/ns_asphalt9-3.2.2.tar.gz
+[2024-04-13 09:00:44] INFO root fetch - processPackages [braintools]: Downloading https://files.pythonhosted.org/packages/04/0b/eb9e544e338973c4aabd74110f0c297423e3d41bb1de040c2a66aed3f89c/braintools-0.0.3-py2.py3-none-any.whl
+[2024-04-13 09:00:44] INFO root fetch - processPackages [braincore]: Downloading https://files.pythonhosted.org/packages/02/af/9ed8bea510356d3ac1ea582c8b834bd11d887fd29974fee70b3511ee6e1e/braincore-0.0.3-py2.py3-none-any.whl
+[2024-04-13 09:00:44] INFO root fetch - processPackages [ns-asphalt9]: executing diffoscope
+[2024-04-13 09:00:44] INFO root fetch - processPackages [ns-asphalt9]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ns_asphalt9-3.2.1.tar.gz tmp/ns_asphalt9-3.2.2.tar.gz --markdown 20240413/n/ns-asphalt9/3.2.1-3.2.2/README.md --exclude *.pyd
+[2024-04-13 09:00:45] INFO root fetch - processPackages [braintools]: executing diffoscope
+[2024-04-13 09:00:45] INFO root fetch - processPackages [braintools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/braintools-0.0.2-py2.py3-none-any.whl.zip tmp/braintools-0.0.3-py2.py3-none-any.whl.zip --markdown 20240413/b/braintools/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-13 09:00:45] INFO root fetch - processPackages [elderlang]: Downloading https://files.pythonhosted.org/packages/b8/43/3d7f16b7bcf612ca0b65b7af0d873005039475a9915bfc58cec9dad91108/elderlang-0.0.4.tar.gz
+[2024-04-13 09:00:45] INFO root fetch - processPackages [braincore]: executing diffoscope
+[2024-04-13 09:00:45] INFO root fetch - processPackages [braincore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/braincore-0.0.2-py2.py3-none-any.whl.zip tmp/braincore-0.0.3-py2.py3-none-any.whl.zip --markdown 20240413/b/braincore/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-13 09:00:45] INFO root fetch - processPackages [elderlang]: executing diffoscope
+[2024-04-13 09:00:45] INFO root fetch - processPackages [elderlang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elderlang-0.0.3.tar.gz tmp/elderlang-0.0.4.tar.gz --markdown 20240413/e/elderlang/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-13 09:00:45] INFO root fetch - processPackages [braintools]: Remove: archive file [/home/abi/fetcher/tmp/braintools-0.0.2-py2.py3-none-any.whl.zip]
+[2024-04-13 09:00:45] INFO root fetch - processPackages [braintools]: Remove: archive file [/home/abi/fetcher/tmp/braintools-0.0.3-py2.py3-none-any.whl.zip]
+[2024-04-13 09:00:45] INFO root fetch - main [MainThread]: End processing [braintools]: success
+[2024-04-13 09:00:45] INFO root fetch - processPackages [ns-asphalt9]: Remove: archive file [/home/abi/fetcher/tmp/ns_asphalt9-3.2.1.tar.gz]
+[2024-04-13 09:00:45] INFO root fetch - processPackages [ns-asphalt9]: Remove: archive file [/home/abi/fetcher/tmp/ns_asphalt9-3.2.2.tar.gz]
+[2024-04-13 09:00:45] INFO root fetch - main [MainThread]: End processing [ns-asphalt9]: success
+[2024-04-13 09:00:45] INFO root fetch - processPackages [elderlang]: Remove: archive file [/home/abi/fetcher/tmp/elderlang-0.0.3.tar.gz]
+[2024-04-13 09:00:45] INFO root fetch - processPackages [elderlang]: Remove: archive file [/home/abi/fetcher/tmp/elderlang-0.0.4.tar.gz]
+[2024-04-13 09:00:45] INFO root fetch - main [MainThread]: End processing [elderlang]: success
+[2024-04-13 09:00:45] INFO root fetch - processPackages [braincore]: Remove: archive file [/home/abi/fetcher/tmp/braincore-0.0.2-py2.py3-none-any.whl.zip]
+[2024-04-13 09:00:45] INFO root fetch - processPackages [braincore]: Remove: archive file [/home/abi/fetcher/tmp/braincore-0.0.3-py2.py3-none-any.whl.zip]
+[2024-04-13 09:00:45] INFO root fetch - main [MainThread]: End processing [braincore]: success
+[2024-04-13 09:00:45] INFO root fetch - main [MainThread]: Store serial: [22750033]
