@@ -14845,3 +14845,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 15:57:59] INFO root fetch - processPackages [latex-rubber]: Remove: archive file [/home/abi/fetcher/tmp/latex_rubber-1.6.5.tar.gz]
 [2024-04-13 15:57:59] INFO root fetch - main [MainThread]: End processing [latex-rubber]: success
 [2024-04-13 15:57:59] INFO root fetch - main [MainThread]: Store serial: [22752323]
+[2024-04-13 16:00:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752323]
+[2024-04-13 16:00:07] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-13 16:00:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyCXpress
+[2024-04-13 16:00:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wakautosolver
+[2024-04-13 16:00:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyweatherfr
+[2024-04-13 16:00:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: netznoe-smartmeter-portal-api
+[2024-04-13 16:00:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyinstaller-hooks-contrib
+[2024-04-13 16:00:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: imap-box
+[2024-04-13 16:00:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: esimene-ul-tojarv
+[2024-04-13 16:00:07] INFO root fetch - processPackages [pyweatherfr]: New version: [4.1.1] Old Version: [4.1.0]
+[2024-04-13 16:00:07] WARNING root fetch - processPackages [PyCXpress]: Skipping, unable to determine old version
+[2024-04-13 16:00:07] INFO root fetch - main [MainThread]: End processing [PyCXpress] error
+[2024-04-13 16:00:07] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/6e/ff/c63e727d600d072da1219994e7530754e688b378dc21172c3435d951b930/pyweatherfr-4.1.0.tar.gz
+[2024-04-13 16:00:07] INFO root fetch - processPackages [wakautosolver]: New version: [2024.4.9] Old Version: [2024.4.8]
+[2024-04-13 16:00:07] INFO root fetch - processPackages [imap-box]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-13 16:00:07] INFO root fetch - processPackages [netznoe-smartmeter-portal-api]: New version: [1.1.0] Old Version: [1.0.2]
+[2024-04-13 16:00:07] INFO root fetch - processPackages [pyinstaller-hooks-contrib]: New version: [2024.4] Old Version: [2024.3]
+[2024-04-13 16:00:07] WARNING root fetch - processPackages [esimene-ul-tojarv]: Skipping, unable to determine old version
+[2024-04-13 16:00:07] INFO root fetch - main [MainThread]: End processing [esimene-ul-tojarv] error
+[2024-04-13 16:00:08] INFO root fetch - processPackages [wakautosolver]: Downloading https://files.pythonhosted.org/packages/52/f2/edbc9e1fede5d191f47b9c700489fc78e0d567617c983288059d9aa321c5/wakautosolver-2024.4.8-py3-none-any.whl
+[2024-04-13 16:00:08] INFO root fetch - processPackages [netznoe-smartmeter-portal-api]: Downloading https://files.pythonhosted.org/packages/bb/6e/02c1a17828f71825cce250e2a1c1ee7393c83e50bc68d974f5c098e8512b/netznoe-smartmeter-portal-api-1.0.2.tar.gz
+[2024-04-13 16:00:08] INFO root fetch - processPackages [pyinstaller-hooks-contrib]: Downloading https://files.pythonhosted.org/packages/63/e2/11b016c54e9c79d4027693241f3fbfe326006bc030f94c43363491d3ba98/pyinstaller-hooks-contrib-2024.3.tar.gz
+[2024-04-13 16:00:08] INFO root fetch - processPackages [imap-box]: Downloading https://files.pythonhosted.org/packages/a8/5d/057525aa4199b79ca91e2da8849e05c9768d7297d44dcff6f19b3cd45780/imap_box-0.1.7.tar.gz
+[2024-04-13 16:00:08] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/f9/14/5e4f20aa3776ae19651782d1c7b3b6c26a09d9d1f7321f66d04d4db682cc/pyweatherfr-4.1.1.tar.gz
+[2024-04-13 16:00:08] INFO root fetch - processPackages [pyweatherfr]: executing diffoscope
+[2024-04-13 16:00:08] INFO root fetch - processPackages [pyweatherfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyweatherfr-4.1.0.tar.gz tmp/pyweatherfr-4.1.1.tar.gz --markdown 20240413/p/pyweatherfr/4.1.0-4.1.1/README.md --exclude *.pyd
+[2024-04-13 16:00:08] INFO root fetch - processPackages [netznoe-smartmeter-portal-api]: Downloading https://files.pythonhosted.org/packages/1e/3a/eaa6fa50dbdc4ebd42bb71503f01c0c1eda183ca0419428b5d606d4ab944/netznoe_smartmeter_portal_api-1.1.0.tar.gz
+[2024-04-13 16:00:08] INFO root fetch - processPackages [pyinstaller-hooks-contrib]: Downloading https://files.pythonhosted.org/packages/2f/f5/521ae8edf3f03d1bfc49dd413f5f95010f64ec574d141a725acf3415650d/pyinstaller_hooks_contrib-2024.4.tar.gz
+[2024-04-13 16:00:08] INFO root fetch - processPackages [netznoe-smartmeter-portal-api]: executing diffoscope
+[2024-04-13 16:00:08] INFO root fetch - processPackages [netznoe-smartmeter-portal-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netznoe-smartmeter-portal-api-1.0.2.tar.gz tmp/netznoe_smartmeter_portal_api-1.1.0.tar.gz --markdown 20240413/n/netznoe-smartmeter-portal-api/1.0.2-1.1.0/README.md --exclude *.pyd
+[2024-04-13 16:00:08] INFO root fetch - processPackages [imap-box]: Downloading https://files.pythonhosted.org/packages/97/2f/ff4907f9de5989209f04841ea55d7af54310ad99a9db0408ad391984f532/imap_box-0.1.8.tar.gz
+[2024-04-13 16:00:08] INFO root fetch - processPackages [wakautosolver]: Downloading https://files.pythonhosted.org/packages/40/ca/61b89ca987bcb692a98f7ed72d621ec962895d97b2b3c0ac3560e13f9f8c/wakautosolver-2024.4.9-py3-none-any.whl
+[2024-04-13 16:00:08] INFO root fetch - processPackages [pyinstaller-hooks-contrib]: executing diffoscope
+[2024-04-13 16:00:08] INFO root fetch - processPackages [pyinstaller-hooks-contrib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinstaller-hooks-contrib-2024.3.tar.gz tmp/pyinstaller_hooks_contrib-2024.4.tar.gz --markdown 20240413/p/pyinstaller-hooks-contrib/2024.3-2024.4/README.md --exclude *.pyd
+[2024-04-13 16:00:08] INFO root fetch - processPackages [imap-box]: executing diffoscope
+[2024-04-13 16:00:08] INFO root fetch - processPackages [imap-box]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imap_box-0.1.7.tar.gz tmp/imap_box-0.1.8.tar.gz --markdown 20240413/i/imap-box/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-13 16:00:08] INFO root fetch - processPackages [wakautosolver]: executing diffoscope
+[2024-04-13 16:00:08] INFO root fetch - processPackages [wakautosolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wakautosolver-2024.4.8-py3-none-any.whl.zip tmp/wakautosolver-2024.4.9-py3-none-any.whl.zip --markdown 20240413/w/wakautosolver/2024.4.8-2024.4.9/README.md --exclude *.pyd
+[2024-04-13 16:00:08] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-4.1.0.tar.gz]
+[2024-04-13 16:00:08] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-4.1.1.tar.gz]
+[2024-04-13 16:00:08] INFO root fetch - main [MainThread]: End processing [pyweatherfr]: success
+[2024-04-13 16:00:09] INFO root fetch - processPackages [netznoe-smartmeter-portal-api]: Remove: archive file [/home/abi/fetcher/tmp/netznoe-smartmeter-portal-api-1.0.2.tar.gz]
+[2024-04-13 16:00:09] INFO root fetch - processPackages [netznoe-smartmeter-portal-api]: Remove: archive file [/home/abi/fetcher/tmp/netznoe_smartmeter_portal_api-1.1.0.tar.gz]
+[2024-04-13 16:00:09] INFO root fetch - main [MainThread]: End processing [netznoe-smartmeter-portal-api]: success
+[2024-04-13 16:00:09] INFO root fetch - processPackages [imap-box]: Remove: archive file [/home/abi/fetcher/tmp/imap_box-0.1.7.tar.gz]
+[2024-04-13 16:00:09] INFO root fetch - processPackages [imap-box]: Remove: archive file [/home/abi/fetcher/tmp/imap_box-0.1.8.tar.gz]
+[2024-04-13 16:00:09] INFO root fetch - main [MainThread]: End processing [imap-box]: success
+[2024-04-13 16:00:09] INFO root fetch - processPackages [wakautosolver]: Remove: archive file [/home/abi/fetcher/tmp/wakautosolver-2024.4.8-py3-none-any.whl.zip]
+[2024-04-13 16:00:09] INFO root fetch - processPackages [wakautosolver]: Remove: archive file [/home/abi/fetcher/tmp/wakautosolver-2024.4.9-py3-none-any.whl.zip]
+[2024-04-13 16:00:09] INFO root fetch - main [MainThread]: End processing [wakautosolver]: success
+[2024-04-13 16:00:10] INFO root fetch - processPackages [pyinstaller-hooks-contrib]: Remove: archive file [/home/abi/fetcher/tmp/pyinstaller-hooks-contrib-2024.3.tar.gz]
+[2024-04-13 16:00:10] INFO root fetch - processPackages [pyinstaller-hooks-contrib]: Remove: archive file [/home/abi/fetcher/tmp/pyinstaller_hooks_contrib-2024.4.tar.gz]
+[2024-04-13 16:00:10] INFO root fetch - main [MainThread]: End processing [pyinstaller-hooks-contrib]: success
+[2024-04-13 16:00:10] INFO root fetch - main [MainThread]: Store serial: [22752343]
