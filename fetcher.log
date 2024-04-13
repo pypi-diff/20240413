@@ -10770,3 +10770,33 @@
 [2024-04-13 10:22:17] INFO root fetch - processPackages [sirmordred]: Remove: archive file [/home/abi/fetcher/tmp/sirmordred-1.0.0rc3.tar.gz]
 [2024-04-13 10:22:17] INFO root fetch - main [MainThread]: End processing [sirmordred]: success
 [2024-04-13 10:22:17] INFO root fetch - main [MainThread]: Store serial: [22750496]
+[2024-04-13 10:24:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750496]
+[2024-04-13 10:24:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 10:24:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: silicon-analyser
+[2024-04-13 10:24:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Agently
+[2024-04-13 10:24:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: markdown_convert
+[2024-04-13 10:24:25] INFO root fetch - processPackages [silicon-analyser]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-13 10:24:25] INFO root fetch - processPackages [Agently]: New version: [3.3.0.0a4] Old Version: [3.3.0.0a3]
+[2024-04-13 10:24:25] INFO root fetch - processPackages [markdown_convert]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-13 10:24:25] INFO root fetch - processPackages [silicon-analyser]: Downloading https://files.pythonhosted.org/packages/2b/3f/3d55febce963be2dd7ebb8bb3cb8c63498360893383d575875c5a1fff733/silicon-analyser-1.0.1.tar.gz
+[2024-04-13 10:24:26] INFO root fetch - processPackages [Agently]: Downloading https://files.pythonhosted.org/packages/a4/a6/b3cb0e0099fbd343c082a19daba46a81ce871dcd74376d1ba5aaffd5b7f8/Agently-3.3.0.0a3.tar.gz
+[2024-04-13 10:24:26] INFO root fetch - processPackages [markdown_convert]: Downloading https://files.pythonhosted.org/packages/30/e1/f27ddb319d6ccb627dea726ba14b1ea8ffaa8ebec80501681f05cdc36b05/markdown_convert-1.0.7.tar.gz
+[2024-04-13 10:24:26] INFO root fetch - processPackages [silicon-analyser]: Downloading https://files.pythonhosted.org/packages/04/3f/1bc461b0a73030dff7078e1d045a84a1ff38eebae77c8f98158e43ddb4b3/silicon-analyser-1.0.2.tar.gz
+[2024-04-13 10:24:26] INFO root fetch - processPackages [silicon-analyser]: executing diffoscope
+[2024-04-13 10:24:26] INFO root fetch - processPackages [silicon-analyser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silicon-analyser-1.0.1.tar.gz tmp/silicon-analyser-1.0.2.tar.gz --markdown 20240413/s/silicon-analyser/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-13 10:24:26] INFO root fetch - processPackages [Agently]: Downloading https://files.pythonhosted.org/packages/06/93/d3f6b2c2425c4ea56b8317c6178e77667fdd640d4025079560026fe61f3d/Agently-3.3.0.0a4.tar.gz
+[2024-04-13 10:24:26] INFO root fetch - processPackages [markdown_convert]: Downloading https://files.pythonhosted.org/packages/03/3b/539e16ff47392cca4347e312a690556a06f9d22589335d8de245f691625e/markdown_convert-1.0.8.tar.gz
+[2024-04-13 10:24:26] INFO root fetch - processPackages [Agently]: executing diffoscope
+[2024-04-13 10:24:26] INFO root fetch - processPackages [Agently]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Agently-3.3.0.0a3.tar.gz tmp/Agently-3.3.0.0a4.tar.gz --markdown 20240413/A/Agently/3.3.0.0a3-3.3.0.0a4/README.md --exclude *.pyd
+[2024-04-13 10:24:26] INFO root fetch - processPackages [markdown_convert]: executing diffoscope
+[2024-04-13 10:24:26] INFO root fetch - processPackages [markdown_convert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/markdown_convert-1.0.7.tar.gz tmp/markdown_convert-1.0.8.tar.gz --markdown 20240413/m/markdown_convert/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-04-13 10:24:26] INFO root fetch - processPackages [silicon-analyser]: Remove: archive file [/home/abi/fetcher/tmp/silicon-analyser-1.0.1.tar.gz]
+[2024-04-13 10:24:26] INFO root fetch - processPackages [silicon-analyser]: Remove: archive file [/home/abi/fetcher/tmp/silicon-analyser-1.0.2.tar.gz]
+[2024-04-13 10:24:26] INFO root fetch - main [MainThread]: End processing [silicon-analyser]: success
+[2024-04-13 10:24:27] INFO root fetch - processPackages [markdown_convert]: Remove: archive file [/home/abi/fetcher/tmp/markdown_convert-1.0.7.tar.gz]
+[2024-04-13 10:24:27] INFO root fetch - processPackages [markdown_convert]: Remove: archive file [/home/abi/fetcher/tmp/markdown_convert-1.0.8.tar.gz]
+[2024-04-13 10:24:27] INFO root fetch - main [MainThread]: End processing [markdown_convert]: success
+[2024-04-13 10:24:27] INFO root fetch - processPackages [Agently]: Remove: archive file [/home/abi/fetcher/tmp/Agently-3.3.0.0a3.tar.gz]
+[2024-04-13 10:24:27] INFO root fetch - processPackages [Agently]: Remove: archive file [/home/abi/fetcher/tmp/Agently-3.3.0.0a4.tar.gz]
+[2024-04-13 10:24:27] INFO root fetch - main [MainThread]: End processing [Agently]: success
+[2024-04-13 10:24:27] INFO root fetch - main [MainThread]: Store serial: [22750505]
