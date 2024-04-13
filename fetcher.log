@@ -11950,3 +11950,9 @@
 [2024-04-13 12:02:37] INFO root fetch - processPackages [fastapi-crudrouter-mongodb]: Remove: archive file [/home/abi/fetcher/tmp/fastapi-crudrouter-mongodb-0.1.1.tar.gz]
 [2024-04-13 12:02:37] INFO root fetch - main [MainThread]: End processing [fastapi-crudrouter-mongodb]: success
 [2024-04-13 12:02:37] INFO root fetch - main [MainThread]: Store serial: [22751026]
+[2024-04-13 12:04:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751026]
+[2024-04-13 12:04:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 12:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Web3-Model
+[2024-04-13 12:04:46] WARNING root fetch - processPackages [Web3-Model]: Skipping, unable to determine old version
+[2024-04-13 12:04:46] INFO root fetch - main [MainThread]: End processing [Web3-Model] error
+[2024-04-13 12:04:46] INFO root fetch - main [MainThread]: Store serial: [22751032]
