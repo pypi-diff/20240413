@@ -16678,3 +16678,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 18:26:04] INFO root fetch - processPackages [altscore]: Remove: archive file [/home/abi/fetcher/tmp/altscore-0.1.99.tar.gz]
 [2024-04-13 18:26:04] INFO root fetch - main [MainThread]: End processing [altscore]: success
 [2024-04-13 18:26:04] INFO root fetch - main [MainThread]: Store serial: [22753150]
+[2024-04-13 18:28:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753150]
+[2024-04-13 18:28:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 18:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tmnt
+[2024-04-13 18:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ResearchTikPy
+[2024-04-13 18:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mixture-of-depth
+[2024-04-13 18:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: codelinker
+[2024-04-13 18:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ovos-skill-naptime
+[2024-04-13 18:28:13] INFO root fetch - processPackages [codelinker]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 18:28:13] INFO root fetch - processPackages [ResearchTikPy]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 18:28:13] INFO root fetch - processPackages [mixture-of-depth]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-13 18:28:13] INFO root fetch - processPackages [tmnt]: New version: [0.7.51b20240412] Old Version: [0.7.51]
+[2024-04-13 18:28:13] INFO root fetch - processPackages [ResearchTikPy]: Downloading https://files.pythonhosted.org/packages/c9/94/bab84c383de4dd09a858fd735058b0eb8da476b1f55e265461d549751a07/ResearchTikPy-0.1.1.tar.gz
+[2024-04-13 18:28:13] INFO root fetch - processPackages [ovos-skill-naptime]: New version: [0.2.3a4] Old Version: [0.2.3a3]
+[2024-04-13 18:28:13] INFO root fetch - processPackages [codelinker]: Downloading https://files.pythonhosted.org/packages/54/81/8348286482841844f753d56b10f5ea82c423ae69f6d9a303959cf0a185fd/codelinker-0.1.0.tar.gz
+[2024-04-13 18:28:13] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/de/91/3759363c926c86cee6477a6821f87749ea1c5141a53457be277dd4ebaf86/tmnt-0.7.51.tar.gz
+[2024-04-13 18:28:13] INFO root fetch - processPackages [mixture-of-depth]: Downloading https://files.pythonhosted.org/packages/89/db/f1554ab56f62effa910c74ae4ce8e2fffa21682d2c16984c2c935b9d7b79/mixture-of-depth-1.1.0.tar.gz
+[2024-04-13 18:28:14] INFO root fetch - processPackages [ovos-skill-naptime]: Downloading https://files.pythonhosted.org/packages/d6/9f/815931d85aefe5aa28b1d8176f66414519ea5a4f0cb2b525f7273887f8b0/ovos_skill_naptime-0.2.3a3-py3-none-any.whl
+[2024-04-13 18:28:14] INFO root fetch - processPackages [codelinker]: Downloading https://files.pythonhosted.org/packages/ff/fc/229a56d68c5395b8801797e5e9cd7cd431f69fe7b2fe3639b02f1456b47a/codelinker-0.1.1.tar.gz
+[2024-04-13 18:28:14] INFO root fetch - processPackages [ResearchTikPy]: Downloading https://files.pythonhosted.org/packages/17/31/b40b0265ee99f93e01383fca1b9300cb4fe9970f9a21bba9b3bfddf8b338/ResearchTikPy-0.1.2.tar.gz
+[2024-04-13 18:28:14] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/4a/64/868eeb6a42ed1f7dc3d113a36c8930b7525af3901cbef525c39ca2f2d374/tmnt-0.7.51b20240412.tar.gz
+[2024-04-13 18:28:14] INFO root fetch - processPackages [mixture-of-depth]: Downloading https://files.pythonhosted.org/packages/51/4c/2140ff4012b48c91ea9a7575fac05baba1feaa04874bdba618d3310b6f2d/mixture-of-depth-1.1.1.tar.gz
+[2024-04-13 18:28:14] INFO root fetch - processPackages [codelinker]: executing diffoscope
+[2024-04-13 18:28:14] INFO root fetch - processPackages [codelinker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codelinker-0.1.0.tar.gz tmp/codelinker-0.1.1.tar.gz --markdown 20240413/c/codelinker/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 18:28:14] INFO root fetch - processPackages [ResearchTikPy]: executing diffoscope
+[2024-04-13 18:28:14] INFO root fetch - processPackages [ResearchTikPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ResearchTikPy-0.1.1.tar.gz tmp/ResearchTikPy-0.1.2.tar.gz --markdown 20240413/R/ResearchTikPy/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-13 18:28:14] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2024-04-13 18:28:14] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.51.tar.gz tmp/tmnt-0.7.51b20240412.tar.gz --markdown 20240413/t/tmnt/0.7.51-0.7.51b20240412/README.md --exclude *.pyd
+[2024-04-13 18:28:14] INFO root fetch - processPackages [mixture-of-depth]: executing diffoscope
+[2024-04-13 18:28:14] INFO root fetch - processPackages [mixture-of-depth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixture-of-depth-1.1.0.tar.gz tmp/mixture-of-depth-1.1.1.tar.gz --markdown 20240413/m/mixture-of-depth/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-13 18:28:14] INFO root fetch - processPackages [ovos-skill-naptime]: Downloading https://files.pythonhosted.org/packages/f9/22/842791024200a9ac67ab1063bc5a63318b663b5f32005d129e22b86c2422/ovos_skill_naptime-0.2.3a4-py3-none-any.whl
+[2024-04-13 18:28:14] INFO root fetch - processPackages [ovos-skill-naptime]: executing diffoscope
+[2024-04-13 18:28:14] INFO root fetch - processPackages [ovos-skill-naptime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_skill_naptime-0.2.3a3-py3-none-any.whl.zip tmp/ovos_skill_naptime-0.2.3a4-py3-none-any.whl.zip --markdown 20240413/o/ovos-skill-naptime/0.2.3a3-0.2.3a4/README.md --exclude *.pyd
+[2024-04-13 18:28:14] INFO root fetch - processPackages [codelinker]: Remove: archive file [/home/abi/fetcher/tmp/codelinker-0.1.0.tar.gz]
+[2024-04-13 18:28:14] INFO root fetch - processPackages [codelinker]: Remove: archive file [/home/abi/fetcher/tmp/codelinker-0.1.1.tar.gz]
+[2024-04-13 18:28:14] INFO root fetch - main [MainThread]: End processing [codelinker]: success
+[2024-04-13 18:28:14] INFO root fetch - processPackages [ResearchTikPy]: Remove: archive file [/home/abi/fetcher/tmp/ResearchTikPy-0.1.1.tar.gz]
+[2024-04-13 18:28:14] INFO root fetch - processPackages [ResearchTikPy]: Remove: archive file [/home/abi/fetcher/tmp/ResearchTikPy-0.1.2.tar.gz]
+[2024-04-13 18:28:14] INFO root fetch - main [MainThread]: End processing [ResearchTikPy]: success
+[2024-04-13 18:28:15] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.51.tar.gz]
+[2024-04-13 18:28:15] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.51b20240412.tar.gz]
+[2024-04-13 18:28:15] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2024-04-13 18:28:15] INFO root fetch - processPackages [mixture-of-depth]: Remove: archive file [/home/abi/fetcher/tmp/mixture-of-depth-1.1.0.tar.gz]
+[2024-04-13 18:28:15] INFO root fetch - processPackages [mixture-of-depth]: Remove: archive file [/home/abi/fetcher/tmp/mixture-of-depth-1.1.1.tar.gz]
+[2024-04-13 18:28:15] INFO root fetch - main [MainThread]: End processing [mixture-of-depth]: success
+[2024-04-13 18:28:15] INFO root fetch - processPackages [ovos-skill-naptime]: Remove: archive file [/home/abi/fetcher/tmp/ovos_skill_naptime-0.2.3a3-py3-none-any.whl.zip]
+[2024-04-13 18:28:15] INFO root fetch - processPackages [ovos-skill-naptime]: Remove: archive file [/home/abi/fetcher/tmp/ovos_skill_naptime-0.2.3a4-py3-none-any.whl.zip]
+[2024-04-13 18:28:15] INFO root fetch - main [MainThread]: End processing [ovos-skill-naptime]: success
+[2024-04-13 18:28:15] INFO root fetch - main [MainThread]: Store serial: [22753164]
