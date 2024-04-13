@@ -8079,3 +8079,15 @@
 [2024-04-13 07:05:01] INFO root fetch - processPackages [openai]: Remove: archive file [/home/abi/fetcher/tmp/openai-1.9.0.tar.gz]
 [2024-04-13 07:05:01] INFO root fetch - main [MainThread]: End processing [openai]: success
 [2024-04-13 07:05:01] INFO root fetch - main [MainThread]: Store serial: [22749540]
+[2024-04-13 07:07:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749540]
+[2024-04-13 07:07:10] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 07:07:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-homeassistant-custom-component
+[2024-04-13 07:07:10] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-13 07:07:10] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Downloading https://files.pythonhosted.org/packages/8a/3b/b76075872ac35edad46a4fd3401c3faebda7af874b306526a1d7e1a4336a/pytest-homeassistant-custom-component-0.9.8.tar.gz
+[2024-04-13 07:07:10] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Downloading https://files.pythonhosted.org/packages/60/4e/ba1174db4b883610c2a5afba7a30857178ada41a2368936b2e3d764bfe6a/pytest-homeassistant-custom-component-0.9.9.tar.gz
+[2024-04-13 07:07:10] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: executing diffoscope
+[2024-04-13 07:07:10] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-homeassistant-custom-component-0.9.8.tar.gz tmp/pytest-homeassistant-custom-component-0.9.9.tar.gz --markdown 20240413/p/pytest-homeassistant-custom-component/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-13 07:07:11] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Remove: archive file [/home/abi/fetcher/tmp/pytest-homeassistant-custom-component-0.9.8.tar.gz]
+[2024-04-13 07:07:11] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Remove: archive file [/home/abi/fetcher/tmp/pytest-homeassistant-custom-component-0.9.9.tar.gz]
+[2024-04-13 07:07:11] INFO root fetch - main [MainThread]: End processing [pytest-homeassistant-custom-component]: success
+[2024-04-13 07:07:11] INFO root fetch - main [MainThread]: Store serial: [22749543]
