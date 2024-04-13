@@ -15189,3 +15189,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:17:41] INFO root fetch - processPackages [QEasyWidgets]: Remove: archive file [/home/abi/fetcher/tmp/QEasyWidgets-0.1.2.tar.gz]
 [2024-04-13 16:17:41] INFO root fetch - main [MainThread]: End processing [QEasyWidgets]: success
 [2024-04-13 16:17:41] INFO root fetch - main [MainThread]: Store serial: [22752469]
+[2024-04-13 16:19:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752469]
+[2024-04-13 16:19:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 16:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cachelib
+[2024-04-13 16:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: synth-mapping-helper
+[2024-04-13 16:19:51] INFO root fetch - processPackages [cachelib]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-13 16:19:51] INFO root fetch - processPackages [synth-mapping-helper]: New version: [1.4.0] Old Version: [1.3.9]
+[2024-04-13 16:19:51] INFO root fetch - processPackages [cachelib]: Downloading https://files.pythonhosted.org/packages/95/c2/cf202f4bcf25946eb39067fbf17f558f8c68ceab36f2a84d203179898fcb/cachelib-0.8.0.tar.gz
+[2024-04-13 16:19:51] INFO root fetch - processPackages [synth-mapping-helper]: Downloading https://files.pythonhosted.org/packages/c5/ce/490fe6f4a5c289d4ef5b62768d384214ad9f6c0191584164021d920ac346/synth_mapping_helper-1.3.9.tar.gz
+[2024-04-13 16:19:51] INFO root fetch - processPackages [cachelib]: Downloading https://files.pythonhosted.org/packages/79/f2/1c76df4d295789bbc836eea50b813d64f86e640c29fe8f0a3686e9c4e3e9/cachelib-0.9.0.tar.gz
+[2024-04-13 16:19:51] INFO root fetch - processPackages [synth-mapping-helper]: Downloading https://files.pythonhosted.org/packages/f6/c0/5892a84c61c6788a7c5e29ba2546c2ad52f88f252d5c409bf56e02356598/synth_mapping_helper-1.4.0.tar.gz
+[2024-04-13 16:19:51] INFO root fetch - processPackages [cachelib]: executing diffoscope
+[2024-04-13 16:19:51] INFO root fetch - processPackages [cachelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cachelib-0.8.0.tar.gz tmp/cachelib-0.9.0.tar.gz --markdown 20240413/c/cachelib/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-13 16:19:51] INFO root fetch - processPackages [synth-mapping-helper]: executing diffoscope
+[2024-04-13 16:19:51] INFO root fetch - processPackages [synth-mapping-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synth_mapping_helper-1.3.9.tar.gz tmp/synth_mapping_helper-1.4.0.tar.gz --markdown 20240413/s/synth-mapping-helper/1.3.9-1.4.0/README.md --exclude *.pyd
+[2024-04-13 16:19:52] INFO root fetch - processPackages [cachelib]: Remove: archive file [/home/abi/fetcher/tmp/cachelib-0.8.0.tar.gz]
+[2024-04-13 16:19:52] INFO root fetch - processPackages [cachelib]: Remove: archive file [/home/abi/fetcher/tmp/cachelib-0.9.0.tar.gz]
+[2024-04-13 16:19:52] INFO root fetch - main [MainThread]: End processing [cachelib]: success
+[2024-04-13 16:19:52] INFO root fetch - processPackages [synth-mapping-helper]: Remove: archive file [/home/abi/fetcher/tmp/synth_mapping_helper-1.3.9.tar.gz]
+[2024-04-13 16:19:52] INFO root fetch - processPackages [synth-mapping-helper]: Remove: archive file [/home/abi/fetcher/tmp/synth_mapping_helper-1.4.0.tar.gz]
+[2024-04-13 16:19:52] INFO root fetch - main [MainThread]: End processing [synth-mapping-helper]: success
+[2024-04-13 16:19:52] INFO root fetch - main [MainThread]: Store serial: [22752475]
