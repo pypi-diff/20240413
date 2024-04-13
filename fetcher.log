@@ -2057,3 +2057,94 @@
 [2024-04-13 02:15:17] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
 [2024-04-13 02:15:17] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
 [2024-04-13 02:15:17] INFO root fetch - main [MainThread]: Store serial: [22747202]
+[2024-04-13 02:17:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22747202]
+[2024-04-13 02:17:25] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2024-04-13 02:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdklabs.cdk-hyperledger-fabric-network
+[2024-04-13 02:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pt-br-verbs-lemmatizer
+[2024-04-13 02:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-secret-manager-wrapper-layer
+[2024-04-13 02:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyreqwest-impersonate
+[2024-04-13 02:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: layrz-forms
+[2024-04-13 02:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdklabs.appsync-utils
+[2024-04-13 02:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-gitlab-runner
+[2024-04-13 02:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: torchao-nightly
+[2024-04-13 02:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: biolearn
+[2024-04-13 02:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: searchspotify
+[2024-04-13 02:17:25] INFO root fetch - processPackages [pt-br-verbs-lemmatizer]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 02:17:25] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-04-13 02:17:25] INFO root fetch - processPackages [cdklabs.appsync-utils]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-13 02:17:25] INFO root fetch - processPackages [layrz-forms]: New version: [2.0.0] Old Version: [1.0.9]
+[2024-04-13 02:17:25] WARNING root fetch - processPackages [searchspotify]: Skipping, unable to determine old version
+[2024-04-13 02:17:25] INFO root fetch - processPackages [searchspotify]: Start processing: cdk-budibase
+[2024-04-13 02:17:25] INFO root fetch - main [MainThread]: End processing [searchspotify] error
+[2024-04-13 02:17:25] INFO root fetch - processPackages [torchao-nightly]: New version: [2024.4.9] Old Version: [2024.4.8]
+[2024-04-13 02:17:25] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-13 02:17:25] INFO root fetch - processPackages [pyreqwest-impersonate]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 02:17:25] INFO root fetch - processPackages [biolearn]: New version: [0.4.0] Old Version: [0.3.5]
+[2024-04-13 02:17:25] INFO root fetch - processPackages [cdk-budibase]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-13 02:17:25] INFO root fetch - processPackages [pt-br-verbs-lemmatizer]: Downloading https://files.pythonhosted.org/packages/a0/97/28e7256c2ba21de6ad3775a9c6d1a6a9408c5fa68d6da7d90cc5241406f3/pt_br_verbs_lemmatizer-0.1.1.tar.gz
+[2024-04-13 02:17:25] INFO root fetch - processPackages [layrz-forms]: Downloading https://files.pythonhosted.org/packages/28/0e/596e64f2072eb2d9efbaedc0aa512f11208e966fda00eb9f3135730f4e3f/layrz-forms-1.0.9.tar.gz
+[2024-04-13 02:17:25] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Downloading https://files.pythonhosted.org/packages/9b/c8/ddb4d2575b42b36bf1ebf5daccec9c3c53a9ac9cadaeffb66bed93dc3bab/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz
+[2024-04-13 02:17:25] INFO root fetch - processPackages [cdk-gitlab-runner]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-04-13 02:17:25] INFO root fetch - processPackages [cdklabs.appsync-utils]: Downloading https://files.pythonhosted.org/packages/c2/b6/9921880127918975163ef796466fd100a8f3a6246436ca4993eafae4915d/cdklabs.appsync-utils-0.0.98.tar.gz
+[2024-04-13 02:17:25] INFO root fetch - processPackages [torchao-nightly]: Downloading https://files.pythonhosted.org/packages/5f/75/fa2f35d39cfd048a42fe784f2a57da5743e7983bb669c3e4d8eb5aa83710/torchao-nightly-2024.4.8.tar.gz
+[2024-04-13 02:17:25] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/00/91/545869a3cc999dbc9750aad345d775087610ebf834517c928a0d0e289c4e/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz
+[2024-04-13 02:17:26] WARNING root fetch - processPackages [pt-br-verbs-lemmatizer]: Skipping package: exceeds size limit 11425425>=10485760
+[2024-04-13 02:17:26] INFO root fetch - processPackages [pt-br-verbs-lemmatizer]: Start processing: pygptools
+[2024-04-13 02:17:26] INFO root fetch - main [MainThread]: End processing [pt-br-verbs-lemmatizer] error
+[2024-04-13 02:17:26] INFO root fetch - processPackages [cdk-budibase]: Downloading https://files.pythonhosted.org/packages/4f/0a/01c6428b0ea2e78dd2dd9e10aba3ba8252b6cd0992b5a90ea9ba90983551/cdk-budibase-0.0.98.tar.gz
+[2024-04-13 02:17:26] INFO root fetch - processPackages [pyreqwest-impersonate]: Downloading https://files.pythonhosted.org/packages/9d/d3/49c5ae3a2111a6b20d275cf1f6795b5211e452ef3c3910e593725676d52e/pyreqwest_impersonate-0.1.0.tar.gz
+[2024-04-13 02:17:26] WARNING root fetch - processPackages [pygptools]: Skipping, unable to determine old version
+[2024-04-13 02:17:26] INFO root fetch - main [MainThread]: End processing [pygptools] error
+[2024-04-13 02:17:26] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Downloading https://files.pythonhosted.org/packages/56/40/cbf52f4213018f2d82f0aad0f2fa90e69c2923704c1905bd7e090d3accf2/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz
+[2024-04-13 02:17:26] INFO root fetch - processPackages [biolearn]: Downloading https://files.pythonhosted.org/packages/79/9c/199400182cdf755570837dae6f0838c7693cb460e5b1cdba86c2a9958cbe/biolearn-0.3.5.tar.gz
+[2024-04-13 02:17:26] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/07/29/9f2cc8590770873b6073743e94ff15a2a7913eb0de3e6a4d2fc133008f62/cdk-gitlab-runner-2.2.98.tar.gz
+[2024-04-13 02:17:26] INFO root fetch - processPackages [cdklabs.appsync-utils]: Downloading https://files.pythonhosted.org/packages/fe/2c/3a8605fe934a0a120041c6190f384b00350c8036420ee8d53ac0b0906f74/cdklabs.appsync-utils-0.0.99.tar.gz
+[2024-04-13 02:17:26] INFO root fetch - processPackages [torchao-nightly]: Downloading https://files.pythonhosted.org/packages/4b/d5/e0ae6447ebc2fc27b71391c55653c89c441bbe6a6a8a7b37aa28dc13014e/torchao-nightly-2024.4.9.tar.gz
+[2024-04-13 02:17:26] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/c2/c5/a8a13bb72ea375e2ce99dd389e945478ce7d95d8628acf6db64f14f674f5/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz
+[2024-04-13 02:17:26] INFO root fetch - processPackages [layrz-forms]: Downloading https://files.pythonhosted.org/packages/c9/b2/2adf10b0fa7f3ca79e205eb4c8860b5290c768b8fbf9a21ecf50de5bb472/layrz-forms-2.0.0.tar.gz
+[2024-04-13 02:17:26] WARNING root fetch - processPackages [biolearn]: Skipping package: exceeds size limit 13009714>=10485760
+[2024-04-13 02:17:26] INFO root fetch - main [MainThread]: End processing [biolearn] error
+[2024-04-13 02:17:26] INFO root fetch - processPackages [cdk-budibase]: Downloading https://files.pythonhosted.org/packages/3d/b1/10d1c8f0601959fd0771f3dc7b94b15e702b81729d74397e80ca3dd66c88/cdk-budibase-0.0.99.tar.gz
+[2024-04-13 02:17:26] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: executing diffoscope
+[2024-04-13 02:17:26] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz --markdown 20240413/c/cdklabs.cdk-hyperledger-fabric-network/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-04-13 02:17:26] INFO root fetch - processPackages [pyreqwest-impersonate]: Downloading https://files.pythonhosted.org/packages/0e/98/fa8e633b3a8591ce573267cf6f5e4225f9ea5a36ca8a33502e7e39cfd953/pyreqwest_impersonate-0.1.1.tar.gz
+[2024-04-13 02:17:26] INFO root fetch - processPackages [cdklabs.appsync-utils]: executing diffoscope
+[2024-04-13 02:17:26] INFO root fetch - processPackages [cdklabs.appsync-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.appsync-utils-0.0.98.tar.gz tmp/cdklabs.appsync-utils-0.0.99.tar.gz --markdown 20240413/c/cdklabs.appsync-utils/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-13 02:17:26] INFO root fetch - processPackages [torchao-nightly]: executing diffoscope
+[2024-04-13 02:17:26] INFO root fetch - processPackages [torchao-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchao-nightly-2024.4.8.tar.gz tmp/torchao-nightly-2024.4.9.tar.gz --markdown 20240413/t/torchao-nightly/2024.4.8-2024.4.9/README.md --exclude *.pyd
+[2024-04-13 02:17:26] INFO root fetch - processPackages [layrz-forms]: executing diffoscope
+[2024-04-13 02:17:26] INFO root fetch - processPackages [layrz-forms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/layrz-forms-1.0.9.tar.gz tmp/layrz-forms-2.0.0.tar.gz --markdown 20240413/l/layrz-forms/1.0.9-2.0.0/README.md --exclude *.pyd
+[2024-04-13 02:17:26] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2024-04-13 02:17:26] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20240413/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-04-13 02:17:26] INFO root fetch - processPackages [cdk-budibase]: executing diffoscope
+[2024-04-13 02:17:26] INFO root fetch - processPackages [cdk-budibase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-budibase-0.0.98.tar.gz tmp/cdk-budibase-0.0.99.tar.gz --markdown 20240413/c/cdk-budibase/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-13 02:17:26] INFO root fetch - processPackages [pyreqwest-impersonate]: executing diffoscope
+[2024-04-13 02:17:26] INFO root fetch - processPackages [pyreqwest-impersonate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyreqwest_impersonate-0.1.0.tar.gz tmp/pyreqwest_impersonate-0.1.1.tar.gz --markdown 20240413/p/pyreqwest-impersonate/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 02:17:26] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/16/61/e9f00b4e877a6352bd641de360f7577c27548fbcedc3aab19b1cf3852b9a/cdk-gitlab-runner-2.2.99.tar.gz
+[2024-04-13 02:17:26] INFO root fetch - processPackages [cdk-gitlab-runner]: executing diffoscope
+[2024-04-13 02:17:26] INFO root fetch - processPackages [cdk-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gitlab-runner-2.2.98.tar.gz tmp/cdk-gitlab-runner-2.2.99.tar.gz --markdown 20240413/c/cdk-gitlab-runner/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-04-13 02:17:27] INFO root fetch - processPackages [layrz-forms]: Remove: archive file [/home/abi/fetcher/tmp/layrz-forms-1.0.9.tar.gz]
+[2024-04-13 02:17:27] INFO root fetch - processPackages [layrz-forms]: Remove: archive file [/home/abi/fetcher/tmp/layrz-forms-2.0.0.tar.gz]
+[2024-04-13 02:17:27] INFO root fetch - main [MainThread]: End processing [layrz-forms]: success
+[2024-04-13 02:17:27] INFO root fetch - processPackages [torchao-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchao-nightly-2024.4.8.tar.gz]
+[2024-04-13 02:17:27] INFO root fetch - processPackages [pyreqwest-impersonate]: Remove: archive file [/home/abi/fetcher/tmp/pyreqwest_impersonate-0.1.0.tar.gz]
+[2024-04-13 02:17:27] INFO root fetch - processPackages [torchao-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchao-nightly-2024.4.9.tar.gz]
+[2024-04-13 02:17:27] INFO root fetch - processPackages [pyreqwest-impersonate]: Remove: archive file [/home/abi/fetcher/tmp/pyreqwest_impersonate-0.1.1.tar.gz]
+[2024-04-13 02:17:27] INFO root fetch - main [MainThread]: End processing [torchao-nightly]: success
+[2024-04-13 02:17:27] INFO root fetch - main [MainThread]: End processing [pyreqwest-impersonate]: success
+[2024-04-13 02:17:27] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz]
+[2024-04-13 02:17:27] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz]
+[2024-04-13 02:17:27] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-hyperledger-fabric-network]: success
+[2024-04-13 02:17:27] INFO root fetch - processPackages [cdk-budibase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-budibase-0.0.98.tar.gz]
+[2024-04-13 02:17:27] INFO root fetch - processPackages [cdk-budibase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-budibase-0.0.99.tar.gz]
+[2024-04-13 02:17:27] INFO root fetch - main [MainThread]: End processing [cdk-budibase]: success
+[2024-04-13 02:17:27] INFO root fetch - processPackages [cdklabs.appsync-utils]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.appsync-utils-0.0.98.tar.gz]
+[2024-04-13 02:17:27] INFO root fetch - processPackages [cdklabs.appsync-utils]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.appsync-utils-0.0.99.tar.gz]
+[2024-04-13 02:17:27] INFO root fetch - main [MainThread]: End processing [cdklabs.appsync-utils]: success
+[2024-04-13 02:17:27] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz]
+[2024-04-13 02:17:27] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz]
+[2024-04-13 02:17:27] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
+[2024-04-13 02:17:27] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.98.tar.gz]
+[2024-04-13 02:17:27] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.99.tar.gz]
+[2024-04-13 02:17:27] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
+[2024-04-13 02:17:27] INFO root fetch - main [MainThread]: Store serial: [22747265]
