@@ -15417,3 +15417,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:35:07] INFO root fetch - processPackages [blint]: Remove: archive file [/home/abi/fetcher/tmp/blint-2.1.2.tar.gz]
 [2024-04-13 16:35:07] INFO root fetch - main [MainThread]: End processing [blint]: success
 [2024-04-13 16:35:07] INFO root fetch - main [MainThread]: Store serial: [22752545]
+[2024-04-13 16:37:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752545]
+[2024-04-13 16:37:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 16:37:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: line-bot-sdk
+[2024-04-13 16:37:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: m-car-api
+[2024-04-13 16:37:15] INFO root fetch - processPackages [m-car-api]: New version: [1.1.0] Old Version: [1.0.2]
+[2024-04-13 16:37:16] INFO root fetch - processPackages [m-car-api]: Downloading https://files.pythonhosted.org/packages/05/08/9651b172a7c3ca16794c0c028f0dd5bccd5d9233191de902b24de86bb3b1/m_car_api-1.0.2.tar.gz
+[2024-04-13 16:37:16] INFO root fetch - processPackages [line-bot-sdk]: New version: [3.9.0] Old Version: [3.8.1]
+[2024-04-13 16:37:16] INFO root fetch - processPackages [line-bot-sdk]: Downloading https://files.pythonhosted.org/packages/82/49/cb62eb3d463daa25c5f38b537495149a56cd06013842bfb65712fb6b11f9/line-bot-sdk-3.8.1.tar.gz
+[2024-04-13 16:37:16] INFO root fetch - processPackages [m-car-api]: Downloading https://files.pythonhosted.org/packages/cf/fc/af7f4b83bcb892c4b0deba8a6eb7bacc26ea2dbe6222473caaf39eaa2d0e/m_car_api-1.1.0.tar.gz
+[2024-04-13 16:37:16] INFO root fetch - processPackages [m-car-api]: executing diffoscope
+[2024-04-13 16:37:16] INFO root fetch - processPackages [m-car-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/m_car_api-1.0.2.tar.gz tmp/m_car_api-1.1.0.tar.gz --markdown 20240413/m/m-car-api/1.0.2-1.1.0/README.md --exclude *.pyd
+[2024-04-13 16:37:16] INFO root fetch - processPackages [line-bot-sdk]: Downloading https://files.pythonhosted.org/packages/44/a0/2740186a3a599ee69dfcb245fad5e76c881462097e75e219d5dc6b8967df/line-bot-sdk-3.9.0.tar.gz
+[2024-04-13 16:37:16] INFO root fetch - processPackages [line-bot-sdk]: executing diffoscope
+[2024-04-13 16:37:16] INFO root fetch - processPackages [line-bot-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/line-bot-sdk-3.8.1.tar.gz tmp/line-bot-sdk-3.9.0.tar.gz --markdown 20240413/l/line-bot-sdk/3.8.1-3.9.0/README.md --exclude *.pyd
+[2024-04-13 16:37:17] INFO root fetch - processPackages [m-car-api]: Remove: archive file [/home/abi/fetcher/tmp/m_car_api-1.0.2.tar.gz]
+[2024-04-13 16:37:17] INFO root fetch - processPackages [m-car-api]: Remove: archive file [/home/abi/fetcher/tmp/m_car_api-1.1.0.tar.gz]
+[2024-04-13 16:37:17] INFO root fetch - main [MainThread]: End processing [m-car-api]: success
+[2024-04-13 16:37:18] INFO root fetch - processPackages [line-bot-sdk]: Remove: archive file [/home/abi/fetcher/tmp/line-bot-sdk-3.8.1.tar.gz]
+[2024-04-13 16:37:18] INFO root fetch - processPackages [line-bot-sdk]: Remove: archive file [/home/abi/fetcher/tmp/line-bot-sdk-3.9.0.tar.gz]
+[2024-04-13 16:37:18] INFO root fetch - main [MainThread]: End processing [line-bot-sdk]: success
+[2024-04-13 16:37:18] INFO root fetch - main [MainThread]: Store serial: [22752553]
