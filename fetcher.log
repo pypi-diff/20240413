@@ -6536,3 +6536,24 @@
 [2024-04-13 03:30:34] INFO root fetch - processPackages [PyCatFile]: Remove: archive file [/home/abi/fetcher/tmp/PyCatFile-0.7.8.tar.gz]
 [2024-04-13 03:30:34] INFO root fetch - main [MainThread]: End processing [PyCatFile]: success
 [2024-04-13 03:30:34] INFO root fetch - main [MainThread]: Store serial: [22748828]
+[2024-04-13 03:32:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748828]
+[2024-04-13 03:32:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 03:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: paddle2onnx
+[2024-04-13 03:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sphinx-autobuild
+[2024-04-13 03:32:43] INFO root fetch - processPackages [sphinx-autobuild]: New version: [2024.4.13] Old Version: [2024.2.4]
+[2024-04-13 03:32:43] INFO root fetch - processPackages [paddle2onnx]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-13 03:32:43] INFO root fetch - processPackages [sphinx-autobuild]: Downloading https://files.pythonhosted.org/packages/06/31/47bbd8d10b673aa5abba794c4424e58b245d1c5b0d016081913555c24357/sphinx_autobuild-2024.2.4.tar.gz
+[2024-04-13 03:32:43] INFO root fetch - processPackages [paddle2onnx]: Downloading https://files.pythonhosted.org/packages/80/3c/a68c16f62cb90548f62787942ee87377fac01fe1a26aab4bd29068993ecb/paddle2onnx-1.1.0-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
+[2024-04-13 03:32:43] INFO root fetch - processPackages [sphinx-autobuild]: Downloading https://files.pythonhosted.org/packages/a1/4e/77c2f38f3fa862583e1f86fa4e9020f7c9f32199b06de46d7e3e09e3107f/sphinx_autobuild-2024.4.13.tar.gz
+[2024-04-13 03:32:44] INFO root fetch - processPackages [sphinx-autobuild]: executing diffoscope
+[2024-04-13 03:32:44] INFO root fetch - processPackages [sphinx-autobuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx_autobuild-2024.2.4.tar.gz tmp/sphinx_autobuild-2024.4.13.tar.gz --markdown 20240413/s/sphinx-autobuild/2024.2.4-2024.4.13/README.md --exclude *.pyd
+[2024-04-13 03:32:44] INFO root fetch - processPackages [paddle2onnx]: Downloading https://files.pythonhosted.org/packages/00/50/14f41da06342a99fad6241038817b3be6bf61a7139c43aff5a12ffc70409/paddle2onnx-1.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-13 03:32:44] INFO root fetch - processPackages [paddle2onnx]: executing diffoscope
+[2024-04-13 03:32:44] INFO root fetch - processPackages [paddle2onnx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paddle2onnx-1.1.0-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.zip tmp/paddle2onnx-1.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240413/p/paddle2onnx/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-04-13 03:32:44] INFO root fetch - processPackages [sphinx-autobuild]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_autobuild-2024.2.4.tar.gz]
+[2024-04-13 03:32:44] INFO root fetch - processPackages [sphinx-autobuild]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_autobuild-2024.4.13.tar.gz]
+[2024-04-13 03:32:44] INFO root fetch - main [MainThread]: End processing [sphinx-autobuild]: success
+[2024-04-13 03:33:35] INFO root fetch - processPackages [paddle2onnx]: Remove: archive file [/home/abi/fetcher/tmp/paddle2onnx-1.1.0-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.zip]
+[2024-04-13 03:33:35] INFO root fetch - processPackages [paddle2onnx]: Remove: archive file [/home/abi/fetcher/tmp/paddle2onnx-1.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-13 03:33:35] INFO root fetch - main [MainThread]: End processing [paddle2onnx]: success
+[2024-04-13 03:33:35] INFO root fetch - main [MainThread]: Store serial: [22748834]
