@@ -7866,3 +7866,26 @@
 [2024-04-13 06:34:50] INFO root fetch - processPackages [glitter-proto]: Remove: archive file [/home/abi/fetcher/tmp/glitter_proto-0.6.0.tar.gz]
 [2024-04-13 06:34:50] INFO root fetch - main [MainThread]: End processing [glitter-proto]: success
 [2024-04-13 06:34:50] INFO root fetch - main [MainThread]: Store serial: [22749467]
+[2024-04-13 06:36:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749467]
+[2024-04-13 06:37:00] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 06:39:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749467]
+[2024-04-13 06:39:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 06:39:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Jvav
+[2024-04-13 06:39:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyPyNum
+[2024-04-13 06:39:07] INFO root fetch - processPackages [Jvav]: New version: [1.8.0] Old Version: [1.7.3]
+[2024-04-13 06:39:07] INFO root fetch - processPackages [PyPyNum]: New version: [1.8.0] Old Version: [1.7.0]
+[2024-04-13 06:39:07] INFO root fetch - processPackages [Jvav]: Downloading https://files.pythonhosted.org/packages/bc/39/bbaa027c6ffc0a38c35fcf1fa98adedeea64cc834e1ede33224d70c37df1/Jvav-1.7.3.tar.gz
+[2024-04-13 06:39:07] INFO root fetch - processPackages [PyPyNum]: Downloading https://files.pythonhosted.org/packages/98/a5/d77f41155cd459d0fc055ab4299afef3057f7a123425b8bc3192350bf65b/PyPyNum-1.7.0.tar.gz
+[2024-04-13 06:39:07] INFO root fetch - processPackages [Jvav]: Downloading https://files.pythonhosted.org/packages/6f/a6/8b0084085b79b99ad1139916cacd01689193bb4e0ff23625ed3b05b680c8/Jvav-1.8.0.tar.gz
+[2024-04-13 06:39:07] INFO root fetch - processPackages [PyPyNum]: Downloading https://files.pythonhosted.org/packages/ad/6c/61e85bfb8af39855151f458d632f029b92d20633ec6adb1da8dbbe273e99/PyPyNum-1.8.0.tar.gz
+[2024-04-13 06:39:07] INFO root fetch - processPackages [Jvav]: executing diffoscope
+[2024-04-13 06:39:07] INFO root fetch - processPackages [Jvav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jvav-1.7.3.tar.gz tmp/Jvav-1.8.0.tar.gz --markdown 20240413/J/Jvav/1.7.3-1.8.0/README.md --exclude *.pyd
+[2024-04-13 06:39:07] INFO root fetch - processPackages [PyPyNum]: executing diffoscope
+[2024-04-13 06:39:07] INFO root fetch - processPackages [PyPyNum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyPyNum-1.7.0.tar.gz tmp/PyPyNum-1.8.0.tar.gz --markdown 20240413/P/PyPyNum/1.7.0-1.8.0/README.md --exclude *.pyd
+[2024-04-13 06:39:08] INFO root fetch - processPackages [Jvav]: Remove: archive file [/home/abi/fetcher/tmp/Jvav-1.7.3.tar.gz]
+[2024-04-13 06:39:08] INFO root fetch - processPackages [Jvav]: Remove: archive file [/home/abi/fetcher/tmp/Jvav-1.8.0.tar.gz]
+[2024-04-13 06:39:08] INFO root fetch - main [MainThread]: End processing [Jvav]: success
+[2024-04-13 06:39:08] INFO root fetch - processPackages [PyPyNum]: Remove: archive file [/home/abi/fetcher/tmp/PyPyNum-1.7.0.tar.gz]
+[2024-04-13 06:39:08] INFO root fetch - processPackages [PyPyNum]: Remove: archive file [/home/abi/fetcher/tmp/PyPyNum-1.8.0.tar.gz]
+[2024-04-13 06:39:08] INFO root fetch - main [MainThread]: End processing [PyPyNum]: success
+[2024-04-13 06:39:08] INFO root fetch - main [MainThread]: Store serial: [22749473]
