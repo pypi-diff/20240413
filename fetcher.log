@@ -18764,3 +18764,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 20:57:06] INFO root fetch - processPackages [aioautomower]: Remove: archive file [/home/abi/fetcher/tmp/aioautomower-2024.4.1b0.tar.gz]
 [2024-04-13 20:57:06] INFO root fetch - main [MainThread]: End processing [aioautomower]: success
 [2024-04-13 20:57:06] INFO root fetch - main [MainThread]: Store serial: [22754077]
+[2024-04-13 20:59:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754077]
+[2024-04-13 20:59:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 20:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: restx
+[2024-04-13 20:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyarcS
+[2024-04-13 20:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: classifyspectraltype
+[2024-04-13 20:59:14] INFO root fetch - processPackages [restx]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-13 20:59:14] WARNING root fetch - processPackages [pyarcS]: Skipping, unable to determine old version
+[2024-04-13 20:59:14] INFO root fetch - main [MainThread]: End processing [pyarcS] error
+[2024-04-13 20:59:15] INFO root fetch - processPackages [restx]: Downloading https://files.pythonhosted.org/packages/28/d2/3705e3490c732c8f9bfd958eef76f16b66b2943002c9f148e5f6843e65c1/restx-0.1.4.tar.gz
+[2024-04-13 20:59:15] WARNING root fetch - processPackages [classifyspectraltype]: Skipping, unable to determine old version
+[2024-04-13 20:59:15] INFO root fetch - main [MainThread]: End processing [classifyspectraltype] error
+[2024-04-13 20:59:15] INFO root fetch - processPackages [restx]: Downloading https://files.pythonhosted.org/packages/df/19/820f8557c3036f4c7b34bcf116554a9725cd5836e08efba9e1e5880ee2ee/restx-0.1.5.tar.gz
+[2024-04-13 20:59:15] INFO root fetch - processPackages [restx]: executing diffoscope
+[2024-04-13 20:59:15] INFO root fetch - processPackages [restx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/restx-0.1.4.tar.gz tmp/restx-0.1.5.tar.gz --markdown 20240413/r/restx/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-13 20:59:16] INFO root fetch - processPackages [restx]: Remove: archive file [/home/abi/fetcher/tmp/restx-0.1.4.tar.gz]
+[2024-04-13 20:59:16] INFO root fetch - processPackages [restx]: Remove: archive file [/home/abi/fetcher/tmp/restx-0.1.5.tar.gz]
+[2024-04-13 20:59:16] INFO root fetch - main [MainThread]: End processing [restx]: success
+[2024-04-13 20:59:16] INFO root fetch - main [MainThread]: Store serial: [22754089]
