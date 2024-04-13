@@ -20481,3 +20481,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 23:19:26] INFO root fetch - processPackages [anycrc]: Remove: archive file [/home/abi/fetcher/tmp/anycrc-0.2.3-cp311-cp311-macosx_10_9_x86_64.whl.zip]
 [2024-04-13 23:19:26] INFO root fetch - main [MainThread]: End processing [anycrc]: success
 [2024-04-13 23:19:26] INFO root fetch - main [MainThread]: Store serial: [22754821]
+[2024-04-13 23:21:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754821]
+[2024-04-13 23:21:35] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 23:21:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cook-builder
+[2024-04-13 23:21:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: faster-translate
+[2024-04-13 23:21:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pipez
+[2024-04-13 23:21:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xaivision
+[2024-04-13 23:21:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: simple-value-object
+[2024-04-13 23:21:35] INFO root fetch - processPackages [faster-translate]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-13 23:21:35] INFO root fetch - processPackages [pipez]: New version: [0.0.9] Old Version: [0.0.81]
+[2024-04-13 23:21:35] INFO root fetch - processPackages [cook-builder]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 23:21:35] INFO root fetch - processPackages [faster-translate]: Downloading https://files.pythonhosted.org/packages/5e/90/115f58787d707586adff09c05de287d1c0df1838b10577f40ee0ee0694b8/faster_translate-0.1.3.tar.gz
+[2024-04-13 23:21:35] INFO root fetch - processPackages [simple-value-object]: New version: [3.0] Old Version: [2.0]
+[2024-04-13 23:21:35] INFO root fetch - processPackages [pipez]: Downloading https://files.pythonhosted.org/packages/83/22/e481c4f6dd17b57e99bc0ebc54442db76cb33acfa823450eda9a0ee06a9f/pipez-0.0.81.tar.gz
+[2024-04-13 23:21:35] WARNING root fetch - processPackages [xaivision]: Skipping, unable to determine old version
+[2024-04-13 23:21:35] INFO root fetch - main [MainThread]: End processing [xaivision] error
+[2024-04-13 23:21:35] INFO root fetch - processPackages [cook-builder]: Downloading https://files.pythonhosted.org/packages/90/48/e60b810900740b23e5e2a01014a75caed14b8717f641ba356faa96490f96/cook_builder-0.0.8.tar.gz
+[2024-04-13 23:21:35] INFO root fetch - processPackages [faster-translate]: Downloading https://files.pythonhosted.org/packages/22/f2/86b56dd6490c884a28d44b7d6c04c042e9bff210354a18a7e3135166c454/faster_translate-0.1.4.tar.gz
+[2024-04-13 23:21:35] INFO root fetch - processPackages [simple-value-object]: Downloading https://files.pythonhosted.org/packages/ff/bb/455cc9173917266e270381e8ebdaa19f0fee8d2da79183175a29833538f3/simple-value-object-2.0.tar.gz
+[2024-04-13 23:21:35] INFO root fetch - processPackages [cook-builder]: Downloading https://files.pythonhosted.org/packages/ff/e9/311eeaaa72111ff06947896c84483da3c3cd7076d036c10ed86c16e93cc9/cook_builder-0.0.9.tar.gz
+[2024-04-13 23:21:35] INFO root fetch - processPackages [pipez]: Downloading https://files.pythonhosted.org/packages/a3/7b/b75e90898c1b52cbcd0b17ad4595e5ed0f6d4554e94be045c641282bc131/pipez-0.0.9.tar.gz
+[2024-04-13 23:21:35] INFO root fetch - processPackages [cook-builder]: executing diffoscope
+[2024-04-13 23:21:35] INFO root fetch - processPackages [cook-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cook_builder-0.0.8.tar.gz tmp/cook_builder-0.0.9.tar.gz --markdown 20240413/c/cook-builder/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 23:21:35] INFO root fetch - processPackages [faster-translate]: executing diffoscope
+[2024-04-13 23:21:35] INFO root fetch - processPackages [faster-translate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faster_translate-0.1.3.tar.gz tmp/faster_translate-0.1.4.tar.gz --markdown 20240413/f/faster-translate/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-13 23:21:35] INFO root fetch - processPackages [pipez]: executing diffoscope
+[2024-04-13 23:21:35] INFO root fetch - processPackages [pipez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipez-0.0.81.tar.gz tmp/pipez-0.0.9.tar.gz --markdown 20240413/p/pipez/0.0.81-0.0.9/README.md --exclude *.pyd
+[2024-04-13 23:21:35] INFO root fetch - processPackages [simple-value-object]: Downloading https://files.pythonhosted.org/packages/59/dd/3b290981fc33e18877acfb1327ac831e2265b37a4f951c7c3f450428b402/simple_value_object-3.0.tar.gz
+[2024-04-13 23:21:36] INFO root fetch - processPackages [simple-value-object]: executing diffoscope
+[2024-04-13 23:21:36] INFO root fetch - processPackages [simple-value-object]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-value-object-2.0.tar.gz tmp/simple_value_object-3.0.tar.gz --markdown 20240413/s/simple-value-object/2.0-3.0/README.md --exclude *.pyd
+[2024-04-13 23:21:36] INFO root fetch - processPackages [faster-translate]: Remove: archive file [/home/abi/fetcher/tmp/faster_translate-0.1.3.tar.gz]
+[2024-04-13 23:21:36] INFO root fetch - processPackages [faster-translate]: Remove: archive file [/home/abi/fetcher/tmp/faster_translate-0.1.4.tar.gz]
+[2024-04-13 23:21:36] INFO root fetch - main [MainThread]: End processing [faster-translate]: success
+[2024-04-13 23:21:36] INFO root fetch - processPackages [cook-builder]: Remove: archive file [/home/abi/fetcher/tmp/cook_builder-0.0.8.tar.gz]
+[2024-04-13 23:21:36] INFO root fetch - processPackages [cook-builder]: Remove: archive file [/home/abi/fetcher/tmp/cook_builder-0.0.9.tar.gz]
+[2024-04-13 23:21:36] INFO root fetch - main [MainThread]: End processing [cook-builder]: success
+[2024-04-13 23:21:36] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.81.tar.gz]
+[2024-04-13 23:21:36] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.9.tar.gz]
+[2024-04-13 23:21:36] INFO root fetch - main [MainThread]: End processing [pipez]: success
+[2024-04-13 23:21:36] INFO root fetch - processPackages [simple-value-object]: Remove: archive file [/home/abi/fetcher/tmp/simple-value-object-2.0.tar.gz]
+[2024-04-13 23:21:36] INFO root fetch - processPackages [simple-value-object]: Remove: archive file [/home/abi/fetcher/tmp/simple_value_object-3.0.tar.gz]
+[2024-04-13 23:21:36] INFO root fetch - main [MainThread]: End processing [simple-value-object]: success
+[2024-04-13 23:21:36] INFO root fetch - main [MainThread]: Store serial: [22754897]
