@@ -11327,3 +11327,33 @@
 [2024-04-13 11:08:09] INFO root fetch - processPackages [argsreq]: Remove: archive file [/home/abi/fetcher/tmp/argsreq-1.5.tar.gz]
 [2024-04-13 11:08:09] INFO root fetch - main [MainThread]: End processing [argsreq]: success
 [2024-04-13 11:08:09] INFO root fetch - main [MainThread]: Store serial: [22750760]
+[2024-04-13 11:10:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750760]
+[2024-04-13 11:10:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 11:10:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: argsreq
+[2024-04-13 11:10:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yosemite
+[2024-04-13 11:10:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streamdeck-linux-gui
+[2024-04-13 11:10:17] INFO root fetch - processPackages [argsreq]: New version: [1.5] Old Version: [1.3]
+[2024-04-13 11:10:17] INFO root fetch - processPackages [argsreq]: Downloading https://files.pythonhosted.org/packages/91/ec/f517ad0df5af630fe72fa31853ecedfeba2ecb1bf0c345817b4d2f5d71bb/argsreq-1.3.tar.gz
+[2024-04-13 11:10:17] INFO root fetch - processPackages [streamdeck-linux-gui]: New version: [4.1.2] Old Version: [4.1.1]
+[2024-04-13 11:10:17] INFO root fetch - processPackages [yosemite]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-13 11:10:18] INFO root fetch - processPackages [yosemite]: Downloading https://files.pythonhosted.org/packages/fb/df/668820f72fe6623dc55e904e4346f2d78f97e25b8844b10431c2461190ef/yosemite-0.1.5.tar.gz
+[2024-04-13 11:10:18] INFO root fetch - processPackages [streamdeck-linux-gui]: Downloading https://files.pythonhosted.org/packages/bb/a6/401be23d14f4e05080bc14ea35e7d3ecb4d20c76970e27b00ba40ea589ba/streamdeck_linux_gui-4.1.1.tar.gz
+[2024-04-13 11:10:18] INFO root fetch - processPackages [argsreq]: Downloading https://files.pythonhosted.org/packages/81/7d/dfd4ed8cc76e822a44a42460d9b43430e61ca40266d81231f846eb40247a/argsreq-1.5.tar.gz
+[2024-04-13 11:10:18] INFO root fetch - processPackages [argsreq]: executing diffoscope
+[2024-04-13 11:10:18] INFO root fetch - processPackages [argsreq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argsreq-1.3.tar.gz tmp/argsreq-1.5.tar.gz --markdown 20240413/a/argsreq/1.3-1.5/README.md --exclude *.pyd
+[2024-04-13 11:10:18] INFO root fetch - processPackages [yosemite]: Downloading https://files.pythonhosted.org/packages/30/18/946b7fd25def0814d1583492b97c631c4bdd460de82c1a0709be5d983d5c/yosemite-0.1.6.tar.gz
+[2024-04-13 11:10:18] INFO root fetch - processPackages [streamdeck-linux-gui]: Downloading https://files.pythonhosted.org/packages/a6/3a/a5d7a27a081d472e2be085f6ec8f547f270e3f43fc294fd466c9af092989/streamdeck_linux_gui-4.1.2.tar.gz
+[2024-04-13 11:10:18] INFO root fetch - processPackages [yosemite]: executing diffoscope
+[2024-04-13 11:10:18] INFO root fetch - processPackages [yosemite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yosemite-0.1.5.tar.gz tmp/yosemite-0.1.6.tar.gz --markdown 20240413/y/yosemite/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-13 11:10:18] INFO root fetch - processPackages [argsreq]: Remove: archive file [/home/abi/fetcher/tmp/argsreq-1.3.tar.gz]
+[2024-04-13 11:10:18] INFO root fetch - processPackages [argsreq]: Remove: archive file [/home/abi/fetcher/tmp/argsreq-1.5.tar.gz]
+[2024-04-13 11:10:18] INFO root fetch - main [MainThread]: End processing [argsreq]: success
+[2024-04-13 11:10:18] INFO root fetch - processPackages [streamdeck-linux-gui]: executing diffoscope
+[2024-04-13 11:10:18] INFO root fetch - processPackages [streamdeck-linux-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamdeck_linux_gui-4.1.1.tar.gz tmp/streamdeck_linux_gui-4.1.2.tar.gz --markdown 20240413/s/streamdeck-linux-gui/4.1.1-4.1.2/README.md --exclude *.pyd
+[2024-04-13 11:10:19] INFO root fetch - processPackages [yosemite]: Remove: archive file [/home/abi/fetcher/tmp/yosemite-0.1.5.tar.gz]
+[2024-04-13 11:10:19] INFO root fetch - processPackages [yosemite]: Remove: archive file [/home/abi/fetcher/tmp/yosemite-0.1.6.tar.gz]
+[2024-04-13 11:10:19] INFO root fetch - main [MainThread]: End processing [yosemite]: success
+[2024-04-13 11:10:19] INFO root fetch - processPackages [streamdeck-linux-gui]: Remove: archive file [/home/abi/fetcher/tmp/streamdeck_linux_gui-4.1.1.tar.gz]
+[2024-04-13 11:10:19] INFO root fetch - processPackages [streamdeck-linux-gui]: Remove: archive file [/home/abi/fetcher/tmp/streamdeck_linux_gui-4.1.2.tar.gz]
+[2024-04-13 11:10:19] INFO root fetch - main [MainThread]: End processing [streamdeck-linux-gui]: success
+[2024-04-13 11:10:19] INFO root fetch - main [MainThread]: Store serial: [22750769]
