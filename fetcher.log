@@ -20851,3 +20851,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 23:54:21] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.5.tar.gz]
 [2024-04-13 23:54:21] INFO root fetch - main [MainThread]: End processing [octomy-batch]: success
 [2024-04-13 23:54:21] INFO root fetch - main [MainThread]: Store serial: [22755035]
+[2024-04-13 23:56:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755035]
+[2024-04-13 23:56:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 23:56:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nn-wrapper
+[2024-04-13 23:56:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plover-lapwing-aio
+[2024-04-13 23:56:30] INFO root fetch - processPackages [nn-wrapper]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-13 23:56:31] INFO root fetch - processPackages [plover-lapwing-aio]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-13 23:56:31] INFO root fetch - processPackages [nn-wrapper]: Downloading https://files.pythonhosted.org/packages/42/74/525895ead768f3a8c3fbb0239f1fd06ab5a6640ffd8f73a3744ed22f93b3/nn_wrapper-1.0.0.tar.gz
+[2024-04-13 23:56:31] INFO root fetch - processPackages [plover-lapwing-aio]: Downloading https://files.pythonhosted.org/packages/0a/8a/1091e836071f5e5e7e100fd24ee0fc52ce8da075c00736c013602b6a4ebd/plover-lapwing-aio-1.1.8.tar.gz
+[2024-04-13 23:56:31] INFO root fetch - processPackages [nn-wrapper]: Downloading https://files.pythonhosted.org/packages/c9/d9/bb30fb4dc8188ef865c16e645af7b1c30bea96456da225d3123f3ec84f2f/nn_wrapper-1.0.1.tar.gz
+[2024-04-13 23:56:31] INFO root fetch - processPackages [nn-wrapper]: executing diffoscope
+[2024-04-13 23:56:31] INFO root fetch - processPackages [nn-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nn_wrapper-1.0.0.tar.gz tmp/nn_wrapper-1.0.1.tar.gz --markdown 20240413/n/nn-wrapper/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-13 23:56:31] INFO root fetch - processPackages [plover-lapwing-aio]: Downloading https://files.pythonhosted.org/packages/be/95/e6f5de1346a5945f448d3c8b900682521ec598062b4280313c9c935eaefd/plover-lapwing-aio-1.1.9.tar.gz
+[2024-04-13 23:56:31] INFO root fetch - processPackages [nn-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/nn_wrapper-1.0.0.tar.gz]
+[2024-04-13 23:56:31] INFO root fetch - processPackages [nn-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/nn_wrapper-1.0.1.tar.gz]
+[2024-04-13 23:56:31] INFO root fetch - main [MainThread]: End processing [nn-wrapper]: success
+[2024-04-13 23:56:31] INFO root fetch - processPackages [plover-lapwing-aio]: executing diffoscope
+[2024-04-13 23:56:31] INFO root fetch - processPackages [plover-lapwing-aio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plover-lapwing-aio-1.1.8.tar.gz tmp/plover-lapwing-aio-1.1.9.tar.gz --markdown 20240413/p/plover-lapwing-aio/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-13 23:56:33] INFO root fetch - processPackages [plover-lapwing-aio]: Remove: archive file [/home/abi/fetcher/tmp/plover-lapwing-aio-1.1.8.tar.gz]
+[2024-04-13 23:56:33] INFO root fetch - processPackages [plover-lapwing-aio]: Remove: archive file [/home/abi/fetcher/tmp/plover-lapwing-aio-1.1.9.tar.gz]
+[2024-04-13 23:56:33] INFO root fetch - main [MainThread]: End processing [plover-lapwing-aio]: success
+[2024-04-13 23:56:33] INFO root fetch - main [MainThread]: Store serial: [22755042]
