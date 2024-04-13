@@ -16036,3 +16036,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 17:26:35] INFO root fetch - processPackages [gearpy]: Remove: archive file [/home/abi/fetcher/tmp/gearpy-1.0.0.tar.gz]
 [2024-04-13 17:26:35] INFO root fetch - main [MainThread]: End processing [gearpy]: success
 [2024-04-13 17:26:35] INFO root fetch - main [MainThread]: Store serial: [22752896]
+[2024-04-13 17:28:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752896]
+[2024-04-13 17:28:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 17:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-master
+[2024-04-13 17:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sampa
+[2024-04-13 17:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mypy_baseline
+[2024-04-13 17:28:44] WARNING root fetch - processPackages [sampa]: Skipping, unable to determine old version
+[2024-04-13 17:28:44] INFO root fetch - main [MainThread]: End processing [sampa] error
+[2024-04-13 17:28:44] INFO root fetch - processPackages [mypy_baseline]: New version: [0.7.0] Old Version: [0.6.1]
+[2024-04-13 17:28:44] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20240413.15.26.264357] Old Version: [20240412.15.2.320402]
+[2024-04-13 17:28:44] INFO root fetch - processPackages [mypy_baseline]: Downloading https://files.pythonhosted.org/packages/7e/96/790f9b56191c2fe5882ea9a8c75aa77059f8bb6811c95157459982d3710c/mypy_baseline-0.6.1.tar.gz
+[2024-04-13 17:28:44] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/be/7f/245b465c13421c7386efe9b014818ff96980ca5796a3b0d60855009e4a0d/certora-cli-alpha-master-20240412.15.2.320402.tar.gz
+[2024-04-13 17:28:44] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14483423>=10485760
+[2024-04-13 17:28:44] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2024-04-13 17:28:45] INFO root fetch - processPackages [mypy_baseline]: Downloading https://files.pythonhosted.org/packages/ca/9a/c40e24d14ba4faff5b8fea01b9f2d5aeb74e6cb531ef332efc7310215104/mypy_baseline-0.7.0.tar.gz
+[2024-04-13 17:28:45] INFO root fetch - processPackages [mypy_baseline]: executing diffoscope
+[2024-04-13 17:28:45] INFO root fetch - processPackages [mypy_baseline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy_baseline-0.6.1.tar.gz tmp/mypy_baseline-0.7.0.tar.gz --markdown 20240413/m/mypy_baseline/0.6.1-0.7.0/README.md --exclude *.pyd
+[2024-04-13 17:28:45] INFO root fetch - processPackages [mypy_baseline]: Remove: archive file [/home/abi/fetcher/tmp/mypy_baseline-0.6.1.tar.gz]
+[2024-04-13 17:28:45] INFO root fetch - processPackages [mypy_baseline]: Remove: archive file [/home/abi/fetcher/tmp/mypy_baseline-0.7.0.tar.gz]
+[2024-04-13 17:28:45] INFO root fetch - main [MainThread]: End processing [mypy_baseline]: success
+[2024-04-13 17:28:45] INFO root fetch - main [MainThread]: Store serial: [22752907]
