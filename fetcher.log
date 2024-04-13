@@ -15604,3 +15604,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 17:01:08] INFO root fetch - processPackages [flycraft]: Remove: archive file [/home/abi/fetcher/tmp/flycraft-0.0.8.tar.gz]
 [2024-04-13 17:01:08] INFO root fetch - main [MainThread]: End processing [flycraft]: success
 [2024-04-13 17:01:08] INFO root fetch - main [MainThread]: Store serial: [22752695]
+[2024-04-13 17:03:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752695]
+[2024-04-13 17:03:17] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-13 17:03:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sense-data
+[2024-04-13 17:03:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: melobot
+[2024-04-13 17:03:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wildtorch
+[2024-04-13 17:03:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: RePoE-Liberatorist
+[2024-04-13 17:03:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tulona
+[2024-04-13 17:03:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: projecteasygraph
+[2024-04-13 17:03:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: carlschader-ml-utils
+[2024-04-13 17:03:17] INFO root fetch - processPackages [carlschader-ml-utils]: New version: [0.4.0] Old Version: [0.3.3]
+[2024-04-13 17:03:17] WARNING root fetch - processPackages [wildtorch]: Skipping, unable to determine old version
+[2024-04-13 17:03:17] INFO root fetch - main [MainThread]: End processing [wildtorch] error
+[2024-04-13 17:03:17] INFO root fetch - processPackages [carlschader-ml-utils]: Downloading https://files.pythonhosted.org/packages/e9/c4/cc498fc8a083b44816ebea8fe8f521121c49dd1b75c4f033cee70fc1855e/carlschader_ml_utils-0.3.3.tar.gz
+[2024-04-13 17:03:17] INFO root fetch - processPackages [melobot]: New version: [2.5.9] Old Version: [2.5.8]
+[2024-04-13 17:03:17] INFO root fetch - processPackages [RePoE-Liberatorist]: New version: [3.24.5] Old Version: [3.24.4]
+[2024-04-13 17:03:17] INFO root fetch - processPackages [tulona]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-13 17:03:17] WARNING root fetch - processPackages [projecteasygraph]: Skipping, unable to determine old version
+[2024-04-13 17:03:17] INFO root fetch - main [MainThread]: End processing [projecteasygraph] error
+[2024-04-13 17:03:17] INFO root fetch - processPackages [sense-data]: New version: [0.7.0] Old Version: [0.5.9]
+[2024-04-13 17:03:17] INFO root fetch - processPackages [carlschader-ml-utils]: Downloading https://files.pythonhosted.org/packages/03/db/1899bc715a92cbdddf9287deec4e447b65302d943b3bacef13c596620bcc/carlschader_ml_utils-0.4.tar.gz
+[2024-04-13 17:03:17] INFO root fetch - processPackages [melobot]: Downloading https://files.pythonhosted.org/packages/a4/ee/0c1e25409a8ac4858b0ee1e4e3d5aebb24f9fd10b32b890fd5705a7f9ee2/melobot-2.5.8.tar.gz
+[2024-04-13 17:03:17] INFO root fetch - processPackages [sense-data]: Downloading https://files.pythonhosted.org/packages/ff/3f/8fa948e07fcb37fee8173add79c33dab71e58577ad28c52285da98fe245a/sense-data-0.5.9.tar.gz
+[2024-04-13 17:03:17] INFO root fetch - processPackages [RePoE-Liberatorist]: Downloading https://files.pythonhosted.org/packages/ad/95/fba26e49e625e81a2d9b032c66cfe71b35631c7cee53f05a4ba4f2ceaca1/RePoE-Liberatorist-3.24.4.tar.gz
+[2024-04-13 17:03:17] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/44/45/db29622a426dbb7208914b6d483a4d75d24cb78706e0265f058c95d78a88/tulona-0.4.0.tar.gz
+[2024-04-13 17:03:17] INFO root fetch - processPackages [carlschader-ml-utils]: executing diffoscope
+[2024-04-13 17:03:17] INFO root fetch - processPackages [carlschader-ml-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carlschader_ml_utils-0.3.3.tar.gz tmp/carlschader_ml_utils-0.4.tar.gz --markdown 20240413/c/carlschader-ml-utils/0.3.3-0.4.0/README.md --exclude *.pyd
+[2024-04-13 17:03:18] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/e6/b9/ac89383fa74bf149e25dbf214b7bb74559b7721fecdae26da0441a26461e/tulona-0.5.0.tar.gz
+[2024-04-13 17:03:18] INFO root fetch - processPackages [sense-data]: Downloading https://files.pythonhosted.org/packages/4b/70/c2d61d3407eb1ad9b037f5ed6fb225020b0e3ba93527f9e63d00f8a4d649/sense-data-0.7.0.tar.gz
+[2024-04-13 17:03:18] INFO root fetch - processPackages [melobot]: Downloading https://files.pythonhosted.org/packages/7a/22/a5b2baa3b113da213865a10258449637123d7e6b0667e58e193f56193a04/melobot-2.5.9.tar.gz
+[2024-04-13 17:03:18] INFO root fetch - processPackages [RePoE-Liberatorist]: Downloading https://files.pythonhosted.org/packages/e0/2a/ab7d71fc556e840264b75c9516dca15c4b10261dd2e4ec57d2ea479911c9/repoe_liberatorist-3.24.5.tar.gz
+[2024-04-13 17:03:18] INFO root fetch - processPackages [tulona]: executing diffoscope
+[2024-04-13 17:03:18] INFO root fetch - processPackages [tulona]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tulona-0.4.0.tar.gz tmp/tulona-0.5.0.tar.gz --markdown 20240413/t/tulona/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-13 17:03:18] INFO root fetch - processPackages [sense-data]: executing diffoscope
+[2024-04-13 17:03:18] INFO root fetch - processPackages [sense-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sense-data-0.5.9.tar.gz tmp/sense-data-0.7.0.tar.gz --markdown 20240413/s/sense-data/0.5.9-0.7.0/README.md --exclude *.pyd
+[2024-04-13 17:03:18] INFO root fetch - processPackages [melobot]: executing diffoscope
+[2024-04-13 17:03:18] INFO root fetch - processPackages [melobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/melobot-2.5.8.tar.gz tmp/melobot-2.5.9.tar.gz --markdown 20240413/m/melobot/2.5.8-2.5.9/README.md --exclude *.pyd
+[2024-04-13 17:03:18] INFO root fetch - processPackages [carlschader-ml-utils]: Remove: archive file [/home/abi/fetcher/tmp/carlschader_ml_utils-0.3.3.tar.gz]
+[2024-04-13 17:03:18] INFO root fetch - processPackages [carlschader-ml-utils]: Remove: archive file [/home/abi/fetcher/tmp/carlschader_ml_utils-0.4.tar.gz]
+[2024-04-13 17:03:18] INFO root fetch - main [MainThread]: End processing [carlschader-ml-utils]: success
+[2024-04-13 17:03:18] INFO root fetch - processPackages [RePoE-Liberatorist]: executing diffoscope
+[2024-04-13 17:03:18] INFO root fetch - processPackages [RePoE-Liberatorist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RePoE-Liberatorist-3.24.4.tar.gz tmp/repoe_liberatorist-3.24.5.tar.gz --markdown 20240413/R/RePoE-Liberatorist/3.24.4-3.24.5/README.md --exclude *.pyd
+[2024-04-13 17:03:18] INFO root fetch - processPackages [sense-data]: Remove: archive file [/home/abi/fetcher/tmp/sense-data-0.5.9.tar.gz]
+[2024-04-13 17:03:18] INFO root fetch - processPackages [sense-data]: Remove: archive file [/home/abi/fetcher/tmp/sense-data-0.7.0.tar.gz]
+[2024-04-13 17:03:18] INFO root fetch - main [MainThread]: End processing [sense-data]: success
+[2024-04-13 17:03:19] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.4.0.tar.gz]
+[2024-04-13 17:03:19] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.5.0.tar.gz]
+[2024-04-13 17:03:19] INFO root fetch - main [MainThread]: End processing [tulona]: success
+[2024-04-13 17:03:19] INFO root fetch - processPackages [melobot]: Remove: archive file [/home/abi/fetcher/tmp/melobot-2.5.8.tar.gz]
+[2024-04-13 17:03:19] INFO root fetch - processPackages [melobot]: Remove: archive file [/home/abi/fetcher/tmp/melobot-2.5.9.tar.gz]
+[2024-04-13 17:03:19] INFO root fetch - main [MainThread]: End processing [melobot]: success
+[2024-04-13 17:06:18] ERROR root fetch - processPackages [RePoE-Liberatorist]: Timeout during execution of pkgdiff
+[2024-04-13 17:06:18] INFO root fetch - main [MainThread]: End processing [RePoE-Liberatorist] error
+[2024-04-13 17:06:18] INFO root fetch - main [MainThread]: Store serial: [22752724]
