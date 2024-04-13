@@ -16663,3 +16663,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 18:23:54] INFO root fetch - processPackages [xklb]: Remove: archive file [/home/abi/fetcher/tmp/xklb-2.6.5.tar.gz]
 [2024-04-13 18:23:54] INFO root fetch - main [MainThread]: End processing [xklb]: success
 [2024-04-13 18:23:54] INFO root fetch - main [MainThread]: Store serial: [22753142]
+[2024-04-13 18:25:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753142]
+[2024-04-13 18:26:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 18:26:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: altscore
+[2024-04-13 18:26:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neogpt
+[2024-04-13 18:26:03] INFO root fetch - processPackages [altscore]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-13 18:26:03] INFO root fetch - processPackages [altscore]: Downloading https://files.pythonhosted.org/packages/5f/a6/fb416592a06e3f048aaf0891b596bd989dcd5841cb33ab09db5bb52d0970/altscore-0.1.98.tar.gz
+[2024-04-13 18:26:03] WARNING root fetch - processPackages [neogpt]: Skipping, unable to determine old version
+[2024-04-13 18:26:03] INFO root fetch - main [MainThread]: End processing [neogpt] error
+[2024-04-13 18:26:04] INFO root fetch - processPackages [altscore]: Downloading https://files.pythonhosted.org/packages/e3/b6/865ff08cbdee5b1522cc15ce8760f46380d0a77722135623bdfa5b3ab9f5/altscore-0.1.99.tar.gz
+[2024-04-13 18:26:04] INFO root fetch - processPackages [altscore]: executing diffoscope
+[2024-04-13 18:26:04] INFO root fetch - processPackages [altscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altscore-0.1.98.tar.gz tmp/altscore-0.1.99.tar.gz --markdown 20240413/a/altscore/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-13 18:26:04] INFO root fetch - processPackages [altscore]: Remove: archive file [/home/abi/fetcher/tmp/altscore-0.1.98.tar.gz]
+[2024-04-13 18:26:04] INFO root fetch - processPackages [altscore]: Remove: archive file [/home/abi/fetcher/tmp/altscore-0.1.99.tar.gz]
+[2024-04-13 18:26:04] INFO root fetch - main [MainThread]: End processing [altscore]: success
+[2024-04-13 18:26:04] INFO root fetch - main [MainThread]: Store serial: [22753150]
