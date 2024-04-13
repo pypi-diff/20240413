@@ -15135,3 +15135,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:15:31] INFO root fetch - processPackages [flybirds]: Remove: archive file [/home/abi/fetcher/tmp/flybirds-0.6.77.tar.gz]
 [2024-04-13 16:15:31] INFO root fetch - main [MainThread]: End processing [flybirds]: success
 [2024-04-13 16:15:31] INFO root fetch - main [MainThread]: Store serial: [22752452]
+[2024-04-13 16:17:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752452]
+[2024-04-13 16:17:39] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-13 16:17:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sling-mac-amd64
+[2024-04-13 16:17:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sling-mac-arm64
+[2024-04-13 16:17:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: schedulefree
+[2024-04-13 16:17:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sling-windows-amd64
+[2024-04-13 16:17:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sling
+[2024-04-13 16:17:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: QEasyWidgets
+[2024-04-13 16:17:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fnsecure
+[2024-04-13 16:17:40] INFO root fetch - processPackages [fnsecure]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 16:17:40] INFO root fetch - processPackages [fnsecure]: Downloading https://files.pythonhosted.org/packages/e4/7f/dab488c41ebc6e19803d0857fb657c0ff279491abca4bbd6c37bd8800db3/fnsecure-0.1.1.tar.gz
+[2024-04-13 16:17:40] INFO root fetch - processPackages [QEasyWidgets]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 16:17:40] INFO root fetch - processPackages [sling-mac-amd64]: New version: [1.2.4] Old Version: [1.2.3.post2]
+[2024-04-13 16:17:40] INFO root fetch - processPackages [sling-mac-arm64]: New version: [1.2.4] Old Version: [1.2.3.post2]
+[2024-04-13 16:17:40] INFO root fetch - processPackages [sling]: New version: [1.2.4] Old Version: [1.2.3.post2]
+[2024-04-13 16:17:40] INFO root fetch - processPackages [sling-windows-amd64]: New version: [1.2.4] Old Version: [1.2.3.post2]
+[2024-04-13 16:17:40] INFO root fetch - processPackages [schedulefree]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-04-13 16:17:40] INFO root fetch - processPackages [schedulefree]: Downloading https://files.pythonhosted.org/packages/91/fa/30c6aa6fbf7940843a2b84e2b60263f21f8ff17ad13f30c59da46d6ddde0/schedulefree-1.2.2.tar.gz
+[2024-04-13 16:17:40] INFO root fetch - processPackages [sling-mac-amd64]: Downloading https://files.pythonhosted.org/packages/6d/0a/a9e0347dc17c328e1665cf30c5087b477b44d2e7d9e89979508623d49c5f/sling-mac-amd64-1.2.3.post2.tar.gz
+[2024-04-13 16:17:40] INFO root fetch - processPackages [sling-mac-arm64]: Downloading https://files.pythonhosted.org/packages/9f/18/86145bfb6ddb73e53453c6279a7927e7939f54283f091d4f9686a501f23e/sling-mac-arm64-1.2.3.post2.tar.gz
+[2024-04-13 16:17:40] WARNING root fetch - processPackages [sling-mac-amd64]: Skipping package: exceeds size limit 54755692>=10485760
+[2024-04-13 16:17:40] INFO root fetch - main [MainThread]: End processing [sling-mac-amd64] error
+[2024-04-13 16:17:40] INFO root fetch - processPackages [QEasyWidgets]: Downloading https://files.pythonhosted.org/packages/6d/00/d3f82e3c615ccfb9f15f9832941e0ad8f89368ae903b67f8b7085fbf72e0/QEasyWidgets-0.1.1.tar.gz
+[2024-04-13 16:17:40] WARNING root fetch - processPackages [sling-mac-arm64]: Skipping package: exceeds size limit 50472456>=10485760
+[2024-04-13 16:17:40] INFO root fetch - main [MainThread]: End processing [sling-mac-arm64] error
+[2024-04-13 16:17:40] INFO root fetch - processPackages [sling]: Downloading https://files.pythonhosted.org/packages/90/95/90b7ebe7e3485859d231db3d452f1d47c0adb50ea88117a8931c014e459d/sling-1.2.3.post2.tar.gz
+[2024-04-13 16:17:40] INFO root fetch - processPackages [sling-windows-amd64]: Downloading https://files.pythonhosted.org/packages/d6/d7/85e9b878db644d9a96c88e2575e78577d9b8b7cc04ec930827b5cc2453cb/sling-windows-amd64-1.2.3.post2.tar.gz
+[2024-04-13 16:17:40] INFO root fetch - processPackages [fnsecure]: Downloading https://files.pythonhosted.org/packages/2f/5a/17bd58676caac2b5ad67772abccdf9ef13b603227ff9e8cee5f650f746b7/fnsecure-0.1.2.tar.gz
+[2024-04-13 16:17:40] WARNING root fetch - processPackages [sling-windows-amd64]: Skipping package: exceeds size limit 50007324>=10485760
+[2024-04-13 16:17:40] INFO root fetch - main [MainThread]: End processing [sling-windows-amd64] error
+[2024-04-13 16:17:40] INFO root fetch - processPackages [schedulefree]: Downloading https://files.pythonhosted.org/packages/b6/90/00ac89df78ab2513ded17abd17189103b972d2fc585f55c123d569b784f4/schedulefree-1.2.3.tar.gz
+[2024-04-13 16:17:40] INFO root fetch - processPackages [fnsecure]: executing diffoscope
+[2024-04-13 16:17:40] INFO root fetch - processPackages [fnsecure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fnsecure-0.1.1.tar.gz tmp/fnsecure-0.1.2.tar.gz --markdown 20240413/f/fnsecure/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-13 16:17:40] INFO root fetch - processPackages [schedulefree]: executing diffoscope
+[2024-04-13 16:17:40] INFO root fetch - processPackages [schedulefree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schedulefree-1.2.2.tar.gz tmp/schedulefree-1.2.3.tar.gz --markdown 20240413/s/schedulefree/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-04-13 16:17:40] INFO root fetch - processPackages [QEasyWidgets]: Downloading https://files.pythonhosted.org/packages/03/93/8a1dda94d9caa48daf58bebed12913ac52e3ab778a1e074691cc0f5e3951/QEasyWidgets-0.1.2.tar.gz
+[2024-04-13 16:17:40] INFO root fetch - processPackages [sling]: Downloading https://files.pythonhosted.org/packages/4e/b8/2a9503fb34c050b77733496dc85f116c3528d34d21d704716cfdbb566566/sling-1.2.4.tar.gz
+[2024-04-13 16:17:41] INFO root fetch - processPackages [sling]: executing diffoscope
+[2024-04-13 16:17:41] INFO root fetch - processPackages [sling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sling-1.2.3.post2.tar.gz tmp/sling-1.2.4.tar.gz --markdown 20240413/s/sling/1.2.3.post2-1.2.4/README.md --exclude *.pyd
+[2024-04-13 16:17:41] INFO root fetch - processPackages [QEasyWidgets]: executing diffoscope
+[2024-04-13 16:17:41] INFO root fetch - processPackages [QEasyWidgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QEasyWidgets-0.1.1.tar.gz tmp/QEasyWidgets-0.1.2.tar.gz --markdown 20240413/Q/QEasyWidgets/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-13 16:17:41] INFO root fetch - processPackages [fnsecure]: Remove: archive file [/home/abi/fetcher/tmp/fnsecure-0.1.1.tar.gz]
+[2024-04-13 16:17:41] INFO root fetch - processPackages [fnsecure]: Remove: archive file [/home/abi/fetcher/tmp/fnsecure-0.1.2.tar.gz]
+[2024-04-13 16:17:41] INFO root fetch - main [MainThread]: End processing [fnsecure]: success
+[2024-04-13 16:17:41] INFO root fetch - processPackages [schedulefree]: Remove: archive file [/home/abi/fetcher/tmp/schedulefree-1.2.2.tar.gz]
+[2024-04-13 16:17:41] INFO root fetch - processPackages [schedulefree]: Remove: archive file [/home/abi/fetcher/tmp/schedulefree-1.2.3.tar.gz]
+[2024-04-13 16:17:41] INFO root fetch - main [MainThread]: End processing [schedulefree]: success
+[2024-04-13 16:17:41] INFO root fetch - processPackages [sling]: Remove: archive file [/home/abi/fetcher/tmp/sling-1.2.3.post2.tar.gz]
+[2024-04-13 16:17:41] INFO root fetch - processPackages [sling]: Remove: archive file [/home/abi/fetcher/tmp/sling-1.2.4.tar.gz]
+[2024-04-13 16:17:41] INFO root fetch - main [MainThread]: End processing [sling]: success
+[2024-04-13 16:17:41] INFO root fetch - processPackages [QEasyWidgets]: Remove: archive file [/home/abi/fetcher/tmp/QEasyWidgets-0.1.1.tar.gz]
+[2024-04-13 16:17:41] INFO root fetch - processPackages [QEasyWidgets]: Remove: archive file [/home/abi/fetcher/tmp/QEasyWidgets-0.1.2.tar.gz]
+[2024-04-13 16:17:41] INFO root fetch - main [MainThread]: End processing [QEasyWidgets]: success
+[2024-04-13 16:17:41] INFO root fetch - main [MainThread]: Store serial: [22752469]
