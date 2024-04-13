@@ -12261,3 +12261,29 @@
 [2024-04-13 12:28:56] WARNING root fetch - processPackages [area-of-a-shape]: Skipping, unable to determine old version
 [2024-04-13 12:28:56] INFO root fetch - main [MainThread]: End processing [area-of-a-shape] error
 [2024-04-13 12:28:56] INFO root fetch - main [MainThread]: Store serial: [22751141]
+[2024-04-13 12:31:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751141]
+[2024-04-13 12:31:05] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 12:33:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751141]
+[2024-04-13 12:33:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 12:33:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flask-rpc
+[2024-04-13 12:33:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: syndb-api-client
+[2024-04-13 12:33:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: area-of-a-shape
+[2024-04-13 12:33:10] WARNING root fetch - processPackages [area-of-a-shape]: Skipping, unable to determine old version
+[2024-04-13 12:33:10] INFO root fetch - processPackages [flask-rpc]: New version: [0.2.0] Old Version: [0.1.7]
+[2024-04-13 12:33:10] INFO root fetch - main [MainThread]: End processing [area-of-a-shape] error
+[2024-04-13 12:33:10] INFO root fetch - processPackages [flask-rpc]: Downloading https://files.pythonhosted.org/packages/9d/74/dea9847ae77a6089a172c921ba0f3f4afaa586e2c9016baa93d02813da4d/flask_rpc-0.1.7.tar.gz
+[2024-04-13 12:33:10] INFO root fetch - processPackages [syndb-api-client]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 12:33:10] INFO root fetch - processPackages [syndb-api-client]: Downloading https://files.pythonhosted.org/packages/f3/d1/ca4b9894f34d7ee81bf0fae6143e513223db31abad849758ad3731e2a28a/syndb-api-client-0.1.8.tar.gz
+[2024-04-13 12:33:10] INFO root fetch - processPackages [flask-rpc]: Downloading https://files.pythonhosted.org/packages/0a/8e/fc3372e0530d42b342211c7c47d03c15dde621b381afd3b3ebb587771595/flask_rpc-0.2.0.tar.gz
+[2024-04-13 12:33:10] INFO root fetch - processPackages [flask-rpc]: executing diffoscope
+[2024-04-13 12:33:10] INFO root fetch - processPackages [flask-rpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_rpc-0.1.7.tar.gz tmp/flask_rpc-0.2.0.tar.gz --markdown 20240413/f/flask-rpc/0.1.7-0.2.0/README.md --exclude *.pyd
+[2024-04-13 12:33:11] INFO root fetch - processPackages [syndb-api-client]: Downloading https://files.pythonhosted.org/packages/55/be/ceedcf7746ed699e47a23b6545b4d70a0a51bcffb307a05304a79594c18d/syndb-api-client-0.1.9.tar.gz
+[2024-04-13 12:33:11] INFO root fetch - processPackages [syndb-api-client]: executing diffoscope
+[2024-04-13 12:33:11] INFO root fetch - processPackages [syndb-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syndb-api-client-0.1.8.tar.gz tmp/syndb-api-client-0.1.9.tar.gz --markdown 20240413/s/syndb-api-client/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 12:33:11] INFO root fetch - processPackages [flask-rpc]: Remove: archive file [/home/abi/fetcher/tmp/flask_rpc-0.1.7.tar.gz]
+[2024-04-13 12:33:11] INFO root fetch - processPackages [flask-rpc]: Remove: archive file [/home/abi/fetcher/tmp/flask_rpc-0.2.0.tar.gz]
+[2024-04-13 12:33:11] INFO root fetch - main [MainThread]: End processing [flask-rpc]: success
+[2024-04-13 12:33:12] INFO root fetch - processPackages [syndb-api-client]: Remove: archive file [/home/abi/fetcher/tmp/syndb-api-client-0.1.8.tar.gz]
+[2024-04-13 12:33:12] INFO root fetch - processPackages [syndb-api-client]: Remove: archive file [/home/abi/fetcher/tmp/syndb-api-client-0.1.9.tar.gz]
+[2024-04-13 12:33:12] INFO root fetch - main [MainThread]: End processing [syndb-api-client]: success
+[2024-04-13 12:33:12] INFO root fetch - main [MainThread]: Store serial: [22751150]
