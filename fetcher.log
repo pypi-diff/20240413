@@ -20121,3 +20121,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 22:53:23] WARNING root fetch - processPackages [linalgebralib]: Skipping, unable to determine old version
 [2024-04-13 22:53:23] INFO root fetch - main [MainThread]: End processing [linalgebralib] error
 [2024-04-13 22:53:23] INFO root fetch - main [MainThread]: Store serial: [22754688]
+[2024-04-13 22:55:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754688]
+[2024-04-13 22:55:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 22:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyLoraRFM9x
+[2024-04-13 22:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mercoa
+[2024-04-13 22:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: metrics_layer
+[2024-04-13 22:55:32] INFO root fetch - processPackages [pyLoraRFM9x]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-13 22:55:32] INFO root fetch - processPackages [mercoa]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-04-13 22:55:32] INFO root fetch - processPackages [metrics_layer]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-13 22:55:32] INFO root fetch - processPackages [mercoa]: Downloading https://files.pythonhosted.org/packages/ae/30/68f7ba4a130a1373087581bb9a9d87371c28db2348c270a6479cc30cc6bb/mercoa-0.3.7.tar.gz
+[2024-04-13 22:55:32] INFO root fetch - processPackages [pyLoraRFM9x]: Downloading https://files.pythonhosted.org/packages/81/47/d1d998fbb19a3213c01dd8f5815ca2cfa366d06007bae38333f7ff2c9d5c/pyLoraRFM9x-1.0.1.tar.gz
+[2024-04-13 22:55:32] INFO root fetch - processPackages [metrics_layer]: Downloading https://files.pythonhosted.org/packages/9c/13/00ea34acde8fa007f10b327cfe09c1558d08ccd7ebdaac72e463c72710b2/metrics_layer-0.9.8.tar.gz
+[2024-04-13 22:55:32] INFO root fetch - processPackages [pyLoraRFM9x]: Downloading https://files.pythonhosted.org/packages/26/9e/cbafe1202a69bd1cf5397481064061295a9ab5da3f7ed2c3a03f8f064d51/pylorarfm9x-1.0.2.tar.gz
+[2024-04-13 22:55:32] INFO root fetch - processPackages [metrics_layer]: Downloading https://files.pythonhosted.org/packages/98/41/f98ac2ac2a5f241cfd8c7c920a4b7dcb17f9e906635e0c1130ca5ca3a416/metrics_layer-0.9.9.tar.gz
+[2024-04-13 22:55:32] INFO root fetch - processPackages [mercoa]: Downloading https://files.pythonhosted.org/packages/e1/d6/5e808a9446b56e867fbcbc2a15ede9094baadc6308b0e5a814e653dba2ce/mercoa-0.3.8.tar.gz
+[2024-04-13 22:55:32] INFO root fetch - processPackages [pyLoraRFM9x]: executing diffoscope
+[2024-04-13 22:55:32] INFO root fetch - processPackages [pyLoraRFM9x]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyLoraRFM9x-1.0.1.tar.gz tmp/pylorarfm9x-1.0.2.tar.gz --markdown 20240413/p/pyLoraRFM9x/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-13 22:55:32] INFO root fetch - processPackages [metrics_layer]: executing diffoscope
+[2024-04-13 22:55:32] INFO root fetch - processPackages [metrics_layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metrics_layer-0.9.8.tar.gz tmp/metrics_layer-0.9.9.tar.gz --markdown 20240413/m/metrics_layer/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-13 22:55:32] INFO root fetch - processPackages [mercoa]: executing diffoscope
+[2024-04-13 22:55:32] INFO root fetch - processPackages [mercoa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mercoa-0.3.7.tar.gz tmp/mercoa-0.3.8.tar.gz --markdown 20240413/m/mercoa/0.3.7-0.3.8/README.md --exclude *.pyd
+[2024-04-13 22:55:33] INFO root fetch - processPackages [pyLoraRFM9x]: Remove: archive file [/home/abi/fetcher/tmp/pyLoraRFM9x-1.0.1.tar.gz]
+[2024-04-13 22:55:33] INFO root fetch - processPackages [pyLoraRFM9x]: Remove: archive file [/home/abi/fetcher/tmp/pylorarfm9x-1.0.2.tar.gz]
+[2024-04-13 22:55:33] INFO root fetch - main [MainThread]: End processing [pyLoraRFM9x]: success
+[2024-04-13 22:55:33] INFO root fetch - processPackages [metrics_layer]: Remove: archive file [/home/abi/fetcher/tmp/metrics_layer-0.9.8.tar.gz]
+[2024-04-13 22:55:33] INFO root fetch - processPackages [metrics_layer]: Remove: archive file [/home/abi/fetcher/tmp/metrics_layer-0.9.9.tar.gz]
+[2024-04-13 22:55:33] INFO root fetch - main [MainThread]: End processing [metrics_layer]: success
+[2024-04-13 22:55:34] INFO root fetch - processPackages [mercoa]: Remove: archive file [/home/abi/fetcher/tmp/mercoa-0.3.7.tar.gz]
+[2024-04-13 22:55:34] INFO root fetch - processPackages [mercoa]: Remove: archive file [/home/abi/fetcher/tmp/mercoa-0.3.8.tar.gz]
+[2024-04-13 22:55:34] INFO root fetch - main [MainThread]: End processing [mercoa]: success
+[2024-04-13 22:55:34] INFO root fetch - main [MainThread]: Store serial: [22754699]
