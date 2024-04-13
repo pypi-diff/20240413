@@ -16955,3 +16955,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 18:54:15] INFO root fetch - processPackages [wakautosolver]: Remove: archive file [/home/abi/fetcher/tmp/wakautosolver-2024.4.9-py3-none-any.whl.zip]
 [2024-04-13 18:54:15] INFO root fetch - main [MainThread]: End processing [wakautosolver]: success
 [2024-04-13 18:54:15] INFO root fetch - main [MainThread]: Store serial: [22753246]
+[2024-04-13 18:56:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753246]
+[2024-04-13 18:56:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 18:56:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: piwiPre
+[2024-04-13 18:56:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytest-toolkit
+[2024-04-13 18:56:24] INFO root fetch - processPackages [piwiPre]: New version: [0.8.5] Old Version: [0.8.4]
+[2024-04-13 18:56:24] INFO root fetch - processPackages [piwiPre]: Downloading https://files.pythonhosted.org/packages/ad/fc/9cf4c3c37cd2895067bd93495f09c783b2a9d4650f43ea0506b7b50e1f67/piwiPre-0.8.4.tar.gz
+[2024-04-13 18:56:24] WARNING root fetch - processPackages [pytest-toolkit]: Skipping, unable to determine old version
+[2024-04-13 18:56:24] INFO root fetch - main [MainThread]: End processing [pytest-toolkit] error
+[2024-04-13 18:56:25] INFO root fetch - processPackages [piwiPre]: Downloading https://files.pythonhosted.org/packages/e7/59/c5cfd3133f61e11e92c5834c1ac8dde4bd134a5d7fb13d632d1efa6ef294/piwiPre-0.8.5.tar.gz
+[2024-04-13 18:56:25] INFO root fetch - processPackages [piwiPre]: executing diffoscope
+[2024-04-13 18:56:25] INFO root fetch - processPackages [piwiPre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piwiPre-0.8.4.tar.gz tmp/piwiPre-0.8.5.tar.gz --markdown 20240413/p/piwiPre/0.8.4-0.8.5/README.md --exclude *.pyd
+[2024-04-13 18:56:25] INFO root fetch - processPackages [piwiPre]: Remove: archive file [/home/abi/fetcher/tmp/piwiPre-0.8.4.tar.gz]
+[2024-04-13 18:56:25] INFO root fetch - processPackages [piwiPre]: Remove: archive file [/home/abi/fetcher/tmp/piwiPre-0.8.5.tar.gz]
+[2024-04-13 18:56:25] INFO root fetch - main [MainThread]: End processing [piwiPre]: success
+[2024-04-13 18:56:25] INFO root fetch - main [MainThread]: Store serial: [22753253]
