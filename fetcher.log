@@ -7705,3 +7705,21 @@
 [2024-04-13 06:17:30] INFO root fetch - processPackages [nornir-napalm]: Remove: archive file [/home/abi/fetcher/tmp/nornir_napalm-0.5.0.tar.gz]
 [2024-04-13 06:17:30] INFO root fetch - main [MainThread]: End processing [nornir-napalm]: success
 [2024-04-13 06:17:30] INFO root fetch - main [MainThread]: Store serial: [22749351]
+[2024-04-13 06:19:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749351]
+[2024-04-13 06:19:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 06:19:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: masspds2024
+[2024-04-13 06:19:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psd2fabric
+[2024-04-13 06:19:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: geotils
+[2024-04-13 06:19:40] WARNING root fetch - processPackages [psd2fabric]: Skipping, unable to determine old version
+[2024-04-13 06:19:40] INFO root fetch - processPackages [geotils]: New version: [0.1.7] Old Version: [0.0.20]
+[2024-04-13 06:19:40] WARNING root fetch - processPackages [masspds2024]: Skipping, unable to determine old version
+[2024-04-13 06:19:40] INFO root fetch - main [MainThread]: End processing [psd2fabric] error
+[2024-04-13 06:19:40] INFO root fetch - main [MainThread]: End processing [masspds2024] error
+[2024-04-13 06:19:40] INFO root fetch - processPackages [geotils]: Downloading https://files.pythonhosted.org/packages/b1/0f/53098d3f8c636ebe68bfbd7492015ab0602bace2ea68a32a034847b5a1a8/geotils-0.0.20.tar.gz
+[2024-04-13 06:19:40] INFO root fetch - processPackages [geotils]: Downloading https://files.pythonhosted.org/packages/d5/c0/f34ce1b43b9269ebf2cbd6de8aed7d1b842b0c7ef21679a6399a54df78e2/geotils-0.1.7.tar.gz
+[2024-04-13 06:19:40] INFO root fetch - processPackages [geotils]: executing diffoscope
+[2024-04-13 06:19:40] INFO root fetch - processPackages [geotils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geotils-0.0.20.tar.gz tmp/geotils-0.1.7.tar.gz --markdown 20240413/g/geotils/0.0.20-0.1.7/README.md --exclude *.pyd
+[2024-04-13 06:19:41] INFO root fetch - processPackages [geotils]: Remove: archive file [/home/abi/fetcher/tmp/geotils-0.0.20.tar.gz]
+[2024-04-13 06:19:41] INFO root fetch - processPackages [geotils]: Remove: archive file [/home/abi/fetcher/tmp/geotils-0.1.7.tar.gz]
+[2024-04-13 06:19:41] INFO root fetch - main [MainThread]: End processing [geotils]: success
+[2024-04-13 06:19:41] INFO root fetch - main [MainThread]: Store serial: [22749364]
