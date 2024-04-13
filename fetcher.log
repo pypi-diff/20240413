@@ -13807,3 +13807,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:37:18] INFO root fetch - processPackages [sae-lens]: Remove: archive file [/home/abi/fetcher/tmp/sae_lens-0.2.0.tar.gz]
 [2024-04-13 14:37:18] INFO root fetch - main [MainThread]: End processing [sae-lens]: success
 [2024-04-13 14:37:18] INFO root fetch - main [MainThread]: Store serial: [22751764]
+[2024-04-13 14:39:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751764]
+[2024-04-13 14:39:27] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 14:39:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llonebot
+[2024-04-13 14:39:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-llm
+[2024-04-13 14:39:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arion-library
+[2024-04-13 14:39:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: easyencryption
+[2024-04-13 14:39:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mysql-to-sqlite3
+[2024-04-13 14:39:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: faster-translate
+[2024-04-13 14:39:27] INFO root fetch - processPackages [faster-translate]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 14:39:27] INFO root fetch - processPackages [easyencryption]: New version: [0.2.0.1] Old Version: [0.2.0.0]
+[2024-04-13 14:39:27] INFO root fetch - processPackages [bigdl-llm]: New version: [2.5.0b20240412] Old Version: [2.5.0b20240411]
+[2024-04-13 14:39:27] WARNING root fetch - processPackages [llonebot]: Skipping, unable to determine old version
+[2024-04-13 14:39:27] INFO root fetch - main [MainThread]: End processing [llonebot] error
+[2024-04-13 14:39:27] INFO root fetch - processPackages [arion-library]: New version: [1.1rc46.dev46] Old Version: [1.1rc45.dev45]
+[2024-04-13 14:39:27] INFO root fetch - processPackages [easyencryption]: Downloading https://files.pythonhosted.org/packages/c2/6f/60aa9a3ec34817b8192a5ea5c879c09470ec3db330cae5bd3307663c14db/easyencryption-0.2.tar.gz
+[2024-04-13 14:39:27] INFO root fetch - processPackages [faster-translate]: Downloading https://files.pythonhosted.org/packages/97/ed/d3745e9b90b834b54ea9d219e90313ea7f11c1b835e3d00d20d942e9b5a4/faster_translate-0.1.1.tar.gz
+[2024-04-13 14:39:27] INFO root fetch - processPackages [mysql-to-sqlite3]: New version: [2.1.9] Old Version: [2.1.8]
+[2024-04-13 14:39:27] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/ef/fd/4517b720c1e2b9a101a6ace0900c8103809b0d43c904db4c27e2158280af/bigdl_llm-2.5.0b20240411-py3-none-win_amd64.whl
+[2024-04-13 14:39:27] INFO root fetch - processPackages [arion-library]: Downloading https://files.pythonhosted.org/packages/a7/20/d38aedda221010ebae85533f4ad5ac5cbb5238feb6179fa892efa975bafe/arion_library-1.1rc45.dev45.tar.gz
+[2024-04-13 14:39:27] INFO root fetch - processPackages [mysql-to-sqlite3]: Downloading https://files.pythonhosted.org/packages/bf/ab/fb0dc41904599aa5c8c4652b35d9ddf9ce9a0ee46bea245a21dd87261856/mysql_to_sqlite3-2.1.8.tar.gz
+[2024-04-13 14:39:27] INFO root fetch - processPackages [easyencryption]: Downloading https://files.pythonhosted.org/packages/30/8e/28172a48610d4a1e15754817ff0f63680a2a856f76a69458743506122241/easyencryption-0.2.0.1.tar.gz
+[2024-04-13 14:39:27] INFO root fetch - processPackages [faster-translate]: Downloading https://files.pythonhosted.org/packages/5e/87/acc793da19dd1a953b6b9cd651bb8bb7e8323e54532a7aac3cd987c1a8fe/faster_translate-0.1.2.tar.gz
+[2024-04-13 14:39:27] INFO root fetch - processPackages [arion-library]: Downloading https://files.pythonhosted.org/packages/0b/6f/a47b28fc7c832e64f4995e0c469de33e1949961bf3cc4e13ed58a942b8ee/arion_library-1.1rc46.dev46.tar.gz
+[2024-04-13 14:39:27] INFO root fetch - processPackages [easyencryption]: executing diffoscope
+[2024-04-13 14:39:27] INFO root fetch - processPackages [easyencryption]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyencryption-0.2.tar.gz tmp/easyencryption-0.2.0.1.tar.gz --markdown 20240413/e/easyencryption/0.2.0.0-0.2.0.1/README.md --exclude *.pyd
+[2024-04-13 14:39:27] INFO root fetch - processPackages [faster-translate]: executing diffoscope
+[2024-04-13 14:39:27] INFO root fetch - processPackages [faster-translate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faster_translate-0.1.1.tar.gz tmp/faster_translate-0.1.2.tar.gz --markdown 20240413/f/faster-translate/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-13 14:39:27] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/1d/37/58b56fb2e29141e13690ad9384d8cc1949d18534471e908c6c6e0e2ccd17/bigdl_llm-2.5.0b20240412-py3-none-win_amd64.whl
+[2024-04-13 14:39:27] INFO root fetch - processPackages [mysql-to-sqlite3]: Downloading https://files.pythonhosted.org/packages/3d/6b/836e3844c74c14d605adc39d456d0aa903dab1c81e8163e298a695ff784b/mysql_to_sqlite3-2.1.9.tar.gz
+[2024-04-13 14:39:27] INFO root fetch - processPackages [arion-library]: executing diffoscope
+[2024-04-13 14:39:27] INFO root fetch - processPackages [arion-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arion_library-1.1rc45.dev45.tar.gz tmp/arion_library-1.1rc46.dev46.tar.gz --markdown 20240413/a/arion-library/1.1rc45.dev45-1.1rc46.dev46/README.md --exclude *.pyd
+[2024-04-13 14:39:28] INFO root fetch - processPackages [mysql-to-sqlite3]: executing diffoscope
+[2024-04-13 14:39:28] INFO root fetch - processPackages [mysql-to-sqlite3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mysql_to_sqlite3-2.1.8.tar.gz tmp/mysql_to_sqlite3-2.1.9.tar.gz --markdown 20240413/m/mysql-to-sqlite3/2.1.8-2.1.9/README.md --exclude *.pyd
+[2024-04-13 14:39:28] INFO root fetch - processPackages [bigdl-llm]: executing diffoscope
+[2024-04-13 14:39:28] INFO root fetch - processPackages [bigdl-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_llm-2.5.0b20240411-py3-none-win_amd64.whl.zip tmp/bigdl_llm-2.5.0b20240412-py3-none-win_amd64.whl.zip --markdown 20240413/b/bigdl-llm/2.5.0b20240411-2.5.0b20240412/README.md --exclude *.pyd
+[2024-04-13 14:39:28] INFO root fetch - processPackages [faster-translate]: Remove: archive file [/home/abi/fetcher/tmp/faster_translate-0.1.1.tar.gz]
+[2024-04-13 14:39:28] INFO root fetch - processPackages [faster-translate]: Remove: archive file [/home/abi/fetcher/tmp/faster_translate-0.1.2.tar.gz]
+[2024-04-13 14:39:28] INFO root fetch - main [MainThread]: End processing [faster-translate]: success
+[2024-04-13 14:39:28] INFO root fetch - processPackages [easyencryption]: Remove: archive file [/home/abi/fetcher/tmp/easyencryption-0.2.tar.gz]
+[2024-04-13 14:39:28] INFO root fetch - processPackages [easyencryption]: Remove: archive file [/home/abi/fetcher/tmp/easyencryption-0.2.0.1.tar.gz]
+[2024-04-13 14:39:28] INFO root fetch - main [MainThread]: End processing [easyencryption]: success
+[2024-04-13 14:39:28] INFO root fetch - processPackages [arion-library]: Remove: archive file [/home/abi/fetcher/tmp/arion_library-1.1rc45.dev45.tar.gz]
+[2024-04-13 14:39:28] INFO root fetch - processPackages [arion-library]: Remove: archive file [/home/abi/fetcher/tmp/arion_library-1.1rc46.dev46.tar.gz]
+[2024-04-13 14:39:28] INFO root fetch - main [MainThread]: End processing [arion-library]: success
+[2024-04-13 14:39:28] INFO root fetch - processPackages [mysql-to-sqlite3]: Remove: archive file [/home/abi/fetcher/tmp/mysql_to_sqlite3-2.1.8.tar.gz]
+[2024-04-13 14:39:28] INFO root fetch - processPackages [mysql-to-sqlite3]: Remove: archive file [/home/abi/fetcher/tmp/mysql_to_sqlite3-2.1.9.tar.gz]
+[2024-04-13 14:39:28] INFO root fetch - main [MainThread]: End processing [mysql-to-sqlite3]: success
+[2024-04-13 14:39:29] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240411-py3-none-win_amd64.whl.zip]
+[2024-04-13 14:39:29] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240412-py3-none-win_amd64.whl.zip]
+[2024-04-13 14:39:29] INFO root fetch - main [MainThread]: End processing [bigdl-llm]: success
+[2024-04-13 14:39:29] INFO root fetch - main [MainThread]: Store serial: [22751782]
