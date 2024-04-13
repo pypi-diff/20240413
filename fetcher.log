@@ -7982,3 +7982,45 @@
 [2024-04-13 06:49:59] INFO root fetch - processPackages [jcmutils]: Remove: archive file [/home/abi/fetcher/tmp/jcmutils-2.0.2.tar.gz]
 [2024-04-13 06:49:59] INFO root fetch - main [MainThread]: End processing [jcmutils]: success
 [2024-04-13 06:49:59] INFO root fetch - main [MainThread]: Store serial: [22749511]
+[2024-04-13 06:52:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749511]
+[2024-04-13 06:52:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 06:52:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quickstart-vdk
+[2024-04-13 06:52:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dqc-toolkit
+[2024-04-13 06:52:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sbcli-mig
+[2024-04-13 06:52:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bacore
+[2024-04-13 06:52:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gptify
+[2024-04-13 06:52:09] INFO root fetch - processPackages [gptify]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-13 06:52:09] INFO root fetch - processPackages [sbcli-mig]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-13 06:52:09] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.999091100.dev13356] Old Version: [0.2.998635022.dev13355]
+[2024-04-13 06:52:10] INFO root fetch - processPackages [sbcli-mig]: Downloading https://files.pythonhosted.org/packages/06/2f/2b2f1cfa7b91365cf5cd645c5967a8e8a8bd7f1c8e89f91d7e43e2aefc87/sbcli-mig-1.0.8.zip
+[2024-04-13 06:52:10] WARNING root fetch - processPackages [dqc-toolkit]: Skipping, unable to determine old version
+[2024-04-13 06:52:10] INFO root fetch - main [MainThread]: End processing [dqc-toolkit] error
+[2024-04-13 06:52:10] INFO root fetch - processPackages [bacore]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 06:52:10] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/b7424a3be777980068df32f41ef9085422b79289fef725cba5cabf2b502e/quickstart-vdk-0.2.998635022.dev13355.tar.gz
+[2024-04-13 06:52:10] INFO root fetch - processPackages [gptify]: Downloading https://files.pythonhosted.org/packages/32/66/51e5be823881dcc853c1a70f6ece20cc08b5084ce3691d1e70fb16483a70/gptify-0.1.0.tar.gz
+[2024-04-13 06:52:10] INFO root fetch - processPackages [bacore]: Downloading https://files.pythonhosted.org/packages/fa/ee/27f5dfaf9ada68468281c54b1f6065a0d06b214b5f0f5ffa04b705c586bc/bacore-0.0.8.tar.gz
+[2024-04-13 06:52:10] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/fa/72/2a48eb94b876fa0c01eda0450a3e80c80101dd5fdfe10124d5474b64f5fd/quickstart-vdk-0.2.999091100.dev13356.tar.gz
+[2024-04-13 06:52:10] INFO root fetch - processPackages [sbcli-mig]: Downloading https://files.pythonhosted.org/packages/4b/15/9c1afe915f08547ce582aeae079f597b2a173df003109bcd1d0f0bbf037e/sbcli-mig-1.0.9.zip
+[2024-04-13 06:52:10] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2024-04-13 06:52:10] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz --markdown 20240413/q/quickstart-vdk/0.2.998635022.dev13355-0.2.999091100.dev13356/README.md --exclude *.pyd
+[2024-04-13 06:52:10] INFO root fetch - processPackages [sbcli-mig]: executing diffoscope
+[2024-04-13 06:52:10] INFO root fetch - processPackages [sbcli-mig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbcli-mig-1.0.8.zip tmp/sbcli-mig-1.0.9.zip --markdown 20240413/s/sbcli-mig/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-13 06:52:10] INFO root fetch - processPackages [gptify]: Downloading https://files.pythonhosted.org/packages/e2/c2/e4531be9601b3aec2ec102f3c3eb5c9016cef5d0005ae01bed71a329e319/gptify-0.2.0.tar.gz
+[2024-04-13 06:52:10] INFO root fetch - processPackages [bacore]: Downloading https://files.pythonhosted.org/packages/7d/7b/feec0d5f955edc4d01b34bd9405f272693c5e9666752be67db3f2dd8770a/bacore-0.0.9.tar.gz
+[2024-04-13 06:52:10] INFO root fetch - processPackages [gptify]: executing diffoscope
+[2024-04-13 06:52:10] INFO root fetch - processPackages [gptify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptify-0.1.0.tar.gz tmp/gptify-0.2.0.tar.gz --markdown 20240413/g/gptify/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-13 06:52:10] INFO root fetch - processPackages [bacore]: executing diffoscope
+[2024-04-13 06:52:10] INFO root fetch - processPackages [bacore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bacore-0.0.8.tar.gz tmp/bacore-0.0.9.tar.gz --markdown 20240413/b/bacore/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 06:52:11] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz]
+[2024-04-13 06:52:11] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
+[2024-04-13 06:52:11] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2024-04-13 06:52:11] INFO root fetch - processPackages [gptify]: Remove: archive file [/home/abi/fetcher/tmp/gptify-0.1.0.tar.gz]
+[2024-04-13 06:52:11] INFO root fetch - processPackages [gptify]: Remove: archive file [/home/abi/fetcher/tmp/gptify-0.2.0.tar.gz]
+[2024-04-13 06:52:11] INFO root fetch - main [MainThread]: End processing [gptify]: success
+[2024-04-13 06:52:11] INFO root fetch - processPackages [bacore]: Remove: archive file [/home/abi/fetcher/tmp/bacore-0.0.8.tar.gz]
+[2024-04-13 06:52:11] INFO root fetch - processPackages [bacore]: Remove: archive file [/home/abi/fetcher/tmp/bacore-0.0.9.tar.gz]
+[2024-04-13 06:52:11] INFO root fetch - main [MainThread]: End processing [bacore]: success
+[2024-04-13 06:52:11] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.8.zip]
+[2024-04-13 06:52:11] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.9.zip]
+[2024-04-13 06:52:11] INFO root fetch - main [MainThread]: End processing [sbcli-mig]: success
+[2024-04-13 06:52:11] INFO root fetch - main [MainThread]: Store serial: [22749526]
