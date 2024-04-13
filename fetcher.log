@@ -13165,3 +13165,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 13:38:24] INFO root fetch - processPackages [dtscalibration]: Remove: archive file [/home/abi/fetcher/tmp/dtscalibration-3.0.2.tar.gz]
 [2024-04-13 13:38:24] INFO root fetch - main [MainThread]: End processing [dtscalibration]: success
 [2024-04-13 13:38:24] INFO root fetch - main [MainThread]: Store serial: [22751480]
+[2024-04-13 13:40:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751480]
+[2024-04-13 13:40:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 13:40:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: polytrend
+[2024-04-13 13:40:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiavatar
+[2024-04-13 13:40:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: decorator-utils
+[2024-04-13 13:40:33] INFO root fetch - processPackages [polytrend]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-13 13:40:33] INFO root fetch - processPackages [decorator-utils]: New version: [0.0.4] Old Version: [0.0.0]
+[2024-04-13 13:40:33] INFO root fetch - processPackages [polytrend]: Downloading https://files.pythonhosted.org/packages/a7/c9/2c0a0c3b219544cf25af78d5939e7dc00ac6e81f2641653ba152bf21ed70/polytrend-1.0.7.tar.gz
+[2024-04-13 13:40:33] INFO root fetch - processPackages [aiavatar]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-04-13 13:40:33] INFO root fetch - processPackages [decorator-utils]: Downloading https://files.pythonhosted.org/packages/79/84/3e1d71f10b219d8650fe49f951173f51f48f76a2f6c8d69638ce0843a1d6/decorator_utils-0.0.0.tar.gz
+[2024-04-13 13:40:33] INFO root fetch - processPackages [aiavatar]: Downloading https://files.pythonhosted.org/packages/6a/a6/3d4d19fe541702760c0add0469579557e747213483a0d6fde1e0a88739b2/aiavatar-0.4.3-py3-none-any.whl
+[2024-04-13 13:40:33] INFO root fetch - processPackages [polytrend]: Downloading https://files.pythonhosted.org/packages/47/b4/cb4c3070573b99e8b1261c430c6bf5d0ae30cb3dab2af67356ba244cc197/polytrend-1.0.8.tar.gz
+[2024-04-13 13:40:34] INFO root fetch - processPackages [polytrend]: executing diffoscope
+[2024-04-13 13:40:34] INFO root fetch - processPackages [polytrend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polytrend-1.0.7.tar.gz tmp/polytrend-1.0.8.tar.gz --markdown 20240413/p/polytrend/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-04-13 13:40:34] INFO root fetch - processPackages [decorator-utils]: Downloading https://files.pythonhosted.org/packages/ce/f8/88f052fe38c31b98c341e34b95da2588a9e00cae04ecf19ef8d91408cc3e/decorator_utils-0.0.4.tar.gz
+[2024-04-13 13:40:34] INFO root fetch - processPackages [aiavatar]: Downloading https://files.pythonhosted.org/packages/e7/48/0a2a9c8270cdf83df75efbbda40bf669243f5f121e620952796904a9040b/aiavatar-0.4.4-py3-none-any.whl
+[2024-04-13 13:40:34] INFO root fetch - processPackages [decorator-utils]: executing diffoscope
+[2024-04-13 13:40:34] INFO root fetch - processPackages [decorator-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decorator_utils-0.0.0.tar.gz tmp/decorator_utils-0.0.4.tar.gz --markdown 20240413/d/decorator-utils/0.0.0-0.0.4/README.md --exclude *.pyd
+[2024-04-13 13:40:34] INFO root fetch - processPackages [aiavatar]: executing diffoscope
+[2024-04-13 13:40:34] INFO root fetch - processPackages [aiavatar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiavatar-0.4.3-py3-none-any.whl.zip tmp/aiavatar-0.4.4-py3-none-any.whl.zip --markdown 20240413/a/aiavatar/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-04-13 13:40:34] INFO root fetch - processPackages [polytrend]: Remove: archive file [/home/abi/fetcher/tmp/polytrend-1.0.7.tar.gz]
+[2024-04-13 13:40:34] INFO root fetch - processPackages [polytrend]: Remove: archive file [/home/abi/fetcher/tmp/polytrend-1.0.8.tar.gz]
+[2024-04-13 13:40:34] INFO root fetch - main [MainThread]: End processing [polytrend]: success
+[2024-04-13 13:40:34] INFO root fetch - processPackages [decorator-utils]: Remove: archive file [/home/abi/fetcher/tmp/decorator_utils-0.0.0.tar.gz]
+[2024-04-13 13:40:34] INFO root fetch - processPackages [decorator-utils]: Remove: archive file [/home/abi/fetcher/tmp/decorator_utils-0.0.4.tar.gz]
+[2024-04-13 13:40:34] INFO root fetch - main [MainThread]: End processing [decorator-utils]: success
+[2024-04-13 13:40:34] INFO root fetch - processPackages [aiavatar]: Remove: archive file [/home/abi/fetcher/tmp/aiavatar-0.4.3-py3-none-any.whl.zip]
+[2024-04-13 13:40:34] INFO root fetch - processPackages [aiavatar]: Remove: archive file [/home/abi/fetcher/tmp/aiavatar-0.4.4-py3-none-any.whl.zip]
+[2024-04-13 13:40:34] INFO root fetch - main [MainThread]: End processing [aiavatar]: success
+[2024-04-13 13:40:34] INFO root fetch - main [MainThread]: Store serial: [22751490]
