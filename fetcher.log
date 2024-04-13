@@ -8101,3 +8101,24 @@
 [2024-04-13 07:11:27] WARNING root fetch - processPackages [mani-skill]: Skipping package: exceeds size limit 71826089>=10485760
 [2024-04-13 07:11:27] INFO root fetch - main [MainThread]: End processing [mani-skill] error
 [2024-04-13 07:11:27] INFO root fetch - main [MainThread]: Store serial: [22749545]
+[2024-04-13 07:13:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749545]
+[2024-04-13 07:13:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 07:13:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: relax-py
+[2024-04-13 07:13:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qcop
+[2024-04-13 07:13:35] INFO root fetch - processPackages [qcop]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-04-13 07:13:35] INFO root fetch - processPackages [qcop]: Downloading https://files.pythonhosted.org/packages/37/63/cd015a2d928d0d13adafdbf595d4839e43c6c0ac3300467812781d29ed2d/qcop-0.5.3.tar.gz
+[2024-04-13 07:13:35] INFO root fetch - processPackages [relax-py]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-13 07:13:36] INFO root fetch - processPackages [relax-py]: Downloading https://files.pythonhosted.org/packages/21/ee/399242760e90b0328146cc5bcf97784d61f0f9a1f3b175cf64e7e0338507/relax_py-0.4.0.tar.gz
+[2024-04-13 07:13:36] INFO root fetch - processPackages [qcop]: Downloading https://files.pythonhosted.org/packages/f7/52/c538f5cac1ca9e9a9a069b5932acb33b2cc0720f00dd6229e9ebbdab307e/qcop-0.5.4.tar.gz
+[2024-04-13 07:13:36] INFO root fetch - processPackages [qcop]: executing diffoscope
+[2024-04-13 07:13:36] INFO root fetch - processPackages [qcop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qcop-0.5.3.tar.gz tmp/qcop-0.5.4.tar.gz --markdown 20240413/q/qcop/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-04-13 07:13:36] INFO root fetch - processPackages [relax-py]: Downloading https://files.pythonhosted.org/packages/8f/88/201c338ec89a05a2361b5eb367650aea624c993e288d227a7b23a7cfb296/relax_py-0.5.0.tar.gz
+[2024-04-13 07:13:36] INFO root fetch - processPackages [relax-py]: executing diffoscope
+[2024-04-13 07:13:36] INFO root fetch - processPackages [relax-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relax_py-0.4.0.tar.gz tmp/relax_py-0.5.0.tar.gz --markdown 20240413/r/relax-py/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-13 07:13:36] INFO root fetch - processPackages [qcop]: Remove: archive file [/home/abi/fetcher/tmp/qcop-0.5.3.tar.gz]
+[2024-04-13 07:13:36] INFO root fetch - processPackages [qcop]: Remove: archive file [/home/abi/fetcher/tmp/qcop-0.5.4.tar.gz]
+[2024-04-13 07:13:36] INFO root fetch - main [MainThread]: End processing [qcop]: success
+[2024-04-13 07:13:37] INFO root fetch - processPackages [relax-py]: Remove: archive file [/home/abi/fetcher/tmp/relax_py-0.4.0.tar.gz]
+[2024-04-13 07:13:37] INFO root fetch - processPackages [relax-py]: Remove: archive file [/home/abi/fetcher/tmp/relax_py-0.5.0.tar.gz]
+[2024-04-13 07:13:37] INFO root fetch - main [MainThread]: End processing [relax-py]: success
+[2024-04-13 07:13:37] INFO root fetch - main [MainThread]: Store serial: [22749551]
