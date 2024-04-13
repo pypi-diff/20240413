@@ -9113,3 +9113,45 @@
 [2024-04-13 08:30:09] INFO root fetch - processPackages [pulumi-mongodbatlas]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_mongodbatlas-3.9.2.tar.gz]
 [2024-04-13 08:30:09] INFO root fetch - main [MainThread]: End processing [pulumi-mongodbatlas]: success
 [2024-04-13 08:30:09] INFO root fetch - main [MainThread]: Store serial: [22749884]
+[2024-04-13 08:32:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749884]
+[2024-04-13 08:32:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 08:32:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flgo
+[2024-04-13 08:32:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-newrelic
+[2024-04-13 08:32:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prep-flow
+[2024-04-13 08:32:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bdchecker
+[2024-04-13 08:32:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pykrotik
+[2024-04-13 08:32:19] INFO root fetch - processPackages [pykrotik]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-13 08:32:19] INFO root fetch - processPackages [pykrotik]: Downloading https://files.pythonhosted.org/packages/31/3d/5fff82ebc65d8d1b3c2c7e3fed5a05cdeb897447ccd48cbfe8135b22b48e/pykrotik-0.0.5.tar.gz
+[2024-04-13 08:32:19] WARNING root fetch - processPackages [prep-flow]: Skipping, unable to determine old version
+[2024-04-13 08:32:19] INFO root fetch - main [MainThread]: End processing [prep-flow] error
+[2024-04-13 08:32:19] INFO root fetch - processPackages [bdchecker]: New version: [0.0.3] Old Version: [0.0.2a1]
+[2024-04-13 08:32:19] INFO root fetch - processPackages [flgo]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-04-13 08:32:19] INFO root fetch - processPackages [pulumi-newrelic]: New version: [5.9.1] Old Version: [5.9.0a1680282898]
+[2024-04-13 08:32:19] INFO root fetch - processPackages [flgo]: Downloading https://files.pythonhosted.org/packages/fa/38/95d4b66468a0f4972d25c8974f55743c09a5e49c1753ae4520c6665769d4/flgo-0.2.5.tar.gz
+[2024-04-13 08:32:19] INFO root fetch - processPackages [pykrotik]: Downloading https://files.pythonhosted.org/packages/c7/6c/5c938f2e03c4ec6a83eea2442b9f3f1db2dc2da8130ba209c2ce26884ddd/pykrotik-0.0.6.tar.gz
+[2024-04-13 08:32:19] INFO root fetch - processPackages [bdchecker]: Downloading https://files.pythonhosted.org/packages/0f/27/edecf9fbd4d0ab349e549f52ac391f1078e93150c81e505c6b0530caeafc/bdchecker-0.0.2a1.tar.gz
+[2024-04-13 08:32:19] INFO root fetch - processPackages [pulumi-newrelic]: Downloading https://files.pythonhosted.org/packages/1e/4c/b1f7f311d7b241db6b87ee89c05acfcff95b654eae42e5bda9788a66707c/pulumi_newrelic-5.9.0a1680282898.tar.gz
+[2024-04-13 08:32:19] INFO root fetch - processPackages [pykrotik]: executing diffoscope
+[2024-04-13 08:32:19] INFO root fetch - processPackages [pykrotik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pykrotik-0.0.5.tar.gz tmp/pykrotik-0.0.6.tar.gz --markdown 20240413/p/pykrotik/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-13 08:32:20] INFO root fetch - processPackages [bdchecker]: Downloading https://files.pythonhosted.org/packages/65/aa/b5fb55dc1af7d3a2589c33d5a31adea1b2b80626d78a09951db778358c6e/bdchecker-0.0.3.tar.gz
+[2024-04-13 08:32:20] INFO root fetch - processPackages [flgo]: Downloading https://files.pythonhosted.org/packages/1a/86/7f9bec2ae7a39281914de405649b408b0347fd1d86839c8bf6fc73b507a1/flgo-0.2.6.tar.gz
+[2024-04-13 08:32:20] INFO root fetch - processPackages [pulumi-newrelic]: Downloading https://files.pythonhosted.org/packages/43/ba/b3c2500610b8b3fabfc1479cb763f9657e73613a00e1e2f96ee26cec9a63/pulumi_newrelic-5.9.1.tar.gz
+[2024-04-13 08:32:20] INFO root fetch - processPackages [bdchecker]: executing diffoscope
+[2024-04-13 08:32:20] INFO root fetch - processPackages [bdchecker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdchecker-0.0.2a1.tar.gz tmp/bdchecker-0.0.3.tar.gz --markdown 20240413/b/bdchecker/0.0.2a1-0.0.3/README.md --exclude *.pyd
+[2024-04-13 08:32:20] INFO root fetch - processPackages [flgo]: executing diffoscope
+[2024-04-13 08:32:20] INFO root fetch - processPackages [flgo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flgo-0.2.5.tar.gz tmp/flgo-0.2.6.tar.gz --markdown 20240413/f/flgo/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-04-13 08:32:20] INFO root fetch - processPackages [pulumi-newrelic]: executing diffoscope
+[2024-04-13 08:32:20] INFO root fetch - processPackages [pulumi-newrelic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_newrelic-5.9.0a1680282898.tar.gz tmp/pulumi_newrelic-5.9.1.tar.gz --markdown 20240413/p/pulumi-newrelic/5.9.0a1680282898-5.9.1/README.md --exclude *.pyd
+[2024-04-13 08:32:20] INFO root fetch - processPackages [pykrotik]: Remove: archive file [/home/abi/fetcher/tmp/pykrotik-0.0.5.tar.gz]
+[2024-04-13 08:32:20] INFO root fetch - processPackages [pykrotik]: Remove: archive file [/home/abi/fetcher/tmp/pykrotik-0.0.6.tar.gz]
+[2024-04-13 08:32:20] INFO root fetch - main [MainThread]: End processing [pykrotik]: success
+[2024-04-13 08:32:20] INFO root fetch - processPackages [bdchecker]: Remove: archive file [/home/abi/fetcher/tmp/bdchecker-0.0.2a1.tar.gz]
+[2024-04-13 08:32:20] INFO root fetch - processPackages [bdchecker]: Remove: archive file [/home/abi/fetcher/tmp/bdchecker-0.0.3.tar.gz]
+[2024-04-13 08:32:20] INFO root fetch - main [MainThread]: End processing [bdchecker]: success
+[2024-04-13 08:32:21] INFO root fetch - processPackages [pulumi-newrelic]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_newrelic-5.9.0a1680282898.tar.gz]
+[2024-04-13 08:32:21] INFO root fetch - processPackages [pulumi-newrelic]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_newrelic-5.9.1.tar.gz]
+[2024-04-13 08:32:21] INFO root fetch - main [MainThread]: End processing [pulumi-newrelic]: success
+[2024-04-13 08:32:21] INFO root fetch - processPackages [flgo]: Remove: archive file [/home/abi/fetcher/tmp/flgo-0.2.5.tar.gz]
+[2024-04-13 08:32:21] INFO root fetch - processPackages [flgo]: Remove: archive file [/home/abi/fetcher/tmp/flgo-0.2.6.tar.gz]
+[2024-04-13 08:32:21] INFO root fetch - main [MainThread]: End processing [flgo]: success
+[2024-04-13 08:32:21] INFO root fetch - main [MainThread]: Store serial: [22749901]
