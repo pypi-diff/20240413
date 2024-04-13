@@ -14400,3 +14400,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 15:20:55] INFO root fetch - processPackages [cachebox]: Remove: archive file [/home/abi/fetcher/tmp/cachebox-2.2.2.tar.gz]
 [2024-04-13 15:20:55] INFO root fetch - main [MainThread]: End processing [cachebox]: success
 [2024-04-13 15:20:55] INFO root fetch - main [MainThread]: Store serial: [22752121]
+[2024-04-13 15:22:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752121]
+[2024-04-13 15:23:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 15:23:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rack
+[2024-04-13 15:23:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kellyapi
+[2024-04-13 15:23:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spstats
+[2024-04-13 15:23:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: HSJCalc
+[2024-04-13 15:23:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: powerhub
+[2024-04-13 15:23:04] WARNING root fetch - processPackages [spstats]: Skipping, unable to determine old version
+[2024-04-13 15:23:04] INFO root fetch - main [MainThread]: End processing [spstats] error
+[2024-04-13 15:23:04] INFO root fetch - processPackages [rack]: New version: [0.1.0] Old Version: [0.0.3]
+[2024-04-13 15:23:04] WARNING root fetch - processPackages [kellyapi]: Skipping, unable to determine old version
+[2024-04-13 15:23:04] INFO root fetch - processPackages [rack]: Downloading https://files.pythonhosted.org/packages/13/3b/c73f70b67bf0a1a5dedf91e5dd43b06e8bd6a746bb0edc01f115a3560ef6/rack-0.0.3.tar.gz
+[2024-04-13 15:23:04] INFO root fetch - main [MainThread]: End processing [kellyapi] error
+[2024-04-13 15:23:04] INFO root fetch - processPackages [powerhub]: New version: [2.0.8] Old Version: [2.0.7]
+[2024-04-13 15:23:04] WARNING root fetch - processPackages [HSJCalc]: Skipping, unable to determine old version
+[2024-04-13 15:23:04] INFO root fetch - main [MainThread]: End processing [HSJCalc] error
+[2024-04-13 15:23:04] INFO root fetch - processPackages [powerhub]: Downloading https://files.pythonhosted.org/packages/b1/a5/ec62d0657ee0125ac5639f93254af54ef1849861f23272d3378e7595d4db/powerhub-2.0.7.tar.gz
+[2024-04-13 15:23:04] INFO root fetch - processPackages [rack]: Downloading https://files.pythonhosted.org/packages/0c/a7/ee72aabd74b359fe1593bd6ba1cdc27db5e7536baf7abe432cb81669b006/rack-0.1.0.tar.gz
+[2024-04-13 15:23:05] INFO root fetch - processPackages [rack]: executing diffoscope
+[2024-04-13 15:23:05] INFO root fetch - processPackages [rack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rack-0.0.3.tar.gz tmp/rack-0.1.0.tar.gz --markdown 20240413/r/rack/0.0.3-0.1.0/README.md --exclude *.pyd
+[2024-04-13 15:23:05] INFO root fetch - processPackages [powerhub]: Downloading https://files.pythonhosted.org/packages/01/bd/8ef715724bcee715649a12467a0a22ca8b4743723725b453fc897d7da6a7/powerhub-2.0.8.tar.gz
+[2024-04-13 15:23:05] INFO root fetch - processPackages [powerhub]: executing diffoscope
+[2024-04-13 15:23:05] INFO root fetch - processPackages [powerhub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/powerhub-2.0.7.tar.gz tmp/powerhub-2.0.8.tar.gz --markdown 20240413/p/powerhub/2.0.7-2.0.8/README.md --exclude *.pyd
+[2024-04-13 15:23:05] INFO root fetch - processPackages [rack]: Remove: archive file [/home/abi/fetcher/tmp/rack-0.0.3.tar.gz]
+[2024-04-13 15:23:05] INFO root fetch - processPackages [rack]: Remove: archive file [/home/abi/fetcher/tmp/rack-0.1.0.tar.gz]
+[2024-04-13 15:23:05] INFO root fetch - main [MainThread]: End processing [rack]: success
+[2024-04-13 15:23:07] INFO root fetch - processPackages [powerhub]: Remove: archive file [/home/abi/fetcher/tmp/powerhub-2.0.7.tar.gz]
+[2024-04-13 15:23:07] INFO root fetch - processPackages [powerhub]: Remove: archive file [/home/abi/fetcher/tmp/powerhub-2.0.8.tar.gz]
+[2024-04-13 15:23:07] INFO root fetch - main [MainThread]: End processing [powerhub]: success
+[2024-04-13 15:23:07] INFO root fetch - main [MainThread]: Store serial: [22752151]
