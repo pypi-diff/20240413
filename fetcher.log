@@ -6454,3 +6454,20 @@
 [2024-04-13 03:19:45] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-0.13.0.dev202404130117.tar.gz]
 [2024-04-13 03:19:45] INFO root fetch - main [MainThread]: End processing [onediffx]: success
 [2024-04-13 03:19:45] INFO root fetch - main [MainThread]: Store serial: [22748774]
+[2024-04-13 03:21:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748774]
+[2024-04-13 03:21:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 03:21:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: multiplierz
+[2024-04-13 03:21:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: liveplotlib
+[2024-04-13 03:21:56] INFO root fetch - processPackages [liveplotlib]: New version: [0.2] Old Version: [0.1]
+[2024-04-13 03:21:56] INFO root fetch - processPackages [multiplierz]: New version: [2.2.2] Old Version: [2.2.1]
+[2024-04-13 03:21:56] INFO root fetch - processPackages [liveplotlib]: Downloading https://files.pythonhosted.org/packages/27/aa/0a9c038664a6b68b5783feeea46aef2ea7cc068bc8efeba73f2dc84d6800/liveplotlib-0.1.tar.gz
+[2024-04-13 03:21:56] INFO root fetch - processPackages [multiplierz]: Downloading https://files.pythonhosted.org/packages/2b/15/772218a9e6342039919e621c3eb6fadd40da13c894553e0db5bf6e045d68/multiplierz-2.2.1-py2-none-any.whl
+[2024-04-13 03:21:56] INFO root fetch - processPackages [liveplotlib]: Downloading https://files.pythonhosted.org/packages/6a/14/e035dd296428c94aae0209c990c8490f0086e7c6a50b30c914f4878043ab/liveplotlib-0.2.tar.gz
+[2024-04-13 03:21:56] INFO root fetch - processPackages [liveplotlib]: executing diffoscope
+[2024-04-13 03:21:56] INFO root fetch - processPackages [liveplotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liveplotlib-0.1.tar.gz tmp/liveplotlib-0.2.tar.gz --markdown 20240413/l/liveplotlib/0.1-0.2/README.md --exclude *.pyd
+[2024-04-13 03:21:57] INFO root fetch - processPackages [liveplotlib]: Remove: archive file [/home/abi/fetcher/tmp/liveplotlib-0.1.tar.gz]
+[2024-04-13 03:21:57] INFO root fetch - processPackages [liveplotlib]: Remove: archive file [/home/abi/fetcher/tmp/liveplotlib-0.2.tar.gz]
+[2024-04-13 03:21:57] INFO root fetch - main [MainThread]: End processing [liveplotlib]: success
+[2024-04-13 03:21:57] WARNING root fetch - processPackages [multiplierz]: Skipping package: exceeds size limit 18776608>=10485760
+[2024-04-13 03:21:57] INFO root fetch - main [MainThread]: End processing [multiplierz] error
+[2024-04-13 03:21:57] INFO root fetch - main [MainThread]: Store serial: [22748812]
