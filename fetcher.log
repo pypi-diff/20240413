@@ -8990,3 +8990,42 @@
 [2024-04-13 08:25:44] INFO root fetch - processPackages [pulumi-mailgun]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_mailgun-3.6.0a1712987592.tar.gz]
 [2024-04-13 08:25:44] INFO root fetch - main [MainThread]: End processing [pulumi-mailgun]: success
 [2024-04-13 08:25:44] INFO root fetch - main [MainThread]: Store serial: [22749850]
+[2024-04-13 08:27:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749850]
+[2024-04-13 08:27:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 08:27:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pykrotik
+[2024-04-13 08:27:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-f5bigip
+[2024-04-13 08:27:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-stock-barcodes
+[2024-04-13 08:27:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addons-oca-stock-logistics-barcode
+[2024-04-13 08:27:53] INFO root fetch - processPackages [odoo-addon-stock-barcodes]: New version: [15.0.3.1.0] Old Version: [15.0.3.0.1.1]
+[2024-04-13 08:27:53] INFO root fetch - processPackages [odoo-addon-stock-barcodes]: Downloading https://files.pythonhosted.org/packages/b6/2c/3da57f8d3f9261aee78b275479f934391b6b73606ae316c70616bbb1e69c/odoo_addon_stock_barcodes-15.0.3.0.1.1-py3-none-any.whl
+[2024-04-13 08:27:53] INFO root fetch - processPackages [pykrotik]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-13 08:27:53] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: New version: [16.0.20240325.0] Old Version: [16.0.20231220.0]
+[2024-04-13 08:27:53] INFO root fetch - processPackages [pulumi-f5bigip]: New version: [3.9.0a1661535806] Old Version: [3.9.0a1654086391]
+[2024-04-13 08:27:53] INFO root fetch - processPackages [pykrotik]: Downloading https://files.pythonhosted.org/packages/31/3d/5fff82ebc65d8d1b3c2c7e3fed5a05cdeb897447ccd48cbfe8135b22b48e/pykrotik-0.0.5.tar.gz
+[2024-04-13 08:27:53] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: Downloading https://files.pythonhosted.org/packages/51/96/b7d8ab5becf2f710faf6a6791a7ccd0f1c6fd3e5695ca5517b37a2a215d1/odoo_addons_oca_stock_logistics_barcode-16.0.20231220.0-py3-none-any.whl
+[2024-04-13 08:27:53] INFO root fetch - processPackages [pulumi-f5bigip]: Downloading https://files.pythonhosted.org/packages/80/30/a8f0c17436ad6bc5580473fb6cbaf5a135b8828a6bdaacc76510bfd52499/pulumi_f5bigip-3.9.0a1654086391.tar.gz
+[2024-04-13 08:27:53] INFO root fetch - processPackages [odoo-addon-stock-barcodes]: Downloading https://files.pythonhosted.org/packages/d7/59/5ee057429fa5e9e94aaa4a0921e798b932bb6fce8cdf9fac5a46604b7609/odoo_addon_stock_barcodes-15.0.3.1.0-py3-none-any.whl
+[2024-04-13 08:27:53] INFO root fetch - processPackages [odoo-addon-stock-barcodes]: executing diffoscope
+[2024-04-13 08:27:53] INFO root fetch - processPackages [odoo-addon-stock-barcodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_barcodes-15.0.3.0.1.1-py3-none-any.whl.zip tmp/odoo_addon_stock_barcodes-15.0.3.1.0-py3-none-any.whl.zip --markdown 20240413/o/odoo-addon-stock-barcodes/15.0.3.0.1.1-15.0.3.1.0/README.md --exclude *.pyd
+[2024-04-13 08:27:53] INFO root fetch - processPackages [pykrotik]: Downloading https://files.pythonhosted.org/packages/c7/6c/5c938f2e03c4ec6a83eea2442b9f3f1db2dc2da8130ba209c2ce26884ddd/pykrotik-0.0.6.tar.gz
+[2024-04-13 08:27:53] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: Downloading https://files.pythonhosted.org/packages/34/96/18982f1c9fd8124412f81320f0a7a89a3eff7cc81f3a6aef60187cc8c831/odoo_addons_oca_stock_logistics_barcode-16.0.20240325.0-py3-none-any.whl
+[2024-04-13 08:27:53] INFO root fetch - processPackages [pulumi-f5bigip]: Downloading https://files.pythonhosted.org/packages/d9/48/9b104ca1340b985069c84fa75b1acc149cc375561d0e98bee7b09b74cb7f/pulumi_f5bigip-3.9.0a1661535806.tar.gz
+[2024-04-13 08:27:54] INFO root fetch - processPackages [pykrotik]: executing diffoscope
+[2024-04-13 08:27:54] INFO root fetch - processPackages [pykrotik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pykrotik-0.0.5.tar.gz tmp/pykrotik-0.0.6.tar.gz --markdown 20240413/p/pykrotik/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-13 08:27:54] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: executing diffoscope
+[2024-04-13 08:27:54] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_stock_logistics_barcode-16.0.20231220.0-py3-none-any.whl.zip tmp/odoo_addons_oca_stock_logistics_barcode-16.0.20240325.0-py3-none-any.whl.zip --markdown 20240413/o/odoo-addons-oca-stock-logistics-barcode/16.0.20231220.0-16.0.20240325.0/README.md --exclude *.pyd
+[2024-04-13 08:27:54] INFO root fetch - processPackages [pulumi-f5bigip]: executing diffoscope
+[2024-04-13 08:27:54] INFO root fetch - processPackages [pulumi-f5bigip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_f5bigip-3.9.0a1654086391.tar.gz tmp/pulumi_f5bigip-3.9.0a1661535806.tar.gz --markdown 20240413/p/pulumi-f5bigip/3.9.0a1654086391-3.9.0a1661535806/README.md --exclude *.pyd
+[2024-04-13 08:27:54] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_stock_logistics_barcode-16.0.20231220.0-py3-none-any.whl.zip]
+[2024-04-13 08:27:54] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-barcode]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_stock_logistics_barcode-16.0.20240325.0-py3-none-any.whl.zip]
+[2024-04-13 08:27:54] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-stock-logistics-barcode]: success
+[2024-04-13 08:27:54] INFO root fetch - processPackages [odoo-addon-stock-barcodes]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_barcodes-15.0.3.0.1.1-py3-none-any.whl.zip]
+[2024-04-13 08:27:54] INFO root fetch - processPackages [odoo-addon-stock-barcodes]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_barcodes-15.0.3.1.0-py3-none-any.whl.zip]
+[2024-04-13 08:27:54] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-barcodes]: success
+[2024-04-13 08:27:54] INFO root fetch - processPackages [pykrotik]: Remove: archive file [/home/abi/fetcher/tmp/pykrotik-0.0.5.tar.gz]
+[2024-04-13 08:27:54] INFO root fetch - processPackages [pykrotik]: Remove: archive file [/home/abi/fetcher/tmp/pykrotik-0.0.6.tar.gz]
+[2024-04-13 08:27:54] INFO root fetch - main [MainThread]: End processing [pykrotik]: success
+[2024-04-13 08:27:55] INFO root fetch - processPackages [pulumi-f5bigip]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_f5bigip-3.9.0a1654086391.tar.gz]
+[2024-04-13 08:27:55] INFO root fetch - processPackages [pulumi-f5bigip]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_f5bigip-3.9.0a1661535806.tar.gz]
+[2024-04-13 08:27:55] INFO root fetch - main [MainThread]: End processing [pulumi-f5bigip]: success
+[2024-04-13 08:27:55] INFO root fetch - main [MainThread]: Store serial: [22749859]
