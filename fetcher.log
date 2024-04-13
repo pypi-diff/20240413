@@ -18721,3 +18721,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 20:50:40] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Remove: archive file [/home/abi/fetcher/tmp/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz]
 [2024-04-13 20:50:40] INFO root fetch - main [MainThread]: End processing [sleipnirgroup-jormungandr]: success
 [2024-04-13 20:50:40] INFO root fetch - main [MainThread]: Store serial: [22754063]
+[2024-04-13 20:52:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754063]
+[2024-04-13 20:52:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 20:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deshima-sensitivity
+[2024-04-13 20:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyMdfReader
+[2024-04-13 20:52:49] WARNING root fetch - processPackages [pyMdfReader]: Skipping, unable to determine old version
+[2024-04-13 20:52:49] INFO root fetch - main [MainThread]: End processing [pyMdfReader] error
+[2024-04-13 20:52:49] INFO root fetch - processPackages [deshima-sensitivity]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-13 20:52:49] INFO root fetch - processPackages [deshima-sensitivity]: Downloading https://files.pythonhosted.org/packages/a3/e0/f53b056a0ed5f43f6847b55aecc01d253e71daae5a265f6e2194bd88a0dc/deshima-sensitivity-0.4.1.tar.gz
+[2024-04-13 20:52:49] INFO root fetch - processPackages [deshima-sensitivity]: Downloading https://files.pythonhosted.org/packages/d1/91/6645fae7bee6b60ef9b89e27fbf7a1091d75697a3f1e79bb882525254566/deshima_sensitivity-0.4.2.tar.gz
+[2024-04-13 20:52:49] INFO root fetch - processPackages [deshima-sensitivity]: executing diffoscope
+[2024-04-13 20:52:49] INFO root fetch - processPackages [deshima-sensitivity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deshima-sensitivity-0.4.1.tar.gz tmp/deshima_sensitivity-0.4.2.tar.gz --markdown 20240413/d/deshima-sensitivity/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-04-13 20:52:50] INFO root fetch - processPackages [deshima-sensitivity]: Remove: archive file [/home/abi/fetcher/tmp/deshima-sensitivity-0.4.1.tar.gz]
+[2024-04-13 20:52:50] INFO root fetch - processPackages [deshima-sensitivity]: Remove: archive file [/home/abi/fetcher/tmp/deshima_sensitivity-0.4.2.tar.gz]
+[2024-04-13 20:52:50] INFO root fetch - main [MainThread]: End processing [deshima-sensitivity]: success
+[2024-04-13 20:52:50] INFO root fetch - main [MainThread]: Store serial: [22754069]
