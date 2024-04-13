@@ -10997,3 +10997,30 @@
 [2024-04-13 10:39:42] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.3.3.dev32.tar.gz]
 [2024-04-13 10:39:42] INFO root fetch - main [MainThread]: End processing [kuzu]: success
 [2024-04-13 10:39:42] INFO root fetch - main [MainThread]: Store serial: [22750591]
+[2024-04-13 10:41:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750591]
+[2024-04-13 10:41:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 10:41:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-synologydsm-api
+[2024-04-13 10:41:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pynovnc
+[2024-04-13 10:41:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sherpa-onnx
+[2024-04-13 10:41:53] INFO root fetch - processPackages [py-synologydsm-api]: New version: [2.4.1] Old Version: [2.4.0]
+[2024-04-13 10:41:53] INFO root fetch - processPackages [pynovnc]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-13 10:41:53] INFO root fetch - processPackages [py-synologydsm-api]: Downloading https://files.pythonhosted.org/packages/40/e5/d36f9b58e78f494233539799b6ace925e22779e904140050f79ba4c9d0b4/py_synologydsm_api-2.4.0-py3-none-any.whl
+[2024-04-13 10:41:53] INFO root fetch - processPackages [pynovnc]: Downloading https://files.pythonhosted.org/packages/72/c4/171b781e5a0bf1eaebddc1ff8259d6caecf4f57917f799bb55a0f53b7f72/pynovnc-1.1.0.tar.gz
+[2024-04-13 10:41:53] INFO root fetch - processPackages [sherpa-onnx]: New version: [1.9.18] Old Version: [1.9.17]
+[2024-04-13 10:41:53] INFO root fetch - processPackages [py-synologydsm-api]: Downloading https://files.pythonhosted.org/packages/b0/31/37e58c1679590eb76c214e13ce5eed8cf164e660607b7b8c53c4364f15f2/py_synologydsm_api-2.4.1-py3-none-any.whl
+[2024-04-13 10:41:53] INFO root fetch - processPackages [py-synologydsm-api]: executing diffoscope
+[2024-04-13 10:41:53] INFO root fetch - processPackages [py-synologydsm-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_synologydsm_api-2.4.0-py3-none-any.whl.zip tmp/py_synologydsm_api-2.4.1-py3-none-any.whl.zip --markdown 20240413/p/py-synologydsm-api/2.4.0-2.4.1/README.md --exclude *.pyd
+[2024-04-13 10:41:53] INFO root fetch - processPackages [pynovnc]: Downloading https://files.pythonhosted.org/packages/c1/38/2aa92f62d339bc09979bfd3cdfc2c27b19454b5aba48658f84f4082209e9/pynovnc-1.1.1.tar.gz
+[2024-04-13 10:41:53] INFO root fetch - processPackages [sherpa-onnx]: Downloading https://files.pythonhosted.org/packages/89/8b/ba0772a96b0f1cb18250d076a20ec9ee8190982a3e1efb2ba12e7fa1dbd7/sherpa-onnx-1.9.17.tar.gz
+[2024-04-13 10:41:53] INFO root fetch - processPackages [pynovnc]: executing diffoscope
+[2024-04-13 10:41:53] INFO root fetch - processPackages [pynovnc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynovnc-1.1.0.tar.gz tmp/pynovnc-1.1.1.tar.gz --markdown 20240413/p/pynovnc/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-13 10:41:54] INFO root fetch - processPackages [sherpa-onnx]: Downloading https://files.pythonhosted.org/packages/d3/1d/faf3642c0ca6dd10f37e69299a2dfaf0a7f651af7437631b1ad00d58d03d/sherpa_onnx-1.9.18-cp39-cp39-win_amd64.whl
+[2024-04-13 10:41:54] INFO root fetch - processPackages [pynovnc]: Remove: archive file [/home/abi/fetcher/tmp/pynovnc-1.1.0.tar.gz]
+[2024-04-13 10:41:54] INFO root fetch - processPackages [pynovnc]: Remove: archive file [/home/abi/fetcher/tmp/pynovnc-1.1.1.tar.gz]
+[2024-04-13 10:41:54] INFO root fetch - main [MainThread]: End processing [pynovnc]: success
+[2024-04-13 10:41:54] INFO root fetch - processPackages [py-synologydsm-api]: Remove: archive file [/home/abi/fetcher/tmp/py_synologydsm_api-2.4.0-py3-none-any.whl.zip]
+[2024-04-13 10:41:54] INFO root fetch - processPackages [py-synologydsm-api]: Remove: archive file [/home/abi/fetcher/tmp/py_synologydsm_api-2.4.1-py3-none-any.whl.zip]
+[2024-04-13 10:41:54] INFO root fetch - main [MainThread]: End processing [py-synologydsm-api]: success
+[2024-04-13 10:41:54] WARNING root fetch - processPackages [sherpa-onnx]: Skipping package: exceeds size limit 16573723>=10485760
+[2024-04-13 10:41:54] INFO root fetch - main [MainThread]: End processing [sherpa-onnx] error
+[2024-04-13 10:41:54] INFO root fetch - main [MainThread]: Store serial: [22750622]
