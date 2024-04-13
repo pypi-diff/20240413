@@ -14442,3 +14442,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 15:25:18] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.9.tar.gz]
 [2024-04-13 15:25:18] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-04-13 15:25:18] INFO root fetch - main [MainThread]: Store serial: [22752158]
+[2024-04-13 15:27:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752158]
+[2024-04-13 15:27:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 15:27:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: listvideo
+[2024-04-13 15:27:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-command
+[2024-04-13 15:27:27] INFO root fetch - processPackages [pulumi-command]: New version: [4.6.0a1662390243] Old Version: [4.5.0]
+[2024-04-13 15:27:27] INFO root fetch - processPackages [pulumi-command]: Downloading https://files.pythonhosted.org/packages/e3/ad/91738e9991d6e5d03f2d97069c62ffdf7c4e8df52da3e4b1520ad04fb63a/pulumi_command-4.5.0.tar.gz
+[2024-04-13 15:27:27] WARNING root fetch - processPackages [listvideo]: Skipping, unable to determine old version
+[2024-04-13 15:27:27] INFO root fetch - main [MainThread]: End processing [listvideo] error
+[2024-04-13 15:27:27] INFO root fetch - processPackages [pulumi-command]: Downloading https://files.pythonhosted.org/packages/d4/2b/2d872326d49a5b01e18c24ac8a4e77ab79811ada5de4827e995ceda283c4/pulumi_command-4.6.0a1662390243.tar.gz
+[2024-04-13 15:27:27] INFO root fetch - processPackages [pulumi-command]: executing diffoscope
+[2024-04-13 15:27:27] INFO root fetch - processPackages [pulumi-command]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_command-4.5.0.tar.gz tmp/pulumi_command-4.6.0a1662390243.tar.gz --markdown 20240413/p/pulumi-command/4.5.0-4.6.0a1662390243/README.md --exclude *.pyd
+[2024-04-13 15:27:28] INFO root fetch - processPackages [pulumi-command]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_command-4.5.0.tar.gz]
+[2024-04-13 15:27:28] INFO root fetch - processPackages [pulumi-command]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_command-4.6.0a1662390243.tar.gz]
+[2024-04-13 15:27:28] INFO root fetch - main [MainThread]: End processing [pulumi-command]: success
+[2024-04-13 15:27:28] INFO root fetch - main [MainThread]: Store serial: [22752166]
