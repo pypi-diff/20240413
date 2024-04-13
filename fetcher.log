@@ -12705,3 +12705,45 @@
 [2024-04-13 13:05:47] INFO root fetch - processPackages [nonebot-plugin-alconna]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_alconna-0.9.3.tar.gz]
 [2024-04-13 13:05:47] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-alconna]: success
 [2024-04-13 13:05:47] INFO root fetch - main [MainThread]: Store serial: [22751289]
+[2024-04-13 13:07:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751289]
+[2024-04-13 13:07:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 13:07:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: faster-translate
+[2024-04-13 13:07:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: akshare
+[2024-04-13 13:07:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: LinguAligner
+[2024-04-13 13:07:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycityagent
+[2024-04-13 13:07:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wansuite
+[2024-04-13 13:07:56] INFO root fetch - processPackages [wansuite]: New version: [2.3] Old Version: [2.2]
+[2024-04-13 13:07:56] INFO root fetch - processPackages [LinguAligner]: New version: [0.9] Old Version: [0.8]
+[2024-04-13 13:07:56] INFO root fetch - processPackages [akshare]: New version: [1.9.99] Old Version: [1.9.98]
+[2024-04-13 13:07:56] INFO root fetch - processPackages [pycityagent]: New version: [1.1.6] Old Version: [1.1.5]
+[2024-04-13 13:07:56] WARNING root fetch - processPackages [faster-translate]: Skipping, unable to determine old version
+[2024-04-13 13:07:56] INFO root fetch - main [MainThread]: End processing [faster-translate] error
+[2024-04-13 13:07:56] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/63/1f/fc1941e3d878f8643898c07bd958b932dd36b3b074928145bb430dfe0a04/lingualigner-0.8.tar.gz
+[2024-04-13 13:07:56] INFO root fetch - processPackages [wansuite]: Downloading https://files.pythonhosted.org/packages/ee/6f/c541fa3beaf6e0bc4b2f0e1da2532fb41e856ccd299b4e91499f8c16e780/wansuite-2.2.tar.gz
+[2024-04-13 13:07:56] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/ec/a4/f1c21d8fbb349e15f0bf76d32a496003bcff9b66215f81b940337a510e36/akshare-1.9.98.tar.gz
+[2024-04-13 13:07:56] INFO root fetch - processPackages [pycityagent]: Downloading https://files.pythonhosted.org/packages/bb/53/842b00e80dbf3b91a77ac6398dac35ae15941432f263c9a0b264775d59a8/pycityagent-1.1.5.tar.gz
+[2024-04-13 13:07:56] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/73/fb/3cad932ad4847785cbae099a96fb2ae5367c5b788dac0deece75b60a9254/lingualigner-0.9.tar.gz
+[2024-04-13 13:07:56] INFO root fetch - processPackages [wansuite]: Downloading https://files.pythonhosted.org/packages/7f/38/00f22bc5f16207cc740e4823e39a7e51b17066ec6ef303c9d3384a9144fc/wansuite-2.3.tar.gz
+[2024-04-13 13:07:56] INFO root fetch - processPackages [LinguAligner]: executing diffoscope
+[2024-04-13 13:07:56] INFO root fetch - processPackages [LinguAligner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lingualigner-0.8.tar.gz tmp/lingualigner-0.9.tar.gz --markdown 20240413/L/LinguAligner/0.8-0.9/README.md --exclude *.pyd
+[2024-04-13 13:07:57] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/53/e8/f58e96016752567ca09f3f67abdc7e935d0afa919aded528d50590ed9170/akshare-1.9.99.tar.gz
+[2024-04-13 13:07:57] INFO root fetch - processPackages [pycityagent]: Downloading https://files.pythonhosted.org/packages/a7/dd/e005d105c3f838ed28eae4318407992edc013ad1cf3e9644d0fe9f20a99b/pycityagent-1.1.6.tar.gz
+[2024-04-13 13:07:57] INFO root fetch - processPackages [wansuite]: executing diffoscope
+[2024-04-13 13:07:57] INFO root fetch - processPackages [wansuite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wansuite-2.2.tar.gz tmp/wansuite-2.3.tar.gz --markdown 20240413/w/wansuite/2.2-2.3/README.md --exclude *.pyd
+[2024-04-13 13:07:57] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2024-04-13 13:07:57] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.98.tar.gz tmp/akshare-1.9.99.tar.gz --markdown 20240413/a/akshare/1.9.98-1.9.99/README.md --exclude *.pyd
+[2024-04-13 13:07:57] INFO root fetch - processPackages [pycityagent]: executing diffoscope
+[2024-04-13 13:07:57] INFO root fetch - processPackages [pycityagent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycityagent-1.1.5.tar.gz tmp/pycityagent-1.1.6.tar.gz --markdown 20240413/p/pycityagent/1.1.5-1.1.6/README.md --exclude *.pyd
+[2024-04-13 13:07:57] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.8.tar.gz]
+[2024-04-13 13:07:57] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.9.tar.gz]
+[2024-04-13 13:07:57] INFO root fetch - main [MainThread]: End processing [LinguAligner]: success
+[2024-04-13 13:07:57] INFO root fetch - processPackages [wansuite]: Remove: archive file [/home/abi/fetcher/tmp/wansuite-2.2.tar.gz]
+[2024-04-13 13:07:57] INFO root fetch - processPackages [wansuite]: Remove: archive file [/home/abi/fetcher/tmp/wansuite-2.3.tar.gz]
+[2024-04-13 13:07:57] INFO root fetch - main [MainThread]: End processing [wansuite]: success
+[2024-04-13 13:07:57] INFO root fetch - processPackages [pycityagent]: Remove: archive file [/home/abi/fetcher/tmp/pycityagent-1.1.5.tar.gz]
+[2024-04-13 13:07:57] INFO root fetch - processPackages [pycityagent]: Remove: archive file [/home/abi/fetcher/tmp/pycityagent-1.1.6.tar.gz]
+[2024-04-13 13:07:57] INFO root fetch - main [MainThread]: End processing [pycityagent]: success
+[2024-04-13 13:07:59] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.98.tar.gz]
+[2024-04-13 13:07:59] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
+[2024-04-13 13:07:59] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2024-04-13 13:07:59] INFO root fetch - main [MainThread]: Store serial: [22751305]
