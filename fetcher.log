@@ -7479,3 +7479,24 @@
 [2024-04-13 05:53:40] INFO root fetch - processPackages [superagent-py]: Remove: archive file [/home/abi/fetcher/tmp/superagent_py-0.2.29.tar.gz]
 [2024-04-13 05:53:40] INFO root fetch - main [MainThread]: End processing [superagent-py]: success
 [2024-04-13 05:53:40] INFO root fetch - main [MainThread]: Store serial: [22749243]
+[2024-04-13 05:55:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749243]
+[2024-04-13 05:55:48] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 05:57:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749243]
+[2024-04-13 05:57:54] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 05:59:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749243]
+[2024-04-13 05:59:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 05:59:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-reconciliation-service-api
+[2024-04-13 05:59:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: isofit
+[2024-04-13 05:59:59] INFO root fetch - processPackages [py-reconciliation-service-api]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-13 05:59:59] INFO root fetch - processPackages [isofit]: New version: [3.0.1] Old Version: [3.0.0]
+[2024-04-13 06:00:00] INFO root fetch - processPackages [py-reconciliation-service-api]: Downloading https://files.pythonhosted.org/packages/4c/bd/f05d1151212ecc5f6a6ad3fafc4a3b5ca1e76b53db4834ac4c91643df8e0/py_reconciliation_service_api-0.2.0.tar.gz
+[2024-04-13 06:00:00] INFO root fetch - processPackages [isofit]: Downloading https://files.pythonhosted.org/packages/41/78/4e00881d70ff3ad12dd78e6a0a7b07118e180f49fe3fb2f5880fea4f8419/isofit-3.0.0.tar.gz
+[2024-04-13 06:00:00] WARNING root fetch - processPackages [isofit]: Skipping package: exceeds size limit 22334042>=10485760
+[2024-04-13 06:00:00] INFO root fetch - main [MainThread]: End processing [isofit] error
+[2024-04-13 06:00:00] INFO root fetch - processPackages [py-reconciliation-service-api]: Downloading https://files.pythonhosted.org/packages/73/3e/9c417985114dc240ebbbf3c8c8ddbd8e24eba1eeba5be51f8d86f5c50ee8/py_reconciliation_service_api-0.2.1.tar.gz
+[2024-04-13 06:00:00] INFO root fetch - processPackages [py-reconciliation-service-api]: executing diffoscope
+[2024-04-13 06:00:00] INFO root fetch - processPackages [py-reconciliation-service-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_reconciliation_service_api-0.2.0.tar.gz tmp/py_reconciliation_service_api-0.2.1.tar.gz --markdown 20240413/p/py-reconciliation-service-api/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-13 06:00:01] INFO root fetch - processPackages [py-reconciliation-service-api]: Remove: archive file [/home/abi/fetcher/tmp/py_reconciliation_service_api-0.2.0.tar.gz]
+[2024-04-13 06:00:01] INFO root fetch - processPackages [py-reconciliation-service-api]: Remove: archive file [/home/abi/fetcher/tmp/py_reconciliation_service_api-0.2.1.tar.gz]
+[2024-04-13 06:00:01] INFO root fetch - main [MainThread]: End processing [py-reconciliation-service-api]: success
+[2024-04-13 06:00:01] INFO root fetch - main [MainThread]: Store serial: [22749249]
