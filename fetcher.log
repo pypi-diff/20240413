@@ -8065,3 +8065,17 @@
 [2024-04-13 07:00:44] INFO root fetch - processPackages [arjun]: Remove: archive file [/home/abi/fetcher/tmp/arjun-2.2.6.tar.gz]
 [2024-04-13 07:00:44] INFO root fetch - main [MainThread]: End processing [arjun]: success
 [2024-04-13 07:00:44] INFO root fetch - main [MainThread]: Store serial: [22749537]
+[2024-04-13 07:02:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749537]
+[2024-04-13 07:02:53] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 07:04:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749537]
+[2024-04-13 07:04:59] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 07:04:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openai
+[2024-04-13 07:04:59] INFO root fetch - processPackages [openai]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-04-13 07:04:59] INFO root fetch - processPackages [openai]: Downloading https://files.pythonhosted.org/packages/9a/25/578115b5b9cf35478ce098a8242ed82741e56b3452ebc171f7dc7b77c433/openai-1.8.0.tar.gz
+[2024-04-13 07:04:59] INFO root fetch - processPackages [openai]: Downloading https://files.pythonhosted.org/packages/98/0d/d97f8c264ba77978754751a83e5e27a7783a5389b8f18da384f616a43bb8/openai-1.9.0.tar.gz
+[2024-04-13 07:05:00] INFO root fetch - processPackages [openai]: executing diffoscope
+[2024-04-13 07:05:00] INFO root fetch - processPackages [openai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai-1.8.0.tar.gz tmp/openai-1.9.0.tar.gz --markdown 20240413/o/openai/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-04-13 07:05:01] INFO root fetch - processPackages [openai]: Remove: archive file [/home/abi/fetcher/tmp/openai-1.8.0.tar.gz]
+[2024-04-13 07:05:01] INFO root fetch - processPackages [openai]: Remove: archive file [/home/abi/fetcher/tmp/openai-1.9.0.tar.gz]
+[2024-04-13 07:05:01] INFO root fetch - main [MainThread]: End processing [openai]: success
+[2024-04-13 07:05:01] INFO root fetch - main [MainThread]: Store serial: [22749540]
