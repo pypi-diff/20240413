@@ -20085,3 +20085,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 22:49:03] INFO root fetch - processPackages [dgenerate]: Remove: archive file [/home/abi/fetcher/tmp/dgenerate-3.4.1.tar.gz]
 [2024-04-13 22:49:03] INFO root fetch - main [MainThread]: End processing [dgenerate]: success
 [2024-04-13 22:49:03] INFO root fetch - main [MainThread]: Store serial: [22754675]
+[2024-04-13 22:51:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754675]
+[2024-04-13 22:51:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 22:51:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thepipe-api
+[2024-04-13 22:51:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyplotlib
+[2024-04-13 22:51:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kgr
+[2024-04-13 22:51:13] INFO root fetch - processPackages [pyplotlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 22:51:13] INFO root fetch - processPackages [kgr]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-13 22:51:13] INFO root fetch - processPackages [thepipe-api]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-13 22:51:13] INFO root fetch - processPackages [pyplotlib]: Downloading https://files.pythonhosted.org/packages/28/bb/58ba19c8fed8024ef2c0efd0523dded73560d64857fcd7916d35aa6aa8af/pyplotlib-0.0.8.tar.gz
+[2024-04-13 22:51:13] INFO root fetch - processPackages [thepipe-api]: Downloading https://files.pythonhosted.org/packages/5d/df/bca14d6c9bd217a174bf62aa854c00c54f73f9b58155bd5b79b30e3cabf9/thepipe_api-0.1.2.tar.gz
+[2024-04-13 22:51:13] INFO root fetch - processPackages [kgr]: Downloading https://files.pythonhosted.org/packages/30/77/9226f554b4381b49d440f434f8ba6a3deb183789e8f6d1ffc1557c671699/kgr-0.1.5.tar.gz
+[2024-04-13 22:51:13] INFO root fetch - processPackages [pyplotlib]: Downloading https://files.pythonhosted.org/packages/8b/f8/1cec6ba77c9aee645ad1564c6fe928db135b36bec387a9574c6422edd191/pyplotlib-0.0.9.tar.gz
+[2024-04-13 22:51:13] INFO root fetch - processPackages [kgr]: Downloading https://files.pythonhosted.org/packages/28/2e/e48efa96d5a3ab56e20d22ea329189d521734216d6542c88736d76709ff5/kgr-0.1.6.tar.gz
+[2024-04-13 22:51:13] INFO root fetch - processPackages [thepipe-api]: Downloading https://files.pythonhosted.org/packages/7d/87/f98d8a173e6afdc36d0eca69b7e448f4c126bbc9c80ed2330ff88c6b92cc/thepipe_api-0.1.3.tar.gz
+[2024-04-13 22:51:13] INFO root fetch - processPackages [pyplotlib]: executing diffoscope
+[2024-04-13 22:51:13] INFO root fetch - processPackages [pyplotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyplotlib-0.0.8.tar.gz tmp/pyplotlib-0.0.9.tar.gz --markdown 20240413/p/pyplotlib/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 22:51:13] INFO root fetch - processPackages [kgr]: executing diffoscope
+[2024-04-13 22:51:13] INFO root fetch - processPackages [kgr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kgr-0.1.5.tar.gz tmp/kgr-0.1.6.tar.gz --markdown 20240413/k/kgr/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-13 22:51:13] INFO root fetch - processPackages [thepipe-api]: executing diffoscope
+[2024-04-13 22:51:13] INFO root fetch - processPackages [thepipe-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thepipe_api-0.1.2.tar.gz tmp/thepipe_api-0.1.3.tar.gz --markdown 20240413/t/thepipe-api/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-13 22:51:14] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.8.tar.gz]
+[2024-04-13 22:51:14] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.9.tar.gz]
+[2024-04-13 22:51:14] INFO root fetch - main [MainThread]: End processing [pyplotlib]: success
+[2024-04-13 22:51:14] INFO root fetch - processPackages [thepipe-api]: Remove: archive file [/home/abi/fetcher/tmp/thepipe_api-0.1.2.tar.gz]
+[2024-04-13 22:51:14] INFO root fetch - processPackages [thepipe-api]: Remove: archive file [/home/abi/fetcher/tmp/thepipe_api-0.1.3.tar.gz]
+[2024-04-13 22:51:14] INFO root fetch - main [MainThread]: End processing [thepipe-api]: success
+[2024-04-13 22:51:14] INFO root fetch - processPackages [kgr]: Remove: archive file [/home/abi/fetcher/tmp/kgr-0.1.5.tar.gz]
+[2024-04-13 22:51:14] INFO root fetch - processPackages [kgr]: Remove: archive file [/home/abi/fetcher/tmp/kgr-0.1.6.tar.gz]
+[2024-04-13 22:51:14] INFO root fetch - main [MainThread]: End processing [kgr]: success
+[2024-04-13 22:51:14] INFO root fetch - main [MainThread]: Store serial: [22754684]
