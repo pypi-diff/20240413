@@ -12192,3 +12192,27 @@
 [2024-04-13 12:22:27] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1700084435.tar.gz]
 [2024-04-13 12:22:27] INFO root fetch - main [MainThread]: End processing [pulumi-aws]: success
 [2024-04-13 12:22:27] INFO root fetch - main [MainThread]: Store serial: [22751118]
+[2024-04-13 12:24:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751118]
+[2024-04-13 12:24:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 12:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: algoconnectorhelper
+[2024-04-13 12:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kfish
+[2024-04-13 12:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gen3-tracker
+[2024-04-13 12:24:36] WARNING root fetch - processPackages [algoconnectorhelper]: Skipping, unable to determine old version
+[2024-04-13 12:24:36] INFO root fetch - main [MainThread]: End processing [algoconnectorhelper] error
+[2024-04-13 12:24:36] INFO root fetch - processPackages [kfish]: New version: [99.0.202404131019] Old Version: [99.0.202404122136]
+[2024-04-13 12:24:36] INFO root fetch - processPackages [gen3-tracker]: New version: [0.0.3rc4] Old Version: [0.0.3rc3]
+[2024-04-13 12:24:36] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/27/a4/f5358868fda4e30116cdfdf4f7b9448e800cb7cd6716675d75478b8dc90b/kfish-99.0.202404122136-py3-none-any.whl
+[2024-04-13 12:24:36] INFO root fetch - processPackages [gen3-tracker]: Downloading https://files.pythonhosted.org/packages/1f/32/5edb071e140fee9a30ff5fe1b487cbae73b71d7186992c28716c80ef6f8c/gen3_tracker-0.0.3rc3.tar.gz
+[2024-04-13 12:24:36] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/86/9b/32b14517c599001987f43d904f3c003aa88bb130f84ab20c51b83f64458c/kfish-99.0.202404131019-py3-none-any.whl
+[2024-04-13 12:24:36] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2024-04-13 12:24:36] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202404122136-py3-none-any.whl.zip tmp/kfish-99.0.202404131019-py3-none-any.whl.zip --markdown 20240413/k/kfish/99.0.202404122136-99.0.202404131019/README.md --exclude *.pyd
+[2024-04-13 12:24:37] INFO root fetch - processPackages [gen3-tracker]: Downloading https://files.pythonhosted.org/packages/67/ed/bf30bec92687323b97626196a74b314e9e92b3e39f4c0c081a84c0ef5815/gen3_tracker-0.0.3rc4.tar.gz
+[2024-04-13 12:24:37] INFO root fetch - processPackages [gen3-tracker]: executing diffoscope
+[2024-04-13 12:24:37] INFO root fetch - processPackages [gen3-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gen3_tracker-0.0.3rc3.tar.gz tmp/gen3_tracker-0.0.3rc4.tar.gz --markdown 20240413/g/gen3-tracker/0.0.3rc3-0.0.3rc4/README.md --exclude *.pyd
+[2024-04-13 12:24:37] INFO root fetch - processPackages [kfish]: Remove: archive file [/home/abi/fetcher/tmp/kfish-99.0.202404122136-py3-none-any.whl.zip]
+[2024-04-13 12:24:37] INFO root fetch - processPackages [kfish]: Remove: archive file [/home/abi/fetcher/tmp/kfish-99.0.202404131019-py3-none-any.whl.zip]
+[2024-04-13 12:24:37] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2024-04-13 12:24:37] INFO root fetch - processPackages [gen3-tracker]: Remove: archive file [/home/abi/fetcher/tmp/gen3_tracker-0.0.3rc3.tar.gz]
+[2024-04-13 12:24:37] INFO root fetch - processPackages [gen3-tracker]: Remove: archive file [/home/abi/fetcher/tmp/gen3_tracker-0.0.3rc4.tar.gz]
+[2024-04-13 12:24:37] INFO root fetch - main [MainThread]: End processing [gen3-tracker]: success
+[2024-04-13 12:24:37] INFO root fetch - main [MainThread]: Store serial: [22751125]
