@@ -19901,3 +19901,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 22:35:59] INFO root fetch - processPackages [sembansurga]: Remove: archive file [/home/abi/fetcher/tmp/sembansurga-1.0.5.tar.gz]
 [2024-04-13 22:35:59] INFO root fetch - main [MainThread]: End processing [sembansurga]: success
 [2024-04-13 22:35:59] INFO root fetch - main [MainThread]: Store serial: [22754599]
+[2024-04-13 22:38:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754599]
+[2024-04-13 22:38:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 22:38:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ontolutils
+[2024-04-13 22:38:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: invest-guard
+[2024-04-13 22:38:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pogema
+[2024-04-13 22:38:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: opensees
+[2024-04-13 22:38:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sae-vis
+[2024-04-13 22:38:07] INFO root fetch - processPackages [sae-vis]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-13 22:38:07] INFO root fetch - processPackages [invest-guard]: New version: [2024.4.13] Old Version: [0.1.5]
+[2024-04-13 22:38:07] INFO root fetch - processPackages [sae-vis]: Downloading https://files.pythonhosted.org/packages/41/60/b7fdf368aed9c8dd61c0db677bd692930cc6ea73b861fd2925fab6460c71/sae-vis-0.2.8.tar.gz
+[2024-04-13 22:38:07] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/59/3f/eb6942158d0b941afaf5b059e0d937756e3b625141461efea73d50335e83/invest-guard-0.1.5.tar.gz
+[2024-04-13 22:38:07] INFO root fetch - processPackages [pogema]: New version: [1.2.3a0] Old Version: [1.2.2]
+[2024-04-13 22:38:07] INFO root fetch - processPackages [ontolutils]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-13 22:38:07] INFO root fetch - processPackages [opensees]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 22:38:08] INFO root fetch - processPackages [pogema]: Downloading https://files.pythonhosted.org/packages/b0/51/a60fda1c015b553c2fe8e5e87caf90840c6417b4da2a9f18d6c774786fc0/pogema-1.2.2.tar.gz
+[2024-04-13 22:38:08] INFO root fetch - processPackages [ontolutils]: Downloading https://files.pythonhosted.org/packages/f6/e1/1ab61f2fca8a2308ddd475f96984ae017ca7a346daca38414f441db15b2f/ontolutils-0.2.8.tar.gz
+[2024-04-13 22:38:08] INFO root fetch - processPackages [sae-vis]: Downloading https://files.pythonhosted.org/packages/7f/ab/3d421c7c8ad6574d57aec3c2ae9cf540fd37978ef92c9492e7a82839af9d/sae-vis-0.2.9.tar.gz
+[2024-04-13 22:38:08] INFO root fetch - processPackages [opensees]: Downloading https://files.pythonhosted.org/packages/9a/43/b05787ae2e998169aa8db75ce509317ccef535b7a914658c612cef7ec841/opensees-0.0.8.tar.gz
+[2024-04-13 22:38:08] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/ff/3a/4ea064cb5bed2bfd854fe5bd3f225297738cdddddaa94b799e6875d0e1c5/invest-guard-2024.4.13.tar.gz
+[2024-04-13 22:38:08] INFO root fetch - processPackages [sae-vis]: executing diffoscope
+[2024-04-13 22:38:08] INFO root fetch - processPackages [sae-vis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sae-vis-0.2.8.tar.gz tmp/sae-vis-0.2.9.tar.gz --markdown 20240413/s/sae-vis/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-13 22:38:08] INFO root fetch - processPackages [invest-guard]: executing diffoscope
+[2024-04-13 22:38:08] INFO root fetch - processPackages [invest-guard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invest-guard-0.1.5.tar.gz tmp/invest-guard-2024.4.13.tar.gz --markdown 20240413/i/invest-guard/0.1.5-2024.4.13/README.md --exclude *.pyd
+[2024-04-13 22:38:08] INFO root fetch - processPackages [pogema]: Downloading https://files.pythonhosted.org/packages/e8/28/820ed9677038d91118f330c531953b2db3d8d4d3b1c27b1c94f6b9a9ac73/pogema-1.2.3a0.tar.gz
+[2024-04-13 22:38:08] INFO root fetch - processPackages [ontolutils]: Downloading https://files.pythonhosted.org/packages/3b/2f/d56fd379346d9aaa5800c7b533d5298c1ce6dda56a899ae0494ec9bdd672/ontolutils-0.2.9.tar.gz
+[2024-04-13 22:38:08] INFO root fetch - processPackages [pogema]: executing diffoscope
+[2024-04-13 22:38:08] INFO root fetch - processPackages [pogema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pogema-1.2.2.tar.gz tmp/pogema-1.2.3a0.tar.gz --markdown 20240413/p/pogema/1.2.2-1.2.3a0/README.md --exclude *.pyd
+[2024-04-13 22:38:08] INFO root fetch - processPackages [ontolutils]: executing diffoscope
+[2024-04-13 22:38:08] INFO root fetch - processPackages [ontolutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ontolutils-0.2.8.tar.gz tmp/ontolutils-0.2.9.tar.gz --markdown 20240413/o/ontolutils/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-13 22:38:08] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest-guard-0.1.5.tar.gz]
+[2024-04-13 22:38:08] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest-guard-2024.4.13.tar.gz]
+[2024-04-13 22:38:08] INFO root fetch - main [MainThread]: End processing [invest-guard]: success
+[2024-04-13 22:38:09] INFO root fetch - processPackages [sae-vis]: Remove: archive file [/home/abi/fetcher/tmp/sae-vis-0.2.8.tar.gz]
+[2024-04-13 22:38:09] INFO root fetch - processPackages [sae-vis]: Remove: archive file [/home/abi/fetcher/tmp/sae-vis-0.2.9.tar.gz]
+[2024-04-13 22:38:09] INFO root fetch - main [MainThread]: End processing [sae-vis]: success
+[2024-04-13 22:38:09] INFO root fetch - processPackages [opensees]: Downloading https://files.pythonhosted.org/packages/89/07/b8f08c9d4567b2986131cfb7613ef5601c16b2a3c0ac5f22dd8e82eec99d/opensees-0.0.9.tar.gz
+[2024-04-13 22:38:09] INFO root fetch - processPackages [pogema]: Remove: archive file [/home/abi/fetcher/tmp/pogema-1.2.2.tar.gz]
+[2024-04-13 22:38:09] INFO root fetch - processPackages [pogema]: Remove: archive file [/home/abi/fetcher/tmp/pogema-1.2.3a0.tar.gz]
+[2024-04-13 22:38:09] INFO root fetch - main [MainThread]: End processing [pogema]: success
+[2024-04-13 22:38:09] INFO root fetch - processPackages [ontolutils]: Remove: archive file [/home/abi/fetcher/tmp/ontolutils-0.2.8.tar.gz]
+[2024-04-13 22:38:09] INFO root fetch - processPackages [ontolutils]: Remove: archive file [/home/abi/fetcher/tmp/ontolutils-0.2.9.tar.gz]
+[2024-04-13 22:38:09] INFO root fetch - main [MainThread]: End processing [ontolutils]: success
+[2024-04-13 22:38:10] WARNING root fetch - processPackages [opensees]: Skipping package: exceeds size limit 22392766>=10485760
+[2024-04-13 22:38:10] INFO root fetch - main [MainThread]: End processing [opensees] error
+[2024-04-13 22:38:10] INFO root fetch - main [MainThread]: Store serial: [22754617]
