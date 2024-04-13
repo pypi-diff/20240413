@@ -7372,3 +7372,24 @@
 [2024-04-13 05:42:51] INFO root fetch - processPackages [lib-dt-computer-vision]: Remove: archive file [/home/abi/fetcher/tmp/lib-dt-computer-vision-0.1.8.tar.gz]
 [2024-04-13 05:42:51] INFO root fetch - main [MainThread]: End processing [lib-dt-computer-vision]: success
 [2024-04-13 05:42:51] INFO root fetch - main [MainThread]: Store serial: [22749210]
+[2024-04-13 05:44:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749210]
+[2024-04-13 05:45:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 05:45:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xiaogpt
+[2024-04-13 05:45:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: irt-test
+[2024-04-13 05:45:00] INFO root fetch - processPackages [xiaogpt]: New version: [2.32] Old Version: [2.31]
+[2024-04-13 05:45:00] INFO root fetch - processPackages [xiaogpt]: Downloading https://files.pythonhosted.org/packages/33/cc/e014c6f3826a9db57010f5935910719ef7aae3bb9ac36485a6c188aece24/xiaogpt-2.31.tar.gz
+[2024-04-13 05:45:00] INFO root fetch - processPackages [irt-test]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 05:45:00] INFO root fetch - processPackages [irt-test]: Downloading https://files.pythonhosted.org/packages/a1/d7/f9dbb2e8864a521999f0c00d7b57dc191c14cddc054253ba9e360e39b033/irt_test-0.1.0.tar.gz
+[2024-04-13 05:45:00] INFO root fetch - processPackages [xiaogpt]: Downloading https://files.pythonhosted.org/packages/98/34/6d2d17ab53bf9345456aa06a0276357e6c10e05c4f5dd9b00446363009a7/xiaogpt-2.32.tar.gz
+[2024-04-13 05:45:00] INFO root fetch - processPackages [xiaogpt]: executing diffoscope
+[2024-04-13 05:45:00] INFO root fetch - processPackages [xiaogpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xiaogpt-2.31.tar.gz tmp/xiaogpt-2.32.tar.gz --markdown 20240413/x/xiaogpt/2.31-2.32/README.md --exclude *.pyd
+[2024-04-13 05:45:00] INFO root fetch - processPackages [irt-test]: Downloading https://files.pythonhosted.org/packages/51/49/f7883139d439999b847b06efdd9def81f29b8457c53cab86cab7b2f21956/irt_test-0.1.1.tar.gz
+[2024-04-13 05:45:00] INFO root fetch - processPackages [irt-test]: executing diffoscope
+[2024-04-13 05:45:00] INFO root fetch - processPackages [irt-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irt_test-0.1.0.tar.gz tmp/irt_test-0.1.1.tar.gz --markdown 20240413/i/irt-test/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 05:45:01] INFO root fetch - processPackages [irt-test]: Remove: archive file [/home/abi/fetcher/tmp/irt_test-0.1.0.tar.gz]
+[2024-04-13 05:45:01] INFO root fetch - processPackages [irt-test]: Remove: archive file [/home/abi/fetcher/tmp/irt_test-0.1.1.tar.gz]
+[2024-04-13 05:45:01] INFO root fetch - main [MainThread]: End processing [irt-test]: success
+[2024-04-13 05:45:01] INFO root fetch - processPackages [xiaogpt]: Remove: archive file [/home/abi/fetcher/tmp/xiaogpt-2.31.tar.gz]
+[2024-04-13 05:45:01] INFO root fetch - processPackages [xiaogpt]: Remove: archive file [/home/abi/fetcher/tmp/xiaogpt-2.32.tar.gz]
+[2024-04-13 05:45:01] INFO root fetch - main [MainThread]: End processing [xiaogpt]: success
+[2024-04-13 05:45:01] INFO root fetch - main [MainThread]: Store serial: [22749216]
