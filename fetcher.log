@@ -12371,3 +12371,20 @@
 [2024-04-13 12:39:45] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot-nightly-1.0.0.dev20240412.tar.gz]
 [2024-04-13 12:39:45] INFO root fetch - main [MainThread]: End processing [skypilot-nightly]: success
 [2024-04-13 12:39:45] INFO root fetch - main [MainThread]: Store serial: [22751176]
+[2024-04-13 12:41:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751176]
+[2024-04-13 12:41:54] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 12:43:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751177]
+[2024-04-13 12:43:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 12:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deribit-wrapper
+[2024-04-13 12:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nashx
+[2024-04-13 12:43:59] INFO root fetch - processPackages [deribit-wrapper]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-13 12:43:59] INFO root fetch - processPackages [deribit-wrapper]: Downloading https://files.pythonhosted.org/packages/6b/fd/7ec75c70c93eb2221dec1f5a664541bf5d2581c676b67c3c36d9ff2e90cd/deribit_wrapper-0.3.0.tar.gz
+[2024-04-13 12:43:59] WARNING root fetch - processPackages [nashx]: Skipping, unable to determine old version
+[2024-04-13 12:43:59] INFO root fetch - main [MainThread]: End processing [nashx] error
+[2024-04-13 12:43:59] INFO root fetch - processPackages [deribit-wrapper]: Downloading https://files.pythonhosted.org/packages/ee/42/448762122f683d717d8252498a62522b40a3e0f01db5c2fad9f929c2de42/deribit_wrapper-0.3.1.tar.gz
+[2024-04-13 12:44:00] INFO root fetch - processPackages [deribit-wrapper]: executing diffoscope
+[2024-04-13 12:44:00] INFO root fetch - processPackages [deribit-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deribit_wrapper-0.3.0.tar.gz tmp/deribit_wrapper-0.3.1.tar.gz --markdown 20240413/d/deribit-wrapper/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-13 12:44:00] INFO root fetch - processPackages [deribit-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/deribit_wrapper-0.3.0.tar.gz]
+[2024-04-13 12:44:00] INFO root fetch - processPackages [deribit-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/deribit_wrapper-0.3.1.tar.gz]
+[2024-04-13 12:44:00] INFO root fetch - main [MainThread]: End processing [deribit-wrapper]: success
+[2024-04-13 12:44:00] INFO root fetch - main [MainThread]: Store serial: [22751186]
