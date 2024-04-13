@@ -13353,3 +13353,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 13:49:31] INFO root fetch - processPackages [cmake-init]: Remove: archive file [/home/abi/fetcher/tmp/cmake-init-0.40.6.tar.gz]
 [2024-04-13 13:49:31] INFO root fetch - main [MainThread]: End processing [cmake-init]: success
 [2024-04-13 13:49:31] INFO root fetch - main [MainThread]: Store serial: [22751564]
+[2024-04-13 13:51:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751564]
+[2024-04-13 13:51:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 13:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zodchy
+[2024-04-13 13:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: roulette-game
+[2024-04-13 13:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: get-rankings
+[2024-04-13 13:51:39] WARNING root fetch - processPackages [zodchy]: Skipping, unable to determine old version
+[2024-04-13 13:51:39] INFO root fetch - main [MainThread]: End processing [zodchy] error
+[2024-04-13 13:51:39] INFO root fetch - processPackages [get-rankings]: New version: [0.9] Old Version: [0.8]
+[2024-04-13 13:51:39] WARNING root fetch - processPackages [roulette-game]: Skipping, unable to determine old version
+[2024-04-13 13:51:39] INFO root fetch - main [MainThread]: End processing [roulette-game] error
+[2024-04-13 13:51:39] INFO root fetch - processPackages [get-rankings]: Downloading https://files.pythonhosted.org/packages/0c/97/7d2a0e0d7650a6e2bcbf43ec96e116d4100d75c2b03b14096f09effaee06/get_rankings-0.8.tar.gz
+[2024-04-13 13:51:40] INFO root fetch - processPackages [get-rankings]: Downloading https://files.pythonhosted.org/packages/2e/23/a69b127ac3dc40fca8838a26918490b52d16cf0e7df1e5da2191cb8969f3/get_rankings-0.9.tar.gz
+[2024-04-13 13:51:40] INFO root fetch - processPackages [get-rankings]: executing diffoscope
+[2024-04-13 13:51:40] INFO root fetch - processPackages [get-rankings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/get_rankings-0.8.tar.gz tmp/get_rankings-0.9.tar.gz --markdown 20240413/g/get-rankings/0.8-0.9/README.md --exclude *.pyd
+[2024-04-13 13:51:40] INFO root fetch - processPackages [get-rankings]: Remove: archive file [/home/abi/fetcher/tmp/get_rankings-0.8.tar.gz]
+[2024-04-13 13:51:40] INFO root fetch - processPackages [get-rankings]: Remove: archive file [/home/abi/fetcher/tmp/get_rankings-0.9.tar.gz]
+[2024-04-13 13:51:40] INFO root fetch - main [MainThread]: End processing [get-rankings]: success
+[2024-04-13 13:51:40] INFO root fetch - main [MainThread]: Store serial: [22751576]
