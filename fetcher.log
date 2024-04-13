@@ -20788,3 +20788,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 23:47:50] INFO root fetch - processPackages [custom-dot-plot]: Remove: archive file [/home/abi/fetcher/tmp/custom-dot-plot-0.0.6.tar.gz]
 [2024-04-13 23:47:50] INFO root fetch - main [MainThread]: End processing [custom-dot-plot]: success
 [2024-04-13 23:47:50] INFO root fetch - main [MainThread]: Store serial: [22755009]
+[2024-04-13 23:49:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755009]
+[2024-04-13 23:50:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 23:50:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AstroToolkit
+[2024-04-13 23:50:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cortix
+[2024-04-13 23:50:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pipez
+[2024-04-13 23:50:00] INFO root fetch - processPackages [AstroToolkit]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-04-13 23:50:00] INFO root fetch - processPackages [pipez]: New version: [0.0.9] Old Version: [0.0.83]
+[2024-04-13 23:50:00] INFO root fetch - processPackages [AstroToolkit]: Downloading https://files.pythonhosted.org/packages/bd/b9/54de1bddbccd150911e2994f4c1b70c1b1f7d1be3e82b084c4631c1af57b/AstroToolkit-1.4.0.tar.gz
+[2024-04-13 23:50:00] INFO root fetch - processPackages [cortix]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-13 23:50:00] INFO root fetch - processPackages [pipez]: Downloading https://files.pythonhosted.org/packages/23/d5/e437d5b26f44767605e46b28889a7232395b4b4efb6319bb5383a0ea6c36/pipez-0.0.83.tar.gz
+[2024-04-13 23:50:00] INFO root fetch - processPackages [cortix]: Downloading https://files.pythonhosted.org/packages/37/0a/9081f12313305118ece4a1c77b7feb4a79e2596d6a4dcda1ab1fa21bdca3/cortix-1.1.8.tar.gz
+[2024-04-13 23:50:00] INFO root fetch - processPackages [AstroToolkit]: Downloading https://files.pythonhosted.org/packages/0e/8b/c43121b6117556dbf7312f5bc2aa88523d185ff2ecf72cd53aa65a6e1fe9/astrotoolkit-1.4.1.tar.gz
+[2024-04-13 23:50:00] INFO root fetch - processPackages [cortix]: Downloading https://files.pythonhosted.org/packages/8a/20/0dc7ff8b8ee40701bb4f342180d2f71ea4f0e79f48fdc930e9307c757bf5/cortix-1.1.9.tar.gz
+[2024-04-13 23:50:00] INFO root fetch - processPackages [pipez]: Downloading https://files.pythonhosted.org/packages/a3/7b/b75e90898c1b52cbcd0b17ad4595e5ed0f6d4554e94be045c641282bc131/pipez-0.0.9.tar.gz
+[2024-04-13 23:50:00] INFO root fetch - processPackages [AstroToolkit]: executing diffoscope
+[2024-04-13 23:50:00] INFO root fetch - processPackages [AstroToolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AstroToolkit-1.4.0.tar.gz tmp/astrotoolkit-1.4.1.tar.gz --markdown 20240413/A/AstroToolkit/1.4.0-1.4.1/README.md --exclude *.pyd
+[2024-04-13 23:50:00] INFO root fetch - processPackages [pipez]: executing diffoscope
+[2024-04-13 23:50:00] INFO root fetch - processPackages [pipez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipez-0.0.83.tar.gz tmp/pipez-0.0.9.tar.gz --markdown 20240413/p/pipez/0.0.83-0.0.9/README.md --exclude *.pyd
+[2024-04-13 23:50:00] INFO root fetch - processPackages [cortix]: executing diffoscope
+[2024-04-13 23:50:00] INFO root fetch - processPackages [cortix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cortix-1.1.8.tar.gz tmp/cortix-1.1.9.tar.gz --markdown 20240413/c/cortix/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-13 23:50:01] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.83.tar.gz]
+[2024-04-13 23:50:01] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.9.tar.gz]
+[2024-04-13 23:50:01] INFO root fetch - main [MainThread]: End processing [pipez]: success
+[2024-04-13 23:50:01] INFO root fetch - processPackages [AstroToolkit]: Remove: archive file [/home/abi/fetcher/tmp/AstroToolkit-1.4.0.tar.gz]
+[2024-04-13 23:50:01] INFO root fetch - processPackages [AstroToolkit]: Remove: archive file [/home/abi/fetcher/tmp/astrotoolkit-1.4.1.tar.gz]
+[2024-04-13 23:50:01] INFO root fetch - main [MainThread]: End processing [AstroToolkit]: success
+[2024-04-13 23:50:01] INFO root fetch - processPackages [cortix]: Remove: archive file [/home/abi/fetcher/tmp/cortix-1.1.8.tar.gz]
+[2024-04-13 23:50:01] INFO root fetch - processPackages [cortix]: Remove: archive file [/home/abi/fetcher/tmp/cortix-1.1.9.tar.gz]
+[2024-04-13 23:50:01] INFO root fetch - main [MainThread]: End processing [cortix]: success
+[2024-04-13 23:50:01] INFO root fetch - main [MainThread]: Store serial: [22755018]
