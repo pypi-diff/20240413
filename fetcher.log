@@ -9645,3 +9645,51 @@
 [2024-04-13 09:07:20] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/PyQt6-Fluent-Widgets-1.5.5.tar.gz]
 [2024-04-13 09:07:20] INFO root fetch - main [MainThread]: End processing [PyQt6-Fluent-Widgets]: success
 [2024-04-13 09:07:20] INFO root fetch - main [MainThread]: Store serial: [22750068]
+[2024-04-13 09:09:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750068]
+[2024-04-13 09:09:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 09:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pkscreener
+[2024-04-13 09:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-hub-nightly
+[2024-04-13 09:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flask-serialize
+[2024-04-13 09:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-splunk
+[2024-04-13 09:09:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-snowflake
+[2024-04-13 09:09:29] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240412.256] Old Version: [0.44.20240412.255]
+[2024-04-13 09:09:29] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2024-04-13 09:09:29] INFO root fetch - processPackages [flask-serialize]: New version: [2.2.0] Old Version: [2.1.3]
+[2024-04-13 09:09:29] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/39/6a/aa0cb381b450f430b738a5bf994c258dec55f3d0f5510f67588a7ae2b4d7/pkscreener-0.44.20240412.255.tar.gz
+[2024-04-13 09:09:29] INFO root fetch - processPackages [pulumi-splunk]: New version: [1.3.0a1712990695] Old Version: [1.3.0a1712731151]
+[2024-04-13 09:09:29] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/e8/6b/02811fcd79aec590e7355647130c822f1bd53092a205ce986e6df7364f52/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl
+[2024-04-13 09:09:29] INFO root fetch - processPackages [pulumi-snowflake]: New version: [0.9.1a1656367704] Old Version: [0.9.1a1654087017]
+[2024-04-13 09:09:29] INFO root fetch - processPackages [flask-serialize]: Downloading https://files.pythonhosted.org/packages/43/3a/988cd32081270b710f6cb4ddf3e594d254ba7bcb1ff8483c958a051aad74/flask-serialize-2.1.3.tar.gz
+[2024-04-13 09:09:29] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/d1/9a/6b02d0906847e11386093420119d147f7306d7a9cad79e8e575a9d29ae76/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl
+[2024-04-13 09:09:29] INFO root fetch - processPackages [pulumi-splunk]: Downloading https://files.pythonhosted.org/packages/cd/7a/8fa4dbd8d63ad23d7c24ebfb21f27a307aac8992c98f847cf471b2978dc5/pulumi_splunk-1.3.0a1712731151.tar.gz
+[2024-04-13 09:09:29] INFO root fetch - processPackages [pulumi-snowflake]: Downloading https://files.pythonhosted.org/packages/ac/12/8a15836613d8faa0153d0c1b5818bfe83f875f5770e55c406bbc2e2f4297/pulumi_snowflake-0.9.1a1654087017.tar.gz
+[2024-04-13 09:09:29] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/31/71/31dcd2dfa36bd8f93577e09fc81d07d393e160666c57a717ae731baaaa85/pkscreener-0.44.20240412.256.tar.gz
+[2024-04-13 09:09:29] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2024-04-13 09:09:29] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20240413/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/README.md --exclude *.pyd
+[2024-04-13 09:09:29] INFO root fetch - processPackages [flask-serialize]: Downloading https://files.pythonhosted.org/packages/35/e4/a94f0a42bebbd695e360c16d2b3aaed9b67cc51602c6e97ec4ae86a6f5bf/flask-serialize-2.2.0.tar.gz
+[2024-04-13 09:09:30] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-04-13 09:09:30] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240412.255.tar.gz tmp/pkscreener-0.44.20240412.256.tar.gz --markdown 20240413/p/pkscreener/0.44.20240412.255-0.44.20240412.256/README.md --exclude *.pyd
+[2024-04-13 09:09:30] INFO root fetch - processPackages [flask-serialize]: executing diffoscope
+[2024-04-13 09:09:30] INFO root fetch - processPackages [flask-serialize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-serialize-2.1.3.tar.gz tmp/flask-serialize-2.2.0.tar.gz --markdown 20240413/f/flask-serialize/2.1.3-2.2.0/README.md --exclude *.pyd
+[2024-04-13 09:09:30] INFO root fetch - processPackages [pulumi-splunk]: Downloading https://files.pythonhosted.org/packages/d2/04/e67322e9b26d00ff664b1b9b88efccb4ab3295ba9a87caf9e1b5e77ddb34/pulumi_splunk-1.3.0a1712990695.tar.gz
+[2024-04-13 09:09:30] INFO root fetch - processPackages [pulumi-snowflake]: Downloading https://files.pythonhosted.org/packages/12/24/eac91fa678665e057906195a9e93366ecf0bc7997bd228eb1159a41ae631/pulumi_snowflake-0.9.1a1656367704.tar.gz
+[2024-04-13 09:09:30] INFO root fetch - processPackages [pulumi-splunk]: executing diffoscope
+[2024-04-13 09:09:30] INFO root fetch - processPackages [pulumi-splunk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_splunk-1.3.0a1712731151.tar.gz tmp/pulumi_splunk-1.3.0a1712990695.tar.gz --markdown 20240413/p/pulumi-splunk/1.3.0a1712731151-1.3.0a1712990695/README.md --exclude *.pyd
+[2024-04-13 09:09:30] INFO root fetch - processPackages [pulumi-snowflake]: executing diffoscope
+[2024-04-13 09:09:30] INFO root fetch - processPackages [pulumi-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_snowflake-0.9.1a1654087017.tar.gz tmp/pulumi_snowflake-0.9.1a1656367704.tar.gz --markdown 20240413/p/pulumi-snowflake/0.9.1a1654087017-0.9.1a1656367704/README.md --exclude *.pyd
+[2024-04-13 09:09:30] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip]
+[2024-04-13 09:09:30] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip]
+[2024-04-13 09:09:30] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2024-04-13 09:09:30] INFO root fetch - processPackages [flask-serialize]: Remove: archive file [/home/abi/fetcher/tmp/flask-serialize-2.1.3.tar.gz]
+[2024-04-13 09:09:30] INFO root fetch - processPackages [flask-serialize]: Remove: archive file [/home/abi/fetcher/tmp/flask-serialize-2.2.0.tar.gz]
+[2024-04-13 09:09:30] INFO root fetch - main [MainThread]: End processing [flask-serialize]: success
+[2024-04-13 09:09:30] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240412.255.tar.gz]
+[2024-04-13 09:09:30] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240412.256.tar.gz]
+[2024-04-13 09:09:30] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-04-13 09:09:31] INFO root fetch - processPackages [pulumi-splunk]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_splunk-1.3.0a1712731151.tar.gz]
+[2024-04-13 09:09:31] INFO root fetch - processPackages [pulumi-splunk]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_splunk-1.3.0a1712990695.tar.gz]
+[2024-04-13 09:09:31] INFO root fetch - main [MainThread]: End processing [pulumi-splunk]: success
+[2024-04-13 09:09:31] INFO root fetch - processPackages [pulumi-snowflake]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_snowflake-0.9.1a1654087017.tar.gz]
+[2024-04-13 09:09:31] INFO root fetch - processPackages [pulumi-snowflake]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_snowflake-0.9.1a1656367704.tar.gz]
+[2024-04-13 09:09:31] INFO root fetch - main [MainThread]: End processing [pulumi-snowflake]: success
+[2024-04-13 09:09:31] INFO root fetch - main [MainThread]: Store serial: [22750087]
