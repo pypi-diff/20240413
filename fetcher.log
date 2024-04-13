@@ -17371,3 +17371,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:26:49] INFO root fetch - processPackages [txt2ebook]: Remove: archive file [/home/abi/fetcher/tmp/txt2ebook-0.1.9.tar.gz]
 [2024-04-13 19:26:49] INFO root fetch - main [MainThread]: End processing [txt2ebook]: success
 [2024-04-13 19:26:49] INFO root fetch - main [MainThread]: Store serial: [22753465]
+[2024-04-13 19:28:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753465]
+[2024-04-13 19:28:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 19:28:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: invest-guard
+[2024-04-13 19:28:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ign8
+[2024-04-13 19:28:57] WARNING root fetch - processPackages [invest-guard]: Skipping, unable to determine old version
+[2024-04-13 19:28:57] INFO root fetch - main [MainThread]: End processing [invest-guard] error
+[2024-04-13 19:28:58] INFO root fetch - processPackages [ign8]: New version: [4.9.9] Old Version: [4.9.8]
+[2024-04-13 19:28:58] INFO root fetch - processPackages [ign8]: Downloading https://files.pythonhosted.org/packages/a8/ec/7a9e407a8ffa4cbc93bdead9e0cb503011cefef1ad9f2b612972f93c76a9/ign8-4.9.8.tar.gz
+[2024-04-13 19:28:58] INFO root fetch - processPackages [ign8]: Downloading https://files.pythonhosted.org/packages/1d/3f/f2ba3be5e7980c8e941b7cb78186f68917af70eacb83f317c2b9e0093523/ign8-4.9.9.tar.gz
+[2024-04-13 19:28:58] INFO root fetch - processPackages [ign8]: executing diffoscope
+[2024-04-13 19:28:58] INFO root fetch - processPackages [ign8]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ign8-4.9.8.tar.gz tmp/ign8-4.9.9.tar.gz --markdown 20240413/i/ign8/4.9.8-4.9.9/README.md --exclude *.pyd
+[2024-04-13 19:29:02] INFO root fetch - processPackages [ign8]: Remove: archive file [/home/abi/fetcher/tmp/ign8-4.9.8.tar.gz]
+[2024-04-13 19:29:02] INFO root fetch - processPackages [ign8]: Remove: archive file [/home/abi/fetcher/tmp/ign8-4.9.9.tar.gz]
+[2024-04-13 19:29:02] INFO root fetch - main [MainThread]: End processing [ign8]: success
+[2024-04-13 19:29:02] INFO root fetch - main [MainThread]: Store serial: [22753477]
