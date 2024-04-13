@@ -13439,3 +13439,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:02:27] INFO root fetch - processPackages [streamlit-pianoroll]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_pianoroll-0.7.1-py3-none-any.whl.zip]
 [2024-04-13 14:02:27] INFO root fetch - main [MainThread]: End processing [streamlit-pianoroll]: success
 [2024-04-13 14:02:27] INFO root fetch - main [MainThread]: Store serial: [22751602]
+[2024-04-13 14:04:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751602]
+[2024-04-13 14:04:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 14:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-pianoroll
+[2024-04-13 14:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: imas-tools
+[2024-04-13 14:04:38] INFO root fetch - processPackages [imas-tools]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 14:04:38] INFO root fetch - processPackages [streamlit-pianoroll]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-04-13 14:04:38] INFO root fetch - processPackages [streamlit-pianoroll]: Downloading https://files.pythonhosted.org/packages/b7/70/5f1d25b4e00ee79e448fc6b7b7927f04482423cdb4a271cfc6e238f24cfc/streamlit-pianoroll-0.7.0.tar.gz
+[2024-04-13 14:04:38] INFO root fetch - processPackages [imas-tools]: Downloading https://files.pythonhosted.org/packages/64/93/690f52576cbc94deea38678230fb10625a2a9873909a235f7218cd6f59c2/imas_tools-0.1.0.tar.gz
+[2024-04-13 14:04:38] INFO root fetch - processPackages [streamlit-pianoroll]: Downloading https://files.pythonhosted.org/packages/19/d6/2ef336c74c708aed92436139bfc63d49e39b618216ad42e74b2fe3b7ecfe/streamlit_pianoroll-0.7.1-py3-none-any.whl
+[2024-04-13 14:04:38] INFO root fetch - processPackages [imas-tools]: Downloading https://files.pythonhosted.org/packages/7b/c1/259474e493be7982a0b450bb9ae84ae1c87949ad6a27e8b424aed5bbffc3/imas_tools-0.1.1.tar.gz
+[2024-04-13 14:04:38] INFO root fetch - processPackages [imas-tools]: executing diffoscope
+[2024-04-13 14:04:38] INFO root fetch - processPackages [imas-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imas_tools-0.1.0.tar.gz tmp/imas_tools-0.1.1.tar.gz --markdown 20240413/i/imas-tools/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 14:04:38] INFO root fetch - processPackages [streamlit-pianoroll]: executing diffoscope
+[2024-04-13 14:04:38] INFO root fetch - processPackages [streamlit-pianoroll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-pianoroll-0.7.0.tar.gz tmp/streamlit_pianoroll-0.7.1-py3-none-any.whl.zip --markdown 20240413/s/streamlit-pianoroll/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-04-13 14:04:39] INFO root fetch - processPackages [imas-tools]: Remove: archive file [/home/abi/fetcher/tmp/imas_tools-0.1.0.tar.gz]
+[2024-04-13 14:04:39] INFO root fetch - processPackages [imas-tools]: Remove: archive file [/home/abi/fetcher/tmp/imas_tools-0.1.1.tar.gz]
+[2024-04-13 14:04:39] INFO root fetch - main [MainThread]: End processing [imas-tools]: success
+[2024-04-13 14:04:40] INFO root fetch - processPackages [streamlit-pianoroll]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-pianoroll-0.7.0.tar.gz]
+[2024-04-13 14:04:40] INFO root fetch - processPackages [streamlit-pianoroll]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_pianoroll-0.7.1-py3-none-any.whl.zip]
+[2024-04-13 14:04:40] INFO root fetch - main [MainThread]: End processing [streamlit-pianoroll]: success
+[2024-04-13 14:04:40] INFO root fetch - main [MainThread]: Store serial: [22751609]
