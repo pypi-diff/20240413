@@ -13694,3 +13694,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:28:35] INFO root fetch - processPackages [noteshrunk]: Remove: archive file [/home/abi/fetcher/tmp/noteshrunk-1.2.0.tar.gz]
 [2024-04-13 14:28:35] INFO root fetch - main [MainThread]: End processing [noteshrunk]: success
 [2024-04-13 14:28:35] INFO root fetch - main [MainThread]: Store serial: [22751706]
+[2024-04-13 14:30:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751706]
+[2024-04-13 14:30:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 14:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: imas-tools
+[2024-04-13 14:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sherpa-onnx
+[2024-04-13 14:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: faster-translate
+[2024-04-13 14:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: philosophese
+[2024-04-13 14:30:44] INFO root fetch - processPackages [imas-tools]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 14:30:44] INFO root fetch - processPackages [faster-translate]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 14:30:44] INFO root fetch - processPackages [imas-tools]: Downloading https://files.pythonhosted.org/packages/7b/c1/259474e493be7982a0b450bb9ae84ae1c87949ad6a27e8b424aed5bbffc3/imas_tools-0.1.1.tar.gz
+[2024-04-13 14:30:44] WARNING root fetch - processPackages [philosophese]: Skipping, unable to determine old version
+[2024-04-13 14:30:44] INFO root fetch - main [MainThread]: End processing [philosophese] error
+[2024-04-13 14:30:44] INFO root fetch - processPackages [sherpa-onnx]: New version: [1.9.20] Old Version: [1.9.19]
+[2024-04-13 14:30:44] INFO root fetch - processPackages [faster-translate]: Downloading https://files.pythonhosted.org/packages/98/a1/dde130c2c2323328e54d1700c9b3bb493c7fbb52f2eb5ba87bb99986d2bc/faster_translate-0.1.0.tar.gz
+[2024-04-13 14:30:44] INFO root fetch - processPackages [sherpa-onnx]: Downloading https://files.pythonhosted.org/packages/0f/f7/794d03fbdbcecef6d20deb9e364ba6661342ede8537efdb1aaff8266ad58/sherpa-onnx-1.9.19.tar.gz
+[2024-04-13 14:30:44] INFO root fetch - processPackages [imas-tools]: Downloading https://files.pythonhosted.org/packages/eb/fa/17bb6501218f95e53cc3cc987cc3ba96c9f3feaf93732a7f76ef7323c328/imas_tools-0.1.2.tar.gz
+[2024-04-13 14:30:44] INFO root fetch - processPackages [faster-translate]: Downloading https://files.pythonhosted.org/packages/97/ed/d3745e9b90b834b54ea9d219e90313ea7f11c1b835e3d00d20d942e9b5a4/faster_translate-0.1.1.tar.gz
+[2024-04-13 14:30:44] INFO root fetch - processPackages [imas-tools]: executing diffoscope
+[2024-04-13 14:30:44] INFO root fetch - processPackages [imas-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imas_tools-0.1.1.tar.gz tmp/imas_tools-0.1.2.tar.gz --markdown 20240413/i/imas-tools/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-13 14:30:45] INFO root fetch - processPackages [faster-translate]: executing diffoscope
+[2024-04-13 14:30:45] INFO root fetch - processPackages [faster-translate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faster_translate-0.1.0.tar.gz tmp/faster_translate-0.1.1.tar.gz --markdown 20240413/f/faster-translate/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 14:30:45] INFO root fetch - processPackages [sherpa-onnx]: Downloading https://files.pythonhosted.org/packages/33/50/9a797575a9f074c96e1fa444105d72bd47605b25772bf270a06170df726f/sherpa-onnx-1.9.20.tar.gz
+[2024-04-13 14:30:45] INFO root fetch - processPackages [sherpa-onnx]: executing diffoscope
+[2024-04-13 14:30:45] INFO root fetch - processPackages [sherpa-onnx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sherpa-onnx-1.9.19.tar.gz tmp/sherpa-onnx-1.9.20.tar.gz --markdown 20240413/s/sherpa-onnx/1.9.19-1.9.20/README.md --exclude *.pyd
+[2024-04-13 14:30:45] INFO root fetch - processPackages [faster-translate]: Remove: archive file [/home/abi/fetcher/tmp/faster_translate-0.1.0.tar.gz]
+[2024-04-13 14:30:45] INFO root fetch - processPackages [faster-translate]: Remove: archive file [/home/abi/fetcher/tmp/faster_translate-0.1.1.tar.gz]
+[2024-04-13 14:30:45] INFO root fetch - main [MainThread]: End processing [faster-translate]: success
+[2024-04-13 14:30:45] INFO root fetch - processPackages [imas-tools]: Remove: archive file [/home/abi/fetcher/tmp/imas_tools-0.1.1.tar.gz]
+[2024-04-13 14:30:45] INFO root fetch - processPackages [imas-tools]: Remove: archive file [/home/abi/fetcher/tmp/imas_tools-0.1.2.tar.gz]
+[2024-04-13 14:30:45] INFO root fetch - main [MainThread]: End processing [imas-tools]: success
+[2024-04-13 14:30:47] INFO root fetch - processPackages [sherpa-onnx]: Remove: archive file [/home/abi/fetcher/tmp/sherpa-onnx-1.9.19.tar.gz]
+[2024-04-13 14:30:47] INFO root fetch - processPackages [sherpa-onnx]: Remove: archive file [/home/abi/fetcher/tmp/sherpa-onnx-1.9.20.tar.gz]
+[2024-04-13 14:30:47] INFO root fetch - main [MainThread]: End processing [sherpa-onnx]: success
+[2024-04-13 14:30:47] INFO root fetch - main [MainThread]: Store serial: [22751727]
