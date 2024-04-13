@@ -11977,3 +11977,12 @@
 [2024-04-13 12:06:56] INFO root fetch - processPackages [wwpdb.apps.workmanager]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.apps.workmanager-0.25.tar.gz]
 [2024-04-13 12:06:56] INFO root fetch - main [MainThread]: End processing [wwpdb.apps.workmanager]: success
 [2024-04-13 12:06:56] INFO root fetch - main [MainThread]: Store serial: [22751038]
+[2024-04-13 12:09:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751038]
+[2024-04-13 12:09:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 12:09:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fnsecure
+[2024-04-13 12:09:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dforge
+[2024-04-13 12:09:06] WARNING root fetch - processPackages [fnsecure]: Skipping, unable to determine old version
+[2024-04-13 12:09:06] INFO root fetch - main [MainThread]: End processing [fnsecure] error
+[2024-04-13 12:09:06] WARNING root fetch - processPackages [dforge]: Skipping, unable to determine old version
+[2024-04-13 12:09:06] INFO root fetch - main [MainThread]: End processing [dforge] error
+[2024-04-13 12:09:06] INFO root fetch - main [MainThread]: Store serial: [22751049]
