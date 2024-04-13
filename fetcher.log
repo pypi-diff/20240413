@@ -15366,3 +15366,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:30:45] INFO root fetch - processPackages [biolmai]: Remove: archive file [/home/abi/fetcher/tmp/biolmai-0.1.9.tar.gz]
 [2024-04-13 16:30:45] INFO root fetch - main [MainThread]: End processing [biolmai]: success
 [2024-04-13 16:30:45] INFO root fetch - main [MainThread]: Store serial: [22752526]
+[2024-04-13 16:32:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752526]
+[2024-04-13 16:32:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 16:32:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spstats
+[2024-04-13 16:32:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flycraft
+[2024-04-13 16:32:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyaction
+[2024-04-13 16:32:55] INFO root fetch - processPackages [spstats]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-13 16:32:55] INFO root fetch - processPackages [pyaction]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-04-13 16:32:55] INFO root fetch - processPackages [spstats]: Downloading https://files.pythonhosted.org/packages/84/b5/4e77b31833a36a5daf916ca2eb27ea41be6f99a10fac2e6f7b918e5e401b/spstats-0.0.4-py3-none-any.whl
+[2024-04-13 16:32:55] INFO root fetch - processPackages [pyaction]: Downloading https://files.pythonhosted.org/packages/ac/50/b93e9c4c8063054f42bc46ed49ea3edbfb2025f60acdb9f1339b5b41f7e7/pyaction-0.5.1.tar.gz
+[2024-04-13 16:32:55] INFO root fetch - processPackages [flycraft]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-13 16:32:55] INFO root fetch - processPackages [flycraft]: Downloading https://files.pythonhosted.org/packages/fb/4d/0101f85a562bdfc5c34999af211ee2addf7ec8e4dcc6c39ae0ca893b2c4e/flycraft-0.0.7.tar.gz
+[2024-04-13 16:32:55] INFO root fetch - processPackages [spstats]: Downloading https://files.pythonhosted.org/packages/20/81/ec1a4d15f5541fe7923b646feaa7178b54b4012fbcc31dc2bca5eba50896/spstats-0.0.5-py3-none-any.whl
+[2024-04-13 16:32:55] INFO root fetch - processPackages [spstats]: executing diffoscope
+[2024-04-13 16:32:55] INFO root fetch - processPackages [spstats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spstats-0.0.4-py3-none-any.whl.zip tmp/spstats-0.0.5-py3-none-any.whl.zip --markdown 20240413/s/spstats/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-13 16:32:55] INFO root fetch - processPackages [pyaction]: Downloading https://files.pythonhosted.org/packages/89/c2/08a828fd81969ae7dc3640cc257f8d170c7315b5915f45ab458de63964fc/pyaction-0.5.2.tar.gz
+[2024-04-13 16:32:55] INFO root fetch - processPackages [pyaction]: executing diffoscope
+[2024-04-13 16:32:55] INFO root fetch - processPackages [pyaction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaction-0.5.1.tar.gz tmp/pyaction-0.5.2.tar.gz --markdown 20240413/p/pyaction/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-04-13 16:32:56] INFO root fetch - processPackages [flycraft]: Downloading https://files.pythonhosted.org/packages/26/4c/44a32fa7076579eff829a6e904602e3c1a687479b8ce195d278aa0cbba5d/flycraft-0.0.8.tar.gz
+[2024-04-13 16:32:56] INFO root fetch - processPackages [flycraft]: executing diffoscope
+[2024-04-13 16:32:56] INFO root fetch - processPackages [flycraft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flycraft-0.0.7.tar.gz tmp/flycraft-0.0.8.tar.gz --markdown 20240413/f/flycraft/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-13 16:32:56] INFO root fetch - processPackages [spstats]: Remove: archive file [/home/abi/fetcher/tmp/spstats-0.0.4-py3-none-any.whl.zip]
+[2024-04-13 16:32:56] INFO root fetch - processPackages [spstats]: Remove: archive file [/home/abi/fetcher/tmp/spstats-0.0.5-py3-none-any.whl.zip]
+[2024-04-13 16:32:56] INFO root fetch - main [MainThread]: End processing [spstats]: success
+[2024-04-13 16:32:56] INFO root fetch - processPackages [pyaction]: Remove: archive file [/home/abi/fetcher/tmp/pyaction-0.5.1.tar.gz]
+[2024-04-13 16:32:56] INFO root fetch - processPackages [pyaction]: Remove: archive file [/home/abi/fetcher/tmp/pyaction-0.5.2.tar.gz]
+[2024-04-13 16:32:56] INFO root fetch - main [MainThread]: End processing [pyaction]: success
+[2024-04-13 16:32:57] INFO root fetch - processPackages [flycraft]: Remove: archive file [/home/abi/fetcher/tmp/flycraft-0.0.7.tar.gz]
+[2024-04-13 16:32:57] INFO root fetch - processPackages [flycraft]: Remove: archive file [/home/abi/fetcher/tmp/flycraft-0.0.8.tar.gz]
+[2024-04-13 16:32:57] INFO root fetch - main [MainThread]: End processing [flycraft]: success
+[2024-04-13 16:32:57] INFO root fetch - main [MainThread]: Store serial: [22752533]
