@@ -13514,3 +13514,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:11:11] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.3.1b2.tar.gz]
 [2024-04-13 14:11:11] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
 [2024-04-13 14:11:11] INFO root fetch - main [MainThread]: Store serial: [22751633]
+[2024-04-13 14:13:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751633]
+[2024-04-13 14:13:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 14:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyaction
+[2024-04-13 14:13:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dcicutils
+[2024-04-13 14:13:19] WARNING root fetch - processPackages [pyaction]: Skipping, unable to determine old version
+[2024-04-13 14:13:19] INFO root fetch - main [MainThread]: End processing [pyaction] error
+[2024-04-13 14:13:19] INFO root fetch - processPackages [dcicutils]: New version: [8.8.3.1b3] Old Version: [8.8.3.1b2]
+[2024-04-13 14:13:19] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/64/3b/95b31052caa8579e3916ff92adb135e61535ff367243177db99b564d6828/dcicutils-8.8.3.1b2.tar.gz
+[2024-04-13 14:13:20] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/c7/ba/e200f97b70395069db3abbe9108569f591055385e9e97003a3df1f56cebd/dcicutils-8.8.3.1b3.tar.gz
+[2024-04-13 14:13:20] INFO root fetch - processPackages [dcicutils]: executing diffoscope
+[2024-04-13 14:13:20] INFO root fetch - processPackages [dcicutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcicutils-8.8.3.1b2.tar.gz tmp/dcicutils-8.8.3.1b3.tar.gz --markdown 20240413/d/dcicutils/8.8.3.1b2-8.8.3.1b3/README.md --exclude *.pyd
+[2024-04-13 14:13:21] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.3.1b2.tar.gz]
+[2024-04-13 14:13:21] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.3.1b3.tar.gz]
+[2024-04-13 14:13:21] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
+[2024-04-13 14:13:21] INFO root fetch - main [MainThread]: Store serial: [22751639]
