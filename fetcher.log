@@ -20610,3 +20610,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 23:28:09] INFO root fetch - processPackages [resamp]: Remove: archive file [/home/abi/fetcher/tmp/resamp-1.6.8.tar.gz]
 [2024-04-13 23:28:09] INFO root fetch - main [MainThread]: End processing [resamp]: success
 [2024-04-13 23:28:09] INFO root fetch - main [MainThread]: Store serial: [22754926]
+[2024-04-13 23:30:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754926]
+[2024-04-13 23:30:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 23:30:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gkeepapi
+[2024-04-13 23:30:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: macnotesapp
+[2024-04-13 23:30:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Heema
+[2024-04-13 23:30:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pipez
+[2024-04-13 23:30:18] INFO root fetch - processPackages [pipez]: New version: [0.0.9] Old Version: [0.0.82]
+[2024-04-13 23:30:18] INFO root fetch - processPackages [macnotesapp]: New version: [0.6.0] Old Version: [0.5.3]
+[2024-04-13 23:30:18] INFO root fetch - processPackages [gkeepapi]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-04-13 23:30:18] INFO root fetch - processPackages [Heema]: New version: [2.0.0.1] Old Version: [1.0.0.1]
+[2024-04-13 23:30:18] INFO root fetch - processPackages [pipez]: Downloading https://files.pythonhosted.org/packages/07/68/e54ff5a6a67169707e1966920ca734b48623d01d1ba00df5ee15f9cbaf0c/pipez-0.0.82.tar.gz
+[2024-04-13 23:30:18] INFO root fetch - processPackages [gkeepapi]: Downloading https://files.pythonhosted.org/packages/5f/2a/baab85f80fc9966f54e42d2a086c6f2bc919061d2605e03d565198f9eebd/gkeepapi-0.9.7-py2.py3-none-any.whl
+[2024-04-13 23:30:18] INFO root fetch - processPackages [macnotesapp]: Downloading https://files.pythonhosted.org/packages/a2/87/f5a018b262f117df59da77c13792956ea4175d88d7494f1afb75d3f65f9a/macnotesapp-0.5.3.tar.gz
+[2024-04-13 23:30:18] INFO root fetch - processPackages [Heema]: Downloading https://files.pythonhosted.org/packages/24/df/03f836a815130758393cc4747537fe759b80313bacb938d940a98ded5dae/Heema-1.0.0.1.tar.gz
+[2024-04-13 23:30:18] INFO root fetch - processPackages [macnotesapp]: Downloading https://files.pythonhosted.org/packages/91/fe/2110f794a1757d42c082fc726e7d6c0198da253d996af5b09bd73222e421/macnotesapp-0.6.0.tar.gz
+[2024-04-13 23:30:18] INFO root fetch - processPackages [Heema]: Downloading https://files.pythonhosted.org/packages/f4/2c/88d37d14e57f209a8c4320debf6dd270c554b817a841d659d96a1be4f96c/Heema-2.0.0.1.tar.gz
+[2024-04-13 23:30:18] INFO root fetch - processPackages [pipez]: Downloading https://files.pythonhosted.org/packages/a3/7b/b75e90898c1b52cbcd0b17ad4595e5ed0f6d4554e94be045c641282bc131/pipez-0.0.9.tar.gz
+[2024-04-13 23:30:18] INFO root fetch - processPackages [Heema]: executing diffoscope
+[2024-04-13 23:30:18] INFO root fetch - processPackages [Heema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Heema-1.0.0.1.tar.gz tmp/Heema-2.0.0.1.tar.gz --markdown 20240413/H/Heema/1.0.0.1-2.0.0.1/README.md --exclude *.pyd
+[2024-04-13 23:30:18] INFO root fetch - processPackages [macnotesapp]: executing diffoscope
+[2024-04-13 23:30:18] INFO root fetch - processPackages [macnotesapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macnotesapp-0.5.3.tar.gz tmp/macnotesapp-0.6.0.tar.gz --markdown 20240413/m/macnotesapp/0.5.3-0.6.0/README.md --exclude *.pyd
+[2024-04-13 23:30:19] INFO root fetch - processPackages [pipez]: executing diffoscope
+[2024-04-13 23:30:19] INFO root fetch - processPackages [pipez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipez-0.0.82.tar.gz tmp/pipez-0.0.9.tar.gz --markdown 20240413/p/pipez/0.0.82-0.0.9/README.md --exclude *.pyd
+[2024-04-13 23:30:19] INFO root fetch - processPackages [gkeepapi]: Downloading https://files.pythonhosted.org/packages/7a/65/e6febb4ebc88e9ae0c7e4505d8d178700b8d85855e885d86ed75bc51a74d/gkeepapi-0.9.8-py2.py3-none-any.whl
+[2024-04-13 23:30:19] INFO root fetch - processPackages [Heema]: Remove: archive file [/home/abi/fetcher/tmp/Heema-1.0.0.1.tar.gz]
+[2024-04-13 23:30:19] INFO root fetch - processPackages [Heema]: Remove: archive file [/home/abi/fetcher/tmp/Heema-2.0.0.1.tar.gz]
+[2024-04-13 23:30:19] INFO root fetch - main [MainThread]: End processing [Heema]: success
+[2024-04-13 23:30:19] INFO root fetch - processPackages [gkeepapi]: executing diffoscope
+[2024-04-13 23:30:19] INFO root fetch - processPackages [gkeepapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gkeepapi-0.9.7-py2.py3-none-any.whl.zip tmp/gkeepapi-0.9.8-py2.py3-none-any.whl.zip --markdown 20240413/g/gkeepapi/0.9.7-0.9.8/README.md --exclude *.pyd
+[2024-04-13 23:30:19] INFO root fetch - processPackages [macnotesapp]: Remove: archive file [/home/abi/fetcher/tmp/macnotesapp-0.5.3.tar.gz]
+[2024-04-13 23:30:19] INFO root fetch - processPackages [macnotesapp]: Remove: archive file [/home/abi/fetcher/tmp/macnotesapp-0.6.0.tar.gz]
+[2024-04-13 23:30:19] INFO root fetch - main [MainThread]: End processing [macnotesapp]: success
+[2024-04-13 23:30:19] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.82.tar.gz]
+[2024-04-13 23:30:19] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.9.tar.gz]
+[2024-04-13 23:30:19] INFO root fetch - main [MainThread]: End processing [pipez]: success
+[2024-04-13 23:30:20] INFO root fetch - processPackages [gkeepapi]: Remove: archive file [/home/abi/fetcher/tmp/gkeepapi-0.9.7-py2.py3-none-any.whl.zip]
+[2024-04-13 23:30:20] INFO root fetch - processPackages [gkeepapi]: Remove: archive file [/home/abi/fetcher/tmp/gkeepapi-0.9.8-py2.py3-none-any.whl.zip]
+[2024-04-13 23:30:20] INFO root fetch - main [MainThread]: End processing [gkeepapi]: success
+[2024-04-13 23:30:20] INFO root fetch - main [MainThread]: Store serial: [22754937]
