@@ -1740,3 +1740,36 @@
 [2024-04-13 01:59:14] INFO root fetch - processPackages [domjudge-utility]: Remove: archive file [/home/abi/fetcher/tmp/domjudge_utility-0.0.9.tar.gz]
 [2024-04-13 01:59:14] INFO root fetch - main [MainThread]: End processing [domjudge-utility]: success
 [2024-04-13 01:59:14] INFO root fetch - main [MainThread]: Store serial: [22747067]
+[2024-04-13 02:01:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22747067]
+[2024-04-13 02:01:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 02:01:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xian-contracting
+[2024-04-13 02:01:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: panpdf
+[2024-04-13 02:01:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: glayout
+[2024-04-13 02:01:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stim
+[2024-04-13 02:01:23] INFO root fetch - processPackages [panpdf]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-13 02:01:23] WARNING root fetch - processPackages [glayout]: Skipping, unable to determine old version
+[2024-04-13 02:01:23] INFO root fetch - main [MainThread]: End processing [glayout] error
+[2024-04-13 02:01:23] INFO root fetch - processPackages [panpdf]: Downloading https://files.pythonhosted.org/packages/9d/38/014e854ac86cd25825446273ea8b84c34d7b37bc4ed1c8863278dab8ba0c/panpdf-0.1.6.tar.gz
+[2024-04-13 02:01:23] INFO root fetch - processPackages [xian-contracting]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 02:01:23] INFO root fetch - processPackages [xian-contracting]: Downloading https://files.pythonhosted.org/packages/79/5f/e34290b9289af36a2b1424936d2ce931469d9bd83c738d1cc3e94f17e153/xian_contracting-0.1.1.tar.gz
+[2024-04-13 02:01:23] INFO root fetch - processPackages [panpdf]: Downloading https://files.pythonhosted.org/packages/21/ec/4f83c719683d6462385288dbcea4a93a92f4b305b46c9e6b8c109661939d/panpdf-0.1.7.tar.gz
+[2024-04-13 02:01:24] INFO root fetch - processPackages [panpdf]: executing diffoscope
+[2024-04-13 02:01:24] INFO root fetch - processPackages [panpdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panpdf-0.1.6.tar.gz tmp/panpdf-0.1.7.tar.gz --markdown 20240413/p/panpdf/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-13 02:01:24] INFO root fetch - processPackages [xian-contracting]: Downloading https://files.pythonhosted.org/packages/e8/76/cff1a1b735123eb1ee7db53c0da2e631a17f449c160c9cae38bc5a9a96a4/xian_contracting-0.1.2.tar.gz
+[2024-04-13 02:01:24] INFO root fetch - processPackages [xian-contracting]: executing diffoscope
+[2024-04-13 02:01:24] INFO root fetch - processPackages [xian-contracting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xian_contracting-0.1.1.tar.gz tmp/xian_contracting-0.1.2.tar.gz --markdown 20240413/x/xian-contracting/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-13 02:01:24] INFO root fetch - processPackages [stim]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-04-13 02:01:24] INFO root fetch - processPackages [stim]: Downloading https://files.pythonhosted.org/packages/a7/d7/36196ad48b77efebe7d5d4e198ad0a9cac4f5acb5e0a8a7035133184a641/stim-1.8.0.tar.gz
+[2024-04-13 02:01:24] INFO root fetch - processPackages [panpdf]: Remove: archive file [/home/abi/fetcher/tmp/panpdf-0.1.6.tar.gz]
+[2024-04-13 02:01:24] INFO root fetch - processPackages [panpdf]: Remove: archive file [/home/abi/fetcher/tmp/panpdf-0.1.7.tar.gz]
+[2024-04-13 02:01:24] INFO root fetch - main [MainThread]: End processing [panpdf]: success
+[2024-04-13 02:01:24] INFO root fetch - processPackages [xian-contracting]: Remove: archive file [/home/abi/fetcher/tmp/xian_contracting-0.1.1.tar.gz]
+[2024-04-13 02:01:24] INFO root fetch - processPackages [xian-contracting]: Remove: archive file [/home/abi/fetcher/tmp/xian_contracting-0.1.2.tar.gz]
+[2024-04-13 02:01:24] INFO root fetch - main [MainThread]: End processing [xian-contracting]: success
+[2024-04-13 02:01:25] INFO root fetch - processPackages [stim]: Downloading https://files.pythonhosted.org/packages/d4/c3/eba3f24b52d2c1ed2e7fd5490f31c7cafa4a0a82b9282b1ffee94eee8a4c/stim-1.9.0.tar.gz
+[2024-04-13 02:01:25] INFO root fetch - processPackages [stim]: executing diffoscope
+[2024-04-13 02:01:25] INFO root fetch - processPackages [stim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stim-1.8.0.tar.gz tmp/stim-1.9.0.tar.gz --markdown 20240413/s/stim/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-04-13 02:01:26] INFO root fetch - processPackages [stim]: Remove: archive file [/home/abi/fetcher/tmp/stim-1.8.0.tar.gz]
+[2024-04-13 02:01:26] INFO root fetch - processPackages [stim]: Remove: archive file [/home/abi/fetcher/tmp/stim-1.9.0.tar.gz]
+[2024-04-13 02:01:26] INFO root fetch - main [MainThread]: End processing [stim]: success
+[2024-04-13 02:01:26] INFO root fetch - main [MainThread]: Store serial: [22747076]
