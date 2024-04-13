@@ -19523,3 +19523,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 22:01:12] INFO root fetch - processPackages [codebase-to-text]: Remove: archive file [/home/abi/fetcher/tmp/codebase-to-text-1.0.3.tar.gz]
 [2024-04-13 22:01:12] INFO root fetch - main [MainThread]: End processing [codebase-to-text]: success
 [2024-04-13 22:01:12] INFO root fetch - main [MainThread]: Store serial: [22754456]
+[2024-04-13 22:03:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754456]
+[2024-04-13 22:03:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 22:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mdformat_mkdocs
+[2024-04-13 22:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-database-cleanup
+[2024-04-13 22:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: esbuild-py
+[2024-04-13 22:03:21] INFO root fetch - processPackages [odoo-addon-database-cleanup]: New version: [17.0.1.0.0.5] Old Version: [17.0.1.0.0.4]
+[2024-04-13 22:03:21] WARNING root fetch - processPackages [esbuild-py]: Skipping, unable to determine old version
+[2024-04-13 22:03:21] INFO root fetch - main [MainThread]: End processing [esbuild-py] error
+[2024-04-13 22:03:21] INFO root fetch - processPackages [mdformat_mkdocs]: New version: [2.0.8] Old Version: [2.0.7]
+[2024-04-13 22:03:21] INFO root fetch - processPackages [mdformat_mkdocs]: Downloading https://files.pythonhosted.org/packages/70/8c/b02f19f4c89939f5ef7b870b6d3a6f20ed3b224b7505cea88febe6d549ca/mdformat_mkdocs-2.0.7.tar.gz
+[2024-04-13 22:03:21] INFO root fetch - processPackages [odoo-addon-database-cleanup]: Downloading https://files.pythonhosted.org/packages/39/9b/f51448a6e5f70895cf29d4cbfb897f60fb82eca5fb3c4c0593f890a68319/odoo_addon_database_cleanup-17.0.1.0.0.4-py3-none-any.whl
+[2024-04-13 22:03:21] INFO root fetch - processPackages [mdformat_mkdocs]: Downloading https://files.pythonhosted.org/packages/5c/37/a8cf961a5fdf8922f4a3e8082e11fbc96457d1b51721ee0ab0be7f0fc2db/mdformat_mkdocs-2.0.8.tar.gz
+[2024-04-13 22:03:21] INFO root fetch - processPackages [odoo-addon-database-cleanup]: Downloading https://files.pythonhosted.org/packages/ab/2c/0c58d54b1107c8b72c37faf27f82cccfdbd5f8024537d0709f5886045156/odoo_addon_database_cleanup-17.0.1.0.0.5-py3-none-any.whl
+[2024-04-13 22:03:21] INFO root fetch - processPackages [mdformat_mkdocs]: executing diffoscope
+[2024-04-13 22:03:21] INFO root fetch - processPackages [mdformat_mkdocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdformat_mkdocs-2.0.7.tar.gz tmp/mdformat_mkdocs-2.0.8.tar.gz --markdown 20240413/m/mdformat_mkdocs/2.0.7-2.0.8/README.md --exclude *.pyd
+[2024-04-13 22:03:21] INFO root fetch - processPackages [odoo-addon-database-cleanup]: executing diffoscope
+[2024-04-13 22:03:21] INFO root fetch - processPackages [odoo-addon-database-cleanup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_database_cleanup-17.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_database_cleanup-17.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240413/o/odoo-addon-database-cleanup/17.0.1.0.0.4-17.0.1.0.0.5/README.md --exclude *.pyd
+[2024-04-13 22:03:22] INFO root fetch - processPackages [mdformat_mkdocs]: Remove: archive file [/home/abi/fetcher/tmp/mdformat_mkdocs-2.0.7.tar.gz]
+[2024-04-13 22:03:22] INFO root fetch - processPackages [mdformat_mkdocs]: Remove: archive file [/home/abi/fetcher/tmp/mdformat_mkdocs-2.0.8.tar.gz]
+[2024-04-13 22:03:22] INFO root fetch - main [MainThread]: End processing [mdformat_mkdocs]: success
+[2024-04-13 22:03:22] INFO root fetch - processPackages [odoo-addon-database-cleanup]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_database_cleanup-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-04-13 22:03:22] INFO root fetch - processPackages [odoo-addon-database-cleanup]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_database_cleanup-17.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-04-13 22:03:22] INFO root fetch - main [MainThread]: End processing [odoo-addon-database-cleanup]: success
+[2024-04-13 22:03:22] INFO root fetch - main [MainThread]: Store serial: [22754466]
