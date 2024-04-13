@@ -17527,3 +17527,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:39:53] INFO root fetch - processPackages [pluralize]: Remove: archive file [/home/abi/fetcher/tmp/pluralize-20240413.1.tar.gz]
 [2024-04-13 19:39:53] INFO root fetch - main [MainThread]: End processing [pluralize]: success
 [2024-04-13 19:39:53] INFO root fetch - main [MainThread]: Store serial: [22753546]
+[2024-04-13 19:41:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753546]
+[2024-04-13 19:42:01] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 19:42:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lokzzpylib
+[2024-04-13 19:42:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: altscore
+[2024-04-13 19:42:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streamlit-nightly
+[2024-04-13 19:42:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tavern
+[2024-04-13 19:42:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: thepipe-api
+[2024-04-13 19:42:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: reloader.py
+[2024-04-13 19:42:01] INFO root fetch - processPackages [altscore]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-13 19:42:01] INFO root fetch - processPackages [lokzzpylib]: New version: [0.2.dev9] Old Version: [0.2.dev8]
+[2024-04-13 19:42:01] INFO root fetch - processPackages [altscore]: Downloading https://files.pythonhosted.org/packages/5f/a6/fb416592a06e3f048aaf0891b596bd989dcd5841cb33ab09db5bb52d0970/altscore-0.1.98.tar.gz
+[2024-04-13 19:42:01] INFO root fetch - processPackages [lokzzpylib]: Downloading https://files.pythonhosted.org/packages/e2/59/899dd08722b859f214b6eee5335384aa5e1bb485140945e6cb65257098a5/lokzzpylib-0.2.dev8.tar.gz
+[2024-04-13 19:42:01] WARNING root fetch - processPackages [thepipe-api]: Skipping, unable to determine old version
+[2024-04-13 19:42:01] INFO root fetch - main [MainThread]: End processing [thepipe-api] error
+[2024-04-13 19:42:01] INFO root fetch - processPackages [tavern]: New version: [3.0.0a4] Old Version: [3.0.0a3]
+[2024-04-13 19:42:01] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.33.1.dev20240412] Old Version: [1.33.1.dev20240409]
+[2024-04-13 19:42:01] INFO root fetch - processPackages [reloader.py]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-13 19:42:02] INFO root fetch - processPackages [lokzzpylib]: Downloading https://files.pythonhosted.org/packages/d3/9b/e4bbf15840f86c58df052ec37f778b6563255557c0f8edc61797a91a6dcf/lokzzpylib-0.2.dev9.tar.gz
+[2024-04-13 19:42:02] INFO root fetch - processPackages [altscore]: Downloading https://files.pythonhosted.org/packages/e3/b6/865ff08cbdee5b1522cc15ce8760f46380d0a77722135623bdfa5b3ab9f5/altscore-0.1.99.tar.gz
+[2024-04-13 19:42:02] INFO root fetch - processPackages [reloader.py]: Downloading https://files.pythonhosted.org/packages/46/61/8c51c05aa76f44386cf1d04f45cbd8d29faa97a0205a7e69233cc248f13d/reloader_py-0.9.0.tar.gz
+[2024-04-13 19:42:02] INFO root fetch - processPackages [tavern]: Downloading https://files.pythonhosted.org/packages/a3/db/ab2be39cb5781c103f4def2f9b25c4d893715942732c14c151e91920690c/tavern-3.0.0a3.tar.gz
+[2024-04-13 19:42:02] INFO root fetch - processPackages [lokzzpylib]: executing diffoscope
+[2024-04-13 19:42:02] INFO root fetch - processPackages [lokzzpylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lokzzpylib-0.2.dev8.tar.gz tmp/lokzzpylib-0.2.dev9.tar.gz --markdown 20240413/l/lokzzpylib/0.2.dev8-0.2.dev9/README.md --exclude *.pyd
+[2024-04-13 19:42:02] INFO root fetch - processPackages [altscore]: executing diffoscope
+[2024-04-13 19:42:02] INFO root fetch - processPackages [altscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altscore-0.1.98.tar.gz tmp/altscore-0.1.99.tar.gz --markdown 20240413/a/altscore/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-13 19:42:02] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/7f/aa/1d480a6018bf5f024cc578209f490300653d29a164218e3560141cf86408/streamlit-nightly-1.33.1.dev20240409.tar.gz
+[2024-04-13 19:42:02] INFO root fetch - processPackages [reloader.py]: Downloading https://files.pythonhosted.org/packages/95/38/d6e5aef5543064890ba471b655f8265e562ff65f2d654db6f0d00429e3f8/reloader_py-0.9.1.tar.gz
+[2024-04-13 19:42:02] INFO root fetch - processPackages [tavern]: Downloading https://files.pythonhosted.org/packages/0a/8e/abdae3e120acd1b71650199b36e2f7916bbba974fe9ea56978f45016eab0/tavern-3.0.0a4.tar.gz
+[2024-04-13 19:42:02] INFO root fetch - processPackages [reloader.py]: executing diffoscope
+[2024-04-13 19:42:02] INFO root fetch - processPackages [reloader.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reloader_py-0.9.0.tar.gz tmp/reloader_py-0.9.1.tar.gz --markdown 20240413/r/reloader.py/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-13 19:42:02] INFO root fetch - processPackages [tavern]: executing diffoscope
+[2024-04-13 19:42:02] INFO root fetch - processPackages [tavern]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tavern-3.0.0a3.tar.gz tmp/tavern-3.0.0a4.tar.gz --markdown 20240413/t/tavern/3.0.0a3-3.0.0a4/README.md --exclude *.pyd
+[2024-04-13 19:42:02] INFO root fetch - processPackages [lokzzpylib]: Remove: archive file [/home/abi/fetcher/tmp/lokzzpylib-0.2.dev8.tar.gz]
+[2024-04-13 19:42:02] INFO root fetch - processPackages [lokzzpylib]: Remove: archive file [/home/abi/fetcher/tmp/lokzzpylib-0.2.dev9.tar.gz]
+[2024-04-13 19:42:02] INFO root fetch - main [MainThread]: End processing [lokzzpylib]: success
+[2024-04-13 19:42:02] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/d4/2d/5fe5e545e8c8fb3df79fc7ca5bd573c721464b32c237d1427e5047ef2644/streamlit-nightly-1.33.1.dev20240412.tar.gz
+[2024-04-13 19:42:02] INFO root fetch - processPackages [altscore]: Remove: archive file [/home/abi/fetcher/tmp/altscore-0.1.98.tar.gz]
+[2024-04-13 19:42:02] INFO root fetch - processPackages [altscore]: Remove: archive file [/home/abi/fetcher/tmp/altscore-0.1.99.tar.gz]
+[2024-04-13 19:42:02] INFO root fetch - main [MainThread]: End processing [altscore]: success
+[2024-04-13 19:42:03] INFO root fetch - processPackages [reloader.py]: Remove: archive file [/home/abi/fetcher/tmp/reloader_py-0.9.0.tar.gz]
+[2024-04-13 19:42:03] INFO root fetch - processPackages [reloader.py]: Remove: archive file [/home/abi/fetcher/tmp/reloader_py-0.9.1.tar.gz]
+[2024-04-13 19:42:03] INFO root fetch - main [MainThread]: End processing [reloader.py]: success
+[2024-04-13 19:42:03] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2024-04-13 19:42:03] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-nightly-1.33.1.dev20240409.tar.gz tmp/streamlit-nightly-1.33.1.dev20240412.tar.gz --markdown 20240413/s/streamlit-nightly/1.33.1.dev20240409-1.33.1.dev20240412/README.md --exclude *.pyd
+[2024-04-13 19:42:04] INFO root fetch - processPackages [tavern]: Remove: archive file [/home/abi/fetcher/tmp/tavern-3.0.0a3.tar.gz]
+[2024-04-13 19:42:04] INFO root fetch - processPackages [tavern]: Remove: archive file [/home/abi/fetcher/tmp/tavern-3.0.0a4.tar.gz]
+[2024-04-13 19:42:04] INFO root fetch - main [MainThread]: End processing [tavern]: success
+[2024-04-13 19:42:32] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-nightly-1.33.1.dev20240409.tar.gz]
+[2024-04-13 19:42:32] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-nightly-1.33.1.dev20240412.tar.gz]
+[2024-04-13 19:42:32] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2024-04-13 19:42:32] INFO root fetch - main [MainThread]: Store serial: [22753565]
