@@ -13664,3 +13664,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:26:25] INFO root fetch - processPackages [easyencryption]: Remove: archive file [/home/abi/fetcher/tmp/easyencryption-0.2.tar.gz]
 [2024-04-13 14:26:25] INFO root fetch - main [MainThread]: End processing [easyencryption]: success
 [2024-04-13 14:26:25] INFO root fetch - main [MainThread]: Store serial: [22751698]
+[2024-04-13 14:28:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751698]
+[2024-04-13 14:28:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 14:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyaction
+[2024-04-13 14:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: noteshrunk
+[2024-04-13 14:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ScriptCollection
+[2024-04-13 14:28:33] INFO root fetch - processPackages [pyaction]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-13 14:28:33] INFO root fetch - processPackages [noteshrunk]: New version: [1.2.0] Old Version: [1.1.1]
+[2024-04-13 14:28:33] INFO root fetch - processPackages [ScriptCollection]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-04-13 14:28:33] INFO root fetch - processPackages [pyaction]: Downloading https://files.pythonhosted.org/packages/5c/9f/e557d5183e53702a47ae22e22e770f94e3453b991f423bbea3105da3a790/pyaction-0.5.0.tar.gz
+[2024-04-13 14:28:34] INFO root fetch - processPackages [noteshrunk]: Downloading https://files.pythonhosted.org/packages/55/cc/82468f92e4871ceceff461315942c5e2077585860500dc846117805751e2/noteshrunk-1.1.1.tar.gz
+[2024-04-13 14:28:34] INFO root fetch - processPackages [ScriptCollection]: Downloading https://files.pythonhosted.org/packages/94/6a/9f7c695146680fa3c59ffe6929ee98ec36dcb44c263994d81dadb25a0d27/ScriptCollection-3.4.8-py3-none-any.whl
+[2024-04-13 14:28:34] INFO root fetch - processPackages [pyaction]: Downloading https://files.pythonhosted.org/packages/ac/50/b93e9c4c8063054f42bc46ed49ea3edbfb2025f60acdb9f1339b5b41f7e7/pyaction-0.5.1.tar.gz
+[2024-04-13 14:28:34] INFO root fetch - processPackages [noteshrunk]: Downloading https://files.pythonhosted.org/packages/e8/e0/b0f840d78e4d626268a500f4a51d8f4fa239650cc900d1c07edef04fd920/noteshrunk-1.2.0.tar.gz
+[2024-04-13 14:28:34] INFO root fetch - processPackages [pyaction]: executing diffoscope
+[2024-04-13 14:28:34] INFO root fetch - processPackages [pyaction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaction-0.5.0.tar.gz tmp/pyaction-0.5.1.tar.gz --markdown 20240413/p/pyaction/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-13 14:28:34] INFO root fetch - processPackages [ScriptCollection]: Downloading https://files.pythonhosted.org/packages/6d/e3/446a963e5eb78b0db6864a3444a71c28fe53b596c32c44cd82de0caeb1ff/ScriptCollection-3.4.9-py3-none-any.whl
+[2024-04-13 14:28:34] INFO root fetch - processPackages [noteshrunk]: executing diffoscope
+[2024-04-13 14:28:34] INFO root fetch - processPackages [noteshrunk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noteshrunk-1.1.1.tar.gz tmp/noteshrunk-1.2.0.tar.gz --markdown 20240413/n/noteshrunk/1.1.1-1.2.0/README.md --exclude *.pyd
+[2024-04-13 14:28:34] INFO root fetch - processPackages [ScriptCollection]: executing diffoscope
+[2024-04-13 14:28:34] INFO root fetch - processPackages [ScriptCollection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ScriptCollection-3.4.8-py3-none-any.whl.zip tmp/ScriptCollection-3.4.9-py3-none-any.whl.zip --markdown 20240413/S/ScriptCollection/3.4.8-3.4.9/README.md --exclude *.pyd
+[2024-04-13 14:28:35] INFO root fetch - processPackages [pyaction]: Remove: archive file [/home/abi/fetcher/tmp/pyaction-0.5.0.tar.gz]
+[2024-04-13 14:28:35] INFO root fetch - processPackages [pyaction]: Remove: archive file [/home/abi/fetcher/tmp/pyaction-0.5.1.tar.gz]
+[2024-04-13 14:28:35] INFO root fetch - main [MainThread]: End processing [pyaction]: success
+[2024-04-13 14:28:35] INFO root fetch - processPackages [ScriptCollection]: Remove: archive file [/home/abi/fetcher/tmp/ScriptCollection-3.4.8-py3-none-any.whl.zip]
+[2024-04-13 14:28:35] INFO root fetch - processPackages [ScriptCollection]: Remove: archive file [/home/abi/fetcher/tmp/ScriptCollection-3.4.9-py3-none-any.whl.zip]
+[2024-04-13 14:28:35] INFO root fetch - main [MainThread]: End processing [ScriptCollection]: success
+[2024-04-13 14:28:35] INFO root fetch - processPackages [noteshrunk]: Remove: archive file [/home/abi/fetcher/tmp/noteshrunk-1.1.1.tar.gz]
+[2024-04-13 14:28:35] INFO root fetch - processPackages [noteshrunk]: Remove: archive file [/home/abi/fetcher/tmp/noteshrunk-1.2.0.tar.gz]
+[2024-04-13 14:28:35] INFO root fetch - main [MainThread]: End processing [noteshrunk]: success
+[2024-04-13 14:28:35] INFO root fetch - main [MainThread]: Store serial: [22751706]
