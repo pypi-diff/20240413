@@ -18827,3 +18827,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 21:01:26] INFO root fetch - processPackages [zfit-physics]: Remove: archive file [/home/abi/fetcher/tmp/zfit_physics-0.7.0.tar.gz]
 [2024-04-13 21:01:26] INFO root fetch - main [MainThread]: End processing [zfit-physics]: success
 [2024-04-13 21:01:26] INFO root fetch - main [MainThread]: Store serial: [22754111]
+[2024-04-13 21:03:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754111]
+[2024-04-13 21:03:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 21:03:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: placeholder-img
+[2024-04-13 21:03:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blastpipe
+[2024-04-13 21:03:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rclip
+[2024-04-13 21:03:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spotlight-sdk
+[2024-04-13 21:03:34] WARNING root fetch - processPackages [placeholder-img]: Skipping, unable to determine old version
+[2024-04-13 21:03:34] INFO root fetch - main [MainThread]: End processing [placeholder-img] error
+[2024-04-13 21:03:34] INFO root fetch - processPackages [rclip]: New version: [1.8.6] Old Version: [1.8.5]
+[2024-04-13 21:03:34] INFO root fetch - processPackages [blastpipe]: New version: [2024.0.4] Old Version: [2024.0.3]
+[2024-04-13 21:03:34] INFO root fetch - processPackages [spotlight-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 21:03:34] INFO root fetch - processPackages [rclip]: Downloading https://files.pythonhosted.org/packages/21/e9/ad1dc77b43471472daf9b2eae8459b468263ad8209058b6034b6bd1b27d1/rclip-1.8.5.tar.gz
+[2024-04-13 21:03:34] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/89/e0/edfbf910c36b82b0698f8cb719ebcc851a476b39b4c8cc7927873063e0c6/blastpipe-2024.0.3.tar.gz
+[2024-04-13 21:03:35] INFO root fetch - processPackages [rclip]: Downloading https://files.pythonhosted.org/packages/fa/c3/afa74a66d64cec57c685f8077ec93336ae714852084e7802ba16dfccfbe7/rclip-1.8.6.tar.gz
+[2024-04-13 21:03:35] INFO root fetch - processPackages [spotlight-sdk]: Downloading https://files.pythonhosted.org/packages/d2/df/64f237173cbbb85bab1727e9b447a1764287a6a0b46e80a48a81d9f20ac5/spotlight-sdk-0.0.8.tar.gz
+[2024-04-13 21:03:35] INFO root fetch - processPackages [rclip]: executing diffoscope
+[2024-04-13 21:03:35] INFO root fetch - processPackages [rclip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rclip-1.8.5.tar.gz tmp/rclip-1.8.6.tar.gz --markdown 20240413/r/rclip/1.8.5-1.8.6/README.md --exclude *.pyd
+[2024-04-13 21:03:35] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/fd/00/f0d30f79069c457bfdc0ea1358d431691599a2389418234742c1712f0be5/blastpipe-2024.0.4.tar.gz
+[2024-04-13 21:03:35] INFO root fetch - processPackages [blastpipe]: executing diffoscope
+[2024-04-13 21:03:35] INFO root fetch - processPackages [blastpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blastpipe-2024.0.3.tar.gz tmp/blastpipe-2024.0.4.tar.gz --markdown 20240413/b/blastpipe/2024.0.3-2024.0.4/README.md --exclude *.pyd
+[2024-04-13 21:03:35] INFO root fetch - processPackages [spotlight-sdk]: Downloading https://files.pythonhosted.org/packages/e7/77/097156d6cb8a69f69aff3c7e65046379c3fd67d52e2a86936ef50e85eb68/spotlight-sdk-0.0.9.tar.gz
+[2024-04-13 21:03:35] INFO root fetch - processPackages [spotlight-sdk]: executing diffoscope
+[2024-04-13 21:03:35] INFO root fetch - processPackages [spotlight-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotlight-sdk-0.0.8.tar.gz tmp/spotlight-sdk-0.0.9.tar.gz --markdown 20240413/s/spotlight-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 21:03:35] INFO root fetch - processPackages [rclip]: Remove: archive file [/home/abi/fetcher/tmp/rclip-1.8.5.tar.gz]
+[2024-04-13 21:03:35] INFO root fetch - processPackages [rclip]: Remove: archive file [/home/abi/fetcher/tmp/rclip-1.8.6.tar.gz]
+[2024-04-13 21:03:35] INFO root fetch - main [MainThread]: End processing [rclip]: success
+[2024-04-13 21:03:36] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.0.3.tar.gz]
+[2024-04-13 21:03:36] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.0.4.tar.gz]
+[2024-04-13 21:03:36] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
+[2024-04-13 21:03:36] INFO root fetch - processPackages [spotlight-sdk]: Remove: archive file [/home/abi/fetcher/tmp/spotlight-sdk-0.0.8.tar.gz]
+[2024-04-13 21:03:36] INFO root fetch - processPackages [spotlight-sdk]: Remove: archive file [/home/abi/fetcher/tmp/spotlight-sdk-0.0.9.tar.gz]
+[2024-04-13 21:03:36] INFO root fetch - main [MainThread]: End processing [spotlight-sdk]: success
+[2024-04-13 21:03:36] INFO root fetch - main [MainThread]: Store serial: [22754125]
