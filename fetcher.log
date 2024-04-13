@@ -20753,3 +20753,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 23:45:27] INFO root fetch - processPackages [PyMutSpec]: Remove: archive file [/home/abi/fetcher/tmp/PyMutSpec-0.0.8.tar.gz]
 [2024-04-13 23:45:27] INFO root fetch - main [MainThread]: End processing [PyMutSpec]: success
 [2024-04-13 23:45:27] INFO root fetch - main [MainThread]: Store serial: [22754998]
+[2024-04-13 23:47:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754998]
+[2024-04-13 23:47:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 23:47:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: custom-dot-plot
+[2024-04-13 23:47:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: grooveshop-django-api
+[2024-04-13 23:47:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: latk
+[2024-04-13 23:47:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: airbyte-source-shopify
+[2024-04-13 23:47:36] INFO root fetch - processPackages [latk]: New version: [2.9.2] Old Version: [2.9.1]
+[2024-04-13 23:47:36] INFO root fetch - processPackages [airbyte-source-shopify]: New version: [2.0.5.dev202404132146] Old Version: [2.0.5.dev202404121134]
+[2024-04-13 23:47:36] INFO root fetch - processPackages [custom-dot-plot]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-13 23:47:36] INFO root fetch - processPackages [grooveshop-django-api]: New version: [0.99.1] Old Version: [0.99.0]
+[2024-04-13 23:47:36] INFO root fetch - processPackages [latk]: Downloading https://files.pythonhosted.org/packages/f4/c1/510e621b09b5eb6136fb781bd68df7f27cc3373b138dfabe4553fdb9eecc/latk-2.9.1.tar.gz
+[2024-04-13 23:47:36] INFO root fetch - processPackages [grooveshop-django-api]: Downloading https://files.pythonhosted.org/packages/7f/a7/0d6a615cddf282a20c5473422783b8e46581bf1c77d73c7dfc581210dc37/grooveshop_django_api-0.99.0.tar.gz
+[2024-04-13 23:47:36] INFO root fetch - processPackages [airbyte-source-shopify]: Downloading https://files.pythonhosted.org/packages/f8/f8/8adf61c69ace7f91e36bf098c65604106f37b23ffd241d04461d21655682/airbyte_source_shopify-2.0.5.dev202404121134.tar.gz
+[2024-04-13 23:47:36] INFO root fetch - processPackages [custom-dot-plot]: Downloading https://files.pythonhosted.org/packages/3f/e7/d1ed5146afc3d5f1f5be89b1d4ccdd0e7c1c72df231932d7f841f2123253/custom-dot-plot-0.0.5.tar.gz
+[2024-04-13 23:47:36] WARNING root fetch - processPackages [grooveshop-django-api]: Skipping package: exceeds size limit 33783695>=10485760
+[2024-04-13 23:47:36] INFO root fetch - main [MainThread]: End processing [grooveshop-django-api] error
+[2024-04-13 23:47:37] INFO root fetch - processPackages [custom-dot-plot]: Downloading https://files.pythonhosted.org/packages/27/8c/3c7cab4b6c0dae7e0bcae2f062a8cf4c3f74ddde95c6ddf5e56f5fb272ac/custom-dot-plot-0.0.6.tar.gz
+[2024-04-13 23:47:37] INFO root fetch - processPackages [latk]: Downloading https://files.pythonhosted.org/packages/ba/58/bfc8231b7f2a70cd9480d8b8b137af12c56d8e0172ea9f48601dd1c1ad78/latk-2.9.2-py3-none-any.whl
+[2024-04-13 23:47:37] INFO root fetch - processPackages [airbyte-source-shopify]: Downloading https://files.pythonhosted.org/packages/dd/25/83618422f1b71c1b009b030ab036c4db989e95ac79ef1035627cbede534b/airbyte_source_shopify-2.0.5.dev202404132146.tar.gz
+[2024-04-13 23:47:37] INFO root fetch - processPackages [latk]: executing diffoscope
+[2024-04-13 23:47:37] INFO root fetch - processPackages [latk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latk-2.9.1.tar.gz tmp/latk-2.9.2-py3-none-any.whl.zip --markdown 20240413/l/latk/2.9.1-2.9.2/README.md --exclude *.pyd
+[2024-04-13 23:47:37] INFO root fetch - processPackages [airbyte-source-shopify]: executing diffoscope
+[2024-04-13 23:47:37] INFO root fetch - processPackages [airbyte-source-shopify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte_source_shopify-2.0.5.dev202404121134.tar.gz tmp/airbyte_source_shopify-2.0.5.dev202404132146.tar.gz --markdown 20240413/a/airbyte-source-shopify/2.0.5.dev202404121134-2.0.5.dev202404132146/README.md --exclude *.pyd
+[2024-04-13 23:47:37] INFO root fetch - processPackages [custom-dot-plot]: executing diffoscope
+[2024-04-13 23:47:37] INFO root fetch - processPackages [custom-dot-plot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom-dot-plot-0.0.5.tar.gz tmp/custom-dot-plot-0.0.6.tar.gz --markdown 20240413/c/custom-dot-plot/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-13 23:47:38] INFO root fetch - processPackages [latk]: Remove: archive file [/home/abi/fetcher/tmp/latk-2.9.1.tar.gz]
+[2024-04-13 23:47:38] INFO root fetch - processPackages [latk]: Remove: archive file [/home/abi/fetcher/tmp/latk-2.9.2-py3-none-any.whl.zip]
+[2024-04-13 23:47:38] INFO root fetch - main [MainThread]: End processing [latk]: success
+[2024-04-13 23:47:38] INFO root fetch - processPackages [airbyte-source-shopify]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_shopify-2.0.5.dev202404121134.tar.gz]
+[2024-04-13 23:47:38] INFO root fetch - processPackages [airbyte-source-shopify]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_shopify-2.0.5.dev202404132146.tar.gz]
+[2024-04-13 23:47:38] INFO root fetch - main [MainThread]: End processing [airbyte-source-shopify]: success
+[2024-04-13 23:47:50] INFO root fetch - processPackages [custom-dot-plot]: Remove: archive file [/home/abi/fetcher/tmp/custom-dot-plot-0.0.5.tar.gz]
+[2024-04-13 23:47:50] INFO root fetch - processPackages [custom-dot-plot]: Remove: archive file [/home/abi/fetcher/tmp/custom-dot-plot-0.0.6.tar.gz]
+[2024-04-13 23:47:50] INFO root fetch - main [MainThread]: End processing [custom-dot-plot]: success
+[2024-04-13 23:47:50] INFO root fetch - main [MainThread]: Store serial: [22755009]
