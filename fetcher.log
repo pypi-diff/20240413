@@ -18938,3 +18938,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 21:07:58] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.4.4.tar.gz]
 [2024-04-13 21:07:58] INFO root fetch - main [MainThread]: End processing [fudstop]: success
 [2024-04-13 21:07:58] INFO root fetch - main [MainThread]: Store serial: [22754155]
+[2024-04-13 21:10:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754155]
+[2024-04-13 21:10:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 21:10:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mergoo
+[2024-04-13 21:10:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydapper
+[2024-04-13 21:10:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: restx
+[2024-04-13 21:10:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyhdl-call-if
+[2024-04-13 21:10:07] INFO root fetch - processPackages [restx]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-13 21:10:07] INFO root fetch - processPackages [pydapper]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-13 21:10:07] INFO root fetch - processPackages [mergoo]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-13 21:10:07] WARNING root fetch - processPackages [pyhdl-call-if]: Skipping, unable to determine old version
+[2024-04-13 21:10:07] INFO root fetch - main [MainThread]: End processing [pyhdl-call-if] error
+[2024-04-13 21:10:07] INFO root fetch - processPackages [restx]: Downloading https://files.pythonhosted.org/packages/df/19/820f8557c3036f4c7b34bcf116554a9725cd5836e08efba9e1e5880ee2ee/restx-0.1.5.tar.gz
+[2024-04-13 21:10:07] INFO root fetch - processPackages [pydapper]: Downloading https://files.pythonhosted.org/packages/16/8a/d90f8d70dd4f49db4018c3ecdd855f9e77751d2eecd9f429ef0a84aeb167/pydapper-0.8.0.tar.gz
+[2024-04-13 21:10:07] INFO root fetch - processPackages [mergoo]: Downloading https://files.pythonhosted.org/packages/6f/0b/cb42481b70f3f8f3048b00aa2285a1fa793f30399f8ad4eb78ebd43ec7f9/mergoo-0.0.6.tar.gz
+[2024-04-13 21:10:07] INFO root fetch - processPackages [restx]: Downloading https://files.pythonhosted.org/packages/cf/db/f579ec11a11d0d8368fa1fb4e1fd939e74b79b0cef3230e3d1717b289a4f/restx-0.1.6.tar.gz
+[2024-04-13 21:10:07] INFO root fetch - processPackages [restx]: executing diffoscope
+[2024-04-13 21:10:07] INFO root fetch - processPackages [restx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/restx-0.1.5.tar.gz tmp/restx-0.1.6.tar.gz --markdown 20240413/r/restx/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-13 21:10:07] INFO root fetch - processPackages [pydapper]: Downloading https://files.pythonhosted.org/packages/04/bd/9b424ceab1c07eaac87270158d620bceea67fd43dc05422495b064a8e279/pydapper-0.9.0.tar.gz
+[2024-04-13 21:10:07] INFO root fetch - processPackages [mergoo]: Downloading https://files.pythonhosted.org/packages/27/04/c584f9e0132514a02bcc2aa320408c846c1b8a403cd39013957fd72cf6c4/mergoo-0.0.7.tar.gz
+[2024-04-13 21:10:08] INFO root fetch - processPackages [mergoo]: executing diffoscope
+[2024-04-13 21:10:08] INFO root fetch - processPackages [mergoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mergoo-0.0.6.tar.gz tmp/mergoo-0.0.7.tar.gz --markdown 20240413/m/mergoo/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-13 21:10:08] INFO root fetch - processPackages [pydapper]: executing diffoscope
+[2024-04-13 21:10:08] INFO root fetch - processPackages [pydapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydapper-0.8.0.tar.gz tmp/pydapper-0.9.0.tar.gz --markdown 20240413/p/pydapper/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-13 21:10:08] INFO root fetch - processPackages [restx]: Remove: archive file [/home/abi/fetcher/tmp/restx-0.1.5.tar.gz]
+[2024-04-13 21:10:08] INFO root fetch - processPackages [restx]: Remove: archive file [/home/abi/fetcher/tmp/restx-0.1.6.tar.gz]
+[2024-04-13 21:10:08] INFO root fetch - main [MainThread]: End processing [restx]: success
+[2024-04-13 21:10:08] INFO root fetch - processPackages [mergoo]: Remove: archive file [/home/abi/fetcher/tmp/mergoo-0.0.6.tar.gz]
+[2024-04-13 21:10:08] INFO root fetch - processPackages [mergoo]: Remove: archive file [/home/abi/fetcher/tmp/mergoo-0.0.7.tar.gz]
+[2024-04-13 21:10:08] INFO root fetch - main [MainThread]: End processing [mergoo]: success
+[2024-04-13 21:10:08] INFO root fetch - processPackages [pydapper]: Remove: archive file [/home/abi/fetcher/tmp/pydapper-0.8.0.tar.gz]
+[2024-04-13 21:10:08] INFO root fetch - processPackages [pydapper]: Remove: archive file [/home/abi/fetcher/tmp/pydapper-0.9.0.tar.gz]
+[2024-04-13 21:10:08] INFO root fetch - main [MainThread]: End processing [pydapper]: success
+[2024-04-13 21:10:08] INFO root fetch - main [MainThread]: Store serial: [22754168]
