@@ -20192,3 +20192,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 22:59:50] INFO root fetch - processPackages [geopandas]: Remove: archive file [/home/abi/fetcher/tmp/geopandas-1.0.0a1.tar.gz]
 [2024-04-13 22:59:50] INFO root fetch - main [MainThread]: End processing [geopandas]: success
 [2024-04-13 22:59:50] INFO root fetch - main [MainThread]: Store serial: [22754710]
+[2024-04-13 23:01:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754710]
+[2024-04-13 23:01:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 23:01:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: freegenius
+[2024-04-13 23:01:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datascope-experiments
+[2024-04-13 23:01:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: invest-guard
+[2024-04-13 23:01:59] INFO root fetch - processPackages [invest-guard]: New version: [0.1.7] Old Version: [0.1.5]
+[2024-04-13 23:01:59] INFO root fetch - processPackages [datascope-experiments]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 23:01:59] INFO root fetch - processPackages [freegenius]: New version: [0.0.9] Old Version: [0.0.84]
+[2024-04-13 23:02:00] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/59/3f/eb6942158d0b941afaf5b059e0d937756e3b625141461efea73d50335e83/invest-guard-0.1.5.tar.gz
+[2024-04-13 23:02:00] INFO root fetch - processPackages [datascope-experiments]: Downloading https://files.pythonhosted.org/packages/45/04/38d90a22277d9e206a1f680f99cbfda58ca9cb856a5fdfdcee40e032f0e8/datascope-experiments-0.0.8.tar.gz
+[2024-04-13 23:02:00] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/d4/51/6a2831c904dc0bd8a94d72c053d9e2c943c79a800cf685ee397471dfbf37/freegenius-0.0.84.tar.gz
+[2024-04-13 23:02:00] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/2f/50/1403ed83985d15933b77f9240712a361e30523e249a70e4dfcf298352dcb/invest-guard-0.1.7.tar.gz
+[2024-04-13 23:02:00] INFO root fetch - processPackages [datascope-experiments]: Downloading https://files.pythonhosted.org/packages/b1/bc/05ddc96ba1314c3a59709691d24646790023b2b8b38620c39e9ae4412371/datascope-experiments-0.0.9.tar.gz
+[2024-04-13 23:02:00] INFO root fetch - processPackages [invest-guard]: executing diffoscope
+[2024-04-13 23:02:00] INFO root fetch - processPackages [invest-guard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invest-guard-0.1.5.tar.gz tmp/invest-guard-0.1.7.tar.gz --markdown 20240413/i/invest-guard/0.1.5-0.1.7/README.md --exclude *.pyd
+[2024-04-13 23:02:00] INFO root fetch - processPackages [datascope-experiments]: executing diffoscope
+[2024-04-13 23:02:00] INFO root fetch - processPackages [datascope-experiments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datascope-experiments-0.0.8.tar.gz tmp/datascope-experiments-0.0.9.tar.gz --markdown 20240413/d/datascope-experiments/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 23:02:00] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/64/a9/f3ae6b148a4bd786790a124582c069ff16ee88fb307a8ebff8181577bb4d/freegenius-0.0.9.tar.gz
+[2024-04-13 23:02:00] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-04-13 23:02:00] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.0.84.tar.gz tmp/freegenius-0.0.9.tar.gz --markdown 20240413/f/freegenius/0.0.84-0.0.9/README.md --exclude *.pyd
+[2024-04-13 23:02:01] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest-guard-0.1.5.tar.gz]
+[2024-04-13 23:02:01] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest-guard-0.1.7.tar.gz]
+[2024-04-13 23:02:01] INFO root fetch - main [MainThread]: End processing [invest-guard]: success
+[2024-04-13 23:02:01] INFO root fetch - processPackages [datascope-experiments]: Remove: archive file [/home/abi/fetcher/tmp/datascope-experiments-0.0.8.tar.gz]
+[2024-04-13 23:02:01] INFO root fetch - processPackages [datascope-experiments]: Remove: archive file [/home/abi/fetcher/tmp/datascope-experiments-0.0.9.tar.gz]
+[2024-04-13 23:02:01] INFO root fetch - main [MainThread]: End processing [datascope-experiments]: success
+[2024-04-13 23:02:01] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.84.tar.gz]
+[2024-04-13 23:02:01] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.9.tar.gz]
+[2024-04-13 23:02:01] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-04-13 23:02:01] INFO root fetch - main [MainThread]: Store serial: [22754719]
