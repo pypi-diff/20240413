@@ -19472,3 +19472,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 21:56:51] WARNING root fetch - processPackages [anycrc]: Skipping, unable to determine old version
 [2024-04-13 21:56:51] INFO root fetch - main [MainThread]: End processing [anycrc] error
 [2024-04-13 21:56:51] INFO root fetch - main [MainThread]: Store serial: [22754433]
+[2024-04-13 21:58:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754433]
+[2024-04-13 21:58:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 21:58:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fudstop
+[2024-04-13 21:58:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyttrading
+[2024-04-13 21:58:59] INFO root fetch - processPackages [fudstop]: New version: [2.4.7] Old Version: [2.4.6]
+[2024-04-13 21:59:00] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/f3/93/9671b4e412d4809a93989b328d8349c58202b146f3ecf2a87f7314987210/fudstop-2.4.6.tar.gz
+[2024-04-13 21:59:00] INFO root fetch - processPackages [pyttrading]: New version: [1.0.9] Old Version: [1.0.7]
+[2024-04-13 21:59:00] INFO root fetch - processPackages [pyttrading]: Downloading https://files.pythonhosted.org/packages/3e/44/a95d7b2f8f68539207d212b81c1417f7bf3c8599c490188296a18dbeea24/pyttrading-1.0.7.tar.gz
+[2024-04-13 21:59:00] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/d2/49/cde2b17482d2f778ff28262ba1401d6bb55767ec0dd9efd5abd8c51dc1b9/fudstop-2.4.7.tar.gz
+[2024-04-13 21:59:00] INFO root fetch - processPackages [fudstop]: executing diffoscope
+[2024-04-13 21:59:00] INFO root fetch - processPackages [fudstop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fudstop-2.4.6.tar.gz tmp/fudstop-2.4.7.tar.gz --markdown 20240413/f/fudstop/2.4.6-2.4.7/README.md --exclude *.pyd
+[2024-04-13 21:59:00] INFO root fetch - processPackages [pyttrading]: Downloading https://files.pythonhosted.org/packages/19/71/974023947ff7e94d1e4e846618d1f76062c77d1da5069bf5d7bdf310b3af/pyttrading-1.0.9.tar.gz
+[2024-04-13 21:59:00] INFO root fetch - processPackages [pyttrading]: executing diffoscope
+[2024-04-13 21:59:00] INFO root fetch - processPackages [pyttrading]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyttrading-1.0.7.tar.gz tmp/pyttrading-1.0.9.tar.gz --markdown 20240413/p/pyttrading/1.0.7-1.0.9/README.md --exclude *.pyd
+[2024-04-13 21:59:01] INFO root fetch - processPackages [pyttrading]: Remove: archive file [/home/abi/fetcher/tmp/pyttrading-1.0.7.tar.gz]
+[2024-04-13 21:59:01] INFO root fetch - processPackages [pyttrading]: Remove: archive file [/home/abi/fetcher/tmp/pyttrading-1.0.9.tar.gz]
+[2024-04-13 21:59:01] INFO root fetch - main [MainThread]: End processing [pyttrading]: success
+[2024-04-13 21:59:02] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.4.6.tar.gz]
+[2024-04-13 21:59:02] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.4.7.tar.gz]
+[2024-04-13 21:59:02] INFO root fetch - main [MainThread]: End processing [fudstop]: success
+[2024-04-13 21:59:02] INFO root fetch - main [MainThread]: Store serial: [22754449]
