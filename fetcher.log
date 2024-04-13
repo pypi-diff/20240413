@@ -17630,3 +17630,71 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:47:24] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.733.1.tar.gz]
 [2024-04-13 19:47:24] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2024-04-13 19:47:24] INFO root fetch - main [MainThread]: Store serial: [22753590]
+[2024-04-13 19:49:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753590]
+[2024-04-13 19:49:33] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-13 19:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ds20kdb-avt
+[2024-04-13 19:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: audiconnectpy
+[2024-04-13 19:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: savant-rs
+[2024-04-13 19:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gffutils
+[2024-04-13 19:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-static-dtm
+[2024-04-13 19:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: trinnov-altitude
+[2024-04-13 19:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sequentia
+[2024-04-13 19:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: impactpy
+[2024-04-13 19:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: impactpy-lachlanbaxter
+[2024-04-13 19:49:34] INFO root fetch - processPackages [ds20kdb-avt]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-04-13 19:49:34] INFO root fetch - processPackages [gffutils]: New version: [0.9] Old Version: [0.8.7.1]
+[2024-04-13 19:49:34] INFO root fetch - processPackages [py-static-dtm]: New version: [1.0.0a2] Old Version: [1.0.0a1]
+[2024-04-13 19:49:34] INFO root fetch - processPackages [trinnov-altitude]: New version: [1.0.0] Old Version: [0.1.9]
+[2024-04-13 19:49:34] INFO root fetch - processPackages [ds20kdb-avt]: Downloading https://files.pythonhosted.org/packages/5d/cc/42e8efd0c3dec4d1036c2655705074364adc7bf245fab20b9345bc69d6e9/ds20kdb_avt-1.0.5.tar.gz
+[2024-04-13 19:49:34] INFO root fetch - processPackages [audiconnectpy]: New version: [1.5.4] Old Version: [1.5.3]
+[2024-04-13 19:49:34] INFO root fetch - processPackages [sequentia]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-04-13 19:49:34] INFO root fetch - processPackages [trinnov-altitude]: Downloading https://files.pythonhosted.org/packages/76/2e/d188a8568df2fbd157a92850369057419ef690d42167df73acfde0838f4e/trinnov-altitude-0.1.9.tar.gz
+[2024-04-13 19:49:34] WARNING root fetch - processPackages [impactpy]: Skipping, unable to determine old version
+[2024-04-13 19:49:34] WARNING root fetch - processPackages [impactpy-lachlanbaxter]: Skipping, unable to determine old version
+[2024-04-13 19:49:34] INFO root fetch - main [MainThread]: End processing [impactpy] error
+[2024-04-13 19:49:34] INFO root fetch - main [MainThread]: End processing [impactpy-lachlanbaxter] error
+[2024-04-13 19:49:34] INFO root fetch - processPackages [savant-rs]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-13 19:49:34] INFO root fetch - processPackages [py-static-dtm]: Downloading https://files.pythonhosted.org/packages/dd/c1/0c0b5b1bba3cdea717b2e1b8830221e69a6c0295f483d45fda4893a1998f/py_static_dtm-1.0.0a1.tar.gz
+[2024-04-13 19:49:34] INFO root fetch - processPackages [gffutils]: Downloading https://files.pythonhosted.org/packages/a7/fa/3d8cd13f58540098f5efb3ec7dd33d1bb6a27ee06e377e1d6a2419b4be25/gffutils-0.8.7.1.tar.gz
+[2024-04-13 19:49:34] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/57/0a/79b61ec9591d66aefbbca1990ef8804ff01e7368d78ba0708fa51af83f6b/audiconnectpy-1.5.3.tar.gz
+[2024-04-13 19:49:34] INFO root fetch - processPackages [sequentia]: Downloading https://files.pythonhosted.org/packages/78/de/19ca9b7c4f3ed63275ae05e1724e1ad74e3a7228e64e18f1417ac90f376c/sequentia-2.0.1.tar.gz
+[2024-04-13 19:49:34] INFO root fetch - processPackages [trinnov-altitude]: Downloading https://files.pythonhosted.org/packages/91/4f/4fe0118b21f1eb66dcb82469dc6468969424bf1ceaefa0a824fd0b945e23/trinnov_altitude-1.tar.gz
+[2024-04-13 19:49:34] INFO root fetch - processPackages [ds20kdb-avt]: Downloading https://files.pythonhosted.org/packages/78/db/9ca7b45dae9179e807b10581be3a58970cfa05fa4c49c155c0d9aaff8729/ds20kdb_avt-1.0.6.tar.gz
+[2024-04-13 19:49:34] INFO root fetch - processPackages [py-static-dtm]: Downloading https://files.pythonhosted.org/packages/a4/e2/faeab9fca58e424011aa1c9143b1d3f730e4ebfdbc986a9a30043f089f09/py_static_dtm-1.0.0a2.tar.gz
+[2024-04-13 19:49:34] INFO root fetch - processPackages [savant-rs]: Downloading https://files.pythonhosted.org/packages/27/7d/692e2bab3a8d72896f5e9f191b48afa977af60164afe8bc141e4dc44d403/savant_rs-0.2.9-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-13 19:49:34] INFO root fetch - processPackages [trinnov-altitude]: executing diffoscope
+[2024-04-13 19:49:34] INFO root fetch - processPackages [trinnov-altitude]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trinnov-altitude-0.1.9.tar.gz tmp/trinnov_altitude-1.tar.gz --markdown 20240413/t/trinnov-altitude/0.1.9-1.0.0/README.md --exclude *.pyd
+[2024-04-13 19:49:34] INFO root fetch - processPackages [ds20kdb-avt]: executing diffoscope
+[2024-04-13 19:49:34] INFO root fetch - processPackages [ds20kdb-avt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ds20kdb_avt-1.0.5.tar.gz tmp/ds20kdb_avt-1.0.6.tar.gz --markdown 20240413/d/ds20kdb-avt/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-04-13 19:49:34] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/3d/65/635fc57c4efb58e6e83630df47a90af907c948eb70175dd82fd6237d12d7/audiconnectpy-1.5.4.tar.gz
+[2024-04-13 19:49:34] WARNING root fetch - processPackages [savant-rs]: Skipping package: exceeds size limit 13159013>=10485760
+[2024-04-13 19:49:34] INFO root fetch - main [MainThread]: End processing [savant-rs] error
+[2024-04-13 19:49:34] INFO root fetch - processPackages [py-static-dtm]: executing diffoscope
+[2024-04-13 19:49:34] INFO root fetch - processPackages [py-static-dtm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_static_dtm-1.0.0a1.tar.gz tmp/py_static_dtm-1.0.0a2.tar.gz --markdown 20240413/p/py-static-dtm/1.0.0a1-1.0.0a2/README.md --exclude *.pyd
+[2024-04-13 19:49:34] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2024-04-13 19:49:34] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-1.5.3.tar.gz tmp/audiconnectpy-1.5.4.tar.gz --markdown 20240413/a/audiconnectpy/1.5.3-1.5.4/README.md --exclude *.pyd
+[2024-04-13 19:49:34] INFO root fetch - processPackages [gffutils]: Downloading https://files.pythonhosted.org/packages/b4/ea/54ca403a8d471849606fb432b9afcf73c8c5105ea2dd87b8d38bd5217c5a/gffutils-0.9.tar.gz
+[2024-04-13 19:49:35] INFO root fetch - processPackages [gffutils]: executing diffoscope
+[2024-04-13 19:49:35] INFO root fetch - processPackages [gffutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gffutils-0.8.7.1.tar.gz tmp/gffutils-0.9.tar.gz --markdown 20240413/g/gffutils/0.8.7.1-0.9/README.md --exclude *.pyd
+[2024-04-13 19:49:35] INFO root fetch - processPackages [sequentia]: Downloading https://files.pythonhosted.org/packages/a4/5c/41aa80de05b385e96a34563a0e350bc873fb8003584db7447eae11c49c54/sequentia-2.0.2.tar.gz
+[2024-04-13 19:49:35] INFO root fetch - processPackages [trinnov-altitude]: Remove: archive file [/home/abi/fetcher/tmp/trinnov-altitude-0.1.9.tar.gz]
+[2024-04-13 19:49:35] INFO root fetch - processPackages [trinnov-altitude]: Remove: archive file [/home/abi/fetcher/tmp/trinnov_altitude-1.tar.gz]
+[2024-04-13 19:49:35] INFO root fetch - main [MainThread]: End processing [trinnov-altitude]: success
+[2024-04-13 19:49:35] INFO root fetch - processPackages [py-static-dtm]: Remove: archive file [/home/abi/fetcher/tmp/py_static_dtm-1.0.0a1.tar.gz]
+[2024-04-13 19:49:35] INFO root fetch - processPackages [py-static-dtm]: Remove: archive file [/home/abi/fetcher/tmp/py_static_dtm-1.0.0a2.tar.gz]
+[2024-04-13 19:49:35] INFO root fetch - main [MainThread]: End processing [py-static-dtm]: success
+[2024-04-13 19:49:35] INFO root fetch - processPackages [ds20kdb-avt]: Remove: archive file [/home/abi/fetcher/tmp/ds20kdb_avt-1.0.5.tar.gz]
+[2024-04-13 19:49:35] INFO root fetch - processPackages [ds20kdb-avt]: Remove: archive file [/home/abi/fetcher/tmp/ds20kdb_avt-1.0.6.tar.gz]
+[2024-04-13 19:49:35] INFO root fetch - main [MainThread]: End processing [ds20kdb-avt]: success
+[2024-04-13 19:49:35] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-1.5.3.tar.gz]
+[2024-04-13 19:49:35] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-1.5.4.tar.gz]
+[2024-04-13 19:49:35] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2024-04-13 19:49:35] INFO root fetch - processPackages [sequentia]: executing diffoscope
+[2024-04-13 19:49:35] INFO root fetch - processPackages [sequentia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sequentia-2.0.1.tar.gz tmp/sequentia-2.0.2.tar.gz --markdown 20240413/s/sequentia/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-04-13 19:49:36] INFO root fetch - processPackages [gffutils]: Remove: archive file [/home/abi/fetcher/tmp/gffutils-0.8.7.1.tar.gz]
+[2024-04-13 19:49:36] INFO root fetch - processPackages [gffutils]: Remove: archive file [/home/abi/fetcher/tmp/gffutils-0.9.tar.gz]
+[2024-04-13 19:49:36] INFO root fetch - main [MainThread]: End processing [gffutils]: success
+[2024-04-13 19:49:36] INFO root fetch - processPackages [sequentia]: Remove: archive file [/home/abi/fetcher/tmp/sequentia-2.0.1.tar.gz]
+[2024-04-13 19:49:36] INFO root fetch - processPackages [sequentia]: Remove: archive file [/home/abi/fetcher/tmp/sequentia-2.0.2.tar.gz]
+[2024-04-13 19:49:36] INFO root fetch - main [MainThread]: End processing [sequentia]: success
+[2024-04-13 19:49:36] INFO root fetch - main [MainThread]: Store serial: [22753643]
