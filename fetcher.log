@@ -13038,3 +13038,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 13:23:16] INFO root fetch - processPackages [HandyLLM]: Remove: archive file [/home/abi/fetcher/tmp/HandyLLM-0.6.3.tar.gz]
 [2024-04-13 13:23:16] INFO root fetch - main [MainThread]: End processing [HandyLLM]: success
 [2024-04-13 13:23:16] INFO root fetch - main [MainThread]: Store serial: [22751417]
+[2024-04-13 13:25:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751417]
+[2024-04-13 13:25:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 13:25:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: galapy-core
+[2024-04-13 13:25:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchx-nightly
+[2024-04-13 13:25:25] INFO root fetch - processPackages [galapy-core]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-13 13:25:25] INFO root fetch - processPackages [torchx-nightly]: New version: [2024.4.12] Old Version: [2024.4.11]
+[2024-04-13 13:25:25] INFO root fetch - processPackages [galapy-core]: Downloading https://files.pythonhosted.org/packages/77/a8/efaa1923ca96a557e1a81cd9df29c315f6513c67c075a1e896c384a1752b/galapy_core-0.2.0.tar.gz
+[2024-04-13 13:25:25] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/b8/32/9285a8608696c5ff6b2e95c4f21fd790ec9a5b4b7e8eb5045b482c41f036/torchx_nightly-2024.4.11-py3-none-any.whl
+[2024-04-13 13:25:25] INFO root fetch - processPackages [galapy-core]: Downloading https://files.pythonhosted.org/packages/25/b5/5d77b18a6ecca7f5b51cc4876f5516637cd08054bb03757d623f2b9c029d/galapy_core-0.2.1.tar.gz
+[2024-04-13 13:25:25] INFO root fetch - processPackages [galapy-core]: executing diffoscope
+[2024-04-13 13:25:25] INFO root fetch - processPackages [galapy-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/galapy_core-0.2.0.tar.gz tmp/galapy_core-0.2.1.tar.gz --markdown 20240413/g/galapy-core/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-13 13:25:25] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/92/10/139d06102c01e80ed51aeaaf427beed90f713116dc096d004b584e5063e9/torchx_nightly-2024.4.12-py3-none-any.whl
+[2024-04-13 13:25:25] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2024-04-13 13:25:25] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2024.4.11-py3-none-any.whl.zip tmp/torchx_nightly-2024.4.12-py3-none-any.whl.zip --markdown 20240413/t/torchx-nightly/2024.4.11-2024.4.12/README.md --exclude *.pyd
+[2024-04-13 13:25:26] INFO root fetch - processPackages [galapy-core]: Remove: archive file [/home/abi/fetcher/tmp/galapy_core-0.2.0.tar.gz]
+[2024-04-13 13:25:26] INFO root fetch - processPackages [galapy-core]: Remove: archive file [/home/abi/fetcher/tmp/galapy_core-0.2.1.tar.gz]
+[2024-04-13 13:25:26] INFO root fetch - main [MainThread]: End processing [galapy-core]: success
+[2024-04-13 13:25:26] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.4.11-py3-none-any.whl.zip]
+[2024-04-13 13:25:26] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.4.12-py3-none-any.whl.zip]
+[2024-04-13 13:25:26] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2024-04-13 13:25:26] INFO root fetch - main [MainThread]: Store serial: [22751428]
