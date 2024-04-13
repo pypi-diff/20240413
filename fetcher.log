@@ -15909,3 +15909,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 17:15:44] INFO root fetch - processPackages [musical_games]: Remove: archive file [/home/abi/fetcher/tmp/musical_games-0.6.1-py3-none-any.whl.zip]
 [2024-04-13 17:15:44] INFO root fetch - main [MainThread]: End processing [musical_games]: success
 [2024-04-13 17:15:44] INFO root fetch - main [MainThread]: Store serial: [22752822]
+[2024-04-13 17:17:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752822]
+[2024-04-13 17:17:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 17:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: musical_games
+[2024-04-13 17:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: multi-agent-coordination
+[2024-04-13 17:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiograpi
+[2024-04-13 17:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: snake-environment
+[2024-04-13 17:17:53] INFO root fetch - processPackages [musical_games]: New version: [0.6.1] Old Version: [0.5.2]
+[2024-04-13 17:17:53] INFO root fetch - processPackages [snake-environment]: New version: [0.3.0] Old Version: [0.2.8]
+[2024-04-13 17:17:53] INFO root fetch - processPackages [musical_games]: Downloading https://files.pythonhosted.org/packages/6a/af/afc0d2cb8b1fa576f0c3dbf0dc39c5cac44bb0da7232f2892f752c6b5536/musical_games-0.5.2.tar.gz
+[2024-04-13 17:17:53] INFO root fetch - processPackages [multi-agent-coordination]: New version: [0.2] Old Version: [0.1]
+[2024-04-13 17:17:53] INFO root fetch - processPackages [snake-environment]: Downloading https://files.pythonhosted.org/packages/56/49/61e29e0d3648a9340d61faaa8d998a524187e7fc62b1f56cc575fa4db327/snake_environment-0.2.8.tar.gz
+[2024-04-13 17:17:53] INFO root fetch - processPackages [aiograpi]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-13 17:17:54] INFO root fetch - processPackages [multi-agent-coordination]: Downloading https://files.pythonhosted.org/packages/e1/d6/a10f9598c225015dcf2d99f6122c2a57a22c5548c8b74ac1690a0007191d/multi-agent-coordination-0.1.tar.gz
+[2024-04-13 17:17:54] INFO root fetch - processPackages [aiograpi]: Downloading https://files.pythonhosted.org/packages/d3/49/b78f6f0a60559aff85e751a7a6ba1cd36061b58e16f1987becb633ffe873/aiograpi-0.0.1.tar.gz
+[2024-04-13 17:17:54] INFO root fetch - processPackages [musical_games]: Downloading https://files.pythonhosted.org/packages/b6/37/a37f9150a9dc5ec58076809edb9bd355c28b77499208525e9df067140e78/musical_games-0.6.1-py3-none-any.whl
+[2024-04-13 17:17:54] INFO root fetch - processPackages [snake-environment]: Downloading https://files.pythonhosted.org/packages/f4/ca/f4826c6ec4261f5e01379dbf0f2e447183e12de1f91bc2f0dc941a0fda2c/snake_environment-0.3.0.tar.gz
+[2024-04-13 17:17:54] INFO root fetch - processPackages [musical_games]: executing diffoscope
+[2024-04-13 17:17:54] INFO root fetch - processPackages [musical_games]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musical_games-0.5.2.tar.gz tmp/musical_games-0.6.1-py3-none-any.whl.zip --markdown 20240413/m/musical_games/0.5.2-0.6.1/README.md --exclude *.pyd
+[2024-04-13 17:17:54] INFO root fetch - processPackages [snake-environment]: executing diffoscope
+[2024-04-13 17:17:54] INFO root fetch - processPackages [snake-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snake_environment-0.2.8.tar.gz tmp/snake_environment-0.3.0.tar.gz --markdown 20240413/s/snake-environment/0.2.8-0.3.0/README.md --exclude *.pyd
+[2024-04-13 17:17:54] INFO root fetch - processPackages [multi-agent-coordination]: Downloading https://files.pythonhosted.org/packages/50/ff/7ad9a98eb8e70654703e6e0992c83e51b9b7c5d703183a8f41fbfdd7213d/multi-agent-coordination-0.2.tar.gz
+[2024-04-13 17:17:54] INFO root fetch - processPackages [aiograpi]: Downloading https://files.pythonhosted.org/packages/b2/37/58f01dc66ec5a3c46b5e5cc5b402e718d349c045feae83c8c6ab58de1337/aiograpi-0.0.2.tar.gz
+[2024-04-13 17:17:54] INFO root fetch - processPackages [multi-agent-coordination]: executing diffoscope
+[2024-04-13 17:17:54] INFO root fetch - processPackages [multi-agent-coordination]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi-agent-coordination-0.1.tar.gz tmp/multi-agent-coordination-0.2.tar.gz --markdown 20240413/m/multi-agent-coordination/0.1-0.2/README.md --exclude *.pyd
+[2024-04-13 17:17:54] INFO root fetch - processPackages [aiograpi]: executing diffoscope
+[2024-04-13 17:17:54] INFO root fetch - processPackages [aiograpi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiograpi-0.0.1.tar.gz tmp/aiograpi-0.0.2.tar.gz --markdown 20240413/a/aiograpi/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-13 17:17:54] INFO root fetch - processPackages [musical_games]: Remove: archive file [/home/abi/fetcher/tmp/musical_games-0.5.2.tar.gz]
+[2024-04-13 17:17:54] INFO root fetch - processPackages [musical_games]: Remove: archive file [/home/abi/fetcher/tmp/musical_games-0.6.1-py3-none-any.whl.zip]
+[2024-04-13 17:17:54] INFO root fetch - main [MainThread]: End processing [musical_games]: success
+[2024-04-13 17:17:55] INFO root fetch - processPackages [snake-environment]: Remove: archive file [/home/abi/fetcher/tmp/snake_environment-0.2.8.tar.gz]
+[2024-04-13 17:17:55] INFO root fetch - processPackages [snake-environment]: Remove: archive file [/home/abi/fetcher/tmp/snake_environment-0.3.0.tar.gz]
+[2024-04-13 17:17:55] INFO root fetch - main [MainThread]: End processing [snake-environment]: success
+[2024-04-13 17:17:55] INFO root fetch - processPackages [multi-agent-coordination]: Remove: archive file [/home/abi/fetcher/tmp/multi-agent-coordination-0.1.tar.gz]
+[2024-04-13 17:17:55] INFO root fetch - processPackages [multi-agent-coordination]: Remove: archive file [/home/abi/fetcher/tmp/multi-agent-coordination-0.2.tar.gz]
+[2024-04-13 17:17:55] INFO root fetch - main [MainThread]: End processing [multi-agent-coordination]: success
+[2024-04-13 17:17:55] INFO root fetch - processPackages [aiograpi]: Remove: archive file [/home/abi/fetcher/tmp/aiograpi-0.0.1.tar.gz]
+[2024-04-13 17:17:55] INFO root fetch - processPackages [aiograpi]: Remove: archive file [/home/abi/fetcher/tmp/aiograpi-0.0.2.tar.gz]
+[2024-04-13 17:17:55] INFO root fetch - main [MainThread]: End processing [aiograpi]: success
+[2024-04-13 17:17:55] INFO root fetch - main [MainThread]: Store serial: [22752832]
