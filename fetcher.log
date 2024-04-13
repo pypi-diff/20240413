@@ -8927,3 +8927,15 @@
 [2024-04-13 08:19:12] INFO root fetch - processPackages [odoo-addon-auditlog]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_auditlog-17.0.1.0.0.2-py3-none-any.whl.zip]
 [2024-04-13 08:19:12] INFO root fetch - main [MainThread]: End processing [odoo-addon-auditlog]: success
 [2024-04-13 08:19:12] INFO root fetch - main [MainThread]: Store serial: [22749834]
+[2024-04-13 08:21:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749834]
+[2024-04-13 08:21:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 08:21:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-kafka
+[2024-04-13 08:21:22] INFO root fetch - processPackages [pulumi-kafka]: New version: [3.8.0a1712987270] Old Version: [3.8.0a1712728075]
+[2024-04-13 08:21:22] INFO root fetch - processPackages [pulumi-kafka]: Downloading https://files.pythonhosted.org/packages/e7/f0/16aa6b6d739bd2ab1452b2ba00b6d3b5330c3c1944d46d773be16e2fc31c/pulumi_kafka-3.8.0a1712728075.tar.gz
+[2024-04-13 08:21:22] INFO root fetch - processPackages [pulumi-kafka]: Downloading https://files.pythonhosted.org/packages/6d/09/fc32b98ce351290afafc971b90acd736e735dd4014269475df7d5e58d854/pulumi_kafka-3.8.0a1712987270.tar.gz
+[2024-04-13 08:21:23] INFO root fetch - processPackages [pulumi-kafka]: executing diffoscope
+[2024-04-13 08:21:23] INFO root fetch - processPackages [pulumi-kafka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kafka-3.8.0a1712728075.tar.gz tmp/pulumi_kafka-3.8.0a1712987270.tar.gz --markdown 20240413/p/pulumi-kafka/3.8.0a1712728075-3.8.0a1712987270/README.md --exclude *.pyd
+[2024-04-13 08:21:23] INFO root fetch - processPackages [pulumi-kafka]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kafka-3.8.0a1712728075.tar.gz]
+[2024-04-13 08:21:23] INFO root fetch - processPackages [pulumi-kafka]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kafka-3.8.0a1712987270.tar.gz]
+[2024-04-13 08:21:23] INFO root fetch - main [MainThread]: End processing [pulumi-kafka]: success
+[2024-04-13 08:21:23] INFO root fetch - main [MainThread]: Store serial: [22749837]
