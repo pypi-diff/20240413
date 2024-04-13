@@ -17139,3 +17139,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:05:07] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.9.0.tar.gz]
 [2024-04-13 19:05:07] INFO root fetch - main [MainThread]: End processing [bellek]: success
 [2024-04-13 19:05:07] INFO root fetch - main [MainThread]: Store serial: [22753304]
+[2024-04-13 19:07:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753304]
+[2024-04-13 19:07:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 19:07:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: annexremote
+[2024-04-13 19:07:16] INFO root fetch - processPackages [annexremote]: New version: [1.6.5] Old Version: [1.6.4]
+[2024-04-13 19:07:16] INFO root fetch - processPackages [annexremote]: Downloading https://files.pythonhosted.org/packages/30/a8/c2bd70b26edbb815cb8180344a7dd88ba9da5124b02b4434ddb25e0cc6d1/annexremote-1.6.4.tar.gz
+[2024-04-13 19:07:16] INFO root fetch - processPackages [annexremote]: Downloading https://files.pythonhosted.org/packages/ae/a7/103ec87b5400583be13e861bec8fb1a9fdc237016aa372bc46cade987df0/annexremote-1.6.5.tar.gz
+[2024-04-13 19:07:17] INFO root fetch - processPackages [annexremote]: executing diffoscope
+[2024-04-13 19:07:17] INFO root fetch - processPackages [annexremote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/annexremote-1.6.4.tar.gz tmp/annexremote-1.6.5.tar.gz --markdown 20240413/a/annexremote/1.6.4-1.6.5/README.md --exclude *.pyd
+[2024-04-13 19:07:17] INFO root fetch - processPackages [annexremote]: Remove: archive file [/home/abi/fetcher/tmp/annexremote-1.6.4.tar.gz]
+[2024-04-13 19:07:17] INFO root fetch - processPackages [annexremote]: Remove: archive file [/home/abi/fetcher/tmp/annexremote-1.6.5.tar.gz]
+[2024-04-13 19:07:17] INFO root fetch - main [MainThread]: End processing [annexremote]: success
+[2024-04-13 19:07:17] INFO root fetch - main [MainThread]: Store serial: [22753307]
