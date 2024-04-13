@@ -8567,3 +8567,15 @@
 [2024-04-13 07:48:27] INFO root fetch - processPackages [pulumi-confluentcloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_confluentcloud-1.9.0a1675887560.tar.gz]
 [2024-04-13 07:48:27] INFO root fetch - main [MainThread]: End processing [pulumi-confluentcloud]: success
 [2024-04-13 07:48:27] INFO root fetch - main [MainThread]: Store serial: [22749703]
+[2024-04-13 07:50:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749703]
+[2024-04-13 07:50:36] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 07:50:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: firestore-wrapper
+[2024-04-13 07:50:36] INFO root fetch - processPackages [firestore-wrapper]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-04-13 07:50:36] INFO root fetch - processPackages [firestore-wrapper]: Downloading https://files.pythonhosted.org/packages/d8/42/b7929673e8da02e09694704fc242d73af8da44475f8c2b30e58116e1150f/firestore_wrapper-0.3.3.tar.gz
+[2024-04-13 07:50:37] INFO root fetch - processPackages [firestore-wrapper]: Downloading https://files.pythonhosted.org/packages/c3/ca/7e2503eb4e5424e59cb8e21a3161692db5ba7fb8fa3ec4df6f237dce8993/firestore_wrapper-0.3.4.tar.gz
+[2024-04-13 07:50:37] INFO root fetch - processPackages [firestore-wrapper]: executing diffoscope
+[2024-04-13 07:50:37] INFO root fetch - processPackages [firestore-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firestore_wrapper-0.3.3.tar.gz tmp/firestore_wrapper-0.3.4.tar.gz --markdown 20240413/f/firestore-wrapper/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-04-13 07:50:38] INFO root fetch - processPackages [firestore-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/firestore_wrapper-0.3.3.tar.gz]
+[2024-04-13 07:50:38] INFO root fetch - processPackages [firestore-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/firestore_wrapper-0.3.4.tar.gz]
+[2024-04-13 07:50:38] INFO root fetch - main [MainThread]: End processing [firestore-wrapper]: success
+[2024-04-13 07:50:38] INFO root fetch - main [MainThread]: Store serial: [22749706]
