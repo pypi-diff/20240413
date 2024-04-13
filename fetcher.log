@@ -18536,3 +18536,17 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 20:33:24] INFO root fetch - processPackages [web-sand]: Remove: archive file [/home/abi/fetcher/tmp/web_sand-4.1.0.tar.gz]
 [2024-04-13 20:33:24] INFO root fetch - main [MainThread]: End processing [web-sand]: success
 [2024-04-13 20:33:24] INFO root fetch - main [MainThread]: Store serial: [22753977]
+[2024-04-13 20:35:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753977]
+[2024-04-13 20:35:33] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 20:37:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753977]
+[2024-04-13 20:37:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 20:37:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: whishow
+[2024-04-13 20:37:38] INFO root fetch - processPackages [whishow]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-13 20:37:38] INFO root fetch - processPackages [whishow]: Downloading https://files.pythonhosted.org/packages/f2/b7/a1f5d247cbd55ca7046c014fe5ac2c4ff585a4110e907280ce6a3e78795e/whishow-0.2.0-py2.py3-none-any.whl
+[2024-04-13 20:37:39] INFO root fetch - processPackages [whishow]: Downloading https://files.pythonhosted.org/packages/20/32/48067081f91ab8a2f54e8a93ed0d4e8a8dc32397dff8fda7afde54dce25f/whishow-0.3.0-py2.py3-none-any.whl
+[2024-04-13 20:37:39] INFO root fetch - processPackages [whishow]: executing diffoscope
+[2024-04-13 20:37:39] INFO root fetch - processPackages [whishow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whishow-0.2.0-py2.py3-none-any.whl.zip tmp/whishow-0.3.0-py2.py3-none-any.whl.zip --markdown 20240413/w/whishow/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-13 20:37:39] INFO root fetch - processPackages [whishow]: Remove: archive file [/home/abi/fetcher/tmp/whishow-0.2.0-py2.py3-none-any.whl.zip]
+[2024-04-13 20:37:39] INFO root fetch - processPackages [whishow]: Remove: archive file [/home/abi/fetcher/tmp/whishow-0.3.0-py2.py3-none-any.whl.zip]
+[2024-04-13 20:37:39] INFO root fetch - main [MainThread]: End processing [whishow]: success
+[2024-04-13 20:37:39] INFO root fetch - main [MainThread]: Store serial: [22753980]
