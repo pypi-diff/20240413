@@ -18782,3 +18782,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 20:59:16] INFO root fetch - processPackages [restx]: Remove: archive file [/home/abi/fetcher/tmp/restx-0.1.5.tar.gz]
 [2024-04-13 20:59:16] INFO root fetch - main [MainThread]: End processing [restx]: success
 [2024-04-13 20:59:16] INFO root fetch - main [MainThread]: Store serial: [22754089]
+[2024-04-13 21:01:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754089]
+[2024-04-13 21:01:24] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 21:01:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: efriser
+[2024-04-13 21:01:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fftvis
+[2024-04-13 21:01:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zfit-physics
+[2024-04-13 21:01:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dblcsgen
+[2024-04-13 21:01:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: invest-guard
+[2024-04-13 21:01:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cook-builder
+[2024-04-13 21:01:24] INFO root fetch - processPackages [cook-builder]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 21:01:24] INFO root fetch - processPackages [efriser]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-13 21:01:24] INFO root fetch - processPackages [invest-guard]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-13 21:01:24] INFO root fetch - processPackages [cook-builder]: Downloading https://files.pythonhosted.org/packages/90/48/e60b810900740b23e5e2a01014a75caed14b8717f641ba356faa96490f96/cook_builder-0.0.8.tar.gz
+[2024-04-13 21:01:24] INFO root fetch - processPackages [efriser]: Downloading https://files.pythonhosted.org/packages/40/68/526eee92f636d784ede9e770481ec1e8838d0d4da0f4c860393d6c81fad9/efriser-0.1.2.tar.gz
+[2024-04-13 21:01:24] WARNING root fetch - processPackages [fftvis]: Skipping, unable to determine old version
+[2024-04-13 21:01:24] INFO root fetch - main [MainThread]: End processing [fftvis] error
+[2024-04-13 21:01:24] WARNING root fetch - processPackages [dblcsgen]: Skipping, unable to determine old version
+[2024-04-13 21:01:24] INFO root fetch - main [MainThread]: End processing [dblcsgen] error
+[2024-04-13 21:01:24] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/f2/9b/b0f4962f5114df771cf98e6a8b7ace7a816fada37b37a17ad3a029ab3aa9/invest-guard-0.1.3.tar.gz
+[2024-04-13 21:01:24] INFO root fetch - processPackages [zfit-physics]: New version: [0.7.0] Old Version: [0.6.1]
+[2024-04-13 21:01:24] INFO root fetch - processPackages [cook-builder]: Downloading https://files.pythonhosted.org/packages/ff/e9/311eeaaa72111ff06947896c84483da3c3cd7076d036c10ed86c16e93cc9/cook_builder-0.0.9.tar.gz
+[2024-04-13 21:01:24] INFO root fetch - processPackages [zfit-physics]: Downloading https://files.pythonhosted.org/packages/bb/47/eef9a1204e42d157a0a0f2c8e71017a8f5a2dc471f4199fb9bc812eddc79/zfit_physics-0.6.1.tar.gz
+[2024-04-13 21:01:24] INFO root fetch - processPackages [efriser]: Downloading https://files.pythonhosted.org/packages/1c/5f/746dcad9b027f777f41d13e81da550b09f67eb74a7dfca6cc44450ca8edd/efriser-0.1.3.tar.gz
+[2024-04-13 21:01:24] INFO root fetch - processPackages [cook-builder]: executing diffoscope
+[2024-04-13 21:01:24] INFO root fetch - processPackages [cook-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cook_builder-0.0.8.tar.gz tmp/cook_builder-0.0.9.tar.gz --markdown 20240413/c/cook-builder/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 21:01:24] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/0f/74/84201ce83323201b040d2eab8fb9848ca96d419bed135c8004d59be5e81a/invest-guard-0.1.4.tar.gz
+[2024-04-13 21:01:25] INFO root fetch - processPackages [efriser]: executing diffoscope
+[2024-04-13 21:01:25] INFO root fetch - processPackages [efriser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/efriser-0.1.2.tar.gz tmp/efriser-0.1.3.tar.gz --markdown 20240413/e/efriser/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-13 21:01:25] INFO root fetch - processPackages [invest-guard]: executing diffoscope
+[2024-04-13 21:01:25] INFO root fetch - processPackages [invest-guard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invest-guard-0.1.3.tar.gz tmp/invest-guard-0.1.4.tar.gz --markdown 20240413/i/invest-guard/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-13 21:01:25] INFO root fetch - processPackages [zfit-physics]: Downloading https://files.pythonhosted.org/packages/22/76/6227f5fce65b9e4df6d9e773ccb670369f74e2b818224fe09b1c387fa897/zfit_physics-0.7.0.tar.gz
+[2024-04-13 21:01:25] INFO root fetch - processPackages [zfit-physics]: executing diffoscope
+[2024-04-13 21:01:25] INFO root fetch - processPackages [zfit-physics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zfit_physics-0.6.1.tar.gz tmp/zfit_physics-0.7.0.tar.gz --markdown 20240413/z/zfit-physics/0.6.1-0.7.0/README.md --exclude *.pyd
+[2024-04-13 21:01:25] INFO root fetch - processPackages [efriser]: Remove: archive file [/home/abi/fetcher/tmp/efriser-0.1.2.tar.gz]
+[2024-04-13 21:01:25] INFO root fetch - processPackages [efriser]: Remove: archive file [/home/abi/fetcher/tmp/efriser-0.1.3.tar.gz]
+[2024-04-13 21:01:25] INFO root fetch - main [MainThread]: End processing [efriser]: success
+[2024-04-13 21:01:25] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest-guard-0.1.3.tar.gz]
+[2024-04-13 21:01:25] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest-guard-0.1.4.tar.gz]
+[2024-04-13 21:01:25] INFO root fetch - main [MainThread]: End processing [invest-guard]: success
+[2024-04-13 21:01:25] INFO root fetch - processPackages [cook-builder]: Remove: archive file [/home/abi/fetcher/tmp/cook_builder-0.0.8.tar.gz]
+[2024-04-13 21:01:25] INFO root fetch - processPackages [cook-builder]: Remove: archive file [/home/abi/fetcher/tmp/cook_builder-0.0.9.tar.gz]
+[2024-04-13 21:01:25] INFO root fetch - main [MainThread]: End processing [cook-builder]: success
+[2024-04-13 21:01:26] INFO root fetch - processPackages [zfit-physics]: Remove: archive file [/home/abi/fetcher/tmp/zfit_physics-0.6.1.tar.gz]
+[2024-04-13 21:01:26] INFO root fetch - processPackages [zfit-physics]: Remove: archive file [/home/abi/fetcher/tmp/zfit_physics-0.7.0.tar.gz]
+[2024-04-13 21:01:26] INFO root fetch - main [MainThread]: End processing [zfit-physics]: success
+[2024-04-13 21:01:26] INFO root fetch - main [MainThread]: Store serial: [22754111]
