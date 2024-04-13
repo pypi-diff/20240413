@@ -6428,3 +6428,29 @@
 [2024-04-13 03:17:35] INFO root fetch - processPackages [ntgcalls]: Remove: archive file [/home/abi/fetcher/tmp/ntgcalls-1.2.0b9.tar.gz]
 [2024-04-13 03:17:35] INFO root fetch - main [MainThread]: End processing [ntgcalls]: success
 [2024-04-13 03:17:35] INFO root fetch - main [MainThread]: Store serial: [22748692]
+[2024-04-13 03:19:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748692]
+[2024-04-13 03:19:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 03:19:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onediff
+[2024-04-13 03:19:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onediffx
+[2024-04-13 03:19:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pt-br-verbs-lemmatizer
+[2024-04-13 03:19:44] INFO root fetch - processPackages [pt-br-verbs-lemmatizer]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-13 03:19:44] INFO root fetch - processPackages [onediff]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-13 03:19:44] INFO root fetch - processPackages [onediffx]: New version: [0.13.0.dev202404130117] Old Version: [0.13.0.dev202404120125]
+[2024-04-13 03:19:44] INFO root fetch - processPackages [pt-br-verbs-lemmatizer]: Downloading https://files.pythonhosted.org/packages/38/3d/bd137a5203f7328bf70002f0378338410f34f9343309ea5ab1b1149276ef/pt_br_verbs_lemmatizer-0.1.4.tar.gz
+[2024-04-13 03:19:44] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/b5/b9/374ebf1306993c83fd9b2b7bc584983456da7a4dda0cd79e923e85476450/onediff-0.8.0-py3-none-any.whl
+[2024-04-13 03:19:44] WARNING root fetch - processPackages [pt-br-verbs-lemmatizer]: Skipping package: exceeds size limit 11716330>=10485760
+[2024-04-13 03:19:44] INFO root fetch - main [MainThread]: End processing [pt-br-verbs-lemmatizer] error
+[2024-04-13 03:19:44] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/f9/79/d9e914702f81fb7e071f350e35fc318928b9cf6633272d0a727070d482b7/onediffx-0.13.0.dev202404120125.tar.gz
+[2024-04-13 03:19:44] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/ef/35/e11ef77b4ecbfca20f6a6f4e859e3366285f109bbe200a8a82c62b8db14d/onediff-0.9.0-py3-none-any.whl
+[2024-04-13 03:19:45] INFO root fetch - processPackages [onediff]: executing diffoscope
+[2024-04-13 03:19:45] INFO root fetch - processPackages [onediff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediff-0.8.0-py3-none-any.whl.zip tmp/onediff-0.9.0-py3-none-any.whl.zip --markdown 20240413/o/onediff/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-13 03:19:45] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/3e/ae/f1b5f9ff1e7abf86069b937296c80a2c944e5526a6da91839ff6d0a1812f/onediffx-0.13.0.dev202404130117.tar.gz
+[2024-04-13 03:19:45] INFO root fetch - processPackages [onediffx]: executing diffoscope
+[2024-04-13 03:19:45] INFO root fetch - processPackages [onediffx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediffx-0.13.0.dev202404120125.tar.gz tmp/onediffx-0.13.0.dev202404130117.tar.gz --markdown 20240413/o/onediffx/0.13.0.dev202404120125-0.13.0.dev202404130117/README.md --exclude *.pyd
+[2024-04-13 03:19:45] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-0.8.0-py3-none-any.whl.zip]
+[2024-04-13 03:19:45] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-0.9.0-py3-none-any.whl.zip]
+[2024-04-13 03:19:45] INFO root fetch - main [MainThread]: End processing [onediff]: success
+[2024-04-13 03:19:45] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-0.13.0.dev202404120125.tar.gz]
+[2024-04-13 03:19:45] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-0.13.0.dev202404130117.tar.gz]
+[2024-04-13 03:19:45] INFO root fetch - main [MainThread]: End processing [onediffx]: success
+[2024-04-13 03:19:45] INFO root fetch - main [MainThread]: Store serial: [22748774]
