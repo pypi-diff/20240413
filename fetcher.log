@@ -8045,3 +8045,11 @@
 [2024-04-13 06:54:21] INFO root fetch - processPackages [geotils]: Remove: archive file [/home/abi/fetcher/tmp/geotils-0.1.9.post3.tar.gz]
 [2024-04-13 06:54:21] INFO root fetch - main [MainThread]: End processing [geotils]: success
 [2024-04-13 06:54:21] INFO root fetch - main [MainThread]: Store serial: [22749532]
+[2024-04-13 06:56:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749532]
+[2024-04-13 06:56:29] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 06:58:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749532]
+[2024-04-13 06:58:35] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 06:58:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: masspds2024
+[2024-04-13 06:58:35] WARNING root fetch - processPackages [masspds2024]: Skipping, unable to determine old version
+[2024-04-13 06:58:35] INFO root fetch - main [MainThread]: End processing [masspds2024] error
+[2024-04-13 06:58:35] INFO root fetch - main [MainThread]: Store serial: [22749535]
