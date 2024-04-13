@@ -11520,3 +11520,24 @@
 [2024-04-13 11:19:02] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221130.tar.gz]
 [2024-04-13 11:19:02] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
 [2024-04-13 11:19:02] INFO root fetch - main [MainThread]: Store serial: [22750849]
+[2024-04-13 11:21:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750849]
+[2024-04-13 11:21:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 11:21:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: persona_ai
+[2024-04-13 11:21:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: function-schema
+[2024-04-13 11:21:10] INFO root fetch - processPackages [persona_ai]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-13 11:21:11] INFO root fetch - processPackages [persona_ai]: Downloading https://files.pythonhosted.org/packages/67/e5/a46d82179bbd9020057d2c69063dcd261f6df3adb52f0c1068bab9930423/persona_ai-0.1.7.tar.gz
+[2024-04-13 11:21:11] INFO root fetch - processPackages [function-schema]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-04-13 11:21:11] INFO root fetch - processPackages [function-schema]: Downloading https://files.pythonhosted.org/packages/dd/45/001551934740778224669180a06bdef53437e16907126d2faec636711c17/function_schema-0.3.3.tar.gz
+[2024-04-13 11:21:11] INFO root fetch - processPackages [persona_ai]: Downloading https://files.pythonhosted.org/packages/e2/ea/d523b831a0a5c38ec09c7d87415fb4a638ad26cde84870f76503f7711f56/persona_ai-0.1.8.tar.gz
+[2024-04-13 11:21:11] INFO root fetch - processPackages [persona_ai]: executing diffoscope
+[2024-04-13 11:21:11] INFO root fetch - processPackages [persona_ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/persona_ai-0.1.7.tar.gz tmp/persona_ai-0.1.8.tar.gz --markdown 20240413/p/persona_ai/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-13 11:21:11] INFO root fetch - processPackages [function-schema]: Downloading https://files.pythonhosted.org/packages/42/17/00ea1ad99c97b96c3b25a2c3accc7288ced382113ba503fab9074a4ba653/function_schema-0.3.4.tar.gz
+[2024-04-13 11:21:11] INFO root fetch - processPackages [function-schema]: executing diffoscope
+[2024-04-13 11:21:11] INFO root fetch - processPackages [function-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/function_schema-0.3.3.tar.gz tmp/function_schema-0.3.4.tar.gz --markdown 20240413/f/function-schema/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-04-13 11:21:12] INFO root fetch - processPackages [persona_ai]: Remove: archive file [/home/abi/fetcher/tmp/persona_ai-0.1.7.tar.gz]
+[2024-04-13 11:21:12] INFO root fetch - processPackages [persona_ai]: Remove: archive file [/home/abi/fetcher/tmp/persona_ai-0.1.8.tar.gz]
+[2024-04-13 11:21:12] INFO root fetch - main [MainThread]: End processing [persona_ai]: success
+[2024-04-13 11:21:12] INFO root fetch - processPackages [function-schema]: Remove: archive file [/home/abi/fetcher/tmp/function_schema-0.3.3.tar.gz]
+[2024-04-13 11:21:12] INFO root fetch - processPackages [function-schema]: Remove: archive file [/home/abi/fetcher/tmp/function_schema-0.3.4.tar.gz]
+[2024-04-13 11:21:12] INFO root fetch - main [MainThread]: End processing [function-schema]: success
+[2024-04-13 11:21:12] INFO root fetch - main [MainThread]: Store serial: [22750857]
