@@ -7693,3 +7693,15 @@
 [2024-04-13 06:15:19] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
 [2024-04-13 06:15:19] INFO root fetch - main [MainThread]: End processing [litellm]: success
 [2024-04-13 06:15:19] INFO root fetch - main [MainThread]: Store serial: [22749347]
+[2024-04-13 06:17:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749347]
+[2024-04-13 06:17:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 06:17:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nornir-napalm
+[2024-04-13 06:17:29] INFO root fetch - processPackages [nornir-napalm]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-13 06:17:29] INFO root fetch - processPackages [nornir-napalm]: Downloading https://files.pythonhosted.org/packages/fd/26/c981802445765073b9e2effd32816b1015b3f281adcdd193d5d0b36a20cb/nornir_napalm-0.4.0.tar.gz
+[2024-04-13 06:17:29] INFO root fetch - processPackages [nornir-napalm]: Downloading https://files.pythonhosted.org/packages/d3/84/2f8a21579d23fcef92f217b72b828c7af6d3004791c5286696f267e715e7/nornir_napalm-0.5.0.tar.gz
+[2024-04-13 06:17:29] INFO root fetch - processPackages [nornir-napalm]: executing diffoscope
+[2024-04-13 06:17:29] INFO root fetch - processPackages [nornir-napalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nornir_napalm-0.4.0.tar.gz tmp/nornir_napalm-0.5.0.tar.gz --markdown 20240413/n/nornir-napalm/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-13 06:17:30] INFO root fetch - processPackages [nornir-napalm]: Remove: archive file [/home/abi/fetcher/tmp/nornir_napalm-0.4.0.tar.gz]
+[2024-04-13 06:17:30] INFO root fetch - processPackages [nornir-napalm]: Remove: archive file [/home/abi/fetcher/tmp/nornir_napalm-0.5.0.tar.gz]
+[2024-04-13 06:17:30] INFO root fetch - main [MainThread]: End processing [nornir-napalm]: success
+[2024-04-13 06:17:30] INFO root fetch - main [MainThread]: Store serial: [22749351]
