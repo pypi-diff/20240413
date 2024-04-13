@@ -11875,3 +11875,24 @@
 [2024-04-13 11:55:59] INFO root fetch - processPackages [pyinstaller]: Remove: archive file [/home/abi/fetcher/tmp/pyinstaller-6.6.0.tar.gz]
 [2024-04-13 11:55:59] INFO root fetch - main [MainThread]: End processing [pyinstaller]: success
 [2024-04-13 11:56:00] INFO root fetch - main [MainThread]: Store serial: [22750998]
+[2024-04-13 11:58:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750998]
+[2024-04-13 11:58:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 11:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: WPEMPhase
+[2024-04-13 11:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: postgrest
+[2024-04-13 11:58:15] INFO root fetch - processPackages [WPEMPhase]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-13 11:58:15] INFO root fetch - processPackages [WPEMPhase]: Downloading https://files.pythonhosted.org/packages/61/99/13eb37b288f1ea07c6e853126a737e32a132289124d6ea743bf98ae0c909/WPEMPhase-0.0.4.tar.gz
+[2024-04-13 11:58:15] INFO root fetch - processPackages [postgrest]: New version: [0.16.3] Old Version: [0.16.2]
+[2024-04-13 11:58:15] INFO root fetch - processPackages [postgrest]: Downloading https://files.pythonhosted.org/packages/51/1e/a164bba514b514124f0eb5669d810a13f80705a0bb50968eb3c23bed713a/postgrest-0.16.2.tar.gz
+[2024-04-13 11:58:15] INFO root fetch - processPackages [WPEMPhase]: Downloading https://files.pythonhosted.org/packages/a4/36/a9f692a998d7bb6c79fa81d7e706954848522f904433e5376c4587937e5a/WPEMPhase-0.0.5.tar.gz
+[2024-04-13 11:58:15] INFO root fetch - processPackages [WPEMPhase]: executing diffoscope
+[2024-04-13 11:58:15] INFO root fetch - processPackages [WPEMPhase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/WPEMPhase-0.0.4.tar.gz tmp/WPEMPhase-0.0.5.tar.gz --markdown 20240413/W/WPEMPhase/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-13 11:58:16] INFO root fetch - processPackages [postgrest]: Downloading https://files.pythonhosted.org/packages/fb/9d/543c8a38920a55efffde40b29c7fd833629bd631ce7f6f3079c51ad56f2d/postgrest-0.16.3.tar.gz
+[2024-04-13 11:58:16] INFO root fetch - processPackages [postgrest]: executing diffoscope
+[2024-04-13 11:58:16] INFO root fetch - processPackages [postgrest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/postgrest-0.16.2.tar.gz tmp/postgrest-0.16.3.tar.gz --markdown 20240413/p/postgrest/0.16.2-0.16.3/README.md --exclude *.pyd
+[2024-04-13 11:58:16] INFO root fetch - processPackages [WPEMPhase]: Remove: archive file [/home/abi/fetcher/tmp/WPEMPhase-0.0.4.tar.gz]
+[2024-04-13 11:58:16] INFO root fetch - processPackages [WPEMPhase]: Remove: archive file [/home/abi/fetcher/tmp/WPEMPhase-0.0.5.tar.gz]
+[2024-04-13 11:58:16] INFO root fetch - main [MainThread]: End processing [WPEMPhase]: success
+[2024-04-13 11:58:17] INFO root fetch - processPackages [postgrest]: Remove: archive file [/home/abi/fetcher/tmp/postgrest-0.16.2.tar.gz]
+[2024-04-13 11:58:17] INFO root fetch - processPackages [postgrest]: Remove: archive file [/home/abi/fetcher/tmp/postgrest-0.16.3.tar.gz]
+[2024-04-13 11:58:17] INFO root fetch - main [MainThread]: End processing [postgrest]: success
+[2024-04-13 11:58:17] INFO root fetch - main [MainThread]: Store serial: [22751005]
