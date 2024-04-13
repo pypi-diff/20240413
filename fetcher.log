@@ -11024,3 +11024,27 @@
 [2024-04-13 10:41:54] WARNING root fetch - processPackages [sherpa-onnx]: Skipping package: exceeds size limit 16573723>=10485760
 [2024-04-13 10:41:54] INFO root fetch - main [MainThread]: End processing [sherpa-onnx] error
 [2024-04-13 10:41:54] INFO root fetch - main [MainThread]: Store serial: [22750622]
+[2024-04-13 10:43:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750622]
+[2024-04-13 10:44:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 10:44:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AgentlyCmd
+[2024-04-13 10:44:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: diskinfo
+[2024-04-13 10:44:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: speech_user_interface
+[2024-04-13 10:44:03] INFO root fetch - processPackages [speech_user_interface]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 10:44:03] INFO root fetch - processPackages [speech_user_interface]: Downloading https://files.pythonhosted.org/packages/97/bf/c7dfece81eb0a124cfa9feb33850aade26fa06da0334d6f84ad80c8ce2cf/speech_user_interface-0.1.8.tar.gz
+[2024-04-13 10:44:03] WARNING root fetch - processPackages [AgentlyCmd]: Skipping, unable to determine old version
+[2024-04-13 10:44:03] INFO root fetch - main [MainThread]: End processing [AgentlyCmd] error
+[2024-04-13 10:44:03] INFO root fetch - processPackages [diskinfo]: New version: [3.1.2] Old Version: [3.1.1]
+[2024-04-13 10:44:03] INFO root fetch - processPackages [diskinfo]: Downloading https://files.pythonhosted.org/packages/54/b9/5855efe6424fc4373060c75c3d1f12b4bc06981726ec5b977815e8ba6b6c/diskinfo-3.1.1.tar.gz
+[2024-04-13 10:44:03] INFO root fetch - processPackages [speech_user_interface]: Downloading https://files.pythonhosted.org/packages/72/62/6d72986e4b3fcf8105225d36d3b4d0e6a4db4f4a60dda50b86a77e06cd68/speech_user_interface-0.1.9.tar.gz
+[2024-04-13 10:44:03] INFO root fetch - processPackages [speech_user_interface]: executing diffoscope
+[2024-04-13 10:44:03] INFO root fetch - processPackages [speech_user_interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speech_user_interface-0.1.8.tar.gz tmp/speech_user_interface-0.1.9.tar.gz --markdown 20240413/s/speech_user_interface/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 10:44:04] INFO root fetch - processPackages [diskinfo]: Downloading https://files.pythonhosted.org/packages/6c/55/eb47933e79307ab798accd684d70c5ad223f60719cce8e7dcb53e513da5d/diskinfo-3.1.2.tar.gz
+[2024-04-13 10:44:04] INFO root fetch - processPackages [diskinfo]: executing diffoscope
+[2024-04-13 10:44:04] INFO root fetch - processPackages [diskinfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diskinfo-3.1.1.tar.gz tmp/diskinfo-3.1.2.tar.gz --markdown 20240413/d/diskinfo/3.1.1-3.1.2/README.md --exclude *.pyd
+[2024-04-13 10:44:04] INFO root fetch - processPackages [speech_user_interface]: Remove: archive file [/home/abi/fetcher/tmp/speech_user_interface-0.1.8.tar.gz]
+[2024-04-13 10:44:04] INFO root fetch - processPackages [speech_user_interface]: Remove: archive file [/home/abi/fetcher/tmp/speech_user_interface-0.1.9.tar.gz]
+[2024-04-13 10:44:04] INFO root fetch - main [MainThread]: End processing [speech_user_interface]: success
+[2024-04-13 10:44:05] INFO root fetch - processPackages [diskinfo]: Remove: archive file [/home/abi/fetcher/tmp/diskinfo-3.1.1.tar.gz]
+[2024-04-13 10:44:05] INFO root fetch - processPackages [diskinfo]: Remove: archive file [/home/abi/fetcher/tmp/diskinfo-3.1.2.tar.gz]
+[2024-04-13 10:44:05] INFO root fetch - main [MainThread]: End processing [diskinfo]: success
+[2024-04-13 10:44:05] INFO root fetch - main [MainThread]: Store serial: [22750643]
