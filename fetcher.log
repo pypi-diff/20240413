@@ -11357,3 +11357,57 @@
 [2024-04-13 11:10:19] INFO root fetch - processPackages [streamdeck-linux-gui]: Remove: archive file [/home/abi/fetcher/tmp/streamdeck_linux_gui-4.1.2.tar.gz]
 [2024-04-13 11:10:19] INFO root fetch - main [MainThread]: End processing [streamdeck-linux-gui]: success
 [2024-04-13 11:10:19] INFO root fetch - main [MainThread]: Store serial: [22750769]
+[2024-04-13 11:12:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750769]
+[2024-04-13 11:12:28] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-13 11:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-txi
+[2024-04-13 11:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mngs
+[2024-04-13 11:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AgentlyCmd
+[2024-04-13 11:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: commerce-coinbase
+[2024-04-13 11:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: persona_ai
+[2024-04-13 11:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: request_casting
+[2024-04-13 11:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: toolserve
+[2024-04-13 11:12:28] INFO root fetch - processPackages [AgentlyCmd]: New version: [0.0.0.1a4] Old Version: [0.0.0.1a3]
+[2024-04-13 11:12:28] INFO root fetch - processPackages [mngs]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-13 11:12:28] INFO root fetch - processPackages [AgentlyCmd]: Downloading https://files.pythonhosted.org/packages/89/51/b30c1b54bf0a5153cde107163112b27a75895294c58a4cd6251490538199/AgentlyCmd-0.0.0.1a3.tar.gz
+[2024-04-13 11:12:28] INFO root fetch - processPackages [request_casting]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-04-13 11:12:28] INFO root fetch - processPackages [persona_ai]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-13 11:12:28] INFO root fetch - processPackages [mngs]: Downloading https://files.pythonhosted.org/packages/80/4e/8fac64a876450f6d2a1e48cfabd203c1b41236bc12c2f0a31b7001808a95/mngs-1.3.0.tar.gz
+[2024-04-13 11:12:28] WARNING root fetch - processPackages [commerce-coinbase]: Skipping, unable to determine old version
+[2024-04-13 11:12:28] INFO root fetch - main [MainThread]: End processing [commerce-coinbase] error
+[2024-04-13 11:12:28] INFO root fetch - processPackages [py-txi]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-13 11:12:28] WARNING root fetch - processPackages [toolserve]: Skipping, unable to determine old version
+[2024-04-13 11:12:28] INFO root fetch - main [MainThread]: End processing [toolserve] error
+[2024-04-13 11:12:28] INFO root fetch - processPackages [request_casting]: Downloading https://files.pythonhosted.org/packages/d7/ca/3ac71855a98a5b281ce53989ecb43701ab85417220e663dc11daac100417/request_casting-0.6.0.tar.gz
+[2024-04-13 11:12:28] INFO root fetch - processPackages [persona_ai]: Downloading https://files.pythonhosted.org/packages/67/e5/a46d82179bbd9020057d2c69063dcd261f6df3adb52f0c1068bab9930423/persona_ai-0.1.7.tar.gz
+[2024-04-13 11:12:28] INFO root fetch - processPackages [AgentlyCmd]: Downloading https://files.pythonhosted.org/packages/19/0c/d411e5a5f0531fafe576a94a7d4fe833fcf3c046810eb4311bb085705e95/AgentlyCmd-0.0.0.1a4.tar.gz
+[2024-04-13 11:12:28] INFO root fetch - processPackages [py-txi]: Downloading https://files.pythonhosted.org/packages/79/4a/069bb136d4d2658772adf4f71033c0b1d8ad22736e8e72a54ba80fb12174/py-txi-0.5.0.tar.gz
+[2024-04-13 11:12:29] INFO root fetch - processPackages [AgentlyCmd]: executing diffoscope
+[2024-04-13 11:12:29] INFO root fetch - processPackages [AgentlyCmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AgentlyCmd-0.0.0.1a3.tar.gz tmp/AgentlyCmd-0.0.0.1a4.tar.gz --markdown 20240413/A/AgentlyCmd/0.0.0.1a3-0.0.0.1a4/README.md --exclude *.pyd
+[2024-04-13 11:12:29] INFO root fetch - processPackages [mngs]: Downloading https://files.pythonhosted.org/packages/b6/a8/a0571c112ca16b1c875419680eb392f467a1108c3e36307eb558c4bac0d1/mngs-1.3.1.tar.gz
+[2024-04-13 11:12:29] INFO root fetch - processPackages [request_casting]: Downloading https://files.pythonhosted.org/packages/23/86/cf34f9f98b39d96e86190ea01b1d83dedc45ab9c843e4b9d01831dfa47d4/request_casting-0.7.0.tar.gz
+[2024-04-13 11:12:29] INFO root fetch - processPackages [mngs]: executing diffoscope
+[2024-04-13 11:12:29] INFO root fetch - processPackages [persona_ai]: Downloading https://files.pythonhosted.org/packages/e2/ea/d523b831a0a5c38ec09c7d87415fb4a638ad26cde84870f76503f7711f56/persona_ai-0.1.8.tar.gz
+[2024-04-13 11:12:29] INFO root fetch - processPackages [mngs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mngs-1.3.0.tar.gz tmp/mngs-1.3.1.tar.gz --markdown 20240413/m/mngs/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-04-13 11:12:29] INFO root fetch - processPackages [py-txi]: Downloading https://files.pythonhosted.org/packages/ae/b4/0335b9f1a819e26fcc8ac42cd27c868ada22047140a40eab19dd6dbf8849/py-txi-0.5.1.tar.gz
+[2024-04-13 11:12:29] INFO root fetch - processPackages [request_casting]: executing diffoscope
+[2024-04-13 11:12:29] INFO root fetch - processPackages [request_casting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/request_casting-0.6.0.tar.gz tmp/request_casting-0.7.0.tar.gz --markdown 20240413/r/request_casting/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-04-13 11:12:29] INFO root fetch - processPackages [persona_ai]: executing diffoscope
+[2024-04-13 11:12:29] INFO root fetch - processPackages [persona_ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/persona_ai-0.1.7.tar.gz tmp/persona_ai-0.1.8.tar.gz --markdown 20240413/p/persona_ai/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-13 11:12:29] INFO root fetch - processPackages [py-txi]: executing diffoscope
+[2024-04-13 11:12:29] INFO root fetch - processPackages [py-txi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-txi-0.5.0.tar.gz tmp/py-txi-0.5.1.tar.gz --markdown 20240413/p/py-txi/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-13 11:12:29] INFO root fetch - processPackages [AgentlyCmd]: Remove: archive file [/home/abi/fetcher/tmp/AgentlyCmd-0.0.0.1a3.tar.gz]
+[2024-04-13 11:12:29] INFO root fetch - processPackages [AgentlyCmd]: Remove: archive file [/home/abi/fetcher/tmp/AgentlyCmd-0.0.0.1a4.tar.gz]
+[2024-04-13 11:12:29] INFO root fetch - main [MainThread]: End processing [AgentlyCmd]: success
+[2024-04-13 11:12:29] INFO root fetch - processPackages [request_casting]: Remove: archive file [/home/abi/fetcher/tmp/request_casting-0.6.0.tar.gz]
+[2024-04-13 11:12:29] INFO root fetch - processPackages [request_casting]: Remove: archive file [/home/abi/fetcher/tmp/request_casting-0.7.0.tar.gz]
+[2024-04-13 11:12:29] INFO root fetch - main [MainThread]: End processing [request_casting]: success
+[2024-04-13 11:12:30] INFO root fetch - processPackages [py-txi]: Remove: archive file [/home/abi/fetcher/tmp/py-txi-0.5.0.tar.gz]
+[2024-04-13 11:12:30] INFO root fetch - processPackages [py-txi]: Remove: archive file [/home/abi/fetcher/tmp/py-txi-0.5.1.tar.gz]
+[2024-04-13 11:12:30] INFO root fetch - main [MainThread]: End processing [py-txi]: success
+[2024-04-13 11:12:30] INFO root fetch - processPackages [persona_ai]: Remove: archive file [/home/abi/fetcher/tmp/persona_ai-0.1.7.tar.gz]
+[2024-04-13 11:12:30] INFO root fetch - processPackages [persona_ai]: Remove: archive file [/home/abi/fetcher/tmp/persona_ai-0.1.8.tar.gz]
+[2024-04-13 11:12:30] INFO root fetch - main [MainThread]: End processing [persona_ai]: success
+[2024-04-13 11:12:30] INFO root fetch - processPackages [mngs]: Remove: archive file [/home/abi/fetcher/tmp/mngs-1.3.0.tar.gz]
+[2024-04-13 11:12:30] INFO root fetch - processPackages [mngs]: Remove: archive file [/home/abi/fetcher/tmp/mngs-1.3.1.tar.gz]
+[2024-04-13 11:12:30] INFO root fetch - main [MainThread]: End processing [mngs]: success
+[2024-04-13 11:12:30] INFO root fetch - main [MainThread]: Store serial: [22750806]
