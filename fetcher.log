@@ -12464,3 +12464,51 @@
 [2024-04-13 12:48:20] INFO root fetch - processPackages [crypto_plus]: Remove: archive file [/home/abi/fetcher/tmp/crypto_plus-1.0.3.tar.gz]
 [2024-04-13 12:48:20] INFO root fetch - main [MainThread]: End processing [crypto_plus]: success
 [2024-04-13 12:48:20] INFO root fetch - main [MainThread]: Store serial: [22751205]
+[2024-04-13 12:50:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751205]
+[2024-04-13 12:50:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 12:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yfinance-cache
+[2024-04-13 12:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-l10n-es-igic
+[2024-04-13 12:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: isbtchot
+[2024-04-13 12:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: OSCR-django-client
+[2024-04-13 12:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: test-RAG-X
+[2024-04-13 12:50:29] INFO root fetch - processPackages [yfinance-cache]: New version: [0.6.0rc2] Old Version: [0.6.0rc1]
+[2024-04-13 12:50:29] INFO root fetch - processPackages [yfinance-cache]: Downloading https://files.pythonhosted.org/packages/6c/7b/48b26e97f79d345b21b5f2750de84cea6a2e6ead44455c434b00208c369a/yfinance-cache-0.6.0rc1.tar.gz
+[2024-04-13 12:50:29] INFO root fetch - processPackages [OSCR-django-client]: New version: [2024.4b130] Old Version: [2024.3b40]
+[2024-04-13 12:50:29] INFO root fetch - processPackages [test-RAG-X]: New version: [0.2.1] Old Version: [0.1.3]
+[2024-04-13 12:50:29] INFO root fetch - processPackages [isbtchot]: New version: [1.1.0] Old Version: [1.0.5]
+[2024-04-13 12:50:29] INFO root fetch - processPackages [odoo-addon-l10n-es-igic]: New version: [16.0.1.1.0] Old Version: [16.0.1.0.0.5]
+[2024-04-13 12:50:30] INFO root fetch - processPackages [OSCR-django-client]: Downloading https://files.pythonhosted.org/packages/b8/28/bb4abf6fcaf04c306b644e26ef307312a278d9734d5780dc867276122631/OSCR-django-client-2024.3b40.tar.gz
+[2024-04-13 12:50:30] INFO root fetch - processPackages [test-RAG-X]: Downloading https://files.pythonhosted.org/packages/da/f5/1c1d6fa2cb8586aa826d2c4f5102a19205e809e3ad03071be7b0f7ec67c7/test_RAG_X-0.1.3.tar.gz
+[2024-04-13 12:50:30] INFO root fetch - processPackages [odoo-addon-l10n-es-igic]: Downloading https://files.pythonhosted.org/packages/23/e8/e75014403ea8a82a36b9873a635a5eeb51720ed77f3a3f626d3ce271c1da/odoo_addon_l10n_es_igic-16.0.1.0.0.5-py3-none-any.whl
+[2024-04-13 12:50:30] INFO root fetch - processPackages [isbtchot]: Downloading https://files.pythonhosted.org/packages/81/c8/9926625cf2ff973e59abcb21020756d12df0b26b0e763deffa90a4826cdc/isbtchot-1.0.5.tar.gz
+[2024-04-13 12:50:30] INFO root fetch - processPackages [yfinance-cache]: Downloading https://files.pythonhosted.org/packages/96/aa/aa1ecf9728f157a8eac3dc9111450384ef6bb1d8ee2aeedf6143eed032ca/yfinance-cache-0.6.0rc2.tar.gz
+[2024-04-13 12:50:30] INFO root fetch - processPackages [yfinance-cache]: executing diffoscope
+[2024-04-13 12:50:30] INFO root fetch - processPackages [yfinance-cache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yfinance-cache-0.6.0rc1.tar.gz tmp/yfinance-cache-0.6.0rc2.tar.gz --markdown 20240413/y/yfinance-cache/0.6.0rc1-0.6.0rc2/README.md --exclude *.pyd
+[2024-04-13 12:50:30] INFO root fetch - processPackages [OSCR-django-client]: Downloading https://files.pythonhosted.org/packages/70/4b/e94fb05521ed76e1430bc26fcf849f09def2d60a5698f4fbb4ee561efb08/OSCR-django-client-2024.4b130.tar.gz
+[2024-04-13 12:50:30] INFO root fetch - processPackages [odoo-addon-l10n-es-igic]: Downloading https://files.pythonhosted.org/packages/a8/64/7dfd1ff3d04d34d742ba719a90026402586589657f0b12eaa0e504d50cf3/odoo_addon_l10n_es_igic-16.0.1.1.0-py3-none-any.whl
+[2024-04-13 12:50:30] INFO root fetch - processPackages [test-RAG-X]: Downloading https://files.pythonhosted.org/packages/ae/b4/03db5c19e554ed962f9a29984e92c5401463b36827ccda01dd5914952589/test_RAG_X-0.2.1.tar.gz
+[2024-04-13 12:50:30] INFO root fetch - processPackages [isbtchot]: Downloading https://files.pythonhosted.org/packages/5c/56/86094f99ed6fad57c7d8fb508cec5e7382ca3aeec78a2d5259f41e27a4bd/isbtchot-1.1.0.tar.gz
+[2024-04-13 12:50:30] INFO root fetch - processPackages [OSCR-django-client]: executing diffoscope
+[2024-04-13 12:50:30] INFO root fetch - processPackages [OSCR-django-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OSCR-django-client-2024.3b40.tar.gz tmp/OSCR-django-client-2024.4b130.tar.gz --markdown 20240413/O/OSCR-django-client/2024.3b40-2024.4b130/README.md --exclude *.pyd
+[2024-04-13 12:50:30] INFO root fetch - processPackages [odoo-addon-l10n-es-igic]: executing diffoscope
+[2024-04-13 12:50:30] INFO root fetch - processPackages [odoo-addon-l10n-es-igic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_es_igic-16.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_l10n_es_igic-16.0.1.1.0-py3-none-any.whl.zip --markdown 20240413/o/odoo-addon-l10n-es-igic/16.0.1.0.0.5-16.0.1.1.0/README.md --exclude *.pyd
+[2024-04-13 12:50:30] INFO root fetch - processPackages [isbtchot]: executing diffoscope
+[2024-04-13 12:50:30] INFO root fetch - processPackages [test-RAG-X]: executing diffoscope
+[2024-04-13 12:50:30] INFO root fetch - processPackages [test-RAG-X]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_RAG_X-0.1.3.tar.gz tmp/test_RAG_X-0.2.1.tar.gz --markdown 20240413/t/test-RAG-X/0.1.3-0.2.1/README.md --exclude *.pyd
+[2024-04-13 12:50:30] INFO root fetch - processPackages [isbtchot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isbtchot-1.0.5.tar.gz tmp/isbtchot-1.1.0.tar.gz --markdown 20240413/i/isbtchot/1.0.5-1.1.0/README.md --exclude *.pyd
+[2024-04-13 12:50:31] INFO root fetch - processPackages [yfinance-cache]: Remove: archive file [/home/abi/fetcher/tmp/yfinance-cache-0.6.0rc1.tar.gz]
+[2024-04-13 12:50:31] INFO root fetch - processPackages [yfinance-cache]: Remove: archive file [/home/abi/fetcher/tmp/yfinance-cache-0.6.0rc2.tar.gz]
+[2024-04-13 12:50:31] INFO root fetch - main [MainThread]: End processing [yfinance-cache]: success
+[2024-04-13 12:50:31] INFO root fetch - processPackages [OSCR-django-client]: Remove: archive file [/home/abi/fetcher/tmp/OSCR-django-client-2024.3b40.tar.gz]
+[2024-04-13 12:50:31] INFO root fetch - processPackages [OSCR-django-client]: Remove: archive file [/home/abi/fetcher/tmp/OSCR-django-client-2024.4b130.tar.gz]
+[2024-04-13 12:50:31] INFO root fetch - main [MainThread]: End processing [OSCR-django-client]: success
+[2024-04-13 12:50:31] INFO root fetch - processPackages [test-RAG-X]: Remove: archive file [/home/abi/fetcher/tmp/test_RAG_X-0.1.3.tar.gz]
+[2024-04-13 12:50:31] INFO root fetch - processPackages [test-RAG-X]: Remove: archive file [/home/abi/fetcher/tmp/test_RAG_X-0.2.1.tar.gz]
+[2024-04-13 12:50:31] INFO root fetch - main [MainThread]: End processing [test-RAG-X]: success
+[2024-04-13 12:50:31] INFO root fetch - processPackages [isbtchot]: Remove: archive file [/home/abi/fetcher/tmp/isbtchot-1.0.5.tar.gz]
+[2024-04-13 12:50:31] INFO root fetch - processPackages [isbtchot]: Remove: archive file [/home/abi/fetcher/tmp/isbtchot-1.1.0.tar.gz]
+[2024-04-13 12:50:31] INFO root fetch - main [MainThread]: End processing [isbtchot]: success
+[2024-04-13 12:50:31] INFO root fetch - processPackages [odoo-addon-l10n-es-igic]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_igic-16.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-04-13 12:50:31] INFO root fetch - processPackages [odoo-addon-l10n-es-igic]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_igic-16.0.1.1.0-py3-none-any.whl.zip]
+[2024-04-13 12:50:31] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-igic]: success
+[2024-04-13 12:50:31] INFO root fetch - main [MainThread]: Store serial: [22751218]
