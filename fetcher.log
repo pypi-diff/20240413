@@ -10100,3 +10100,60 @@
 [2024-04-13 09:31:44] INFO root fetch - processPackages [sealights-python-agent]: Remove: archive file [/home/abi/fetcher/tmp/sealights-python-agent-2.2.0.tar.gz]
 [2024-04-13 09:31:44] INFO root fetch - main [MainThread]: End processing [sealights-python-agent]: success
 [2024-04-13 09:31:44] INFO root fetch - main [MainThread]: Store serial: [22750220]
+[2024-04-13 09:33:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750220]
+[2024-04-13 09:33:53] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 09:33:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: perceval-mozilla
+[2024-04-13 09:33:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-admin-rangefilter
+[2024-04-13 09:33:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: perceval-puppet
+[2024-04-13 09:33:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: perceval-weblate
+[2024-04-13 09:33:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: perceval-opnfv
+[2024-04-13 09:33:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: BoostCLI
+[2024-04-13 09:33:53] INFO root fetch - processPackages [django-admin-rangefilter]: New version: [0.9.0] Old Version: [0.8.8]
+[2024-04-13 09:33:53] INFO root fetch - processPackages [django-admin-rangefilter]: Downloading https://files.pythonhosted.org/packages/92/62/a828470981d75676c0d3abc22823bf7ed44cc34f7d9520cb138ce58326ea/django-admin-rangefilter-0.8.8.tar.gz
+[2024-04-13 09:33:53] INFO root fetch - processPackages [perceval-opnfv]: New version: [1.0.0rc2] Old Version: [1.0.0rc1]
+[2024-04-13 09:33:53] INFO root fetch - processPackages [BoostCLI]: New version: [0.6.0] Old Version: [0.5.3]
+[2024-04-13 09:33:53] INFO root fetch - processPackages [perceval-puppet]: New version: [1.0.0rc2] Old Version: [1.0.0rc1]
+[2024-04-13 09:33:53] INFO root fetch - processPackages [perceval-weblate]: New version: [1.0.0rc2] Old Version: [1.0.0rc1]
+[2024-04-13 09:33:53] INFO root fetch - processPackages [perceval-mozilla]: New version: [1.0.0rc2] Old Version: [1.0.0rc1]
+[2024-04-13 09:33:54] INFO root fetch - processPackages [perceval-opnfv]: Downloading https://files.pythonhosted.org/packages/81/3c/37a38ee7806f245fa80104aac8d1f48840e97d84021e7e0f82c6f0020093/perceval_opnfv-1.0.0rc1.tar.gz
+[2024-04-13 09:33:54] INFO root fetch - processPackages [perceval-puppet]: Downloading https://files.pythonhosted.org/packages/ef/32/e61aac00dcbb2be77e25048370def015c585e195317ea92cf483dc6101d1/perceval_puppet-1.0.0rc1.tar.gz
+[2024-04-13 09:33:54] INFO root fetch - processPackages [perceval-mozilla]: Downloading https://files.pythonhosted.org/packages/02/62/1db8904ec9d2e4314180dc53f7fd9ece2abe6da5f9bb40dc4dd0065b654f/perceval_mozilla-1.0.0rc1.tar.gz
+[2024-04-13 09:33:54] INFO root fetch - processPackages [django-admin-rangefilter]: Downloading https://files.pythonhosted.org/packages/7d/f9/79df40d2bc4461d9badb807a90136f5652662831eebd8f2a5a87dcad005f/django-admin-rangefilter-0.9.0.tar.gz
+[2024-04-13 09:33:54] INFO root fetch - processPackages [perceval-weblate]: Downloading https://files.pythonhosted.org/packages/81/87/8bc543f18dce54e3e4c8ecbee1c8c30907cec2f902efd1e81189708a69ba/perceval_weblate-1.0.0rc1.tar.gz
+[2024-04-13 09:33:54] INFO root fetch - processPackages [BoostCLI]: Downloading https://files.pythonhosted.org/packages/dd/36/efb7a9d2dd98380aabd4af7a31a7ad785576c1968ffbd472430110a4f23c/BoostCLI-0.5.3.tar.gz
+[2024-04-13 09:33:54] INFO root fetch - processPackages [django-admin-rangefilter]: executing diffoscope
+[2024-04-13 09:33:54] INFO root fetch - processPackages [django-admin-rangefilter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-admin-rangefilter-0.8.8.tar.gz tmp/django-admin-rangefilter-0.9.0.tar.gz --markdown 20240413/d/django-admin-rangefilter/0.8.8-0.9.0/README.md --exclude *.pyd
+[2024-04-13 09:33:54] INFO root fetch - processPackages [perceval-opnfv]: Downloading https://files.pythonhosted.org/packages/b0/3d/a1834436db592451e8d24360e822b57a5e86a0d3f50def015d2ed4cfe116/perceval_opnfv-1.0.0rc2.tar.gz
+[2024-04-13 09:33:54] INFO root fetch - processPackages [perceval-puppet]: Downloading https://files.pythonhosted.org/packages/de/f8/8e69f85af2a94cb66d379bcc603a153ed1be6aaa3f9ab3465a2782e882bc/perceval_puppet-1.0.0rc2.tar.gz
+[2024-04-13 09:33:54] INFO root fetch - processPackages [perceval-weblate]: Downloading https://files.pythonhosted.org/packages/71/6c/67467db1d57342ef92f265d2b47e75f3b1928bf448d7222cece3db0d6374/perceval_weblate-1.0.0rc2.tar.gz
+[2024-04-13 09:33:54] INFO root fetch - processPackages [perceval-mozilla]: Downloading https://files.pythonhosted.org/packages/aa/18/0430e4b1c074e2bf5baed5c00255c1661c0801887606ad28f571eb50c492/perceval_mozilla-1.0.0rc2.tar.gz
+[2024-04-13 09:33:54] INFO root fetch - processPackages [BoostCLI]: Downloading https://files.pythonhosted.org/packages/a6/9f/961199131fccecf08277c2cf83b6dc61a950c9f50cab5ebef453b6396c39/BoostCLI-0.6.0.tar.gz
+[2024-04-13 09:33:54] INFO root fetch - processPackages [perceval-puppet]: executing diffoscope
+[2024-04-13 09:33:54] INFO root fetch - processPackages [perceval-puppet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/perceval_puppet-1.0.0rc1.tar.gz tmp/perceval_puppet-1.0.0rc2.tar.gz --markdown 20240413/p/perceval-puppet/1.0.0rc1-1.0.0rc2/README.md --exclude *.pyd
+[2024-04-13 09:33:54] INFO root fetch - processPackages [perceval-opnfv]: executing diffoscope
+[2024-04-13 09:33:54] INFO root fetch - processPackages [perceval-opnfv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/perceval_opnfv-1.0.0rc1.tar.gz tmp/perceval_opnfv-1.0.0rc2.tar.gz --markdown 20240413/p/perceval-opnfv/1.0.0rc1-1.0.0rc2/README.md --exclude *.pyd
+[2024-04-13 09:33:54] INFO root fetch - processPackages [perceval-weblate]: executing diffoscope
+[2024-04-13 09:33:54] INFO root fetch - processPackages [perceval-weblate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/perceval_weblate-1.0.0rc1.tar.gz tmp/perceval_weblate-1.0.0rc2.tar.gz --markdown 20240413/p/perceval-weblate/1.0.0rc1-1.0.0rc2/README.md --exclude *.pyd
+[2024-04-13 09:33:54] INFO root fetch - processPackages [perceval-mozilla]: executing diffoscope
+[2024-04-13 09:33:54] INFO root fetch - processPackages [perceval-mozilla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/perceval_mozilla-1.0.0rc1.tar.gz tmp/perceval_mozilla-1.0.0rc2.tar.gz --markdown 20240413/p/perceval-mozilla/1.0.0rc1-1.0.0rc2/README.md --exclude *.pyd
+[2024-04-13 09:33:54] INFO root fetch - processPackages [BoostCLI]: executing diffoscope
+[2024-04-13 09:33:54] INFO root fetch - processPackages [BoostCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BoostCLI-0.5.3.tar.gz tmp/BoostCLI-0.6.0.tar.gz --markdown 20240413/B/BoostCLI/0.5.3-0.6.0/README.md --exclude *.pyd
+[2024-04-13 09:33:55] INFO root fetch - processPackages [django-admin-rangefilter]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-rangefilter-0.8.8.tar.gz]
+[2024-04-13 09:33:55] INFO root fetch - processPackages [django-admin-rangefilter]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-rangefilter-0.9.0.tar.gz]
+[2024-04-13 09:33:55] INFO root fetch - main [MainThread]: End processing [django-admin-rangefilter]: success
+[2024-04-13 09:33:55] INFO root fetch - processPackages [perceval-puppet]: Remove: archive file [/home/abi/fetcher/tmp/perceval_puppet-1.0.0rc1.tar.gz]
+[2024-04-13 09:33:55] INFO root fetch - processPackages [perceval-puppet]: Remove: archive file [/home/abi/fetcher/tmp/perceval_puppet-1.0.0rc2.tar.gz]
+[2024-04-13 09:33:55] INFO root fetch - main [MainThread]: End processing [perceval-puppet]: success
+[2024-04-13 09:33:55] INFO root fetch - processPackages [perceval-weblate]: Remove: archive file [/home/abi/fetcher/tmp/perceval_weblate-1.0.0rc1.tar.gz]
+[2024-04-13 09:33:55] INFO root fetch - processPackages [perceval-weblate]: Remove: archive file [/home/abi/fetcher/tmp/perceval_weblate-1.0.0rc2.tar.gz]
+[2024-04-13 09:33:55] INFO root fetch - main [MainThread]: End processing [perceval-weblate]: success
+[2024-04-13 09:33:55] INFO root fetch - processPackages [perceval-opnfv]: Remove: archive file [/home/abi/fetcher/tmp/perceval_opnfv-1.0.0rc1.tar.gz]
+[2024-04-13 09:33:55] INFO root fetch - processPackages [perceval-opnfv]: Remove: archive file [/home/abi/fetcher/tmp/perceval_opnfv-1.0.0rc2.tar.gz]
+[2024-04-13 09:33:55] INFO root fetch - main [MainThread]: End processing [perceval-opnfv]: success
+[2024-04-13 09:33:55] INFO root fetch - processPackages [BoostCLI]: Remove: archive file [/home/abi/fetcher/tmp/BoostCLI-0.5.3.tar.gz]
+[2024-04-13 09:33:55] INFO root fetch - processPackages [BoostCLI]: Remove: archive file [/home/abi/fetcher/tmp/BoostCLI-0.6.0.tar.gz]
+[2024-04-13 09:33:55] INFO root fetch - main [MainThread]: End processing [BoostCLI]: success
+[2024-04-13 09:33:55] INFO root fetch - processPackages [perceval-mozilla]: Remove: archive file [/home/abi/fetcher/tmp/perceval_mozilla-1.0.0rc1.tar.gz]
+[2024-04-13 09:33:55] INFO root fetch - processPackages [perceval-mozilla]: Remove: archive file [/home/abi/fetcher/tmp/perceval_mozilla-1.0.0rc2.tar.gz]
+[2024-04-13 09:33:55] INFO root fetch - main [MainThread]: End processing [perceval-mozilla]: success
+[2024-04-13 09:33:55] INFO root fetch - main [MainThread]: Store serial: [22750240]
