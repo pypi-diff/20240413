@@ -11998,3 +11998,21 @@
 [2024-04-13 12:11:18] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras-nightly-2.17.0.dev2024041209.tar.gz]
 [2024-04-13 12:11:18] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
 [2024-04-13 12:11:18] INFO root fetch - main [MainThread]: Store serial: [22751052]
+[2024-04-13 12:13:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751052]
+[2024-04-13 12:13:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 12:13:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wwpdb.apps.msgmodule
+[2024-04-13 12:13:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: decorator-utils
+[2024-04-13 12:13:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: restx
+[2024-04-13 12:13:27] WARNING root fetch - processPackages [decorator-utils]: Skipping, unable to determine old version
+[2024-04-13 12:13:27] INFO root fetch - main [MainThread]: End processing [decorator-utils] error
+[2024-04-13 12:13:27] WARNING root fetch - processPackages [restx]: Skipping, unable to determine old version
+[2024-04-13 12:13:27] INFO root fetch - main [MainThread]: End processing [restx] error
+[2024-04-13 12:13:27] INFO root fetch - processPackages [wwpdb.apps.msgmodule]: New version: [0.176.1] Old Version: [0.176]
+[2024-04-13 12:13:27] INFO root fetch - processPackages [wwpdb.apps.msgmodule]: Downloading https://files.pythonhosted.org/packages/a7/b3/ead5c2f53e01c98616a1d54117404f5f1a339377b95a59df800083ccdcfd/wwpdb.apps.msgmodule-0.176.tar.gz
+[2024-04-13 12:13:27] INFO root fetch - processPackages [wwpdb.apps.msgmodule]: Downloading https://files.pythonhosted.org/packages/31/69/df23d155081503987b59fc79b04e5e3fe1a46aab50e2837662d046ecd0e8/wwpdb.apps.msgmodule-0.176.1.tar.gz
+[2024-04-13 12:13:27] INFO root fetch - processPackages [wwpdb.apps.msgmodule]: executing diffoscope
+[2024-04-13 12:13:27] INFO root fetch - processPackages [wwpdb.apps.msgmodule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.apps.msgmodule-0.176.tar.gz tmp/wwpdb.apps.msgmodule-0.176.1.tar.gz --markdown 20240413/w/wwpdb.apps.msgmodule/0.176-0.176.1/README.md --exclude *.pyd
+[2024-04-13 12:13:28] INFO root fetch - processPackages [wwpdb.apps.msgmodule]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.apps.msgmodule-0.176.tar.gz]
+[2024-04-13 12:13:28] INFO root fetch - processPackages [wwpdb.apps.msgmodule]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.apps.msgmodule-0.176.1.tar.gz]
+[2024-04-13 12:13:28] INFO root fetch - main [MainThread]: End processing [wwpdb.apps.msgmodule]: success
+[2024-04-13 12:13:28] INFO root fetch - main [MainThread]: Store serial: [22751062]
