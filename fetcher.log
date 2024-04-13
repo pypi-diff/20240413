@@ -14798,3 +14798,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 15:53:37] INFO root fetch - processPackages [maestral-qt]: Remove: archive file [/home/abi/fetcher/tmp/maestral_qt-1.9.3.dev1.tar.gz]
 [2024-04-13 15:53:37] INFO root fetch - main [MainThread]: End processing [maestral-qt]: success
 [2024-04-13 15:53:37] INFO root fetch - main [MainThread]: Store serial: [22752298]
+[2024-04-13 15:55:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752298]
+[2024-04-13 15:55:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 15:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tensordict-nightly
+[2024-04-13 15:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastdup
+[2024-04-13 15:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: notdiamond
+[2024-04-13 15:55:46] INFO root fetch - processPackages [notdiamond]: New version: [0.1.1b0] Old Version: [0.1.0b0]
+[2024-04-13 15:55:46] INFO root fetch - processPackages [notdiamond]: Downloading https://files.pythonhosted.org/packages/9f/13/dc360b281d52e4f6b9d3dc185827307c79d32569973655d332959a768590/notdiamond-0.1.0b0.tar.gz
+[2024-04-13 15:55:46] INFO root fetch - processPackages [fastdup]: New version: [1.85] Old Version: [1.121]
+[2024-04-13 15:55:46] INFO root fetch - processPackages [fastdup]: Downloading https://files.pythonhosted.org/packages/d1/16/d3aa044f31dd37384155977504c862da3bdc7164758d0649495e90e37e2e/fastdup-1.121-cp39-cp39-win_amd64.whl
+[2024-04-13 15:55:46] INFO root fetch - processPackages [notdiamond]: Downloading https://files.pythonhosted.org/packages/fc/89/131033b52e40c52edac73466511cfa18ed2fd66f8772bf9aab7a02594f4a/notdiamond-0.1.1b0.tar.gz
+[2024-04-13 15:55:46] INFO root fetch - processPackages [tensordict-nightly]: New version: [2024.4.9] Old Version: [2024.4.8]
+[2024-04-13 15:55:46] WARNING root fetch - processPackages [fastdup]: Skipping package: exceeds size limit 35490583>=10485760
+[2024-04-13 15:55:46] INFO root fetch - main [MainThread]: End processing [fastdup] error
+[2024-04-13 15:55:47] INFO root fetch - processPackages [notdiamond]: executing diffoscope
+[2024-04-13 15:55:47] INFO root fetch - processPackages [notdiamond]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notdiamond-0.1.0b0.tar.gz tmp/notdiamond-0.1.1b0.tar.gz --markdown 20240413/n/notdiamond/0.1.0b0-0.1.1b0/README.md --exclude *.pyd
+[2024-04-13 15:55:47] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/cd/1c/8579b410faa082f73f4c5e15b9f2df9564f5500baeca12f401c71c95762b/tensordict_nightly-2024.4.8-cp39-cp39-win_amd64.whl
+[2024-04-13 15:55:47] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/07/82/e5cb687b1d6b19f6d3c57c14285a0e891743c0fd72b7d62c9298fc937736/tensordict_nightly-2024.4.9-cp39-cp39-win_amd64.whl
+[2024-04-13 15:55:47] INFO root fetch - processPackages [notdiamond]: Remove: archive file [/home/abi/fetcher/tmp/notdiamond-0.1.0b0.tar.gz]
+[2024-04-13 15:55:47] INFO root fetch - processPackages [notdiamond]: Remove: archive file [/home/abi/fetcher/tmp/notdiamond-0.1.1b0.tar.gz]
+[2024-04-13 15:55:47] INFO root fetch - main [MainThread]: End processing [notdiamond]: success
+[2024-04-13 15:55:47] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2024-04-13 15:55:47] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2024.4.8-cp39-cp39-win_amd64.whl.zip tmp/tensordict_nightly-2024.4.9-cp39-cp39-win_amd64.whl.zip --markdown 20240413/t/tensordict-nightly/2024.4.8-2024.4.9/README.md --exclude *.pyd
+[2024-04-13 15:55:48] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.4.8-cp39-cp39-win_amd64.whl.zip]
+[2024-04-13 15:55:48] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.4.9-cp39-cp39-win_amd64.whl.zip]
+[2024-04-13 15:55:48] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2024-04-13 15:55:48] INFO root fetch - main [MainThread]: Store serial: [22752309]
