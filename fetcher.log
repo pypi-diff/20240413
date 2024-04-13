@@ -2584,3 +2584,61 @@
 [2024-04-13 02:43:55] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202404120045.tar.gz]
 [2024-04-13 02:43:55] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2024-04-13 02:43:55] INFO root fetch - main [MainThread]: Store serial: [22747467]
+[2024-04-13 02:45:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22747467]
+[2024-04-13 02:46:03] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-13 02:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zeroconf
+[2024-04-13 02:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mybox
+[2024-04-13 02:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: LinguAligner
+[2024-04-13 02:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TimeFeatures
+[2024-04-13 02:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-lambda-layer-curl
+[2024-04-13 02:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: base95
+[2024-04-13 02:46:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: LinguAligner
+[2024-04-13 02:46:03] INFO root fetch - processPackages [LinguAligner]: New version: [0.7] Old Version: [0.6]
+[2024-04-13 02:46:03] INFO root fetch - processPackages [LinguAligner]: New version: [0.7] Old Version: [0.6]
+[2024-04-13 02:46:03] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-13 02:46:04] INFO root fetch - processPackages [zeroconf]: New version: [0.99.0] Old Version: [0.98.0]
+[2024-04-13 02:46:04] INFO root fetch - processPackages [TimeFeatures]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-13 02:46:04] WARNING root fetch - processPackages [base95]: Skipping, unable to determine old version
+[2024-04-13 02:46:04] INFO root fetch - main [MainThread]: End processing [base95] error
+[2024-04-13 02:46:04] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/54/49/7682438ec5c21eb1b11d613bc83a9e7b8f4bc5635c9ca2f65059c04ca00b/lingualigner-0.6.tar.gz
+[2024-04-13 02:46:04] INFO root fetch - processPackages [mybox]: New version: [2.0.5] Old Version: [2.0.4]
+[2024-04-13 02:46:04] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/c8/e2/39c88cfa63f418383f3a383b2b62dfe801cbfd5c53de4d005804c19d76dc/cdk-lambda-layer-curl-2.0.98.tar.gz
+[2024-04-13 02:46:04] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/54/49/7682438ec5c21eb1b11d613bc83a9e7b8f4bc5635c9ca2f65059c04ca00b/lingualigner-0.6.tar.gz
+[2024-04-13 02:46:04] INFO root fetch - processPackages [zeroconf]: Downloading https://files.pythonhosted.org/packages/51/db/f87ee86f977a9713da086e2d5216f7ce235030787b192aef255ba726dd9d/zeroconf-0.98.0.tar.gz
+[2024-04-13 02:46:04] INFO root fetch - processPackages [TimeFeatures]: Downloading https://files.pythonhosted.org/packages/18/6a/abc63d378185fb65de52e83fad00a7ad1ad4b103fd4393d69ad4809aa45f/TimeFeatures-1.0.8.tar.gz
+[2024-04-13 02:46:04] INFO root fetch - processPackages [mybox]: Downloading https://files.pythonhosted.org/packages/c8/a1/06499d0a7afea0011569a7cf2858ededf3d89ae65d5a61177450edbcd802/mybox-2.0.4.tar.gz
+[2024-04-13 02:46:04] INFO root fetch - processPackages [zeroconf]: Downloading https://files.pythonhosted.org/packages/aa/96/3c05266623786e9d27370f8a5f32d1a7cc8c6d8297849d9f3934b09b0e02/zeroconf-0.99.0.tar.gz
+[2024-04-13 02:46:04] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/71/83/bbaf93a9b7f0e9085a71a70da6ef43973606609434a40340a5519400eec0/lingualigner-0.7.tar.gz
+[2024-04-13 02:46:04] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/71/83/bbaf93a9b7f0e9085a71a70da6ef43973606609434a40340a5519400eec0/lingualigner-0.7.tar.gz
+[2024-04-13 02:46:04] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/2e/02/9e7ab6bc6191e2cbe6705c1530f695ed00527096133668b731e72d6a6445/cdk-lambda-layer-curl-2.0.99.tar.gz
+[2024-04-13 02:46:04] INFO root fetch - processPackages [zeroconf]: executing diffoscope
+[2024-04-13 02:46:04] INFO root fetch - processPackages [zeroconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zeroconf-0.98.0.tar.gz tmp/zeroconf-0.99.0.tar.gz --markdown 20240413/z/zeroconf/0.98.0-0.99.0/README.md --exclude *.pyd
+[2024-04-13 02:46:04] INFO root fetch - processPackages [TimeFeatures]: Downloading https://files.pythonhosted.org/packages/a3/cd/d2bb049f303ebe0594132b4d544b9bd8c5136e9f9ad298bf52e3f6f715a5/TimeFeatures-1.0.9.tar.gz
+[2024-04-13 02:46:04] INFO root fetch - processPackages [mybox]: Downloading https://files.pythonhosted.org/packages/ee/3c/4e3725a425756f0acf57d8ddca13164d946d5e03269ccd191d726c2d1add/mybox-2.0.5.tar.gz
+[2024-04-13 02:46:04] INFO root fetch - processPackages [LinguAligner]: executing diffoscope
+[2024-04-13 02:46:04] INFO root fetch - processPackages [LinguAligner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lingualigner-0.6.tar.gz tmp/lingualigner-0.7.tar.gz --markdown 20240413/L/LinguAligner/0.6-0.7/README.md --exclude *.pyd
+[2024-04-13 02:46:04] INFO root fetch - processPackages [LinguAligner]: executing diffoscope
+[2024-04-13 02:46:04] INFO root fetch - processPackages [LinguAligner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lingualigner-0.6.tar.gz tmp/lingualigner-0.7.tar.gz --markdown 20240413/L/LinguAligner/0.6-0.7/README.md --exclude *.pyd
+[2024-04-13 02:46:04] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2024-04-13 02:46:04] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20240413/c/cdk-lambda-layer-curl/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-04-13 02:46:04] INFO root fetch - processPackages [TimeFeatures]: executing diffoscope
+[2024-04-13 02:46:04] INFO root fetch - processPackages [TimeFeatures]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TimeFeatures-1.0.8.tar.gz tmp/TimeFeatures-1.0.9.tar.gz --markdown 20240413/T/TimeFeatures/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-13 02:46:04] INFO root fetch - processPackages [mybox]: executing diffoscope
+[2024-04-13 02:46:04] INFO root fetch - processPackages [mybox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mybox-2.0.4.tar.gz tmp/mybox-2.0.5.tar.gz --markdown 20240413/m/mybox/2.0.4-2.0.5/README.md --exclude *.pyd
+[2024-04-13 02:46:05] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.6.tar.gz]
+[2024-04-13 02:46:05] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.7.tar.gz]
+[2024-04-13 02:46:05] INFO root fetch - main [MainThread]: End processing [LinguAligner]: success
+[2024-04-13 02:46:05] INFO root fetch - main [MainThread]: End processing [LinguAligner]: success
+[2024-04-13 02:46:05] INFO root fetch - processPackages [TimeFeatures]: Remove: archive file [/home/abi/fetcher/tmp/TimeFeatures-1.0.8.tar.gz]
+[2024-04-13 02:46:05] INFO root fetch - processPackages [TimeFeatures]: Remove: archive file [/home/abi/fetcher/tmp/TimeFeatures-1.0.9.tar.gz]
+[2024-04-13 02:46:05] INFO root fetch - main [MainThread]: End processing [TimeFeatures]: success
+[2024-04-13 02:46:05] INFO root fetch - processPackages [mybox]: Remove: archive file [/home/abi/fetcher/tmp/mybox-2.0.4.tar.gz]
+[2024-04-13 02:46:05] INFO root fetch - processPackages [mybox]: Remove: archive file [/home/abi/fetcher/tmp/mybox-2.0.5.tar.gz]
+[2024-04-13 02:46:05] INFO root fetch - main [MainThread]: End processing [mybox]: success
+[2024-04-13 02:46:05] INFO root fetch - processPackages [zeroconf]: Remove: archive file [/home/abi/fetcher/tmp/zeroconf-0.98.0.tar.gz]
+[2024-04-13 02:46:05] INFO root fetch - processPackages [zeroconf]: Remove: archive file [/home/abi/fetcher/tmp/zeroconf-0.99.0.tar.gz]
+[2024-04-13 02:46:05] INFO root fetch - main [MainThread]: End processing [zeroconf]: success
+[2024-04-13 02:46:05] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.98.tar.gz]
+[2024-04-13 02:46:05] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
+[2024-04-13 02:46:05] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2024-04-13 02:46:05] INFO root fetch - main [MainThread]: Store serial: [22747493]
