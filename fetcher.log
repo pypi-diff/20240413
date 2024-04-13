@@ -16167,3 +16167,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 17:39:36] INFO root fetch - processPackages [pyiron-base]: Remove: archive file [/home/abi/fetcher/tmp/pyiron_base-0.8.1.tar.gz]
 [2024-04-13 17:39:36] INFO root fetch - main [MainThread]: End processing [pyiron-base]: success
 [2024-04-13 17:39:36] INFO root fetch - main [MainThread]: Store serial: [22752939]
+[2024-04-13 17:41:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752939]
+[2024-04-13 17:41:45] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 17:41:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rococo
+[2024-04-13 17:41:45] INFO root fetch - processPackages [rococo]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-13 17:41:45] INFO root fetch - processPackages [rococo]: Downloading https://files.pythonhosted.org/packages/98/94/450bbaab14045cb6b1066283ebcd10fb579efa3b505d832609865adf931a/rococo-1.0.7.tar.gz
+[2024-04-13 17:41:46] INFO root fetch - processPackages [rococo]: Downloading https://files.pythonhosted.org/packages/94/76/11b3b064f1fbeb81c9bd2837214abd8f6f61cd7c1c8937c31db41c06062d/rococo-1.0.8.tar.gz
+[2024-04-13 17:41:46] INFO root fetch - processPackages [rococo]: executing diffoscope
+[2024-04-13 17:41:46] INFO root fetch - processPackages [rococo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rococo-1.0.7.tar.gz tmp/rococo-1.0.8.tar.gz --markdown 20240413/r/rococo/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-04-13 17:41:46] INFO root fetch - processPackages [rococo]: Remove: archive file [/home/abi/fetcher/tmp/rococo-1.0.7.tar.gz]
+[2024-04-13 17:41:46] INFO root fetch - processPackages [rococo]: Remove: archive file [/home/abi/fetcher/tmp/rococo-1.0.8.tar.gz]
+[2024-04-13 17:41:46] INFO root fetch - main [MainThread]: End processing [rococo]: success
+[2024-04-13 17:41:46] INFO root fetch - main [MainThread]: Store serial: [22752946]
