@@ -10253,3 +10253,19 @@
 [2024-04-13 09:42:49] INFO root fetch - processPackages [movinglines]: Remove: archive file [/home/abi/fetcher/tmp/movinglines-1.50.tar.gz]
 [2024-04-13 09:42:49] INFO root fetch - main [MainThread]: End processing [movinglines]: success
 [2024-04-13 09:42:49] INFO root fetch - main [MainThread]: Store serial: [22750271]
+[2024-04-13 09:44:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750271]
+[2024-04-13 09:44:58] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 09:46:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750272]
+[2024-04-13 09:47:04] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 09:49:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750272]
+[2024-04-13 09:49:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 09:49:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Agently
+[2024-04-13 09:49:09] INFO root fetch - processPackages [Agently]: New version: [3.2.2.4] Old Version: [3.2.2.3]
+[2024-04-13 09:49:09] INFO root fetch - processPackages [Agently]: Downloading https://files.pythonhosted.org/packages/2c/33/a5d5941fb28b90f722c4ee539fc21a6ea6103f3d451de884e2c3756ef8f5/Agently-3.2.2.3.tar.gz
+[2024-04-13 09:49:09] INFO root fetch - processPackages [Agently]: Downloading https://files.pythonhosted.org/packages/26/66/ca1d2b92d70ae59a13369084c86da8cc916f70d0089baac8cc86812eed67/Agently-3.2.2.4.tar.gz
+[2024-04-13 09:49:09] INFO root fetch - processPackages [Agently]: executing diffoscope
+[2024-04-13 09:49:09] INFO root fetch - processPackages [Agently]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Agently-3.2.2.3.tar.gz tmp/Agently-3.2.2.4.tar.gz --markdown 20240413/A/Agently/3.2.2.3-3.2.2.4/README.md --exclude *.pyd
+[2024-04-13 09:49:10] INFO root fetch - processPackages [Agently]: Remove: archive file [/home/abi/fetcher/tmp/Agently-3.2.2.3.tar.gz]
+[2024-04-13 09:49:10] INFO root fetch - processPackages [Agently]: Remove: archive file [/home/abi/fetcher/tmp/Agently-3.2.2.4.tar.gz]
+[2024-04-13 09:49:10] INFO root fetch - main [MainThread]: End processing [Agently]: success
+[2024-04-13 09:49:10] INFO root fetch - main [MainThread]: Store serial: [22750274]
