@@ -8978,3 +8978,15 @@
 [2024-04-13 08:23:34] INFO root fetch - processPackages [odoo-addon-base-tier-validation]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_tier_validation-17.0.1.5.0.2-py3-none-any.whl.zip]
 [2024-04-13 08:23:34] INFO root fetch - main [MainThread]: End processing [odoo-addon-base-tier-validation]: success
 [2024-04-13 08:23:34] INFO root fetch - main [MainThread]: Store serial: [22749847]
+[2024-04-13 08:25:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749847]
+[2024-04-13 08:25:42] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 08:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-mailgun
+[2024-04-13 08:25:43] INFO root fetch - processPackages [pulumi-mailgun]: New version: [3.6.0a1712987592] Old Version: [3.6.0a1712728356]
+[2024-04-13 08:25:43] INFO root fetch - processPackages [pulumi-mailgun]: Downloading https://files.pythonhosted.org/packages/11/76/9b65deb228e6354db03e9b5e8a9a027c0b4c96b11f1c6c378407a7b189ca/pulumi_mailgun-3.6.0a1712728356.tar.gz
+[2024-04-13 08:25:43] INFO root fetch - processPackages [pulumi-mailgun]: Downloading https://files.pythonhosted.org/packages/c2/53/af2d1c7d464e5df8aa82c91d55b46a630083f9d0ea70fc6281735d96a146/pulumi_mailgun-3.6.0a1712987592.tar.gz
+[2024-04-13 08:25:43] INFO root fetch - processPackages [pulumi-mailgun]: executing diffoscope
+[2024-04-13 08:25:43] INFO root fetch - processPackages [pulumi-mailgun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_mailgun-3.6.0a1712728356.tar.gz tmp/pulumi_mailgun-3.6.0a1712987592.tar.gz --markdown 20240413/p/pulumi-mailgun/3.6.0a1712728356-3.6.0a1712987592/README.md --exclude *.pyd
+[2024-04-13 08:25:44] INFO root fetch - processPackages [pulumi-mailgun]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_mailgun-3.6.0a1712728356.tar.gz]
+[2024-04-13 08:25:44] INFO root fetch - processPackages [pulumi-mailgun]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_mailgun-3.6.0a1712987592.tar.gz]
+[2024-04-13 08:25:44] INFO root fetch - main [MainThread]: End processing [pulumi-mailgun]: success
+[2024-04-13 08:25:44] INFO root fetch - main [MainThread]: Store serial: [22749850]
