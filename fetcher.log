@@ -7789,3 +7789,53 @@
 [2024-04-13 06:26:11] INFO root fetch - processPackages [luminesce-sdk]: Remove: archive file [/home/abi/fetcher/tmp/luminesce_sdk-2.1.7.tar.gz]
 [2024-04-13 06:26:11] INFO root fetch - main [MainThread]: End processing [luminesce-sdk]: success
 [2024-04-13 06:26:11] INFO root fetch - main [MainThread]: Store serial: [22749397]
+[2024-04-13 06:28:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749397]
+[2024-04-13 06:28:21] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 06:30:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749397]
+[2024-04-13 06:30:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 06:30:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: migoapiclient
+[2024-04-13 06:30:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: geotils
+[2024-04-13 06:30:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vplanet
+[2024-04-13 06:30:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gaea-operator
+[2024-04-13 06:30:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: resvg-py
+[2024-04-13 06:30:27] INFO root fetch - processPackages [geotils]: New version: [0.1.7] Old Version: [0.0.20]
+[2024-04-13 06:30:27] INFO root fetch - processPackages [geotils]: Downloading https://files.pythonhosted.org/packages/b1/0f/53098d3f8c636ebe68bfbd7492015ab0602bace2ea68a32a034847b5a1a8/geotils-0.0.20.tar.gz
+[2024-04-13 06:30:27] INFO root fetch - processPackages [migoapiclient]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-04-13 06:30:27] INFO root fetch - processPackages [vplanet]: New version: [2.5.3] Old Version: [2.5.2]
+[2024-04-13 06:30:27] INFO root fetch - processPackages [gaea-operator]: New version: [1.2.0.8] Old Version: [1.2.0.7]
+[2024-04-13 06:30:27] INFO root fetch - processPackages [resvg-py]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 06:30:27] INFO root fetch - processPackages [geotils]: Downloading https://files.pythonhosted.org/packages/d5/c0/f34ce1b43b9269ebf2cbd6de8aed7d1b842b0c7ef21679a6399a54df78e2/geotils-0.1.7.tar.gz
+[2024-04-13 06:30:27] INFO root fetch - processPackages [migoapiclient]: Downloading https://files.pythonhosted.org/packages/36/a2/d64aa8af4601933039df5fc6638a6396115bb47cd7b73d8d164cfe99f9cd/migoapiclient-1.1.3.tar.gz
+[2024-04-13 06:30:27] INFO root fetch - processPackages [vplanet]: Downloading https://files.pythonhosted.org/packages/76/13/16b6bb99a805bf616cceb541fc92946bd6ed6d9e4dee28703c3a540e84d5/vplanet-2.5.2.tar.gz
+[2024-04-13 06:30:27] INFO root fetch - processPackages [gaea-operator]: Downloading https://files.pythonhosted.org/packages/6f/37/170c563d18a7579908b404d071628a3ce7e48a99f21bd0d96bf155f7dd55/gaea_operator-1.2.0.7-py3-none-any.whl
+[2024-04-13 06:30:27] INFO root fetch - processPackages [resvg-py]: Downloading https://files.pythonhosted.org/packages/3d/ed/2cd4148509621b6681ce64927583ec8d78710d58fc28f3765a1ef1bf0c7d/resvg_py-0.1.0.tar.gz
+[2024-04-13 06:30:27] INFO root fetch - processPackages [geotils]: executing diffoscope
+[2024-04-13 06:30:27] INFO root fetch - processPackages [geotils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geotils-0.0.20.tar.gz tmp/geotils-0.1.7.tar.gz --markdown 20240413/g/geotils/0.0.20-0.1.7/README.md --exclude *.pyd
+[2024-04-13 06:30:27] INFO root fetch - processPackages [migoapiclient]: Downloading https://files.pythonhosted.org/packages/0e/db/966a415463866863aee7da619292b2e66b49ff7a397fad405b22eb89c4cc/migoapiclient-1.1.4.tar.gz
+[2024-04-13 06:30:27] INFO root fetch - processPackages [resvg-py]: Downloading https://files.pythonhosted.org/packages/ae/3c/0cbb41574da2ba68f6eaa2f36455eb6b1b1fed37c75b7217f7168250e707/resvg_py-0.1.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-13 06:30:27] INFO root fetch - processPackages [vplanet]: Downloading https://files.pythonhosted.org/packages/bd/56/60587cc2c5f656ca002f30ce61d91bfda71152cc518cac0a0b03f7fd53c9/vplanet-2.5.3.tar.gz
+[2024-04-13 06:30:27] INFO root fetch - processPackages [gaea-operator]: Downloading https://files.pythonhosted.org/packages/e3/99/b8d502de9760d8243c53acb45a0378adde15b75aec5dc2e0d7fa27025ed3/gaea_operator-1.2.0.8-py3-none-any.whl
+[2024-04-13 06:30:27] INFO root fetch - processPackages [migoapiclient]: executing diffoscope
+[2024-04-13 06:30:27] INFO root fetch - processPackages [migoapiclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/migoapiclient-1.1.3.tar.gz tmp/migoapiclient-1.1.4.tar.gz --markdown 20240413/m/migoapiclient/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-04-13 06:30:27] INFO root fetch - processPackages [vplanet]: executing diffoscope
+[2024-04-13 06:30:27] INFO root fetch - processPackages [vplanet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vplanet-2.5.2.tar.gz tmp/vplanet-2.5.3.tar.gz --markdown 20240413/v/vplanet/2.5.2-2.5.3/README.md --exclude *.pyd
+[2024-04-13 06:30:27] INFO root fetch - processPackages [gaea-operator]: executing diffoscope
+[2024-04-13 06:30:27] INFO root fetch - processPackages [gaea-operator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gaea_operator-1.2.0.7-py3-none-any.whl.zip tmp/gaea_operator-1.2.0.8-py3-none-any.whl.zip --markdown 20240413/g/gaea-operator/1.2.0.7-1.2.0.8/README.md --exclude *.pyd
+[2024-04-13 06:30:28] INFO root fetch - processPackages [geotils]: Remove: archive file [/home/abi/fetcher/tmp/geotils-0.0.20.tar.gz]
+[2024-04-13 06:30:28] INFO root fetch - processPackages [geotils]: Remove: archive file [/home/abi/fetcher/tmp/geotils-0.1.7.tar.gz]
+[2024-04-13 06:30:28] INFO root fetch - main [MainThread]: End processing [geotils]: success
+[2024-04-13 06:30:28] INFO root fetch - processPackages [migoapiclient]: Remove: archive file [/home/abi/fetcher/tmp/migoapiclient-1.1.3.tar.gz]
+[2024-04-13 06:30:28] INFO root fetch - processPackages [migoapiclient]: Remove: archive file [/home/abi/fetcher/tmp/migoapiclient-1.1.4.tar.gz]
+[2024-04-13 06:30:28] INFO root fetch - main [MainThread]: End processing [migoapiclient]: success
+[2024-04-13 06:30:28] INFO root fetch - processPackages [vplanet]: Remove: archive file [/home/abi/fetcher/tmp/vplanet-2.5.2.tar.gz]
+[2024-04-13 06:30:28] INFO root fetch - processPackages [vplanet]: Remove: archive file [/home/abi/fetcher/tmp/vplanet-2.5.3.tar.gz]
+[2024-04-13 06:30:28] INFO root fetch - main [MainThread]: End processing [vplanet]: success
+[2024-04-13 06:30:28] INFO root fetch - processPackages [gaea-operator]: Remove: archive file [/home/abi/fetcher/tmp/gaea_operator-1.2.0.7-py3-none-any.whl.zip]
+[2024-04-13 06:30:28] INFO root fetch - processPackages [gaea-operator]: Remove: archive file [/home/abi/fetcher/tmp/gaea_operator-1.2.0.8-py3-none-any.whl.zip]
+[2024-04-13 06:30:28] INFO root fetch - main [MainThread]: End processing [gaea-operator]: success
+[2024-04-13 06:30:30] INFO root fetch - processPackages [resvg-py]: executing diffoscope
+[2024-04-13 06:30:30] INFO root fetch - processPackages [resvg-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resvg_py-0.1.0.tar.gz tmp/resvg_py-0.1.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240413/r/resvg-py/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 06:30:30] INFO root fetch - processPackages [resvg-py]: Remove: archive file [/home/abi/fetcher/tmp/resvg_py-0.1.0.tar.gz]
+[2024-04-13 06:30:30] INFO root fetch - processPackages [resvg-py]: Remove: archive file [/home/abi/fetcher/tmp/resvg_py-0.1.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-13 06:30:30] INFO root fetch - main [MainThread]: End processing [resvg-py]: success
+[2024-04-13 06:30:30] INFO root fetch - main [MainThread]: Store serial: [22749427]
