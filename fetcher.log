@@ -13751,3 +13751,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:32:58] INFO root fetch - processPackages [repod]: Remove: archive file [/home/abi/fetcher/tmp/repod-0.3.1.tar.gz]
 [2024-04-13 14:32:58] INFO root fetch - main [MainThread]: End processing [repod]: success
 [2024-04-13 14:32:58] INFO root fetch - main [MainThread]: Store serial: [22751746]
+[2024-04-13 14:35:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751746]
+[2024-04-13 14:35:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 14:35:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snake-environment
+[2024-04-13 14:35:06] INFO root fetch - processPackages [snake-environment]: New version: [0.2.2] Old Version: [0.2.0]
+[2024-04-13 14:35:06] INFO root fetch - processPackages [snake-environment]: Downloading https://files.pythonhosted.org/packages/9e/81/73d86b5911e0c77008e71b2d39bb7c335cf21f0eab5b3a2af9aacc51a8f3/snake_environment-0.2.tar.gz
+[2024-04-13 14:35:06] INFO root fetch - processPackages [snake-environment]: Downloading https://files.pythonhosted.org/packages/d7/50/767cff8197761e25102f3884a4eecfcbccf47e865fabdcb1f54b1ccdd107/snake_environment-0.2.2.tar.gz
+[2024-04-13 14:35:07] INFO root fetch - processPackages [snake-environment]: executing diffoscope
+[2024-04-13 14:35:07] INFO root fetch - processPackages [snake-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snake_environment-0.2.tar.gz tmp/snake_environment-0.2.2.tar.gz --markdown 20240413/s/snake-environment/0.2.0-0.2.2/README.md --exclude *.pyd
+[2024-04-13 14:35:07] INFO root fetch - processPackages [snake-environment]: Remove: archive file [/home/abi/fetcher/tmp/snake_environment-0.2.tar.gz]
+[2024-04-13 14:35:07] INFO root fetch - processPackages [snake-environment]: Remove: archive file [/home/abi/fetcher/tmp/snake_environment-0.2.2.tar.gz]
+[2024-04-13 14:35:07] INFO root fetch - main [MainThread]: End processing [snake-environment]: success
+[2024-04-13 14:35:07] INFO root fetch - main [MainThread]: Store serial: [22751750]
