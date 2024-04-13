@@ -11192,3 +11192,15 @@
 [2024-04-13 10:57:12] INFO root fetch - processPackages [sindapi]: Remove: archive file [/home/abi/fetcher/tmp/sindapi-0.0.7.tar.gz]
 [2024-04-13 10:57:12] INFO root fetch - main [MainThread]: End processing [sindapi]: success
 [2024-04-13 10:57:12] INFO root fetch - main [MainThread]: Store serial: [22750711]
+[2024-04-13 10:59:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750711]
+[2024-04-13 10:59:21] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 10:59:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aioxdl
+[2024-04-13 10:59:21] INFO root fetch - processPackages [aioxdl]: New version: [0.0.17] Old Version: [0.0.16]
+[2024-04-13 10:59:21] INFO root fetch - processPackages [aioxdl]: Downloading https://files.pythonhosted.org/packages/97/07/c480f3264a224473013ab59c475c603ce19fc87f1cdc2391ce3a411e1617/aioxdl-0.0.16.tar.gz
+[2024-04-13 10:59:21] INFO root fetch - processPackages [aioxdl]: Downloading https://files.pythonhosted.org/packages/e5/ef/ef05900a4821ebcc74ab96942550cfa81d78574942ad7109f947a0480672/aioxdl-0.0.17.tar.gz
+[2024-04-13 10:59:21] INFO root fetch - processPackages [aioxdl]: executing diffoscope
+[2024-04-13 10:59:21] INFO root fetch - processPackages [aioxdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioxdl-0.0.16.tar.gz tmp/aioxdl-0.0.17.tar.gz --markdown 20240413/a/aioxdl/0.0.16-0.0.17/README.md --exclude *.pyd
+[2024-04-13 10:59:22] INFO root fetch - processPackages [aioxdl]: Remove: archive file [/home/abi/fetcher/tmp/aioxdl-0.0.16.tar.gz]
+[2024-04-13 10:59:22] INFO root fetch - processPackages [aioxdl]: Remove: archive file [/home/abi/fetcher/tmp/aioxdl-0.0.17.tar.gz]
+[2024-04-13 10:59:22] INFO root fetch - main [MainThread]: End processing [aioxdl]: success
+[2024-04-13 10:59:22] INFO root fetch - main [MainThread]: Store serial: [22750714]
