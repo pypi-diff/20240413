@@ -17106,3 +17106,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:02:57] INFO root fetch - main [MainThread]: End processing [trading-backend]: success
 [2024-04-13 19:02:57] INFO root fetch - main [MainThread]: End processing [pytest-toolkit]: success
 [2024-04-13 19:02:57] INFO root fetch - main [MainThread]: Store serial: [22753291]
+[2024-04-13 19:05:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753291]
+[2024-04-13 19:05:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 19:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sampa
+[2024-04-13 19:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mcraft
+[2024-04-13 19:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bellek
+[2024-04-13 19:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pwright
+[2024-04-13 19:05:06] WARNING root fetch - processPackages [sampa]: Skipping, unable to determine old version
+[2024-04-13 19:05:06] INFO root fetch - main [MainThread]: End processing [sampa] error
+[2024-04-13 19:05:06] INFO root fetch - processPackages [pwright]: New version: [9.1.0] Old Version: [9.0.0]
+[2024-04-13 19:05:06] INFO root fetch - processPackages [mcraft]: New version: [0.0.3] Old Version: [0.0.1]
+[2024-04-13 19:05:06] INFO root fetch - processPackages [bellek]: New version: [0.9.0] Old Version: [0.75.0]
+[2024-04-13 19:05:06] INFO root fetch - processPackages [mcraft]: Downloading https://files.pythonhosted.org/packages/7f/ab/e407f95c4c4102747618a759064d4f49b2b2d077244d7df182aa57257d56/mcraft-0.0.1.tar.gz
+[2024-04-13 19:05:06] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/3c/f5/f5dc21a0b56632f95302c0f9f3570a86a7ca4b9b43b10a6456b7053d7e89/bellek-0.75.0.tar.gz
+[2024-04-13 19:05:06] INFO root fetch - processPackages [pwright]: Downloading https://files.pythonhosted.org/packages/25/d7/b551df50904b7628aa71618ab3823abaa7eb553ee14a81900d0a98e2f562/pwright-9.0.0.tar.gz
+[2024-04-13 19:05:06] INFO root fetch - processPackages [mcraft]: Downloading https://files.pythonhosted.org/packages/7c/67/e102c4c9d54f75dd901de6ef2a4497bd3da4e9b549d4d50b464257d28b38/mcraft-0.0.3.tar.gz
+[2024-04-13 19:05:06] INFO root fetch - processPackages [pwright]: Downloading https://files.pythonhosted.org/packages/54/c1/43c21cc8fe3c0e76a6676435c0be1e747e3d05903a7b2f645243e56814f6/pwright-9.1.0.tar.gz
+[2024-04-13 19:05:06] INFO root fetch - processPackages [mcraft]: executing diffoscope
+[2024-04-13 19:05:06] INFO root fetch - processPackages [mcraft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcraft-0.0.1.tar.gz tmp/mcraft-0.0.3.tar.gz --markdown 20240413/m/mcraft/0.0.1-0.0.3/README.md --exclude *.pyd
+[2024-04-13 19:05:06] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/ec/cb/2e453e973c51c52f57d3533e8d2f7192b8c626e0078fe08fb907191e69fb/bellek-0.9.0.tar.gz
+[2024-04-13 19:05:06] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-13 19:05:06] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.75.0.tar.gz tmp/bellek-0.9.0.tar.gz --markdown 20240413/b/bellek/0.75.0-0.9.0/README.md --exclude *.pyd
+[2024-04-13 19:05:07] INFO root fetch - processPackages [pwright]: executing diffoscope
+[2024-04-13 19:05:07] INFO root fetch - processPackages [pwright]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pwright-9.0.0.tar.gz tmp/pwright-9.1.0.tar.gz --markdown 20240413/p/pwright/9.0.0-9.1.0/README.md --exclude *.pyd
+[2024-04-13 19:05:07] INFO root fetch - processPackages [mcraft]: Remove: archive file [/home/abi/fetcher/tmp/mcraft-0.0.1.tar.gz]
+[2024-04-13 19:05:07] INFO root fetch - processPackages [mcraft]: Remove: archive file [/home/abi/fetcher/tmp/mcraft-0.0.3.tar.gz]
+[2024-04-13 19:05:07] INFO root fetch - main [MainThread]: End processing [mcraft]: success
+[2024-04-13 19:05:07] INFO root fetch - processPackages [pwright]: Remove: archive file [/home/abi/fetcher/tmp/pwright-9.0.0.tar.gz]
+[2024-04-13 19:05:07] INFO root fetch - processPackages [pwright]: Remove: archive file [/home/abi/fetcher/tmp/pwright-9.1.0.tar.gz]
+[2024-04-13 19:05:07] INFO root fetch - main [MainThread]: End processing [pwright]: success
+[2024-04-13 19:05:07] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.75.0.tar.gz]
+[2024-04-13 19:05:07] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.9.0.tar.gz]
+[2024-04-13 19:05:07] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-13 19:05:07] INFO root fetch - main [MainThread]: Store serial: [22753304]
