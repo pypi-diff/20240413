@@ -11572,3 +11572,33 @@
 [2024-04-13 11:23:23] INFO root fetch - processPackages [HiYaPyCo]: Remove: archive file [/home/abi/fetcher/tmp/HiYaPyCo-0.5.5.tar.gz]
 [2024-04-13 11:23:23] INFO root fetch - main [MainThread]: End processing [HiYaPyCo]: success
 [2024-04-13 11:23:23] INFO root fetch - main [MainThread]: Store serial: [22750871]
+[2024-04-13 11:25:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750871]
+[2024-04-13 11:25:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 11:25:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: HiYaPyCo
+[2024-04-13 11:25:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alana
+[2024-04-13 11:25:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: m-car-api
+[2024-04-13 11:25:32] INFO root fetch - processPackages [HiYaPyCo]: New version: [0.5.5] Old Version: [0.5.4]
+[2024-04-13 11:25:32] INFO root fetch - processPackages [HiYaPyCo]: Downloading https://files.pythonhosted.org/packages/64/6a/bfcb07251fbe01c151f28b06e4d3fcc24eb876351d151c607f76c936c307/HiYaPyCo-0.5.4.tar.gz
+[2024-04-13 11:25:32] INFO root fetch - processPackages [m-car-api]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-13 11:25:32] INFO root fetch - processPackages [alana]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-13 11:25:32] INFO root fetch - processPackages [m-car-api]: Downloading https://files.pythonhosted.org/packages/7e/13/edb4b521485183fc14e7cd5cc44680ebb3fbb83e1f78484df82113951767/m_car_api-1.0.0.tar.gz
+[2024-04-13 11:25:32] INFO root fetch - processPackages [HiYaPyCo]: Downloading https://files.pythonhosted.org/packages/53/7a/2e27a4fb1d27bb4da91de1a00d9b69d43a7211be5f923f652b56797bc623/HiYaPyCo-0.5.5.tar.gz
+[2024-04-13 11:25:32] INFO root fetch - processPackages [alana]: Downloading https://files.pythonhosted.org/packages/64/00/1072361ccccc5e5d9d4f08ef1c12e45d4369833075261e90868ab38e1512/alana-0.0.1.tar.gz
+[2024-04-13 11:25:32] INFO root fetch - processPackages [HiYaPyCo]: executing diffoscope
+[2024-04-13 11:25:32] INFO root fetch - processPackages [HiYaPyCo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HiYaPyCo-0.5.4.tar.gz tmp/HiYaPyCo-0.5.5.tar.gz --markdown 20240413/H/HiYaPyCo/0.5.4-0.5.5/README.md --exclude *.pyd
+[2024-04-13 11:25:33] INFO root fetch - processPackages [m-car-api]: Downloading https://files.pythonhosted.org/packages/2a/66/dc420f33ac3fe3fd308a47c830515e5e5f5435ef5733a438187e32bb7880/m_car_api-1.0.1.tar.gz
+[2024-04-13 11:25:33] INFO root fetch - processPackages [alana]: Downloading https://files.pythonhosted.org/packages/d2/4a/60107dd12a2d5f4fce3fa4bbae2c2dda3ea321e310524ae42b7ba412123d/alana-0.0.2.tar.gz
+[2024-04-13 11:25:33] INFO root fetch - processPackages [m-car-api]: executing diffoscope
+[2024-04-13 11:25:33] INFO root fetch - processPackages [m-car-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/m_car_api-1.0.0.tar.gz tmp/m_car_api-1.0.1.tar.gz --markdown 20240413/m/m-car-api/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-13 11:25:33] INFO root fetch - processPackages [alana]: executing diffoscope
+[2024-04-13 11:25:33] INFO root fetch - processPackages [alana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alana-0.0.1.tar.gz tmp/alana-0.0.2.tar.gz --markdown 20240413/a/alana/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-13 11:25:33] INFO root fetch - processPackages [HiYaPyCo]: Remove: archive file [/home/abi/fetcher/tmp/HiYaPyCo-0.5.4.tar.gz]
+[2024-04-13 11:25:33] INFO root fetch - processPackages [HiYaPyCo]: Remove: archive file [/home/abi/fetcher/tmp/HiYaPyCo-0.5.5.tar.gz]
+[2024-04-13 11:25:33] INFO root fetch - main [MainThread]: End processing [HiYaPyCo]: success
+[2024-04-13 11:25:33] INFO root fetch - processPackages [alana]: Remove: archive file [/home/abi/fetcher/tmp/alana-0.0.1.tar.gz]
+[2024-04-13 11:25:33] INFO root fetch - processPackages [alana]: Remove: archive file [/home/abi/fetcher/tmp/alana-0.0.2.tar.gz]
+[2024-04-13 11:25:33] INFO root fetch - main [MainThread]: End processing [alana]: success
+[2024-04-13 11:25:33] INFO root fetch - processPackages [m-car-api]: Remove: archive file [/home/abi/fetcher/tmp/m_car_api-1.0.0.tar.gz]
+[2024-04-13 11:25:33] INFO root fetch - processPackages [m-car-api]: Remove: archive file [/home/abi/fetcher/tmp/m_car_api-1.0.1.tar.gz]
+[2024-04-13 11:25:33] INFO root fetch - main [MainThread]: End processing [m-car-api]: success
+[2024-04-13 11:25:33] INFO root fetch - main [MainThread]: Store serial: [22750887]
