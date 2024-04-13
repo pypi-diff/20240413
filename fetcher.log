@@ -6766,3 +6766,18 @@
 [2024-04-13 04:00:29] INFO root fetch - processPackages [odoo14-addon-ssi-product-line-price-mixin]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_product_line_price_mixin-14.0.1.4.0-py3-none-any.whl.zip]
 [2024-04-13 04:00:29] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-product-line-price-mixin]: success
 [2024-04-13 04:00:29] INFO root fetch - main [MainThread]: Store serial: [22748913]
+[2024-04-13 04:02:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748913]
+[2024-04-13 04:02:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 04:02:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gnu-screen-class
+[2024-04-13 04:02:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyprjbtstrptst
+[2024-04-13 04:02:39] WARNING root fetch - processPackages [gnu-screen-class]: Skipping, unable to determine old version
+[2024-04-13 04:02:39] INFO root fetch - main [MainThread]: End processing [gnu-screen-class] error
+[2024-04-13 04:02:39] INFO root fetch - processPackages [pyprjbtstrptst]: New version: [0.1.7] Old Version: [0.1.4]
+[2024-04-13 04:02:39] INFO root fetch - processPackages [pyprjbtstrptst]: Downloading https://files.pythonhosted.org/packages/ea/d7/8a2ed5bff08899d988c3bc7ed1ce4c22622a24962fdbb48029ef8f88e721/pyprjbtstrptst-0.1.4-py3-none-any.whl
+[2024-04-13 04:02:40] INFO root fetch - processPackages [pyprjbtstrptst]: Downloading https://files.pythonhosted.org/packages/64/f3/78ff5f9650001f7f3e00916eb51926b5e88a8fce46c222170fc84562a35f/pyprjbtstrptst-0.1.7-py3-none-any.whl
+[2024-04-13 04:02:40] INFO root fetch - processPackages [pyprjbtstrptst]: executing diffoscope
+[2024-04-13 04:02:40] INFO root fetch - processPackages [pyprjbtstrptst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyprjbtstrptst-0.1.4-py3-none-any.whl.zip tmp/pyprjbtstrptst-0.1.7-py3-none-any.whl.zip --markdown 20240413/p/pyprjbtstrptst/0.1.4-0.1.7/README.md --exclude *.pyd
+[2024-04-13 04:02:40] INFO root fetch - processPackages [pyprjbtstrptst]: Remove: archive file [/home/abi/fetcher/tmp/pyprjbtstrptst-0.1.4-py3-none-any.whl.zip]
+[2024-04-13 04:02:40] INFO root fetch - processPackages [pyprjbtstrptst]: Remove: archive file [/home/abi/fetcher/tmp/pyprjbtstrptst-0.1.7-py3-none-any.whl.zip]
+[2024-04-13 04:02:41] INFO root fetch - main [MainThread]: End processing [pyprjbtstrptst]: success
+[2024-04-13 04:02:41] INFO root fetch - main [MainThread]: Store serial: [22748918]
