@@ -10812,3 +10812,33 @@
 [2024-04-13 10:26:37] INFO root fetch - processPackages [pynovnc]: Remove: archive file [/home/abi/fetcher/tmp/pynovnc-1.0.8.tar.gz]
 [2024-04-13 10:26:37] INFO root fetch - main [MainThread]: End processing [pynovnc]: success
 [2024-04-13 10:26:37] INFO root fetch - main [MainThread]: Store serial: [22750508]
+[2024-04-13 10:28:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750508]
+[2024-04-13 10:28:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 10:28:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: getdist
+[2024-04-13 10:28:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: grimoirelab
+[2024-04-13 10:28:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arts
+[2024-04-13 10:28:45] INFO root fetch - processPackages [grimoirelab]: New version: [1.0.0rc4] Old Version: [1.0.0rc3]
+[2024-04-13 10:28:45] INFO root fetch - processPackages [grimoirelab]: Downloading https://files.pythonhosted.org/packages/7b/c3/ca6717bf3faa75d5444e1c4f0de436f7373db818b19c267c2d00b230ed68/grimoirelab-1.0.0rc3.tar.gz
+[2024-04-13 10:28:45] INFO root fetch - processPackages [arts]: New version: [2024.4.3.3] Old Version: [2024.4.3.2]
+[2024-04-13 10:28:45] INFO root fetch - processPackages [getdist]: New version: [1.4.8] Old Version: [1.4.7]
+[2024-04-13 10:28:45] INFO root fetch - processPackages [grimoirelab]: Downloading https://files.pythonhosted.org/packages/95/40/3abdd937e9d43afd46eda507b814dcafdc971c85c1aaa8fa423b16cd07f6/grimoirelab-1.0.0rc4.tar.gz
+[2024-04-13 10:28:45] INFO root fetch - processPackages [arts]: Downloading https://files.pythonhosted.org/packages/0a/41/c9d3f046affb9c78eedb72ca3481d72c8b7ab4fcc1026206354bf90b9f29/arts-2024.4.3.2.tar.gz
+[2024-04-13 10:28:45] INFO root fetch - processPackages [getdist]: Downloading https://files.pythonhosted.org/packages/58/b6/21f4d562abf9043743a777046173473d0a3340978a308af348ed1e4211b5/getdist-1.4.7.tar.gz
+[2024-04-13 10:28:45] INFO root fetch - processPackages [grimoirelab]: executing diffoscope
+[2024-04-13 10:28:45] INFO root fetch - processPackages [grimoirelab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grimoirelab-1.0.0rc3.tar.gz tmp/grimoirelab-1.0.0rc4.tar.gz --markdown 20240413/g/grimoirelab/1.0.0rc3-1.0.0rc4/README.md --exclude *.pyd
+[2024-04-13 10:28:46] INFO root fetch - processPackages [arts]: Downloading https://files.pythonhosted.org/packages/6f/47/f5e68f3354a611f7dc78a40d9fdc28bab1943ad7938f197e500a14eb5697/arts-2024.4.3.3.tar.gz
+[2024-04-13 10:28:46] INFO root fetch - processPackages [getdist]: Downloading https://files.pythonhosted.org/packages/38/98/e718040983364bc6713df59c0f3ab6679f37cb37988fd5baa79b72157a3b/getdist-1.4.8.tar.gz
+[2024-04-13 10:28:46] INFO root fetch - processPackages [arts]: executing diffoscope
+[2024-04-13 10:28:46] INFO root fetch - processPackages [arts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arts-2024.4.3.2.tar.gz tmp/arts-2024.4.3.3.tar.gz --markdown 20240413/a/arts/2024.4.3.2-2024.4.3.3/README.md --exclude *.pyd
+[2024-04-13 10:28:46] INFO root fetch - processPackages [getdist]: executing diffoscope
+[2024-04-13 10:28:46] INFO root fetch - processPackages [getdist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getdist-1.4.7.tar.gz tmp/getdist-1.4.8.tar.gz --markdown 20240413/g/getdist/1.4.7-1.4.8/README.md --exclude *.pyd
+[2024-04-13 10:28:46] INFO root fetch - processPackages [grimoirelab]: Remove: archive file [/home/abi/fetcher/tmp/grimoirelab-1.0.0rc3.tar.gz]
+[2024-04-13 10:28:46] INFO root fetch - processPackages [grimoirelab]: Remove: archive file [/home/abi/fetcher/tmp/grimoirelab-1.0.0rc4.tar.gz]
+[2024-04-13 10:28:46] INFO root fetch - main [MainThread]: End processing [grimoirelab]: success
+[2024-04-13 10:28:47] INFO root fetch - processPackages [getdist]: Remove: archive file [/home/abi/fetcher/tmp/getdist-1.4.7.tar.gz]
+[2024-04-13 10:28:47] INFO root fetch - processPackages [getdist]: Remove: archive file [/home/abi/fetcher/tmp/getdist-1.4.8.tar.gz]
+[2024-04-13 10:28:47] INFO root fetch - main [MainThread]: End processing [getdist]: success
+[2024-04-13 10:28:47] INFO root fetch - processPackages [arts]: Remove: archive file [/home/abi/fetcher/tmp/arts-2024.4.3.2.tar.gz]
+[2024-04-13 10:28:47] INFO root fetch - processPackages [arts]: Remove: archive file [/home/abi/fetcher/tmp/arts-2024.4.3.3.tar.gz]
+[2024-04-13 10:28:47] INFO root fetch - main [MainThread]: End processing [arts]: success
+[2024-04-13 10:28:47] INFO root fetch - main [MainThread]: Store serial: [22750516]
