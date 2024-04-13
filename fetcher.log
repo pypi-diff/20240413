@@ -19138,3 +19138,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 21:25:20] INFO root fetch - processPackages [py-static-dtm]: Remove: archive file [/home/abi/fetcher/tmp/py_static_dtm-1.0.0a5.tar.gz]
 [2024-04-13 21:25:20] INFO root fetch - main [MainThread]: End processing [py-static-dtm]: success
 [2024-04-13 21:25:20] INFO root fetch - main [MainThread]: Store serial: [22754233]
+[2024-04-13 21:27:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754233]
+[2024-04-13 21:27:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 21:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: invest-guard
+[2024-04-13 21:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wristwatch
+[2024-04-13 21:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: maadsbml
+[2024-04-13 21:27:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lazy-type-hint
+[2024-04-13 21:27:29] INFO root fetch - processPackages [invest-guard]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-13 21:27:29] INFO root fetch - processPackages [wristwatch]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-13 21:27:29] INFO root fetch - processPackages [maadsbml]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-04-13 21:27:29] WARNING root fetch - processPackages [lazy-type-hint]: Skipping, unable to determine old version
+[2024-04-13 21:27:29] INFO root fetch - main [MainThread]: End processing [lazy-type-hint] error
+[2024-04-13 21:27:29] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/0f/74/84201ce83323201b040d2eab8fb9848ca96d419bed135c8004d59be5e81a/invest-guard-0.1.4.tar.gz
+[2024-04-13 21:27:29] INFO root fetch - processPackages [maadsbml]: Downloading https://files.pythonhosted.org/packages/ee/fc/da090005b18a32cfbe091f8c04a25c14935349b30620803cc1f590af3b51/maadsbml-1.3.8.tar.gz
+[2024-04-13 21:27:29] INFO root fetch - processPackages [wristwatch]: Downloading https://files.pythonhosted.org/packages/b5/c6/8409505a3eafa00b0b46c734f3813c9fea5dca4d4ab1416a181f84295636/wristwatch-1.0.0.tar.gz
+[2024-04-13 21:27:29] INFO root fetch - processPackages [maadsbml]: Downloading https://files.pythonhosted.org/packages/f6/59/27faaa61d0d9f23502ac39fb89135a3c2220a684be5312873e9d462ccda7/maadsbml-1.3.9.tar.gz
+[2024-04-13 21:27:29] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/59/3f/eb6942158d0b941afaf5b059e0d937756e3b625141461efea73d50335e83/invest-guard-0.1.5.tar.gz
+[2024-04-13 21:27:29] INFO root fetch - processPackages [maadsbml]: executing diffoscope
+[2024-04-13 21:27:29] INFO root fetch - processPackages [maadsbml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maadsbml-1.3.8.tar.gz tmp/maadsbml-1.3.9.tar.gz --markdown 20240413/m/maadsbml/1.3.8-1.3.9/README.md --exclude *.pyd
+[2024-04-13 21:27:29] INFO root fetch - processPackages [wristwatch]: Downloading https://files.pythonhosted.org/packages/62/0e/2e0ce177f7758b32abe03f019f3c028763ca7e493ba01743dcf3f64398ba/wristwatch-1.0.1.tar.gz
+[2024-04-13 21:27:29] INFO root fetch - processPackages [invest-guard]: executing diffoscope
+[2024-04-13 21:27:29] INFO root fetch - processPackages [invest-guard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invest-guard-0.1.4.tar.gz tmp/invest-guard-0.1.5.tar.gz --markdown 20240413/i/invest-guard/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-13 21:27:30] INFO root fetch - processPackages [wristwatch]: executing diffoscope
+[2024-04-13 21:27:30] INFO root fetch - processPackages [wristwatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wristwatch-1.0.0.tar.gz tmp/wristwatch-1.0.1.tar.gz --markdown 20240413/w/wristwatch/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-13 21:27:30] INFO root fetch - processPackages [wristwatch]: Remove: archive file [/home/abi/fetcher/tmp/wristwatch-1.0.0.tar.gz]
+[2024-04-13 21:27:30] INFO root fetch - processPackages [wristwatch]: Remove: archive file [/home/abi/fetcher/tmp/wristwatch-1.0.1.tar.gz]
+[2024-04-13 21:27:30] INFO root fetch - main [MainThread]: End processing [wristwatch]: success
+[2024-04-13 21:27:30] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest-guard-0.1.4.tar.gz]
+[2024-04-13 21:27:30] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest-guard-0.1.5.tar.gz]
+[2024-04-13 21:27:30] INFO root fetch - main [MainThread]: End processing [invest-guard]: success
+[2024-04-13 21:27:30] INFO root fetch - processPackages [maadsbml]: Remove: archive file [/home/abi/fetcher/tmp/maadsbml-1.3.8.tar.gz]
+[2024-04-13 21:27:30] INFO root fetch - processPackages [maadsbml]: Remove: archive file [/home/abi/fetcher/tmp/maadsbml-1.3.9.tar.gz]
+[2024-04-13 21:27:30] INFO root fetch - main [MainThread]: End processing [maadsbml]: success
+[2024-04-13 21:27:30] INFO root fetch - main [MainThread]: Store serial: [22754247]
