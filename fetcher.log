@@ -19847,3 +19847,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 22:31:38] INFO root fetch - processPackages [text-block-local]: Remove: archive file [/home/abi/fetcher/tmp/text-block-local-0.0.9.tar.gz]
 [2024-04-13 22:31:38] INFO root fetch - main [MainThread]: End processing [text-block-local]: success
 [2024-04-13 22:31:38] INFO root fetch - main [MainThread]: Store serial: [22754581]
+[2024-04-13 22:33:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754581]
+[2024-04-13 22:33:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 22:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nuumpy
+[2024-04-13 22:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: grid3
+[2024-04-13 22:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shuttleai
+[2024-04-13 22:33:47] INFO root fetch - processPackages [nuumpy]: New version: [0.3] Old Version: [0.2]
+[2024-04-13 22:33:47] INFO root fetch - processPackages [shuttleai]: New version: [3.9.0] Old Version: [3.8.9]
+[2024-04-13 22:33:47] INFO root fetch - processPackages [nuumpy]: Downloading https://files.pythonhosted.org/packages/81/81/f135b201e7f55d232efae1b6791a42b726ef51c9748f0efdbe5eed9092ac/nuumpy-0.2.tar.gz
+[2024-04-13 22:33:47] INFO root fetch - processPackages [grid3]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-13 22:33:47] INFO root fetch - processPackages [shuttleai]: Downloading https://files.pythonhosted.org/packages/01/ea/e1fc19fdca2ec210d7381c0aa0d4b9bfe32560a7a560218a9a506d848235/shuttleai-3.8.9.tar.gz
+[2024-04-13 22:33:47] INFO root fetch - processPackages [grid3]: Downloading https://files.pythonhosted.org/packages/63/32/e9e765c2369e13d7bfe00fd72917781bc2ca580cadbedc6bc694b7c89206/grid3-0.1.7.tar.gz
+[2024-04-13 22:33:47] INFO root fetch - processPackages [nuumpy]: Downloading https://files.pythonhosted.org/packages/66/92/a710bdb4046747853dd001fb8f0175be28219b4e08f7c9fa81db109ba8c2/nuumpy-0.3.tar.gz
+[2024-04-13 22:33:48] INFO root fetch - processPackages [nuumpy]: executing diffoscope
+[2024-04-13 22:33:48] INFO root fetch - processPackages [nuumpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nuumpy-0.2.tar.gz tmp/nuumpy-0.3.tar.gz --markdown 20240413/n/nuumpy/0.2-0.3/README.md --exclude *.pyd
+[2024-04-13 22:33:48] INFO root fetch - processPackages [shuttleai]: Downloading https://files.pythonhosted.org/packages/35/6f/10526af058e5d923209b68a04dee2da037d15fac84a028ac3740bf7373be/shuttleai-3.9.0.tar.gz
+[2024-04-13 22:33:48] INFO root fetch - processPackages [grid3]: Downloading https://files.pythonhosted.org/packages/d4/96/ab46a15a85aee024f64342ec20a2043068eb944332ad0ac8348081cb968a/grid3-0.1.8.tar.gz
+[2024-04-13 22:33:48] INFO root fetch - processPackages [shuttleai]: executing diffoscope
+[2024-04-13 22:33:48] INFO root fetch - processPackages [shuttleai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shuttleai-3.8.9.tar.gz tmp/shuttleai-3.9.0.tar.gz --markdown 20240413/s/shuttleai/3.8.9-3.9.0/README.md --exclude *.pyd
+[2024-04-13 22:33:48] INFO root fetch - processPackages [grid3]: executing diffoscope
+[2024-04-13 22:33:48] INFO root fetch - processPackages [grid3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grid3-0.1.7.tar.gz tmp/grid3-0.1.8.tar.gz --markdown 20240413/g/grid3/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-13 22:33:48] INFO root fetch - processPackages [nuumpy]: Remove: archive file [/home/abi/fetcher/tmp/nuumpy-0.2.tar.gz]
+[2024-04-13 22:33:48] INFO root fetch - processPackages [nuumpy]: Remove: archive file [/home/abi/fetcher/tmp/nuumpy-0.3.tar.gz]
+[2024-04-13 22:33:48] INFO root fetch - main [MainThread]: End processing [nuumpy]: success
+[2024-04-13 22:33:48] INFO root fetch - processPackages [grid3]: Remove: archive file [/home/abi/fetcher/tmp/grid3-0.1.7.tar.gz]
+[2024-04-13 22:33:48] INFO root fetch - processPackages [grid3]: Remove: archive file [/home/abi/fetcher/tmp/grid3-0.1.8.tar.gz]
+[2024-04-13 22:33:48] INFO root fetch - main [MainThread]: End processing [grid3]: success
+[2024-04-13 22:33:48] INFO root fetch - processPackages [shuttleai]: Remove: archive file [/home/abi/fetcher/tmp/shuttleai-3.8.9.tar.gz]
+[2024-04-13 22:33:48] INFO root fetch - processPackages [shuttleai]: Remove: archive file [/home/abi/fetcher/tmp/shuttleai-3.9.0.tar.gz]
+[2024-04-13 22:33:48] INFO root fetch - main [MainThread]: End processing [shuttleai]: success
+[2024-04-13 22:33:48] INFO root fetch - main [MainThread]: Store serial: [22754589]
