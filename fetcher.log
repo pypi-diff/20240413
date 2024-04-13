@@ -14720,3 +14720,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 15:49:15] INFO root fetch - processPackages [maestral]: Remove: archive file [/home/abi/fetcher/tmp/maestral-1.9.3.dev1.tar.gz]
 [2024-04-13 15:49:15] INFO root fetch - main [MainThread]: End processing [maestral]: success
 [2024-04-13 15:49:15] INFO root fetch - main [MainThread]: Store serial: [22752270]
+[2024-04-13 15:51:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752270]
+[2024-04-13 15:51:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 15:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyppbox
+[2024-04-13 15:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spstats
+[2024-04-13 15:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyweatherfr
+[2024-04-13 15:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: paperplotlib
+[2024-04-13 15:51:24] INFO root fetch - processPackages [spstats]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-13 15:51:24] INFO root fetch - processPackages [pyweatherfr]: New version: [4.1.0] Old Version: [4.0.1]
+[2024-04-13 15:51:24] INFO root fetch - processPackages [paperplotlib]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-13 15:51:24] INFO root fetch - processPackages [pyppbox]: New version: [3.6b2] Old Version: [3.6b1]
+[2024-04-13 15:51:24] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/57/f0/46a0dcc15ca9aa3ceaf9bfdcaee80cac8beed5f8b398b591f07e5151eb16/pyweatherfr-4.0.1.tar.gz
+[2024-04-13 15:51:24] INFO root fetch - processPackages [spstats]: Downloading https://files.pythonhosted.org/packages/b6/47/4ccb4b75568f2b498e5ce4432f1193b01022f050f4e0a888a4ab884df8d0/spstats-0.0.1-py3-none-any.whl
+[2024-04-13 15:51:24] INFO root fetch - processPackages [paperplotlib]: Downloading https://files.pythonhosted.org/packages/7d/8d/bdbc0d9b5e3d06e8cefea5041d0201600927429074ac13995f9daa7adf9a/paperplotlib-0.0.2.tar.gz
+[2024-04-13 15:51:24] INFO root fetch - processPackages [pyppbox]: Downloading https://files.pythonhosted.org/packages/4e/ff/83276d07bb60fb6cf3ba080b2584ed93c7df926f37c37a0ffcd589d6e3a0/pyppbox-3.6b1.tar.gz
+[2024-04-13 15:51:25] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/6e/ff/c63e727d600d072da1219994e7530754e688b378dc21172c3435d951b930/pyweatherfr-4.1.0.tar.gz
+[2024-04-13 15:51:25] INFO root fetch - processPackages [spstats]: Downloading https://files.pythonhosted.org/packages/78/79/4fc3eb9c301d4b000f98f8d8516df9e99a77d8fa14cb4bc6c2221c376dee/spstats-0.0.2-py3-none-any.whl
+[2024-04-13 15:51:25] INFO root fetch - processPackages [pyweatherfr]: executing diffoscope
+[2024-04-13 15:51:25] INFO root fetch - processPackages [pyweatherfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyweatherfr-4.0.1.tar.gz tmp/pyweatherfr-4.1.0.tar.gz --markdown 20240413/p/pyweatherfr/4.0.1-4.1.0/README.md --exclude *.pyd
+[2024-04-13 15:51:25] INFO root fetch - processPackages [paperplotlib]: Downloading https://files.pythonhosted.org/packages/c2/e7/3415485214a9350f371558348e018ecc4727b8662eaf1f99c68fd611fbf0/paperplotlib-0.0.3.tar.gz
+[2024-04-13 15:51:25] INFO root fetch - processPackages [spstats]: executing diffoscope
+[2024-04-13 15:51:25] INFO root fetch - processPackages [spstats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spstats-0.0.1-py3-none-any.whl.zip tmp/spstats-0.0.2-py3-none-any.whl.zip --markdown 20240413/s/spstats/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-13 15:51:25] INFO root fetch - processPackages [pyppbox]: Downloading https://files.pythonhosted.org/packages/16/43/b6db75a33bf0e3afaa9f4db2cac53a5d6db9b095209c5de3ac081071ec73/pyppbox-3.6b2.tar.gz
+[2024-04-13 15:51:25] INFO root fetch - processPackages [paperplotlib]: executing diffoscope
+[2024-04-13 15:51:25] INFO root fetch - processPackages [paperplotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paperplotlib-0.0.2.tar.gz tmp/paperplotlib-0.0.3.tar.gz --markdown 20240413/p/paperplotlib/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-13 15:51:25] INFO root fetch - processPackages [pyppbox]: executing diffoscope
+[2024-04-13 15:51:25] INFO root fetch - processPackages [pyppbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyppbox-3.6b1.tar.gz tmp/pyppbox-3.6b2.tar.gz --markdown 20240413/p/pyppbox/3.6b1-3.6b2/README.md --exclude *.pyd
+[2024-04-13 15:51:25] INFO root fetch - processPackages [spstats]: Remove: archive file [/home/abi/fetcher/tmp/spstats-0.0.1-py3-none-any.whl.zip]
+[2024-04-13 15:51:25] INFO root fetch - processPackages [spstats]: Remove: archive file [/home/abi/fetcher/tmp/spstats-0.0.2-py3-none-any.whl.zip]
+[2024-04-13 15:51:25] INFO root fetch - main [MainThread]: End processing [spstats]: success
+[2024-04-13 15:51:25] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-4.0.1.tar.gz]
+[2024-04-13 15:51:25] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-4.1.0.tar.gz]
+[2024-04-13 15:51:25] INFO root fetch - main [MainThread]: End processing [pyweatherfr]: success
+[2024-04-13 15:51:25] INFO root fetch - processPackages [paperplotlib]: Remove: archive file [/home/abi/fetcher/tmp/paperplotlib-0.0.2.tar.gz]
+[2024-04-13 15:51:25] INFO root fetch - processPackages [paperplotlib]: Remove: archive file [/home/abi/fetcher/tmp/paperplotlib-0.0.3.tar.gz]
+[2024-04-13 15:51:25] INFO root fetch - main [MainThread]: End processing [paperplotlib]: success
+[2024-04-13 15:51:26] INFO root fetch - processPackages [pyppbox]: Remove: archive file [/home/abi/fetcher/tmp/pyppbox-3.6b1.tar.gz]
+[2024-04-13 15:51:26] INFO root fetch - processPackages [pyppbox]: Remove: archive file [/home/abi/fetcher/tmp/pyppbox-3.6b2.tar.gz]
+[2024-04-13 15:51:26] INFO root fetch - main [MainThread]: End processing [pyppbox]: success
+[2024-04-13 15:51:26] INFO root fetch - main [MainThread]: Store serial: [22752282]
