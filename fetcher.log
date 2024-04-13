@@ -15020,3 +15020,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:08:52] INFO root fetch - processPackages [libsrg]: Remove: archive file [/home/abi/fetcher/tmp/libsrg-4.1.4-py3-none-any.whl.zip]
 [2024-04-13 16:08:52] INFO root fetch - main [MainThread]: End processing [libsrg]: success
 [2024-04-13 16:08:52] INFO root fetch - main [MainThread]: Store serial: [22752412]
+[2024-04-13 16:10:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752412]
+[2024-04-13 16:11:01] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 16:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zorge
+[2024-04-13 16:11:01] INFO root fetch - processPackages [zorge]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-13 16:11:01] INFO root fetch - processPackages [zorge]: Downloading https://files.pythonhosted.org/packages/04/29/80cbefcf509aac02684de4d8b83d9c1fad8314440a320574a6db5363aa40/zorge-1.0.0.tar.gz
+[2024-04-13 16:11:01] INFO root fetch - processPackages [zorge]: Downloading https://files.pythonhosted.org/packages/48/c3/c310c852479613f587301141d6d775a5dcb142ca38f8391a4d50d2bc8da1/zorge-1.1.0.tar.gz
+[2024-04-13 16:11:02] INFO root fetch - processPackages [zorge]: executing diffoscope
+[2024-04-13 16:11:02] INFO root fetch - processPackages [zorge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zorge-1.0.0.tar.gz tmp/zorge-1.1.0.tar.gz --markdown 20240413/z/zorge/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-04-13 16:11:02] INFO root fetch - processPackages [zorge]: Remove: archive file [/home/abi/fetcher/tmp/zorge-1.0.0.tar.gz]
+[2024-04-13 16:11:02] INFO root fetch - processPackages [zorge]: Remove: archive file [/home/abi/fetcher/tmp/zorge-1.1.0.tar.gz]
+[2024-04-13 16:11:02] INFO root fetch - main [MainThread]: End processing [zorge]: success
+[2024-04-13 16:11:02] INFO root fetch - main [MainThread]: Store serial: [22752416]
