@@ -7423,3 +7423,27 @@
 [2024-04-13 05:47:12] INFO root fetch - processPackages [mojo-interop]: Remove: archive file [/home/abi/fetcher/tmp/mojo_interop-1.3.9.tar.gz]
 [2024-04-13 05:47:12] INFO root fetch - main [MainThread]: End processing [mojo-interop]: success
 [2024-04-13 05:47:12] INFO root fetch - main [MainThread]: Store serial: [22749224]
+[2024-04-13 05:49:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749224]
+[2024-04-13 05:49:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 05:49:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypowerwall
+[2024-04-13 05:49:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: acmebot
+[2024-04-13 05:49:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: doSql
+[2024-04-13 05:49:20] WARNING root fetch - processPackages [doSql]: Skipping, unable to determine old version
+[2024-04-13 05:49:20] INFO root fetch - main [MainThread]: End processing [doSql] error
+[2024-04-13 05:49:20] INFO root fetch - processPackages [pypowerwall]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-04-13 05:49:20] INFO root fetch - processPackages [acmebot]: New version: [2.9.0] Old Version: [2.8.7]
+[2024-04-13 05:49:21] INFO root fetch - processPackages [pypowerwall]: Downloading https://files.pythonhosted.org/packages/d9/2a/5ab9d9568beef341ac204d2c74e13781047694c9323054bcf0f71c6ad667/pypowerwall-0.8.1-py2.py3-none-any.whl
+[2024-04-13 05:49:21] INFO root fetch - processPackages [acmebot]: Downloading https://files.pythonhosted.org/packages/5b/6b/335782d332cb4c2453adf052ceb657d3fc6b064e2ff56c9e99cd8aed45af/acmebot-2.8.7.tar.gz
+[2024-04-13 05:49:21] INFO root fetch - processPackages [pypowerwall]: Downloading https://files.pythonhosted.org/packages/75/e1/6dd6aee094c81598e125401275fb2b375228b603d207230edaf69093f137/pypowerwall-0.8.2-py2.py3-none-any.whl
+[2024-04-13 05:49:21] INFO root fetch - processPackages [acmebot]: Downloading https://files.pythonhosted.org/packages/62/9b/13b8f524181b0d30360ed0ab86a60fbb653370035561475d4a982b9af1fb/acmebot-2.9.0.tar.gz
+[2024-04-13 05:49:21] INFO root fetch - processPackages [pypowerwall]: executing diffoscope
+[2024-04-13 05:49:21] INFO root fetch - processPackages [pypowerwall]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypowerwall-0.8.1-py2.py3-none-any.whl.zip tmp/pypowerwall-0.8.2-py2.py3-none-any.whl.zip --markdown 20240413/p/pypowerwall/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-04-13 05:49:21] INFO root fetch - processPackages [acmebot]: executing diffoscope
+[2024-04-13 05:49:21] INFO root fetch - processPackages [acmebot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acmebot-2.8.7.tar.gz tmp/acmebot-2.9.0.tar.gz --markdown 20240413/a/acmebot/2.8.7-2.9.0/README.md --exclude *.pyd
+[2024-04-13 05:49:22] INFO root fetch - processPackages [pypowerwall]: Remove: archive file [/home/abi/fetcher/tmp/pypowerwall-0.8.1-py2.py3-none-any.whl.zip]
+[2024-04-13 05:49:22] INFO root fetch - processPackages [pypowerwall]: Remove: archive file [/home/abi/fetcher/tmp/pypowerwall-0.8.2-py2.py3-none-any.whl.zip]
+[2024-04-13 05:49:22] INFO root fetch - main [MainThread]: End processing [pypowerwall]: success
+[2024-04-13 05:49:22] INFO root fetch - processPackages [acmebot]: Remove: archive file [/home/abi/fetcher/tmp/acmebot-2.8.7.tar.gz]
+[2024-04-13 05:49:22] INFO root fetch - processPackages [acmebot]: Remove: archive file [/home/abi/fetcher/tmp/acmebot-2.9.0.tar.gz]
+[2024-04-13 05:49:22] INFO root fetch - main [MainThread]: End processing [acmebot]: success
+[2024-04-13 05:49:22] INFO root fetch - main [MainThread]: Store serial: [22749234]
