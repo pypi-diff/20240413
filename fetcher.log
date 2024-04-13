@@ -19412,3 +19412,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 21:50:21] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.4.6.tar.gz]
 [2024-04-13 21:50:21] INFO root fetch - main [MainThread]: End processing [fudstop]: success
 [2024-04-13 21:50:21] INFO root fetch - main [MainThread]: Store serial: [22754358]
+[2024-04-13 21:52:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754358]
+[2024-04-13 21:52:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 21:52:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thepipe-api
+[2024-04-13 21:52:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seiscod
+[2024-04-13 21:52:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dcicutils
+[2024-04-13 21:52:30] INFO root fetch - processPackages [thepipe-api]: New version: [0.1.2] Old Version: [0.1.0]
+[2024-04-13 21:52:30] INFO root fetch - processPackages [dcicutils]: New version: [8.8.3.1b4] Old Version: [8.8.3.1b3]
+[2024-04-13 21:52:30] WARNING root fetch - processPackages [seiscod]: Skipping, unable to determine old version
+[2024-04-13 21:52:30] INFO root fetch - main [MainThread]: End processing [seiscod] error
+[2024-04-13 21:52:30] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/c7/ba/e200f97b70395069db3abbe9108569f591055385e9e97003a3df1f56cebd/dcicutils-8.8.3.1b3.tar.gz
+[2024-04-13 21:52:30] INFO root fetch - processPackages [thepipe-api]: Downloading https://files.pythonhosted.org/packages/a2/bb/a128e2d684d6e49a94d5714e95e5b3ebc0ba541bc8cc9d9d91e2331a1c76/thepipe_api-0.1.0.tar.gz
+[2024-04-13 21:52:30] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/4d/3c/7651b02012f6be8529861216d0f908480a4bbdc0ce139fcf0f58ca75b084/dcicutils-8.8.3.1b4.tar.gz
+[2024-04-13 21:52:30] INFO root fetch - processPackages [thepipe-api]: Downloading https://files.pythonhosted.org/packages/5d/df/bca14d6c9bd217a174bf62aa854c00c54f73f9b58155bd5b79b30e3cabf9/thepipe_api-0.1.2.tar.gz
+[2024-04-13 21:52:30] INFO root fetch - processPackages [thepipe-api]: executing diffoscope
+[2024-04-13 21:52:30] INFO root fetch - processPackages [thepipe-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thepipe_api-0.1.0.tar.gz tmp/thepipe_api-0.1.2.tar.gz --markdown 20240413/t/thepipe-api/0.1.0-0.1.2/README.md --exclude *.pyd
+[2024-04-13 21:52:30] INFO root fetch - processPackages [dcicutils]: executing diffoscope
+[2024-04-13 21:52:30] INFO root fetch - processPackages [dcicutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcicutils-8.8.3.1b3.tar.gz tmp/dcicutils-8.8.3.1b4.tar.gz --markdown 20240413/d/dcicutils/8.8.3.1b3-8.8.3.1b4/README.md --exclude *.pyd
+[2024-04-13 21:52:31] INFO root fetch - processPackages [thepipe-api]: Remove: archive file [/home/abi/fetcher/tmp/thepipe_api-0.1.0.tar.gz]
+[2024-04-13 21:52:31] INFO root fetch - processPackages [thepipe-api]: Remove: archive file [/home/abi/fetcher/tmp/thepipe_api-0.1.2.tar.gz]
+[2024-04-13 21:52:31] INFO root fetch - main [MainThread]: End processing [thepipe-api]: success
+[2024-04-13 21:52:31] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.3.1b3.tar.gz]
+[2024-04-13 21:52:31] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.3.1b4.tar.gz]
+[2024-04-13 21:52:31] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
+[2024-04-13 21:52:31] INFO root fetch - main [MainThread]: Store serial: [22754368]
