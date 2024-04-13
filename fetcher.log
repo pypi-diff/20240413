@@ -10909,3 +10909,37 @@
 [2024-04-13 10:30:57] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240413.258.tar.gz]
 [2024-04-13 10:30:57] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-04-13 10:30:57] INFO root fetch - main [MainThread]: Store serial: [22750540]
+[2024-04-13 10:33:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750540]
+[2024-04-13 10:33:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 10:33:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: speech_user_interface
+[2024-04-13 10:33:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: slang-omni
+[2024-04-13 10:33:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Agently-cmd
+[2024-04-13 10:33:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: skybox
+[2024-04-13 10:33:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: speech_user_interface
+[2024-04-13 10:33:06] WARNING root fetch - processPackages [slang-omni]: Skipping, unable to determine old version
+[2024-04-13 10:33:06] INFO root fetch - main [MainThread]: End processing [slang-omni] error
+[2024-04-13 10:33:06] INFO root fetch - processPackages [speech_user_interface]: New version: [0.1.6] Old Version: [0.1.4]
+[2024-04-13 10:33:06] INFO root fetch - processPackages [speech_user_interface]: New version: [0.1.6] Old Version: [0.1.4]
+[2024-04-13 10:33:06] INFO root fetch - processPackages [skybox]: New version: [2024.4.3] Old Version: [2024.4.13]
+[2024-04-13 10:33:06] WARNING root fetch - processPackages [Agently-cmd]: Skipping, unable to determine old version
+[2024-04-13 10:33:06] INFO root fetch - main [MainThread]: End processing [Agently-cmd] error
+[2024-04-13 10:33:06] INFO root fetch - processPackages [speech_user_interface]: Downloading https://files.pythonhosted.org/packages/e0/3e/15f2e55a165fe8aa0536dd25a1f5698ef1b95e2e1f4a914cbe918aa941d9/speech_user_interface-0.1.4.tar.gz
+[2024-04-13 10:33:06] INFO root fetch - processPackages [speech_user_interface]: Downloading https://files.pythonhosted.org/packages/e0/3e/15f2e55a165fe8aa0536dd25a1f5698ef1b95e2e1f4a914cbe918aa941d9/speech_user_interface-0.1.4.tar.gz
+[2024-04-13 10:33:06] INFO root fetch - processPackages [skybox]: Downloading https://files.pythonhosted.org/packages/69/1a/2468cbc10b92cd6696b17615fa9cc6d10e398c7f2405523f04affa7b2327/skybox-2024.4.13.tar.gz
+[2024-04-13 10:33:06] INFO root fetch - processPackages [speech_user_interface]: Downloading https://files.pythonhosted.org/packages/5d/cd/db0a5302a8baa17609b80f6825ce7778013415eae73beb2cabd28ef1c421/speech_user_interface-0.1.6.tar.gz
+[2024-04-13 10:33:06] INFO root fetch - processPackages [speech_user_interface]: Downloading https://files.pythonhosted.org/packages/5d/cd/db0a5302a8baa17609b80f6825ce7778013415eae73beb2cabd28ef1c421/speech_user_interface-0.1.6.tar.gz
+[2024-04-13 10:33:06] INFO root fetch - processPackages [speech_user_interface]: executing diffoscope
+[2024-04-13 10:33:06] INFO root fetch - processPackages [speech_user_interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speech_user_interface-0.1.4.tar.gz tmp/speech_user_interface-0.1.6.tar.gz --markdown 20240413/s/speech_user_interface/0.1.4-0.1.6/README.md --exclude *.pyd
+[2024-04-13 10:33:06] INFO root fetch - processPackages [speech_user_interface]: executing diffoscope
+[2024-04-13 10:33:06] INFO root fetch - processPackages [speech_user_interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speech_user_interface-0.1.4.tar.gz tmp/speech_user_interface-0.1.6.tar.gz --markdown 20240413/s/speech_user_interface/0.1.4-0.1.6/README.md --exclude *.pyd
+[2024-04-13 10:33:07] INFO root fetch - processPackages [skybox]: Downloading https://files.pythonhosted.org/packages/9c/98/c4affeaa793a4db368b3c6cb3882b5422a7388e535d97b1e7b0afacf9ab9/skybox-2024.4.3.tar.gz
+[2024-04-13 10:33:07] INFO root fetch - processPackages [skybox]: executing diffoscope
+[2024-04-13 10:33:07] INFO root fetch - processPackages [skybox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skybox-2024.4.13.tar.gz tmp/skybox-2024.4.3.tar.gz --markdown 20240413/s/skybox/2024.4.13-2024.4.3/README.md --exclude *.pyd
+[2024-04-13 10:33:07] INFO root fetch - processPackages [speech_user_interface]: Remove: archive file [/home/abi/fetcher/tmp/speech_user_interface-0.1.4.tar.gz]
+[2024-04-13 10:33:07] INFO root fetch - processPackages [speech_user_interface]: Remove: archive file [/home/abi/fetcher/tmp/speech_user_interface-0.1.6.tar.gz]
+[2024-04-13 10:33:07] INFO root fetch - main [MainThread]: End processing [speech_user_interface]: success
+[2024-04-13 10:33:07] INFO root fetch - main [MainThread]: End processing [speech_user_interface]: success
+[2024-04-13 10:33:07] INFO root fetch - processPackages [skybox]: Remove: archive file [/home/abi/fetcher/tmp/skybox-2024.4.13.tar.gz]
+[2024-04-13 10:33:07] INFO root fetch - processPackages [skybox]: Remove: archive file [/home/abi/fetcher/tmp/skybox-2024.4.3.tar.gz]
+[2024-04-13 10:33:07] INFO root fetch - main [MainThread]: End processing [skybox]: success
+[2024-04-13 10:33:07] INFO root fetch - main [MainThread]: Store serial: [22750556]
