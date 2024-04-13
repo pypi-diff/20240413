@@ -10637,3 +10637,42 @@
 [2024-04-13 10:15:31] INFO root fetch - processPackages [speech_user_interface]: Remove: archive file [/home/abi/fetcher/tmp/speech_user_interface-0.1.2.tar.gz]
 [2024-04-13 10:15:31] INFO root fetch - main [MainThread]: End processing [speech_user_interface]: success
 [2024-04-13 10:15:31] INFO root fetch - main [MainThread]: Store serial: [22750459]
+[2024-04-13 10:17:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750459]
+[2024-04-13 10:17:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 10:17:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-azure
+[2024-04-13 10:17:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tlhengine
+[2024-04-13 10:17:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pynovnc
+[2024-04-13 10:17:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autotrain-advanced
+[2024-04-13 10:17:41] INFO root fetch - processPackages [tlhengine]: New version: [0.2] Old Version: [0.1]
+[2024-04-13 10:17:41] INFO root fetch - processPackages [pynovnc]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-13 10:17:41] INFO root fetch - processPackages [autotrain-advanced]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-13 10:17:41] INFO root fetch - processPackages [tlhengine]: Downloading https://files.pythonhosted.org/packages/48/25/c0ff5e8ada8e49b2a16c8390df852521a5156b1702f0eb8d4b8f86ba6608/tlhengine-0.1-py2.py3-none-any.whl
+[2024-04-13 10:17:41] INFO root fetch - processPackages [pynovnc]: Downloading https://files.pythonhosted.org/packages/04/72/aaa7764ede1b90fc9fe325a053ee33a2883227f8776446994077c735216b/pynovnc-1.0.4.tar.gz
+[2024-04-13 10:17:41] INFO root fetch - processPackages [autotrain-advanced]: Downloading https://files.pythonhosted.org/packages/f7/32/d4134f2d2283aafd5d82db1b47031a6025f7f458bf7dc07ef8389a35fab9/autotrain-advanced-0.7.8.tar.gz
+[2024-04-13 10:17:41] INFO root fetch - processPackages [pulumi-azure]: New version: [5.9.0a1654522381] Old Version: [5.9.0a1654274095]
+[2024-04-13 10:17:41] INFO root fetch - processPackages [tlhengine]: Downloading https://files.pythonhosted.org/packages/27/c9/9fd9cb0bdb9f83357c5fb9d2ed75298282e68cbe5cd12ab6ca1d27d6df0c/tlhengine-0.2-py3-none-any.whl
+[2024-04-13 10:17:41] INFO root fetch - processPackages [pulumi-azure]: Downloading https://files.pythonhosted.org/packages/95/6d/184badcdda1d8846e82c25063e340f60ddbf5b018a98c303e4bb5aa0a6ff/pulumi_azure-5.9.0a1654274095.tar.gz
+[2024-04-13 10:17:41] INFO root fetch - processPackages [autotrain-advanced]: Downloading https://files.pythonhosted.org/packages/95/9e/ee31433cc0bd82c907dd180918e1072f54bcd0139421e0ab4df0c9f3f919/autotrain-advanced-0.7.9.tar.gz
+[2024-04-13 10:17:41] INFO root fetch - processPackages [tlhengine]: executing diffoscope
+[2024-04-13 10:17:41] INFO root fetch - processPackages [tlhengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tlhengine-0.1-py2.py3-none-any.whl.zip tmp/tlhengine-0.2-py3-none-any.whl.zip --markdown 20240413/t/tlhengine/0.1-0.2/README.md --exclude *.pyd
+[2024-04-13 10:17:41] INFO root fetch - processPackages [pynovnc]: Downloading https://files.pythonhosted.org/packages/2b/4a/dc877d3fb6b1ddc292a6abf4a26cbc299bf68a95638782ba73f1853b447c/pynovnc-1.0.5.tar.gz
+[2024-04-13 10:17:41] INFO root fetch - processPackages [autotrain-advanced]: executing diffoscope
+[2024-04-13 10:17:41] INFO root fetch - processPackages [autotrain-advanced]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autotrain-advanced-0.7.8.tar.gz tmp/autotrain-advanced-0.7.9.tar.gz --markdown 20240413/a/autotrain-advanced/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-04-13 10:17:41] INFO root fetch - processPackages [pynovnc]: executing diffoscope
+[2024-04-13 10:17:41] INFO root fetch - processPackages [pynovnc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynovnc-1.0.4.tar.gz tmp/pynovnc-1.0.5.tar.gz --markdown 20240413/p/pynovnc/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-04-13 10:17:42] INFO root fetch - processPackages [pulumi-azure]: Downloading https://files.pythonhosted.org/packages/19/1b/87a51c6988d790ed8bfb430670a85c499af09d14d21430448a37baa7fb64/pulumi_azure-5.9.0a1654522381.tar.gz
+[2024-04-13 10:17:42] INFO root fetch - processPackages [tlhengine]: Remove: archive file [/home/abi/fetcher/tmp/tlhengine-0.1-py2.py3-none-any.whl.zip]
+[2024-04-13 10:17:42] INFO root fetch - processPackages [tlhengine]: Remove: archive file [/home/abi/fetcher/tmp/tlhengine-0.2-py3-none-any.whl.zip]
+[2024-04-13 10:17:42] INFO root fetch - main [MainThread]: End processing [tlhengine]: success
+[2024-04-13 10:17:42] INFO root fetch - processPackages [pynovnc]: Remove: archive file [/home/abi/fetcher/tmp/pynovnc-1.0.4.tar.gz]
+[2024-04-13 10:17:42] INFO root fetch - processPackages [pynovnc]: Remove: archive file [/home/abi/fetcher/tmp/pynovnc-1.0.5.tar.gz]
+[2024-04-13 10:17:42] INFO root fetch - main [MainThread]: End processing [pynovnc]: success
+[2024-04-13 10:17:42] INFO root fetch - processPackages [pulumi-azure]: executing diffoscope
+[2024-04-13 10:17:42] INFO root fetch - processPackages [pulumi-azure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_azure-5.9.0a1654274095.tar.gz tmp/pulumi_azure-5.9.0a1654522381.tar.gz --markdown 20240413/p/pulumi-azure/5.9.0a1654274095-5.9.0a1654522381/README.md --exclude *.pyd
+[2024-04-13 10:17:42] INFO root fetch - processPackages [autotrain-advanced]: Remove: archive file [/home/abi/fetcher/tmp/autotrain-advanced-0.7.8.tar.gz]
+[2024-04-13 10:17:42] INFO root fetch - processPackages [autotrain-advanced]: Remove: archive file [/home/abi/fetcher/tmp/autotrain-advanced-0.7.9.tar.gz]
+[2024-04-13 10:17:42] INFO root fetch - main [MainThread]: End processing [autotrain-advanced]: success
+[2024-04-13 10:17:51] INFO root fetch - processPackages [pulumi-azure]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_azure-5.9.0a1654274095.tar.gz]
+[2024-04-13 10:17:51] INFO root fetch - processPackages [pulumi-azure]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_azure-5.9.0a1654522381.tar.gz]
+[2024-04-13 10:17:51] INFO root fetch - main [MainThread]: End processing [pulumi-azure]: success
+[2024-04-13 10:17:51] INFO root fetch - main [MainThread]: Store serial: [22750470]
