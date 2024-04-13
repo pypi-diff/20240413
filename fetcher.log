@@ -16747,3 +16747,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 18:30:26] INFO root fetch - processPackages [pyxplora-api]: Remove: archive file [/home/abi/fetcher/tmp/pyxplora_api-2.9.0.tar.gz]
 [2024-04-13 18:30:26] INFO root fetch - main [MainThread]: End processing [pyxplora-api]: success
 [2024-04-13 18:30:26] INFO root fetch - main [MainThread]: Store serial: [22753170]
+[2024-04-13 18:32:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753170]
+[2024-04-13 18:32:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 18:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: graylint
+[2024-04-13 18:32:34] INFO root fetch - processPackages [graylint]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-04-13 18:32:35] INFO root fetch - processPackages [graylint]: Downloading https://files.pythonhosted.org/packages/bc/9d/5fe6f19bc5ae45489907510046df7a6deb0ebcfef20bd3f5e326936fa15a/graylint-1.0.1.tar.gz
+[2024-04-13 18:32:35] INFO root fetch - processPackages [graylint]: Downloading https://files.pythonhosted.org/packages/ac/85/f462796415aea9705059c6849551b8339b6a4764f6ae3c7cb33b794fdaad/graylint-1.1.0.tar.gz
+[2024-04-13 18:32:35] INFO root fetch - processPackages [graylint]: executing diffoscope
+[2024-04-13 18:32:35] INFO root fetch - processPackages [graylint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graylint-1.0.1.tar.gz tmp/graylint-1.1.0.tar.gz --markdown 20240413/g/graylint/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-04-13 18:32:36] INFO root fetch - processPackages [graylint]: Remove: archive file [/home/abi/fetcher/tmp/graylint-1.0.1.tar.gz]
+[2024-04-13 18:32:36] INFO root fetch - processPackages [graylint]: Remove: archive file [/home/abi/fetcher/tmp/graylint-1.1.0.tar.gz]
+[2024-04-13 18:32:36] INFO root fetch - main [MainThread]: End processing [graylint]: success
+[2024-04-13 18:32:36] INFO root fetch - main [MainThread]: Store serial: [22753173]
