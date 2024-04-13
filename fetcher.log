@@ -15309,3 +15309,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:28:34] INFO root fetch - processPackages [prosperity2bt]: Remove: archive file [/home/abi/fetcher/tmp/prosperity2bt-0.4.4.tar.gz]
 [2024-04-13 16:28:34] INFO root fetch - main [MainThread]: End processing [prosperity2bt]: success
 [2024-04-13 16:28:34] INFO root fetch - main [MainThread]: Store serial: [22752508]
+[2024-04-13 16:30:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752508]
+[2024-04-13 16:30:42] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 16:30:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-l10n-ec-account-edi
+[2024-04-13 16:30:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: runit-cli
+[2024-04-13 16:30:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: biolmai
+[2024-04-13 16:30:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: prosperity2submit
+[2024-04-13 16:30:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: liteexpr
+[2024-04-13 16:30:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: twikit
+[2024-04-13 16:30:43] INFO root fetch - processPackages [runit-cli]: New version: [0.4.0] Old Version: [0.3.9]
+[2024-04-13 16:30:43] INFO root fetch - processPackages [prosperity2submit]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-13 16:30:43] INFO root fetch - processPackages [odoo-addon-l10n-ec-account-edi]: New version: [17.0.1.0.6] Old Version: [17.0.1.0.5.2]
+[2024-04-13 16:30:43] INFO root fetch - processPackages [liteexpr]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 16:30:43] INFO root fetch - processPackages [biolmai]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 16:30:43] INFO root fetch - processPackages [twikit]: New version: [1.4.8] Old Version: [1.4.7]
+[2024-04-13 16:30:43] INFO root fetch - processPackages [prosperity2submit]: Downloading https://files.pythonhosted.org/packages/b1/d0/b30331c0a6afccc79c25e61a5b597e0cf3ce760bc82a0a68f8c7e298fbd6/prosperity2submit-0.2.4.tar.gz
+[2024-04-13 16:30:43] INFO root fetch - processPackages [runit-cli]: Downloading https://files.pythonhosted.org/packages/3c/e0/9b481c711c7ec4c330d6a1b43f80020e15db111cbfcd434dfce2993c9a4a/runit-cli-0.3.9.tar.gz
+[2024-04-13 16:30:43] INFO root fetch - processPackages [liteexpr]: Downloading https://files.pythonhosted.org/packages/f3/43/4fe2ec2afd33357792d98fd1b530caa77004f68991518184406b97979856/liteexpr-0.0.8.tar.gz
+[2024-04-13 16:30:43] INFO root fetch - processPackages [odoo-addon-l10n-ec-account-edi]: Downloading https://files.pythonhosted.org/packages/97/3f/1d3c09ca0dc0cd7e697ff6f3db7f4b98592137c034c7d878e266e88bc3fa/odoo_addon_l10n_ec_account_edi-17.0.1.0.5.2-py3-none-any.whl
+[2024-04-13 16:30:43] INFO root fetch - processPackages [biolmai]: Downloading https://files.pythonhosted.org/packages/a7/f4/e6d4f072708e7fcc99047f66666644b99ff4848c25c1579aeb301b72a144/biolmai-0.1.8.tar.gz
+[2024-04-13 16:30:43] INFO root fetch - processPackages [twikit]: Downloading https://files.pythonhosted.org/packages/d1/57/b38a4888e6dcae925c5c63e9d55e7cc1edafa775ecc8feff6a37c535c4a5/twikit-1.4.7.tar.gz
+[2024-04-13 16:30:43] INFO root fetch - processPackages [prosperity2submit]: Downloading https://files.pythonhosted.org/packages/bf/77/1a97813a33771c8de4ac07fa9aba52c28c7f0fa28d6603cbe53dad105bb1/prosperity2submit-0.2.5.tar.gz
+[2024-04-13 16:30:43] INFO root fetch - processPackages [runit-cli]: Downloading https://files.pythonhosted.org/packages/bd/d1/bc794e9e74a17509d2774568ba743672afacaeb5691da02c77bdde18d214/runit_cli-0.4.0.tar.gz
+[2024-04-13 16:30:43] INFO root fetch - processPackages [liteexpr]: Downloading https://files.pythonhosted.org/packages/61/ef/92bb56b66ab2f9b40eab0c493e5d9a508ee7972229ef2f1308d1f30607c6/liteexpr-0.0.9.tar.gz
+[2024-04-13 16:30:43] INFO root fetch - processPackages [odoo-addon-l10n-ec-account-edi]: Downloading https://files.pythonhosted.org/packages/95/57/35cd419e9550d13d7f15389564f55d8d47550641ee644fbc067791c27aba/odoo_addon_l10n_ec_account_edi-17.0.1.0.6-py3-none-any.whl
+[2024-04-13 16:30:43] INFO root fetch - processPackages [twikit]: Downloading https://files.pythonhosted.org/packages/04/24/1dbebec66499479a09a67675f0e15274328bce171b624726a0e5c7dee07e/twikit-1.4.8.tar.gz
+[2024-04-13 16:30:43] INFO root fetch - processPackages [prosperity2submit]: executing diffoscope
+[2024-04-13 16:30:43] INFO root fetch - processPackages [prosperity2submit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prosperity2submit-0.2.4.tar.gz tmp/prosperity2submit-0.2.5.tar.gz --markdown 20240413/p/prosperity2submit/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-13 16:30:43] INFO root fetch - processPackages [runit-cli]: executing diffoscope
+[2024-04-13 16:30:43] INFO root fetch - processPackages [runit-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runit-cli-0.3.9.tar.gz tmp/runit_cli-0.4.0.tar.gz --markdown 20240413/r/runit-cli/0.3.9-0.4.0/README.md --exclude *.pyd
+[2024-04-13 16:30:43] INFO root fetch - processPackages [liteexpr]: executing diffoscope
+[2024-04-13 16:30:43] INFO root fetch - processPackages [liteexpr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liteexpr-0.0.8.tar.gz tmp/liteexpr-0.0.9.tar.gz --markdown 20240413/l/liteexpr/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 16:30:43] INFO root fetch - processPackages [odoo-addon-l10n-ec-account-edi]: executing diffoscope
+[2024-04-13 16:30:43] INFO root fetch - processPackages [odoo-addon-l10n-ec-account-edi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ec_account_edi-17.0.1.0.5.2-py3-none-any.whl.zip tmp/odoo_addon_l10n_ec_account_edi-17.0.1.0.6-py3-none-any.whl.zip --markdown 20240413/o/odoo-addon-l10n-ec-account-edi/17.0.1.0.5.2-17.0.1.0.6/README.md --exclude *.pyd
+[2024-04-13 16:30:43] INFO root fetch - processPackages [twikit]: executing diffoscope
+[2024-04-13 16:30:43] INFO root fetch - processPackages [twikit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twikit-1.4.7.tar.gz tmp/twikit-1.4.8.tar.gz --markdown 20240413/t/twikit/1.4.7-1.4.8/README.md --exclude *.pyd
+[2024-04-13 16:30:44] INFO root fetch - processPackages [biolmai]: Downloading https://files.pythonhosted.org/packages/20/1d/23709bd43991f9c49e943f01f2062847bbb48fb26e85aba566abf0c3514f/biolmai-0.1.9.tar.gz
+[2024-04-13 16:30:44] INFO root fetch - processPackages [biolmai]: executing diffoscope
+[2024-04-13 16:30:44] INFO root fetch - processPackages [biolmai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biolmai-0.1.8.tar.gz tmp/biolmai-0.1.9.tar.gz --markdown 20240413/b/biolmai/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 16:30:44] INFO root fetch - processPackages [liteexpr]: Remove: archive file [/home/abi/fetcher/tmp/liteexpr-0.0.8.tar.gz]
+[2024-04-13 16:30:44] INFO root fetch - processPackages [liteexpr]: Remove: archive file [/home/abi/fetcher/tmp/liteexpr-0.0.9.tar.gz]
+[2024-04-13 16:30:44] INFO root fetch - main [MainThread]: End processing [liteexpr]: success
+[2024-04-13 16:30:44] INFO root fetch - processPackages [prosperity2submit]: Remove: archive file [/home/abi/fetcher/tmp/prosperity2submit-0.2.4.tar.gz]
+[2024-04-13 16:30:44] INFO root fetch - processPackages [prosperity2submit]: Remove: archive file [/home/abi/fetcher/tmp/prosperity2submit-0.2.5.tar.gz]
+[2024-04-13 16:30:44] INFO root fetch - main [MainThread]: End processing [prosperity2submit]: success
+[2024-04-13 16:30:44] INFO root fetch - processPackages [runit-cli]: Remove: archive file [/home/abi/fetcher/tmp/runit-cli-0.3.9.tar.gz]
+[2024-04-13 16:30:44] INFO root fetch - processPackages [runit-cli]: Remove: archive file [/home/abi/fetcher/tmp/runit_cli-0.4.0.tar.gz]
+[2024-04-13 16:30:44] INFO root fetch - main [MainThread]: End processing [runit-cli]: success
+[2024-04-13 16:30:44] INFO root fetch - processPackages [twikit]: Remove: archive file [/home/abi/fetcher/tmp/twikit-1.4.7.tar.gz]
+[2024-04-13 16:30:44] INFO root fetch - processPackages [twikit]: Remove: archive file [/home/abi/fetcher/tmp/twikit-1.4.8.tar.gz]
+[2024-04-13 16:30:44] INFO root fetch - main [MainThread]: End processing [twikit]: success
+[2024-04-13 16:30:44] INFO root fetch - processPackages [odoo-addon-l10n-ec-account-edi]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ec_account_edi-17.0.1.0.5.2-py3-none-any.whl.zip]
+[2024-04-13 16:30:44] INFO root fetch - processPackages [odoo-addon-l10n-ec-account-edi]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ec_account_edi-17.0.1.0.6-py3-none-any.whl.zip]
+[2024-04-13 16:30:44] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ec-account-edi]: success
+[2024-04-13 16:30:45] INFO root fetch - processPackages [biolmai]: Remove: archive file [/home/abi/fetcher/tmp/biolmai-0.1.8.tar.gz]
+[2024-04-13 16:30:45] INFO root fetch - processPackages [biolmai]: Remove: archive file [/home/abi/fetcher/tmp/biolmai-0.1.9.tar.gz]
+[2024-04-13 16:30:45] INFO root fetch - main [MainThread]: End processing [biolmai]: success
+[2024-04-13 16:30:45] INFO root fetch - main [MainThread]: Store serial: [22752526]
