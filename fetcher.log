@@ -11608,3 +11608,26 @@
 [2024-04-13 11:27:42] WARNING root fetch - processPackages [aguirre]: Skipping, unable to determine old version
 [2024-04-13 11:27:42] INFO root fetch - main [MainThread]: End processing [aguirre] error
 [2024-04-13 11:27:42] INFO root fetch - main [MainThread]: Store serial: [22750892]
+[2024-04-13 11:29:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750892]
+[2024-04-13 11:29:50] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 11:31:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750892]
+[2024-04-13 11:31:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 11:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Agently
+[2024-04-13 11:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kisa-utils
+[2024-04-13 11:31:56] INFO root fetch - processPackages [Agently]: New version: [3.3.0.0a6] Old Version: [3.2.2.4]
+[2024-04-13 11:31:56] INFO root fetch - processPackages [kisa-utils]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-04-13 11:31:56] INFO root fetch - processPackages [Agently]: Downloading https://files.pythonhosted.org/packages/26/66/ca1d2b92d70ae59a13369084c86da8cc916f70d0089baac8cc86812eed67/Agently-3.2.2.4.tar.gz
+[2024-04-13 11:31:56] INFO root fetch - processPackages [kisa-utils]: Downloading https://files.pythonhosted.org/packages/ee/95/a05113f73e087421286b5a4c66118860a6f1df9cffbe081a209de2ccfc4c/kisa_utils-0.9.1-py3-none-any.whl
+[2024-04-13 11:31:57] INFO root fetch - processPackages [Agently]: Downloading https://files.pythonhosted.org/packages/ef/6b/d8583288f12d824272bc6c062717f72a865885b034a5b0a22bf2a4d0db31/Agently-3.3.0.0a6.tar.gz
+[2024-04-13 11:31:57] INFO root fetch - processPackages [kisa-utils]: Downloading https://files.pythonhosted.org/packages/45/a9/4bbdc6afa54eafe6aeb55a578bba32e13d0173c8a6e64cabc8f226fc5941/kisa_utils-0.9.2-py3-none-any.whl
+[2024-04-13 11:31:57] INFO root fetch - processPackages [Agently]: executing diffoscope
+[2024-04-13 11:31:57] INFO root fetch - processPackages [Agently]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Agently-3.2.2.4.tar.gz tmp/Agently-3.3.0.0a6.tar.gz --markdown 20240413/A/Agently/3.2.2.4-3.3.0.0a6/README.md --exclude *.pyd
+[2024-04-13 11:31:57] INFO root fetch - processPackages [kisa-utils]: executing diffoscope
+[2024-04-13 11:31:57] INFO root fetch - processPackages [kisa-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kisa_utils-0.9.1-py3-none-any.whl.zip tmp/kisa_utils-0.9.2-py3-none-any.whl.zip --markdown 20240413/k/kisa-utils/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-04-13 11:31:58] INFO root fetch - processPackages [kisa-utils]: Remove: archive file [/home/abi/fetcher/tmp/kisa_utils-0.9.1-py3-none-any.whl.zip]
+[2024-04-13 11:31:58] INFO root fetch - processPackages [kisa-utils]: Remove: archive file [/home/abi/fetcher/tmp/kisa_utils-0.9.2-py3-none-any.whl.zip]
+[2024-04-13 11:31:58] INFO root fetch - main [MainThread]: End processing [kisa-utils]: success
+[2024-04-13 11:31:58] INFO root fetch - processPackages [Agently]: Remove: archive file [/home/abi/fetcher/tmp/Agently-3.2.2.4.tar.gz]
+[2024-04-13 11:31:58] INFO root fetch - processPackages [Agently]: Remove: archive file [/home/abi/fetcher/tmp/Agently-3.3.0.0a6.tar.gz]
+[2024-04-13 11:31:58] INFO root fetch - main [MainThread]: End processing [Agently]: success
+[2024-04-13 11:31:58] INFO root fetch - main [MainThread]: Store serial: [22750896]
