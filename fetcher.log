@@ -9630,3 +9630,18 @@
 [2024-04-13 09:05:09] INFO root fetch - processPackages [odoo-addon-l10n-ec-base]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ec_base-17.0.1.0.1-py3-none-any.whl.zip]
 [2024-04-13 09:05:09] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ec-base]: success
 [2024-04-13 09:05:09] INFO root fetch - main [MainThread]: Store serial: [22750060]
+[2024-04-13 09:07:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750060]
+[2024-04-13 09:07:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 09:07:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyQt6-Fluent-Widgets
+[2024-04-13 09:07:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: netlify-up
+[2024-04-13 09:07:18] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: New version: [1.5.5] Old Version: [1.5.4]
+[2024-04-13 09:07:18] WARNING root fetch - processPackages [netlify-up]: Skipping, unable to determine old version
+[2024-04-13 09:07:18] INFO root fetch - main [MainThread]: End processing [netlify-up] error
+[2024-04-13 09:07:18] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/8f/48/04720479999775ccfd4580d0d383a2b1181684641c551a75d856261f3787/PyQt6-Fluent-Widgets-1.5.4.tar.gz
+[2024-04-13 09:07:19] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/25/a7/aa133aa824a34c68edfcd40bb5e3e5f431021e43938b12f7b3d3ccc70cd4/PyQt6-Fluent-Widgets-1.5.5.tar.gz
+[2024-04-13 09:07:19] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: executing diffoscope
+[2024-04-13 09:07:19] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt6-Fluent-Widgets-1.5.4.tar.gz tmp/PyQt6-Fluent-Widgets-1.5.5.tar.gz --markdown 20240413/P/PyQt6-Fluent-Widgets/1.5.4-1.5.5/README.md --exclude *.pyd
+[2024-04-13 09:07:20] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/PyQt6-Fluent-Widgets-1.5.4.tar.gz]
+[2024-04-13 09:07:20] INFO root fetch - processPackages [PyQt6-Fluent-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/PyQt6-Fluent-Widgets-1.5.5.tar.gz]
+[2024-04-13 09:07:20] INFO root fetch - main [MainThread]: End processing [PyQt6-Fluent-Widgets]: success
+[2024-04-13 09:07:20] INFO root fetch - main [MainThread]: Store serial: [22750068]
