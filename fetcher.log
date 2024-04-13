@@ -15501,3 +15501,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:46:02] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
 [2024-04-13 16:46:02] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
 [2024-04-13 16:46:02] INFO root fetch - main [MainThread]: Store serial: [22752660]
+[2024-04-13 16:48:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752660]
+[2024-04-13 16:48:10] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 16:48:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: furtheredge
+[2024-04-13 16:48:10] INFO root fetch - processPackages [furtheredge]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-13 16:48:10] INFO root fetch - processPackages [furtheredge]: Downloading https://files.pythonhosted.org/packages/42/ef/80865f6aa6b834bfa81cfcde9af04bcee7e25f7cdff2dcc33752e2a47bcf/furtheredge-0.0.2.tar.gz
+[2024-04-13 16:48:11] INFO root fetch - processPackages [furtheredge]: Downloading https://files.pythonhosted.org/packages/ba/e0/d385217fda0af63d9cf601bbb1a25c1206a785c4ef7a80cb9e511646beac/furtheredge-0.0.3.tar.gz
+[2024-04-13 16:48:11] INFO root fetch - processPackages [furtheredge]: executing diffoscope
+[2024-04-13 16:48:11] INFO root fetch - processPackages [furtheredge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furtheredge-0.0.2.tar.gz tmp/furtheredge-0.0.3.tar.gz --markdown 20240413/f/furtheredge/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-13 16:48:11] INFO root fetch - processPackages [furtheredge]: Remove: archive file [/home/abi/fetcher/tmp/furtheredge-0.0.2.tar.gz]
+[2024-04-13 16:48:11] INFO root fetch - processPackages [furtheredge]: Remove: archive file [/home/abi/fetcher/tmp/furtheredge-0.0.3.tar.gz]
+[2024-04-13 16:48:11] INFO root fetch - main [MainThread]: End processing [furtheredge]: success
+[2024-04-13 16:48:11] INFO root fetch - main [MainThread]: Store serial: [22752663]
