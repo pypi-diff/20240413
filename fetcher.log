@@ -7049,3 +7049,24 @@
 [2024-04-13 04:43:52] INFO root fetch - processPackages [dserver]: Remove: archive file [/home/abi/fetcher/tmp/dserver-0.2.7-py3-none-any.whl.zip]
 [2024-04-13 04:43:52] INFO root fetch - main [MainThread]: End processing [dserver]: success
 [2024-04-13 04:43:52] INFO root fetch - main [MainThread]: Store serial: [22749057]
+[2024-04-13 04:45:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749057]
+[2024-04-13 04:46:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 04:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xchtools
+[2024-04-13 04:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: locustdb
+[2024-04-13 04:46:00] INFO root fetch - processPackages [xchtools]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 04:46:01] INFO root fetch - processPackages [xchtools]: Downloading https://files.pythonhosted.org/packages/c7/f7/0e3e699372996b0555f04ae3bdd9042d57998abb0fc5b581e18e57f811c2/xchtools-0.1.8-py3-none-any.whl
+[2024-04-13 04:46:01] INFO root fetch - processPackages [locustdb]: New version: [0.4.7] Old Version: [0.4.6]
+[2024-04-13 04:46:01] INFO root fetch - processPackages [xchtools]: Downloading https://files.pythonhosted.org/packages/7e/8c/49a42e45355d4fd4dd99e071963fbf682b1346a1dacd339e409657d906ab/xchtools-0.1.9-py3-none-any.whl
+[2024-04-13 04:46:01] INFO root fetch - processPackages [locustdb]: Downloading https://files.pythonhosted.org/packages/10/c6/35b10ce411b25f9e5437f1262345199e72af00a24c4f56e22bb4cb7af9b9/locustdb-0.4.6-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-13 04:46:01] INFO root fetch - processPackages [xchtools]: executing diffoscope
+[2024-04-13 04:46:01] INFO root fetch - processPackages [xchtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xchtools-0.1.8-py3-none-any.whl.zip tmp/xchtools-0.1.9-py3-none-any.whl.zip --markdown 20240413/x/xchtools/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 04:46:01] INFO root fetch - processPackages [locustdb]: Downloading https://files.pythonhosted.org/packages/d9/6d/e728ed27e76caa0bd81a219801976a1947eb13829ddfd455c478d37f59af/locustdb-0.4.7-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-13 04:46:01] INFO root fetch - processPackages [xchtools]: Remove: archive file [/home/abi/fetcher/tmp/xchtools-0.1.8-py3-none-any.whl.zip]
+[2024-04-13 04:46:01] INFO root fetch - processPackages [xchtools]: Remove: archive file [/home/abi/fetcher/tmp/xchtools-0.1.9-py3-none-any.whl.zip]
+[2024-04-13 04:46:01] INFO root fetch - main [MainThread]: End processing [xchtools]: success
+[2024-04-13 04:46:02] INFO root fetch - processPackages [locustdb]: executing diffoscope
+[2024-04-13 04:46:02] INFO root fetch - processPackages [locustdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locustdb-0.4.6-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/locustdb-0.4.7-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240413/l/locustdb/0.4.6-0.4.7/README.md --exclude *.pyd
+[2024-04-13 04:46:19] INFO root fetch - processPackages [locustdb]: Remove: archive file [/home/abi/fetcher/tmp/locustdb-0.4.6-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-13 04:46:19] INFO root fetch - processPackages [locustdb]: Remove: archive file [/home/abi/fetcher/tmp/locustdb-0.4.7-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-13 04:46:19] INFO root fetch - main [MainThread]: End processing [locustdb]: success
+[2024-04-13 04:46:19] INFO root fetch - main [MainThread]: Store serial: [22749070]
