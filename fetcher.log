@@ -6733,3 +6733,9 @@
 [2024-04-13 03:54:02] WARNING root fetch - processPackages [procastro]: Skipping package: exceeds size limit 11191720>=10485760
 [2024-04-13 03:54:02] INFO root fetch - main [MainThread]: End processing [procastro] error
 [2024-04-13 03:54:02] INFO root fetch - main [MainThread]: Store serial: [22748896]
+[2024-04-13 03:56:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748896]
+[2024-04-13 03:56:10] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 03:56:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plasmapy-sphinx
+[2024-04-13 03:56:11] WARNING root fetch - processPackages [plasmapy-sphinx]: Skipping, unable to determine old version
+[2024-04-13 03:56:11] INFO root fetch - main [MainThread]: End processing [plasmapy-sphinx] error
+[2024-04-13 03:56:11] INFO root fetch - main [MainThread]: Store serial: [22748901]
