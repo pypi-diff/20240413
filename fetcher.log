@@ -6861,3 +6861,15 @@
 [2024-04-13 04:11:26] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240412.tar.gz]
 [2024-04-13 04:11:26] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2024-04-13 04:11:26] INFO root fetch - main [MainThread]: Store serial: [22748954]
+[2024-04-13 04:13:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748954]
+[2024-04-13 04:13:35] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 04:13:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EllipSect
+[2024-04-13 04:13:35] INFO root fetch - processPackages [EllipSect]: New version: [3.4.0] Old Version: [3.2.3]
+[2024-04-13 04:13:35] INFO root fetch - processPackages [EllipSect]: Downloading https://files.pythonhosted.org/packages/f0/30/1841e1c22de1993ba485dcc8fb5401c3a1be64feecf4b01022fe5b99be79/EllipSect-3.2.3.tar.gz
+[2024-04-13 04:13:36] INFO root fetch - processPackages [EllipSect]: Downloading https://files.pythonhosted.org/packages/4c/5d/f9240bb0b2756857d5c1b5d09902474f114fdd71bdb209fee4498c23206d/EllipSect-3.4.0.tar.gz
+[2024-04-13 04:13:37] INFO root fetch - processPackages [EllipSect]: executing diffoscope
+[2024-04-13 04:13:37] INFO root fetch - processPackages [EllipSect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EllipSect-3.2.3.tar.gz tmp/EllipSect-3.4.0.tar.gz --markdown 20240413/E/EllipSect/3.2.3-3.4.0/README.md --exclude *.pyd
+[2024-04-13 04:13:38] INFO root fetch - processPackages [EllipSect]: Remove: archive file [/home/abi/fetcher/tmp/EllipSect-3.2.3.tar.gz]
+[2024-04-13 04:13:38] INFO root fetch - processPackages [EllipSect]: Remove: archive file [/home/abi/fetcher/tmp/EllipSect-3.4.0.tar.gz]
+[2024-04-13 04:13:38] INFO root fetch - main [MainThread]: End processing [EllipSect]: success
+[2024-04-13 04:13:38] INFO root fetch - main [MainThread]: Store serial: [22748960]
