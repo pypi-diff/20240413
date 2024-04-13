@@ -20347,3 +20347,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 23:12:55] INFO root fetch - processPackages [kilosort]: Remove: archive file [/home/abi/fetcher/tmp/kilosort-4.0.4.tar.gz]
 [2024-04-13 23:12:55] INFO root fetch - main [MainThread]: End processing [kilosort]: success
 [2024-04-13 23:12:55] INFO root fetch - main [MainThread]: Store serial: [22754768]
+[2024-04-13 23:14:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754768]
+[2024-04-13 23:15:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 23:15:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: csebuetnlp-normalizer
+[2024-04-13 23:15:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cyclophaser
+[2024-04-13 23:15:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dpq
+[2024-04-13 23:15:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fastapi-xroad-soap
+[2024-04-13 23:15:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: arion-library
+[2024-04-13 23:15:04] INFO root fetch - processPackages [arion-library]: New version: [1.1rc52.dev52] Old Version: [1.1rc51.dev51]
+[2024-04-13 23:15:04] INFO root fetch - processPackages [dpq]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-13 23:15:04] INFO root fetch - processPackages [arion-library]: Downloading https://files.pythonhosted.org/packages/2b/11/7e2e5187bb6e65993760df206c893a3df7f3499504e0278f8133ad2471db/arion_library-1.1rc51.dev51.tar.gz
+[2024-04-13 23:15:04] INFO root fetch - processPackages [fastapi-xroad-soap]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-13 23:15:04] INFO root fetch - processPackages [cyclophaser]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-04-13 23:15:04] INFO root fetch - processPackages [dpq]: Downloading https://files.pythonhosted.org/packages/3a/2b/f29b27f6d183597a471047ce2aa5171a362efb85f5b930a04c297c7f73a3/dpq-0.1.3.tar.gz
+[2024-04-13 23:15:04] WARNING root fetch - processPackages [csebuetnlp-normalizer]: Skipping, unable to determine old version
+[2024-04-13 23:15:04] INFO root fetch - main [MainThread]: End processing [csebuetnlp-normalizer] error
+[2024-04-13 23:15:04] INFO root fetch - processPackages [fastapi-xroad-soap]: Downloading https://files.pythonhosted.org/packages/6e/2c/5bb717dccee85f37c5867bf8790b4eb6b8d9e3cdd9a4499fcdcbc92cbcf2/fastapi_xroad_soap-0.2.0.tar.gz
+[2024-04-13 23:15:04] INFO root fetch - processPackages [cyclophaser]: Downloading https://files.pythonhosted.org/packages/9d/56/aa593c3e0e4be9778d0828d3e4482d0032e7e2bc14b838c264768f91e983/cyclophaser-1.7.0.tar.gz
+[2024-04-13 23:15:04] INFO root fetch - processPackages [dpq]: Downloading https://files.pythonhosted.org/packages/ae/3a/f35f87de3b1c8d9ca202a687a3c5714c1959e370a5a0607f32d4a6d3ff86/dpq-0.1.4.tar.gz
+[2024-04-13 23:15:04] INFO root fetch - processPackages [arion-library]: Downloading https://files.pythonhosted.org/packages/03/e1/b7082245e2b56e1afeb544bdab0a48bad353f493977ece3d1e87defed1a2/arion_library-1.1rc52.dev52.tar.gz
+[2024-04-13 23:15:04] INFO root fetch - processPackages [dpq]: executing diffoscope
+[2024-04-13 23:15:04] INFO root fetch - processPackages [dpq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dpq-0.1.3.tar.gz tmp/dpq-0.1.4.tar.gz --markdown 20240413/d/dpq/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-13 23:15:04] INFO root fetch - processPackages [arion-library]: executing diffoscope
+[2024-04-13 23:15:04] INFO root fetch - processPackages [arion-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arion_library-1.1rc51.dev51.tar.gz tmp/arion_library-1.1rc52.dev52.tar.gz --markdown 20240413/a/arion-library/1.1rc51.dev51-1.1rc52.dev52/README.md --exclude *.pyd
+[2024-04-13 23:15:05] INFO root fetch - processPackages [cyclophaser]: Downloading https://files.pythonhosted.org/packages/66/be/b02218cf16106a662dd66812848eaad32033a6bc254172f3214cbcadf6ae/cyclophaser-1.7.1.tar.gz
+[2024-04-13 23:15:05] INFO root fetch - processPackages [fastapi-xroad-soap]: Downloading https://files.pythonhosted.org/packages/92/77/ff09d1eb11780179e2ef02588f5dae15c9bed7e00591d1aa0e9e3e9e36a4/fastapi_xroad_soap-0.2.1.tar.gz
+[2024-04-13 23:15:05] INFO root fetch - processPackages [cyclophaser]: executing diffoscope
+[2024-04-13 23:15:05] INFO root fetch - processPackages [cyclophaser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyclophaser-1.7.0.tar.gz tmp/cyclophaser-1.7.1.tar.gz --markdown 20240413/c/cyclophaser/1.7.0-1.7.1/README.md --exclude *.pyd
+[2024-04-13 23:15:05] INFO root fetch - processPackages [fastapi-xroad-soap]: executing diffoscope
+[2024-04-13 23:15:05] INFO root fetch - processPackages [fastapi-xroad-soap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_xroad_soap-0.2.0.tar.gz tmp/fastapi_xroad_soap-0.2.1.tar.gz --markdown 20240413/f/fastapi-xroad-soap/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-13 23:15:05] INFO root fetch - processPackages [dpq]: Remove: archive file [/home/abi/fetcher/tmp/dpq-0.1.3.tar.gz]
+[2024-04-13 23:15:05] INFO root fetch - processPackages [dpq]: Remove: archive file [/home/abi/fetcher/tmp/dpq-0.1.4.tar.gz]
+[2024-04-13 23:15:05] INFO root fetch - main [MainThread]: End processing [dpq]: success
+[2024-04-13 23:15:05] INFO root fetch - processPackages [arion-library]: Remove: archive file [/home/abi/fetcher/tmp/arion_library-1.1rc51.dev51.tar.gz]
+[2024-04-13 23:15:05] INFO root fetch - processPackages [arion-library]: Remove: archive file [/home/abi/fetcher/tmp/arion_library-1.1rc52.dev52.tar.gz]
+[2024-04-13 23:15:05] INFO root fetch - main [MainThread]: End processing [arion-library]: success
+[2024-04-13 23:15:05] INFO root fetch - processPackages [cyclophaser]: Remove: archive file [/home/abi/fetcher/tmp/cyclophaser-1.7.0.tar.gz]
+[2024-04-13 23:15:05] INFO root fetch - processPackages [cyclophaser]: Remove: archive file [/home/abi/fetcher/tmp/cyclophaser-1.7.1.tar.gz]
+[2024-04-13 23:15:05] INFO root fetch - main [MainThread]: End processing [cyclophaser]: success
+[2024-04-13 23:15:05] INFO root fetch - processPackages [fastapi-xroad-soap]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_xroad_soap-0.2.0.tar.gz]
+[2024-04-13 23:15:05] INFO root fetch - processPackages [fastapi-xroad-soap]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_xroad_soap-0.2.1.tar.gz]
+[2024-04-13 23:15:05] INFO root fetch - main [MainThread]: End processing [fastapi-xroad-soap]: success
+[2024-04-13 23:15:05] INFO root fetch - main [MainThread]: Store serial: [22754785]
