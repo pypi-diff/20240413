@@ -16256,3 +16256,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 17:46:08] INFO root fetch - processPackages [OctoBot-Trading]: Remove: archive file [/home/abi/fetcher/tmp/OctoBot-Trading-2.4.9.tar.gz]
 [2024-04-13 17:46:08] INFO root fetch - main [MainThread]: End processing [OctoBot-Trading]: success
 [2024-04-13 17:46:08] INFO root fetch - main [MainThread]: Store serial: [22752975]
+[2024-04-13 17:48:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752975]
+[2024-04-13 17:48:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 17:48:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyweatherfr
+[2024-04-13 17:48:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: desktop-env
+[2024-04-13 17:48:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: caggpu
+[2024-04-13 17:48:17] INFO root fetch - processPackages [desktop-env]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-13 17:48:17] WARNING root fetch - processPackages [caggpu]: Skipping, unable to determine old version
+[2024-04-13 17:48:17] INFO root fetch - processPackages [pyweatherfr]: New version: [4.1.2] Old Version: [4.1.1]
+[2024-04-13 17:48:17] INFO root fetch - main [MainThread]: End processing [caggpu] error
+[2024-04-13 17:48:17] INFO root fetch - processPackages [desktop-env]: Downloading https://files.pythonhosted.org/packages/27/f8/16f78f0ccbe5c6fe9aedd104da436eec3e5bd08a29b5f19cc74d66c83959/desktop_env-0.1.3.tar.gz
+[2024-04-13 17:48:17] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/f9/14/5e4f20aa3776ae19651782d1c7b3b6c26a09d9d1f7321f66d04d4db682cc/pyweatherfr-4.1.1.tar.gz
+[2024-04-13 17:48:17] INFO root fetch - processPackages [desktop-env]: Downloading https://files.pythonhosted.org/packages/89/4c/7350cee481bf01fc26214dcabb495f7773f2642e6ccf1bab1bcaea0069db/desktop_env-0.1.4.tar.gz
+[2024-04-13 17:48:18] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/d6/55/6fc4b4186f5eebf3e022f7fb12fcf1c1e24cab5c835dca51fe4b2ee3c3b0/pyweatherfr-4.1.2.tar.gz
+[2024-04-13 17:48:18] INFO root fetch - processPackages [desktop-env]: executing diffoscope
+[2024-04-13 17:48:18] INFO root fetch - processPackages [desktop-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/desktop_env-0.1.3.tar.gz tmp/desktop_env-0.1.4.tar.gz --markdown 20240413/d/desktop-env/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-13 17:48:18] INFO root fetch - processPackages [pyweatherfr]: executing diffoscope
+[2024-04-13 17:48:18] INFO root fetch - processPackages [pyweatherfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyweatherfr-4.1.1.tar.gz tmp/pyweatherfr-4.1.2.tar.gz --markdown 20240413/p/pyweatherfr/4.1.1-4.1.2/README.md --exclude *.pyd
+[2024-04-13 17:48:18] INFO root fetch - processPackages [desktop-env]: Remove: archive file [/home/abi/fetcher/tmp/desktop_env-0.1.3.tar.gz]
+[2024-04-13 17:48:18] INFO root fetch - processPackages [desktop-env]: Remove: archive file [/home/abi/fetcher/tmp/desktop_env-0.1.4.tar.gz]
+[2024-04-13 17:48:18] INFO root fetch - main [MainThread]: End processing [desktop-env]: success
+[2024-04-13 17:48:18] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-4.1.1.tar.gz]
+[2024-04-13 17:48:18] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-4.1.2.tar.gz]
+[2024-04-13 17:48:18] INFO root fetch - main [MainThread]: End processing [pyweatherfr]: success
+[2024-04-13 17:48:18] INFO root fetch - main [MainThread]: Store serial: [22752984]
