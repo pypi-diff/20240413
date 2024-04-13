@@ -17419,3 +17419,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:33:21] INFO root fetch - processPackages [reinforced-lib]: Remove: archive file [/home/abi/fetcher/tmp/reinforced_lib-1.1.1.tar.gz]
 [2024-04-13 19:33:21] INFO root fetch - main [MainThread]: End processing [reinforced-lib]: success
 [2024-04-13 19:33:21] INFO root fetch - main [MainThread]: Store serial: [22753497]
+[2024-04-13 19:35:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753497]
+[2024-04-13 19:35:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 19:35:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gtsystem
+[2024-04-13 19:35:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langwatch
+[2024-04-13 19:35:30] INFO root fetch - processPackages [gtsystem]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 19:35:31] INFO root fetch - processPackages [langwatch]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 19:35:31] INFO root fetch - processPackages [gtsystem]: Downloading https://files.pythonhosted.org/packages/fb/e1/409fb13ad058c7162f87da4e9c1ae182eed9ff49b7129e631063ce4ca618/gtsystem-0.0.8.tar.gz
+[2024-04-13 19:35:31] INFO root fetch - processPackages [langwatch]: Downloading https://files.pythonhosted.org/packages/5a/e9/3864799ca400b5ae11962a267077e41212e295457c88da2b48a58594d35b/langwatch-0.0.8.tar.gz
+[2024-04-13 19:35:31] INFO root fetch - processPackages [langwatch]: Downloading https://files.pythonhosted.org/packages/ca/d2/7dba8299d65257fe500a9d804ac2a4a507381a01516d584c45950754b775/langwatch-0.0.9.tar.gz
+[2024-04-13 19:35:31] INFO root fetch - processPackages [gtsystem]: Downloading https://files.pythonhosted.org/packages/dc/40/2d784e593c53f5db21712d67543b7265443d17b70cf7b24a57047146719a/gtsystem-0.0.9.tar.gz
+[2024-04-13 19:35:31] INFO root fetch - processPackages [langwatch]: executing diffoscope
+[2024-04-13 19:35:31] INFO root fetch - processPackages [langwatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langwatch-0.0.8.tar.gz tmp/langwatch-0.0.9.tar.gz --markdown 20240413/l/langwatch/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 19:35:31] INFO root fetch - processPackages [gtsystem]: executing diffoscope
+[2024-04-13 19:35:31] INFO root fetch - processPackages [gtsystem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gtsystem-0.0.8.tar.gz tmp/gtsystem-0.0.9.tar.gz --markdown 20240413/g/gtsystem/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 19:35:32] INFO root fetch - processPackages [gtsystem]: Remove: archive file [/home/abi/fetcher/tmp/gtsystem-0.0.8.tar.gz]
+[2024-04-13 19:35:32] INFO root fetch - processPackages [gtsystem]: Remove: archive file [/home/abi/fetcher/tmp/gtsystem-0.0.9.tar.gz]
+[2024-04-13 19:35:32] INFO root fetch - main [MainThread]: End processing [gtsystem]: success
+[2024-04-13 19:35:32] INFO root fetch - processPackages [langwatch]: Remove: archive file [/home/abi/fetcher/tmp/langwatch-0.0.8.tar.gz]
+[2024-04-13 19:35:32] INFO root fetch - processPackages [langwatch]: Remove: archive file [/home/abi/fetcher/tmp/langwatch-0.0.9.tar.gz]
+[2024-04-13 19:35:32] INFO root fetch - main [MainThread]: End processing [langwatch]: success
+[2024-04-13 19:35:32] INFO root fetch - main [MainThread]: Store serial: [22753508]
