@@ -13529,3 +13529,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:13:21] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.3.1b3.tar.gz]
 [2024-04-13 14:13:21] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
 [2024-04-13 14:13:21] INFO root fetch - main [MainThread]: Store serial: [22751639]
+[2024-04-13 14:15:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751639]
+[2024-04-13 14:15:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 14:15:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: supamodel
+[2024-04-13 14:15:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wikidot
+[2024-04-13 14:15:29] INFO root fetch - processPackages [wikidot]: New version: [3.0.0a2] Old Version: [3.0.0a11]
+[2024-04-13 14:15:29] INFO root fetch - processPackages [supamodel]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-04-13 14:15:29] INFO root fetch - processPackages [wikidot]: Downloading https://files.pythonhosted.org/packages/91/02/1f11a82f76f975467358056f36b7b56e7afb57a435a3cd8825a0dfde5e90/wikidot-3.0.0a11.tar.gz
+[2024-04-13 14:15:29] INFO root fetch - processPackages [supamodel]: Downloading https://files.pythonhosted.org/packages/54/e3/42c70099aecb02c6465df2fbcda362f88fd4e689e32523d1a728547beba3/supamodel-0.5.1.tar.gz
+[2024-04-13 14:15:30] INFO root fetch - processPackages [wikidot]: Downloading https://files.pythonhosted.org/packages/cd/0c/3243782fdc58ae7ac8c44281766351e788f75bfc02b5065aba49ea129d8b/wikidot-3.0.0a2.tar.gz
+[2024-04-13 14:15:30] INFO root fetch - processPackages [wikidot]: executing diffoscope
+[2024-04-13 14:15:30] INFO root fetch - processPackages [wikidot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wikidot-3.0.0a11.tar.gz tmp/wikidot-3.0.0a2.tar.gz --markdown 20240413/w/wikidot/3.0.0a11-3.0.0a2/README.md --exclude *.pyd
+[2024-04-13 14:15:30] INFO root fetch - processPackages [supamodel]: Downloading https://files.pythonhosted.org/packages/9c/89/d210e971060fc9c40ea85b95d6c4ae48b959cc1d25b81a4dfd4a0a97f8ca/supamodel-0.5.2.tar.gz
+[2024-04-13 14:15:30] INFO root fetch - processPackages [supamodel]: executing diffoscope
+[2024-04-13 14:15:30] INFO root fetch - processPackages [supamodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supamodel-0.5.1.tar.gz tmp/supamodel-0.5.2.tar.gz --markdown 20240413/s/supamodel/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-04-13 14:15:30] INFO root fetch - processPackages [wikidot]: Remove: archive file [/home/abi/fetcher/tmp/wikidot-3.0.0a11.tar.gz]
+[2024-04-13 14:15:30] INFO root fetch - processPackages [wikidot]: Remove: archive file [/home/abi/fetcher/tmp/wikidot-3.0.0a2.tar.gz]
+[2024-04-13 14:15:30] INFO root fetch - main [MainThread]: End processing [wikidot]: success
+[2024-04-13 14:15:30] INFO root fetch - processPackages [supamodel]: Remove: archive file [/home/abi/fetcher/tmp/supamodel-0.5.1.tar.gz]
+[2024-04-13 14:15:30] INFO root fetch - processPackages [supamodel]: Remove: archive file [/home/abi/fetcher/tmp/supamodel-0.5.2.tar.gz]
+[2024-04-13 14:15:30] INFO root fetch - main [MainThread]: End processing [supamodel]: success
+[2024-04-13 14:15:30] INFO root fetch - main [MainThread]: Store serial: [22751645]
