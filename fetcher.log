@@ -13460,3 +13460,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:04:40] INFO root fetch - processPackages [streamlit-pianoroll]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_pianoroll-0.7.1-py3-none-any.whl.zip]
 [2024-04-13 14:04:40] INFO root fetch - main [MainThread]: End processing [streamlit-pianoroll]: success
 [2024-04-13 14:04:40] INFO root fetch - main [MainThread]: Store serial: [22751609]
+[2024-04-13 14:06:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751609]
+[2024-04-13 14:06:48] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 14:06:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FATtools
+[2024-04-13 14:06:49] INFO root fetch - processPackages [FATtools]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-13 14:06:49] INFO root fetch - processPackages [FATtools]: Downloading https://files.pythonhosted.org/packages/24/24/933a0201b4e55a6e8d2473a7c49c553d69e947253d7b4d4d1626766cef18/FATtools-1.0.8-py3-none-any.whl
+[2024-04-13 14:06:49] INFO root fetch - processPackages [FATtools]: Downloading https://files.pythonhosted.org/packages/39/de/27ad141dc2d3176c8aff292eada5a66869a0d4d7a3435725fda7919a2ea9/FATtools-1.0.9.tar.gz
+[2024-04-13 14:06:49] INFO root fetch - processPackages [FATtools]: executing diffoscope
+[2024-04-13 14:06:49] INFO root fetch - processPackages [FATtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FATtools-1.0.8-py3-none-any.whl.zip tmp/FATtools-1.0.9.tar.gz --markdown 20240413/F/FATtools/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-13 14:06:50] INFO root fetch - processPackages [FATtools]: Remove: archive file [/home/abi/fetcher/tmp/FATtools-1.0.8-py3-none-any.whl.zip]
+[2024-04-13 14:06:50] INFO root fetch - processPackages [FATtools]: Remove: archive file [/home/abi/fetcher/tmp/FATtools-1.0.9.tar.gz]
+[2024-04-13 14:06:50] INFO root fetch - main [MainThread]: End processing [FATtools]: success
+[2024-04-13 14:06:50] INFO root fetch - main [MainThread]: Store serial: [22751613]
