@@ -1,4 +1,4 @@
-# Comparing `tmp/apache_airflow_providers_fab-1.0.3-py3-none-any.whl.zip` & `tmp/apache_airflow_providers_fab-1.0.3rc1.tar.gz`
+# Comparing `tmp/apache_airflow_providers_fab-1.0.3.tar.gz` & `tmp/apache_airflow_providers_fab-1.0.3rc1.tar.gz`
 
  * *Command `'zipinfo {}'` failed with exit code 9. Standard output:*
 
@@ -8253,7 +8253,7 @@
 +0000cec0: d804 00                                  ...
 ```
 
-## Comparing `tmp/apache_airflow_providers_fab-1.0.3-py3-none-any.whl.zip` & `tmp/apache_airflow_providers_fab-1.0.3rc1.tar.gz`
+## Comparing `tmp/apache_airflow_providers_fab-1.0.3.tar.gz` & `tmp/apache_airflow_providers_fab-1.0.3rc1.tar.gz`
 
 ```diff
 @@ -1,4932 +1,3309 @@
