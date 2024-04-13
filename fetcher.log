@@ -14899,3 +14899,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:00:10] INFO root fetch - processPackages [pyinstaller-hooks-contrib]: Remove: archive file [/home/abi/fetcher/tmp/pyinstaller_hooks_contrib-2024.4.tar.gz]
 [2024-04-13 16:00:10] INFO root fetch - main [MainThread]: End processing [pyinstaller-hooks-contrib]: success
 [2024-04-13 16:00:10] INFO root fetch - main [MainThread]: Store serial: [22752343]
+[2024-04-13 16:02:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752343]
+[2024-04-13 16:02:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 16:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: esimene-ul-tojarv
+[2024-04-13 16:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-mptt-admin
+[2024-04-13 16:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hermitage-alchemy
+[2024-04-13 16:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: deeplc
+[2024-04-13 16:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: galapy-core
+[2024-04-13 16:02:19] INFO root fetch - processPackages [galapy-core]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-13 16:02:19] WARNING root fetch - processPackages [esimene-ul-tojarv]: Skipping, unable to determine old version
+[2024-04-13 16:02:19] INFO root fetch - main [MainThread]: End processing [esimene-ul-tojarv] error
+[2024-04-13 16:02:19] INFO root fetch - processPackages [galapy-core]: Downloading https://files.pythonhosted.org/packages/25/b5/5d77b18a6ecca7f5b51cc4876f5516637cd08054bb03757d623f2b9c029d/galapy_core-0.2.1.tar.gz
+[2024-04-13 16:02:19] INFO root fetch - processPackages [hermitage-alchemy]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 16:02:19] INFO root fetch - processPackages [django-mptt-admin]: New version: [2.6.2] Old Version: [2.6.1]
+[2024-04-13 16:02:19] INFO root fetch - processPackages [deeplc]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-04-13 16:02:19] INFO root fetch - processPackages [hermitage-alchemy]: Downloading https://files.pythonhosted.org/packages/60/ae/35981115982f4fe4e9c3405d4586682d36fe9c9226cad3c32fdf0783ec1a/hermitage_alchemy-0.1.0.tar.gz
+[2024-04-13 16:02:19] INFO root fetch - processPackages [django-mptt-admin]: Downloading https://files.pythonhosted.org/packages/2f/7f/818e02cf87022dd9a0f9411faac8481e62441f788685f1e72ff43625b99e/django-mptt-admin-2.6.1.tar.gz
+[2024-04-13 16:02:19] INFO root fetch - processPackages [deeplc]: Downloading https://files.pythonhosted.org/packages/c2/f5/fb0c474a3b8c0d08aadd17c054603a1ec5c56914331740631e9621f11d77/deeplc-2.2.8.tar.gz
+[2024-04-13 16:02:19] INFO root fetch - processPackages [galapy-core]: Downloading https://files.pythonhosted.org/packages/f3/35/aa35bc3cefd1ede43f4e072482ac7488b3eac36065e3bb6493b4e3a9884f/galapy_core-0.2.2.tar.gz
+[2024-04-13 16:02:19] INFO root fetch - processPackages [galapy-core]: executing diffoscope
+[2024-04-13 16:02:19] INFO root fetch - processPackages [galapy-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/galapy_core-0.2.1.tar.gz tmp/galapy_core-0.2.2.tar.gz --markdown 20240413/g/galapy-core/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-13 16:02:19] INFO root fetch - processPackages [hermitage-alchemy]: Downloading https://files.pythonhosted.org/packages/05/11/7db1859453a4a7eb23aba31dfcbbb5d45b59d77bfa9394146dbeee1f725c/hermitage_alchemy-0.1.1.tar.gz
+[2024-04-13 16:02:19] INFO root fetch - processPackages [django-mptt-admin]: Downloading https://files.pythonhosted.org/packages/81/a9/6b02679dc8a855d66aab69711dcb31ac71f42c6a88f884c33ef1b91686a3/django-mptt-admin-2.6.2.tar.gz
+[2024-04-13 16:02:20] INFO root fetch - processPackages [hermitage-alchemy]: executing diffoscope
+[2024-04-13 16:02:20] INFO root fetch - processPackages [hermitage-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hermitage_alchemy-0.1.0.tar.gz tmp/hermitage_alchemy-0.1.1.tar.gz --markdown 20240413/h/hermitage-alchemy/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 16:02:20] WARNING root fetch - processPackages [deeplc]: Skipping package: exceeds size limit 32146856>=10485760
+[2024-04-13 16:02:20] INFO root fetch - main [MainThread]: End processing [deeplc] error
+[2024-04-13 16:02:20] INFO root fetch - processPackages [django-mptt-admin]: executing diffoscope
+[2024-04-13 16:02:20] INFO root fetch - processPackages [django-mptt-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-mptt-admin-2.6.1.tar.gz tmp/django-mptt-admin-2.6.2.tar.gz --markdown 20240413/d/django-mptt-admin/2.6.1-2.6.2/README.md --exclude *.pyd
+[2024-04-13 16:02:20] INFO root fetch - processPackages [galapy-core]: Remove: archive file [/home/abi/fetcher/tmp/galapy_core-0.2.1.tar.gz]
+[2024-04-13 16:02:20] INFO root fetch - processPackages [galapy-core]: Remove: archive file [/home/abi/fetcher/tmp/galapy_core-0.2.2.tar.gz]
+[2024-04-13 16:02:20] INFO root fetch - main [MainThread]: End processing [galapy-core]: success
+[2024-04-13 16:02:20] INFO root fetch - processPackages [hermitage-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/hermitage_alchemy-0.1.0.tar.gz]
+[2024-04-13 16:02:20] INFO root fetch - processPackages [hermitage-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/hermitage_alchemy-0.1.1.tar.gz]
+[2024-04-13 16:02:20] INFO root fetch - main [MainThread]: End processing [hermitage-alchemy]: success
+[2024-04-13 16:02:21] INFO root fetch - processPackages [django-mptt-admin]: Remove: archive file [/home/abi/fetcher/tmp/django-mptt-admin-2.6.1.tar.gz]
+[2024-04-13 16:02:21] INFO root fetch - processPackages [django-mptt-admin]: Remove: archive file [/home/abi/fetcher/tmp/django-mptt-admin-2.6.2.tar.gz]
+[2024-04-13 16:02:21] INFO root fetch - main [MainThread]: End processing [django-mptt-admin]: success
+[2024-04-13 16:02:21] INFO root fetch - main [MainThread]: Store serial: [22752360]
