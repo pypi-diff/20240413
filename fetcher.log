@@ -9693,3 +9693,36 @@
 [2024-04-13 09:09:31] INFO root fetch - processPackages [pulumi-snowflake]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_snowflake-0.9.1a1656367704.tar.gz]
 [2024-04-13 09:09:31] INFO root fetch - main [MainThread]: End processing [pulumi-snowflake]: success
 [2024-04-13 09:09:31] INFO root fetch - main [MainThread]: Store serial: [22750087]
+[2024-04-13 09:11:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750087]
+[2024-04-13 09:11:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 09:11:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-rancher2
+[2024-04-13 09:11:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-tailscale
+[2024-04-13 09:11:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-spotinst
+[2024-04-13 09:11:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: perturbmerge
+[2024-04-13 09:11:40] WARNING root fetch - processPackages [perturbmerge]: Skipping, unable to determine old version
+[2024-04-13 09:11:40] INFO root fetch - main [MainThread]: End processing [perturbmerge] error
+[2024-04-13 09:11:40] INFO root fetch - processPackages [pulumi-tailscale]: New version: [0.9.1a1656330156] Old Version: [0.9.0]
+[2024-04-13 09:11:40] INFO root fetch - processPackages [pulumi-spotinst]: New version: [3.9.0a1633346805] Old Version: [3.9.0]
+[2024-04-13 09:11:40] INFO root fetch - processPackages [pulumi-rancher2]: New version: [6.2.0a1712989929] Old Version: [6.2.0a1712730122]
+[2024-04-13 09:11:40] INFO root fetch - processPackages [pulumi-tailscale]: Downloading https://files.pythonhosted.org/packages/af/fc/1aa615a8e44d21b520ec05aa57ea2ee6f62de762047b4ad8ccec73544ac3/pulumi_tailscale-0.9.0.tar.gz
+[2024-04-13 09:11:40] INFO root fetch - processPackages [pulumi-rancher2]: Downloading https://files.pythonhosted.org/packages/55/0d/5d5df6cf24f72d54ca8afb3d19ed4a79020100b4922625a0a6febfc517ac/pulumi_rancher2-6.2.0a1712730122.tar.gz
+[2024-04-13 09:11:40] INFO root fetch - processPackages [pulumi-spotinst]: Downloading https://files.pythonhosted.org/packages/e0/9f/6d2c1a705d6b6019bea4cba0aa49eceea4eb2d84cfdcb18f45db81e06fb5/pulumi_spotinst-3.9.0.tar.gz
+[2024-04-13 09:11:41] INFO root fetch - processPackages [pulumi-rancher2]: Downloading https://files.pythonhosted.org/packages/a9/dd/31a39c8725963cebc7d043972002f9cd7b392b0ee364c9657107246d4a3a/pulumi_rancher2-6.2.0a1712989929.tar.gz
+[2024-04-13 09:11:41] INFO root fetch - processPackages [pulumi-tailscale]: Downloading https://files.pythonhosted.org/packages/a3/d6/938674a37f5324fe6d787b4f3efbeeebc5d750fd8c8c25fb2198b11e6a4d/pulumi_tailscale-0.9.1a1656330156.tar.gz
+[2024-04-13 09:11:41] INFO root fetch - processPackages [pulumi-spotinst]: Downloading https://files.pythonhosted.org/packages/b4/06/83d6eb3763a877d39e3d2a09063ba3fd6542fa6a214e6c3d5240414d041d/pulumi_spotinst-3.9.0a1633346805.tar.gz
+[2024-04-13 09:11:41] INFO root fetch - processPackages [pulumi-tailscale]: executing diffoscope
+[2024-04-13 09:11:41] INFO root fetch - processPackages [pulumi-tailscale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_tailscale-0.9.0.tar.gz tmp/pulumi_tailscale-0.9.1a1656330156.tar.gz --markdown 20240413/p/pulumi-tailscale/0.9.0-0.9.1a1656330156/README.md --exclude *.pyd
+[2024-04-13 09:11:41] INFO root fetch - processPackages [pulumi-spotinst]: executing diffoscope
+[2024-04-13 09:11:41] INFO root fetch - processPackages [pulumi-spotinst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_spotinst-3.9.0.tar.gz tmp/pulumi_spotinst-3.9.0a1633346805.tar.gz --markdown 20240413/p/pulumi-spotinst/3.9.0-3.9.0a1633346805/README.md --exclude *.pyd
+[2024-04-13 09:11:41] INFO root fetch - processPackages [pulumi-rancher2]: executing diffoscope
+[2024-04-13 09:11:41] INFO root fetch - processPackages [pulumi-rancher2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_rancher2-6.2.0a1712730122.tar.gz tmp/pulumi_rancher2-6.2.0a1712989929.tar.gz --markdown 20240413/p/pulumi-rancher2/6.2.0a1712730122-6.2.0a1712989929/README.md --exclude *.pyd
+[2024-04-13 09:11:41] INFO root fetch - processPackages [pulumi-tailscale]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_tailscale-0.9.0.tar.gz]
+[2024-04-13 09:11:41] INFO root fetch - processPackages [pulumi-tailscale]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_tailscale-0.9.1a1656330156.tar.gz]
+[2024-04-13 09:11:41] INFO root fetch - main [MainThread]: End processing [pulumi-tailscale]: success
+[2024-04-13 09:11:42] INFO root fetch - processPackages [pulumi-spotinst]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_spotinst-3.9.0.tar.gz]
+[2024-04-13 09:11:42] INFO root fetch - processPackages [pulumi-spotinst]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_spotinst-3.9.0a1633346805.tar.gz]
+[2024-04-13 09:11:42] INFO root fetch - main [MainThread]: End processing [pulumi-spotinst]: success
+[2024-04-13 09:11:42] INFO root fetch - processPackages [pulumi-rancher2]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_rancher2-6.2.0a1712730122.tar.gz]
+[2024-04-13 09:11:42] INFO root fetch - processPackages [pulumi-rancher2]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_rancher2-6.2.0a1712989929.tar.gz]
+[2024-04-13 09:11:42] INFO root fetch - main [MainThread]: End processing [pulumi-rancher2]: success
+[2024-04-13 09:11:42] INFO root fetch - main [MainThread]: Store serial: [22750097]
