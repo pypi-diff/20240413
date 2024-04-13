@@ -17202,3 +17202,49 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:11:37] INFO root fetch - processPackages [ds20kdb-avt]: Remove: archive file [/home/abi/fetcher/tmp/ds20kdb-avt-1.0.4.tar.gz]
 [2024-04-13 19:11:37] INFO root fetch - main [MainThread]: End processing [ds20kdb-avt]: success
 [2024-04-13 19:11:37] INFO root fetch - main [MainThread]: Store serial: [22753322]
+[2024-04-13 19:13:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753322]
+[2024-04-13 19:13:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 19:13:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: comfy-script
+[2024-04-13 19:13:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2024-04-13 19:13:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2024-04-13 19:13:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lambdapdk
+[2024-04-13 19:13:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: machineroom
+[2024-04-13 19:13:46] INFO root fetch - processPackages [machineroom]: New version: [0.45.0] Old Version: [0.44.9]
+[2024-04-13 19:13:46] INFO root fetch - processPackages [lambdapdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 19:13:46] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-13 19:13:46] INFO root fetch - processPackages [comfy-script]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-04-13 19:13:46] INFO root fetch - processPackages [lambdapdk]: Downloading https://files.pythonhosted.org/packages/83/1c/0a32b11d9c3ba227d9a3767b9a6d08d55e31e8f869cdfca8d78ceffe2798/lambdapdk-0.1.8.tar.gz
+[2024-04-13 19:13:46] INFO root fetch - processPackages [machineroom]: Downloading https://files.pythonhosted.org/packages/d5/75/ba405ecbf321cdd3277a98028191a3c1f459cffc87609348f5defe7ecaca/machineroom-0.44.9.tar.gz
+[2024-04-13 19:13:46] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-13 19:13:46] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-13 19:13:46] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-13 19:13:46] INFO root fetch - processPackages [comfy-script]: Downloading https://files.pythonhosted.org/packages/50/cb/6de15523f73d6378ee56caeea2a524f235c3440fee8fb0f8510237cf0091/comfy_script-0.4.5.tar.gz
+[2024-04-13 19:13:46] INFO root fetch - processPackages [lambdapdk]: Downloading https://files.pythonhosted.org/packages/5a/8d/15f55433498bc8f979ec4f83f1e09a8e67ddd5be5e876ca548433cfe45d4/lambdapdk-0.1.9.tar.gz
+[2024-04-13 19:13:46] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-13 19:13:46] INFO root fetch - processPackages [machineroom]: Downloading https://files.pythonhosted.org/packages/08/36/f51cb07178c19b182de86646fb9acf28bcb0ed157873516c295d86b511b2/machineroom-0.45.0.tar.gz
+[2024-04-13 19:13:46] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-13 19:13:46] INFO root fetch - processPackages [lambdapdk]: executing diffoscope
+[2024-04-13 19:13:46] INFO root fetch - processPackages [lambdapdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lambdapdk-0.1.8.tar.gz tmp/lambdapdk-0.1.9.tar.gz --markdown 20240413/l/lambdapdk/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 19:13:46] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-13 19:13:46] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240413/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-04-13 19:13:46] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-13 19:13:46] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240413/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-04-13 19:13:46] INFO root fetch - processPackages [machineroom]: executing diffoscope
+[2024-04-13 19:13:46] INFO root fetch - processPackages [machineroom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/machineroom-0.44.9.tar.gz tmp/machineroom-0.45.0.tar.gz --markdown 20240413/m/machineroom/0.44.9-0.45.0/README.md --exclude *.pyd
+[2024-04-13 19:13:47] INFO root fetch - processPackages [comfy-script]: Downloading https://files.pythonhosted.org/packages/4b/2b/38f50412f06a43af1590648418d234313c275a4313724dfcd8b4767ee8d8/comfy_script-0.4.6.tar.gz
+[2024-04-13 19:13:47] INFO root fetch - processPackages [machineroom]: Remove: archive file [/home/abi/fetcher/tmp/machineroom-0.44.9.tar.gz]
+[2024-04-13 19:13:47] INFO root fetch - processPackages [machineroom]: Remove: archive file [/home/abi/fetcher/tmp/machineroom-0.45.0.tar.gz]
+[2024-04-13 19:13:47] INFO root fetch - main [MainThread]: End processing [machineroom]: success
+[2024-04-13 19:13:47] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-04-13 19:13:47] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-04-13 19:13:47] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-13 19:13:47] INFO root fetch - processPackages [comfy-script]: executing diffoscope
+[2024-04-13 19:13:47] INFO root fetch - processPackages [comfy-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/comfy_script-0.4.5.tar.gz tmp/comfy_script-0.4.6.tar.gz --markdown 20240413/c/comfy-script/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-04-13 19:13:47] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-13 19:13:47] INFO root fetch - processPackages [lambdapdk]: Remove: archive file [/home/abi/fetcher/tmp/lambdapdk-0.1.8.tar.gz]
+[2024-04-13 19:13:47] INFO root fetch - processPackages [lambdapdk]: Remove: archive file [/home/abi/fetcher/tmp/lambdapdk-0.1.9.tar.gz]
+[2024-04-13 19:13:47] INFO root fetch - main [MainThread]: End processing [lambdapdk]: success
+[2024-04-13 19:13:48] INFO root fetch - processPackages [comfy-script]: Remove: archive file [/home/abi/fetcher/tmp/comfy_script-0.4.5.tar.gz]
+[2024-04-13 19:13:48] INFO root fetch - processPackages [comfy-script]: Remove: archive file [/home/abi/fetcher/tmp/comfy_script-0.4.6.tar.gz]
+[2024-04-13 19:13:48] INFO root fetch - main [MainThread]: End processing [comfy-script]: success
+[2024-04-13 19:13:48] INFO root fetch - main [MainThread]: Store serial: [22753336]
