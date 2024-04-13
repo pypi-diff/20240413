@@ -9726,3 +9726,84 @@
 [2024-04-13 09:11:42] INFO root fetch - processPackages [pulumi-rancher2]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_rancher2-6.2.0a1712989929.tar.gz]
 [2024-04-13 09:11:42] INFO root fetch - main [MainThread]: End processing [pulumi-rancher2]: success
 [2024-04-13 09:11:42] INFO root fetch - main [MainThread]: Store serial: [22750097]
+[2024-04-13 09:13:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750097]
+[2024-04-13 09:13:51] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-13 09:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: perturbmerge
+[2024-04-13 09:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-tls
+[2024-04-13 09:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wansuite
+[2024-04-13 09:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-sumologic
+[2024-04-13 09:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ccnuacm-datamocker
+[2024-04-13 09:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-venafi
+[2024-04-13 09:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo-addon-l10n-ro-payment-to-statement
+[2024-04-13 09:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo-addon-l10n-ro-account-anaf-sync
+[2024-04-13 09:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: odoo-addon-l10n-ro-account-bank-statement-report
+[2024-04-13 09:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: odoo-addon-l10n-ro-account-report-invoice
+[2024-04-13 09:13:51] WARNING root fetch - processPackages [perturbmerge]: Skipping, unable to determine old version
+[2024-04-13 09:13:51] INFO root fetch - main [MainThread]: End processing [perturbmerge] error
+[2024-04-13 09:13:51] INFO root fetch - processPackages [odoo-addon-l10n-ro-payment-to-statement]: New version: [16.0.2.8.0] Old Version: [16.0.2.7.0]
+[2024-04-13 09:13:51] WARNING root fetch - processPackages [ccnuacm-datamocker]: Skipping, unable to determine old version
+[2024-04-13 09:13:51] INFO root fetch - main [MainThread]: End processing [ccnuacm-datamocker] error
+[2024-04-13 09:13:51] INFO root fetch - processPackages [pulumi-tls]: New version: [5.1.0a1712991411] Old Version: [5.1.0a1712755613]
+[2024-04-13 09:13:51] INFO root fetch - processPackages [wansuite]: New version: [2.0] Old Version: [1.18]
+[2024-04-13 09:13:51] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-bank-statement-report]: New version: [17.0.1.1.0.1] Old Version: [17.0.1.1.0]
+[2024-04-13 09:13:51] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-anaf-sync]: New version: [17.0.1.2.0] Old Version: [17.0.1.1.0]
+[2024-04-13 09:13:51] INFO root fetch - processPackages [pulumi-sumologic]: New version: [0.9.1a1663799436] Old Version: [0.9.0]
+[2024-04-13 09:13:51] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-report-invoice]: New version: [16.0.1.3.0] Old Version: [16.0.1.2.0]
+[2024-04-13 09:13:51] INFO root fetch - processPackages [pulumi-venafi]: New version: [1.9.0a1712991486] Old Version: [1.9.0a1712731850]
+[2024-04-13 09:13:51] INFO root fetch - processPackages [odoo-addon-l10n-ro-payment-to-statement]: Downloading https://files.pythonhosted.org/packages/20/8c/0c24165f73cd7dbaabed91607bc72f900650759ec55a2fd1aba521fbcfcf/odoo_addon_l10n_ro_payment_to_statement-16.0.2.7.0-py3-none-any.whl
+[2024-04-13 09:13:51] INFO root fetch - processPackages [pulumi-tls]: Downloading https://files.pythonhosted.org/packages/63/82/af64f4b57c8ae7bd9fe76de8ba079c226aad0210c94582813213fe6c2886/pulumi_tls-5.1.0a1712755613.tar.gz
+[2024-04-13 09:13:51] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-report-invoice]: Downloading https://files.pythonhosted.org/packages/7f/ef/1a3bc83edb0e02219faf782831568951e0acde52f5dc6b6200913d1aa9a7/odoo_addon_l10n_ro_account_report_invoice-16.0.1.2.0-py3-none-any.whl
+[2024-04-13 09:13:51] INFO root fetch - processPackages [pulumi-venafi]: Downloading https://files.pythonhosted.org/packages/ea/08/e1fb75b237bb88f062ad0121a85bb9756660cd26391a0a55ecd9cba697c7/pulumi_venafi-1.9.0a1712731850.tar.gz
+[2024-04-13 09:13:51] INFO root fetch - processPackages [wansuite]: Downloading https://files.pythonhosted.org/packages/24/79/cf26234419e3fa158f9c50002709e9506749d4cc8f86a24d647d7b510291/wansuite-1.18.tar.gz
+[2024-04-13 09:13:51] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-anaf-sync]: Downloading https://files.pythonhosted.org/packages/0e/65/af5372e6d9af9fb916145a3c89e9555317c34a45ed7ff0c51d2b06bd3dd2/odoo_addon_l10n_ro_account_anaf_sync-17.0.1.1.0-py3-none-any.whl
+[2024-04-13 09:13:51] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-bank-statement-report]: Downloading https://files.pythonhosted.org/packages/f3/ca/a074f4d646cebcf34ec60a789c8f658ccc6e52e9336916924d7f84758a94/odoo_addon_l10n_ro_account_bank_statement_report-17.0.1.1.0-py3-none-any.whl
+[2024-04-13 09:13:51] INFO root fetch - processPackages [pulumi-sumologic]: Downloading https://files.pythonhosted.org/packages/6e/f2/ba414f5902bee40f219e9fb7e62d763f8263329614fc12ed2b5b02a34627/pulumi_sumologic-0.9.0.tar.gz
+[2024-04-13 09:13:52] INFO root fetch - processPackages [odoo-addon-l10n-ro-payment-to-statement]: Downloading https://files.pythonhosted.org/packages/bd/2b/60a71342d59674ebae62c7433bc83ccf59ed2959fcde5e322dcbe78b3498/odoo_addon_l10n_ro_payment_to_statement-16.0.2.8.0-py3-none-any.whl
+[2024-04-13 09:13:52] INFO root fetch - processPackages [pulumi-tls]: Downloading https://files.pythonhosted.org/packages/4a/a7/0909fbf21f42e09134d10f08ee3d500e0cf7f9e66df2c9b848228cb010e5/pulumi_tls-5.1.0a1712991411.tar.gz
+[2024-04-13 09:13:52] INFO root fetch - processPackages [wansuite]: Downloading https://files.pythonhosted.org/packages/2d/82/00aa0f05520ab0d2c580bcd4a5bc55c29644c9f001af43a3720e5454c8f8/wansuite-2.0.tar.gz
+[2024-04-13 09:13:52] INFO root fetch - processPackages [pulumi-venafi]: Downloading https://files.pythonhosted.org/packages/d4/ba/b7bda1ab1fe8291faacca84d278acd6abaf9f99bfd9ed88965e8fcc7d6af/pulumi_venafi-1.9.0a1712991486.tar.gz
+[2024-04-13 09:13:52] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-report-invoice]: Downloading https://files.pythonhosted.org/packages/9c/29/fe4ad153fd7b15a993709e3277ee4d077be80191d6062613bdd6e2fa1c9e/odoo_addon_l10n_ro_account_report_invoice-16.0.1.3.0-py3-none-any.whl
+[2024-04-13 09:13:52] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-bank-statement-report]: Downloading https://files.pythonhosted.org/packages/a4/d3/4e24b12efaf46c577371bddce4cabe69fc56973799c7c624d89c8d0e9fe8/odoo_addon_l10n_ro_account_bank_statement_report-17.0.1.1.0.1-py3-none-any.whl
+[2024-04-13 09:13:52] INFO root fetch - processPackages [pulumi-sumologic]: Downloading https://files.pythonhosted.org/packages/67/c4/8f95a0de8aac6e9d9348bd2698c48e05211e3a2fabda9b0e7bcaa7b80ca8/pulumi_sumologic-0.9.1a1663799436.tar.gz
+[2024-04-13 09:13:52] INFO root fetch - processPackages [odoo-addon-l10n-ro-payment-to-statement]: executing diffoscope
+[2024-04-13 09:13:52] INFO root fetch - processPackages [odoo-addon-l10n-ro-payment-to-statement]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_payment_to_statement-16.0.2.7.0-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_payment_to_statement-16.0.2.8.0-py3-none-any.whl.zip --markdown 20240413/o/odoo-addon-l10n-ro-payment-to-statement/16.0.2.7.0-16.0.2.8.0/README.md --exclude *.pyd
+[2024-04-13 09:13:52] INFO root fetch - processPackages [pulumi-tls]: executing diffoscope
+[2024-04-13 09:13:52] INFO root fetch - processPackages [pulumi-tls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_tls-5.1.0a1712755613.tar.gz tmp/pulumi_tls-5.1.0a1712991411.tar.gz --markdown 20240413/p/pulumi-tls/5.1.0a1712755613-5.1.0a1712991411/README.md --exclude *.pyd
+[2024-04-13 09:13:52] INFO root fetch - processPackages [wansuite]: executing diffoscope
+[2024-04-13 09:13:52] INFO root fetch - processPackages [wansuite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wansuite-1.18.tar.gz tmp/wansuite-2.0.tar.gz --markdown 20240413/w/wansuite/1.18-2.0/README.md --exclude *.pyd
+[2024-04-13 09:13:52] INFO root fetch - processPackages [pulumi-venafi]: executing diffoscope
+[2024-04-13 09:13:52] INFO root fetch - processPackages [pulumi-venafi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_venafi-1.9.0a1712731850.tar.gz tmp/pulumi_venafi-1.9.0a1712991486.tar.gz --markdown 20240413/p/pulumi-venafi/1.9.0a1712731850-1.9.0a1712991486/README.md --exclude *.pyd
+[2024-04-13 09:13:52] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-report-invoice]: executing diffoscope
+[2024-04-13 09:13:52] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-report-invoice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_account_report_invoice-16.0.1.2.0-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_account_report_invoice-16.0.1.3.0-py3-none-any.whl.zip --markdown 20240413/o/odoo-addon-l10n-ro-account-report-invoice/16.0.1.2.0-16.0.1.3.0/README.md --exclude *.pyd
+[2024-04-13 09:13:52] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-anaf-sync]: Downloading https://files.pythonhosted.org/packages/dc/d2/4b51a031062b619584ca223bba98308ebf2ea9cedb7b70f5146bb8ee005a/odoo_addon_l10n_ro_account_anaf_sync-17.0.1.2.0-py3-none-any.whl
+[2024-04-13 09:13:52] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-bank-statement-report]: executing diffoscope
+[2024-04-13 09:13:52] INFO root fetch - processPackages [pulumi-sumologic]: executing diffoscope
+[2024-04-13 09:13:52] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-bank-statement-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_account_bank_statement_report-17.0.1.1.0-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_account_bank_statement_report-17.0.1.1.0.1-py3-none-any.whl.zip --markdown 20240413/o/odoo-addon-l10n-ro-account-bank-statement-report/17.0.1.1.0-17.0.1.1.0.1/README.md --exclude *.pyd
+[2024-04-13 09:13:52] INFO root fetch - processPackages [pulumi-sumologic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_sumologic-0.9.0.tar.gz tmp/pulumi_sumologic-0.9.1a1663799436.tar.gz --markdown 20240413/p/pulumi-sumologic/0.9.0-0.9.1a1663799436/README.md --exclude *.pyd
+[2024-04-13 09:13:52] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-anaf-sync]: executing diffoscope
+[2024-04-13 09:13:52] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-anaf-sync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_account_anaf_sync-17.0.1.1.0-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_account_anaf_sync-17.0.1.2.0-py3-none-any.whl.zip --markdown 20240413/o/odoo-addon-l10n-ro-account-anaf-sync/17.0.1.1.0-17.0.1.2.0/README.md --exclude *.pyd
+[2024-04-13 09:13:53] INFO root fetch - processPackages [wansuite]: Remove: archive file [/home/abi/fetcher/tmp/wansuite-1.18.tar.gz]
+[2024-04-13 09:13:53] INFO root fetch - processPackages [wansuite]: Remove: archive file [/home/abi/fetcher/tmp/wansuite-2.0.tar.gz]
+[2024-04-13 09:13:53] INFO root fetch - main [MainThread]: End processing [wansuite]: success
+[2024-04-13 09:13:53] INFO root fetch - processPackages [odoo-addon-l10n-ro-payment-to-statement]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_payment_to_statement-16.0.2.7.0-py3-none-any.whl.zip]
+[2024-04-13 09:13:53] INFO root fetch - processPackages [odoo-addon-l10n-ro-payment-to-statement]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_payment_to_statement-16.0.2.8.0-py3-none-any.whl.zip]
+[2024-04-13 09:13:53] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-payment-to-statement]: success
+[2024-04-13 09:13:53] INFO root fetch - processPackages [pulumi-tls]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_tls-5.1.0a1712755613.tar.gz]
+[2024-04-13 09:13:53] INFO root fetch - processPackages [pulumi-tls]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_tls-5.1.0a1712991411.tar.gz]
+[2024-04-13 09:13:53] INFO root fetch - main [MainThread]: End processing [pulumi-tls]: success
+[2024-04-13 09:13:53] INFO root fetch - processPackages [pulumi-venafi]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_venafi-1.9.0a1712731850.tar.gz]
+[2024-04-13 09:13:53] INFO root fetch - processPackages [pulumi-venafi]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_venafi-1.9.0a1712991486.tar.gz]
+[2024-04-13 09:13:53] INFO root fetch - main [MainThread]: End processing [pulumi-venafi]: success
+[2024-04-13 09:13:53] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-bank-statement-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_account_bank_statement_report-17.0.1.1.0-py3-none-any.whl.zip]
+[2024-04-13 09:13:53] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-bank-statement-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_account_bank_statement_report-17.0.1.1.0.1-py3-none-any.whl.zip]
+[2024-04-13 09:13:53] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-account-bank-statement-report]: success
+[2024-04-13 09:13:53] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-report-invoice]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_account_report_invoice-16.0.1.2.0-py3-none-any.whl.zip]
+[2024-04-13 09:13:53] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-report-invoice]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_account_report_invoice-16.0.1.3.0-py3-none-any.whl.zip]
+[2024-04-13 09:13:53] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-account-report-invoice]: success
+[2024-04-13 09:13:53] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-anaf-sync]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_account_anaf_sync-17.0.1.1.0-py3-none-any.whl.zip]
+[2024-04-13 09:13:53] INFO root fetch - processPackages [odoo-addon-l10n-ro-account-anaf-sync]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_account_anaf_sync-17.0.1.2.0-py3-none-any.whl.zip]
+[2024-04-13 09:13:53] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-account-anaf-sync]: success
+[2024-04-13 09:13:53] INFO root fetch - processPackages [pulumi-sumologic]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_sumologic-0.9.0.tar.gz]
+[2024-04-13 09:13:53] INFO root fetch - processPackages [pulumi-sumologic]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_sumologic-0.9.1a1663799436.tar.gz]
+[2024-04-13 09:13:53] INFO root fetch - main [MainThread]: End processing [pulumi-sumologic]: success
+[2024-04-13 09:13:53] INFO root fetch - main [MainThread]: Store serial: [22750123]
