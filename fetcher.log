@@ -14367,3 +14367,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 15:16:22] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.96.tar.gz]
 [2024-04-13 15:16:22] INFO root fetch - main [MainThread]: End processing [oakvar]: success
 [2024-04-13 15:16:22] INFO root fetch - main [MainThread]: Store serial: [22752033]
+[2024-04-13 15:18:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752033]
+[2024-04-13 15:18:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 15:18:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tflite-micro
+[2024-04-13 15:18:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pancho
+[2024-04-13 15:18:32] INFO root fetch - processPackages [pancho]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-13 15:18:32] INFO root fetch - processPackages [tflite-micro]: New version: [0.dev20240412154643] Old Version: [0.dev20240403170210]
+[2024-04-13 15:18:32] INFO root fetch - processPackages [pancho]: Downloading https://files.pythonhosted.org/packages/bf/c8/9acab71c3702181c94d28c1b99c5b439563940f54232365385153e680098/pancho-1.0.0.tar.gz
+[2024-04-13 15:18:32] INFO root fetch - processPackages [tflite-micro]: Downloading https://files.pythonhosted.org/packages/9f/06/9ce2b9ac829a02929cd0e799a1125093ca1edb7bdfc5b0b32356f94c7f08/tflite_micro-0.dev20240403170210-cp311-cp311-manylinux_2_28_x86_64.whl
+[2024-04-13 15:18:32] INFO root fetch - processPackages [pancho]: Downloading https://files.pythonhosted.org/packages/fd/a0/061a382344cce1be4517cf6cea5355fa8c6a2d48ac404e1e3c8b9baf421a/pancho-1.0.1.tar.gz
+[2024-04-13 15:18:32] INFO root fetch - processPackages [pancho]: executing diffoscope
+[2024-04-13 15:18:32] INFO root fetch - processPackages [pancho]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pancho-1.0.0.tar.gz tmp/pancho-1.0.1.tar.gz --markdown 20240413/p/pancho/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-13 15:18:32] INFO root fetch - processPackages [tflite-micro]: Downloading https://files.pythonhosted.org/packages/dd/7a/c961b3e79111f1035c76cbc45d602547d0d26a3030761d1f4d362b84f71e/tflite_micro-0.dev20240412154643-cp311-cp311-manylinux_2_28_x86_64.whl
+[2024-04-13 15:18:33] INFO root fetch - processPackages [tflite-micro]: executing diffoscope
+[2024-04-13 15:18:33] INFO root fetch - processPackages [tflite-micro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_micro-0.dev20240403170210-cp311-cp311-manylinux_2_28_x86_64.whl.zip tmp/tflite_micro-0.dev20240412154643-cp311-cp311-manylinux_2_28_x86_64.whl.zip --markdown 20240413/t/tflite-micro/0.dev20240403170210-0.dev20240412154643/README.md --exclude *.pyd
+[2024-04-13 15:18:33] INFO root fetch - processPackages [pancho]: Remove: archive file [/home/abi/fetcher/tmp/pancho-1.0.0.tar.gz]
+[2024-04-13 15:18:33] INFO root fetch - processPackages [pancho]: Remove: archive file [/home/abi/fetcher/tmp/pancho-1.0.1.tar.gz]
+[2024-04-13 15:18:33] INFO root fetch - main [MainThread]: End processing [pancho]: success
+[2024-04-13 15:18:43] INFO root fetch - processPackages [tflite-micro]: Remove: archive file [/home/abi/fetcher/tmp/tflite_micro-0.dev20240403170210-cp311-cp311-manylinux_2_28_x86_64.whl.zip]
+[2024-04-13 15:18:43] INFO root fetch - processPackages [tflite-micro]: Remove: archive file [/home/abi/fetcher/tmp/tflite_micro-0.dev20240412154643-cp311-cp311-manylinux_2_28_x86_64.whl.zip]
+[2024-04-13 15:18:43] INFO root fetch - main [MainThread]: End processing [tflite-micro]: success
+[2024-04-13 15:18:43] INFO root fetch - main [MainThread]: Store serial: [22752044]
