@@ -12427,3 +12427,40 @@
 [2024-04-13 12:46:11] INFO root fetch - processPackages [agptools]: Remove: archive file [/home/abi/fetcher/tmp/agptools-0.1.9-py2.py3-none-any.whl.zip]
 [2024-04-13 12:46:11] INFO root fetch - main [MainThread]: End processing [agptools]: success
 [2024-04-13 12:46:11] INFO root fetch - main [MainThread]: Store serial: [22751194]
+[2024-04-13 12:48:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751194]
+[2024-04-13 12:48:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 12:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: syncmodels
+[2024-04-13 12:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: LinguAligner
+[2024-04-13 12:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crypto_plus
+[2024-04-13 12:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: LinguAligner
+[2024-04-13 12:48:19] INFO root fetch - processPackages [LinguAligner]: New version: [0.9] Old Version: [0.8]
+[2024-04-13 12:48:19] INFO root fetch - processPackages [LinguAligner]: New version: [0.9] Old Version: [0.8]
+[2024-04-13 12:48:19] INFO root fetch - processPackages [syncmodels]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 12:48:19] INFO root fetch - processPackages [crypto_plus]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-13 12:48:19] INFO root fetch - processPackages [syncmodels]: Downloading https://files.pythonhosted.org/packages/09/13/db4988a642af43523190154e2a5fc392ebeed8a8fa626973e593b7c6b635/syncmodels-0.1.8-py2.py3-none-any.whl
+[2024-04-13 12:48:19] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/63/1f/fc1941e3d878f8643898c07bd958b932dd36b3b074928145bb430dfe0a04/lingualigner-0.8.tar.gz
+[2024-04-13 12:48:19] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/63/1f/fc1941e3d878f8643898c07bd958b932dd36b3b074928145bb430dfe0a04/lingualigner-0.8.tar.gz
+[2024-04-13 12:48:19] INFO root fetch - processPackages [crypto_plus]: Downloading https://files.pythonhosted.org/packages/ad/1c/aedbf13404634ab5c6407c048ad88cf50b1073f2e9b5ad4224a86be49d94/crypto_plus-1.0.2.tar.gz
+[2024-04-13 12:48:19] INFO root fetch - processPackages [syncmodels]: Downloading https://files.pythonhosted.org/packages/fa/f6/eeeb0b12fc045f5917cfc3967317eddb0f896b12df99ee9cb26dd42b0529/syncmodels-0.1.9-py2.py3-none-any.whl
+[2024-04-13 12:48:19] INFO root fetch - processPackages [syncmodels]: executing diffoscope
+[2024-04-13 12:48:19] INFO root fetch - processPackages [syncmodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syncmodels-0.1.8-py2.py3-none-any.whl.zip tmp/syncmodels-0.1.9-py2.py3-none-any.whl.zip --markdown 20240413/s/syncmodels/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 12:48:20] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/73/fb/3cad932ad4847785cbae099a96fb2ae5367c5b788dac0deece75b60a9254/lingualigner-0.9.tar.gz
+[2024-04-13 12:48:20] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/73/fb/3cad932ad4847785cbae099a96fb2ae5367c5b788dac0deece75b60a9254/lingualigner-0.9.tar.gz
+[2024-04-13 12:48:20] INFO root fetch - processPackages [crypto_plus]: Downloading https://files.pythonhosted.org/packages/66/83/dd4c29ed9f9cd9a4a3b70ea640a265a7c992b6939e8e6b5ea39cc803a449/crypto_plus-1.0.3.tar.gz
+[2024-04-13 12:48:20] INFO root fetch - processPackages [LinguAligner]: executing diffoscope
+[2024-04-13 12:48:20] INFO root fetch - processPackages [LinguAligner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lingualigner-0.8.tar.gz tmp/lingualigner-0.9.tar.gz --markdown 20240413/L/LinguAligner/0.8-0.9/README.md --exclude *.pyd
+[2024-04-13 12:48:20] INFO root fetch - processPackages [LinguAligner]: executing diffoscope
+[2024-04-13 12:48:20] INFO root fetch - processPackages [LinguAligner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lingualigner-0.8.tar.gz tmp/lingualigner-0.9.tar.gz --markdown 20240413/L/LinguAligner/0.8-0.9/README.md --exclude *.pyd
+[2024-04-13 12:48:20] INFO root fetch - processPackages [crypto_plus]: executing diffoscope
+[2024-04-13 12:48:20] INFO root fetch - processPackages [crypto_plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crypto_plus-1.0.2.tar.gz tmp/crypto_plus-1.0.3.tar.gz --markdown 20240413/c/crypto_plus/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-13 12:48:20] INFO root fetch - processPackages [syncmodels]: Remove: archive file [/home/abi/fetcher/tmp/syncmodels-0.1.8-py2.py3-none-any.whl.zip]
+[2024-04-13 12:48:20] INFO root fetch - processPackages [syncmodels]: Remove: archive file [/home/abi/fetcher/tmp/syncmodels-0.1.9-py2.py3-none-any.whl.zip]
+[2024-04-13 12:48:20] INFO root fetch - main [MainThread]: End processing [syncmodels]: success
+[2024-04-13 12:48:20] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.8.tar.gz]
+[2024-04-13 12:48:20] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.9.tar.gz]
+[2024-04-13 12:48:20] INFO root fetch - main [MainThread]: End processing [LinguAligner]: success
+[2024-04-13 12:48:20] INFO root fetch - main [MainThread]: End processing [LinguAligner]: success
+[2024-04-13 12:48:20] INFO root fetch - processPackages [crypto_plus]: Remove: archive file [/home/abi/fetcher/tmp/crypto_plus-1.0.2.tar.gz]
+[2024-04-13 12:48:20] INFO root fetch - processPackages [crypto_plus]: Remove: archive file [/home/abi/fetcher/tmp/crypto_plus-1.0.3.tar.gz]
+[2024-04-13 12:48:20] INFO root fetch - main [MainThread]: End processing [crypto_plus]: success
+[2024-04-13 12:48:20] INFO root fetch - main [MainThread]: Store serial: [22751205]
