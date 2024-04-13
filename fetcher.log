@@ -7967,3 +7967,18 @@
 [2024-04-13 06:47:49] INFO root fetch - processPackages [geotils]: Remove: archive file [/home/abi/fetcher/tmp/geotils-0.1.9.tar.gz]
 [2024-04-13 06:47:49] INFO root fetch - main [MainThread]: End processing [geotils]: success
 [2024-04-13 06:47:49] INFO root fetch - main [MainThread]: Store serial: [22749505]
+[2024-04-13 06:49:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749505]
+[2024-04-13 06:49:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 06:49:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jcmutils
+[2024-04-13 06:49:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pr-pilot
+[2024-04-13 06:49:58] WARNING root fetch - processPackages [pr-pilot]: Skipping, unable to determine old version
+[2024-04-13 06:49:58] INFO root fetch - main [MainThread]: End processing [pr-pilot] error
+[2024-04-13 06:49:58] INFO root fetch - processPackages [jcmutils]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-04-13 06:49:58] INFO root fetch - processPackages [jcmutils]: Downloading https://files.pythonhosted.org/packages/a7/e3/07d56d317cc25c1c93d51d8cfc8fb410c1dc9143f4ef91788fabb47ce47d/jcmutils-2.0.1.tar.gz
+[2024-04-13 06:49:59] INFO root fetch - processPackages [jcmutils]: Downloading https://files.pythonhosted.org/packages/b4/9c/9b18243925c93af95cc95d749b401a4df479b59e2bebe60316f21374d6b2/jcmutils-2.0.2.tar.gz
+[2024-04-13 06:49:59] INFO root fetch - processPackages [jcmutils]: executing diffoscope
+[2024-04-13 06:49:59] INFO root fetch - processPackages [jcmutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jcmutils-2.0.1.tar.gz tmp/jcmutils-2.0.2.tar.gz --markdown 20240413/j/jcmutils/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-04-13 06:49:59] INFO root fetch - processPackages [jcmutils]: Remove: archive file [/home/abi/fetcher/tmp/jcmutils-2.0.1.tar.gz]
+[2024-04-13 06:49:59] INFO root fetch - processPackages [jcmutils]: Remove: archive file [/home/abi/fetcher/tmp/jcmutils-2.0.2.tar.gz]
+[2024-04-13 06:49:59] INFO root fetch - main [MainThread]: End processing [jcmutils]: success
+[2024-04-13 06:49:59] INFO root fetch - main [MainThread]: Store serial: [22749511]
