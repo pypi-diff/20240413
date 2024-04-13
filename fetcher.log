@@ -17578,3 +17578,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:42:32] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-nightly-1.33.1.dev20240412.tar.gz]
 [2024-04-13 19:42:32] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
 [2024-04-13 19:42:32] INFO root fetch - main [MainThread]: Store serial: [22753565]
+[2024-04-13 19:44:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753565]
+[2024-04-13 19:44:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 19:44:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ontolocy
+[2024-04-13 19:44:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytest-fly
+[2024-04-13 19:44:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: inpost
+[2024-04-13 19:44:41] INFO root fetch - processPackages [ontolocy]: New version: [0.7.6] Old Version: [0.7.5]
+[2024-04-13 19:44:41] INFO root fetch - processPackages [pytest-fly]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 19:44:41] INFO root fetch - processPackages [inpost]: New version: [0.2.0a2] Old Version: [0.1.5a2]
+[2024-04-13 19:44:41] INFO root fetch - processPackages [ontolocy]: Downloading https://files.pythonhosted.org/packages/e0/6e/7ab3ff9025d0730fa2b82c3d9778b29915e1334bf1832c06be7e949a1e82/ontolocy-0.7.5.tar.gz
+[2024-04-13 19:44:41] INFO root fetch - processPackages [pytest-fly]: Downloading https://files.pythonhosted.org/packages/e0/3b/b864409039e33ccd2654e5a63858f5a9e494192cd7a6788b6960bda32962/pytest_fly-0.0.8.tar.gz
+[2024-04-13 19:44:41] INFO root fetch - processPackages [inpost]: Downloading https://files.pythonhosted.org/packages/cd/1b/8ac115c0b901dc97f134b32e5133293a43dcedff1162af654c48e2812dba/inpost-0.1.5a2.tar.gz
+[2024-04-13 19:44:41] WARNING root fetch - processPackages [pytest-fly]: Skipping package: exceeds size limit 38867026>=10485760
+[2024-04-13 19:44:41] INFO root fetch - main [MainThread]: End processing [pytest-fly] error
+[2024-04-13 19:44:42] INFO root fetch - processPackages [ontolocy]: Downloading https://files.pythonhosted.org/packages/13/67/ac8b2d0a4cf15c7e5208e284bde1099e9f2dfb20d98a1b52b4e7a88b1201/ontolocy-0.7.6.tar.gz
+[2024-04-13 19:44:42] INFO root fetch - processPackages [inpost]: Downloading https://files.pythonhosted.org/packages/e4/99/7b990dc112af792328d61e9ae0c8feb09564ce7db5c313f9eaea591735d6/inpost-0.2.0a2.tar.gz
+[2024-04-13 19:44:42] INFO root fetch - processPackages [ontolocy]: executing diffoscope
+[2024-04-13 19:44:42] INFO root fetch - processPackages [ontolocy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ontolocy-0.7.5.tar.gz tmp/ontolocy-0.7.6.tar.gz --markdown 20240413/o/ontolocy/0.7.5-0.7.6/README.md --exclude *.pyd
+[2024-04-13 19:44:42] INFO root fetch - processPackages [inpost]: executing diffoscope
+[2024-04-13 19:44:42] INFO root fetch - processPackages [inpost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inpost-0.1.5a2.tar.gz tmp/inpost-0.2.0a2.tar.gz --markdown 20240413/i/inpost/0.1.5a2-0.2.0a2/README.md --exclude *.pyd
+[2024-04-13 19:44:43] INFO root fetch - processPackages [ontolocy]: Remove: archive file [/home/abi/fetcher/tmp/ontolocy-0.7.5.tar.gz]
+[2024-04-13 19:44:43] INFO root fetch - processPackages [ontolocy]: Remove: archive file [/home/abi/fetcher/tmp/ontolocy-0.7.6.tar.gz]
+[2024-04-13 19:44:43] INFO root fetch - main [MainThread]: End processing [ontolocy]: success
+[2024-04-13 19:44:43] INFO root fetch - processPackages [inpost]: Remove: archive file [/home/abi/fetcher/tmp/inpost-0.1.5a2.tar.gz]
+[2024-04-13 19:44:43] INFO root fetch - processPackages [inpost]: Remove: archive file [/home/abi/fetcher/tmp/inpost-0.2.0a2.tar.gz]
+[2024-04-13 19:44:43] INFO root fetch - main [MainThread]: End processing [inpost]: success
+[2024-04-13 19:44:43] INFO root fetch - main [MainThread]: Store serial: [22753575]
