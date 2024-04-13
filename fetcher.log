@@ -14141,3 +14141,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 15:03:22] INFO root fetch - processPackages [Cp2kData]: Remove: archive file [/home/abi/fetcher/tmp/Cp2kData-0.6.8.tar.gz]
 [2024-04-13 15:03:22] INFO root fetch - main [MainThread]: End processing [Cp2kData]: success
 [2024-04-13 15:03:22] INFO root fetch - main [MainThread]: Store serial: [22751902]
+[2024-04-13 15:05:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751902]
+[2024-04-13 15:05:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 15:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: freddi
+[2024-04-13 15:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mediapipe-nightly
+[2024-04-13 15:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bestdori-api
+[2024-04-13 15:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: adlfs
+[2024-04-13 15:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stollen
+[2024-04-13 15:05:31] INFO root fetch - processPackages [bestdori-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 15:05:31] INFO root fetch - processPackages [bestdori-api]: Downloading https://files.pythonhosted.org/packages/81/fd/cfb845fb249267b8cd7573748f153416613ff4d92557b0588175d0ffa06c/bestdori_api-0.1.8.tar.gz
+[2024-04-13 15:05:31] INFO root fetch - processPackages [stollen]: New version: [0.1.1] Old Version: [0.1]
+[2024-04-13 15:05:31] INFO root fetch - processPackages [adlfs]: New version: [2024.4.0] Old Version: [2024.2.0]
+[2024-04-13 15:05:31] INFO root fetch - processPackages [freddi]: New version: [2.0b0] Old Version: [2.0.0b2]
+[2024-04-13 15:05:31] INFO root fetch - processPackages [mediapipe-nightly]: New version: [0.10.13.post20240413] Old Version: [0.10.13.post20240412]
+[2024-04-13 15:05:32] INFO root fetch - processPackages [bestdori-api]: Downloading https://files.pythonhosted.org/packages/e8/c6/efff1f1ea01c0bd24d5e120c25cc983a43678412b030542c4a6cfffdd9ea/bestdori_api-0.1.9.tar.gz
+[2024-04-13 15:05:32] INFO root fetch - processPackages [stollen]: Downloading https://files.pythonhosted.org/packages/81/09/3b5c08fbd24dbe15fc9f87ba9b57c003e0a378464e37404452e56e9c5ae8/stollen-0.1.tar.gz
+[2024-04-13 15:05:32] INFO root fetch - processPackages [freddi]: Downloading https://files.pythonhosted.org/packages/5a/7d/e7b0d3fe0893e89f48145be527ab09ba2429a435212397d930d507d7541e/freddi-2.0.0b2.tar.gz
+[2024-04-13 15:05:32] INFO root fetch - processPackages [adlfs]: Downloading https://files.pythonhosted.org/packages/8b/d0/6b9e786f870dcdc5a5765f6ae46579913aef8d7aed72a190fab7a51164c6/adlfs-2024.2.0.tar.gz
+[2024-04-13 15:05:32] INFO root fetch - processPackages [mediapipe-nightly]: Downloading https://files.pythonhosted.org/packages/68/98/0273fc5442ffd61ba7e4cb5c4aa08a44839b71e1bd4e0bcdaefe3425463f/mediapipe_nightly-0.10.13.post20240412-cp39-cp39-macosx_11_0_x86_64.whl
+[2024-04-13 15:05:32] WARNING root fetch - processPackages [mediapipe-nightly]: Skipping package: exceeds size limit 49959891>=10485760
+[2024-04-13 15:05:32] INFO root fetch - main [MainThread]: End processing [mediapipe-nightly] error
+[2024-04-13 15:05:32] INFO root fetch - processPackages [bestdori-api]: executing diffoscope
+[2024-04-13 15:05:32] INFO root fetch - processPackages [bestdori-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bestdori_api-0.1.8.tar.gz tmp/bestdori_api-0.1.9.tar.gz --markdown 20240413/b/bestdori-api/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 15:05:32] INFO root fetch - processPackages [adlfs]: Downloading https://files.pythonhosted.org/packages/fa/02/5863a4dab31f4a5c1f0b9e8298edae3764fed64b5daa1123344c85bb6f57/adlfs-2024.4.0.tar.gz
+[2024-04-13 15:05:32] INFO root fetch - processPackages [stollen]: Downloading https://files.pythonhosted.org/packages/da/b3/f4a90bbbfc405eb384de4e517df506f0c84e98671caf60ec399a7336e2f0/stollen-0.1.1.tar.gz
+[2024-04-13 15:05:32] INFO root fetch - processPackages [freddi]: Downloading https://files.pythonhosted.org/packages/32/8e/0af546ed7b690f5effd083ddffed14a9dccc25c522c206aabc6637cb7220/freddi-2.0b0.tar.gz
+[2024-04-13 15:05:32] INFO root fetch - processPackages [adlfs]: executing diffoscope
+[2024-04-13 15:05:32] INFO root fetch - processPackages [adlfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adlfs-2024.2.0.tar.gz tmp/adlfs-2024.4.0.tar.gz --markdown 20240413/a/adlfs/2024.2.0-2024.4.0/README.md --exclude *.pyd
+[2024-04-13 15:05:32] INFO root fetch - processPackages [stollen]: executing diffoscope
+[2024-04-13 15:05:32] INFO root fetch - processPackages [stollen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stollen-0.1.tar.gz tmp/stollen-0.1.1.tar.gz --markdown 20240413/s/stollen/0.1-0.1.1/README.md --exclude *.pyd
+[2024-04-13 15:05:32] INFO root fetch - processPackages [freddi]: executing diffoscope
+[2024-04-13 15:05:32] INFO root fetch - processPackages [freddi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freddi-2.0.0b2.tar.gz tmp/freddi-2.0b0.tar.gz --markdown 20240413/f/freddi/2.0.0b2-2.0b0/README.md --exclude *.pyd
+[2024-04-13 15:05:32] INFO root fetch - processPackages [bestdori-api]: Remove: archive file [/home/abi/fetcher/tmp/bestdori_api-0.1.8.tar.gz]
+[2024-04-13 15:05:32] INFO root fetch - processPackages [bestdori-api]: Remove: archive file [/home/abi/fetcher/tmp/bestdori_api-0.1.9.tar.gz]
+[2024-04-13 15:05:32] INFO root fetch - main [MainThread]: End processing [bestdori-api]: success
+[2024-04-13 15:05:33] INFO root fetch - processPackages [stollen]: Remove: archive file [/home/abi/fetcher/tmp/stollen-0.1.tar.gz]
+[2024-04-13 15:05:33] INFO root fetch - processPackages [stollen]: Remove: archive file [/home/abi/fetcher/tmp/stollen-0.1.1.tar.gz]
+[2024-04-13 15:05:33] INFO root fetch - main [MainThread]: End processing [stollen]: success
+[2024-04-13 15:05:33] INFO root fetch - processPackages [adlfs]: Remove: archive file [/home/abi/fetcher/tmp/adlfs-2024.2.0.tar.gz]
+[2024-04-13 15:05:33] INFO root fetch - processPackages [adlfs]: Remove: archive file [/home/abi/fetcher/tmp/adlfs-2024.4.0.tar.gz]
+[2024-04-13 15:05:33] INFO root fetch - main [MainThread]: End processing [adlfs]: success
+[2024-04-13 15:05:33] INFO root fetch - processPackages [freddi]: Remove: archive file [/home/abi/fetcher/tmp/freddi-2.0.0b2.tar.gz]
+[2024-04-13 15:05:33] INFO root fetch - processPackages [freddi]: Remove: archive file [/home/abi/fetcher/tmp/freddi-2.0b0.tar.gz]
+[2024-04-13 15:05:33] INFO root fetch - main [MainThread]: End processing [freddi]: success
+[2024-04-13 15:05:33] INFO root fetch - main [MainThread]: Store serial: [22751924]
