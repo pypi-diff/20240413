@@ -17181,3 +17181,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:09:27] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.6.1.tar.gz]
 [2024-04-13 19:09:27] INFO root fetch - main [MainThread]: End processing [NNSOM]: success
 [2024-04-13 19:09:27] INFO root fetch - main [MainThread]: Store serial: [22753316]
+[2024-04-13 19:11:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753316]
+[2024-04-13 19:11:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 19:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ds20kdb-avt
+[2024-04-13 19:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pwright
+[2024-04-13 19:11:36] INFO root fetch - processPackages [pwright]: New version: [9.1.0] Old Version: [9.0.0]
+[2024-04-13 19:11:36] INFO root fetch - processPackages [ds20kdb-avt]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-13 19:11:36] INFO root fetch - processPackages [pwright]: Downloading https://files.pythonhosted.org/packages/25/d7/b551df50904b7628aa71618ab3823abaa7eb553ee14a81900d0a98e2f562/pwright-9.0.0.tar.gz
+[2024-04-13 19:11:36] INFO root fetch - processPackages [ds20kdb-avt]: Downloading https://files.pythonhosted.org/packages/70/0e/b8f21e8e0135cf8fcb6cdfbfd5fb533cf49ed02518668d39844a296a1abf/ds20kdb-avt-1.0.3.tar.gz
+[2024-04-13 19:11:36] INFO root fetch - processPackages [ds20kdb-avt]: Downloading https://files.pythonhosted.org/packages/1b/49/9c96691925eb92e030e711c815efd23404b576aec8b6fa81de385d791152/ds20kdb-avt-1.0.4.tar.gz
+[2024-04-13 19:11:36] INFO root fetch - processPackages [pwright]: Downloading https://files.pythonhosted.org/packages/54/c1/43c21cc8fe3c0e76a6676435c0be1e747e3d05903a7b2f645243e56814f6/pwright-9.1.0.tar.gz
+[2024-04-13 19:11:36] INFO root fetch - processPackages [ds20kdb-avt]: executing diffoscope
+[2024-04-13 19:11:36] INFO root fetch - processPackages [ds20kdb-avt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ds20kdb-avt-1.0.3.tar.gz tmp/ds20kdb-avt-1.0.4.tar.gz --markdown 20240413/d/ds20kdb-avt/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-13 19:11:36] INFO root fetch - processPackages [pwright]: executing diffoscope
+[2024-04-13 19:11:36] INFO root fetch - processPackages [pwright]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pwright-9.0.0.tar.gz tmp/pwright-9.1.0.tar.gz --markdown 20240413/p/pwright/9.0.0-9.1.0/README.md --exclude *.pyd
+[2024-04-13 19:11:37] INFO root fetch - processPackages [pwright]: Remove: archive file [/home/abi/fetcher/tmp/pwright-9.0.0.tar.gz]
+[2024-04-13 19:11:37] INFO root fetch - processPackages [pwright]: Remove: archive file [/home/abi/fetcher/tmp/pwright-9.1.0.tar.gz]
+[2024-04-13 19:11:37] INFO root fetch - main [MainThread]: End processing [pwright]: success
+[2024-04-13 19:11:37] INFO root fetch - processPackages [ds20kdb-avt]: Remove: archive file [/home/abi/fetcher/tmp/ds20kdb-avt-1.0.3.tar.gz]
+[2024-04-13 19:11:37] INFO root fetch - processPackages [ds20kdb-avt]: Remove: archive file [/home/abi/fetcher/tmp/ds20kdb-avt-1.0.4.tar.gz]
+[2024-04-13 19:11:37] INFO root fetch - main [MainThread]: End processing [ds20kdb-avt]: success
+[2024-04-13 19:11:37] INFO root fetch - main [MainThread]: Store serial: [22753322]
