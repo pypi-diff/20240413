@@ -12978,3 +12978,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 13:18:56] INFO root fetch - processPackages [aplr]: Remove: archive file [/home/abi/fetcher/tmp/aplr-9.5.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-04-13 13:18:56] INFO root fetch - main [MainThread]: End processing [aplr]: success
 [2024-04-13 13:18:56] INFO root fetch - main [MainThread]: Store serial: [22751387]
+[2024-04-13 13:21:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751387]
+[2024-04-13 13:21:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 13:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: polytrend
+[2024-04-13 13:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mqi-sspd-api
+[2024-04-13 13:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cc-package
+[2024-04-13 13:21:05] INFO root fetch - processPackages [mqi-sspd-api]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-13 13:21:05] INFO root fetch - processPackages [polytrend]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-13 13:21:05] INFO root fetch - processPackages [mqi-sspd-api]: Downloading https://files.pythonhosted.org/packages/51/09/5a1abef9cc3bf8a93622e44895eb38c2c207fae13067cd3da4e7a64e006f/mqi_sspd_api-0.0.5.tar.gz
+[2024-04-13 13:21:05] INFO root fetch - processPackages [polytrend]: Downloading https://files.pythonhosted.org/packages/0c/d7/0961ee71ce60ae1369914c8b447e7018baacaddc7c3169b6a06a0d253cd7/polytrend-1.0.6.tar.gz
+[2024-04-13 13:21:05] WARNING root fetch - processPackages [cc-package]: Skipping, unable to determine old version
+[2024-04-13 13:21:05] INFO root fetch - main [MainThread]: End processing [cc-package] error
+[2024-04-13 13:21:05] INFO root fetch - processPackages [polytrend]: Downloading https://files.pythonhosted.org/packages/a7/c9/2c0a0c3b219544cf25af78d5939e7dc00ac6e81f2641653ba152bf21ed70/polytrend-1.0.7.tar.gz
+[2024-04-13 13:21:05] INFO root fetch - processPackages [mqi-sspd-api]: Downloading https://files.pythonhosted.org/packages/e2/f3/956eccbf3b070b1540798aba0bfc1881585a76d77dfdad6671e5f71faa61/mqi_sspd_api-0.0.6.tar.gz
+[2024-04-13 13:21:05] INFO root fetch - processPackages [polytrend]: executing diffoscope
+[2024-04-13 13:21:05] INFO root fetch - processPackages [polytrend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polytrend-1.0.6.tar.gz tmp/polytrend-1.0.7.tar.gz --markdown 20240413/p/polytrend/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-13 13:21:05] INFO root fetch - processPackages [mqi-sspd-api]: executing diffoscope
+[2024-04-13 13:21:05] INFO root fetch - processPackages [mqi-sspd-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mqi_sspd_api-0.0.5.tar.gz tmp/mqi_sspd_api-0.0.6.tar.gz --markdown 20240413/m/mqi-sspd-api/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-13 13:21:06] INFO root fetch - processPackages [polytrend]: Remove: archive file [/home/abi/fetcher/tmp/polytrend-1.0.6.tar.gz]
+[2024-04-13 13:21:06] INFO root fetch - processPackages [polytrend]: Remove: archive file [/home/abi/fetcher/tmp/polytrend-1.0.7.tar.gz]
+[2024-04-13 13:21:06] INFO root fetch - main [MainThread]: End processing [polytrend]: success
+[2024-04-13 13:21:06] INFO root fetch - processPackages [mqi-sspd-api]: Remove: archive file [/home/abi/fetcher/tmp/mqi_sspd_api-0.0.5.tar.gz]
+[2024-04-13 13:21:06] INFO root fetch - processPackages [mqi-sspd-api]: Remove: archive file [/home/abi/fetcher/tmp/mqi_sspd_api-0.0.6.tar.gz]
+[2024-04-13 13:21:06] INFO root fetch - main [MainThread]: End processing [mqi-sspd-api]: success
+[2024-04-13 13:21:06] INFO root fetch - main [MainThread]: Store serial: [22751400]
