@@ -2462,3 +2462,33 @@
 [2024-04-13 02:32:40] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar-connect-0.1.140.tar.gz]
 [2024-04-13 02:32:40] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
 [2024-04-13 02:32:40] INFO root fetch - main [MainThread]: Store serial: [22747430]
+[2024-04-13 02:34:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22747430]
+[2024-04-13 02:34:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 02:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: noisepy-seis
+[2024-04-13 02:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jdmtool
+[2024-04-13 02:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytplot-mpl-temp
+[2024-04-13 02:34:49] INFO root fetch - processPackages [jdmtool]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-13 02:34:49] INFO root fetch - processPackages [pytplot-mpl-temp]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-04-13 02:34:49] INFO root fetch - processPackages [noisepy-seis]: New version: [0.9.87] Old Version: [0.9.86]
+[2024-04-13 02:34:49] INFO root fetch - processPackages [jdmtool]: Downloading https://files.pythonhosted.org/packages/86/a2/e223126cb544cc78faf5361a3a0030d6dc92ac83bfda47df9a9286541362/jdmtool-0.0.3.tar.gz
+[2024-04-13 02:34:49] INFO root fetch - processPackages [pytplot-mpl-temp]: Downloading https://files.pythonhosted.org/packages/4a/3e/a5a5f1bb38b468da3d376ee81f842f2f8433d02dd89bf1e410d1a15a98e0/pytplot-mpl-temp-2.2.8.tar.gz
+[2024-04-13 02:34:49] INFO root fetch - processPackages [noisepy-seis]: Downloading https://files.pythonhosted.org/packages/d5/fc/2f8a9916dda76c2e9c9f36f807c8c78d9134d1509e3802c9389626c43fd7/noisepy_seis-0.9.86.tar.gz
+[2024-04-13 02:34:49] INFO root fetch - processPackages [noisepy-seis]: Downloading https://files.pythonhosted.org/packages/50/ef/046992541eef6cf27f2d93a1c0b797ec296564457e758e025c5a3fa4941d/noisepy_seis-0.9.87.tar.gz
+[2024-04-13 02:34:49] INFO root fetch - processPackages [jdmtool]: Downloading https://files.pythonhosted.org/packages/55/48/b84adabf0868a9298e1a29c0cee02a04ec20a2a962c8ca30a1119facdbd8/jdmtool-0.0.4.tar.gz
+[2024-04-13 02:34:49] INFO root fetch - processPackages [pytplot-mpl-temp]: Downloading https://files.pythonhosted.org/packages/21/aa/38c2164a03950b9adf6f62c59343823fefd067961a6402ad1c2311ef1a3a/pytplot-mpl-temp-2.2.9.tar.gz
+[2024-04-13 02:34:49] INFO root fetch - processPackages [noisepy-seis]: executing diffoscope
+[2024-04-13 02:34:49] INFO root fetch - processPackages [noisepy-seis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noisepy_seis-0.9.86.tar.gz tmp/noisepy_seis-0.9.87.tar.gz --markdown 20240413/n/noisepy-seis/0.9.86-0.9.87/README.md --exclude *.pyd
+[2024-04-13 02:34:49] INFO root fetch - processPackages [jdmtool]: executing diffoscope
+[2024-04-13 02:34:49] INFO root fetch - processPackages [jdmtool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jdmtool-0.0.3.tar.gz tmp/jdmtool-0.0.4.tar.gz --markdown 20240413/j/jdmtool/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-13 02:34:50] INFO root fetch - processPackages [pytplot-mpl-temp]: executing diffoscope
+[2024-04-13 02:34:50] INFO root fetch - processPackages [pytplot-mpl-temp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytplot-mpl-temp-2.2.8.tar.gz tmp/pytplot-mpl-temp-2.2.9.tar.gz --markdown 20240413/p/pytplot-mpl-temp/2.2.8-2.2.9/README.md --exclude *.pyd
+[2024-04-13 02:34:50] INFO root fetch - processPackages [jdmtool]: Remove: archive file [/home/abi/fetcher/tmp/jdmtool-0.0.3.tar.gz]
+[2024-04-13 02:34:50] INFO root fetch - processPackages [jdmtool]: Remove: archive file [/home/abi/fetcher/tmp/jdmtool-0.0.4.tar.gz]
+[2024-04-13 02:34:50] INFO root fetch - main [MainThread]: End processing [jdmtool]: success
+[2024-04-13 02:34:50] INFO root fetch - processPackages [noisepy-seis]: Remove: archive file [/home/abi/fetcher/tmp/noisepy_seis-0.9.86.tar.gz]
+[2024-04-13 02:34:50] INFO root fetch - processPackages [noisepy-seis]: Remove: archive file [/home/abi/fetcher/tmp/noisepy_seis-0.9.87.tar.gz]
+[2024-04-13 02:34:50] INFO root fetch - main [MainThread]: End processing [noisepy-seis]: success
+[2024-04-13 02:34:51] INFO root fetch - processPackages [pytplot-mpl-temp]: Remove: archive file [/home/abi/fetcher/tmp/pytplot-mpl-temp-2.2.8.tar.gz]
+[2024-04-13 02:34:51] INFO root fetch - processPackages [pytplot-mpl-temp]: Remove: archive file [/home/abi/fetcher/tmp/pytplot-mpl-temp-2.2.9.tar.gz]
+[2024-04-13 02:34:51] INFO root fetch - main [MainThread]: End processing [pytplot-mpl-temp]: success
+[2024-04-13 02:34:51] INFO root fetch - main [MainThread]: Store serial: [22747440]
