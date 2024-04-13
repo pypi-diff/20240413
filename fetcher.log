@@ -8214,3 +8214,24 @@
 [2024-04-13 07:22:14] INFO root fetch - processPackages [VizAble]: Remove: archive file [/home/abi/fetcher/tmp/vizable-0.9.0.tar.gz]
 [2024-04-13 07:22:14] INFO root fetch - main [MainThread]: End processing [VizAble]: success
 [2024-04-13 07:22:14] INFO root fetch - main [MainThread]: Store serial: [22749575]
+[2024-04-13 07:24:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749575]
+[2024-04-13 07:24:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 07:24:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bakabakabaka
+[2024-04-13 07:24:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: furchain
+[2024-04-13 07:24:23] INFO root fetch - processPackages [bakabakabaka]: New version: [0.8.8] Old Version: [0.8.7]
+[2024-04-13 07:24:23] INFO root fetch - processPackages [furchain]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-13 07:24:23] INFO root fetch - processPackages [bakabakabaka]: Downloading https://files.pythonhosted.org/packages/1a/51/dae239c61570e3add42a7f21352c2fd06a78cd7af52c1cb4a8ca579c20d9/bakabakabaka-0.8.7.tar.gz
+[2024-04-13 07:24:24] INFO root fetch - processPackages [furchain]: Downloading https://files.pythonhosted.org/packages/aa/9e/657c85e963a678747f888e871d521b96da3237d146fc989f40ee8495384f/furchain-0.1.2.tar.gz
+[2024-04-13 07:24:24] INFO root fetch - processPackages [bakabakabaka]: Downloading https://files.pythonhosted.org/packages/bb/95/c809a23066f96d55b41be8cf3f55652434d686305bf334ac48ee8563b8b2/bakabakabaka-0.8.8.tar.gz
+[2024-04-13 07:24:24] INFO root fetch - processPackages [bakabakabaka]: executing diffoscope
+[2024-04-13 07:24:24] INFO root fetch - processPackages [bakabakabaka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bakabakabaka-0.8.7.tar.gz tmp/bakabakabaka-0.8.8.tar.gz --markdown 20240413/b/bakabakabaka/0.8.7-0.8.8/README.md --exclude *.pyd
+[2024-04-13 07:24:24] INFO root fetch - processPackages [furchain]: Downloading https://files.pythonhosted.org/packages/85/93/dd32782c71655f96387d6defe010829b9803d7538492987d6f05ceb6d726/furchain-0.1.3.tar.gz
+[2024-04-13 07:24:24] INFO root fetch - processPackages [furchain]: executing diffoscope
+[2024-04-13 07:24:24] INFO root fetch - processPackages [furchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furchain-0.1.2.tar.gz tmp/furchain-0.1.3.tar.gz --markdown 20240413/f/furchain/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-13 07:24:24] INFO root fetch - processPackages [bakabakabaka]: Remove: archive file [/home/abi/fetcher/tmp/bakabakabaka-0.8.7.tar.gz]
+[2024-04-13 07:24:24] INFO root fetch - processPackages [bakabakabaka]: Remove: archive file [/home/abi/fetcher/tmp/bakabakabaka-0.8.8.tar.gz]
+[2024-04-13 07:24:24] INFO root fetch - main [MainThread]: End processing [bakabakabaka]: success
+[2024-04-13 07:24:25] INFO root fetch - processPackages [furchain]: Remove: archive file [/home/abi/fetcher/tmp/furchain-0.1.2.tar.gz]
+[2024-04-13 07:24:25] INFO root fetch - processPackages [furchain]: Remove: archive file [/home/abi/fetcher/tmp/furchain-0.1.3.tar.gz]
+[2024-04-13 07:24:25] INFO root fetch - main [MainThread]: End processing [furchain]: success
+[2024-04-13 07:24:25] INFO root fetch - main [MainThread]: Store serial: [22749581]
