@@ -6900,3 +6900,33 @@
 [2024-04-13 04:17:58] INFO root fetch - processPackages [renovosolutions.aws-cdk-aws-sso]: Remove: archive file [/home/abi/fetcher/tmp/renovosolutions.aws-cdk-aws-sso-0.1.99.tar.gz]
 [2024-04-13 04:17:58] INFO root fetch - main [MainThread]: End processing [renovosolutions.aws-cdk-aws-sso]: success
 [2024-04-13 04:17:58] INFO root fetch - main [MainThread]: Store serial: [22748973]
+[2024-04-13 04:20:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748973]
+[2024-04-13 04:20:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 04:20:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bnpm
+[2024-04-13 04:20:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-ssi-hr-reimbursement
+[2024-04-13 04:20:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-ssi-hr-cash-advance
+[2024-04-13 04:20:07] INFO root fetch - processPackages [odoo14-addon-ssi-hr-cash-advance]: New version: [14.0.1.9.0] Old Version: [14.0.1.8.0]
+[2024-04-13 04:20:07] INFO root fetch - processPackages [odoo14-addon-ssi-hr-reimbursement]: New version: [14.0.1.9.0] Old Version: [14.0.1.7.0]
+[2024-04-13 04:20:07] INFO root fetch - processPackages [bnpm]: New version: [0.5.0] Old Version: [0.4.4]
+[2024-04-13 04:20:07] INFO root fetch - processPackages [odoo14-addon-ssi-hr-reimbursement]: Downloading https://files.pythonhosted.org/packages/47/6f/8a032de8ebb925ab02875ff73f93f5792f2f0dfc694de86c2a8641ed3f83/odoo14_addon_ssi_hr_reimbursement-14.0.1.7.0-py3-none-any.whl
+[2024-04-13 04:20:07] INFO root fetch - processPackages [odoo14-addon-ssi-hr-cash-advance]: Downloading https://files.pythonhosted.org/packages/2f/e0/edb65e6daf7a0e2742b4dabba2b6f2be7204483b3d09de4466c695dd1043/odoo14_addon_ssi_hr_cash_advance-14.0.1.8.0-py3-none-any.whl
+[2024-04-13 04:20:07] INFO root fetch - processPackages [bnpm]: Downloading https://files.pythonhosted.org/packages/e6/f6/0780f87fd4e38741c3c184c16787550279de34dd6448dbc5cb049c941303/bnpm-0.4.4.tar.gz
+[2024-04-13 04:20:07] INFO root fetch - processPackages [bnpm]: Downloading https://files.pythonhosted.org/packages/bb/a5/45f96e8bdc30b275dd8a149a479094d625a3e5709f9405aaf599e1121f93/bnpm-0.5.0.tar.gz
+[2024-04-13 04:20:07] INFO root fetch - processPackages [odoo14-addon-ssi-hr-cash-advance]: Downloading https://files.pythonhosted.org/packages/40/b6/a598f870f3beefc1538022814d34dd05b9ec98b5ebee0fdda4f975cfa7b8/odoo14_addon_ssi_hr_cash_advance-14.0.1.9.0-py3-none-any.whl
+[2024-04-13 04:20:08] INFO root fetch - processPackages [odoo14-addon-ssi-hr-reimbursement]: Downloading https://files.pythonhosted.org/packages/e7/37/a12e618edf412f6a40f78980e841f2b468db6310a5cfcef73a824385946d/odoo14_addon_ssi_hr_reimbursement-14.0.1.9.0-py3-none-any.whl
+[2024-04-13 04:20:08] INFO root fetch - processPackages [bnpm]: executing diffoscope
+[2024-04-13 04:20:08] INFO root fetch - processPackages [bnpm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bnpm-0.4.4.tar.gz tmp/bnpm-0.5.0.tar.gz --markdown 20240413/b/bnpm/0.4.4-0.5.0/README.md --exclude *.pyd
+[2024-04-13 04:20:08] INFO root fetch - processPackages [odoo14-addon-ssi-hr-cash-advance]: executing diffoscope
+[2024-04-13 04:20:08] INFO root fetch - processPackages [odoo14-addon-ssi-hr-cash-advance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_ssi_hr_cash_advance-14.0.1.8.0-py3-none-any.whl.zip tmp/odoo14_addon_ssi_hr_cash_advance-14.0.1.9.0-py3-none-any.whl.zip --markdown 20240413/o/odoo14-addon-ssi-hr-cash-advance/14.0.1.8.0-14.0.1.9.0/README.md --exclude *.pyd
+[2024-04-13 04:20:08] INFO root fetch - processPackages [odoo14-addon-ssi-hr-reimbursement]: executing diffoscope
+[2024-04-13 04:20:08] INFO root fetch - processPackages [odoo14-addon-ssi-hr-reimbursement]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_ssi_hr_reimbursement-14.0.1.7.0-py3-none-any.whl.zip tmp/odoo14_addon_ssi_hr_reimbursement-14.0.1.9.0-py3-none-any.whl.zip --markdown 20240413/o/odoo14-addon-ssi-hr-reimbursement/14.0.1.7.0-14.0.1.9.0/README.md --exclude *.pyd
+[2024-04-13 04:20:08] INFO root fetch - processPackages [odoo14-addon-ssi-hr-cash-advance]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_hr_cash_advance-14.0.1.8.0-py3-none-any.whl.zip]
+[2024-04-13 04:20:08] INFO root fetch - processPackages [odoo14-addon-ssi-hr-cash-advance]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_hr_cash_advance-14.0.1.9.0-py3-none-any.whl.zip]
+[2024-04-13 04:20:08] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-hr-cash-advance]: success
+[2024-04-13 04:20:08] INFO root fetch - processPackages [odoo14-addon-ssi-hr-reimbursement]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_hr_reimbursement-14.0.1.7.0-py3-none-any.whl.zip]
+[2024-04-13 04:20:08] INFO root fetch - processPackages [odoo14-addon-ssi-hr-reimbursement]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_hr_reimbursement-14.0.1.9.0-py3-none-any.whl.zip]
+[2024-04-13 04:20:08] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-hr-reimbursement]: success
+[2024-04-13 04:20:08] INFO root fetch - processPackages [bnpm]: Remove: archive file [/home/abi/fetcher/tmp/bnpm-0.4.4.tar.gz]
+[2024-04-13 04:20:08] INFO root fetch - processPackages [bnpm]: Remove: archive file [/home/abi/fetcher/tmp/bnpm-0.5.0.tar.gz]
+[2024-04-13 04:20:08] INFO root fetch - main [MainThread]: End processing [bnpm]: success
+[2024-04-13 04:20:08] INFO root fetch - main [MainThread]: Store serial: [22748980]
