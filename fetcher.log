@@ -14472,3 +14472,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 15:29:40] INFO root fetch - processPackages [keble-helpers]: Remove: archive file [/home/abi/fetcher/tmp/keble_helpers-0.0.9.tar.gz]
 [2024-04-13 15:29:40] INFO root fetch - main [MainThread]: End processing [keble-helpers]: success
 [2024-04-13 15:29:40] INFO root fetch - main [MainThread]: Store serial: [22752174]
+[2024-04-13 15:31:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752174]
+[2024-04-13 15:31:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 15:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-modelrunner
+[2024-04-13 15:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kellyapi
+[2024-04-13 15:31:49] WARNING root fetch - processPackages [kellyapi]: Skipping, unable to determine old version
+[2024-04-13 15:31:49] INFO root fetch - main [MainThread]: End processing [kellyapi] error
+[2024-04-13 15:31:49] INFO root fetch - processPackages [py-modelrunner]: New version: [0.9.1] Old Version: [0.8]
+[2024-04-13 15:31:49] INFO root fetch - processPackages [py-modelrunner]: Downloading https://files.pythonhosted.org/packages/7e/a8/b487bf9b309f16b7ef2729c52814a17d4b86831651de63184862ff5cae7f/py-modelrunner-0.8.tar.gz
+[2024-04-13 15:31:49] INFO root fetch - processPackages [py-modelrunner]: Downloading https://files.pythonhosted.org/packages/f9/f9/00daa9ae5507a3d3cedcd5ed2867fea755eda4eae52df31c3c5d2950fb80/py-modelrunner-0.9.1.tar.gz
+[2024-04-13 15:31:49] INFO root fetch - processPackages [py-modelrunner]: executing diffoscope
+[2024-04-13 15:31:49] INFO root fetch - processPackages [py-modelrunner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-modelrunner-0.8.tar.gz tmp/py-modelrunner-0.9.1.tar.gz --markdown 20240413/p/py-modelrunner/0.8-0.9.1/README.md --exclude *.pyd
+[2024-04-13 15:31:50] INFO root fetch - processPackages [py-modelrunner]: Remove: archive file [/home/abi/fetcher/tmp/py-modelrunner-0.8.tar.gz]
+[2024-04-13 15:31:50] INFO root fetch - processPackages [py-modelrunner]: Remove: archive file [/home/abi/fetcher/tmp/py-modelrunner-0.9.1.tar.gz]
+[2024-04-13 15:31:50] INFO root fetch - main [MainThread]: End processing [py-modelrunner]: success
+[2024-04-13 15:31:50] INFO root fetch - main [MainThread]: Store serial: [22752181]
