@@ -6689,3 +6689,36 @@
 [2024-04-13 03:49:41] INFO root fetch - processPackages [cybrid-api-id-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-id-python-0.99.0.tar.gz]
 [2024-04-13 03:49:41] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
 [2024-04-13 03:49:41] INFO root fetch - main [MainThread]: Store serial: [22748874]
+[2024-04-13 03:51:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748874]
+[2024-04-13 03:51:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 03:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cybrid-api-organization-python
+[2024-04-13 03:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cybrid-api-bank-python
+[2024-04-13 03:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: helios-ml
+[2024-04-13 03:51:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pypreql
+[2024-04-13 03:51:50] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.99.0] Old Version: [0.98.2]
+[2024-04-13 03:51:50] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.99.0] Old Version: [0.98.2]
+[2024-04-13 03:51:50] WARNING root fetch - processPackages [helios-ml]: Skipping, unable to determine old version
+[2024-04-13 03:51:50] INFO root fetch - main [MainThread]: End processing [helios-ml] error
+[2024-04-13 03:51:50] INFO root fetch - processPackages [pypreql]: New version: [0.0.1rc9] Old Version: [0.0.1rc8]
+[2024-04-13 03:51:50] INFO root fetch - processPackages [cybrid-api-bank-python]: Downloading https://files.pythonhosted.org/packages/da/dd/e8ea2fc7e8f671e18adae35333d00fdc692f7637860f9e361fba5fe3b85a/cybrid-api-bank-python-0.98.2.tar.gz
+[2024-04-13 03:51:50] INFO root fetch - processPackages [cybrid-api-organization-python]: Downloading https://files.pythonhosted.org/packages/75/d9/17a583a2d5fccaef7210a11d9f7dc963aab51cd4a5ae5f7983c03291f4bc/cybrid-api-organization-python-0.98.2.tar.gz
+[2024-04-13 03:51:51] INFO root fetch - processPackages [pypreql]: Downloading https://files.pythonhosted.org/packages/43/b8/2abb29f2547d81aff3f05e6578226b18359897a8e67919d46a46231d0bed/pypreql-0.0.1rc8.tar.gz
+[2024-04-13 03:51:51] INFO root fetch - processPackages [cybrid-api-organization-python]: Downloading https://files.pythonhosted.org/packages/93/ab/a857018ac26aeaa884608066dbe6bd482e17a4edf88533d3335a3ed2a25c/cybrid-api-organization-python-0.99.0.tar.gz
+[2024-04-13 03:51:51] INFO root fetch - processPackages [cybrid-api-bank-python]: Downloading https://files.pythonhosted.org/packages/a1/e6/1c6a95191a8826ea0636949d5bfdb7d34a65b1f81b3cb27e1863a88a1552/cybrid-api-bank-python-0.99.0.tar.gz
+[2024-04-13 03:51:51] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2024-04-13 03:51:51] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.98.2.tar.gz tmp/cybrid-api-organization-python-0.99.0.tar.gz --markdown 20240413/c/cybrid-api-organization-python/0.98.2-0.99.0/README.md --exclude *.pyd
+[2024-04-13 03:51:51] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2024-04-13 03:51:51] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.98.2.tar.gz tmp/cybrid-api-bank-python-0.99.0.tar.gz --markdown 20240413/c/cybrid-api-bank-python/0.98.2-0.99.0/README.md --exclude *.pyd
+[2024-04-13 03:51:51] INFO root fetch - processPackages [pypreql]: Downloading https://files.pythonhosted.org/packages/1a/ce/33794a7ef68067e22a883f6d200722a8ccfc530b6b40d7ba9956ed4ff8bf/pypreql-0.0.1rc9.tar.gz
+[2024-04-13 03:51:51] INFO root fetch - processPackages [pypreql]: executing diffoscope
+[2024-04-13 03:51:51] INFO root fetch - processPackages [pypreql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypreql-0.0.1rc8.tar.gz tmp/pypreql-0.0.1rc9.tar.gz --markdown 20240413/p/pypreql/0.0.1rc8-0.0.1rc9/README.md --exclude *.pyd
+[2024-04-13 03:51:51] INFO root fetch - processPackages [cybrid-api-organization-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-organization-python-0.98.2.tar.gz]
+[2024-04-13 03:51:51] INFO root fetch - processPackages [cybrid-api-organization-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-organization-python-0.99.0.tar.gz]
+[2024-04-13 03:51:51] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2024-04-13 03:51:52] INFO root fetch - processPackages [pypreql]: Remove: archive file [/home/abi/fetcher/tmp/pypreql-0.0.1rc8.tar.gz]
+[2024-04-13 03:51:52] INFO root fetch - processPackages [pypreql]: Remove: archive file [/home/abi/fetcher/tmp/pypreql-0.0.1rc9.tar.gz]
+[2024-04-13 03:51:52] INFO root fetch - main [MainThread]: End processing [pypreql]: success
+[2024-04-13 03:51:53] INFO root fetch - processPackages [cybrid-api-bank-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-bank-python-0.98.2.tar.gz]
+[2024-04-13 03:51:53] INFO root fetch - processPackages [cybrid-api-bank-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-bank-python-0.99.0.tar.gz]
+[2024-04-13 03:51:53] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2024-04-13 03:51:53] INFO root fetch - main [MainThread]: Store serial: [22748888]
