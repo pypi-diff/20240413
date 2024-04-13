@@ -13556,3 +13556,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:17:39] WARNING root fetch - processPackages [bulletroulette]: Skipping, unable to determine old version
 [2024-04-13 14:17:39] INFO root fetch - main [MainThread]: End processing [bulletroulette] error
 [2024-04-13 14:17:39] INFO root fetch - main [MainThread]: Store serial: [22751652]
+[2024-04-13 14:19:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751652]
+[2024-04-13 14:19:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 14:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qcfinancial
+[2024-04-13 14:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chaehwan
+[2024-04-13 14:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-txi
+[2024-04-13 14:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dekvenv
+[2024-04-13 14:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bbot
+[2024-04-13 14:19:48] INFO root fetch - processPackages [py-txi]: New version: [0.6.0] Old Version: [0.5.1]
+[2024-04-13 14:19:48] INFO root fetch - processPackages [dekvenv]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 14:19:48] INFO root fetch - processPackages [py-txi]: Downloading https://files.pythonhosted.org/packages/ae/b4/0335b9f1a819e26fcc8ac42cd27c868ada22047140a40eab19dd6dbf8849/py-txi-0.5.1.tar.gz
+[2024-04-13 14:19:48] WARNING root fetch - processPackages [chaehwan]: Skipping, unable to determine old version
+[2024-04-13 14:19:48] INFO root fetch - main [MainThread]: End processing [chaehwan] error
+[2024-04-13 14:19:48] INFO root fetch - processPackages [qcfinancial]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-04-13 14:19:48] INFO root fetch - processPackages [bbot]: New version: [1.1.7.7rc0] Old Version: [1.1.7.6rc0]
+[2024-04-13 14:19:48] INFO root fetch - processPackages [dekvenv]: Downloading https://files.pythonhosted.org/packages/4f/0b/06902f2f4ceee290cfab39fc5e233eaa2bb642fa6b79c9a76349ffa49eac/dekvenv-0.1.8.tar.gz
+[2024-04-13 14:19:48] INFO root fetch - processPackages [qcfinancial]: Downloading https://files.pythonhosted.org/packages/90/9d/f1639f914c253491a0b72dd0eb197aa535c9c3dcb8c5e4bf2ac1a5a44a60/qcfinancial-0.8.1-cp39-cp39-macosx_14_0_arm64.whl
+[2024-04-13 14:19:48] INFO root fetch - processPackages [dekvenv]: Downloading https://files.pythonhosted.org/packages/89/c5/ae26e7ab62e243bef554710c58d728eba22e25ad33a5e2f25b45dcb001d1/dekvenv-0.1.9.tar.gz
+[2024-04-13 14:19:48] INFO root fetch - processPackages [py-txi]: Downloading https://files.pythonhosted.org/packages/2e/d3/2fbfb934a0b2673470a3ede4aaf0cc4672bda10acf9281e26e6e11e3952e/py-txi-0.6.0.tar.gz
+[2024-04-13 14:19:48] INFO root fetch - processPackages [bbot]: Downloading https://files.pythonhosted.org/packages/0e/89/05677f40d2885a5aa8306d6e691a9c8e8bde59b2659d8c45e30c01a31b74/bbot-1.1.7.6rc0.tar.gz
+[2024-04-13 14:19:48] INFO root fetch - processPackages [dekvenv]: executing diffoscope
+[2024-04-13 14:19:48] INFO root fetch - processPackages [dekvenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dekvenv-0.1.8.tar.gz tmp/dekvenv-0.1.9.tar.gz --markdown 20240413/d/dekvenv/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 14:19:49] INFO root fetch - processPackages [py-txi]: executing diffoscope
+[2024-04-13 14:19:49] INFO root fetch - processPackages [py-txi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-txi-0.5.1.tar.gz tmp/py-txi-0.6.0.tar.gz --markdown 20240413/p/py-txi/0.5.1-0.6.0/README.md --exclude *.pyd
+[2024-04-13 14:19:49] INFO root fetch - processPackages [qcfinancial]: Downloading https://files.pythonhosted.org/packages/a2/47/75307c4f6ab2b6cf022a1cad74f8d04a5794706b851296fba1e6b30169b7/qcfinancial-0.8.2-cp39-cp39-macosx_14_0_arm64.whl
+[2024-04-13 14:19:49] INFO root fetch - processPackages [bbot]: Downloading https://files.pythonhosted.org/packages/84/41/8580d0cea5bf01417fb7b7db4ce6c0bc6617c939c9859c98790d2121b508/bbot-1.1.7.7rc0.tar.gz
+[2024-04-13 14:19:49] INFO root fetch - processPackages [dekvenv]: Remove: archive file [/home/abi/fetcher/tmp/dekvenv-0.1.8.tar.gz]
+[2024-04-13 14:19:49] INFO root fetch - processPackages [dekvenv]: Remove: archive file [/home/abi/fetcher/tmp/dekvenv-0.1.9.tar.gz]
+[2024-04-13 14:19:49] INFO root fetch - main [MainThread]: End processing [dekvenv]: success
+[2024-04-13 14:19:49] INFO root fetch - processPackages [qcfinancial]: executing diffoscope
+[2024-04-13 14:19:49] INFO root fetch - processPackages [qcfinancial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qcfinancial-0.8.1-cp39-cp39-macosx_14_0_arm64.whl.zip tmp/qcfinancial-0.8.2-cp39-cp39-macosx_14_0_arm64.whl.zip --markdown 20240413/q/qcfinancial/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-04-13 14:19:49] INFO root fetch - processPackages [py-txi]: Remove: archive file [/home/abi/fetcher/tmp/py-txi-0.5.1.tar.gz]
+[2024-04-13 14:19:49] INFO root fetch - processPackages [py-txi]: Remove: archive file [/home/abi/fetcher/tmp/py-txi-0.6.0.tar.gz]
+[2024-04-13 14:19:49] INFO root fetch - main [MainThread]: End processing [py-txi]: success
+[2024-04-13 14:19:49] INFO root fetch - processPackages [bbot]: executing diffoscope
+[2024-04-13 14:19:49] INFO root fetch - processPackages [bbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bbot-1.1.7.6rc0.tar.gz tmp/bbot-1.1.7.7rc0.tar.gz --markdown 20240413/b/bbot/1.1.7.6rc0-1.1.7.7rc0/README.md --exclude *.pyd
+[2024-04-13 14:19:51] INFO root fetch - processPackages [bbot]: Remove: archive file [/home/abi/fetcher/tmp/bbot-1.1.7.6rc0.tar.gz]
+[2024-04-13 14:19:51] INFO root fetch - processPackages [bbot]: Remove: archive file [/home/abi/fetcher/tmp/bbot-1.1.7.7rc0.tar.gz]
+[2024-04-13 14:19:51] INFO root fetch - main [MainThread]: End processing [bbot]: success
+[2024-04-13 14:19:51] INFO root fetch - processPackages [qcfinancial]: Remove: archive file [/home/abi/fetcher/tmp/qcfinancial-0.8.1-cp39-cp39-macosx_14_0_arm64.whl.zip]
+[2024-04-13 14:19:51] INFO root fetch - processPackages [qcfinancial]: Remove: archive file [/home/abi/fetcher/tmp/qcfinancial-0.8.2-cp39-cp39-macosx_14_0_arm64.whl.zip]
+[2024-04-13 14:19:51] INFO root fetch - main [MainThread]: End processing [qcfinancial]: success
+[2024-04-13 14:19:51] INFO root fetch - main [MainThread]: Store serial: [22751673]
