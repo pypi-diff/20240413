@@ -16071,3 +16071,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 17:30:55] INFO root fetch - processPackages [langalf]: Remove: archive file [/home/abi/fetcher/tmp/langalf-0.0.2.tar.gz]
 [2024-04-13 17:30:55] INFO root fetch - main [MainThread]: End processing [langalf]: success
 [2024-04-13 17:30:55] INFO root fetch - main [MainThread]: Store serial: [22752909]
+[2024-04-13 17:32:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752909]
+[2024-04-13 17:33:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 17:33:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-nai3
+[2024-04-13 17:33:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dialog-whatsapp
+[2024-04-13 17:33:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: my-playground
+[2024-04-13 17:33:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: furtheredge
+[2024-04-13 17:33:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tulona
+[2024-04-13 17:33:04] INFO root fetch - processPackages [furtheredge]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-13 17:33:04] INFO root fetch - processPackages [my-playground]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 17:33:04] WARNING root fetch - processPackages [nonebot-plugin-nai3]: Skipping, unable to determine old version
+[2024-04-13 17:33:04] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-nai3] error
+[2024-04-13 17:33:04] INFO root fetch - processPackages [tulona]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-13 17:33:04] INFO root fetch - processPackages [my-playground]: Downloading https://files.pythonhosted.org/packages/3b/e8/638c5e36d6c1d527ea4ef538f9a366f8e6948850352eca7a7934247232a7/my_playground-0.1.1.tar.gz
+[2024-04-13 17:33:04] INFO root fetch - processPackages [furtheredge]: Downloading https://files.pythonhosted.org/packages/cf/a3/211a96fa9b395a55f0f2212b818d56df1234734b97156af469db3c7c1ce4/furtheredge-0.0.5.tar.gz
+[2024-04-13 17:33:04] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/44/45/db29622a426dbb7208914b6d483a4d75d24cb78706e0265f058c95d78a88/tulona-0.4.0.tar.gz
+[2024-04-13 17:33:04] INFO root fetch - processPackages [dialog-whatsapp]: New version: [0.0.1.5] Old Version: [0.0.1.4]
+[2024-04-13 17:33:04] INFO root fetch - processPackages [dialog-whatsapp]: Downloading https://files.pythonhosted.org/packages/ab/17/6612da9c38c7d2c06b23671518a14391ea9ff893b92d61486cd2fd6d116d/dialog_whatsapp-0.0.1.4.tar.gz
+[2024-04-13 17:33:04] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/e6/b9/ac89383fa74bf149e25dbf214b7bb74559b7721fecdae26da0441a26461e/tulona-0.5.0.tar.gz
+[2024-04-13 17:33:04] INFO root fetch - processPackages [my-playground]: Downloading https://files.pythonhosted.org/packages/4a/23/a4424ac1ea9c203a96ce1a97476ca7c3232d7e9aa6123accad7a31e2fa27/my_playground-0.1.2.tar.gz
+[2024-04-13 17:33:04] INFO root fetch - processPackages [tulona]: executing diffoscope
+[2024-04-13 17:33:04] INFO root fetch - processPackages [tulona]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tulona-0.4.0.tar.gz tmp/tulona-0.5.0.tar.gz --markdown 20240413/t/tulona/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-13 17:33:04] INFO root fetch - processPackages [furtheredge]: Downloading https://files.pythonhosted.org/packages/82/11/2960b44bb192ee32474c78d346b0b72043d3192a9c34310b9f0d7136bfde/furtheredge-0.0.6.tar.gz
+[2024-04-13 17:33:04] INFO root fetch - processPackages [my-playground]: executing diffoscope
+[2024-04-13 17:33:04] INFO root fetch - processPackages [my-playground]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_playground-0.1.1.tar.gz tmp/my_playground-0.1.2.tar.gz --markdown 20240413/m/my-playground/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-13 17:33:04] INFO root fetch - processPackages [furtheredge]: executing diffoscope
+[2024-04-13 17:33:04] INFO root fetch - processPackages [furtheredge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furtheredge-0.0.5.tar.gz tmp/furtheredge-0.0.6.tar.gz --markdown 20240413/f/furtheredge/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-13 17:33:04] INFO root fetch - processPackages [dialog-whatsapp]: Downloading https://files.pythonhosted.org/packages/1e/7d/190b790ecc5a0fdd998d066f2e0e80b195195e79284e63015e3178fb7760/dialog_whatsapp-0.0.1.5.tar.gz
+[2024-04-13 17:33:04] INFO root fetch - processPackages [dialog-whatsapp]: executing diffoscope
+[2024-04-13 17:33:04] INFO root fetch - processPackages [dialog-whatsapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dialog_whatsapp-0.0.1.4.tar.gz tmp/dialog_whatsapp-0.0.1.5.tar.gz --markdown 20240413/d/dialog-whatsapp/0.0.1.4-0.0.1.5/README.md --exclude *.pyd
+[2024-04-13 17:33:05] INFO root fetch - processPackages [my-playground]: Remove: archive file [/home/abi/fetcher/tmp/my_playground-0.1.1.tar.gz]
+[2024-04-13 17:33:05] INFO root fetch - processPackages [my-playground]: Remove: archive file [/home/abi/fetcher/tmp/my_playground-0.1.2.tar.gz]
+[2024-04-13 17:33:05] INFO root fetch - main [MainThread]: End processing [my-playground]: success
+[2024-04-13 17:33:05] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.4.0.tar.gz]
+[2024-04-13 17:33:05] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.5.0.tar.gz]
+[2024-04-13 17:33:05] INFO root fetch - main [MainThread]: End processing [tulona]: success
+[2024-04-13 17:33:05] INFO root fetch - processPackages [dialog-whatsapp]: Remove: archive file [/home/abi/fetcher/tmp/dialog_whatsapp-0.0.1.4.tar.gz]
+[2024-04-13 17:33:05] INFO root fetch - processPackages [dialog-whatsapp]: Remove: archive file [/home/abi/fetcher/tmp/dialog_whatsapp-0.0.1.5.tar.gz]
+[2024-04-13 17:33:05] INFO root fetch - main [MainThread]: End processing [dialog-whatsapp]: success
+[2024-04-13 17:33:05] INFO root fetch - processPackages [furtheredge]: Remove: archive file [/home/abi/fetcher/tmp/furtheredge-0.0.5.tar.gz]
+[2024-04-13 17:33:05] INFO root fetch - processPackages [furtheredge]: Remove: archive file [/home/abi/fetcher/tmp/furtheredge-0.0.6.tar.gz]
+[2024-04-13 17:33:05] INFO root fetch - main [MainThread]: End processing [furtheredge]: success
+[2024-04-13 17:33:05] INFO root fetch - main [MainThread]: Store serial: [22752923]
