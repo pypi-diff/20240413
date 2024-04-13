@@ -8309,3 +8309,24 @@
 [2024-04-13 07:33:05] INFO root fetch - processPackages [pulumi-akamai]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_akamai-7.1.0a1712985050.tar.gz]
 [2024-04-13 07:33:05] INFO root fetch - main [MainThread]: End processing [pulumi-akamai]: success
 [2024-04-13 07:33:05] INFO root fetch - main [MainThread]: Store serial: [22749614]
+[2024-04-13 07:35:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749614]
+[2024-04-13 07:35:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 07:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: petrovisor
+[2024-04-13 07:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ykenan-file
+[2024-04-13 07:35:14] INFO root fetch - processPackages [petrovisor]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-13 07:35:14] INFO root fetch - processPackages [ykenan-file]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-13 07:35:14] INFO root fetch - processPackages [petrovisor]: Downloading https://files.pythonhosted.org/packages/cd/73/d55b6f265e96949fb2c8a31296e0b3dddb72d3a2575943077a2765d731a7/petrovisor-0.1.2.tar.gz
+[2024-04-13 07:35:14] INFO root fetch - processPackages [ykenan-file]: Downloading https://files.pythonhosted.org/packages/c0/a8/ce50aecf65eac4016dddd3dd3a5201c0660d2f745cc731d2220dd750054e/ykenan_file-0.2.3.tar.gz
+[2024-04-13 07:35:14] INFO root fetch - processPackages [ykenan-file]: Downloading https://files.pythonhosted.org/packages/08/e1/2d8f7cdef3da5d775b3ffb47486f9d9ac6e43c150374474f46c220d4a9aa/ykenan_file-0.2.4.tar.gz
+[2024-04-13 07:35:14] INFO root fetch - processPackages [petrovisor]: Downloading https://files.pythonhosted.org/packages/e0/e6/c5fe8133e14daa311e65ccf48822547a8415d51fca081b4efcb031c57d1f/petrovisor-0.1.3.tar.gz
+[2024-04-13 07:35:14] INFO root fetch - processPackages [ykenan-file]: executing diffoscope
+[2024-04-13 07:35:14] INFO root fetch - processPackages [ykenan-file]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ykenan_file-0.2.3.tar.gz tmp/ykenan_file-0.2.4.tar.gz --markdown 20240413/y/ykenan-file/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-13 07:35:14] INFO root fetch - processPackages [petrovisor]: executing diffoscope
+[2024-04-13 07:35:14] INFO root fetch - processPackages [petrovisor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/petrovisor-0.1.2.tar.gz tmp/petrovisor-0.1.3.tar.gz --markdown 20240413/p/petrovisor/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-13 07:35:15] INFO root fetch - processPackages [ykenan-file]: Remove: archive file [/home/abi/fetcher/tmp/ykenan_file-0.2.3.tar.gz]
+[2024-04-13 07:35:15] INFO root fetch - processPackages [ykenan-file]: Remove: archive file [/home/abi/fetcher/tmp/ykenan_file-0.2.4.tar.gz]
+[2024-04-13 07:35:15] INFO root fetch - main [MainThread]: End processing [ykenan-file]: success
+[2024-04-13 07:35:15] INFO root fetch - processPackages [petrovisor]: Remove: archive file [/home/abi/fetcher/tmp/petrovisor-0.1.2.tar.gz]
+[2024-04-13 07:35:15] INFO root fetch - processPackages [petrovisor]: Remove: archive file [/home/abi/fetcher/tmp/petrovisor-0.1.3.tar.gz]
+[2024-04-13 07:35:15] INFO root fetch - main [MainThread]: End processing [petrovisor]: success
+[2024-04-13 07:35:15] INFO root fetch - main [MainThread]: Store serial: [22749621]
