@@ -16861,3 +16861,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 18:43:25] INFO root fetch - processPackages [hnt-nf-jira-library]: Remove: archive file [/home/abi/fetcher/tmp/hnt_nf_jira_library-0.3.1.tar.gz]
 [2024-04-13 18:43:25] INFO root fetch - main [MainThread]: End processing [hnt-nf-jira-library]: success
 [2024-04-13 18:43:25] INFO root fetch - main [MainThread]: Store serial: [22753210]
+[2024-04-13 18:45:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753210]
+[2024-04-13 18:45:34] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 18:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EasyFEA
+[2024-04-13 18:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyserato
+[2024-04-13 18:45:34] INFO root fetch - processPackages [pyserato]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-13 18:45:34] INFO root fetch - processPackages [EasyFEA]: New version: [1.0.1] Old Version: [0.0.0]
+[2024-04-13 18:45:35] INFO root fetch - processPackages [pyserato]: Downloading https://files.pythonhosted.org/packages/9c/f0/5d0fd0018d9d6429938695f9dd3bd69e6f96f913d1187df7f4972e1b990c/pyserato-0.0.1.tar.gz
+[2024-04-13 18:45:35] INFO root fetch - processPackages [EasyFEA]: Downloading https://files.pythonhosted.org/packages/55/cc/e019c4ecbf6ff205ad153c1cdf05b03df3554a093cedcddf7de7094c8d38/EasyFEA-0.0.0.tar.gz
+[2024-04-13 18:45:35] INFO root fetch - processPackages [pyserato]: Downloading https://files.pythonhosted.org/packages/1b/54/4568ad9a5cc4f857cd8d64f5b3a3b7937e6dd3eb548b84f75f0ce5cbde6d/pyserato-0.0.2.tar.gz
+[2024-04-13 18:45:35] INFO root fetch - processPackages [EasyFEA]: Downloading https://files.pythonhosted.org/packages/50/75/1a63c667a97518b776962b08c58fdd7f31735b705760d374c1435ef20873/EasyFEA-1.0.1.tar.gz
+[2024-04-13 18:45:35] INFO root fetch - processPackages [pyserato]: executing diffoscope
+[2024-04-13 18:45:35] INFO root fetch - processPackages [pyserato]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyserato-0.0.1.tar.gz tmp/pyserato-0.0.2.tar.gz --markdown 20240413/p/pyserato/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-13 18:45:35] INFO root fetch - processPackages [EasyFEA]: executing diffoscope
+[2024-04-13 18:45:35] INFO root fetch - processPackages [EasyFEA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EasyFEA-0.0.0.tar.gz tmp/EasyFEA-1.0.1.tar.gz --markdown 20240413/E/EasyFEA/0.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-13 18:45:36] INFO root fetch - processPackages [pyserato]: Remove: archive file [/home/abi/fetcher/tmp/pyserato-0.0.1.tar.gz]
+[2024-04-13 18:45:36] INFO root fetch - processPackages [pyserato]: Remove: archive file [/home/abi/fetcher/tmp/pyserato-0.0.2.tar.gz]
+[2024-04-13 18:45:36] INFO root fetch - main [MainThread]: End processing [pyserato]: success
+[2024-04-13 18:45:36] INFO root fetch - processPackages [EasyFEA]: Remove: archive file [/home/abi/fetcher/tmp/EasyFEA-0.0.0.tar.gz]
+[2024-04-13 18:45:36] INFO root fetch - processPackages [EasyFEA]: Remove: archive file [/home/abi/fetcher/tmp/EasyFEA-1.0.1.tar.gz]
+[2024-04-13 18:45:36] INFO root fetch - main [MainThread]: End processing [EasyFEA]: success
+[2024-04-13 18:45:36] INFO root fetch - main [MainThread]: Store serial: [22753216]
