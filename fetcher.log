@@ -14487,3 +14487,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 15:31:50] INFO root fetch - processPackages [py-modelrunner]: Remove: archive file [/home/abi/fetcher/tmp/py-modelrunner-0.9.1.tar.gz]
 [2024-04-13 15:31:50] INFO root fetch - main [MainThread]: End processing [py-modelrunner]: success
 [2024-04-13 15:31:50] INFO root fetch - main [MainThread]: Store serial: [22752181]
+[2024-04-13 15:33:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752181]
+[2024-04-13 15:33:59] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 15:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ansible-lint-empty-lines-between-tasks
+[2024-04-13 15:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: setuptools
+[2024-04-13 15:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stollen
+[2024-04-13 15:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: portkey-ai
+[2024-04-13 15:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: deep-image-matching
+[2024-04-13 15:33:59] INFO root fetch - processPackages [stollen]: New version: [0.1.1] Old Version: [0.1]
+[2024-04-13 15:33:59] INFO root fetch - processPackages [setuptools]: New version: [9.1] Old Version: [9.0.1]
+[2024-04-13 15:33:59] INFO root fetch - processPackages [stollen]: Downloading https://files.pythonhosted.org/packages/81/09/3b5c08fbd24dbe15fc9f87ba9b57c003e0a378464e37404452e56e9c5ae8/stollen-0.1.tar.gz
+[2024-04-13 15:33:59] INFO root fetch - processPackages [portkey-ai]: New version: [1.2.4] Old Version: [1.2.3]
+[2024-04-13 15:33:59] WARNING root fetch - processPackages [ansible-lint-empty-lines-between-tasks]: Skipping, unable to determine old version
+[2024-04-13 15:33:59] INFO root fetch - main [MainThread]: End processing [ansible-lint-empty-lines-between-tasks] error
+[2024-04-13 15:33:59] INFO root fetch - processPackages [deep-image-matching]: New version: [1.2.1] Old Version: [1.1.1]
+[2024-04-13 15:33:59] INFO root fetch - processPackages [setuptools]: Downloading https://files.pythonhosted.org/packages/16/2c/1ad571e85048c57b4e7ba2218d0fff3db0452e8bfa0c20e1543e26f85121/setuptools-9.0.1.zip
+[2024-04-13 15:33:59] INFO root fetch - processPackages [stollen]: Downloading https://files.pythonhosted.org/packages/da/b3/f4a90bbbfc405eb384de4e517df506f0c84e98671caf60ec399a7336e2f0/stollen-0.1.1.tar.gz
+[2024-04-13 15:33:59] INFO root fetch - processPackages [portkey-ai]: Downloading https://files.pythonhosted.org/packages/0c/3d/f2122ff888bb20a3b3a27a0e0857aca86ef1850e33c7862072f996cd08b9/portkey_ai-1.2.3-py3-none-any.whl
+[2024-04-13 15:33:59] INFO root fetch - processPackages [stollen]: executing diffoscope
+[2024-04-13 15:33:59] INFO root fetch - processPackages [stollen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stollen-0.1.tar.gz tmp/stollen-0.1.1.tar.gz --markdown 20240413/s/stollen/0.1-0.1.1/README.md --exclude *.pyd
+[2024-04-13 15:33:59] INFO root fetch - processPackages [deep-image-matching]: Downloading https://files.pythonhosted.org/packages/12/b6/ad459cc0460e87245b458050da7134b55cad75a0050bddda64eb183603d3/deep_image_matching-1.1.1.tar.gz
+[2024-04-13 15:33:59] INFO root fetch - processPackages [setuptools]: Downloading https://files.pythonhosted.org/packages/35/b2/626974cb6f02c4d58c33471b597f6723560f74be322857e9cd24700c3c70/setuptools-9.1.zip
+[2024-04-13 15:33:59] INFO root fetch - processPackages [portkey-ai]: Downloading https://files.pythonhosted.org/packages/a1/7c/cc79bc9a59316e7c2c45dd5c6032fe40d12f5c92d6a7f07fca3acd9fcadd/portkey_ai-1.2.4.tar.gz
+[2024-04-13 15:34:00] INFO root fetch - processPackages [setuptools]: executing diffoscope
+[2024-04-13 15:34:00] INFO root fetch - processPackages [setuptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setuptools-9.0.1.zip tmp/setuptools-9.1.zip --markdown 20240413/s/setuptools/9.0.1-9.1/README.md --exclude *.pyd
+[2024-04-13 15:34:00] INFO root fetch - processPackages [deep-image-matching]: Downloading https://files.pythonhosted.org/packages/77/03/9699cc57ef697996e25f060f5d3f5691f7eca46e248681296e103867d4b9/deep_image_matching-1.2.1.tar.gz
+[2024-04-13 15:34:00] INFO root fetch - processPackages [portkey-ai]: executing diffoscope
+[2024-04-13 15:34:00] INFO root fetch - processPackages [portkey-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/portkey_ai-1.2.3-py3-none-any.whl.zip tmp/portkey_ai-1.2.4.tar.gz --markdown 20240413/p/portkey-ai/1.2.3-1.2.4/README.md --exclude *.pyd
+[2024-04-13 15:34:00] INFO root fetch - processPackages [stollen]: Remove: archive file [/home/abi/fetcher/tmp/stollen-0.1.tar.gz]
+[2024-04-13 15:34:00] INFO root fetch - processPackages [stollen]: Remove: archive file [/home/abi/fetcher/tmp/stollen-0.1.1.tar.gz]
+[2024-04-13 15:34:00] INFO root fetch - main [MainThread]: End processing [stollen]: success
+[2024-04-13 15:34:00] INFO root fetch - processPackages [portkey-ai]: Remove: archive file [/home/abi/fetcher/tmp/portkey_ai-1.2.3-py3-none-any.whl.zip]
+[2024-04-13 15:34:00] INFO root fetch - processPackages [portkey-ai]: Remove: archive file [/home/abi/fetcher/tmp/portkey_ai-1.2.4.tar.gz]
+[2024-04-13 15:34:00] INFO root fetch - main [MainThread]: End processing [portkey-ai]: success
+[2024-04-13 15:34:01] INFO root fetch - processPackages [deep-image-matching]: executing diffoscope
+[2024-04-13 15:34:01] INFO root fetch - processPackages [deep-image-matching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_image_matching-1.1.1.tar.gz tmp/deep_image_matching-1.2.1.tar.gz --markdown 20240413/d/deep-image-matching/1.1.1-1.2.1/README.md --exclude *.pyd
+[2024-04-13 15:34:01] INFO root fetch - processPackages [setuptools]: Remove: archive file [/home/abi/fetcher/tmp/setuptools-9.0.1.zip]
+[2024-04-13 15:34:01] INFO root fetch - processPackages [setuptools]: Remove: archive file [/home/abi/fetcher/tmp/setuptools-9.1.zip]
+[2024-04-13 15:34:01] INFO root fetch - main [MainThread]: End processing [setuptools]: success
+[2024-04-13 15:34:02] INFO root fetch - processPackages [deep-image-matching]: Remove: archive file [/home/abi/fetcher/tmp/deep_image_matching-1.1.1.tar.gz]
+[2024-04-13 15:34:02] INFO root fetch - processPackages [deep-image-matching]: Remove: archive file [/home/abi/fetcher/tmp/deep_image_matching-1.2.1.tar.gz]
+[2024-04-13 15:34:02] INFO root fetch - main [MainThread]: End processing [deep-image-matching]: success
+[2024-04-13 15:34:02] INFO root fetch - main [MainThread]: Store serial: [22752197]
