@@ -6407,3 +6407,24 @@
 [2024-04-13 03:15:18] INFO root fetch - processPackages [approvaltests-minimal]: Remove: archive file [/home/abi/fetcher/tmp/approvaltests-minimal-9.0.0.tar.gz]
 [2024-04-13 03:15:18] INFO root fetch - main [MainThread]: End processing [approvaltests-minimal]: success
 [2024-04-13 03:15:18] INFO root fetch - main [MainThread]: Store serial: [22748612]
+[2024-04-13 03:17:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748612]
+[2024-04-13 03:17:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 03:17:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kgx
+[2024-04-13 03:17:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ntgcalls
+[2024-04-13 03:17:28] INFO root fetch - processPackages [kgx]: New version: [2.3.3] Old Version: [2.3.2]
+[2024-04-13 03:17:28] INFO root fetch - processPackages [kgx]: Downloading https://files.pythonhosted.org/packages/78/a4/642842151247b8f526be9bf4a0ffa878bf3dd7fd92e5cd198da861f59ab3/kgx-2.3.2.tar.gz
+[2024-04-13 03:17:28] INFO root fetch - processPackages [ntgcalls]: New version: [1.2.0b9] Old Version: [1.2.0b8]
+[2024-04-13 03:17:28] INFO root fetch - processPackages [kgx]: Downloading https://files.pythonhosted.org/packages/59/da/e8e043a4f4e3a8c221067f8750c514f2ffe7c7aaef60b45a08390c57e12a/kgx-2.3.3.tar.gz
+[2024-04-13 03:17:28] INFO root fetch - processPackages [ntgcalls]: Downloading https://files.pythonhosted.org/packages/02/1c/2c9cbe7063a76be70bbc3f3e77ccc089c159693dc2e6eab7e14727e528ed/ntgcalls-1.2.0b8.tar.gz
+[2024-04-13 03:17:28] INFO root fetch - processPackages [kgx]: executing diffoscope
+[2024-04-13 03:17:28] INFO root fetch - processPackages [kgx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kgx-2.3.2.tar.gz tmp/kgx-2.3.3.tar.gz --markdown 20240413/k/kgx/2.3.2-2.3.3/README.md --exclude *.pyd
+[2024-04-13 03:17:29] INFO root fetch - processPackages [kgx]: Remove: archive file [/home/abi/fetcher/tmp/kgx-2.3.2.tar.gz]
+[2024-04-13 03:17:29] INFO root fetch - processPackages [kgx]: Remove: archive file [/home/abi/fetcher/tmp/kgx-2.3.3.tar.gz]
+[2024-04-13 03:17:29] INFO root fetch - main [MainThread]: End processing [kgx]: success
+[2024-04-13 03:17:29] INFO root fetch - processPackages [ntgcalls]: Downloading https://files.pythonhosted.org/packages/02/c2/34a28e461c46d812ee4702530b307c61df5ec3b3fde09afe9bc5bd5b2168/ntgcalls-1.2.0b9.tar.gz
+[2024-04-13 03:17:29] INFO root fetch - processPackages [ntgcalls]: executing diffoscope
+[2024-04-13 03:17:29] INFO root fetch - processPackages [ntgcalls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ntgcalls-1.2.0b8.tar.gz tmp/ntgcalls-1.2.0b9.tar.gz --markdown 20240413/n/ntgcalls/1.2.0b8-1.2.0b9/README.md --exclude *.pyd
+[2024-04-13 03:17:35] INFO root fetch - processPackages [ntgcalls]: Remove: archive file [/home/abi/fetcher/tmp/ntgcalls-1.2.0b8.tar.gz]
+[2024-04-13 03:17:35] INFO root fetch - processPackages [ntgcalls]: Remove: archive file [/home/abi/fetcher/tmp/ntgcalls-1.2.0b9.tar.gz]
+[2024-04-13 03:17:35] INFO root fetch - main [MainThread]: End processing [ntgcalls]: success
+[2024-04-13 03:17:35] INFO root fetch - main [MainThread]: Store serial: [22748692]
