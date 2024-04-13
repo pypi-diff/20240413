@@ -6834,3 +6834,18 @@
 [2024-04-13 04:07:02] INFO root fetch - processPackages [jcvi]: Remove: archive file [/home/abi/fetcher/tmp/jcvi-1.4.4.tar.gz]
 [2024-04-13 04:07:02] INFO root fetch - main [MainThread]: End processing [jcvi]: success
 [2024-04-13 04:07:02] INFO root fetch - main [MainThread]: Store serial: [22748943]
+[2024-04-13 04:09:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748943]
+[2024-04-13 04:09:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 04:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: types-docker
+[2024-04-13 04:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-04-13 04:09:11] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.12a1712896039] Old Version: [0.0.12a1712870115]
+[2024-04-13 04:09:11] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/61/7d/909c529042d96a3601be7749673a200a8b7b23aa376c21914ef0eaa5662e/pulumi_kubernetes_the_hard_way-0.0.12a1712870115.tar.gz
+[2024-04-13 04:09:11] WARNING root fetch - processPackages [types-docker]: Skipping, unable to determine old version
+[2024-04-13 04:09:11] INFO root fetch - main [MainThread]: End processing [types-docker] error
+[2024-04-13 04:09:11] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/16/f2/cdf0ea2aa77eaa77110449b17c2086bfff52a61d835d46483bfcd3b3ab25/pulumi_kubernetes_the_hard_way-0.0.12a1712896039.tar.gz
+[2024-04-13 04:09:11] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-04-13 04:09:11] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.12a1712870115.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.12a1712896039.tar.gz --markdown 20240413/p/pulumi-kubernetes-the-hard-way/0.0.12a1712870115-0.0.12a1712896039/README.md --exclude *.pyd
+[2024-04-13 04:09:12] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.12a1712870115.tar.gz]
+[2024-04-13 04:09:12] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.12a1712896039.tar.gz]
+[2024-04-13 04:09:12] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-04-13 04:09:12] INFO root fetch - main [MainThread]: Store serial: [22748951]
