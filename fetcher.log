@@ -17069,3 +17069,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:00:46] INFO root fetch - processPackages [heatmap_cli]: Remove: archive file [/home/abi/fetcher/tmp/heatmap_cli-0.9.3.tar.gz]
 [2024-04-13 19:00:46] INFO root fetch - main [MainThread]: End processing [heatmap_cli]: success
 [2024-04-13 19:00:46] INFO root fetch - main [MainThread]: Store serial: [22753283]
+[2024-04-13 19:02:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753283]
+[2024-04-13 19:02:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 19:02:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tkinterweb
+[2024-04-13 19:02:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trading-backend
+[2024-04-13 19:02:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytest-toolkit
+[2024-04-13 19:02:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytest-toolkit
+[2024-04-13 19:02:55] INFO root fetch - processPackages [pytest-toolkit]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 19:02:55] INFO root fetch - processPackages [tkinterweb]: New version: [3.9.7] Old Version: [3.9.6]
+[2024-04-13 19:02:55] INFO root fetch - processPackages [pytest-toolkit]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 19:02:55] INFO root fetch - processPackages [trading-backend]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-04-13 19:02:55] INFO root fetch - processPackages [tkinterweb]: Downloading https://files.pythonhosted.org/packages/fb/88/c86c5a5baae51628333717b42e4fb53d2b159233ba97f5089fcb5e1f65cb/tkinterweb-3.9.6.tar.gz
+[2024-04-13 19:02:55] INFO root fetch - processPackages [pytest-toolkit]: Downloading https://files.pythonhosted.org/packages/70/8e/8bca6ddc15cbf14a61967e57dec4d2bf939a5c892bba6296142fc60c2b95/pytest_toolkit-0.1.0.tar.gz
+[2024-04-13 19:02:55] INFO root fetch - processPackages [pytest-toolkit]: Downloading https://files.pythonhosted.org/packages/70/8e/8bca6ddc15cbf14a61967e57dec4d2bf939a5c892bba6296142fc60c2b95/pytest_toolkit-0.1.0.tar.gz
+[2024-04-13 19:02:56] INFO root fetch - processPackages [trading-backend]: Downloading https://files.pythonhosted.org/packages/7e/e4/b38fdee6b372e1d93649c8e4910596c6b8b944b029591a7d51e06e397743/trading-backend-1.2.8.tar.gz
+[2024-04-13 19:02:56] INFO root fetch - processPackages [tkinterweb]: Downloading https://files.pythonhosted.org/packages/00/e1/a22d4bc360d1eaed4590da7adf3b45a448f6055ca35ab8939a8019e0203f/tkinterweb-3.9.7.tar.gz
+[2024-04-13 19:02:56] INFO root fetch - processPackages [trading-backend]: Downloading https://files.pythonhosted.org/packages/0f/03/6c8912f09afac7d5316a991004724028eaf24102038faf89205bd113b1a9/trading-backend-1.2.9.tar.gz
+[2024-04-13 19:02:56] INFO root fetch - processPackages [tkinterweb]: executing diffoscope
+[2024-04-13 19:02:56] INFO root fetch - processPackages [tkinterweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkinterweb-3.9.6.tar.gz tmp/tkinterweb-3.9.7.tar.gz --markdown 20240413/t/tkinterweb/3.9.6-3.9.7/README.md --exclude *.pyd
+[2024-04-13 19:02:56] INFO root fetch - processPackages [pytest-toolkit]: Downloading https://files.pythonhosted.org/packages/95/cb/ac0435c60f5ec59a916a39f7a0c218020db383b6e2bf3d720b61b449e3fd/pytest_toolkit-0.1.1.tar.gz
+[2024-04-13 19:02:56] INFO root fetch - processPackages [pytest-toolkit]: Downloading https://files.pythonhosted.org/packages/95/cb/ac0435c60f5ec59a916a39f7a0c218020db383b6e2bf3d720b61b449e3fd/pytest_toolkit-0.1.1.tar.gz
+[2024-04-13 19:02:56] INFO root fetch - processPackages [trading-backend]: executing diffoscope
+[2024-04-13 19:02:56] INFO root fetch - processPackages [trading-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trading-backend-1.2.8.tar.gz tmp/trading-backend-1.2.9.tar.gz --markdown 20240413/t/trading-backend/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-04-13 19:02:56] INFO root fetch - processPackages [pytest-toolkit]: executing diffoscope
+[2024-04-13 19:02:56] INFO root fetch - processPackages [pytest-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_toolkit-0.1.0.tar.gz tmp/pytest_toolkit-0.1.1.tar.gz --markdown 20240413/p/pytest-toolkit/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 19:02:56] INFO root fetch - processPackages [pytest-toolkit]: executing diffoscope
+[2024-04-13 19:02:56] INFO root fetch - processPackages [pytest-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_toolkit-0.1.0.tar.gz tmp/pytest_toolkit-0.1.1.tar.gz --markdown 20240413/p/pytest-toolkit/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 19:02:57] INFO root fetch - processPackages [tkinterweb]: Remove: archive file [/home/abi/fetcher/tmp/tkinterweb-3.9.6.tar.gz]
+[2024-04-13 19:02:57] INFO root fetch - processPackages [tkinterweb]: Remove: archive file [/home/abi/fetcher/tmp/tkinterweb-3.9.7.tar.gz]
+[2024-04-13 19:02:57] INFO root fetch - main [MainThread]: End processing [tkinterweb]: success
+[2024-04-13 19:02:57] INFO root fetch - processPackages [pytest-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/pytest_toolkit-0.1.0.tar.gz]
+[2024-04-13 19:02:57] INFO root fetch - processPackages [pytest-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/pytest_toolkit-0.1.1.tar.gz]
+[2024-04-13 19:02:57] INFO root fetch - main [MainThread]: End processing [pytest-toolkit]: success
+[2024-04-13 19:02:57] INFO root fetch - processPackages [trading-backend]: Remove: archive file [/home/abi/fetcher/tmp/trading-backend-1.2.8.tar.gz]
+[2024-04-13 19:02:57] INFO root fetch - processPackages [trading-backend]: Remove: archive file [/home/abi/fetcher/tmp/trading-backend-1.2.9.tar.gz]
+[2024-04-13 19:02:57] INFO root fetch - main [MainThread]: End processing [trading-backend]: success
+[2024-04-13 19:02:57] INFO root fetch - main [MainThread]: End processing [pytest-toolkit]: success
+[2024-04-13 19:02:57] INFO root fetch - main [MainThread]: Store serial: [22753291]
