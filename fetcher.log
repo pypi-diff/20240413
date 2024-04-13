@@ -13103,3 +13103,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 13:27:37] INFO root fetch - processPackages [xklb]: Remove: archive file [/home/abi/fetcher/tmp/xklb-2.6.5-py3-none-any.whl.zip]
 [2024-04-13 13:27:37] INFO root fetch - main [MainThread]: End processing [xklb]: success
 [2024-04-13 13:27:37] INFO root fetch - main [MainThread]: Store serial: [22751440]
+[2024-04-13 13:29:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751440]
+[2024-04-13 13:29:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 13:29:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xklb
+[2024-04-13 13:29:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sourcetrust
+[2024-04-13 13:29:45] INFO root fetch - processPackages [xklb]: New version: [2.6.5] Old Version: [2.6.3]
+[2024-04-13 13:29:45] WARNING root fetch - processPackages [sourcetrust]: Skipping, unable to determine old version
+[2024-04-13 13:29:45] INFO root fetch - main [MainThread]: End processing [sourcetrust] error
+[2024-04-13 13:29:45] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/75/62/43e6badd48acf6149a6a913e33af53e46af101a228f79701a82465a96576/xklb-2.6.3.tar.gz
+[2024-04-13 13:29:46] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/c8/ba/3351cf6a25c9b7efe71e7520e426d4e8f0e123cbbe69a5b11ae1f8f1ab95/xklb-2.6.5-py3-none-any.whl
+[2024-04-13 13:29:46] INFO root fetch - processPackages [xklb]: executing diffoscope
+[2024-04-13 13:29:46] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-2.6.3.tar.gz tmp/xklb-2.6.5-py3-none-any.whl.zip --markdown 20240413/x/xklb/2.6.3-2.6.5/README.md --exclude *.pyd
+[2024-04-13 13:29:46] INFO root fetch - processPackages [xklb]: Remove: archive file [/home/abi/fetcher/tmp/xklb-2.6.3.tar.gz]
+[2024-04-13 13:29:46] INFO root fetch - processPackages [xklb]: Remove: archive file [/home/abi/fetcher/tmp/xklb-2.6.5-py3-none-any.whl.zip]
+[2024-04-13 13:29:46] INFO root fetch - main [MainThread]: End processing [xklb]: success
+[2024-04-13 13:29:46] INFO root fetch - main [MainThread]: Store serial: [22751452]
