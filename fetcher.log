@@ -7901,3 +7901,27 @@
 [2024-04-13 06:41:19] INFO root fetch - processPackages [pybureaucrat]: Remove: archive file [/home/abi/fetcher/tmp/pybureaucrat-1.0.7.tar.gz]
 [2024-04-13 06:41:19] INFO root fetch - main [MainThread]: End processing [pybureaucrat]: success
 [2024-04-13 06:41:19] INFO root fetch - main [MainThread]: Store serial: [22749476]
+[2024-04-13 06:43:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749476]
+[2024-04-13 06:43:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 06:43:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytha-fuzz
+[2024-04-13 06:43:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llama-index-readers-astra-db
+[2024-04-13 06:43:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llama-index-vector-stores-astra-db
+[2024-04-13 06:43:28] WARNING root fetch - processPackages [pytha-fuzz]: Skipping, unable to determine old version
+[2024-04-13 06:43:28] INFO root fetch - main [MainThread]: End processing [pytha-fuzz] error
+[2024-04-13 06:43:28] INFO root fetch - processPackages [llama-index-readers-astra-db]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-13 06:43:28] INFO root fetch - processPackages [llama-index-vector-stores-astra-db]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-13 06:43:28] INFO root fetch - processPackages [llama-index-vector-stores-astra-db]: Downloading https://files.pythonhosted.org/packages/6c/d1/33ce512a725b659fe56d4ddb8970c4f083f9b18adf8067c7bc4025bc6a53/llama_index_vector_stores_astra_db-0.1.5.tar.gz
+[2024-04-13 06:43:28] INFO root fetch - processPackages [llama-index-readers-astra-db]: Downloading https://files.pythonhosted.org/packages/45/f3/83ce5a6b99a6227b2a7fed198d7e222c9f7815005112e32071fbc6bb6c58/llama_index_readers_astra_db-0.1.4.tar.gz
+[2024-04-13 06:43:28] INFO root fetch - processPackages [llama-index-readers-astra-db]: Downloading https://files.pythonhosted.org/packages/36/10/1a71598428b325bbb2761471badc2c45ad72ea587a37c8a8ba1a59091d0d/llama_index_readers_astra_db-0.1.5.tar.gz
+[2024-04-13 06:43:29] INFO root fetch - processPackages [llama-index-vector-stores-astra-db]: Downloading https://files.pythonhosted.org/packages/50/f2/9d6f2e3d8433739940c9ee79364d77c2cae18be47010afb0a0df37395d68/llama_index_vector_stores_astra_db-0.1.6.tar.gz
+[2024-04-13 06:43:29] INFO root fetch - processPackages [llama-index-readers-astra-db]: executing diffoscope
+[2024-04-13 06:43:29] INFO root fetch - processPackages [llama-index-readers-astra-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_readers_astra_db-0.1.4.tar.gz tmp/llama_index_readers_astra_db-0.1.5.tar.gz --markdown 20240413/l/llama-index-readers-astra-db/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-13 06:43:29] INFO root fetch - processPackages [llama-index-vector-stores-astra-db]: executing diffoscope
+[2024-04-13 06:43:29] INFO root fetch - processPackages [llama-index-vector-stores-astra-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_vector_stores_astra_db-0.1.5.tar.gz tmp/llama_index_vector_stores_astra_db-0.1.6.tar.gz --markdown 20240413/l/llama-index-vector-stores-astra-db/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-13 06:43:29] INFO root fetch - processPackages [llama-index-readers-astra-db]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_readers_astra_db-0.1.4.tar.gz]
+[2024-04-13 06:43:29] INFO root fetch - processPackages [llama-index-readers-astra-db]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_readers_astra_db-0.1.5.tar.gz]
+[2024-04-13 06:43:29] INFO root fetch - main [MainThread]: End processing [llama-index-readers-astra-db]: success
+[2024-04-13 06:43:29] INFO root fetch - processPackages [llama-index-vector-stores-astra-db]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_vector_stores_astra_db-0.1.5.tar.gz]
+[2024-04-13 06:43:29] INFO root fetch - processPackages [llama-index-vector-stores-astra-db]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_vector_stores_astra_db-0.1.6.tar.gz]
+[2024-04-13 06:43:29] INFO root fetch - main [MainThread]: End processing [llama-index-vector-stores-astra-db]: success
+[2024-04-13 06:43:29] INFO root fetch - main [MainThread]: Store serial: [22749485]
