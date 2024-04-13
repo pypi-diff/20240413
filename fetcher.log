@@ -7839,3 +7839,9 @@
 [2024-04-13 06:30:30] INFO root fetch - processPackages [resvg-py]: Remove: archive file [/home/abi/fetcher/tmp/resvg_py-0.1.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-04-13 06:30:30] INFO root fetch - main [MainThread]: End processing [resvg-py]: success
 [2024-04-13 06:30:30] INFO root fetch - main [MainThread]: Store serial: [22749427]
+[2024-04-13 06:32:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749427]
+[2024-04-13 06:32:39] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 06:32:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ti84
+[2024-04-13 06:32:39] WARNING root fetch - processPackages [ti84]: Skipping, unable to determine old version
+[2024-04-13 06:32:39] INFO root fetch - main [MainThread]: End processing [ti84] error
+[2024-04-13 06:32:39] INFO root fetch - main [MainThread]: Store serial: [22749461]
