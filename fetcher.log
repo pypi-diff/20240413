@@ -10571,3 +10571,48 @@
 [2024-04-13 10:11:08] INFO root fetch - processPackages [mngs]: Remove: archive file [/home/abi/fetcher/tmp/mngs-1.3.0.tar.gz]
 [2024-04-13 10:11:08] INFO root fetch - main [MainThread]: End processing [mngs]: success
 [2024-04-13 10:11:08] INFO root fetch - main [MainThread]: Store serial: [22750425]
+[2024-04-13 10:13:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750425]
+[2024-04-13 10:13:18] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 10:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kimchima
+[2024-04-13 10:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bioimageio-chatbot
+[2024-04-13 10:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pynovnc
+[2024-04-13 10:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: s2wav
+[2024-04-13 10:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: netlify-uplat
+[2024-04-13 10:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chronos_ai
+[2024-04-13 10:13:18] INFO root fetch - processPackages [pynovnc]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-13 10:13:18] INFO root fetch - processPackages [kimchima]: New version: [0.4.1] Old Version: [0.3.1]
+[2024-04-13 10:13:18] INFO root fetch - processPackages [bioimageio-chatbot]: New version: [0.1.97] Old Version: [0.1.96]
+[2024-04-13 10:13:18] INFO root fetch - processPackages [s2wav]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-13 10:13:18] WARNING root fetch - processPackages [chronos_ai]: Skipping, unable to determine old version
+[2024-04-13 10:13:18] INFO root fetch - main [MainThread]: End processing [chronos_ai] error
+[2024-04-13 10:13:18] INFO root fetch - processPackages [pynovnc]: Downloading https://files.pythonhosted.org/packages/a2/2e/6bbe1612f9f74535ca6830d2bdc5c9397ac0d5c27e269be553305952d4e5/pynovnc-1.0.3.tar.gz
+[2024-04-13 10:13:18] WARNING root fetch - processPackages [netlify-uplat]: Skipping, unable to determine old version
+[2024-04-13 10:13:18] INFO root fetch - main [MainThread]: End processing [netlify-uplat] error
+[2024-04-13 10:13:18] INFO root fetch - processPackages [kimchima]: Downloading https://files.pythonhosted.org/packages/27/5d/fe573a1cd0683f30b0c8afc56f252ac2d64e2b3bbc2d3a8a92325df40486/kimchima-0.3.1.tar.gz
+[2024-04-13 10:13:18] INFO root fetch - processPackages [bioimageio-chatbot]: Downloading https://files.pythonhosted.org/packages/0a/8d/5f45efd688c9d8bdd39afa588cb8c4c4bdfb0b3616191355a19fa05bafc8/bioimageio-chatbot-0.1.96.tar.gz
+[2024-04-13 10:13:18] INFO root fetch - processPackages [s2wav]: Downloading https://files.pythonhosted.org/packages/07/40/a0212fc56f3b3e88c1efed1d5503f559819c19df3b721ed5003763719b61/s2wav-1.0.2.tar.gz
+[2024-04-13 10:13:18] INFO root fetch - processPackages [kimchima]: Downloading https://files.pythonhosted.org/packages/20/99/b505fb607844ea2fd2abd8df5158a4fc18e187187dab56cff751e5f1d353/kimchima-0.4.1.tar.gz
+[2024-04-13 10:13:19] INFO root fetch - processPackages [pynovnc]: Downloading https://files.pythonhosted.org/packages/04/72/aaa7764ede1b90fc9fe325a053ee33a2883227f8776446994077c735216b/pynovnc-1.0.4.tar.gz
+[2024-04-13 10:13:19] INFO root fetch - processPackages [bioimageio-chatbot]: Downloading https://files.pythonhosted.org/packages/ca/53/aee2034045598329c184533513aa971fdbe7ecc2fbce0a262e6715eb4be2/bioimageio-chatbot-0.1.97.tar.gz
+[2024-04-13 10:13:19] INFO root fetch - processPackages [kimchima]: executing diffoscope
+[2024-04-13 10:13:19] INFO root fetch - processPackages [kimchima]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kimchima-0.3.1.tar.gz tmp/kimchima-0.4.1.tar.gz --markdown 20240413/k/kimchima/0.3.1-0.4.1/README.md --exclude *.pyd
+[2024-04-13 10:13:19] INFO root fetch - processPackages [pynovnc]: executing diffoscope
+[2024-04-13 10:13:19] INFO root fetch - processPackages [pynovnc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynovnc-1.0.3.tar.gz tmp/pynovnc-1.0.4.tar.gz --markdown 20240413/p/pynovnc/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-13 10:13:19] INFO root fetch - processPackages [bioimageio-chatbot]: executing diffoscope
+[2024-04-13 10:13:19] INFO root fetch - processPackages [bioimageio-chatbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioimageio-chatbot-0.1.96.tar.gz tmp/bioimageio-chatbot-0.1.97.tar.gz --markdown 20240413/b/bioimageio-chatbot/0.1.96-0.1.97/README.md --exclude *.pyd
+[2024-04-13 10:13:19] INFO root fetch - processPackages [s2wav]: Downloading https://files.pythonhosted.org/packages/99/e7/cbab335e7009cf6e6e2e4f2339b6b19716599086068c7ca2d5d5d10431dd/s2wav-1.0.3.tar.gz
+[2024-04-13 10:13:19] INFO root fetch - processPackages [s2wav]: executing diffoscope
+[2024-04-13 10:13:19] INFO root fetch - processPackages [s2wav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/s2wav-1.0.2.tar.gz tmp/s2wav-1.0.3.tar.gz --markdown 20240413/s/s2wav/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-13 10:13:19] INFO root fetch - processPackages [pynovnc]: Remove: archive file [/home/abi/fetcher/tmp/pynovnc-1.0.3.tar.gz]
+[2024-04-13 10:13:19] INFO root fetch - processPackages [pynovnc]: Remove: archive file [/home/abi/fetcher/tmp/pynovnc-1.0.4.tar.gz]
+[2024-04-13 10:13:19] INFO root fetch - main [MainThread]: End processing [pynovnc]: success
+[2024-04-13 10:13:19] INFO root fetch - processPackages [kimchima]: Remove: archive file [/home/abi/fetcher/tmp/kimchima-0.3.1.tar.gz]
+[2024-04-13 10:13:19] INFO root fetch - processPackages [kimchima]: Remove: archive file [/home/abi/fetcher/tmp/kimchima-0.4.1.tar.gz]
+[2024-04-13 10:13:19] INFO root fetch - main [MainThread]: End processing [kimchima]: success
+[2024-04-13 10:13:19] INFO root fetch - processPackages [bioimageio-chatbot]: Remove: archive file [/home/abi/fetcher/tmp/bioimageio-chatbot-0.1.96.tar.gz]
+[2024-04-13 10:13:19] INFO root fetch - processPackages [bioimageio-chatbot]: Remove: archive file [/home/abi/fetcher/tmp/bioimageio-chatbot-0.1.97.tar.gz]
+[2024-04-13 10:13:19] INFO root fetch - main [MainThread]: End processing [bioimageio-chatbot]: success
+[2024-04-13 10:13:20] INFO root fetch - processPackages [s2wav]: Remove: archive file [/home/abi/fetcher/tmp/s2wav-1.0.2.tar.gz]
+[2024-04-13 10:13:20] INFO root fetch - processPackages [s2wav]: Remove: archive file [/home/abi/fetcher/tmp/s2wav-1.0.3.tar.gz]
+[2024-04-13 10:13:20] INFO root fetch - main [MainThread]: End processing [s2wav]: success
+[2024-04-13 10:13:20] INFO root fetch - main [MainThread]: Store serial: [22750453]
