@@ -14106,3 +14106,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:56:56] INFO root fetch - processPackages [dazl]: Remove: archive file [/home/abi/fetcher/tmp/dazl-8.0.0b3.tar.gz]
 [2024-04-13 14:56:56] INFO root fetch - main [MainThread]: End processing [dazl]: success
 [2024-04-13 14:56:56] INFO root fetch - main [MainThread]: Store serial: [22751877]
+[2024-04-13 14:59:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751877]
+[2024-04-13 14:59:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 14:59:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dazl
+[2024-04-13 14:59:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyiter
+[2024-04-13 14:59:05] INFO root fetch - processPackages [dazl]: New version: [8.0.0b3] Old Version: [8.0.0b2]
+[2024-04-13 14:59:05] INFO root fetch - processPackages [dazl]: Downloading https://files.pythonhosted.org/packages/83/e4/d756d06f816c6815d3459faeb6d70188715f62733d4f306775c06d0c6d3f/dazl-8.0.0b2.tar.gz
+[2024-04-13 14:59:05] INFO root fetch - processPackages [pyiter]: New version: [0.8.3] Old Version: [0.8.2]
+[2024-04-13 14:59:05] INFO root fetch - processPackages [dazl]: Downloading https://files.pythonhosted.org/packages/a7/14/6670155d428a110a276db89413dbc9633595c5190866a454c9754ae0a237/dazl-8.0.0b3.tar.gz
+[2024-04-13 14:59:05] INFO root fetch - processPackages [pyiter]: Downloading https://files.pythonhosted.org/packages/be/3d/5347683054d2434b053750f4229e02b2cff44abcdc429f0c05b7d4be23e5/pyiter-0.8.2.tar.gz
+[2024-04-13 14:59:05] INFO root fetch - processPackages [dazl]: executing diffoscope
+[2024-04-13 14:59:05] INFO root fetch - processPackages [dazl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dazl-8.0.0b2.tar.gz tmp/dazl-8.0.0b3.tar.gz --markdown 20240413/d/dazl/8.0.0b2-8.0.0b3/README.md --exclude *.pyd
+[2024-04-13 14:59:06] INFO root fetch - processPackages [pyiter]: Downloading https://files.pythonhosted.org/packages/42/ae/8caca5d7ccfe298d80ad3222de158041c43cf411fd49791ebb8559463bb8/pyiter-0.8.3.tar.gz
+[2024-04-13 14:59:06] INFO root fetch - processPackages [pyiter]: executing diffoscope
+[2024-04-13 14:59:06] INFO root fetch - processPackages [pyiter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyiter-0.8.2.tar.gz tmp/pyiter-0.8.3.tar.gz --markdown 20240413/p/pyiter/0.8.2-0.8.3/README.md --exclude *.pyd
+[2024-04-13 14:59:06] INFO root fetch - processPackages [pyiter]: Remove: archive file [/home/abi/fetcher/tmp/pyiter-0.8.2.tar.gz]
+[2024-04-13 14:59:06] INFO root fetch - processPackages [pyiter]: Remove: archive file [/home/abi/fetcher/tmp/pyiter-0.8.3.tar.gz]
+[2024-04-13 14:59:06] INFO root fetch - main [MainThread]: End processing [pyiter]: success
+[2024-04-13 14:59:07] INFO root fetch - processPackages [dazl]: Remove: archive file [/home/abi/fetcher/tmp/dazl-8.0.0b2.tar.gz]
+[2024-04-13 14:59:07] INFO root fetch - processPackages [dazl]: Remove: archive file [/home/abi/fetcher/tmp/dazl-8.0.0b3.tar.gz]
+[2024-04-13 14:59:07] INFO root fetch - main [MainThread]: End processing [dazl]: success
+[2024-04-13 14:59:07] INFO root fetch - main [MainThread]: Store serial: [22751886]
