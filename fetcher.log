@@ -12287,3 +12287,24 @@
 [2024-04-13 12:33:12] INFO root fetch - processPackages [syndb-api-client]: Remove: archive file [/home/abi/fetcher/tmp/syndb-api-client-0.1.9.tar.gz]
 [2024-04-13 12:33:12] INFO root fetch - main [MainThread]: End processing [syndb-api-client]: success
 [2024-04-13 12:33:12] INFO root fetch - main [MainThread]: Store serial: [22751150]
+[2024-04-13 12:35:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751150]
+[2024-04-13 12:35:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 12:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ckip2tei
+[2024-04-13 12:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deribit-wrapper
+[2024-04-13 12:35:21] INFO root fetch - processPackages [ckip2tei]: New version: [1.1.2] Old Version: [1.0.2]
+[2024-04-13 12:35:21] INFO root fetch - processPackages [ckip2tei]: Downloading https://files.pythonhosted.org/packages/2f/ab/b00f62592c9e99ea14d01b6ec99db6dcabc589d6daea627cfe40f6959d70/ckip2tei-1.0.2.tar.gz
+[2024-04-13 12:35:21] INFO root fetch - processPackages [deribit-wrapper]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-13 12:35:21] INFO root fetch - processPackages [ckip2tei]: Downloading https://files.pythonhosted.org/packages/fa/bd/0dfe06b3f043ea7e54a59f88e7a165332fc647ad4de98be6662479d20e8d/ckip2tei-1.1.2.tar.gz
+[2024-04-13 12:35:21] INFO root fetch - processPackages [deribit-wrapper]: Downloading https://files.pythonhosted.org/packages/6b/fd/7ec75c70c93eb2221dec1f5a664541bf5d2581c676b67c3c36d9ff2e90cd/deribit_wrapper-0.3.0.tar.gz
+[2024-04-13 12:35:21] INFO root fetch - processPackages [ckip2tei]: executing diffoscope
+[2024-04-13 12:35:21] INFO root fetch - processPackages [ckip2tei]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckip2tei-1.0.2.tar.gz tmp/ckip2tei-1.1.2.tar.gz --markdown 20240413/c/ckip2tei/1.0.2-1.1.2/README.md --exclude *.pyd
+[2024-04-13 12:35:21] INFO root fetch - processPackages [deribit-wrapper]: Downloading https://files.pythonhosted.org/packages/ee/42/448762122f683d717d8252498a62522b40a3e0f01db5c2fad9f929c2de42/deribit_wrapper-0.3.1.tar.gz
+[2024-04-13 12:35:22] INFO root fetch - processPackages [deribit-wrapper]: executing diffoscope
+[2024-04-13 12:35:22] INFO root fetch - processPackages [deribit-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deribit_wrapper-0.3.0.tar.gz tmp/deribit_wrapper-0.3.1.tar.gz --markdown 20240413/d/deribit-wrapper/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-13 12:35:22] INFO root fetch - processPackages [ckip2tei]: Remove: archive file [/home/abi/fetcher/tmp/ckip2tei-1.0.2.tar.gz]
+[2024-04-13 12:35:22] INFO root fetch - processPackages [ckip2tei]: Remove: archive file [/home/abi/fetcher/tmp/ckip2tei-1.1.2.tar.gz]
+[2024-04-13 12:35:22] INFO root fetch - main [MainThread]: End processing [ckip2tei]: success
+[2024-04-13 12:35:22] INFO root fetch - processPackages [deribit-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/deribit_wrapper-0.3.0.tar.gz]
+[2024-04-13 12:35:22] INFO root fetch - processPackages [deribit-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/deribit_wrapper-0.3.1.tar.gz]
+[2024-04-13 12:35:22] INFO root fetch - main [MainThread]: End processing [deribit-wrapper]: success
+[2024-04-13 12:35:22] INFO root fetch - main [MainThread]: Store serial: [22751156]
