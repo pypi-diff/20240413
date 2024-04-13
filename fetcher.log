@@ -13493,3 +13493,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:09:01] INFO root fetch - processPackages [geopak]: Remove: archive file [/home/abi/fetcher/tmp/geopak-0.0.3.tar.gz]
 [2024-04-13 14:09:01] INFO root fetch - main [MainThread]: End processing [geopak]: success
 [2024-04-13 14:09:01] INFO root fetch - main [MainThread]: Store serial: [22751621]
+[2024-04-13 14:11:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751621]
+[2024-04-13 14:11:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 14:11:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torcheval-nightly
+[2024-04-13 14:11:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dcicutils
+[2024-04-13 14:11:09] INFO root fetch - processPackages [torcheval-nightly]: New version: [2024.4.9] Old Version: [2024.4.8]
+[2024-04-13 14:11:09] INFO root fetch - processPackages [dcicutils]: New version: [8.8.3.1b2] Old Version: [8.8.3.1b1]
+[2024-04-13 14:11:09] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/a3/6d/794af2087c6d670c1d6bd148a897d3a59b68e8d4b82c381b57d3e20ab544/torcheval-nightly-2024.4.8.tar.gz
+[2024-04-13 14:11:09] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/31/6c/2f6c2c525eab61360e410c3e8ec91fa387f3502982a5ea38fcf4b382dfbd/dcicutils-8.8.3.1b1.tar.gz
+[2024-04-13 14:11:10] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/01/5f/5d3ae8fee972a25478395600694aa6da7aecdf0fdc15b5bb79b52a372737/torcheval-nightly-2024.4.9.tar.gz
+[2024-04-13 14:11:10] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/64/3b/95b31052caa8579e3916ff92adb135e61535ff367243177db99b564d6828/dcicutils-8.8.3.1b2.tar.gz
+[2024-04-13 14:11:10] INFO root fetch - processPackages [torcheval-nightly]: executing diffoscope
+[2024-04-13 14:11:10] INFO root fetch - processPackages [torcheval-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torcheval-nightly-2024.4.8.tar.gz tmp/torcheval-nightly-2024.4.9.tar.gz --markdown 20240413/t/torcheval-nightly/2024.4.8-2024.4.9/README.md --exclude *.pyd
+[2024-04-13 14:11:10] INFO root fetch - processPackages [dcicutils]: executing diffoscope
+[2024-04-13 14:11:10] INFO root fetch - processPackages [dcicutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcicutils-8.8.3.1b1.tar.gz tmp/dcicutils-8.8.3.1b2.tar.gz --markdown 20240413/d/dcicutils/8.8.3.1b1-8.8.3.1b2/README.md --exclude *.pyd
+[2024-04-13 14:11:10] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval-nightly-2024.4.8.tar.gz]
+[2024-04-13 14:11:10] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval-nightly-2024.4.9.tar.gz]
+[2024-04-13 14:11:10] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
+[2024-04-13 14:11:11] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.3.1b1.tar.gz]
+[2024-04-13 14:11:11] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.3.1b2.tar.gz]
+[2024-04-13 14:11:11] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
+[2024-04-13 14:11:11] INFO root fetch - main [MainThread]: Store serial: [22751633]
