@@ -16516,3 +16516,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 18:15:12] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.9.tar.gz]
 [2024-04-13 18:15:12] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-04-13 18:15:12] INFO root fetch - main [MainThread]: Store serial: [22753079]
+[2024-04-13 18:17:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753079]
+[2024-04-13 18:17:21] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 18:17:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: avilla-elizabeth
+[2024-04-13 18:17:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: avilla-core
+[2024-04-13 18:17:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: avilla-onebot-v11
+[2024-04-13 18:17:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: avilla-qqapi
+[2024-04-13 18:17:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: avilla-red
+[2024-04-13 18:17:21] INFO root fetch - processPackages [avilla-onebot-v11]: New version: [1.0.0a7] Old Version: [1.0.0a6]
+[2024-04-13 18:17:21] INFO root fetch - processPackages [avilla-qqapi]: New version: [1.0.0a30] Old Version: [1.0.0a29]
+[2024-04-13 18:17:21] INFO root fetch - processPackages [avilla-elizabeth]: New version: [1.0.0rc4] Old Version: [1.0.0a7]
+[2024-04-13 18:17:21] INFO root fetch - processPackages [avilla-red]: New version: [1.0.0a9] Old Version: [1.0.0a7]
+[2024-04-13 18:17:21] INFO root fetch - processPackages [avilla-core]: New version: [1.0.0rc4] Old Version: [1.0.0rc3]
+[2024-04-13 18:17:21] INFO root fetch - processPackages [avilla-onebot-v11]: Downloading https://files.pythonhosted.org/packages/85/bf/eac28e8be6e85803fded079dd77a80b1247a8266594c59f6788dd558ff9c/avilla_onebot_v11-1.0.0a6.tar.gz
+[2024-04-13 18:17:21] INFO root fetch - processPackages [avilla-red]: Downloading https://files.pythonhosted.org/packages/24/63/ad09178bd877b3cef58cb748c0e0f7e74eeea8354311d19d9b9a05172d03/avilla_red-1.0.0a7.tar.gz
+[2024-04-13 18:17:21] INFO root fetch - processPackages [avilla-qqapi]: Downloading https://files.pythonhosted.org/packages/bc/d1/cdd00f69cf845615a7a3f1335afce0e82bd22b3f8d78327fbba165f32266/avilla_qqapi-1.0.0a29.tar.gz
+[2024-04-13 18:17:21] INFO root fetch - processPackages [avilla-elizabeth]: Downloading https://files.pythonhosted.org/packages/9f/a0/dc160228886d6daa8d423a8e02ad5b2cabe0bd2bf26acae96517be0658d7/avilla_elizabeth-1.0.0a7.tar.gz
+[2024-04-13 18:17:21] INFO root fetch - processPackages [avilla-core]: Downloading https://files.pythonhosted.org/packages/a7/5e/40580af996677674eaaea8935e34ee831e8928c0e04a51d13b2d38273240/avilla-core-1.0.0rc3.tar.gz
+[2024-04-13 18:17:21] INFO root fetch - processPackages [avilla-onebot-v11]: Downloading https://files.pythonhosted.org/packages/fb/14/4debba4e20d757c2a226b9dea3971262de6362af2d583eb4e52a748e7683/avilla_onebot_v11-1.0.0a7.tar.gz
+[2024-04-13 18:17:21] INFO root fetch - processPackages [avilla-qqapi]: Downloading https://files.pythonhosted.org/packages/e3/bb/dea5181078e54c430504ddbde51b73fe935534994aa8fee06b330ef5bace/avilla_qqapi-1.0.0a30.tar.gz
+[2024-04-13 18:17:21] INFO root fetch - processPackages [avilla-elizabeth]: Downloading https://files.pythonhosted.org/packages/c5/33/0f52f3e19c8e060cdaf4bbeead100e6dbecfb16f97bbd183b2350f7ef86e/avilla-elizabeth-1.0.0rc4.tar.gz
+[2024-04-13 18:17:21] INFO root fetch - processPackages [avilla-red]: Downloading https://files.pythonhosted.org/packages/ce/9b/15c7bb05e220b1e763ff49302e0726bdf57349db6ebf12d1a82bd6e66bf5/avilla_red-1.0.0a9.tar.gz
+[2024-04-13 18:17:21] INFO root fetch - processPackages [avilla-onebot-v11]: executing diffoscope
+[2024-04-13 18:17:21] INFO root fetch - processPackages [avilla-onebot-v11]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/avilla_onebot_v11-1.0.0a6.tar.gz tmp/avilla_onebot_v11-1.0.0a7.tar.gz --markdown 20240413/a/avilla-onebot-v11/1.0.0a6-1.0.0a7/README.md --exclude *.pyd
+[2024-04-13 18:17:22] INFO root fetch - processPackages [avilla-elizabeth]: executing diffoscope
+[2024-04-13 18:17:22] INFO root fetch - processPackages [avilla-elizabeth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/avilla_elizabeth-1.0.0a7.tar.gz tmp/avilla-elizabeth-1.0.0rc4.tar.gz --markdown 20240413/a/avilla-elizabeth/1.0.0a7-1.0.0rc4/README.md --exclude *.pyd
+[2024-04-13 18:17:22] INFO root fetch - processPackages [avilla-core]: Downloading https://files.pythonhosted.org/packages/26/53/eccbd4a8f6e590a623d5ffeaa27131f41afaedcdcef7d3b2ad60ce2822c4/avilla-core-1.0.0rc4.tar.gz
+[2024-04-13 18:17:22] INFO root fetch - processPackages [avilla-qqapi]: executing diffoscope
+[2024-04-13 18:17:22] INFO root fetch - processPackages [avilla-qqapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/avilla_qqapi-1.0.0a29.tar.gz tmp/avilla_qqapi-1.0.0a30.tar.gz --markdown 20240413/a/avilla-qqapi/1.0.0a29-1.0.0a30/README.md --exclude *.pyd
+[2024-04-13 18:17:22] INFO root fetch - processPackages [avilla-red]: executing diffoscope
+[2024-04-13 18:17:22] INFO root fetch - processPackages [avilla-red]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/avilla_red-1.0.0a7.tar.gz tmp/avilla_red-1.0.0a9.tar.gz --markdown 20240413/a/avilla-red/1.0.0a7-1.0.0a9/README.md --exclude *.pyd
+[2024-04-13 18:17:22] INFO root fetch - processPackages [avilla-core]: executing diffoscope
+[2024-04-13 18:17:22] INFO root fetch - processPackages [avilla-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/avilla-core-1.0.0rc3.tar.gz tmp/avilla-core-1.0.0rc4.tar.gz --markdown 20240413/a/avilla-core/1.0.0rc3-1.0.0rc4/README.md --exclude *.pyd
+[2024-04-13 18:17:22] INFO root fetch - processPackages [avilla-elizabeth]: Remove: archive file [/home/abi/fetcher/tmp/avilla_elizabeth-1.0.0a7.tar.gz]
+[2024-04-13 18:17:22] INFO root fetch - processPackages [avilla-elizabeth]: Remove: archive file [/home/abi/fetcher/tmp/avilla-elizabeth-1.0.0rc4.tar.gz]
+[2024-04-13 18:17:22] INFO root fetch - main [MainThread]: End processing [avilla-elizabeth]: success
+[2024-04-13 18:17:22] INFO root fetch - processPackages [avilla-onebot-v11]: Remove: archive file [/home/abi/fetcher/tmp/avilla_onebot_v11-1.0.0a6.tar.gz]
+[2024-04-13 18:17:22] INFO root fetch - processPackages [avilla-onebot-v11]: Remove: archive file [/home/abi/fetcher/tmp/avilla_onebot_v11-1.0.0a7.tar.gz]
+[2024-04-13 18:17:22] INFO root fetch - main [MainThread]: End processing [avilla-onebot-v11]: success
+[2024-04-13 18:17:22] INFO root fetch - processPackages [avilla-qqapi]: Remove: archive file [/home/abi/fetcher/tmp/avilla_qqapi-1.0.0a29.tar.gz]
+[2024-04-13 18:17:22] INFO root fetch - processPackages [avilla-qqapi]: Remove: archive file [/home/abi/fetcher/tmp/avilla_qqapi-1.0.0a30.tar.gz]
+[2024-04-13 18:17:22] INFO root fetch - main [MainThread]: End processing [avilla-qqapi]: success
+[2024-04-13 18:17:22] INFO root fetch - processPackages [avilla-red]: Remove: archive file [/home/abi/fetcher/tmp/avilla_red-1.0.0a7.tar.gz]
+[2024-04-13 18:17:22] INFO root fetch - processPackages [avilla-red]: Remove: archive file [/home/abi/fetcher/tmp/avilla_red-1.0.0a9.tar.gz]
+[2024-04-13 18:17:22] INFO root fetch - main [MainThread]: End processing [avilla-red]: success
+[2024-04-13 18:17:22] INFO root fetch - processPackages [avilla-core]: Remove: archive file [/home/abi/fetcher/tmp/avilla-core-1.0.0rc3.tar.gz]
+[2024-04-13 18:17:22] INFO root fetch - processPackages [avilla-core]: Remove: archive file [/home/abi/fetcher/tmp/avilla-core-1.0.0rc4.tar.gz]
+[2024-04-13 18:17:22] INFO root fetch - main [MainThread]: End processing [avilla-core]: success
+[2024-04-13 18:17:22] INFO root fetch - main [MainThread]: Store serial: [22753095]
