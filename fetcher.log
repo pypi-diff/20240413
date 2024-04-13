@@ -15527,3 +15527,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:52:28] INFO root fetch - processPackages [jupyterlab-judge]: Remove: archive file [/home/abi/fetcher/tmp/jupyterlab_judge-1.24.4.tar.gz]
 [2024-04-13 16:52:28] INFO root fetch - main [MainThread]: End processing [jupyterlab-judge]: success
 [2024-04-13 16:52:28] INFO root fetch - main [MainThread]: Store serial: [22752666]
+[2024-04-13 16:54:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752666]
+[2024-04-13 16:54:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 16:54:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sampa
+[2024-04-13 16:54:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: emo-market-base
+[2024-04-13 16:54:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kellyapi
+[2024-04-13 16:54:36] INFO root fetch - processPackages [kellyapi]: New version: [0.0.1.3] Old Version: [0.0.1.2]
+[2024-04-13 16:54:37] INFO root fetch - processPackages [kellyapi]: Downloading https://files.pythonhosted.org/packages/ac/ab/7f0f7b7585c94be830f0a2c001143b07e2a2e13669ea5248ffd94ca69720/kellyapi-0.0.1.2.tar.gz
+[2024-04-13 16:54:37] WARNING root fetch - processPackages [sampa]: Skipping, unable to determine old version
+[2024-04-13 16:54:37] INFO root fetch - main [MainThread]: End processing [sampa] error
+[2024-04-13 16:54:37] INFO root fetch - processPackages [emo-market-base]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-13 16:54:37] INFO root fetch - processPackages [emo-market-base]: Downloading https://files.pythonhosted.org/packages/12/83/dcaa01266c017d354e5a117b850dd7d89c1274b1516333a03bbc95e47c8c/emo_market_base-0.0.3.tar.gz
+[2024-04-13 16:54:37] INFO root fetch - processPackages [kellyapi]: Downloading https://files.pythonhosted.org/packages/aa/45/b412a287147c6fa98ab368495fe9e7b3819ff02c8c0ede3d67f73b4504c9/kellyapi-0.0.1.3.tar.gz
+[2024-04-13 16:54:37] INFO root fetch - processPackages [kellyapi]: executing diffoscope
+[2024-04-13 16:54:37] INFO root fetch - processPackages [kellyapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kellyapi-0.0.1.2.tar.gz tmp/kellyapi-0.0.1.3.tar.gz --markdown 20240413/k/kellyapi/0.0.1.2-0.0.1.3/README.md --exclude *.pyd
+[2024-04-13 16:54:37] INFO root fetch - processPackages [emo-market-base]: Downloading https://files.pythonhosted.org/packages/aa/ee/42f071c92eb0cd86cad4f9d34ba1f86322341f2a6f9a9d21c5c827a559db/emo_market_base-0.0.4.tar.gz
+[2024-04-13 16:54:37] INFO root fetch - processPackages [emo-market-base]: executing diffoscope
+[2024-04-13 16:54:37] INFO root fetch - processPackages [emo-market-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emo_market_base-0.0.3.tar.gz tmp/emo_market_base-0.0.4.tar.gz --markdown 20240413/e/emo-market-base/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-13 16:54:38] INFO root fetch - processPackages [kellyapi]: Remove: archive file [/home/abi/fetcher/tmp/kellyapi-0.0.1.2.tar.gz]
+[2024-04-13 16:54:38] INFO root fetch - processPackages [kellyapi]: Remove: archive file [/home/abi/fetcher/tmp/kellyapi-0.0.1.3.tar.gz]
+[2024-04-13 16:54:38] INFO root fetch - main [MainThread]: End processing [kellyapi]: success
+[2024-04-13 16:54:38] INFO root fetch - processPackages [emo-market-base]: Remove: archive file [/home/abi/fetcher/tmp/emo_market_base-0.0.3.tar.gz]
+[2024-04-13 16:54:38] INFO root fetch - processPackages [emo-market-base]: Remove: archive file [/home/abi/fetcher/tmp/emo_market_base-0.0.4.tar.gz]
+[2024-04-13 16:54:38] INFO root fetch - main [MainThread]: End processing [emo-market-base]: success
+[2024-04-13 16:54:38] INFO root fetch - main [MainThread]: Store serial: [22752675]
