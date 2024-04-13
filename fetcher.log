@@ -19436,3 +19436,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 21:52:31] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.3.1b4.tar.gz]
 [2024-04-13 21:52:31] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
 [2024-04-13 21:52:31] INFO root fetch - main [MainThread]: Store serial: [22754368]
+[2024-04-13 21:54:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754368]
+[2024-04-13 21:54:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 21:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: robotframework-confluentkafkalibrary
+[2024-04-13 21:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipvanishproxy
+[2024-04-13 21:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MobileInventoryCLI
+[2024-04-13 21:54:40] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.54] Old Version: [0.4.53]
+[2024-04-13 21:54:40] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/db/ca/1694f949fb18977d0a7bfb1188ac7c2f476927a843e8d24f5ffbd06392ba/MobileInventoryCLI-0.4.53.tar.gz
+[2024-04-13 21:54:40] INFO root fetch - processPackages [ipvanishproxy]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-13 21:54:40] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: New version: [2.2.0.post1] Old Version: [2.1.1.post1]
+[2024-04-13 21:54:40] INFO root fetch - processPackages [ipvanishproxy]: Downloading https://files.pythonhosted.org/packages/5e/5f/84cdca47732d0eb840ba77e0066440314d7da3991391d8de451ffcd3d8b6/ipvanishproxy-1.0.1.tar.gz
+[2024-04-13 21:54:40] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: Downloading https://files.pythonhosted.org/packages/f7/65/78163b0498197113191559372c6d3bfc0a09bd41028682ebdf4bc36c9ebf/robotframework-confluentkafkalibrary-2.1.1.post1.tar.gz
+[2024-04-13 21:54:40] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/72/25/8bc86482595a7024ddf018fc41c85463b9f8fd0490779bba882f597e46e7/MobileInventoryCLI-0.4.54.tar.gz
+[2024-04-13 21:54:41] INFO root fetch - processPackages [ipvanishproxy]: Downloading https://files.pythonhosted.org/packages/25/05/29f7f9f84cb90b5ad44acf7be6eec5fbc8a98203df6584121d1060d138b2/ipvanishproxy-1.0.2.tar.gz
+[2024-04-13 21:54:41] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: Downloading https://files.pythonhosted.org/packages/d0/59/1aebcdfb3ed4be59e43b6e58f808df425aea34a7f3e44f4faa77feb4188b/robotframework_confluentkafkalibrary-2.2.0.post1.tar.gz
+[2024-04-13 21:54:41] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-04-13 21:54:41] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.53.tar.gz tmp/MobileInventoryCLI-0.4.54.tar.gz --markdown 20240413/M/MobileInventoryCLI/0.4.53-0.4.54/README.md --exclude *.pyd
+[2024-04-13 21:54:41] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: executing diffoscope
+[2024-04-13 21:54:41] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotframework-confluentkafkalibrary-2.1.1.post1.tar.gz tmp/robotframework_confluentkafkalibrary-2.2.0.post1.tar.gz --markdown 20240413/r/robotframework-confluentkafkalibrary/2.1.1.post1-2.2.0.post1/README.md --exclude *.pyd
+[2024-04-13 21:54:41] INFO root fetch - processPackages [ipvanishproxy]: executing diffoscope
+[2024-04-13 21:54:41] INFO root fetch - processPackages [ipvanishproxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipvanishproxy-1.0.1.tar.gz tmp/ipvanishproxy-1.0.2.tar.gz --markdown 20240413/i/ipvanishproxy/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-13 21:54:41] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: Remove: archive file [/home/abi/fetcher/tmp/robotframework-confluentkafkalibrary-2.1.1.post1.tar.gz]
+[2024-04-13 21:54:41] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: Remove: archive file [/home/abi/fetcher/tmp/robotframework_confluentkafkalibrary-2.2.0.post1.tar.gz]
+[2024-04-13 21:54:41] INFO root fetch - main [MainThread]: End processing [robotframework-confluentkafkalibrary]: success
+[2024-04-13 21:54:41] INFO root fetch - processPackages [ipvanishproxy]: Remove: archive file [/home/abi/fetcher/tmp/ipvanishproxy-1.0.1.tar.gz]
+[2024-04-13 21:54:41] INFO root fetch - processPackages [ipvanishproxy]: Remove: archive file [/home/abi/fetcher/tmp/ipvanishproxy-1.0.2.tar.gz]
+[2024-04-13 21:54:41] INFO root fetch - main [MainThread]: End processing [ipvanishproxy]: success
+[2024-04-13 21:54:41] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.53.tar.gz]
+[2024-04-13 21:54:41] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.54.tar.gz]
+[2024-04-13 21:54:41] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-04-13 21:54:41] INFO root fetch - main [MainThread]: Store serial: [22754376]
