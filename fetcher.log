@@ -10284,3 +10284,44 @@
 [2024-04-13 09:51:21] INFO root fetch - processPackages [querent]: Remove: archive file [/home/abi/fetcher/tmp/querent-3.0.2.tar.gz]
 [2024-04-13 09:51:21] INFO root fetch - main [MainThread]: End processing [querent]: success
 [2024-04-13 09:51:21] INFO root fetch - main [MainThread]: Store serial: [22750282]
+[2024-04-13 09:53:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750282]
+[2024-04-13 09:53:29] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 09:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: erniebot-agent
+[2024-04-13 09:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: grimoire-elk
+[2024-04-13 09:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyscf-dispersion
+[2024-04-13 09:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: speech_user_interface
+[2024-04-13 09:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-orangejuice
+[2024-04-13 09:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pynovnc
+[2024-04-13 09:53:29] WARNING root fetch - processPackages [speech_user_interface]: Skipping, unable to determine old version
+[2024-04-13 09:53:29] INFO root fetch - main [MainThread]: End processing [speech_user_interface] error
+[2024-04-13 09:53:29] WARNING root fetch - processPackages [pynovnc]: Skipping, unable to determine old version
+[2024-04-13 09:53:29] INFO root fetch - main [MainThread]: End processing [pynovnc] error
+[2024-04-13 09:53:30] INFO root fetch - processPackages [erniebot-agent]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-04-13 09:53:30] INFO root fetch - processPackages [pyscf-dispersion]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-13 09:53:30] INFO root fetch - processPackages [grimoire-elk]: New version: [1.0.0rc3] Old Version: [1.0.0rc2]
+[2024-04-13 09:53:30] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-13 09:53:30] INFO root fetch - processPackages [grimoire-elk]: Downloading https://files.pythonhosted.org/packages/9c/2d/fb85445cfa3ddeef82885a0e3a9ffdcf64edd20b61ebd09265745a6cdab3/grimoire_elk-1.0.0rc2.tar.gz
+[2024-04-13 09:53:30] INFO root fetch - processPackages [erniebot-agent]: Downloading https://files.pythonhosted.org/packages/b4/1c/7231f370433fe43caf714e320637f3ce8d2a0f2cc3b630b039be8e58db6f/erniebot_agent-0.5.1-py3-none-any.whl
+[2024-04-13 09:53:30] INFO root fetch - processPackages [pyscf-dispersion]: Downloading https://files.pythonhosted.org/packages/3d/83/34d15c52b4d7cf2a76b9ea376e18ee059215f2cef4b53026caad127940a9/pyscf_dispersion-1.0.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-13 09:53:30] WARNING root fetch - processPackages [pyscf-dispersion]: Skipping package: exceeds size limit 12081823>=10485760
+[2024-04-13 09:53:30] INFO root fetch - main [MainThread]: End processing [pyscf-dispersion] error
+[2024-04-13 09:53:30] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: Downloading https://files.pythonhosted.org/packages/c8/38/90a39a14d7ba6d9112789021b6ef87aaf81e04767b4778d7406cbb277c9f/nonebot-plugin-orangejuice-0.9.0.tar.gz
+[2024-04-13 09:53:30] INFO root fetch - processPackages [grimoire-elk]: Downloading https://files.pythonhosted.org/packages/b0/b3/9f2783850a056f73ae09ed5da14a138c7a866e064e43fdf8c003f28ecdb0/grimoire_elk-1.0.0rc3.tar.gz
+[2024-04-13 09:53:30] INFO root fetch - processPackages [erniebot-agent]: Downloading https://files.pythonhosted.org/packages/8d/1f/58ba531d14ede70e345d99f534c254a02e81274e804bc30cdb5c555c0e35/erniebot-agent-0.5.2.tar.gz
+[2024-04-13 09:53:30] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: Downloading https://files.pythonhosted.org/packages/7f/1d/3890a6434dd566ebff9d0e7fa7f151a8384e4bf47b0a22874773180f8977/nonebot-plugin-orangejuice-0.9.1.tar.gz
+[2024-04-13 09:53:30] INFO root fetch - processPackages [grimoire-elk]: executing diffoscope
+[2024-04-13 09:53:30] INFO root fetch - processPackages [grimoire-elk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grimoire_elk-1.0.0rc2.tar.gz tmp/grimoire_elk-1.0.0rc3.tar.gz --markdown 20240413/g/grimoire-elk/1.0.0rc2-1.0.0rc3/README.md --exclude *.pyd
+[2024-04-13 09:53:30] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: executing diffoscope
+[2024-04-13 09:53:30] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-orangejuice-0.9.0.tar.gz tmp/nonebot-plugin-orangejuice-0.9.1.tar.gz --markdown 20240413/n/nonebot-plugin-orangejuice/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-13 09:53:30] INFO root fetch - processPackages [erniebot-agent]: executing diffoscope
+[2024-04-13 09:53:30] INFO root fetch - processPackages [erniebot-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/erniebot_agent-0.5.1-py3-none-any.whl.zip tmp/erniebot-agent-0.5.2.tar.gz --markdown 20240413/e/erniebot-agent/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-04-13 09:53:31] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-orangejuice-0.9.0.tar.gz]
+[2024-04-13 09:53:31] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-orangejuice-0.9.1.tar.gz]
+[2024-04-13 09:53:31] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-orangejuice]: success
+[2024-04-13 09:53:31] INFO root fetch - processPackages [erniebot-agent]: Remove: archive file [/home/abi/fetcher/tmp/erniebot_agent-0.5.1-py3-none-any.whl.zip]
+[2024-04-13 09:53:31] INFO root fetch - processPackages [erniebot-agent]: Remove: archive file [/home/abi/fetcher/tmp/erniebot-agent-0.5.2.tar.gz]
+[2024-04-13 09:53:31] INFO root fetch - main [MainThread]: End processing [erniebot-agent]: success
+[2024-04-13 09:53:32] INFO root fetch - processPackages [grimoire-elk]: Remove: archive file [/home/abi/fetcher/tmp/grimoire_elk-1.0.0rc2.tar.gz]
+[2024-04-13 09:53:32] INFO root fetch - processPackages [grimoire-elk]: Remove: archive file [/home/abi/fetcher/tmp/grimoire_elk-1.0.0rc3.tar.gz]
+[2024-04-13 09:53:32] INFO root fetch - main [MainThread]: End processing [grimoire-elk]: success
+[2024-04-13 09:53:32] INFO root fetch - main [MainThread]: Store serial: [22750299]
