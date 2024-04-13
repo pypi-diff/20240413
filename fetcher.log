@@ -10337,3 +10337,24 @@
 [2024-04-13 09:55:43] INFO root fetch - processPackages [investing-algorithm-framework]: Remove: archive file [/home/abi/fetcher/tmp/investing_algorithm_framework-3.5.1.tar.gz]
 [2024-04-13 09:55:43] INFO root fetch - main [MainThread]: End processing [investing-algorithm-framework]: success
 [2024-04-13 09:55:43] INFO root fetch - main [MainThread]: Store serial: [22750304]
+[2024-04-13 09:57:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750304]
+[2024-04-13 09:57:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 09:57:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pynovnc
+[2024-04-13 09:57:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-nightly
+[2024-04-13 09:57:52] INFO root fetch - processPackages [pynovnc]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-13 09:57:52] INFO root fetch - processPackages [tf-nightly]: New version: [2.17.0.dev20240413] Old Version: [2.17.0.dev20240412]
+[2024-04-13 09:57:52] INFO root fetch - processPackages [pynovnc]: Downloading https://files.pythonhosted.org/packages/b4/4b/0897c8621914294238d66645ec0e1a444eb1bcbab5ea185cb12c71e71de7/pynovnc-1.0.1.tar.gz
+[2024-04-13 09:57:52] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/97/69/e2f972247cf32f4941b864f2b119cc853c579c9a3aed0216f18b935f46cf/tf_nightly-2.17.0.dev20240412-cp39-cp39-win_amd64.whl
+[2024-04-13 09:57:52] INFO root fetch - processPackages [pynovnc]: Downloading https://files.pythonhosted.org/packages/72/f3/4bb5fe5803435c3ac34ae8f3831b6a805c5ae869dacd16452c6b856dfa09/pynovnc-1.0.2.tar.gz
+[2024-04-13 09:57:52] INFO root fetch - processPackages [pynovnc]: executing diffoscope
+[2024-04-13 09:57:52] INFO root fetch - processPackages [pynovnc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynovnc-1.0.1.tar.gz tmp/pynovnc-1.0.2.tar.gz --markdown 20240413/p/pynovnc/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-13 09:57:52] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/a8/c2/857caa448303e5fe57f8d538508b5013c257338b1d26f26ab232a21b500c/tf_nightly-2.17.0.dev20240413-cp39-cp39-win_amd64.whl
+[2024-04-13 09:57:52] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2024-04-13 09:57:52] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.17.0.dev20240412-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.17.0.dev20240413-cp39-cp39-win_amd64.whl.zip --markdown 20240413/t/tf-nightly/2.17.0.dev20240412-2.17.0.dev20240413/README.md --exclude *.pyd
+[2024-04-13 09:57:53] INFO root fetch - processPackages [pynovnc]: Remove: archive file [/home/abi/fetcher/tmp/pynovnc-1.0.1.tar.gz]
+[2024-04-13 09:57:53] INFO root fetch - processPackages [pynovnc]: Remove: archive file [/home/abi/fetcher/tmp/pynovnc-1.0.2.tar.gz]
+[2024-04-13 09:57:53] INFO root fetch - main [MainThread]: End processing [pynovnc]: success
+[2024-04-13 09:57:53] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240412-cp39-cp39-win_amd64.whl.zip]
+[2024-04-13 09:57:53] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240413-cp39-cp39-win_amd64.whl.zip]
+[2024-04-13 09:57:53] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2024-04-13 09:57:53] INFO root fetch - main [MainThread]: Store serial: [22750312]
