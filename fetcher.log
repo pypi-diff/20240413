@@ -2385,3 +2385,38 @@
 [2024-04-13 02:28:19] INFO root fetch - processPackages [amazon-sagemaker-jupyter-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/amazon_sagemaker_jupyter_scheduler-3.0.9.tar.gz]
 [2024-04-13 02:28:19] INFO root fetch - main [MainThread]: End processing [amazon-sagemaker-jupyter-scheduler]: success
 [2024-04-13 02:28:19] INFO root fetch - main [MainThread]: Store serial: [22747402]
+[2024-04-13 02:30:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22747402]
+[2024-04-13 02:30:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 02:30:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: statmorph
+[2024-04-13 02:30:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: amazon-sagemaker-sql-editor
+[2024-04-13 02:30:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gcp-scraper
+[2024-04-13 02:30:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vietqr-generator
+[2024-04-13 02:30:28] INFO root fetch - processPackages [gcp-scraper]: New version: [3.6.8] Old Version: [3.6.7]
+[2024-04-13 02:30:28] INFO root fetch - processPackages [amazon-sagemaker-sql-editor]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-13 02:30:28] INFO root fetch - processPackages [gcp-scraper]: Downloading https://files.pythonhosted.org/packages/73/da/84594d00a4cf1d8ad800e1c727ea2727905f1c9b5aa987e58abbd540225e/gcp-scraper-3.6.7.tar.gz
+[2024-04-13 02:30:28] INFO root fetch - processPackages [statmorph]: New version: [0.5.6] Old Version: [0.5.5]
+[2024-04-13 02:30:28] INFO root fetch - processPackages [vietqr-generator]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-13 02:30:28] INFO root fetch - processPackages [amazon-sagemaker-sql-editor]: Downloading https://files.pythonhosted.org/packages/ea/64/25b21885ffe695b1de9adff6c88adea34ab5343feaea275b0eb23be86693/amazon_sagemaker_sql_editor-0.1.5.tar.gz
+[2024-04-13 02:30:28] WARNING root fetch - processPackages [amazon-sagemaker-sql-editor]: Skipping package: exceeds size limit 20383108>=10485760
+[2024-04-13 02:30:28] INFO root fetch - main [MainThread]: End processing [amazon-sagemaker-sql-editor] error
+[2024-04-13 02:30:28] INFO root fetch - processPackages [statmorph]: Downloading https://files.pythonhosted.org/packages/15/46/79b8d55746c2120a08e024b3f732fe7591be94c4640ead3e872afc5bac84/statmorph-0.5.5.tar.gz
+[2024-04-13 02:30:28] INFO root fetch - processPackages [vietqr-generator]: Downloading https://files.pythonhosted.org/packages/d4/32/0f7a378aca081c0912359dc3c26243160c5181415c4cbfccd91467ff35d3/vietqr-generator-0.0.4.tar.gz
+[2024-04-13 02:30:28] INFO root fetch - processPackages [gcp-scraper]: Downloading https://files.pythonhosted.org/packages/6b/de/c6cdacc7d5ed055c316f0a619f16b895bd35d3e72464db0e8243d4e62092/gcp-scraper-3.6.8.tar.gz
+[2024-04-13 02:30:28] INFO root fetch - processPackages [gcp-scraper]: executing diffoscope
+[2024-04-13 02:30:28] INFO root fetch - processPackages [gcp-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcp-scraper-3.6.7.tar.gz tmp/gcp-scraper-3.6.8.tar.gz --markdown 20240413/g/gcp-scraper/3.6.7-3.6.8/README.md --exclude *.pyd
+[2024-04-13 02:30:29] INFO root fetch - processPackages [vietqr-generator]: Downloading https://files.pythonhosted.org/packages/67/03/17b32d8d8c96f4355def5c207c3a7819e753a5ad8f8f2d1085ae0b36e876/vietqr-generator-0.0.5.tar.gz
+[2024-04-13 02:30:29] INFO root fetch - processPackages [statmorph]: Downloading https://files.pythonhosted.org/packages/97/78/cf5ba1199844abd027150d81f803e05c45993bd0b173b0d5c41453453b15/statmorph-0.5.6.tar.gz
+[2024-04-13 02:30:29] INFO root fetch - processPackages [vietqr-generator]: executing diffoscope
+[2024-04-13 02:30:29] INFO root fetch - processPackages [vietqr-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vietqr-generator-0.0.4.tar.gz tmp/vietqr-generator-0.0.5.tar.gz --markdown 20240413/v/vietqr-generator/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-13 02:30:29] INFO root fetch - processPackages [statmorph]: executing diffoscope
+[2024-04-13 02:30:29] INFO root fetch - processPackages [statmorph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statmorph-0.5.5.tar.gz tmp/statmorph-0.5.6.tar.gz --markdown 20240413/s/statmorph/0.5.5-0.5.6/README.md --exclude *.pyd
+[2024-04-13 02:30:29] INFO root fetch - processPackages [gcp-scraper]: Remove: archive file [/home/abi/fetcher/tmp/gcp-scraper-3.6.7.tar.gz]
+[2024-04-13 02:30:29] INFO root fetch - processPackages [gcp-scraper]: Remove: archive file [/home/abi/fetcher/tmp/gcp-scraper-3.6.8.tar.gz]
+[2024-04-13 02:30:29] INFO root fetch - main [MainThread]: End processing [gcp-scraper]: success
+[2024-04-13 02:30:29] INFO root fetch - processPackages [vietqr-generator]: Remove: archive file [/home/abi/fetcher/tmp/vietqr-generator-0.0.4.tar.gz]
+[2024-04-13 02:30:29] INFO root fetch - processPackages [vietqr-generator]: Remove: archive file [/home/abi/fetcher/tmp/vietqr-generator-0.0.5.tar.gz]
+[2024-04-13 02:30:29] INFO root fetch - main [MainThread]: End processing [vietqr-generator]: success
+[2024-04-13 02:30:29] INFO root fetch - processPackages [statmorph]: Remove: archive file [/home/abi/fetcher/tmp/statmorph-0.5.5.tar.gz]
+[2024-04-13 02:30:29] INFO root fetch - processPackages [statmorph]: Remove: archive file [/home/abi/fetcher/tmp/statmorph-0.5.6.tar.gz]
+[2024-04-13 02:30:29] INFO root fetch - main [MainThread]: End processing [statmorph]: success
+[2024-04-13 02:30:29] INFO root fetch - main [MainThread]: Store serial: [22747415]
