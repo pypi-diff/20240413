@@ -14619,3 +14619,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 15:38:27] INFO root fetch - processPackages [django-import-export]: Remove: archive file [/home/abi/fetcher/tmp/django_import_export-4.0.0rc3.tar.gz]
 [2024-04-13 15:38:27] INFO root fetch - main [MainThread]: End processing [django-import-export]: success
 [2024-04-13 15:38:27] INFO root fetch - main [MainThread]: Store serial: [22752232]
+[2024-04-13 15:40:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752232]
+[2024-04-13 15:40:36] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 15:42:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752233]
+[2024-04-13 15:42:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 15:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zodchy-security
+[2024-04-13 15:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tn3w-utils
+[2024-04-13 15:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unite-toolbox
+[2024-04-13 15:42:41] WARNING root fetch - processPackages [zodchy-security]: Skipping, unable to determine old version
+[2024-04-13 15:42:41] INFO root fetch - main [MainThread]: End processing [zodchy-security] error
+[2024-04-13 15:42:41] INFO root fetch - processPackages [unite-toolbox]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-13 15:42:41] INFO root fetch - processPackages [tn3w-utils]: New version: [1.1.1] Old Version: [1.1]
+[2024-04-13 15:42:41] INFO root fetch - processPackages [tn3w-utils]: Downloading https://files.pythonhosted.org/packages/57/3c/87077775f48147f4a240ea37b061b4e6fea8bf3e07ceb366320715fc1f72/tn3w_utils-1.1.tar.gz
+[2024-04-13 15:42:41] INFO root fetch - processPackages [unite-toolbox]: Downloading https://files.pythonhosted.org/packages/e2/21/42476b4ecafc15b99711201700cbca40b55c4e5d7bf5cce92885df76fc57/unite_toolbox-0.1.5.tar.gz
+[2024-04-13 15:42:42] INFO root fetch - processPackages [unite-toolbox]: Downloading https://files.pythonhosted.org/packages/c0/cd/8ed02f7964d34c60fd2eb58cb84525a59e488163d75c560715553e05d4b7/unite_toolbox-0.1.6.tar.gz
+[2024-04-13 15:42:42] INFO root fetch - processPackages [tn3w-utils]: Downloading https://files.pythonhosted.org/packages/6e/07/ce3dfb0a17e9d0c36368336ba3693523a57ed48cd221799d5801f0699123/tn3w_utils-1.1.1.tar.gz
+[2024-04-13 15:42:42] INFO root fetch - processPackages [tn3w-utils]: executing diffoscope
+[2024-04-13 15:42:42] INFO root fetch - processPackages [tn3w-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tn3w_utils-1.1.tar.gz tmp/tn3w_utils-1.1.1.tar.gz --markdown 20240413/t/tn3w-utils/1.1-1.1.1/README.md --exclude *.pyd
+[2024-04-13 15:42:42] INFO root fetch - processPackages [unite-toolbox]: executing diffoscope
+[2024-04-13 15:42:42] INFO root fetch - processPackages [unite-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unite_toolbox-0.1.5.tar.gz tmp/unite_toolbox-0.1.6.tar.gz --markdown 20240413/u/unite-toolbox/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-13 15:42:42] INFO root fetch - processPackages [tn3w-utils]: Remove: archive file [/home/abi/fetcher/tmp/tn3w_utils-1.1.tar.gz]
+[2024-04-13 15:42:42] INFO root fetch - processPackages [tn3w-utils]: Remove: archive file [/home/abi/fetcher/tmp/tn3w_utils-1.1.1.tar.gz]
+[2024-04-13 15:42:42] INFO root fetch - main [MainThread]: End processing [tn3w-utils]: success
+[2024-04-13 15:42:43] INFO root fetch - processPackages [unite-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/unite_toolbox-0.1.5.tar.gz]
+[2024-04-13 15:42:43] INFO root fetch - processPackages [unite-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/unite_toolbox-0.1.6.tar.gz]
+[2024-04-13 15:42:43] INFO root fetch - main [MainThread]: End processing [unite-toolbox]: success
+[2024-04-13 15:42:43] INFO root fetch - main [MainThread]: Store serial: [22752244]
