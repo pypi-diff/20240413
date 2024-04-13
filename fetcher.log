@@ -15047,3 +15047,91 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:13:12] INFO root fetch - processPackages [acctf]: Remove: archive file [/home/abi/fetcher/tmp/acctf-0.3.0.tar.gz]
 [2024-04-13 16:13:12] INFO root fetch - main [MainThread]: End processing [acctf]: success
 [2024-04-13 16:13:12] INFO root fetch - main [MainThread]: Store serial: [22752424]
+[2024-04-13 16:15:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752424]
+[2024-04-13 16:15:21] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-04-13 16:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-04-13 16:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: invokelint
+[2024-04-13 16:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2024-04-13 16:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sling-linux-amd64
+[2024-04-13 16:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bestdori-api
+[2024-04-13 16:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flybirds
+[2024-04-13 16:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: GridCalEngine
+[2024-04-13 16:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: GridCal
+[2024-04-13 16:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sling-linux-arm64
+[2024-04-13 16:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sqlite3-to-mysql
+[2024-04-13 16:15:21] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-13 16:15:21] INFO root fetch - processPackages [bestdori-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 16:15:21] INFO root fetch - processPackages [sling-linux-arm64]: New version: [1.2.4] Old Version: [1.2.3.post2]
+[2024-04-13 16:15:21] INFO root fetch - processPackages [invokelint]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-04-13 16:15:21] INFO root fetch - processPackages [GridCalEngine]: New version: [5.1.6] Old Version: [5.1.5]
+[2024-04-13 16:15:21] INFO root fetch - processPackages [sling-linux-amd64]: New version: [1.2.4] Old Version: [1.2.3.post2]
+[2024-04-13 16:15:21] INFO root fetch - processPackages [sqlite3-to-mysql]: New version: [2.1.8] Old Version: [2.1.7]
+[2024-04-13 16:15:21] INFO root fetch - processPackages [flybirds]: New version: [0.6.77] Old Version: [0.6.6]
+[2024-04-13 16:15:21] INFO root fetch - processPackages [GridCal]: New version: [5.1.6] Old Version: [5.1.5]
+[2024-04-13 16:15:21] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-13 16:15:21] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-13 16:15:21] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-13 16:15:22] INFO root fetch - processPackages [sling-linux-arm64]: Downloading https://files.pythonhosted.org/packages/a9/a1/13717eb824a32b8895f2958f2e692431bd1c37d778e1cf07aa0f060fa3ff/sling-linux-arm64-1.2.3.post2.tar.gz
+[2024-04-13 16:15:22] INFO root fetch - processPackages [GridCalEngine]: Downloading https://files.pythonhosted.org/packages/65/70/22f9ad11e24d5ec9ed062fc62bb822a8a4c1d386d764be8b90ad8e41ea5a/GridCalEngine-5.1.5.tar.gz
+[2024-04-13 16:15:22] INFO root fetch - processPackages [flybirds]: Downloading https://files.pythonhosted.org/packages/8f/11/ab32ef2651477ded64769bdd200b9ba410324ec70abf7c8205c2e0e87851/flybirds-0.6.6.tar.gz
+[2024-04-13 16:15:22] INFO root fetch - processPackages [sling-linux-amd64]: Downloading https://files.pythonhosted.org/packages/b7/56/c809a1adbfef391b3037dab839d6ec6e61cccb0f330eddc10bd88a23a567/sling-linux-amd64-1.2.3.post2.tar.gz
+[2024-04-13 16:15:22] INFO root fetch - processPackages [invokelint]: Downloading https://files.pythonhosted.org/packages/34/03/7a9da832d636550fac72374868deb214c576945366b2cc02983f8d278f93/invokelint-0.9.1.tar.gz
+[2024-04-13 16:15:22] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-13 16:15:22] INFO root fetch - processPackages [sqlite3-to-mysql]: Downloading https://files.pythonhosted.org/packages/e1/a2/e6306667379193d5b6d4b78446cf787471d3ccb11ac91411cc407e285d13/sqlite3_to_mysql-2.1.7.tar.gz
+[2024-04-13 16:15:22] INFO root fetch - processPackages [bestdori-api]: Downloading https://files.pythonhosted.org/packages/81/fd/cfb845fb249267b8cd7573748f153416613ff4d92557b0588175d0ffa06c/bestdori_api-0.1.8.tar.gz
+[2024-04-13 16:15:22] INFO root fetch - processPackages [GridCal]: Downloading https://files.pythonhosted.org/packages/58/4b/3c3ae4eb325bf491207fb2eda7f73528a172054a2de8e703fedeb36c7ba6/GridCal-5.1.5.tar.gz
+[2024-04-13 16:15:22] WARNING root fetch - processPackages [sling-linux-arm64]: Skipping package: exceeds size limit 45795707>=10485760
+[2024-04-13 16:15:22] INFO root fetch - processPackages [sling-linux-arm64]: Start processing: GALFITools
+[2024-04-13 16:15:22] INFO root fetch - main [MainThread]: End processing [sling-linux-arm64] error
+[2024-04-13 16:15:22] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-13 16:15:22] WARNING root fetch - processPackages [sling-linux-amd64]: Skipping package: exceeds size limit 49080960>=10485760
+[2024-04-13 16:15:22] INFO root fetch - main [MainThread]: End processing [sling-linux-amd64] error
+[2024-04-13 16:15:22] INFO root fetch - processPackages [GALFITools]: New version: [1.7.0] Old Version: [1.0.0]
+[2024-04-13 16:15:22] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-13 16:15:22] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240413/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-04-13 16:15:22] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-13 16:15:22] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240413/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-04-13 16:15:22] INFO root fetch - processPackages [invokelint]: Downloading https://files.pythonhosted.org/packages/66/fd/9d28839db20ae1251717f30f583c38704f07d549c54b699d176ca7ddd4cf/invokelint-0.9.2.tar.gz
+[2024-04-13 16:15:22] INFO root fetch - processPackages [sqlite3-to-mysql]: Downloading https://files.pythonhosted.org/packages/92/db/acc811fcb2e03f67b4065ea3b271d75c4e6410182078044024efaaaacce0/sqlite3_to_mysql-2.1.8.tar.gz
+[2024-04-13 16:15:22] INFO root fetch - processPackages [GridCalEngine]: Downloading https://files.pythonhosted.org/packages/2a/a3/adb8225c5469b4b0eb3be9216fceba5abdd277c1ae4bd83b2b5a9031db9b/GridCalEngine-5.1.6.tar.gz
+[2024-04-13 16:15:22] INFO root fetch - processPackages [bestdori-api]: Downloading https://files.pythonhosted.org/packages/e8/c6/efff1f1ea01c0bd24d5e120c25cc983a43678412b030542c4a6cfffdd9ea/bestdori_api-0.1.9.tar.gz
+[2024-04-13 16:15:22] INFO root fetch - processPackages [GALFITools]: Downloading https://files.pythonhosted.org/packages/e2/36/525cd6bc75239f748d11e1720b97d541519b6d7bc5900a2bcf160aa45757/GALFITools-1.0.0.tar.gz
+[2024-04-13 16:15:22] INFO root fetch - processPackages [invokelint]: executing diffoscope
+[2024-04-13 16:15:22] INFO root fetch - processPackages [invokelint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invokelint-0.9.1.tar.gz tmp/invokelint-0.9.2.tar.gz --markdown 20240413/i/invokelint/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-04-13 16:15:22] INFO root fetch - processPackages [GridCal]: Downloading https://files.pythonhosted.org/packages/73/81/2683c7c9acc50cdac0aacd661955af45a760b1581d1867580cca7e0341af/GridCal-5.1.6.tar.gz
+[2024-04-13 16:15:22] INFO root fetch - processPackages [sqlite3-to-mysql]: executing diffoscope
+[2024-04-13 16:15:22] INFO root fetch - processPackages [sqlite3-to-mysql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite3_to_mysql-2.1.7.tar.gz tmp/sqlite3_to_mysql-2.1.8.tar.gz --markdown 20240413/s/sqlite3-to-mysql/2.1.7-2.1.8/README.md --exclude *.pyd
+[2024-04-13 16:15:22] INFO root fetch - processPackages [bestdori-api]: executing diffoscope
+[2024-04-13 16:15:22] INFO root fetch - processPackages [bestdori-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bestdori_api-0.1.8.tar.gz tmp/bestdori_api-0.1.9.tar.gz --markdown 20240413/b/bestdori-api/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 16:15:22] INFO root fetch - processPackages [GridCalEngine]: executing diffoscope
+[2024-04-13 16:15:22] INFO root fetch - processPackages [GridCalEngine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GridCalEngine-5.1.5.tar.gz tmp/GridCalEngine-5.1.6.tar.gz --markdown 20240413/G/GridCalEngine/5.1.5-5.1.6/README.md --exclude *.pyd
+[2024-04-13 16:15:22] WARNING root fetch - processPackages [GALFITools]: Skipping package: exceeds size limit 25765791>=10485760
+[2024-04-13 16:15:22] INFO root fetch - main [MainThread]: End processing [GALFITools] error
+[2024-04-13 16:15:22] INFO root fetch - processPackages [GridCal]: executing diffoscope
+[2024-04-13 16:15:22] INFO root fetch - processPackages [GridCal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GridCal-5.1.5.tar.gz tmp/GridCal-5.1.6.tar.gz --markdown 20240413/G/GridCal/5.1.5-5.1.6/README.md --exclude *.pyd
+[2024-04-13 16:15:23] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-04-13 16:15:23] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-04-13 16:15:23] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-13 16:15:23] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-13 16:15:23] INFO root fetch - processPackages [invokelint]: Remove: archive file [/home/abi/fetcher/tmp/invokelint-0.9.1.tar.gz]
+[2024-04-13 16:15:23] INFO root fetch - processPackages [invokelint]: Remove: archive file [/home/abi/fetcher/tmp/invokelint-0.9.2.tar.gz]
+[2024-04-13 16:15:23] INFO root fetch - main [MainThread]: End processing [invokelint]: success
+[2024-04-13 16:15:23] INFO root fetch - processPackages [sqlite3-to-mysql]: Remove: archive file [/home/abi/fetcher/tmp/sqlite3_to_mysql-2.1.7.tar.gz]
+[2024-04-13 16:15:23] INFO root fetch - processPackages [sqlite3-to-mysql]: Remove: archive file [/home/abi/fetcher/tmp/sqlite3_to_mysql-2.1.8.tar.gz]
+[2024-04-13 16:15:23] INFO root fetch - main [MainThread]: End processing [sqlite3-to-mysql]: success
+[2024-04-13 16:15:23] INFO root fetch - processPackages [bestdori-api]: Remove: archive file [/home/abi/fetcher/tmp/bestdori_api-0.1.8.tar.gz]
+[2024-04-13 16:15:23] INFO root fetch - processPackages [bestdori-api]: Remove: archive file [/home/abi/fetcher/tmp/bestdori_api-0.1.9.tar.gz]
+[2024-04-13 16:15:23] INFO root fetch - main [MainThread]: End processing [bestdori-api]: success
+[2024-04-13 16:15:24] INFO root fetch - processPackages [GridCal]: Remove: archive file [/home/abi/fetcher/tmp/GridCal-5.1.5.tar.gz]
+[2024-04-13 16:15:24] INFO root fetch - processPackages [GridCal]: Remove: archive file [/home/abi/fetcher/tmp/GridCal-5.1.6.tar.gz]
+[2024-04-13 16:15:24] INFO root fetch - main [MainThread]: End processing [GridCal]: success
+[2024-04-13 16:15:25] INFO root fetch - processPackages [flybirds]: Downloading https://files.pythonhosted.org/packages/74/e7/fa2fea11af96b7b0cb5b4ff281c157bfde962e6ed2e8502f40c3a57366e4/flybirds-0.6.77.tar.gz
+[2024-04-13 16:15:25] INFO root fetch - processPackages [GridCalEngine]: Remove: archive file [/home/abi/fetcher/tmp/GridCalEngine-5.1.5.tar.gz]
+[2024-04-13 16:15:25] INFO root fetch - processPackages [GridCalEngine]: Remove: archive file [/home/abi/fetcher/tmp/GridCalEngine-5.1.6.tar.gz]
+[2024-04-13 16:15:25] INFO root fetch - main [MainThread]: End processing [GridCalEngine]: success
+[2024-04-13 16:15:25] INFO root fetch - processPackages [flybirds]: executing diffoscope
+[2024-04-13 16:15:25] INFO root fetch - processPackages [flybirds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flybirds-0.6.6.tar.gz tmp/flybirds-0.6.77.tar.gz --markdown 20240413/f/flybirds/0.6.6-0.6.77/README.md --exclude *.pyd
+[2024-04-13 16:15:31] INFO root fetch - processPackages [flybirds]: Remove: archive file [/home/abi/fetcher/tmp/flybirds-0.6.6.tar.gz]
+[2024-04-13 16:15:31] INFO root fetch - processPackages [flybirds]: Remove: archive file [/home/abi/fetcher/tmp/flybirds-0.6.77.tar.gz]
+[2024-04-13 16:15:31] INFO root fetch - main [MainThread]: End processing [flybirds]: success
+[2024-04-13 16:15:31] INFO root fetch - main [MainThread]: Store serial: [22752452]
