@@ -6578,3 +6578,24 @@
 [2024-04-13 03:35:53] INFO root fetch - processPackages [scrummd]: Remove: archive file [/home/abi/fetcher/tmp/scrummd-0.0.8.tar.gz]
 [2024-04-13 03:35:53] INFO root fetch - main [MainThread]: End processing [scrummd]: success
 [2024-04-13 03:35:53] INFO root fetch - main [MainThread]: Store serial: [22748841]
+[2024-04-13 03:37:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748841]
+[2024-04-13 03:38:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 03:38:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bioimageio-chatbot
+[2024-04-13 03:38:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vtjson
+[2024-04-13 03:38:03] INFO root fetch - processPackages [vtjson]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-04-13 03:38:03] INFO root fetch - processPackages [vtjson]: Downloading https://files.pythonhosted.org/packages/96/71/1fa4591ea5048fe3bcc4739d672f0f7f6be3b09ecdcc86f19b95e0de3621/vtjson-1.7.0.tar.gz
+[2024-04-13 03:38:03] INFO root fetch - processPackages [bioimageio-chatbot]: New version: [0.1.96] Old Version: [0.1.94]
+[2024-04-13 03:38:03] INFO root fetch - processPackages [bioimageio-chatbot]: Downloading https://files.pythonhosted.org/packages/0e/c1/170f83ac0d178a476db61b1c07b0e8d9ee398d4657163f363b01f11ebd90/bioimageio-chatbot-0.1.94.tar.gz
+[2024-04-13 03:38:04] INFO root fetch - processPackages [vtjson]: Downloading https://files.pythonhosted.org/packages/89/63/da001a00cfbd30bb4f0f2580fea7e78d658e9c8fe1318c541ebc95449020/vtjson-1.7.1.tar.gz
+[2024-04-13 03:38:04] INFO root fetch - processPackages [vtjson]: executing diffoscope
+[2024-04-13 03:38:04] INFO root fetch - processPackages [vtjson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vtjson-1.7.0.tar.gz tmp/vtjson-1.7.1.tar.gz --markdown 20240413/v/vtjson/1.7.0-1.7.1/README.md --exclude *.pyd
+[2024-04-13 03:38:04] INFO root fetch - processPackages [bioimageio-chatbot]: Downloading https://files.pythonhosted.org/packages/0a/8d/5f45efd688c9d8bdd39afa588cb8c4c4bdfb0b3616191355a19fa05bafc8/bioimageio-chatbot-0.1.96.tar.gz
+[2024-04-13 03:38:04] INFO root fetch - processPackages [bioimageio-chatbot]: executing diffoscope
+[2024-04-13 03:38:04] INFO root fetch - processPackages [bioimageio-chatbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioimageio-chatbot-0.1.94.tar.gz tmp/bioimageio-chatbot-0.1.96.tar.gz --markdown 20240413/b/bioimageio-chatbot/0.1.94-0.1.96/README.md --exclude *.pyd
+[2024-04-13 03:38:04] INFO root fetch - processPackages [vtjson]: Remove: archive file [/home/abi/fetcher/tmp/vtjson-1.7.0.tar.gz]
+[2024-04-13 03:38:04] INFO root fetch - processPackages [vtjson]: Remove: archive file [/home/abi/fetcher/tmp/vtjson-1.7.1.tar.gz]
+[2024-04-13 03:38:04] INFO root fetch - main [MainThread]: End processing [vtjson]: success
+[2024-04-13 03:38:04] INFO root fetch - processPackages [bioimageio-chatbot]: Remove: archive file [/home/abi/fetcher/tmp/bioimageio-chatbot-0.1.94.tar.gz]
+[2024-04-13 03:38:04] INFO root fetch - processPackages [bioimageio-chatbot]: Remove: archive file [/home/abi/fetcher/tmp/bioimageio-chatbot-0.1.96.tar.gz]
+[2024-04-13 03:38:04] INFO root fetch - main [MainThread]: End processing [bioimageio-chatbot]: success
+[2024-04-13 03:38:04] INFO root fetch - main [MainThread]: Store serial: [22748847]
