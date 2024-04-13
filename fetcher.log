@@ -18971,3 +18971,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 21:10:08] INFO root fetch - processPackages [pydapper]: Remove: archive file [/home/abi/fetcher/tmp/pydapper-0.9.0.tar.gz]
 [2024-04-13 21:10:08] INFO root fetch - main [MainThread]: End processing [pydapper]: success
 [2024-04-13 21:10:08] INFO root fetch - main [MainThread]: Store serial: [22754168]
+[2024-04-13 21:12:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754168]
+[2024-04-13 21:12:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 21:12:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: internet-domain-local
+[2024-04-13 21:12:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytest-sphinx
+[2024-04-13 21:12:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hardware-control
+[2024-04-13 21:12:17] INFO root fetch - processPackages [pytest-sphinx]: New version: [0.6.3] Old Version: [0.6.2]
+[2024-04-13 21:12:17] INFO root fetch - processPackages [internet-domain-local]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-13 21:12:17] INFO root fetch - processPackages [hardware-control]: New version: [3.1.0] Old Version: [3.0.1]
+[2024-04-13 21:12:17] INFO root fetch - processPackages [pytest-sphinx]: Downloading https://files.pythonhosted.org/packages/9a/f4/83d31c7212c4ecc3a784cf1fd7d2c3c3e605e5bcfe287b6364074f4353c4/pytest-sphinx-0.6.2.tar.gz
+[2024-04-13 21:12:17] INFO root fetch - processPackages [internet-domain-local]: Downloading https://files.pythonhosted.org/packages/cb/ee/dd5695ec4ce5e2a0be47dfd039482e0e2e81b8bb11c51666b62e0db41a2f/internet-domain-local-0.0.3.tar.gz
+[2024-04-13 21:12:18] INFO root fetch - processPackages [hardware-control]: Downloading https://files.pythonhosted.org/packages/69/ab/337c34ad4940c3ffd71e9b769a2ca8f4f832bf558094ec6b029e2a972ee8/hardware-control-3.0.1.tar.gz
+[2024-04-13 21:12:18] INFO root fetch - processPackages [internet-domain-local]: Downloading https://files.pythonhosted.org/packages/d1/e8/b18f1876e6653495f1e96c97b5b1379f4a355a22f73d8e565d3642f8815b/internet_domain_local-0.0.4.tar.gz
+[2024-04-13 21:12:18] INFO root fetch - processPackages [pytest-sphinx]: Downloading https://files.pythonhosted.org/packages/8f/12/a6e99712955b7057accbe43f7f709cf212e6fc00f570bfdc93574335ba5b/pytest_sphinx-0.6.3.tar.gz
+[2024-04-13 21:12:18] INFO root fetch - processPackages [internet-domain-local]: executing diffoscope
+[2024-04-13 21:12:18] INFO root fetch - processPackages [internet-domain-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/internet-domain-local-0.0.3.tar.gz tmp/internet_domain_local-0.0.4.tar.gz --markdown 20240413/i/internet-domain-local/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-13 21:12:18] INFO root fetch - processPackages [pytest-sphinx]: executing diffoscope
+[2024-04-13 21:12:18] INFO root fetch - processPackages [pytest-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-sphinx-0.6.2.tar.gz tmp/pytest_sphinx-0.6.3.tar.gz --markdown 20240413/p/pytest-sphinx/0.6.2-0.6.3/README.md --exclude *.pyd
+[2024-04-13 21:12:18] WARNING root fetch - processPackages [hardware-control]: Skipping package: exceeds size limit 11530380>=10485760
+[2024-04-13 21:12:18] INFO root fetch - main [MainThread]: End processing [hardware-control] error
+[2024-04-13 21:12:18] INFO root fetch - processPackages [internet-domain-local]: Remove: archive file [/home/abi/fetcher/tmp/internet-domain-local-0.0.3.tar.gz]
+[2024-04-13 21:12:18] INFO root fetch - processPackages [internet-domain-local]: Remove: archive file [/home/abi/fetcher/tmp/internet_domain_local-0.0.4.tar.gz]
+[2024-04-13 21:12:18] INFO root fetch - main [MainThread]: End processing [internet-domain-local]: success
+[2024-04-13 21:12:19] INFO root fetch - processPackages [pytest-sphinx]: Remove: archive file [/home/abi/fetcher/tmp/pytest-sphinx-0.6.2.tar.gz]
+[2024-04-13 21:12:19] INFO root fetch - processPackages [pytest-sphinx]: Remove: archive file [/home/abi/fetcher/tmp/pytest_sphinx-0.6.3.tar.gz]
+[2024-04-13 21:12:19] INFO root fetch - main [MainThread]: End processing [pytest-sphinx]: success
+[2024-04-13 21:12:19] INFO root fetch - main [MainThread]: Store serial: [22754176]
