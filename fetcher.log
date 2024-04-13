@@ -10223,3 +10223,33 @@
 [2024-04-13 09:40:37] INFO root fetch - processPackages [pulumi-gcp]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_gcp-7.9.0a1707934510.tar.gz]
 [2024-04-13 09:40:37] INFO root fetch - main [MainThread]: End processing [pulumi-gcp]: success
 [2024-04-13 09:40:37] INFO root fetch - main [MainThread]: Store serial: [22750263]
+[2024-04-13 09:42:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750263]
+[2024-04-13 09:42:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 09:42:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nlpmining
+[2024-04-13 09:42:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: movinglines
+[2024-04-13 09:42:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-musicpd
+[2024-04-13 09:42:46] INFO root fetch - processPackages [nlpmining]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-13 09:42:46] INFO root fetch - processPackages [nlpmining]: Downloading https://files.pythonhosted.org/packages/24/15/bb6a33616bb3b512e3a3da0b7ee3cae3a7d4b7df5ca3e19754e845ec6ecd/nlpmining-0.0.3.tar.gz
+[2024-04-13 09:42:46] INFO root fetch - processPackages [movinglines]: New version: [1.50] Old Version: [1.48]
+[2024-04-13 09:42:46] INFO root fetch - processPackages [python-musicpd]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-13 09:42:46] INFO root fetch - processPackages [movinglines]: Downloading https://files.pythonhosted.org/packages/4d/9d/9242690cdffb10795fb345a160dfc0f35153d7b6fb4081018a5c5a8f6b46/movinglines-1.48.tar.gz
+[2024-04-13 09:42:46] INFO root fetch - processPackages [python-musicpd]: Downloading https://files.pythonhosted.org/packages/6e/63/167108391d14517be2735c72cb85fa429528801e73a44e7d3ce8f435b4bd/python-musicpd-0.8.0.tar.gz
+[2024-04-13 09:42:46] INFO root fetch - processPackages [nlpmining]: Downloading https://files.pythonhosted.org/packages/f8/ff/170ac097d5f83d1de8760e23f98f2fd949e0162c6afffc417b7868cc4bd3/nlpmining-0.0.4.tar.gz
+[2024-04-13 09:42:47] INFO root fetch - processPackages [nlpmining]: executing diffoscope
+[2024-04-13 09:42:47] INFO root fetch - processPackages [nlpmining]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlpmining-0.0.3.tar.gz tmp/nlpmining-0.0.4.tar.gz --markdown 20240413/n/nlpmining/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-13 09:42:47] INFO root fetch - processPackages [python-musicpd]: Downloading https://files.pythonhosted.org/packages/e9/bd/03fe4735ca2be80bd9aff7309b630a58bc203313b20ecef45fa6f85740c9/python-musicpd-0.9.0.tar.gz
+[2024-04-13 09:42:47] INFO root fetch - processPackages [python-musicpd]: executing diffoscope
+[2024-04-13 09:42:47] INFO root fetch - processPackages [python-musicpd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-musicpd-0.8.0.tar.gz tmp/python-musicpd-0.9.0.tar.gz --markdown 20240413/p/python-musicpd/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-13 09:42:47] INFO root fetch - processPackages [movinglines]: Downloading https://files.pythonhosted.org/packages/db/51/9441fdc9bbebabd18e2b53545c1024b73f3df6c5782dbd8dd993f91667d5/movinglines-1.50.tar.gz
+[2024-04-13 09:42:47] INFO root fetch - processPackages [nlpmining]: Remove: archive file [/home/abi/fetcher/tmp/nlpmining-0.0.3.tar.gz]
+[2024-04-13 09:42:47] INFO root fetch - processPackages [nlpmining]: Remove: archive file [/home/abi/fetcher/tmp/nlpmining-0.0.4.tar.gz]
+[2024-04-13 09:42:47] INFO root fetch - main [MainThread]: End processing [nlpmining]: success
+[2024-04-13 09:42:47] INFO root fetch - processPackages [movinglines]: executing diffoscope
+[2024-04-13 09:42:47] INFO root fetch - processPackages [movinglines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/movinglines-1.48.tar.gz tmp/movinglines-1.50.tar.gz --markdown 20240413/m/movinglines/1.48-1.50/README.md --exclude *.pyd
+[2024-04-13 09:42:47] INFO root fetch - processPackages [python-musicpd]: Remove: archive file [/home/abi/fetcher/tmp/python-musicpd-0.8.0.tar.gz]
+[2024-04-13 09:42:47] INFO root fetch - processPackages [python-musicpd]: Remove: archive file [/home/abi/fetcher/tmp/python-musicpd-0.9.0.tar.gz]
+[2024-04-13 09:42:47] INFO root fetch - main [MainThread]: End processing [python-musicpd]: success
+[2024-04-13 09:42:49] INFO root fetch - processPackages [movinglines]: Remove: archive file [/home/abi/fetcher/tmp/movinglines-1.48.tar.gz]
+[2024-04-13 09:42:49] INFO root fetch - processPackages [movinglines]: Remove: archive file [/home/abi/fetcher/tmp/movinglines-1.50.tar.gz]
+[2024-04-13 09:42:49] INFO root fetch - main [MainThread]: End processing [movinglines]: success
+[2024-04-13 09:42:49] INFO root fetch - main [MainThread]: Store serial: [22750271]
