@@ -19726,3 +19726,19 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 22:16:24] INFO root fetch - processPackages [maadsbml]: Remove: archive file [/home/abi/fetcher/tmp/maadsbml-1.3.9.tar.gz]
 [2024-04-13 22:16:24] INFO root fetch - main [MainThread]: End processing [maadsbml]: success
 [2024-04-13 22:16:24] INFO root fetch - main [MainThread]: Store serial: [22754533]
+[2024-04-13 22:18:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754533]
+[2024-04-13 22:18:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 22:18:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dlrepo
+[2024-04-13 22:18:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: whishow
+[2024-04-13 22:18:33] INFO root fetch - processPackages [whishow]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-13 22:18:33] INFO root fetch - processPackages [dlrepo]: New version: [0.8] Old Version: [0.5]
+[2024-04-13 22:18:33] ERROR root fetch - processPackages [whishow]: Unable to fetch info: No such project/version 'whishow' 1.1.0
+[2024-04-13 22:18:33] INFO root fetch - main [MainThread]: End processing [whishow] error
+[2024-04-13 22:18:33] INFO root fetch - processPackages [dlrepo]: Downloading https://files.pythonhosted.org/packages/ea/7d/7d633a3078383fce2e80b0adc704d384eb0d475e3d0dc825dd5b48785aff/dlrepo-0.5.tar.gz
+[2024-04-13 22:18:34] INFO root fetch - processPackages [dlrepo]: Downloading https://files.pythonhosted.org/packages/b8/fa/62c4d1e1fbf543c64567bf83751121578f9b51c70976f90b5b41eb48b83b/dlrepo-0.8.tar.gz
+[2024-04-13 22:18:34] INFO root fetch - processPackages [dlrepo]: executing diffoscope
+[2024-04-13 22:18:34] INFO root fetch - processPackages [dlrepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dlrepo-0.5.tar.gz tmp/dlrepo-0.8.tar.gz --markdown 20240413/d/dlrepo/0.5-0.8/README.md --exclude *.pyd
+[2024-04-13 22:18:35] INFO root fetch - processPackages [dlrepo]: Remove: archive file [/home/abi/fetcher/tmp/dlrepo-0.5.tar.gz]
+[2024-04-13 22:18:35] INFO root fetch - processPackages [dlrepo]: Remove: archive file [/home/abi/fetcher/tmp/dlrepo-0.8.tar.gz]
+[2024-04-13 22:18:35] INFO root fetch - main [MainThread]: End processing [dlrepo]: success
+[2024-04-13 22:18:35] INFO root fetch - main [MainThread]: Store serial: [22754549]
