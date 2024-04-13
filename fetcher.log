@@ -6629,3 +6629,33 @@
 [2024-04-13 03:40:17] INFO root fetch - processPackages [nuon]: Remove: archive file [/home/abi/fetcher/tmp/nuon-0.19.98.tar.gz]
 [2024-04-13 03:40:17] INFO root fetch - main [MainThread]: End processing [nuon]: success
 [2024-04-13 03:40:17] INFO root fetch - main [MainThread]: Store serial: [22748855]
+[2024-04-13 03:42:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748855]
+[2024-04-13 03:42:25] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 03:44:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748855]
+[2024-04-13 03:44:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 03:44:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netron
+[2024-04-13 03:44:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: modal
+[2024-04-13 03:44:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: modal-client
+[2024-04-13 03:44:31] INFO root fetch - processPackages [modal]: New version: [0.62.9] Old Version: [0.62.8]
+[2024-04-13 03:44:31] INFO root fetch - processPackages [modal-client]: New version: [0.62.9] Old Version: [0.62.8]
+[2024-04-13 03:44:31] INFO root fetch - processPackages [netron]: New version: [7.5.9] Old Version: [7.5.8]
+[2024-04-13 03:44:31] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/8a/dd/32da92c8c574400929f770cfc5c78136ebc7b566de71c8e84a423d0ee9cc/modal-0.62.8-py3-none-any.whl
+[2024-04-13 03:44:31] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/d0/c2/c05a679647fc54f88ed4f2453aec5ec1ea866c5ddaf1d85b52981f84c662/modal_client-0.62.8-py3-none-any.whl
+[2024-04-13 03:44:31] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/08/2d/ba9d3e39c32f579d689b9f619a197109b7086b3f8e0764e5eed9501a303e/modal_client-0.62.9-py3-none-any.whl
+[2024-04-13 03:44:31] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/c0/f7/8dd227328bcea0baf27836ce9f00c26e7e27195101883dc782c55387e12f/modal-0.62.9-py3-none-any.whl
+[2024-04-13 03:44:31] INFO root fetch - processPackages [modal-client]: executing diffoscope
+[2024-04-13 03:44:31] INFO root fetch - processPackages [modal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal_client-0.62.8-py3-none-any.whl.zip tmp/modal_client-0.62.9-py3-none-any.whl.zip --markdown 20240413/m/modal-client/0.62.8-0.62.9/README.md --exclude *.pyd
+[2024-04-13 03:44:31] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/34/18/8ed6c49523f51c7bc894f7e3b10244cd96f1702049c094888a7a206c0696/netron-7.5.9-py3-none-any.whl
+[2024-04-13 03:44:31] INFO root fetch - processPackages [modal]: executing diffoscope
+[2024-04-13 03:44:31] INFO root fetch - processPackages [modal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal-0.62.8-py3-none-any.whl.zip tmp/modal-0.62.9-py3-none-any.whl.zip --markdown 20240413/m/modal/0.62.8-0.62.9/README.md --exclude *.pyd
+[2024-04-13 03:44:31] INFO root fetch - processPackages [netron]: executing diffoscope
+[2024-04-13 03:44:31] INFO root fetch - processPackages [netron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netron-7.5.8-py3-none-any.whl.zip tmp/netron-7.5.9-py3-none-any.whl.zip --markdown 20240413/n/netron/7.5.8-7.5.9/README.md --exclude *.pyd
+[2024-04-13 03:44:32] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.8-py3-none-any.whl.zip]
+[2024-04-13 03:44:32] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.9-py3-none-any.whl.zip]
+[2024-04-13 03:44:32] INFO root fetch - main [MainThread]: End processing [modal-client]: success
+[2024-04-13 03:44:32] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.8-py3-none-any.whl.zip]
+[2024-04-13 03:44:32] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.9-py3-none-any.whl.zip]
+[2024-04-13 03:44:32] INFO root fetch - main [MainThread]: End processing [modal]: success
+[2024-04-13 03:47:32] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
+[2024-04-13 03:47:32] INFO root fetch - main [MainThread]: End processing [netron] error
+[2024-04-13 03:47:32] INFO root fetch - main [MainThread]: Store serial: [22748863]
