@@ -11649,3 +11649,24 @@
 [2024-04-13 11:34:08] INFO root fetch - processPackages [amazon-sagemaker-sql-execution]: Remove: archive file [/home/abi/fetcher/tmp/amazon_sagemaker_sql_execution-0.1.4.tar.gz]
 [2024-04-13 11:34:08] INFO root fetch - main [MainThread]: End processing [amazon-sagemaker-sql-execution]: success
 [2024-04-13 11:34:08] INFO root fetch - main [MainThread]: Store serial: [22750907]
+[2024-04-13 11:36:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750907]
+[2024-04-13 11:36:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 11:36:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyqie
+[2024-04-13 11:36:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quant2
+[2024-04-13 11:36:17] INFO root fetch - processPackages [pyqie]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-13 11:36:17] INFO root fetch - processPackages [quant2]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 11:36:17] INFO root fetch - processPackages [pyqie]: Downloading https://files.pythonhosted.org/packages/1e/b7/411c9318d2447243768d1afd0a20e04c4f633275bbdd366ae75be6e04e9e/pyqie-0.0.1-cp37-abi3-win_amd64.whl
+[2024-04-13 11:36:17] INFO root fetch - processPackages [quant2]: Downloading https://files.pythonhosted.org/packages/11/bf/4225581d3021d37874804da989897221f25fc6c93fa5f1b07d38fcbf01d3/quant2-0.0.8.tar.gz
+[2024-04-13 11:36:18] INFO root fetch - processPackages [quant2]: Downloading https://files.pythonhosted.org/packages/14/b2/02902adfc8374a2d4e7cf6e11c97319142fb7a2f1565e78bcc91dd0cd825/quant2-0.0.9.tar.gz
+[2024-04-13 11:36:18] INFO root fetch - processPackages [pyqie]: Downloading https://files.pythonhosted.org/packages/4b/7d/97a60ef97d73afa618998d15c7708024ab422be7f5c080f094530789d7cc/pyqie-0.0.2-cp37-abi3-win_amd64.whl
+[2024-04-13 11:36:18] INFO root fetch - processPackages [quant2]: executing diffoscope
+[2024-04-13 11:36:18] INFO root fetch - processPackages [quant2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quant2-0.0.8.tar.gz tmp/quant2-0.0.9.tar.gz --markdown 20240413/q/quant2/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 11:36:18] INFO root fetch - processPackages [pyqie]: executing diffoscope
+[2024-04-13 11:36:18] INFO root fetch - processPackages [pyqie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqie-0.0.1-cp37-abi3-win_amd64.whl.zip tmp/pyqie-0.0.2-cp37-abi3-win_amd64.whl.zip --markdown 20240413/p/pyqie/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-13 11:36:18] INFO root fetch - processPackages [quant2]: Remove: archive file [/home/abi/fetcher/tmp/quant2-0.0.8.tar.gz]
+[2024-04-13 11:36:18] INFO root fetch - processPackages [quant2]: Remove: archive file [/home/abi/fetcher/tmp/quant2-0.0.9.tar.gz]
+[2024-04-13 11:36:18] INFO root fetch - main [MainThread]: End processing [quant2]: success
+[2024-04-13 11:36:18] INFO root fetch - processPackages [pyqie]: Remove: archive file [/home/abi/fetcher/tmp/pyqie-0.0.1-cp37-abi3-win_amd64.whl.zip]
+[2024-04-13 11:36:18] INFO root fetch - processPackages [pyqie]: Remove: archive file [/home/abi/fetcher/tmp/pyqie-0.0.2-cp37-abi3-win_amd64.whl.zip]
+[2024-04-13 11:36:18] INFO root fetch - main [MainThread]: End processing [pyqie]: success
+[2024-04-13 11:36:18] INFO root fetch - main [MainThread]: Store serial: [22750914]
