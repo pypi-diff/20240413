@@ -2492,3 +2492,17 @@
 [2024-04-13 02:34:51] INFO root fetch - processPackages [pytplot-mpl-temp]: Remove: archive file [/home/abi/fetcher/tmp/pytplot-mpl-temp-2.2.9.tar.gz]
 [2024-04-13 02:34:51] INFO root fetch - main [MainThread]: End processing [pytplot-mpl-temp]: success
 [2024-04-13 02:34:51] INFO root fetch - main [MainThread]: Store serial: [22747440]
+[2024-04-13 02:36:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22747440]
+[2024-04-13 02:37:01] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 02:39:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22747442]
+[2024-04-13 02:39:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 02:39:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xian-contracting
+[2024-04-13 02:39:06] INFO root fetch - processPackages [xian-contracting]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-13 02:39:06] INFO root fetch - processPackages [xian-contracting]: Downloading https://files.pythonhosted.org/packages/b1/be/6f1830d22c27f4fb4a16528a97c6493fb40567c65cbc77932e4b36a227b4/xian_contracting-0.1.3.tar.gz
+[2024-04-13 02:39:06] INFO root fetch - processPackages [xian-contracting]: Downloading https://files.pythonhosted.org/packages/7c/82/e2e94bde6e65d4fe316b40433d1e24add48e366a580abd123cc9ed276a22/xian_contracting-0.1.4.tar.gz
+[2024-04-13 02:39:07] INFO root fetch - processPackages [xian-contracting]: executing diffoscope
+[2024-04-13 02:39:07] INFO root fetch - processPackages [xian-contracting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xian_contracting-0.1.3.tar.gz tmp/xian_contracting-0.1.4.tar.gz --markdown 20240413/x/xian-contracting/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-13 02:39:07] INFO root fetch - processPackages [xian-contracting]: Remove: archive file [/home/abi/fetcher/tmp/xian_contracting-0.1.3.tar.gz]
+[2024-04-13 02:39:07] INFO root fetch - processPackages [xian-contracting]: Remove: archive file [/home/abi/fetcher/tmp/xian_contracting-0.1.4.tar.gz]
+[2024-04-13 02:39:07] INFO root fetch - main [MainThread]: End processing [xian-contracting]: success
+[2024-04-13 02:39:07] INFO root fetch - main [MainThread]: Store serial: [22747445]
