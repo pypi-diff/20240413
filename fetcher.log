@@ -6492,3 +6492,24 @@
 [2024-04-13 03:24:09] INFO root fetch - processPackages [lamini]: Remove: archive file [/home/abi/fetcher/tmp/lamini-2.1.6-120-py3-none-any.whl.zip]
 [2024-04-13 03:24:09] INFO root fetch - main [MainThread]: End processing [lamini]: success
 [2024-04-13 03:24:09] INFO root fetch - main [MainThread]: Store serial: [22748817]
+[2024-04-13 03:26:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748817]
+[2024-04-13 03:26:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 03:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: micropython-senml
+[2024-04-13 03:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: liveplotlib
+[2024-04-13 03:26:18] INFO root fetch - processPackages [liveplotlib]: New version: [0.3] Old Version: [0.2]
+[2024-04-13 03:26:18] INFO root fetch - processPackages [liveplotlib]: Downloading https://files.pythonhosted.org/packages/6a/14/e035dd296428c94aae0209c990c8490f0086e7c6a50b30c914f4878043ab/liveplotlib-0.2.tar.gz
+[2024-04-13 03:26:18] INFO root fetch - processPackages [micropython-senml]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 03:26:18] INFO root fetch - processPackages [micropython-senml]: Downloading https://files.pythonhosted.org/packages/06/69/752e9bfaf4308852f9f30716d12deb4f901a3ae41abeb21c4d7ebf4bdf49/micropython_senml-0.1.0-py2.py3-none-any.whl
+[2024-04-13 03:26:18] INFO root fetch - processPackages [liveplotlib]: Downloading https://files.pythonhosted.org/packages/f4/21/ad2bad99148527e36d114a2a88201f38d0d5408bdcc92d33b865cf4938f7/liveplotlib-0.3.tar.gz
+[2024-04-13 03:26:18] INFO root fetch - processPackages [liveplotlib]: executing diffoscope
+[2024-04-13 03:26:18] INFO root fetch - processPackages [liveplotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liveplotlib-0.2.tar.gz tmp/liveplotlib-0.3.tar.gz --markdown 20240413/l/liveplotlib/0.2-0.3/README.md --exclude *.pyd
+[2024-04-13 03:26:18] INFO root fetch - processPackages [micropython-senml]: Downloading https://files.pythonhosted.org/packages/3c/b8/50f74f326b863728e58c7851ab7b2f964e33dc28fbd2a7a358e2351bc585/micropython_senml-0.1.1-py2.py3-none-any.whl
+[2024-04-13 03:26:18] INFO root fetch - processPackages [micropython-senml]: executing diffoscope
+[2024-04-13 03:26:18] INFO root fetch - processPackages [micropython-senml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micropython_senml-0.1.0-py2.py3-none-any.whl.zip tmp/micropython_senml-0.1.1-py2.py3-none-any.whl.zip --markdown 20240413/m/micropython-senml/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 03:26:19] INFO root fetch - processPackages [liveplotlib]: Remove: archive file [/home/abi/fetcher/tmp/liveplotlib-0.2.tar.gz]
+[2024-04-13 03:26:19] INFO root fetch - processPackages [liveplotlib]: Remove: archive file [/home/abi/fetcher/tmp/liveplotlib-0.3.tar.gz]
+[2024-04-13 03:26:19] INFO root fetch - main [MainThread]: End processing [liveplotlib]: success
+[2024-04-13 03:26:19] INFO root fetch - processPackages [micropython-senml]: Remove: archive file [/home/abi/fetcher/tmp/micropython_senml-0.1.0-py2.py3-none-any.whl.zip]
+[2024-04-13 03:26:19] INFO root fetch - processPackages [micropython-senml]: Remove: archive file [/home/abi/fetcher/tmp/micropython_senml-0.1.1-py2.py3-none-any.whl.zip]
+[2024-04-13 03:26:19] INFO root fetch - main [MainThread]: End processing [micropython-senml]: success
+[2024-04-13 03:26:19] INFO root fetch - main [MainThread]: Store serial: [22748822]
