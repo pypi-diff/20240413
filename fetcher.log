@@ -19547,3 +19547,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 22:03:22] INFO root fetch - processPackages [odoo-addon-database-cleanup]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_database_cleanup-17.0.1.0.0.5-py3-none-any.whl.zip]
 [2024-04-13 22:03:22] INFO root fetch - main [MainThread]: End processing [odoo-addon-database-cleanup]: success
 [2024-04-13 22:03:22] INFO root fetch - main [MainThread]: Store serial: [22754466]
+[2024-04-13 22:05:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754466]
+[2024-04-13 22:05:32] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 22:07:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754466]
+[2024-04-13 22:07:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 22:07:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: curseforge
+[2024-04-13 22:07:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langfuse
+[2024-04-13 22:07:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aim-ui
+[2024-04-13 22:07:37] INFO root fetch - processPackages [aim-ui]: New version: [4.1.0.dev20230930] Old Version: [4.1.0.dev20230929]
+[2024-04-13 22:07:37] INFO root fetch - processPackages [langfuse]: New version: [2.9.2] Old Version: [2.9.1a0]
+[2024-04-13 22:07:37] INFO root fetch - processPackages [curseforge]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-04-13 22:07:37] INFO root fetch - processPackages [langfuse]: Downloading https://files.pythonhosted.org/packages/43/38/4a1023711cee549cb5f62c09965d08724e93f5cac8e7dcd2becd75f7b302/langfuse-2.9.1a0.tar.gz
+[2024-04-13 22:07:37] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/2a/05/f8c2e155a815903b692d80c9a1647ba25d4a1f119791eaeb671026bcfa33/aim-ui-4.1.0.dev20230929.tar.gz
+[2024-04-13 22:07:38] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 19246573>=10485760
+[2024-04-13 22:07:38] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2024-04-13 22:07:38] INFO root fetch - processPackages [curseforge]: Downloading https://files.pythonhosted.org/packages/14/dd/f3044503e26d7852e4021a75fd36c92612d2e57a84408a6b2cb1d949d4fc/curseforge-1.6.0.tar.gz
+[2024-04-13 22:07:38] INFO root fetch - processPackages [langfuse]: Downloading https://files.pythonhosted.org/packages/71/c4/6571f0f3c2539390fbd49ca27636f5611971c2b1f9f15fae183b3c67838c/langfuse-2.9.2.tar.gz
+[2024-04-13 22:07:38] INFO root fetch - processPackages [langfuse]: executing diffoscope
+[2024-04-13 22:07:38] INFO root fetch - processPackages [langfuse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langfuse-2.9.1a0.tar.gz tmp/langfuse-2.9.2.tar.gz --markdown 20240413/l/langfuse/2.9.1a0-2.9.2/README.md --exclude *.pyd
+[2024-04-13 22:07:38] INFO root fetch - processPackages [curseforge]: Downloading https://files.pythonhosted.org/packages/ef/ed/812042c0af9840000a43c9846835cbafc8a6342bb6d9c9e238881d641015/curseforge-1.6.1.tar.gz
+[2024-04-13 22:07:38] INFO root fetch - processPackages [curseforge]: executing diffoscope
+[2024-04-13 22:07:38] INFO root fetch - processPackages [curseforge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/curseforge-1.6.0.tar.gz tmp/curseforge-1.6.1.tar.gz --markdown 20240413/c/curseforge/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-04-13 22:07:39] INFO root fetch - processPackages [curseforge]: Remove: archive file [/home/abi/fetcher/tmp/curseforge-1.6.0.tar.gz]
+[2024-04-13 22:07:39] INFO root fetch - processPackages [curseforge]: Remove: archive file [/home/abi/fetcher/tmp/curseforge-1.6.1.tar.gz]
+[2024-04-13 22:07:39] INFO root fetch - main [MainThread]: End processing [curseforge]: success
+[2024-04-13 22:07:39] INFO root fetch - processPackages [langfuse]: Remove: archive file [/home/abi/fetcher/tmp/langfuse-2.9.1a0.tar.gz]
+[2024-04-13 22:07:39] INFO root fetch - processPackages [langfuse]: Remove: archive file [/home/abi/fetcher/tmp/langfuse-2.9.2.tar.gz]
+[2024-04-13 22:07:39] INFO root fetch - main [MainThread]: End processing [langfuse]: success
+[2024-04-13 22:07:39] INFO root fetch - main [MainThread]: Store serial: [22754474]
