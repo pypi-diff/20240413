@@ -8939,3 +8939,42 @@
 [2024-04-13 08:21:23] INFO root fetch - processPackages [pulumi-kafka]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kafka-3.8.0a1712987270.tar.gz]
 [2024-04-13 08:21:23] INFO root fetch - main [MainThread]: End processing [pulumi-kafka]: success
 [2024-04-13 08:21:23] INFO root fetch - main [MainThread]: Store serial: [22749837]
+[2024-04-13 08:23:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749837]
+[2024-04-13 08:23:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 08:23:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-base-tier-validation
+[2024-04-13 08:23:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addons-oca-server-ux
+[2024-04-13 08:23:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: masspds2024
+[2024-04-13 08:23:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alembic-postgresql-enum
+[2024-04-13 08:23:32] INFO root fetch - processPackages [masspds2024]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-13 08:23:32] INFO root fetch - processPackages [odoo-addons-oca-server-ux]: New version: [16.0.20240412.0] Old Version: [16.0.20240228.0]
+[2024-04-13 08:23:32] INFO root fetch - processPackages [alembic-postgresql-enum]: New version: [1.2.0a1] Old Version: [1.2.0]
+[2024-04-13 08:23:32] INFO root fetch - processPackages [odoo-addon-base-tier-validation]: New version: [17.0.1.5.0.2] Old Version: [17.0.1.5.0.1]
+[2024-04-13 08:23:32] INFO root fetch - processPackages [masspds2024]: Downloading https://files.pythonhosted.org/packages/f6/00/a0c5bd33d857555705d4a8afc1e7192554aafe4c50621c27d0d603ac6e80/masspds2024-0.0.1.tar.gz
+[2024-04-13 08:23:32] INFO root fetch - processPackages [odoo-addons-oca-server-ux]: Downloading https://files.pythonhosted.org/packages/27/1c/2bfe073c60996fc0a49bc3c1ab9f52ecf35cf3d17208bc10f6df381062ed/odoo_addons_oca_server_ux-16.0.20240228.0-py3-none-any.whl
+[2024-04-13 08:23:32] INFO root fetch - processPackages [alembic-postgresql-enum]: Downloading https://files.pythonhosted.org/packages/8f/57/a5c46c07837e23bf764ee7577779cd3ca342301841230d75f5c152316480/alembic_postgresql_enum-1.2.0.tar.gz
+[2024-04-13 08:23:32] INFO root fetch - processPackages [odoo-addon-base-tier-validation]: Downloading https://files.pythonhosted.org/packages/d6/f5/cffc15895c9b2a85eec556f57c584168314c955ec121163449f202607a57/odoo_addon_base_tier_validation-17.0.1.5.0.1-py3-none-any.whl
+[2024-04-13 08:23:33] INFO root fetch - processPackages [masspds2024]: Downloading https://files.pythonhosted.org/packages/56/f7/05ebe5c966b0d8e73a3521792728d4a0eaf724dc6259bc16cfab10563297/masspds2024-0.0.2.tar.gz
+[2024-04-13 08:23:33] INFO root fetch - processPackages [odoo-addons-oca-server-ux]: Downloading https://files.pythonhosted.org/packages/d6/0f/9d8c085e7580e37f326d037d9f9d15fe400c54baf64edf69277ff28b1876/odoo_addons_oca_server_ux-16.0.20240412.0-py3-none-any.whl
+[2024-04-13 08:23:33] INFO root fetch - processPackages [odoo-addon-base-tier-validation]: Downloading https://files.pythonhosted.org/packages/0c/fd/bdd61ca3ffe36d9b7c38966e345e7c67d9923669e1da7e839f5a765b867e/odoo_addon_base_tier_validation-17.0.1.5.0.2-py3-none-any.whl
+[2024-04-13 08:23:33] INFO root fetch - processPackages [masspds2024]: executing diffoscope
+[2024-04-13 08:23:33] INFO root fetch - processPackages [masspds2024]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/masspds2024-0.0.1.tar.gz tmp/masspds2024-0.0.2.tar.gz --markdown 20240413/m/masspds2024/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-13 08:23:33] INFO root fetch - processPackages [odoo-addons-oca-server-ux]: executing diffoscope
+[2024-04-13 08:23:33] INFO root fetch - processPackages [odoo-addons-oca-server-ux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_server_ux-16.0.20240228.0-py3-none-any.whl.zip tmp/odoo_addons_oca_server_ux-16.0.20240412.0-py3-none-any.whl.zip --markdown 20240413/o/odoo-addons-oca-server-ux/16.0.20240228.0-16.0.20240412.0/README.md --exclude *.pyd
+[2024-04-13 08:23:33] INFO root fetch - processPackages [alembic-postgresql-enum]: Downloading https://files.pythonhosted.org/packages/94/bf/8b1c529ba4b4379f1df3585e356cceab826d93f938cf168ef13db9f4de92/alembic_postgresql_enum-1.2.0a1.tar.gz
+[2024-04-13 08:23:33] INFO root fetch - processPackages [odoo-addon-base-tier-validation]: executing diffoscope
+[2024-04-13 08:23:33] INFO root fetch - processPackages [odoo-addon-base-tier-validation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_tier_validation-17.0.1.5.0.1-py3-none-any.whl.zip tmp/odoo_addon_base_tier_validation-17.0.1.5.0.2-py3-none-any.whl.zip --markdown 20240413/o/odoo-addon-base-tier-validation/17.0.1.5.0.1-17.0.1.5.0.2/README.md --exclude *.pyd
+[2024-04-13 08:23:33] INFO root fetch - processPackages [alembic-postgresql-enum]: executing diffoscope
+[2024-04-13 08:23:33] INFO root fetch - processPackages [alembic-postgresql-enum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alembic_postgresql_enum-1.2.0.tar.gz tmp/alembic_postgresql_enum-1.2.0a1.tar.gz --markdown 20240413/a/alembic-postgresql-enum/1.2.0-1.2.0a1/README.md --exclude *.pyd
+[2024-04-13 08:23:33] INFO root fetch - processPackages [masspds2024]: Remove: archive file [/home/abi/fetcher/tmp/masspds2024-0.0.1.tar.gz]
+[2024-04-13 08:23:33] INFO root fetch - processPackages [masspds2024]: Remove: archive file [/home/abi/fetcher/tmp/masspds2024-0.0.2.tar.gz]
+[2024-04-13 08:23:33] INFO root fetch - main [MainThread]: End processing [masspds2024]: success
+[2024-04-13 08:23:33] INFO root fetch - processPackages [odoo-addons-oca-server-ux]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_server_ux-16.0.20240228.0-py3-none-any.whl.zip]
+[2024-04-13 08:23:33] INFO root fetch - processPackages [odoo-addons-oca-server-ux]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_server_ux-16.0.20240412.0-py3-none-any.whl.zip]
+[2024-04-13 08:23:33] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-server-ux]: success
+[2024-04-13 08:23:34] INFO root fetch - processPackages [alembic-postgresql-enum]: Remove: archive file [/home/abi/fetcher/tmp/alembic_postgresql_enum-1.2.0.tar.gz]
+[2024-04-13 08:23:34] INFO root fetch - processPackages [alembic-postgresql-enum]: Remove: archive file [/home/abi/fetcher/tmp/alembic_postgresql_enum-1.2.0a1.tar.gz]
+[2024-04-13 08:23:34] INFO root fetch - main [MainThread]: End processing [alembic-postgresql-enum]: success
+[2024-04-13 08:23:34] INFO root fetch - processPackages [odoo-addon-base-tier-validation]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_tier_validation-17.0.1.5.0.1-py3-none-any.whl.zip]
+[2024-04-13 08:23:34] INFO root fetch - processPackages [odoo-addon-base-tier-validation]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_tier_validation-17.0.1.5.0.2-py3-none-any.whl.zip]
+[2024-04-13 08:23:34] INFO root fetch - main [MainThread]: End processing [odoo-addon-base-tier-validation]: success
+[2024-04-13 08:23:34] INFO root fetch - main [MainThread]: Store serial: [22749847]
