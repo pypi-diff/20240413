@@ -14937,3 +14937,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:02:21] INFO root fetch - processPackages [django-mptt-admin]: Remove: archive file [/home/abi/fetcher/tmp/django-mptt-admin-2.6.2.tar.gz]
 [2024-04-13 16:02:21] INFO root fetch - main [MainThread]: End processing [django-mptt-admin]: success
 [2024-04-13 16:02:21] INFO root fetch - main [MainThread]: Store serial: [22752360]
+[2024-04-13 16:04:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752360]
+[2024-04-13 16:04:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 16:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: galapy-core
+[2024-04-13 16:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ConnectedPapersExtractor
+[2024-04-13 16:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: socx
+[2024-04-13 16:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: streamlord
+[2024-04-13 16:04:30] INFO root fetch - processPackages [galapy-core]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-13 16:04:30] INFO root fetch - processPackages [galapy-core]: Downloading https://files.pythonhosted.org/packages/f3/35/aa35bc3cefd1ede43f4e072482ac7488b3eac36065e3bb6493b4e3a9884f/galapy_core-0.2.2.tar.gz
+[2024-04-13 16:04:30] INFO root fetch - processPackages [socx]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 16:04:30] WARNING root fetch - processPackages [ConnectedPapersExtractor]: Skipping, unable to determine old version
+[2024-04-13 16:04:30] INFO root fetch - main [MainThread]: End processing [ConnectedPapersExtractor] error
+[2024-04-13 16:04:30] WARNING root fetch - processPackages [streamlord]: Skipping, unable to determine old version
+[2024-04-13 16:04:30] INFO root fetch - main [MainThread]: End processing [streamlord] error
+[2024-04-13 16:04:31] INFO root fetch - processPackages [socx]: Downloading https://files.pythonhosted.org/packages/82/95/f5d3935c0b33d327c142ea78f25760d46ee428053289bc8b5d8ba2207d31/socx-0.0.8.tar.gz
+[2024-04-13 16:04:31] INFO root fetch - processPackages [galapy-core]: Downloading https://files.pythonhosted.org/packages/08/21/9ba229c545c46f3d7472136c3e838f2f8cb879c9b93d0e05537ee20805d4/galapy_core-0.2.3.tar.gz
+[2024-04-13 16:04:31] INFO root fetch - processPackages [galapy-core]: executing diffoscope
+[2024-04-13 16:04:31] INFO root fetch - processPackages [galapy-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/galapy_core-0.2.2.tar.gz tmp/galapy_core-0.2.3.tar.gz --markdown 20240413/g/galapy-core/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-13 16:04:31] INFO root fetch - processPackages [socx]: Downloading https://files.pythonhosted.org/packages/e7/45/9e1d6bf91fde40025eb3f0fbb18c735eac5cd57a04154c8f06252ec0ae83/socx-0.0.9.tar.gz
+[2024-04-13 16:04:31] INFO root fetch - processPackages [socx]: executing diffoscope
+[2024-04-13 16:04:31] INFO root fetch - processPackages [socx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/socx-0.0.8.tar.gz tmp/socx-0.0.9.tar.gz --markdown 20240413/s/socx/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 16:04:31] INFO root fetch - processPackages [galapy-core]: Remove: archive file [/home/abi/fetcher/tmp/galapy_core-0.2.2.tar.gz]
+[2024-04-13 16:04:31] INFO root fetch - processPackages [galapy-core]: Remove: archive file [/home/abi/fetcher/tmp/galapy_core-0.2.3.tar.gz]
+[2024-04-13 16:04:31] INFO root fetch - main [MainThread]: End processing [galapy-core]: success
+[2024-04-13 16:04:32] INFO root fetch - processPackages [socx]: Remove: archive file [/home/abi/fetcher/tmp/socx-0.0.8.tar.gz]
+[2024-04-13 16:04:32] INFO root fetch - processPackages [socx]: Remove: archive file [/home/abi/fetcher/tmp/socx-0.0.9.tar.gz]
+[2024-04-13 16:04:32] INFO root fetch - main [MainThread]: End processing [socx]: success
+[2024-04-13 16:04:32] INFO root fetch - main [MainThread]: Store serial: [22752378]
