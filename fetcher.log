@@ -12016,3 +12016,42 @@
 [2024-04-13 12:13:28] INFO root fetch - processPackages [wwpdb.apps.msgmodule]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.apps.msgmodule-0.176.1.tar.gz]
 [2024-04-13 12:13:28] INFO root fetch - main [MainThread]: End processing [wwpdb.apps.msgmodule]: success
 [2024-04-13 12:13:28] INFO root fetch - main [MainThread]: Store serial: [22751062]
+[2024-04-13 12:15:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751062]
+[2024-04-13 12:15:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 12:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tck
+[2024-04-13 12:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wwpdb.apps.editormodule
+[2024-04-13 12:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: outpostkit
+[2024-04-13 12:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: monzo-utils
+[2024-04-13 12:15:36] INFO root fetch - processPackages [tck]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-04-13 12:15:36] INFO root fetch - processPackages [tck]: Downloading https://files.pythonhosted.org/packages/b2/56/b50d10ffed9b5a43575465b52c24b3237f15cc86a1df12240967e79406f7/tck-0.4.2.tar.gz
+[2024-04-13 12:15:36] INFO root fetch - processPackages [monzo-utils]: New version: [0.0.9] Old Version: [0.0.87]
+[2024-04-13 12:15:36] INFO root fetch - processPackages [wwpdb.apps.editormodule]: New version: [0.18] Old Version: [0.17.3]
+[2024-04-13 12:15:36] INFO root fetch - processPackages [outpostkit]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-04-13 12:15:37] INFO root fetch - processPackages [wwpdb.apps.editormodule]: Downloading https://files.pythonhosted.org/packages/ed/10/c7e3f562780ac2753b2aecc4bdf99816a62e1d95288132f8784822cf806e/wwpdb.apps.editormodule-0.17.3.tar.gz
+[2024-04-13 12:15:37] INFO root fetch - processPackages [monzo-utils]: Downloading https://files.pythonhosted.org/packages/74/fc/29f915490d974ae72e3c168755319517c0c61e6b1d39df38668cf6007b21/monzo_utils-0.0.87-py3-none-any.whl
+[2024-04-13 12:15:37] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/e8/20/6f4f3b0edb61dd5f691668605b0901894c58c85e728662fff6913423203c/outpostkit-0.0.7.tar.gz
+[2024-04-13 12:15:37] INFO root fetch - processPackages [tck]: Downloading https://files.pythonhosted.org/packages/93/e4/048f65f62235dfafe4b183f165ab6327ee377ad2de2c85f00f97ef3e68e3/tck-0.4.3.tar.gz
+[2024-04-13 12:15:37] INFO root fetch - processPackages [tck]: executing diffoscope
+[2024-04-13 12:15:37] INFO root fetch - processPackages [tck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tck-0.4.2.tar.gz tmp/tck-0.4.3.tar.gz --markdown 20240413/t/tck/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-04-13 12:15:37] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/b3/af/8945c62fc6dc5596e5618810b3971a4c11d217517a24d0cd40a10b5b9553/outpostkit-0.0.9.tar.gz
+[2024-04-13 12:15:37] INFO root fetch - processPackages [monzo-utils]: Downloading https://files.pythonhosted.org/packages/85/9d/fc80e41a25817f5286aaa03c27e708a0f90ac540eced25dba10630955768/monzo_utils-0.0.9-py3-none-any.whl
+[2024-04-13 12:15:37] INFO root fetch - processPackages [wwpdb.apps.editormodule]: Downloading https://files.pythonhosted.org/packages/8a/d1/af50cde315dced1e76fcf180f2d2e71da2b83812271147b736b37887eaf2/wwpdb.apps.editormodule-0.18.tar.gz
+[2024-04-13 12:15:37] INFO root fetch - processPackages [outpostkit]: executing diffoscope
+[2024-04-13 12:15:37] INFO root fetch - processPackages [outpostkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostkit-0.0.7.tar.gz tmp/outpostkit-0.0.9.tar.gz --markdown 20240413/o/outpostkit/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-04-13 12:15:37] INFO root fetch - processPackages [monzo-utils]: executing diffoscope
+[2024-04-13 12:15:37] INFO root fetch - processPackages [monzo-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monzo_utils-0.0.87-py3-none-any.whl.zip tmp/monzo_utils-0.0.9-py3-none-any.whl.zip --markdown 20240413/m/monzo-utils/0.0.87-0.0.9/README.md --exclude *.pyd
+[2024-04-13 12:15:37] INFO root fetch - processPackages [wwpdb.apps.editormodule]: executing diffoscope
+[2024-04-13 12:15:37] INFO root fetch - processPackages [wwpdb.apps.editormodule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.apps.editormodule-0.17.3.tar.gz tmp/wwpdb.apps.editormodule-0.18.tar.gz --markdown 20240413/w/wwpdb.apps.editormodule/0.17.3-0.18/README.md --exclude *.pyd
+[2024-04-13 12:15:37] INFO root fetch - processPackages [tck]: Remove: archive file [/home/abi/fetcher/tmp/tck-0.4.2.tar.gz]
+[2024-04-13 12:15:37] INFO root fetch - processPackages [tck]: Remove: archive file [/home/abi/fetcher/tmp/tck-0.4.3.tar.gz]
+[2024-04-13 12:15:37] INFO root fetch - main [MainThread]: End processing [tck]: success
+[2024-04-13 12:15:38] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.7.tar.gz]
+[2024-04-13 12:15:38] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.9.tar.gz]
+[2024-04-13 12:15:38] INFO root fetch - main [MainThread]: End processing [outpostkit]: success
+[2024-04-13 12:15:38] INFO root fetch - processPackages [wwpdb.apps.editormodule]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.apps.editormodule-0.17.3.tar.gz]
+[2024-04-13 12:15:38] INFO root fetch - processPackages [wwpdb.apps.editormodule]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.apps.editormodule-0.18.tar.gz]
+[2024-04-13 12:15:38] INFO root fetch - main [MainThread]: End processing [wwpdb.apps.editormodule]: success
+[2024-04-13 12:15:38] INFO root fetch - processPackages [monzo-utils]: Remove: archive file [/home/abi/fetcher/tmp/monzo_utils-0.0.87-py3-none-any.whl.zip]
+[2024-04-13 12:15:38] INFO root fetch - processPackages [monzo-utils]: Remove: archive file [/home/abi/fetcher/tmp/monzo_utils-0.0.9-py3-none-any.whl.zip]
+[2024-04-13 12:15:38] INFO root fetch - main [MainThread]: End processing [monzo-utils]: success
+[2024-04-13 12:15:38] INFO root fetch - main [MainThread]: Store serial: [22751072]
