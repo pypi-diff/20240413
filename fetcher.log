@@ -17698,3 +17698,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:49:36] INFO root fetch - processPackages [sequentia]: Remove: archive file [/home/abi/fetcher/tmp/sequentia-2.0.2.tar.gz]
 [2024-04-13 19:49:36] INFO root fetch - main [MainThread]: End processing [sequentia]: success
 [2024-04-13 19:49:36] INFO root fetch - main [MainThread]: Store serial: [22753643]
+[2024-04-13 19:51:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753643]
+[2024-04-13 19:51:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 19:51:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: HapooDB
+[2024-04-13 19:51:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: restx
+[2024-04-13 19:51:45] INFO root fetch - processPackages [restx]: New version: [0.1.4] Old Version: [0.1.1]
+[2024-04-13 19:51:45] INFO root fetch - processPackages [restx]: Downloading https://files.pythonhosted.org/packages/db/75/5b5795a4887b3cd4c5c1db6bd9e3e2d2385c1ae20908f5eb92dab8d52389/restx-0.1.1.tar.gz
+[2024-04-13 19:51:45] WARNING root fetch - processPackages [HapooDB]: Skipping, unable to determine old version
+[2024-04-13 19:51:45] INFO root fetch - main [MainThread]: End processing [HapooDB] error
+[2024-04-13 19:51:45] INFO root fetch - processPackages [restx]: Downloading https://files.pythonhosted.org/packages/28/d2/3705e3490c732c8f9bfd958eef76f16b66b2943002c9f148e5f6843e65c1/restx-0.1.4.tar.gz
+[2024-04-13 19:51:45] INFO root fetch - processPackages [restx]: executing diffoscope
+[2024-04-13 19:51:45] INFO root fetch - processPackages [restx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/restx-0.1.1.tar.gz tmp/restx-0.1.4.tar.gz --markdown 20240413/r/restx/0.1.1-0.1.4/README.md --exclude *.pyd
+[2024-04-13 19:51:46] INFO root fetch - processPackages [restx]: Remove: archive file [/home/abi/fetcher/tmp/restx-0.1.1.tar.gz]
+[2024-04-13 19:51:46] INFO root fetch - processPackages [restx]: Remove: archive file [/home/abi/fetcher/tmp/restx-0.1.4.tar.gz]
+[2024-04-13 19:51:46] INFO root fetch - main [MainThread]: End processing [restx]: success
+[2024-04-13 19:51:46] INFO root fetch - main [MainThread]: Store serial: [22753651]
