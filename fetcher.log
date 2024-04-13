@@ -10842,3 +10842,70 @@
 [2024-04-13 10:28:47] INFO root fetch - processPackages [arts]: Remove: archive file [/home/abi/fetcher/tmp/arts-2024.4.3.3.tar.gz]
 [2024-04-13 10:28:47] INFO root fetch - main [MainThread]: End processing [arts]: success
 [2024-04-13 10:28:47] INFO root fetch - main [MainThread]: Store serial: [22750516]
+[2024-04-13 10:30:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750516]
+[2024-04-13 10:30:55] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-13 10:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: base95
+[2024-04-13 10:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openai2
+[2024-04-13 10:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: config-library
+[2024-04-13 10:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pynovnc
+[2024-04-13 10:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xdas
+[2024-04-13 10:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pynovnc
+[2024-04-13 10:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pkscreener
+[2024-04-13 10:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fleece-network
+[2024-04-13 10:30:55] WARNING root fetch - processPackages [base95]: Skipping, unable to determine old version
+[2024-04-13 10:30:55] INFO root fetch - main [MainThread]: End processing [base95] error
+[2024-04-13 10:30:55] INFO root fetch - processPackages [pynovnc]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-13 10:30:55] INFO root fetch - processPackages [pynovnc]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-13 10:30:55] INFO root fetch - processPackages [fleece-network]: New version: [0.2.0rc3] Old Version: [0.2.0rc2]
+[2024-04-13 10:30:55] INFO root fetch - processPackages [config-library]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-04-13 10:30:55] INFO root fetch - processPackages [xdas]: New version: [0.1rc0] Old Version: [0.1b2]
+[2024-04-13 10:30:55] INFO root fetch - processPackages [pynovnc]: Downloading https://files.pythonhosted.org/packages/e8/5f/8e781b4c22e19b7adde4743d7008d1ea12d265a7a226d0a161066be04a9c/pynovnc-1.0.8.tar.gz
+[2024-04-13 10:30:55] INFO root fetch - processPackages [openai2]: New version: [1.7.4] Old Version: [1.7.3]
+[2024-04-13 10:30:55] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240413.258] Old Version: [0.44.20240413.257]
+[2024-04-13 10:30:55] INFO root fetch - processPackages [fleece-network]: Downloading https://files.pythonhosted.org/packages/20/79/3b168a8493dd57f71c2db1c321c7d51a1086cda6e236755e7a66b14abf84/fleece_network-0.2.0rc2.tar.gz
+[2024-04-13 10:30:55] INFO root fetch - processPackages [pynovnc]: Downloading https://files.pythonhosted.org/packages/e8/5f/8e781b4c22e19b7adde4743d7008d1ea12d265a7a226d0a161066be04a9c/pynovnc-1.0.8.tar.gz
+[2024-04-13 10:30:55] INFO root fetch - processPackages [config-library]: Downloading https://files.pythonhosted.org/packages/20/a7/9c2646ef601db9948f6e48ebf0bb119efe8f422f40ad4d61a5dc841a73dd/config-library-0.8.2.tar.gz
+[2024-04-13 10:30:56] INFO root fetch - processPackages [xdas]: Downloading https://files.pythonhosted.org/packages/3d/cc/28a2ec2734e962655f8e9a9eb5df86997431639955e4b10fd34c5f993b1a/xdas-0.1b2.tar.gz
+[2024-04-13 10:30:56] INFO root fetch - processPackages [openai2]: Downloading https://files.pythonhosted.org/packages/eb/62/b6e8f0040de7d4bab5c81e263caeb00489a4d5e98c4f248614b05bb328cf/openai2-1.7.3.tar.gz
+[2024-04-13 10:30:56] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/1a/eb/beb397b9c233d626d5565bc44aa3c776e6474428c5342c83c87b3b34589d/pkscreener-0.44.20240413.257.tar.gz
+[2024-04-13 10:30:56] INFO root fetch - processPackages [config-library]: Downloading https://files.pythonhosted.org/packages/b5/0b/c3c9f1c52784152614bc074265aca0ed0ccaa7370598c0eb6e94a560b5e8/config-library-0.9.0.tar.gz
+[2024-04-13 10:30:56] INFO root fetch - processPackages [fleece-network]: Downloading https://files.pythonhosted.org/packages/6f/17/26b4182c9d01490b01a6588d4d3092d4776a2c305b62810a0f291d0d2636/fleece_network-0.2.0rc3.tar.gz
+[2024-04-13 10:30:56] INFO root fetch - processPackages [pynovnc]: Downloading https://files.pythonhosted.org/packages/42/88/5fb86493328717762947e300ab39691749b63dc426214b5c4034bed40527/pynovnc-1.0.9.tar.gz
+[2024-04-13 10:30:56] INFO root fetch - processPackages [pynovnc]: Downloading https://files.pythonhosted.org/packages/42/88/5fb86493328717762947e300ab39691749b63dc426214b5c4034bed40527/pynovnc-1.0.9.tar.gz
+[2024-04-13 10:30:56] INFO root fetch - processPackages [config-library]: executing diffoscope
+[2024-04-13 10:30:56] INFO root fetch - processPackages [config-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/config-library-0.8.2.tar.gz tmp/config-library-0.9.0.tar.gz --markdown 20240413/c/config-library/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-04-13 10:30:56] INFO root fetch - processPackages [pynovnc]: executing diffoscope
+[2024-04-13 10:30:56] INFO root fetch - processPackages [pynovnc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynovnc-1.0.8.tar.gz tmp/pynovnc-1.0.9.tar.gz --markdown 20240413/p/pynovnc/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-13 10:30:56] INFO root fetch - processPackages [pynovnc]: executing diffoscope
+[2024-04-13 10:30:56] INFO root fetch - processPackages [pynovnc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynovnc-1.0.8.tar.gz tmp/pynovnc-1.0.9.tar.gz --markdown 20240413/p/pynovnc/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-13 10:30:56] INFO root fetch - processPackages [fleece-network]: executing diffoscope
+[2024-04-13 10:30:56] INFO root fetch - processPackages [fleece-network]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fleece_network-0.2.0rc2.tar.gz tmp/fleece_network-0.2.0rc3.tar.gz --markdown 20240413/f/fleece-network/0.2.0rc2-0.2.0rc3/README.md --exclude *.pyd
+[2024-04-13 10:30:56] INFO root fetch - processPackages [xdas]: Downloading https://files.pythonhosted.org/packages/b7/f3/865e2c11c9f427c63be7379660e9a187e8541e883d850bc43a028f998718/xdas-0.1rc0.tar.gz
+[2024-04-13 10:30:56] INFO root fetch - processPackages [openai2]: Downloading https://files.pythonhosted.org/packages/c6/7a/02690943cba94058a6d0d41ef3bcdc90df1410725b40015228fef276c5db/openai2-1.7.4.tar.gz
+[2024-04-13 10:30:56] INFO root fetch - processPackages [xdas]: executing diffoscope
+[2024-04-13 10:30:56] INFO root fetch - processPackages [xdas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xdas-0.1b2.tar.gz tmp/xdas-0.1rc0.tar.gz --markdown 20240413/x/xdas/0.1b2-0.1rc0/README.md --exclude *.pyd
+[2024-04-13 10:30:56] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/e3/3e/cd1747fa3bcb06650b729fca172b04e2f032b2cb69715b56bdb4901cf2b1/pkscreener-0.44.20240413.258.tar.gz
+[2024-04-13 10:30:56] INFO root fetch - processPackages [openai2]: executing diffoscope
+[2024-04-13 10:30:56] INFO root fetch - processPackages [openai2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai2-1.7.3.tar.gz tmp/openai2-1.7.4.tar.gz --markdown 20240413/o/openai2/1.7.3-1.7.4/README.md --exclude *.pyd
+[2024-04-13 10:30:56] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-04-13 10:30:56] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240413.257.tar.gz tmp/pkscreener-0.44.20240413.258.tar.gz --markdown 20240413/p/pkscreener/0.44.20240413.257-0.44.20240413.258/README.md --exclude *.pyd
+[2024-04-13 10:30:57] INFO root fetch - processPackages [pynovnc]: Remove: archive file [/home/abi/fetcher/tmp/pynovnc-1.0.8.tar.gz]
+[2024-04-13 10:30:57] INFO root fetch - processPackages [pynovnc]: Remove: archive file [/home/abi/fetcher/tmp/pynovnc-1.0.9.tar.gz]
+[2024-04-13 10:30:57] INFO root fetch - main [MainThread]: End processing [pynovnc]: success
+[2024-04-13 10:30:57] INFO root fetch - main [MainThread]: End processing [pynovnc]: success
+[2024-04-13 10:30:57] INFO root fetch - processPackages [config-library]: Remove: archive file [/home/abi/fetcher/tmp/config-library-0.8.2.tar.gz]
+[2024-04-13 10:30:57] INFO root fetch - processPackages [config-library]: Remove: archive file [/home/abi/fetcher/tmp/config-library-0.9.0.tar.gz]
+[2024-04-13 10:30:57] INFO root fetch - main [MainThread]: End processing [config-library]: success
+[2024-04-13 10:30:57] INFO root fetch - processPackages [xdas]: Remove: archive file [/home/abi/fetcher/tmp/xdas-0.1b2.tar.gz]
+[2024-04-13 10:30:57] INFO root fetch - processPackages [xdas]: Remove: archive file [/home/abi/fetcher/tmp/xdas-0.1rc0.tar.gz]
+[2024-04-13 10:30:57] INFO root fetch - main [MainThread]: End processing [xdas]: success
+[2024-04-13 10:30:57] INFO root fetch - processPackages [fleece-network]: Remove: archive file [/home/abi/fetcher/tmp/fleece_network-0.2.0rc2.tar.gz]
+[2024-04-13 10:30:57] INFO root fetch - processPackages [fleece-network]: Remove: archive file [/home/abi/fetcher/tmp/fleece_network-0.2.0rc3.tar.gz]
+[2024-04-13 10:30:57] INFO root fetch - main [MainThread]: End processing [fleece-network]: success
+[2024-04-13 10:30:57] INFO root fetch - processPackages [openai2]: Remove: archive file [/home/abi/fetcher/tmp/openai2-1.7.3.tar.gz]
+[2024-04-13 10:30:57] INFO root fetch - processPackages [openai2]: Remove: archive file [/home/abi/fetcher/tmp/openai2-1.7.4.tar.gz]
+[2024-04-13 10:30:57] INFO root fetch - main [MainThread]: End processing [openai2]: success
+[2024-04-13 10:30:57] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240413.257.tar.gz]
+[2024-04-13 10:30:57] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240413.258.tar.gz]
+[2024-04-13 10:30:57] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-04-13 10:30:57] INFO root fetch - main [MainThread]: Store serial: [22750540]
