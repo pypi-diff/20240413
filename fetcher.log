@@ -20311,3 +20311,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 23:08:35] INFO root fetch - processPackages [setuptools]: Remove: archive file [/home/abi/fetcher/tmp/setuptools-9.1.zip]
 [2024-04-13 23:08:35] INFO root fetch - main [MainThread]: End processing [setuptools]: success
 [2024-04-13 23:08:35] INFO root fetch - main [MainThread]: Store serial: [22754750]
+[2024-04-13 23:10:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754750]
+[2024-04-13 23:10:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 23:10:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: labelle
+[2024-04-13 23:10:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arion-library
+[2024-04-13 23:10:43] INFO root fetch - processPackages [arion-library]: New version: [1.1rc51.dev51] Old Version: [1.1rc50.dev50]
+[2024-04-13 23:10:43] WARNING root fetch - processPackages [labelle]: Skipping, unable to determine old version
+[2024-04-13 23:10:43] INFO root fetch - main [MainThread]: End processing [labelle] error
+[2024-04-13 23:10:43] INFO root fetch - processPackages [arion-library]: Downloading https://files.pythonhosted.org/packages/e8/28/31d6106d29b4c0c6997f385454993e1864521709d99fa715007788febeb1/arion_library-1.1rc50.dev50.tar.gz
+[2024-04-13 23:10:44] INFO root fetch - processPackages [arion-library]: Downloading https://files.pythonhosted.org/packages/2b/11/7e2e5187bb6e65993760df206c893a3df7f3499504e0278f8133ad2471db/arion_library-1.1rc51.dev51.tar.gz
+[2024-04-13 23:10:44] INFO root fetch - processPackages [arion-library]: executing diffoscope
+[2024-04-13 23:10:44] INFO root fetch - processPackages [arion-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arion_library-1.1rc50.dev50.tar.gz tmp/arion_library-1.1rc51.dev51.tar.gz --markdown 20240413/a/arion-library/1.1rc50.dev50-1.1rc51.dev51/README.md --exclude *.pyd
+[2024-04-13 23:10:44] INFO root fetch - processPackages [arion-library]: Remove: archive file [/home/abi/fetcher/tmp/arion_library-1.1rc50.dev50.tar.gz]
+[2024-04-13 23:10:44] INFO root fetch - processPackages [arion-library]: Remove: archive file [/home/abi/fetcher/tmp/arion_library-1.1rc51.dev51.tar.gz]
+[2024-04-13 23:10:44] INFO root fetch - main [MainThread]: End processing [arion-library]: success
+[2024-04-13 23:10:44] INFO root fetch - main [MainThread]: Store serial: [22754756]
