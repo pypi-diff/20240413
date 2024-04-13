@@ -18917,3 +18917,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 21:05:47] INFO root fetch - main [MainThread]: End processing [fudstop]: success
 [2024-04-13 21:05:47] INFO root fetch - main [MainThread]: End processing [fudstop]: success
 [2024-04-13 21:05:47] INFO root fetch - main [MainThread]: Store serial: [22754149]
+[2024-04-13 21:07:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754149]
+[2024-04-13 21:07:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 21:07:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fudstop
+[2024-04-13 21:07:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trinnov-altitude
+[2024-04-13 21:07:56] INFO root fetch - processPackages [trinnov-altitude]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-13 21:07:56] INFO root fetch - processPackages [fudstop]: New version: [2.4.4] Old Version: [2.4.3]
+[2024-04-13 21:07:56] INFO root fetch - processPackages [trinnov-altitude]: Downloading https://files.pythonhosted.org/packages/91/4f/4fe0118b21f1eb66dcb82469dc6468969424bf1ceaefa0a824fd0b945e23/trinnov_altitude-1.tar.gz
+[2024-04-13 21:07:56] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/d9/d0/035e42ab3ce08c29d6da8d194535232dbbf8448664dc6701f3da2a03a118/fudstop-2.4.3.tar.gz
+[2024-04-13 21:07:57] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/2e/6d/d11d6f15e07ffa8cf482cf3a71755e20c4e89cf9fe6adecd0182f29a4ec7/fudstop-2.4.4.tar.gz
+[2024-04-13 21:07:57] INFO root fetch - processPackages [trinnov-altitude]: Downloading https://files.pythonhosted.org/packages/cc/d9/ee9d1cbf7055943e47c36d78020bec592f896bdaa19bf1ffe01c164387c2/trinnov_altitude-1.1.0.tar.gz
+[2024-04-13 21:07:57] INFO root fetch - processPackages [trinnov-altitude]: executing diffoscope
+[2024-04-13 21:07:57] INFO root fetch - processPackages [trinnov-altitude]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trinnov_altitude-1.tar.gz tmp/trinnov_altitude-1.1.0.tar.gz --markdown 20240413/t/trinnov-altitude/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-04-13 21:07:57] INFO root fetch - processPackages [fudstop]: executing diffoscope
+[2024-04-13 21:07:57] INFO root fetch - processPackages [fudstop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fudstop-2.4.3.tar.gz tmp/fudstop-2.4.4.tar.gz --markdown 20240413/f/fudstop/2.4.3-2.4.4/README.md --exclude *.pyd
+[2024-04-13 21:07:57] INFO root fetch - processPackages [trinnov-altitude]: Remove: archive file [/home/abi/fetcher/tmp/trinnov_altitude-1.tar.gz]
+[2024-04-13 21:07:57] INFO root fetch - processPackages [trinnov-altitude]: Remove: archive file [/home/abi/fetcher/tmp/trinnov_altitude-1.1.0.tar.gz]
+[2024-04-13 21:07:57] INFO root fetch - main [MainThread]: End processing [trinnov-altitude]: success
+[2024-04-13 21:07:58] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.4.3.tar.gz]
+[2024-04-13 21:07:58] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.4.4.tar.gz]
+[2024-04-13 21:07:58] INFO root fetch - main [MainThread]: End processing [fudstop]: success
+[2024-04-13 21:07:58] INFO root fetch - main [MainThread]: Store serial: [22754155]
