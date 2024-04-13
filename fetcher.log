@@ -8864,3 +8864,15 @@
 [2024-04-13 08:12:41] INFO root fetch - processPackages [pulumi-gitlab]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_gitlab-6.9.0a1708340471.tar.gz]
 [2024-04-13 08:12:41] INFO root fetch - main [MainThread]: End processing [pulumi-gitlab]: success
 [2024-04-13 08:12:41] INFO root fetch - main [MainThread]: Store serial: [22749818]
+[2024-04-13 08:14:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749818]
+[2024-04-13 08:14:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 08:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-keycloak
+[2024-04-13 08:14:50] INFO root fetch - processPackages [pulumi-keycloak]: New version: [5.4.0a1712987350] Old Version: [5.4.0a1712727897]
+[2024-04-13 08:14:50] INFO root fetch - processPackages [pulumi-keycloak]: Downloading https://files.pythonhosted.org/packages/81/ab/5bf7e53fcb4919f15e115f6d70edf0c6f44782b7b04e6f19aa1cb0d705d6/pulumi_keycloak-5.4.0a1712727897.tar.gz
+[2024-04-13 08:14:50] INFO root fetch - processPackages [pulumi-keycloak]: Downloading https://files.pythonhosted.org/packages/b7/57/bdb8d6d76e16ec462c27a4a421c9ad8c2b27be9988cee4a96e0c9152a23a/pulumi_keycloak-5.4.0a1712987350.tar.gz
+[2024-04-13 08:14:50] INFO root fetch - processPackages [pulumi-keycloak]: executing diffoscope
+[2024-04-13 08:14:50] INFO root fetch - processPackages [pulumi-keycloak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_keycloak-5.4.0a1712727897.tar.gz tmp/pulumi_keycloak-5.4.0a1712987350.tar.gz --markdown 20240413/p/pulumi-keycloak/5.4.0a1712727897-5.4.0a1712987350/README.md --exclude *.pyd
+[2024-04-13 08:14:51] INFO root fetch - processPackages [pulumi-keycloak]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_keycloak-5.4.0a1712727897.tar.gz]
+[2024-04-13 08:14:51] INFO root fetch - processPackages [pulumi-keycloak]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_keycloak-5.4.0a1712987350.tar.gz]
+[2024-04-13 08:14:51] INFO root fetch - main [MainThread]: End processing [pulumi-keycloak]: success
+[2024-04-13 08:14:51] INFO root fetch - main [MainThread]: Store serial: [22749821]
