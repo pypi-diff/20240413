@@ -18467,3 +18467,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 20:29:04] INFO root fetch - processPackages [whishow]: Remove: archive file [/home/abi/fetcher/tmp/whishow-0.2.0-py2.py3-none-any.whl.zip]
 [2024-04-13 20:29:04] INFO root fetch - main [MainThread]: End processing [whishow]: success
 [2024-04-13 20:29:04] INFO root fetch - main [MainThread]: Store serial: [22753956]
+[2024-04-13 20:31:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753956]
+[2024-04-13 20:31:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 20:31:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dekvenv
+[2024-04-13 20:31:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: revoize
+[2024-04-13 20:31:12] INFO root fetch - processPackages [dekvenv]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 20:31:12] INFO root fetch - processPackages [revoize]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 20:31:12] INFO root fetch - processPackages [dekvenv]: Downloading https://files.pythonhosted.org/packages/4f/0b/06902f2f4ceee290cfab39fc5e233eaa2bb642fa6b79c9a76349ffa49eac/dekvenv-0.1.8.tar.gz
+[2024-04-13 20:31:12] INFO root fetch - processPackages [revoize]: Downloading https://files.pythonhosted.org/packages/48/11/88d0b3804cdfb00cafe228e3afdac933377a3015c36cb8aef87dfd461eca/revoize-0.1.1.tar.gz
+[2024-04-13 20:31:13] INFO root fetch - processPackages [dekvenv]: Downloading https://files.pythonhosted.org/packages/89/c5/ae26e7ab62e243bef554710c58d728eba22e25ad33a5e2f25b45dcb001d1/dekvenv-0.1.9.tar.gz
+[2024-04-13 20:31:13] INFO root fetch - processPackages [dekvenv]: executing diffoscope
+[2024-04-13 20:31:13] INFO root fetch - processPackages [dekvenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dekvenv-0.1.8.tar.gz tmp/dekvenv-0.1.9.tar.gz --markdown 20240413/d/dekvenv/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 20:31:13] INFO root fetch - processPackages [revoize]: Downloading https://files.pythonhosted.org/packages/be/76/1b29b3e3fe030b05f623f9e2eabd2314ccba38764ca751e7e691958d72d8/revoize-0.1.2.tar.gz
+[2024-04-13 20:31:13] INFO root fetch - processPackages [revoize]: executing diffoscope
+[2024-04-13 20:31:13] INFO root fetch - processPackages [revoize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revoize-0.1.1.tar.gz tmp/revoize-0.1.2.tar.gz --markdown 20240413/r/revoize/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-13 20:31:13] INFO root fetch - processPackages [revoize]: Remove: archive file [/home/abi/fetcher/tmp/revoize-0.1.1.tar.gz]
+[2024-04-13 20:31:13] INFO root fetch - processPackages [revoize]: Remove: archive file [/home/abi/fetcher/tmp/revoize-0.1.2.tar.gz]
+[2024-04-13 20:31:13] INFO root fetch - main [MainThread]: End processing [revoize]: success
+[2024-04-13 20:31:13] INFO root fetch - processPackages [dekvenv]: Remove: archive file [/home/abi/fetcher/tmp/dekvenv-0.1.8.tar.gz]
+[2024-04-13 20:31:13] INFO root fetch - processPackages [dekvenv]: Remove: archive file [/home/abi/fetcher/tmp/dekvenv-0.1.9.tar.gz]
+[2024-04-13 20:31:13] INFO root fetch - main [MainThread]: End processing [dekvenv]: success
+[2024-04-13 20:31:13] INFO root fetch - main [MainThread]: Store serial: [22753962]
