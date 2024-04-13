@@ -6963,3 +6963,15 @@
 [2024-04-13 04:24:29] INFO root fetch - processPackages [roicat]: Remove: archive file [/home/abi/fetcher/tmp/roicat-1.1.9.tar.gz]
 [2024-04-13 04:24:29] INFO root fetch - main [MainThread]: End processing [roicat]: success
 [2024-04-13 04:24:29] INFO root fetch - main [MainThread]: Store serial: [22748987]
+[2024-04-13 04:26:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748987]
+[2024-04-13 04:26:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 04:26:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qcop
+[2024-04-13 04:26:38] INFO root fetch - processPackages [qcop]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-04-13 04:26:38] INFO root fetch - processPackages [qcop]: Downloading https://files.pythonhosted.org/packages/37/63/cd015a2d928d0d13adafdbf595d4839e43c6c0ac3300467812781d29ed2d/qcop-0.5.3.tar.gz
+[2024-04-13 04:26:38] INFO root fetch - processPackages [qcop]: Downloading https://files.pythonhosted.org/packages/f7/52/c538f5cac1ca9e9a9a069b5932acb33b2cc0720f00dd6229e9ebbdab307e/qcop-0.5.4.tar.gz
+[2024-04-13 04:26:38] INFO root fetch - processPackages [qcop]: executing diffoscope
+[2024-04-13 04:26:38] INFO root fetch - processPackages [qcop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qcop-0.5.3.tar.gz tmp/qcop-0.5.4.tar.gz --markdown 20240413/q/qcop/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-04-13 04:26:39] INFO root fetch - processPackages [qcop]: Remove: archive file [/home/abi/fetcher/tmp/qcop-0.5.3.tar.gz]
+[2024-04-13 04:26:39] INFO root fetch - processPackages [qcop]: Remove: archive file [/home/abi/fetcher/tmp/qcop-0.5.4.tar.gz]
+[2024-04-13 04:26:39] INFO root fetch - main [MainThread]: End processing [qcop]: success
+[2024-04-13 04:26:39] INFO root fetch - main [MainThread]: Store serial: [22748990]
