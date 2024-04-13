@@ -19575,3 +19575,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 22:07:39] INFO root fetch - processPackages [langfuse]: Remove: archive file [/home/abi/fetcher/tmp/langfuse-2.9.2.tar.gz]
 [2024-04-13 22:07:39] INFO root fetch - main [MainThread]: End processing [langfuse]: success
 [2024-04-13 22:07:39] INFO root fetch - main [MainThread]: Store serial: [22754474]
+[2024-04-13 22:09:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754474]
+[2024-04-13 22:09:47] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 22:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aim
+[2024-04-13 22:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyplotlib
+[2024-04-13 22:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: slimta
+[2024-04-13 22:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo12-addon-database-cleanup
+[2024-04-13 22:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: opensesame-plugin-audio-low-latency
+[2024-04-13 22:09:48] INFO root fetch - processPackages [pyplotlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 22:09:48] INFO root fetch - processPackages [opensesame-plugin-audio-low-latency]: New version: [9.3.0] Old Version: [9.2.0]
+[2024-04-13 22:09:48] INFO root fetch - processPackages [odoo12-addon-database-cleanup]: New version: [12.0.1.2.3] Old Version: [12.0.1.2.2]
+[2024-04-13 22:09:48] INFO root fetch - processPackages [pyplotlib]: Downloading https://files.pythonhosted.org/packages/28/bb/58ba19c8fed8024ef2c0efd0523dded73560d64857fcd7916d35aa6aa8af/pyplotlib-0.0.8.tar.gz
+[2024-04-13 22:09:48] INFO root fetch - processPackages [slimta]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-13 22:09:48] INFO root fetch - processPackages [aim]: New version: [4.0.3] Old Version: [4.0.2]
+[2024-04-13 22:09:48] INFO root fetch - processPackages [opensesame-plugin-audio-low-latency]: Downloading https://files.pythonhosted.org/packages/89/65/30528d7e94cd3c53202333f7bcd61c93f722b66f0e969a23d86790cdef58/opensesame-plugin-audio_low_latency-9.2.0.tar.gz
+[2024-04-13 22:09:48] INFO root fetch - processPackages [odoo12-addon-database-cleanup]: Downloading https://files.pythonhosted.org/packages/d6/9c/f33a715dfddb32cfd84dd45eb02fa37655551c52764899f758dc7fb445a4/odoo12_addon_database_cleanup-12.0.1.2.2-py3-none-any.whl
+[2024-04-13 22:09:48] INFO root fetch - processPackages [slimta]: Downloading https://files.pythonhosted.org/packages/35/5c/d74abffa6a8d7509bf9385ebd69ea84dc273d02f428732616ae1c1c89abc/slimta-0.9.0.tar.gz
+[2024-04-13 22:09:48] INFO root fetch - processPackages [pyplotlib]: Downloading https://files.pythonhosted.org/packages/8b/f8/1cec6ba77c9aee645ad1564c6fe928db135b36bec387a9574c6422edd191/pyplotlib-0.0.9.tar.gz
+[2024-04-13 22:09:48] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/4a/00/f7e303a3bd0a6d75c08ccd60562a0c5f00fa9f4c16c945fbffa86d96ab7d/aim-4.0.2.tar.gz
+[2024-04-13 22:09:48] INFO root fetch - processPackages [pyplotlib]: executing diffoscope
+[2024-04-13 22:09:48] INFO root fetch - processPackages [pyplotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyplotlib-0.0.8.tar.gz tmp/pyplotlib-0.0.9.tar.gz --markdown 20240413/p/pyplotlib/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 22:09:48] INFO root fetch - processPackages [opensesame-plugin-audio-low-latency]: Downloading https://files.pythonhosted.org/packages/db/51/a0cb912827da0844dd8436ef0499fc72cbc018f4b50b78f57829e7ccb75f/opensesame-plugin-audio_low_latency-9.3.0.tar.gz
+[2024-04-13 22:09:48] INFO root fetch - processPackages [odoo12-addon-database-cleanup]: Downloading https://files.pythonhosted.org/packages/de/a9/c508ea561b13b04e26caaf57a5a2fdced043c5c144e2e45fb31f53e722f9/odoo12_addon_database_cleanup-12.0.1.2.3-py3-none-any.whl
+[2024-04-13 22:09:48] INFO root fetch - processPackages [slimta]: Downloading https://files.pythonhosted.org/packages/5b/7d/55f7beefd0446eb37042d2e4ac71f65552a28894934feae84b2634d44021/slimta-0.9.1.tar.gz
+[2024-04-13 22:09:48] INFO root fetch - processPackages [slimta]: executing diffoscope
+[2024-04-13 22:09:48] INFO root fetch - processPackages [slimta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slimta-0.9.0.tar.gz tmp/slimta-0.9.1.tar.gz --markdown 20240413/s/slimta/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-13 22:09:48] INFO root fetch - processPackages [odoo12-addon-database-cleanup]: executing diffoscope
+[2024-04-13 22:09:48] INFO root fetch - processPackages [odoo12-addon-database-cleanup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_database_cleanup-12.0.1.2.2-py3-none-any.whl.zip tmp/odoo12_addon_database_cleanup-12.0.1.2.3-py3-none-any.whl.zip --markdown 20240413/o/odoo12-addon-database-cleanup/12.0.1.2.2-12.0.1.2.3/README.md --exclude *.pyd
+[2024-04-13 22:09:48] INFO root fetch - processPackages [opensesame-plugin-audio-low-latency]: executing diffoscope
+[2024-04-13 22:09:48] INFO root fetch - processPackages [opensesame-plugin-audio-low-latency]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opensesame-plugin-audio_low_latency-9.2.0.tar.gz tmp/opensesame-plugin-audio_low_latency-9.3.0.tar.gz --markdown 20240413/o/opensesame-plugin-audio-low-latency/9.2.0-9.3.0/README.md --exclude *.pyd
+[2024-04-13 22:09:48] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/50/12/a5a7bf25fd6105558d11afbd3f7500aa63283494e429296746c821354590/aim-4.0.3.tar.gz
+[2024-04-13 22:09:49] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.8.tar.gz]
+[2024-04-13 22:09:49] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.9.tar.gz]
+[2024-04-13 22:09:49] INFO root fetch - main [MainThread]: End processing [pyplotlib]: success
+[2024-04-13 22:09:49] INFO root fetch - processPackages [aim]: executing diffoscope
+[2024-04-13 22:09:49] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.2.tar.gz tmp/aim-4.0.3.tar.gz --markdown 20240413/a/aim/4.0.2-4.0.3/README.md --exclude *.pyd
+[2024-04-13 22:09:49] INFO root fetch - processPackages [slimta]: Remove: archive file [/home/abi/fetcher/tmp/slimta-0.9.0.tar.gz]
+[2024-04-13 22:09:49] INFO root fetch - processPackages [slimta]: Remove: archive file [/home/abi/fetcher/tmp/slimta-0.9.1.tar.gz]
+[2024-04-13 22:09:49] INFO root fetch - main [MainThread]: End processing [slimta]: success
+[2024-04-13 22:09:49] INFO root fetch - processPackages [odoo12-addon-database-cleanup]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_database_cleanup-12.0.1.2.2-py3-none-any.whl.zip]
+[2024-04-13 22:09:49] INFO root fetch - processPackages [odoo12-addon-database-cleanup]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_database_cleanup-12.0.1.2.3-py3-none-any.whl.zip]
+[2024-04-13 22:09:49] INFO root fetch - main [MainThread]: End processing [odoo12-addon-database-cleanup]: success
+[2024-04-13 22:09:49] INFO root fetch - processPackages [opensesame-plugin-audio-low-latency]: Remove: archive file [/home/abi/fetcher/tmp/opensesame-plugin-audio_low_latency-9.2.0.tar.gz]
+[2024-04-13 22:09:49] INFO root fetch - processPackages [opensesame-plugin-audio-low-latency]: Remove: archive file [/home/abi/fetcher/tmp/opensesame-plugin-audio_low_latency-9.3.0.tar.gz]
+[2024-04-13 22:09:49] INFO root fetch - main [MainThread]: End processing [opensesame-plugin-audio-low-latency]: success
+[2024-04-13 22:09:53] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.2.tar.gz]
+[2024-04-13 22:09:53] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
+[2024-04-13 22:09:53] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2024-04-13 22:09:53] INFO root fetch - main [MainThread]: Store serial: [22754489]
