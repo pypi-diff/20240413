@@ -20272,3 +20272,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 23:06:24] INFO root fetch - processPackages [pulumi-artifactory]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_artifactory-6.6.0a1712985182.tar.gz]
 [2024-04-13 23:06:24] INFO root fetch - main [MainThread]: End processing [pulumi-artifactory]: success
 [2024-04-13 23:06:24] INFO root fetch - main [MainThread]: Store serial: [22754738]
+[2024-04-13 23:08:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754738]
+[2024-04-13 23:08:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 23:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chaiverse
+[2024-04-13 23:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: setuptools
+[2024-04-13 23:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jxtr
+[2024-04-13 23:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: perturb-tools
+[2024-04-13 23:08:33] INFO root fetch - processPackages [setuptools]: New version: [9.1] Old Version: [9.0.1]
+[2024-04-13 23:08:33] INFO root fetch - processPackages [jxtr]: New version: [2.1.5] Old Version: [2.0.2]
+[2024-04-13 23:08:33] INFO root fetch - processPackages [perturb-tools]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-13 23:08:33] INFO root fetch - processPackages [chaiverse]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-04-13 23:08:33] INFO root fetch - processPackages [setuptools]: Downloading https://files.pythonhosted.org/packages/16/2c/1ad571e85048c57b4e7ba2218d0fff3db0452e8bfa0c20e1543e26f85121/setuptools-9.0.1.zip
+[2024-04-13 23:08:33] INFO root fetch - processPackages [jxtr]: Downloading https://files.pythonhosted.org/packages/ca/0f/22b9a395ce1ba4aa94f6778d5df65011c038258dd4e28383461ef115681a/jxtr-2.0.2.tar.gz
+[2024-04-13 23:08:33] INFO root fetch - processPackages [chaiverse]: Downloading https://files.pythonhosted.org/packages/40/8f/0c28b09c5b933f63a5e9e2b50a3e8a06a87151afc8e162b2c09deedc4bf0/chaiverse-1.9.8.tar.gz
+[2024-04-13 23:08:33] INFO root fetch - processPackages [perturb-tools]: Downloading https://files.pythonhosted.org/packages/56/2c/ec73ca21974f3cd51618ca359c637f5098765672bf053f843eafbed405fd/perturb_tools-0.3.1.tar.gz
+[2024-04-13 23:08:33] INFO root fetch - processPackages [setuptools]: Downloading https://files.pythonhosted.org/packages/35/b2/626974cb6f02c4d58c33471b597f6723560f74be322857e9cd24700c3c70/setuptools-9.1.zip
+[2024-04-13 23:08:33] INFO root fetch - processPackages [setuptools]: executing diffoscope
+[2024-04-13 23:08:33] INFO root fetch - processPackages [setuptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setuptools-9.0.1.zip tmp/setuptools-9.1.zip --markdown 20240413/s/setuptools/9.0.1-9.1/README.md --exclude *.pyd
+[2024-04-13 23:08:33] INFO root fetch - processPackages [jxtr]: Downloading https://files.pythonhosted.org/packages/f5/a0/953a17fe446d1888582057817d75cfbe825d862cb3f203d86818cd52e68c/jxtr-2.1.5.tar.gz
+[2024-04-13 23:08:33] INFO root fetch - processPackages [chaiverse]: Downloading https://files.pythonhosted.org/packages/4c/ed/6d3e89ab870b31d2281b7595f6030d767109316508a89f1d6178491348cd/chaiverse-1.9.9.tar.gz
+[2024-04-13 23:08:33] INFO root fetch - processPackages [perturb-tools]: Downloading https://files.pythonhosted.org/packages/97/d9/394121249b3c22c7de6ee62994f90714669d1676a820c67e8e1f750bb0db/perturb_tools-0.3.2.tar.gz
+[2024-04-13 23:08:33] INFO root fetch - processPackages [jxtr]: executing diffoscope
+[2024-04-13 23:08:33] INFO root fetch - processPackages [jxtr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jxtr-2.0.2.tar.gz tmp/jxtr-2.1.5.tar.gz --markdown 20240413/j/jxtr/2.0.2-2.1.5/README.md --exclude *.pyd
+[2024-04-13 23:08:33] INFO root fetch - processPackages [chaiverse]: executing diffoscope
+[2024-04-13 23:08:33] INFO root fetch - processPackages [chaiverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chaiverse-1.9.8.tar.gz tmp/chaiverse-1.9.9.tar.gz --markdown 20240413/c/chaiverse/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-04-13 23:08:33] INFO root fetch - processPackages [perturb-tools]: executing diffoscope
+[2024-04-13 23:08:33] INFO root fetch - processPackages [perturb-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/perturb_tools-0.3.1.tar.gz tmp/perturb_tools-0.3.2.tar.gz --markdown 20240413/p/perturb-tools/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-13 23:08:34] INFO root fetch - processPackages [jxtr]: Remove: archive file [/home/abi/fetcher/tmp/jxtr-2.0.2.tar.gz]
+[2024-04-13 23:08:34] INFO root fetch - processPackages [jxtr]: Remove: archive file [/home/abi/fetcher/tmp/jxtr-2.1.5.tar.gz]
+[2024-04-13 23:08:34] INFO root fetch - main [MainThread]: End processing [jxtr]: success
+[2024-04-13 23:08:34] INFO root fetch - processPackages [perturb-tools]: Remove: archive file [/home/abi/fetcher/tmp/perturb_tools-0.3.1.tar.gz]
+[2024-04-13 23:08:34] INFO root fetch - processPackages [perturb-tools]: Remove: archive file [/home/abi/fetcher/tmp/perturb_tools-0.3.2.tar.gz]
+[2024-04-13 23:08:34] INFO root fetch - main [MainThread]: End processing [perturb-tools]: success
+[2024-04-13 23:08:34] INFO root fetch - processPackages [chaiverse]: Remove: archive file [/home/abi/fetcher/tmp/chaiverse-1.9.8.tar.gz]
+[2024-04-13 23:08:34] INFO root fetch - processPackages [chaiverse]: Remove: archive file [/home/abi/fetcher/tmp/chaiverse-1.9.9.tar.gz]
+[2024-04-13 23:08:34] INFO root fetch - main [MainThread]: End processing [chaiverse]: success
+[2024-04-13 23:08:35] INFO root fetch - processPackages [setuptools]: Remove: archive file [/home/abi/fetcher/tmp/setuptools-9.0.1.zip]
+[2024-04-13 23:08:35] INFO root fetch - processPackages [setuptools]: Remove: archive file [/home/abi/fetcher/tmp/setuptools-9.1.zip]
+[2024-04-13 23:08:35] INFO root fetch - main [MainThread]: End processing [setuptools]: success
+[2024-04-13 23:08:35] INFO root fetch - main [MainThread]: Store serial: [22754750]
