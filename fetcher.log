@@ -16468,3 +16468,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 18:08:41] INFO root fetch - processPackages [lapa-authentication]: Remove: archive file [/home/abi/fetcher/tmp/lapa_authentication-0.0.7.tar.gz]
 [2024-04-13 18:08:41] INFO root fetch - main [MainThread]: End processing [lapa-authentication]: success
 [2024-04-13 18:08:41] INFO root fetch - main [MainThread]: Store serial: [22753062]
+[2024-04-13 18:10:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753062]
+[2024-04-13 18:10:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 18:10:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: imagespec-fast-builder
+[2024-04-13 18:10:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyMdfReader
+[2024-04-13 18:10:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hotsos
+[2024-04-13 18:10:49] INFO root fetch - processPackages [imagespec-fast-builder]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 18:10:49] INFO root fetch - processPackages [hotsos]: New version: [1.17.0.post9] Old Version: [1.17.0.post8]
+[2024-04-13 18:10:50] INFO root fetch - processPackages [imagespec-fast-builder]: Downloading https://files.pythonhosted.org/packages/de/4b/7890e10e1d8a2279b4a8ec0af4d3235da72bb8d22bf3e491c6877afdb9b0/imagespec_fast_builder-0.0.8.tar.gz
+[2024-04-13 18:10:50] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/a7/57/15e4fe4e4dbc4381d9bf00a81267a7c13df4ca3f2dc3b2afa7db65518860/hotsos-1.17.0.post8.tar.gz
+[2024-04-13 18:10:50] WARNING root fetch - processPackages [pyMdfReader]: Skipping, unable to determine old version
+[2024-04-13 18:10:50] INFO root fetch - main [MainThread]: End processing [pyMdfReader] error
+[2024-04-13 18:10:50] INFO root fetch - processPackages [imagespec-fast-builder]: Downloading https://files.pythonhosted.org/packages/c8/75/7e3164426e0b736b45eb6d77ae8d7700f5e72939323729342cb54d7dcf69/imagespec_fast_builder-0.0.9.tar.gz
+[2024-04-13 18:10:50] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/7f/57/f6a4fc3900f977e567bcf108bd2787ce8624445d42b84c26b710b18c7c3d/hotsos-1.17.0.post9.tar.gz
+[2024-04-13 18:10:50] INFO root fetch - processPackages [imagespec-fast-builder]: executing diffoscope
+[2024-04-13 18:10:50] INFO root fetch - processPackages [imagespec-fast-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imagespec_fast_builder-0.0.8.tar.gz tmp/imagespec_fast_builder-0.0.9.tar.gz --markdown 20240413/i/imagespec-fast-builder/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 18:10:50] INFO root fetch - processPackages [hotsos]: executing diffoscope
+[2024-04-13 18:10:50] INFO root fetch - processPackages [hotsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotsos-1.17.0.post8.tar.gz tmp/hotsos-1.17.0.post9.tar.gz --markdown 20240413/h/hotsos/1.17.0.post8-1.17.0.post9/README.md --exclude *.pyd
+[2024-04-13 18:10:50] INFO root fetch - processPackages [imagespec-fast-builder]: Remove: archive file [/home/abi/fetcher/tmp/imagespec_fast_builder-0.0.8.tar.gz]
+[2024-04-13 18:10:50] INFO root fetch - processPackages [imagespec-fast-builder]: Remove: archive file [/home/abi/fetcher/tmp/imagespec_fast_builder-0.0.9.tar.gz]
+[2024-04-13 18:10:50] INFO root fetch - main [MainThread]: End processing [imagespec-fast-builder]: success
+[2024-04-13 18:10:51] INFO root fetch - processPackages [hotsos]: Remove: archive file [/home/abi/fetcher/tmp/hotsos-1.17.0.post8.tar.gz]
+[2024-04-13 18:10:51] INFO root fetch - processPackages [hotsos]: Remove: archive file [/home/abi/fetcher/tmp/hotsos-1.17.0.post9.tar.gz]
+[2024-04-13 18:10:51] INFO root fetch - main [MainThread]: End processing [hotsos]: success
+[2024-04-13 18:10:51] INFO root fetch - main [MainThread]: Store serial: [22753073]
