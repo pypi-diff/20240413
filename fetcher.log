@@ -8747,3 +8747,81 @@
 [2024-04-13 08:08:08] INFO root fetch - processPackages [ngstrefftz]: Remove: archive file [/home/abi/fetcher/tmp/ngstrefftz-0.3.2401.post6.tar.gz]
 [2024-04-13 08:08:08] INFO root fetch - main [MainThread]: End processing [ngstrefftz]: success
 [2024-04-13 08:08:08] INFO root fetch - main [MainThread]: Store serial: [22749777]
+[2024-04-13 08:10:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749777]
+[2024-04-13 08:10:17] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-13 08:10:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-alicloud
+[2024-04-13 08:10:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seventilation-client
+[2024-04-13 08:10:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jtd-codebuild
+[2024-04-13 08:10:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-sale-elaboration
+[2024-04-13 08:10:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-ec
+[2024-04-13 08:10:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fast-kinematics
+[2024-04-13 08:10:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aioclock
+[2024-04-13 08:10:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pytha-fuzz
+[2024-04-13 08:10:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: vnpy-evo
+[2024-04-13 08:10:17] INFO root fetch - processPackages [odoo-addon-sale-elaboration]: New version: [16.0.1.4.0] Old Version: [16.0.1.3.0]
+[2024-04-13 08:10:17] INFO root fetch - processPackages [pytha-fuzz]: New version: [1.1] Old Version: [1.0]
+[2024-04-13 08:10:17] INFO root fetch - processPackages [aioclock]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-13 08:10:17] INFO root fetch - processPackages [odoo-addon-sale-elaboration]: Downloading https://files.pythonhosted.org/packages/9c/a4/61d72759547e06350dc139119f6bc3bbb5aaf8e14dfa0a23e021a7a159f2/odoo_addon_sale_elaboration-16.0.1.3.0-py3-none-any.whl
+[2024-04-13 08:10:17] WARNING root fetch - processPackages [seventilation-client]: Skipping, unable to determine old version
+[2024-04-13 08:10:17] INFO root fetch - main [MainThread]: End processing [seventilation-client] error
+[2024-04-13 08:10:17] INFO root fetch - processPackages [pytha-fuzz]: Downloading https://files.pythonhosted.org/packages/9c/f9/6d351033065a8c8f02be254f7b4a7fb33c5add0ac31826b1eae13368aa51/pytha-fuzz-1.0.tar.gz
+[2024-04-13 08:10:17] INFO root fetch - processPackages [aioclock]: Downloading https://files.pythonhosted.org/packages/69/1e/d31f1b9039d1783421c62e82f40623e71a5c0cd6fc329ed2222121410b47/aioclock-0.0.1.tar.gz
+[2024-04-13 08:10:17] INFO root fetch - processPackages [fast-kinematics]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-13 08:10:17] INFO root fetch - processPackages [jtd-codebuild]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-04-13 08:10:17] INFO root fetch - processPackages [pulumi-ec]: New version: [0.8.1a1712986766] Old Version: [0.8.1a1712727490]
+[2024-04-13 08:10:17] INFO root fetch - processPackages [pulumi-alicloud]: New version: [3.9.0a1637592974] Old Version: [3.9.0a1635778307]
+[2024-04-13 08:10:18] INFO root fetch - processPackages [vnpy-evo]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-13 08:10:18] INFO root fetch - processPackages [aioclock]: Downloading https://files.pythonhosted.org/packages/d9/22/f63935290bca5646b24ce54da38ac5f549a01b7d143d7db02b7ba3a8f59e/aioclock-0.0.2.tar.gz
+[2024-04-13 08:10:18] INFO root fetch - processPackages [jtd-codebuild]: Downloading https://files.pythonhosted.org/packages/38/be/9b13381b11d48bdcd08d6edabf55ff196e72c41b17368bbf6252ea1a614d/jtd_codebuild-0.7.0.tar.gz
+[2024-04-13 08:10:18] INFO root fetch - processPackages [pulumi-alicloud]: Downloading https://files.pythonhosted.org/packages/be/79/da6d86e1953fc7bde0762279ac850d45fe8ad91ff27a3c837009ede717a4/pulumi_alicloud-3.9.0a1635778307.tar.gz
+[2024-04-13 08:10:18] INFO root fetch - processPackages [fast-kinematics]: Downloading https://files.pythonhosted.org/packages/9b/22/a31d53d845113a4bb4fc17d6ac039143ec4524126971d7f88ded37db3c93/fast_kinematics-0.2.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-13 08:10:18] INFO root fetch - processPackages [pulumi-ec]: Downloading https://files.pythonhosted.org/packages/35/71/26a0067be93cd3b9ec4d59741747b6f6a84422a206e89bc0497dbe3112cf/pulumi_ec-0.8.1a1712727490.tar.gz
+[2024-04-13 08:10:18] INFO root fetch - processPackages [vnpy-evo]: Downloading https://files.pythonhosted.org/packages/34/36/848e81fd849afe30cf4a51bb155fd462b9027940c05a47e69d37f94f19fe/vnpy_evo-0.1.0.tar.gz
+[2024-04-13 08:10:18] INFO root fetch - processPackages [aioclock]: executing diffoscope
+[2024-04-13 08:10:18] INFO root fetch - processPackages [aioclock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioclock-0.0.1.tar.gz tmp/aioclock-0.0.2.tar.gz --markdown 20240413/a/aioclock/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-13 08:10:18] INFO root fetch - processPackages [odoo-addon-sale-elaboration]: Downloading https://files.pythonhosted.org/packages/8b/d7/01cf0c679f461247f67e895be394b55388de4fa519fa7a4329754fd5318c/odoo_addon_sale_elaboration-16.0.1.4.0-py3-none-any.whl
+[2024-04-13 08:10:18] INFO root fetch - processPackages [pytha-fuzz]: Downloading https://files.pythonhosted.org/packages/c1/aa/6c5641e5bcf06137121de98adcefe4f2215c097a5ffe934e370e13d40bc8/pytha-fuzz-1.1.tar.gz
+[2024-04-13 08:10:18] INFO root fetch - processPackages [odoo-addon-sale-elaboration]: executing diffoscope
+[2024-04-13 08:10:18] INFO root fetch - processPackages [odoo-addon-sale-elaboration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_elaboration-16.0.1.3.0-py3-none-any.whl.zip tmp/odoo_addon_sale_elaboration-16.0.1.4.0-py3-none-any.whl.zip --markdown 20240413/o/odoo-addon-sale-elaboration/16.0.1.3.0-16.0.1.4.0/README.md --exclude *.pyd
+[2024-04-13 08:10:18] INFO root fetch - processPackages [pytha-fuzz]: executing diffoscope
+[2024-04-13 08:10:18] INFO root fetch - processPackages [pytha-fuzz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytha-fuzz-1.0.tar.gz tmp/pytha-fuzz-1.1.tar.gz --markdown 20240413/p/pytha-fuzz/1.0-1.1/README.md --exclude *.pyd
+[2024-04-13 08:10:18] INFO root fetch - processPackages [jtd-codebuild]: Downloading https://files.pythonhosted.org/packages/96/ab/a27f40cabe71eb7adcbc47ad65a2e9db5a85bfcbc53a00b50530c14f1e81/jtd_codebuild-0.8.0.tar.gz
+[2024-04-13 08:10:18] INFO root fetch - processPackages [fast-kinematics]: Downloading https://files.pythonhosted.org/packages/57/01/fe14947878e7cc05ed8beebbbf9e92955eb4d462e7a5be6540505835ef35/fast_kinematics-0.2.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-13 08:10:18] INFO root fetch - processPackages [pulumi-ec]: Downloading https://files.pythonhosted.org/packages/af/1c/fa1d01cf1f20e02e0168cff182d8c82c46dede0b3a921796b7aa70e58540/pulumi_ec-0.8.1a1712986766.tar.gz
+[2024-04-13 08:10:18] INFO root fetch - processPackages [vnpy-evo]: Downloading https://files.pythonhosted.org/packages/45/49/5cd072fd7eed3a288b2aee500c6b638cd9c0f70b5768b673ad89144f22f0/vnpy_evo-0.2.0.tar.gz
+[2024-04-13 08:10:18] INFO root fetch - processPackages [pulumi-alicloud]: Downloading https://files.pythonhosted.org/packages/7a/b5/f47603b555625f7ec29ec6dcdc2cf74fe00dc52cba5fad75ddd65d3bd99e/pulumi_alicloud-3.9.0a1637592974.tar.gz
+[2024-04-13 08:10:18] INFO root fetch - processPackages [jtd-codebuild]: executing diffoscope
+[2024-04-13 08:10:18] INFO root fetch - processPackages [jtd-codebuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jtd_codebuild-0.7.0.tar.gz tmp/jtd_codebuild-0.8.0.tar.gz --markdown 20240413/j/jtd-codebuild/0.7.0-0.8.0/README.md --exclude *.pyd
+[2024-04-13 08:10:18] INFO root fetch - processPackages [pulumi-ec]: executing diffoscope
+[2024-04-13 08:10:18] INFO root fetch - processPackages [pulumi-ec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_ec-0.8.1a1712727490.tar.gz tmp/pulumi_ec-0.8.1a1712986766.tar.gz --markdown 20240413/p/pulumi-ec/0.8.1a1712727490-0.8.1a1712986766/README.md --exclude *.pyd
+[2024-04-13 08:10:18] INFO root fetch - processPackages [vnpy-evo]: executing diffoscope
+[2024-04-13 08:10:18] INFO root fetch - processPackages [vnpy-evo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnpy_evo-0.1.0.tar.gz tmp/vnpy_evo-0.2.0.tar.gz --markdown 20240413/v/vnpy-evo/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-13 08:10:18] INFO root fetch - processPackages [fast-kinematics]: executing diffoscope
+[2024-04-13 08:10:18] INFO root fetch - processPackages [fast-kinematics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fast_kinematics-0.2.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/fast_kinematics-0.2.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240413/f/fast-kinematics/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-13 08:10:19] INFO root fetch - processPackages [aioclock]: Remove: archive file [/home/abi/fetcher/tmp/aioclock-0.0.1.tar.gz]
+[2024-04-13 08:10:19] INFO root fetch - processPackages [aioclock]: Remove: archive file [/home/abi/fetcher/tmp/aioclock-0.0.2.tar.gz]
+[2024-04-13 08:10:19] INFO root fetch - main [MainThread]: End processing [aioclock]: success
+[2024-04-13 08:10:19] INFO root fetch - processPackages [pytha-fuzz]: Remove: archive file [/home/abi/fetcher/tmp/pytha-fuzz-1.0.tar.gz]
+[2024-04-13 08:10:19] INFO root fetch - processPackages [pytha-fuzz]: Remove: archive file [/home/abi/fetcher/tmp/pytha-fuzz-1.1.tar.gz]
+[2024-04-13 08:10:19] INFO root fetch - main [MainThread]: End processing [pytha-fuzz]: success
+[2024-04-13 08:10:19] INFO root fetch - processPackages [odoo-addon-sale-elaboration]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_elaboration-16.0.1.3.0-py3-none-any.whl.zip]
+[2024-04-13 08:10:19] INFO root fetch - processPackages [odoo-addon-sale-elaboration]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_elaboration-16.0.1.4.0-py3-none-any.whl.zip]
+[2024-04-13 08:10:19] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-elaboration]: success
+[2024-04-13 08:10:19] INFO root fetch - processPackages [jtd-codebuild]: Remove: archive file [/home/abi/fetcher/tmp/jtd_codebuild-0.7.0.tar.gz]
+[2024-04-13 08:10:19] INFO root fetch - processPackages [jtd-codebuild]: Remove: archive file [/home/abi/fetcher/tmp/jtd_codebuild-0.8.0.tar.gz]
+[2024-04-13 08:10:19] INFO root fetch - main [MainThread]: End processing [jtd-codebuild]: success
+[2024-04-13 08:10:19] INFO root fetch - processPackages [pulumi-alicloud]: executing diffoscope
+[2024-04-13 08:10:19] INFO root fetch - processPackages [pulumi-alicloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_alicloud-3.9.0a1635778307.tar.gz tmp/pulumi_alicloud-3.9.0a1637592974.tar.gz --markdown 20240413/p/pulumi-alicloud/3.9.0a1635778307-3.9.0a1637592974/README.md --exclude *.pyd
+[2024-04-13 08:10:19] INFO root fetch - processPackages [pulumi-ec]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_ec-0.8.1a1712727490.tar.gz]
+[2024-04-13 08:10:19] INFO root fetch - processPackages [pulumi-ec]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_ec-0.8.1a1712986766.tar.gz]
+[2024-04-13 08:10:19] INFO root fetch - main [MainThread]: End processing [pulumi-ec]: success
+[2024-04-13 08:10:19] INFO root fetch - processPackages [vnpy-evo]: Remove: archive file [/home/abi/fetcher/tmp/vnpy_evo-0.1.0.tar.gz]
+[2024-04-13 08:10:19] INFO root fetch - processPackages [vnpy-evo]: Remove: archive file [/home/abi/fetcher/tmp/vnpy_evo-0.2.0.tar.gz]
+[2024-04-13 08:10:19] INFO root fetch - main [MainThread]: End processing [vnpy-evo]: success
+[2024-04-13 08:10:23] INFO root fetch - processPackages [fast-kinematics]: Remove: archive file [/home/abi/fetcher/tmp/fast_kinematics-0.2.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-13 08:10:23] INFO root fetch - processPackages [fast-kinematics]: Remove: archive file [/home/abi/fetcher/tmp/fast_kinematics-0.2.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-13 08:10:23] INFO root fetch - main [MainThread]: End processing [fast-kinematics]: success
+[2024-04-13 08:10:26] INFO root fetch - processPackages [pulumi-alicloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_alicloud-3.9.0a1635778307.tar.gz]
+[2024-04-13 08:10:26] INFO root fetch - processPackages [pulumi-alicloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_alicloud-3.9.0a1637592974.tar.gz]
+[2024-04-13 08:10:26] INFO root fetch - main [MainThread]: End processing [pulumi-alicloud]: success
+[2024-04-13 08:10:26] INFO root fetch - main [MainThread]: Store serial: [22749808]
