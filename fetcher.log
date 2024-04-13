@@ -14049,3 +14049,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:54:43] INFO root fetch - processPackages [libcaes-python]: Remove: archive file [/home/abi/fetcher/tmp/libcaes-python-20240413.tar.gz]
 [2024-04-13 14:54:43] INFO root fetch - main [MainThread]: End processing [libcaes-python]: success
 [2024-04-13 14:54:43] INFO root fetch - main [MainThread]: Store serial: [22751860]
+[2024-04-13 14:56:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751860]
+[2024-04-13 14:56:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 14:56:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agenius
+[2024-04-13 14:56:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tedbuy
+[2024-04-13 14:56:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: athina
+[2024-04-13 14:56:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pki-tools
+[2024-04-13 14:56:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kiwipiepy
+[2024-04-13 14:56:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dazl
+[2024-04-13 14:56:52] INFO root fetch - processPackages [athina]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-04-13 14:56:52] INFO root fetch - processPackages [athina]: Downloading https://files.pythonhosted.org/packages/ef/47/9b2ef0f7dd09092fd1f7473c8a302f1fa6450ca51d82832c78a6378d2975/athina-1.2.8.tar.gz
+[2024-04-13 14:56:52] INFO root fetch - processPackages [agenius]: New version: [4.0.2] Old Version: [4.0.1.post1]
+[2024-04-13 14:56:52] INFO root fetch - processPackages [pki-tools]: New version: [1.0.0] Old Version: [0.0.9]
+[2024-04-13 14:56:52] INFO root fetch - processPackages [tedbuy]: New version: [0.0rc1] Old Version: [0.0.dev1]
+[2024-04-13 14:56:52] INFO root fetch - processPackages [kiwipiepy]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-13 14:56:52] INFO root fetch - processPackages [dazl]: New version: [8.0.0b3] Old Version: [8.0.0b2]
+[2024-04-13 14:56:52] INFO root fetch - processPackages [agenius]: Downloading https://files.pythonhosted.org/packages/49/ff/61acaa133b4b3ae7f0c7c4cfc4f533118243fc203ecf8165dfe19e13a830/agenius-4.0.1.post1.tar.gz
+[2024-04-13 14:56:52] INFO root fetch - processPackages [pki-tools]: Downloading https://files.pythonhosted.org/packages/fd/93/ed893c8064ad3b4ed5cb2b00ca808e0b61697722e108db4e080f43303ac0/pki_tools-0.0.9.tar.gz
+[2024-04-13 14:56:52] INFO root fetch - processPackages [athina]: Downloading https://files.pythonhosted.org/packages/8c/7a/9ca31aae0240dac1dcb9ff13ab77af41aabbad7fe4fb02cf9f625581c8cc/athina-1.2.9.tar.gz
+[2024-04-13 14:56:52] INFO root fetch - processPackages [tedbuy]: Downloading https://files.pythonhosted.org/packages/00/35/b3251ef929aaf1f0034e780ed1caf12d42cb5c6bb40bd1ae2db8a460755c/tedbuy-0.0.dev1.tar.gz
+[2024-04-13 14:56:52] INFO root fetch - processPackages [kiwipiepy]: Downloading https://files.pythonhosted.org/packages/67/48/112f1846463900915ec7e56bf3ac8437a668b5ca4938f0a3f0992f39d914/kiwipiepy-0.9.2.tar.gz
+[2024-04-13 14:56:52] INFO root fetch - processPackages [dazl]: Downloading https://files.pythonhosted.org/packages/83/e4/d756d06f816c6815d3459faeb6d70188715f62733d4f306775c06d0c6d3f/dazl-8.0.0b2.tar.gz
+[2024-04-13 14:56:52] INFO root fetch - processPackages [athina]: executing diffoscope
+[2024-04-13 14:56:52] INFO root fetch - processPackages [athina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athina-1.2.8.tar.gz tmp/athina-1.2.9.tar.gz --markdown 20240413/a/athina/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-04-13 14:56:52] INFO root fetch - processPackages [pki-tools]: Downloading https://files.pythonhosted.org/packages/08/e7/ab851832735d8b201a05dfbec7d4f2d4f967f437031bb3845f7715deb9e0/pki_tools-1.0.0.tar.gz
+[2024-04-13 14:56:53] INFO root fetch - processPackages [agenius]: Downloading https://files.pythonhosted.org/packages/ae/c2/3c2a9f3efd6182d54ddedb65ee93495ab04640fe0425042d0ce918f008b3/agenius-4.0.2.tar.gz
+[2024-04-13 14:56:53] INFO root fetch - processPackages [tedbuy]: Downloading https://files.pythonhosted.org/packages/36/38/efa7688a92085ab245b8c25f3d84712f9bf5e60f48e68ffe767a2fdf198d/tedbuy-0.0rc1.tar.gz
+[2024-04-13 14:56:53] INFO root fetch - processPackages [agenius]: executing diffoscope
+[2024-04-13 14:56:53] INFO root fetch - processPackages [agenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agenius-4.0.1.post1.tar.gz tmp/agenius-4.0.2.tar.gz --markdown 20240413/a/agenius/4.0.1.post1-4.0.2/README.md --exclude *.pyd
+[2024-04-13 14:56:53] INFO root fetch - processPackages [tedbuy]: executing diffoscope
+[2024-04-13 14:56:53] INFO root fetch - processPackages [tedbuy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tedbuy-0.0.dev1.tar.gz tmp/tedbuy-0.0rc1.tar.gz --markdown 20240413/t/tedbuy/0.0.dev1-0.0rc1/README.md --exclude *.pyd
+[2024-04-13 14:56:53] INFO root fetch - processPackages [pki-tools]: executing diffoscope
+[2024-04-13 14:56:53] INFO root fetch - processPackages [pki-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pki_tools-0.0.9.tar.gz tmp/pki_tools-1.0.0.tar.gz --markdown 20240413/p/pki-tools/0.0.9-1.0.0/README.md --exclude *.pyd
+[2024-04-13 14:56:53] INFO root fetch - processPackages [dazl]: Downloading https://files.pythonhosted.org/packages/a7/14/6670155d428a110a276db89413dbc9633595c5190866a454c9754ae0a237/dazl-8.0.0b3.tar.gz
+[2024-04-13 14:56:53] INFO root fetch - processPackages [athina]: Remove: archive file [/home/abi/fetcher/tmp/athina-1.2.8.tar.gz]
+[2024-04-13 14:56:53] INFO root fetch - processPackages [athina]: Remove: archive file [/home/abi/fetcher/tmp/athina-1.2.9.tar.gz]
+[2024-04-13 14:56:53] INFO root fetch - main [MainThread]: End processing [athina]: success
+[2024-04-13 14:56:53] INFO root fetch - processPackages [tedbuy]: Remove: archive file [/home/abi/fetcher/tmp/tedbuy-0.0.dev1.tar.gz]
+[2024-04-13 14:56:53] INFO root fetch - processPackages [tedbuy]: Remove: archive file [/home/abi/fetcher/tmp/tedbuy-0.0rc1.tar.gz]
+[2024-04-13 14:56:53] INFO root fetch - main [MainThread]: End processing [tedbuy]: success
+[2024-04-13 14:56:53] INFO root fetch - processPackages [kiwipiepy]: Downloading https://files.pythonhosted.org/packages/20/bf/b2bab2485877cf2444e9522ac22f335900b94bee99d97154b06354a3a69d/kiwipiepy-0.9.3.tar.gz
+[2024-04-13 14:56:53] INFO root fetch - processPackages [agenius]: Remove: archive file [/home/abi/fetcher/tmp/agenius-4.0.1.post1.tar.gz]
+[2024-04-13 14:56:53] INFO root fetch - processPackages [agenius]: Remove: archive file [/home/abi/fetcher/tmp/agenius-4.0.2.tar.gz]
+[2024-04-13 14:56:53] INFO root fetch - main [MainThread]: End processing [agenius]: success
+[2024-04-13 14:56:53] INFO root fetch - processPackages [pki-tools]: Remove: archive file [/home/abi/fetcher/tmp/pki_tools-0.0.9.tar.gz]
+[2024-04-13 14:56:53] INFO root fetch - processPackages [pki-tools]: Remove: archive file [/home/abi/fetcher/tmp/pki_tools-1.0.0.tar.gz]
+[2024-04-13 14:56:53] INFO root fetch - main [MainThread]: End processing [pki-tools]: success
+[2024-04-13 14:56:53] INFO root fetch - processPackages [kiwipiepy]: executing diffoscope
+[2024-04-13 14:56:53] INFO root fetch - processPackages [kiwipiepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiwipiepy-0.9.2.tar.gz tmp/kiwipiepy-0.9.3.tar.gz --markdown 20240413/k/kiwipiepy/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-13 14:56:54] INFO root fetch - processPackages [dazl]: executing diffoscope
+[2024-04-13 14:56:54] INFO root fetch - processPackages [dazl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dazl-8.0.0b2.tar.gz tmp/dazl-8.0.0b3.tar.gz --markdown 20240413/d/dazl/8.0.0b2-8.0.0b3/README.md --exclude *.pyd
+[2024-04-13 14:56:54] INFO root fetch - processPackages [kiwipiepy]: Remove: archive file [/home/abi/fetcher/tmp/kiwipiepy-0.9.2.tar.gz]
+[2024-04-13 14:56:54] INFO root fetch - processPackages [kiwipiepy]: Remove: archive file [/home/abi/fetcher/tmp/kiwipiepy-0.9.3.tar.gz]
+[2024-04-13 14:56:54] INFO root fetch - main [MainThread]: End processing [kiwipiepy]: success
+[2024-04-13 14:56:56] INFO root fetch - processPackages [dazl]: Remove: archive file [/home/abi/fetcher/tmp/dazl-8.0.0b2.tar.gz]
+[2024-04-13 14:56:56] INFO root fetch - processPackages [dazl]: Remove: archive file [/home/abi/fetcher/tmp/dazl-8.0.0b3.tar.gz]
+[2024-04-13 14:56:56] INFO root fetch - main [MainThread]: End processing [dazl]: success
+[2024-04-13 14:56:56] INFO root fetch - main [MainThread]: Store serial: [22751877]
