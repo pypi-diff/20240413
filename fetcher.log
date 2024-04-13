@@ -19623,3 +19623,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 22:09:53] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
 [2024-04-13 22:09:53] INFO root fetch - main [MainThread]: End processing [aim]: success
 [2024-04-13 22:09:53] INFO root fetch - main [MainThread]: Store serial: [22754489]
+[2024-04-13 22:11:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754489]
+[2024-04-13 22:12:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 22:12:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyweatherfr
+[2024-04-13 22:12:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blurry-cli
+[2024-04-13 22:12:02] INFO root fetch - processPackages [blurry-cli]: New version: [0.7.0] Old Version: [0.6.2]
+[2024-04-13 22:12:02] INFO root fetch - processPackages [pyweatherfr]: New version: [5.0.0] Old Version: [4.2.0]
+[2024-04-13 22:12:02] INFO root fetch - processPackages [blurry-cli]: Downloading https://files.pythonhosted.org/packages/0b/f2/dccd0c1f9362ddbfa54cbcadaad150694fe860a9518e060c949e93c8c33a/blurry_cli-0.6.2.tar.gz
+[2024-04-13 22:12:02] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/d4/ed/b2480f372c5739adc8018190dd3887de1428494b51fe526057460f369bcf/pyweatherfr-4.2.0.tar.gz
+[2024-04-13 22:12:02] INFO root fetch - processPackages [blurry-cli]: Downloading https://files.pythonhosted.org/packages/d2/65/59761ad55035bf5752093dc4e7c9db75358192ae73cf4cd739a47e551f5e/blurry_cli-0.7.0.tar.gz
+[2024-04-13 22:12:02] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/e3/29/c3f464432577d0f90def315a6fc30063fa336d20a37ecf95af90afb3f184/pyweatherfr-5.0.0.tar.gz
+[2024-04-13 22:12:02] INFO root fetch - processPackages [blurry-cli]: executing diffoscope
+[2024-04-13 22:12:02] INFO root fetch - processPackages [blurry-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blurry_cli-0.6.2.tar.gz tmp/blurry_cli-0.7.0.tar.gz --markdown 20240413/b/blurry-cli/0.6.2-0.7.0/README.md --exclude *.pyd
+[2024-04-13 22:12:02] INFO root fetch - processPackages [pyweatherfr]: executing diffoscope
+[2024-04-13 22:12:02] INFO root fetch - processPackages [pyweatherfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyweatherfr-4.2.0.tar.gz tmp/pyweatherfr-5.0.0.tar.gz --markdown 20240413/p/pyweatherfr/4.2.0-5.0.0/README.md --exclude *.pyd
+[2024-04-13 22:12:03] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-4.2.0.tar.gz]
+[2024-04-13 22:12:03] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-5.0.0.tar.gz]
+[2024-04-13 22:12:03] INFO root fetch - main [MainThread]: End processing [pyweatherfr]: success
+[2024-04-13 22:12:03] INFO root fetch - processPackages [blurry-cli]: Remove: archive file [/home/abi/fetcher/tmp/blurry_cli-0.6.2.tar.gz]
+[2024-04-13 22:12:03] INFO root fetch - processPackages [blurry-cli]: Remove: archive file [/home/abi/fetcher/tmp/blurry_cli-0.7.0.tar.gz]
+[2024-04-13 22:12:03] INFO root fetch - main [MainThread]: End processing [blurry-cli]: success
+[2024-04-13 22:12:03] INFO root fetch - main [MainThread]: Store serial: [22754497]
