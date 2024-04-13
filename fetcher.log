@@ -10800,3 +10800,15 @@
 [2024-04-13 10:24:27] INFO root fetch - processPackages [Agently]: Remove: archive file [/home/abi/fetcher/tmp/Agently-3.3.0.0a4.tar.gz]
 [2024-04-13 10:24:27] INFO root fetch - main [MainThread]: End processing [Agently]: success
 [2024-04-13 10:24:27] INFO root fetch - main [MainThread]: Store serial: [22750505]
+[2024-04-13 10:26:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750505]
+[2024-04-13 10:26:35] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 10:26:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pynovnc
+[2024-04-13 10:26:36] INFO root fetch - processPackages [pynovnc]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-13 10:26:36] INFO root fetch - processPackages [pynovnc]: Downloading https://files.pythonhosted.org/packages/99/68/275d609f5e38e8bb82436c6a56c79f5239e3f532209eac0a60c464d691aa/pynovnc-1.0.7.tar.gz
+[2024-04-13 10:26:36] INFO root fetch - processPackages [pynovnc]: Downloading https://files.pythonhosted.org/packages/e8/5f/8e781b4c22e19b7adde4743d7008d1ea12d265a7a226d0a161066be04a9c/pynovnc-1.0.8.tar.gz
+[2024-04-13 10:26:36] INFO root fetch - processPackages [pynovnc]: executing diffoscope
+[2024-04-13 10:26:36] INFO root fetch - processPackages [pynovnc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynovnc-1.0.7.tar.gz tmp/pynovnc-1.0.8.tar.gz --markdown 20240413/p/pynovnc/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-04-13 10:26:37] INFO root fetch - processPackages [pynovnc]: Remove: archive file [/home/abi/fetcher/tmp/pynovnc-1.0.7.tar.gz]
+[2024-04-13 10:26:37] INFO root fetch - processPackages [pynovnc]: Remove: archive file [/home/abi/fetcher/tmp/pynovnc-1.0.8.tar.gz]
+[2024-04-13 10:26:37] INFO root fetch - main [MainThread]: End processing [pynovnc]: success
+[2024-04-13 10:26:37] INFO root fetch - main [MainThread]: Store serial: [22750508]
