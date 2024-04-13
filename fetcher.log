@@ -1964,3 +1964,96 @@
 [2024-04-13 02:13:03] INFO root fetch - processPackages [draggable-line-chart]: Remove: archive file [/home/abi/fetcher/tmp/draggable-line-chart-0.3.4.tar.gz]
 [2024-04-13 02:13:03] INFO root fetch - main [MainThread]: End processing [draggable-line-chart]: success
 [2024-04-13 02:13:03] INFO root fetch - main [MainThread]: Store serial: [22747175]
+[2024-04-13 02:15:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22747175]
+[2024-04-13 02:15:14] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-13 02:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytorch-ignite
+[2024-04-13 02:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdktf-gitlab-runner
+[2024-04-13 02:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tmuxp
+[2024-04-13 02:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-events-notify
+[2024-04-13 02:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-nag
+[2024-04-13 02:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: caustic.lexer
+[2024-04-13 02:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sfkit
+[2024-04-13 02:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk-skylight
+[2024-04-13 02:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdk-common
+[2024-04-13 02:15:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cdklabs.cdk-hyperledger-fabric-network
+[2024-04-13 02:15:14] INFO root fetch - processPackages [caustic.lexer]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-13 02:15:14] INFO root fetch - processPackages [cdktf-gitlab-runner]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-13 02:15:14] INFO root fetch - processPackages [sfkit]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-13 02:15:14] INFO root fetch - processPackages [cdk-nag]: New version: [2.9.7] Old Version: [2.9.6]
+[2024-04-13 02:15:14] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-04-13 02:15:14] INFO root fetch - processPackages [cdk-skylight]: New version: [1.1.99] Old Version: [1.1.98]
+[2024-04-13 02:15:14] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.2.96] Old Version: [2.2.95]
+[2024-04-13 02:15:14] INFO root fetch - processPackages [cdk-skylight]: Downloading https://files.pythonhosted.org/packages/86/f2/01b58f6183b48ce1105016a7f5045925a49464b8c20408459bd101fe5f25/cdk-skylight-1.1.98.tar.gz
+[2024-04-13 02:15:14] INFO root fetch - processPackages [pytorch-ignite]: New version: [0.6.0.dev20240412] Old Version: [0.6.0.dev20240411]
+[2024-04-13 02:15:14] INFO root fetch - processPackages [tmuxp]: New version: [1.9.4] Old Version: [1.9.3]
+[2024-04-13 02:15:14] INFO root fetch - processPackages [cdktf-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/8a/6e/f1c520e407ce3adf90b51d2d1ca84d283a08c808fc00c9deeff4f4734d82/cdktf-gitlab-runner-0.0.98.tar.gz
+[2024-04-13 02:15:14] INFO root fetch - processPackages [sfkit]: Downloading https://files.pythonhosted.org/packages/69/8b/9a1f5060e155248ea5b8d75d6b7f8e1c798bf9c3a22c9f96083fb0ebca9e/sfkit-0.0.98-py3-none-any.whl
+[2024-04-13 02:15:14] INFO root fetch - processPackages [cdk-nag]: Downloading https://files.pythonhosted.org/packages/26/bc/b8768e307b8d360b78f45303ac30baa4232637f372296203b0005cd07cd4/cdk-nag-2.9.6.tar.gz
+[2024-04-13 02:15:14] INFO root fetch - processPackages [caustic.lexer]: Downloading https://files.pythonhosted.org/packages/c5/ab/9f6f8accdc481af9552c2b087cf49dd69be28903a45424912f046604e5ec/caustic.lexer-1.1.0.tar.gz
+[2024-04-13 02:15:14] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Downloading https://files.pythonhosted.org/packages/9b/c8/ddb4d2575b42b36bf1ebf5daccec9c3c53a9ac9cadaeffb66bed93dc3bab/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz
+[2024-04-13 02:15:14] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/cd/1d/f2abeaf14967f1dd554f8f77e4a43493fa4a25d80b06cc502ab328d6d35c/cdk-events-notify-2.2.95.tar.gz
+[2024-04-13 02:15:14] INFO root fetch - processPackages [pytorch-ignite]: Downloading https://files.pythonhosted.org/packages/79/29/9d5278befa9711396416f768dbeb381213f708b3881851c39bc3fb747cf9/pytorch-ignite-0.6.0.dev20240411.tar.gz
+[2024-04-13 02:15:14] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-13 02:15:15] INFO root fetch - processPackages [tmuxp]: Downloading https://files.pythonhosted.org/packages/35/d3/b8fe5cb0bc52abf33f8d5846a48bbca0ea35a3e1a3ebff99a8cb3dc1692b/tmuxp-1.9.3.tar.gz
+[2024-04-13 02:15:15] INFO root fetch - processPackages [cdktf-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/59/f2/0d7ab5ec05a2b43bd92c00fd237afddb1e2770c7edaf03b1f7ddef6c0793/cdktf-gitlab-runner-0.0.99.tar.gz
+[2024-04-13 02:15:15] INFO root fetch - processPackages [sfkit]: Downloading https://files.pythonhosted.org/packages/ec/6a/31917f962eb713dee0e13323371f569ef0aa4a601303df27a62825d946cf/sfkit-0.0.99-py3-none-any.whl
+[2024-04-13 02:15:15] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Downloading https://files.pythonhosted.org/packages/56/40/cbf52f4213018f2d82f0aad0f2fa90e69c2923704c1905bd7e090d3accf2/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz
+[2024-04-13 02:15:15] INFO root fetch - processPackages [cdk-nag]: Downloading https://files.pythonhosted.org/packages/71/78/6a2d0c627f1033774d5be3d2faca465e0bc0b07cf97cec491c795775999a/cdk-nag-2.9.7.tar.gz
+[2024-04-13 02:15:15] INFO root fetch - processPackages [cdk-skylight]: Downloading https://files.pythonhosted.org/packages/59/49/3e035cb98d5f97f79c174e211129a2dbe596df70c5df50ac701242fabea2/cdk-skylight-1.1.99.tar.gz
+[2024-04-13 02:15:15] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/f3/30/796e7080e9a9b293ccf386b0d95f40dde8e214e0415d2c59be9c661105a9/cdk-common-2.0.98.tar.gz
+[2024-04-13 02:15:15] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/00/ac/76f098b51f2ba24d10a233845787787293ff52b39dd95099cf3a0a3de14c/cdk-events-notify-2.2.96.tar.gz
+[2024-04-13 02:15:15] INFO root fetch - processPackages [cdktf-gitlab-runner]: executing diffoscope
+[2024-04-13 02:15:15] INFO root fetch - processPackages [cdktf-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-gitlab-runner-0.0.98.tar.gz tmp/cdktf-gitlab-runner-0.0.99.tar.gz --markdown 20240413/c/cdktf-gitlab-runner/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-13 02:15:15] INFO root fetch - processPackages [caustic.lexer]: Downloading https://files.pythonhosted.org/packages/4f/53/218595e4d5cef09a2768d712a8455d7940e0a78b86bac6934bf220613501/caustic.lexer-1.2.0.tar.gz
+[2024-04-13 02:15:15] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: executing diffoscope
+[2024-04-13 02:15:15] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz --markdown 20240413/c/cdklabs.cdk-hyperledger-fabric-network/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-04-13 02:15:15] INFO root fetch - processPackages [cdk-skylight]: executing diffoscope
+[2024-04-13 02:15:15] INFO root fetch - processPackages [cdk-skylight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-skylight-1.1.98.tar.gz tmp/cdk-skylight-1.1.99.tar.gz --markdown 20240413/c/cdk-skylight/1.1.98-1.1.99/README.md --exclude *.pyd
+[2024-04-13 02:15:15] INFO root fetch - processPackages [sfkit]: executing diffoscope
+[2024-04-13 02:15:15] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2024-04-13 02:15:15] INFO root fetch - processPackages [sfkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sfkit-0.0.98-py3-none-any.whl.zip tmp/sfkit-0.0.99-py3-none-any.whl.zip --markdown 20240413/s/sfkit/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-13 02:15:15] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.2.95.tar.gz tmp/cdk-events-notify-2.2.96.tar.gz --markdown 20240413/c/cdk-events-notify/2.2.95-2.2.96/README.md --exclude *.pyd
+[2024-04-13 02:15:15] INFO root fetch - processPackages [caustic.lexer]: executing diffoscope
+[2024-04-13 02:15:15] INFO root fetch - processPackages [caustic.lexer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caustic.lexer-1.1.0.tar.gz tmp/caustic.lexer-1.2.0.tar.gz --markdown 20240413/c/caustic.lexer/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-04-13 02:15:15] INFO root fetch - processPackages [pytorch-ignite]: Downloading https://files.pythonhosted.org/packages/1b/1f/2df36833237b63d5a8051b567ca29c5f7e253ec69a2b1ea29ebcda6bc5f3/pytorch-ignite-0.6.0.dev20240412.tar.gz
+[2024-04-13 02:15:15] INFO root fetch - processPackages [cdk-nag]: executing diffoscope
+[2024-04-13 02:15:15] INFO root fetch - processPackages [cdk-nag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-nag-2.9.6.tar.gz tmp/cdk-nag-2.9.7.tar.gz --markdown 20240413/c/cdk-nag/2.9.6-2.9.7/README.md --exclude *.pyd
+[2024-04-13 02:15:15] INFO root fetch - processPackages [tmuxp]: Downloading https://files.pythonhosted.org/packages/7a/ae/56b8199f9768f276e8c08f1ac45f7a1125582700d3cf66210c6dc09c4412/tmuxp-1.9.4.tar.gz
+[2024-04-13 02:15:15] INFO root fetch - processPackages [pytorch-ignite]: executing diffoscope
+[2024-04-13 02:15:15] INFO root fetch - processPackages [pytorch-ignite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytorch-ignite-0.6.0.dev20240411.tar.gz tmp/pytorch-ignite-0.6.0.dev20240412.tar.gz --markdown 20240413/p/pytorch-ignite/0.6.0.dev20240411-0.6.0.dev20240412/README.md --exclude *.pyd
+[2024-04-13 02:15:15] INFO root fetch - processPackages [tmuxp]: executing diffoscope
+[2024-04-13 02:15:15] INFO root fetch - processPackages [tmuxp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmuxp-1.9.3.tar.gz tmp/tmuxp-1.9.4.tar.gz --markdown 20240413/t/tmuxp/1.9.3-1.9.4/README.md --exclude *.pyd
+[2024-04-13 02:15:15] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/11/10/ca183f281275ec945ede082d9491c0bb5bfb9152c437124c86e37cba7079/cdk-common-2.0.99.tar.gz
+[2024-04-13 02:15:16] INFO root fetch - processPackages [cdktf-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-gitlab-runner-0.0.98.tar.gz]
+[2024-04-13 02:15:16] INFO root fetch - processPackages [cdktf-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-gitlab-runner-0.0.99.tar.gz]
+[2024-04-13 02:15:16] INFO root fetch - main [MainThread]: End processing [cdktf-gitlab-runner]: success
+[2024-04-13 02:15:16] INFO root fetch - processPackages [cdk-skylight]: Remove: archive file [/home/abi/fetcher/tmp/cdk-skylight-1.1.98.tar.gz]
+[2024-04-13 02:15:16] INFO root fetch - processPackages [cdk-skylight]: Remove: archive file [/home/abi/fetcher/tmp/cdk-skylight-1.1.99.tar.gz]
+[2024-04-13 02:15:16] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2024-04-13 02:15:16] INFO root fetch - main [MainThread]: End processing [cdk-skylight]: success
+[2024-04-13 02:15:16] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20240413/c/cdk-common/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-04-13 02:15:16] INFO root fetch - processPackages [cdk-nag]: Remove: archive file [/home/abi/fetcher/tmp/cdk-nag-2.9.6.tar.gz]
+[2024-04-13 02:15:16] INFO root fetch - processPackages [cdk-nag]: Remove: archive file [/home/abi/fetcher/tmp/cdk-nag-2.9.7.tar.gz]
+[2024-04-13 02:15:16] INFO root fetch - main [MainThread]: End processing [cdk-nag]: success
+[2024-04-13 02:15:16] INFO root fetch - processPackages [sfkit]: Remove: archive file [/home/abi/fetcher/tmp/sfkit-0.0.98-py3-none-any.whl.zip]
+[2024-04-13 02:15:16] INFO root fetch - processPackages [sfkit]: Remove: archive file [/home/abi/fetcher/tmp/sfkit-0.0.99-py3-none-any.whl.zip]
+[2024-04-13 02:15:16] INFO root fetch - main [MainThread]: End processing [sfkit]: success
+[2024-04-13 02:15:16] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.95.tar.gz]
+[2024-04-13 02:15:16] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.96.tar.gz]
+[2024-04-13 02:15:16] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2024-04-13 02:15:16] INFO root fetch - processPackages [caustic.lexer]: Remove: archive file [/home/abi/fetcher/tmp/caustic.lexer-1.1.0.tar.gz]
+[2024-04-13 02:15:16] INFO root fetch - processPackages [caustic.lexer]: Remove: archive file [/home/abi/fetcher/tmp/caustic.lexer-1.2.0.tar.gz]
+[2024-04-13 02:15:16] INFO root fetch - main [MainThread]: End processing [caustic.lexer]: success
+[2024-04-13 02:15:16] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz]
+[2024-04-13 02:15:16] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz]
+[2024-04-13 02:15:16] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-hyperledger-fabric-network]: success
+[2024-04-13 02:15:16] INFO root fetch - processPackages [pytorch-ignite]: Remove: archive file [/home/abi/fetcher/tmp/pytorch-ignite-0.6.0.dev20240411.tar.gz]
+[2024-04-13 02:15:16] INFO root fetch - processPackages [pytorch-ignite]: Remove: archive file [/home/abi/fetcher/tmp/pytorch-ignite-0.6.0.dev20240412.tar.gz]
+[2024-04-13 02:15:16] INFO root fetch - main [MainThread]: End processing [pytorch-ignite]: success
+[2024-04-13 02:15:16] INFO root fetch - processPackages [tmuxp]: Remove: archive file [/home/abi/fetcher/tmp/tmuxp-1.9.3.tar.gz]
+[2024-04-13 02:15:16] INFO root fetch - processPackages [tmuxp]: Remove: archive file [/home/abi/fetcher/tmp/tmuxp-1.9.4.tar.gz]
+[2024-04-13 02:15:16] INFO root fetch - main [MainThread]: End processing [tmuxp]: success
+[2024-04-13 02:15:17] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.98.tar.gz]
+[2024-04-13 02:15:17] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
+[2024-04-13 02:15:17] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2024-04-13 02:15:17] INFO root fetch - main [MainThread]: Store serial: [22747202]
