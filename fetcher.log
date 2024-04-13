@@ -18860,3 +18860,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 21:03:36] INFO root fetch - processPackages [spotlight-sdk]: Remove: archive file [/home/abi/fetcher/tmp/spotlight-sdk-0.0.9.tar.gz]
 [2024-04-13 21:03:36] INFO root fetch - main [MainThread]: End processing [spotlight-sdk]: success
 [2024-04-13 21:03:36] INFO root fetch - main [MainThread]: Store serial: [22754125]
+[2024-04-13 21:05:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754125]
+[2024-04-13 21:05:44] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-13 21:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dblcsgen
+[2024-04-13 21:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fudstop
+[2024-04-13 21:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ansar-connect
+[2024-04-13 21:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: readyapi
+[2024-04-13 21:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dblcsgen
+[2024-04-13 21:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: llm-steer
+[2024-04-13 21:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: efriser
+[2024-04-13 21:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fudstop
+[2024-04-13 21:05:45] INFO root fetch - processPackages [ansar-connect]: New version: [0.1.144] Old Version: [0.1.142]
+[2024-04-13 21:05:45] WARNING root fetch - processPackages [dblcsgen]: Skipping, unable to determine old version
+[2024-04-13 21:05:45] INFO root fetch - main [MainThread]: End processing [dblcsgen] error
+[2024-04-13 21:05:45] INFO root fetch - processPackages [efriser]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-13 21:05:45] WARNING root fetch - processPackages [dblcsgen]: Skipping, unable to determine old version
+[2024-04-13 21:05:45] INFO root fetch - main [MainThread]: End processing [dblcsgen] error
+[2024-04-13 21:05:45] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/34/4e/884db0a2ec3dc2c8670bf0338f23971b9c0132ee7622cb6e6152714020eb/ansar-connect-0.1.142.tar.gz
+[2024-04-13 21:05:45] INFO root fetch - processPackages [readyapi]: New version: [0.110.1] Old Version: [0.109.3]
+[2024-04-13 21:05:45] INFO root fetch - processPackages [efriser]: Downloading https://files.pythonhosted.org/packages/1c/5f/746dcad9b027f777f41d13e81da550b09f67eb74a7dfca6cc44450ca8edd/efriser-0.1.3.tar.gz
+[2024-04-13 21:05:45] INFO root fetch - processPackages [llm-steer]: New version: [1.1.0] Old Version: [1.0.2]
+[2024-04-13 21:05:45] INFO root fetch - processPackages [fudstop]: New version: [2.4.4] Old Version: [2.4.3]
+[2024-04-13 21:05:45] INFO root fetch - processPackages [fudstop]: New version: [2.4.4] Old Version: [2.4.3]
+[2024-04-13 21:05:45] INFO root fetch - processPackages [readyapi]: Downloading https://files.pythonhosted.org/packages/56/55/28811a647ea542496e44d3ca9eaf7871c4226b94ed93228acee103412e2c/readyapi-0.109.3.tar.gz
+[2024-04-13 21:05:45] INFO root fetch - processPackages [llm-steer]: Downloading https://files.pythonhosted.org/packages/af/ff/0c62f2843175cc0766d63363a99639b221e3b94c082188bd3a6954f1471a/llm_steer-1.0.2.tar.gz
+[2024-04-13 21:05:45] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/d9/d0/035e42ab3ce08c29d6da8d194535232dbbf8448664dc6701f3da2a03a118/fudstop-2.4.3.tar.gz
+[2024-04-13 21:05:45] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/d9/d0/035e42ab3ce08c29d6da8d194535232dbbf8448664dc6701f3da2a03a118/fudstop-2.4.3.tar.gz
+[2024-04-13 21:05:45] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/a1/7c/aa3f6d660a645a8fae9c24e0aefb66cea76e216e589ceeb05cf3afd510f1/ansar-connect-0.1.144.tar.gz
+[2024-04-13 21:05:45] INFO root fetch - processPackages [efriser]: Downloading https://files.pythonhosted.org/packages/82/62/9426520a630b95198b8e01a121f8c7c05895788d22e56d24dd3514c2e8b6/efriser-0.1.4.tar.gz
+[2024-04-13 21:05:45] WARNING root fetch - processPackages [readyapi]: Skipping package: exceeds size limit 11729428>=10485760
+[2024-04-13 21:05:45] INFO root fetch - main [MainThread]: End processing [readyapi] error
+[2024-04-13 21:05:45] INFO root fetch - processPackages [ansar-connect]: executing diffoscope
+[2024-04-13 21:05:45] INFO root fetch - processPackages [ansar-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansar-connect-0.1.142.tar.gz tmp/ansar-connect-0.1.144.tar.gz --markdown 20240413/a/ansar-connect/0.1.142-0.1.144/README.md --exclude *.pyd
+[2024-04-13 21:05:45] INFO root fetch - processPackages [efriser]: executing diffoscope
+[2024-04-13 21:05:45] INFO root fetch - processPackages [efriser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/efriser-0.1.3.tar.gz tmp/efriser-0.1.4.tar.gz --markdown 20240413/e/efriser/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-13 21:05:45] INFO root fetch - processPackages [llm-steer]: Downloading https://files.pythonhosted.org/packages/35/72/86ad5c613295d5d11f82ee64ea56919753acb6cb51e9b58b6ac9c76226b1/llm_steer-1.1.0.tar.gz
+[2024-04-13 21:05:45] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/2e/6d/d11d6f15e07ffa8cf482cf3a71755e20c4e89cf9fe6adecd0182f29a4ec7/fudstop-2.4.4.tar.gz
+[2024-04-13 21:05:45] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/2e/6d/d11d6f15e07ffa8cf482cf3a71755e20c4e89cf9fe6adecd0182f29a4ec7/fudstop-2.4.4.tar.gz
+[2024-04-13 21:05:45] INFO root fetch - processPackages [llm-steer]: executing diffoscope
+[2024-04-13 21:05:45] INFO root fetch - processPackages [llm-steer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_steer-1.0.2.tar.gz tmp/llm_steer-1.1.0.tar.gz --markdown 20240413/l/llm-steer/1.0.2-1.1.0/README.md --exclude *.pyd
+[2024-04-13 21:05:46] INFO root fetch - processPackages [fudstop]: executing diffoscope
+[2024-04-13 21:05:46] INFO root fetch - processPackages [fudstop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fudstop-2.4.3.tar.gz tmp/fudstop-2.4.4.tar.gz --markdown 20240413/f/fudstop/2.4.3-2.4.4/README.md --exclude *.pyd
+[2024-04-13 21:05:46] INFO root fetch - processPackages [fudstop]: executing diffoscope
+[2024-04-13 21:05:46] INFO root fetch - processPackages [fudstop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fudstop-2.4.3.tar.gz tmp/fudstop-2.4.4.tar.gz --markdown 20240413/f/fudstop/2.4.3-2.4.4/README.md --exclude *.pyd
+[2024-04-13 21:05:46] INFO root fetch - processPackages [efriser]: Remove: archive file [/home/abi/fetcher/tmp/efriser-0.1.3.tar.gz]
+[2024-04-13 21:05:46] INFO root fetch - processPackages [efriser]: Remove: archive file [/home/abi/fetcher/tmp/efriser-0.1.4.tar.gz]
+[2024-04-13 21:05:46] INFO root fetch - main [MainThread]: End processing [efriser]: success
+[2024-04-13 21:05:46] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar-connect-0.1.142.tar.gz]
+[2024-04-13 21:05:46] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar-connect-0.1.144.tar.gz]
+[2024-04-13 21:05:46] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
+[2024-04-13 21:05:46] INFO root fetch - processPackages [llm-steer]: Remove: archive file [/home/abi/fetcher/tmp/llm_steer-1.0.2.tar.gz]
+[2024-04-13 21:05:46] INFO root fetch - processPackages [llm-steer]: Remove: archive file [/home/abi/fetcher/tmp/llm_steer-1.1.0.tar.gz]
+[2024-04-13 21:05:46] INFO root fetch - main [MainThread]: End processing [llm-steer]: success
+[2024-04-13 21:05:47] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.4.3.tar.gz]
+[2024-04-13 21:05:47] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.4.4.tar.gz]
+[2024-04-13 21:05:47] INFO root fetch - main [MainThread]: End processing [fudstop]: success
+[2024-04-13 21:05:47] INFO root fetch - main [MainThread]: End processing [fudstop]: success
+[2024-04-13 21:05:47] INFO root fetch - main [MainThread]: Store serial: [22754149]
