@@ -11156,3 +11156,24 @@
 [2024-04-13 10:52:50] INFO root fetch - processPackages [argsreq]: Remove: archive file [/home/abi/fetcher/tmp/argsreq-1.2.tar.gz]
 [2024-04-13 10:52:50] INFO root fetch - main [MainThread]: End processing [argsreq]: success
 [2024-04-13 10:52:50] INFO root fetch - main [MainThread]: Store serial: [22750696]
+[2024-04-13 10:54:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750696]
+[2024-04-13 10:55:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 10:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aqtinstall
+[2024-04-13 10:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: telegram-wallet-pay
+[2024-04-13 10:55:00] INFO root fetch - processPackages [telegram-wallet-pay]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-13 10:55:00] INFO root fetch - processPackages [aqtinstall]: New version: [3.1.9] Old Version: [3.1.8]
+[2024-04-13 10:55:00] INFO root fetch - processPackages [telegram-wallet-pay]: Downloading https://files.pythonhosted.org/packages/8c/f5/c2faefcbdd6b026c2de5b2819c8a8f7050070e06ef27c2810dbf16f37f20/telegram_wallet_pay-0.2.0.tar.gz
+[2024-04-13 10:55:00] INFO root fetch - processPackages [aqtinstall]: Downloading https://files.pythonhosted.org/packages/d7/fd/2689b4297335dc91f60a400820bf0e38074cfd2d6b4690304892bb73f163/aqtinstall-3.1.8.tar.gz
+[2024-04-13 10:55:00] INFO root fetch - processPackages [telegram-wallet-pay]: Downloading https://files.pythonhosted.org/packages/0c/df/5d34abdb3c34a0e1d1c07b157ced9d8b23252f21e5e7e8dd93bf3a53a020/telegram_wallet_pay-0.2.1.tar.gz
+[2024-04-13 10:55:00] INFO root fetch - processPackages [telegram-wallet-pay]: executing diffoscope
+[2024-04-13 10:55:00] INFO root fetch - processPackages [telegram-wallet-pay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegram_wallet_pay-0.2.0.tar.gz tmp/telegram_wallet_pay-0.2.1.tar.gz --markdown 20240413/t/telegram-wallet-pay/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-13 10:55:01] INFO root fetch - processPackages [telegram-wallet-pay]: Remove: archive file [/home/abi/fetcher/tmp/telegram_wallet_pay-0.2.0.tar.gz]
+[2024-04-13 10:55:01] INFO root fetch - processPackages [telegram-wallet-pay]: Remove: archive file [/home/abi/fetcher/tmp/telegram_wallet_pay-0.2.1.tar.gz]
+[2024-04-13 10:55:01] INFO root fetch - main [MainThread]: End processing [telegram-wallet-pay]: success
+[2024-04-13 10:55:01] INFO root fetch - processPackages [aqtinstall]: Downloading https://files.pythonhosted.org/packages/0b/15/fcd6dc51d72f484eb6ca84d0708b33c4a20d03dc12ecb0365aa819c5d0eb/aqtinstall-3.1.9.tar.gz
+[2024-04-13 10:55:01] INFO root fetch - processPackages [aqtinstall]: executing diffoscope
+[2024-04-13 10:55:01] INFO root fetch - processPackages [aqtinstall]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aqtinstall-3.1.8.tar.gz tmp/aqtinstall-3.1.9.tar.gz --markdown 20240413/a/aqtinstall/3.1.8-3.1.9/README.md --exclude *.pyd
+[2024-04-13 10:55:02] INFO root fetch - processPackages [aqtinstall]: Remove: archive file [/home/abi/fetcher/tmp/aqtinstall-3.1.8.tar.gz]
+[2024-04-13 10:55:02] INFO root fetch - processPackages [aqtinstall]: Remove: archive file [/home/abi/fetcher/tmp/aqtinstall-3.1.9.tar.gz]
+[2024-04-13 10:55:02] INFO root fetch - main [MainThread]: End processing [aqtinstall]: success
+[2024-04-13 10:55:02] INFO root fetch - main [MainThread]: Store serial: [22750703]
