@@ -12055,3 +12055,54 @@
 [2024-04-13 12:15:38] INFO root fetch - processPackages [monzo-utils]: Remove: archive file [/home/abi/fetcher/tmp/monzo_utils-0.0.9-py3-none-any.whl.zip]
 [2024-04-13 12:15:38] INFO root fetch - main [MainThread]: End processing [monzo-utils]: success
 [2024-04-13 12:15:38] INFO root fetch - main [MainThread]: Store serial: [22751072]
+[2024-04-13 12:17:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751072]
+[2024-04-13 12:17:47] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 12:17:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kisa-utils
+[2024-04-13 12:17:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scraping-items-package
+[2024-04-13 12:17:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: operagents
+[2024-04-13 12:17:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kcli
+[2024-04-13 12:17:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: graphene-django-cruddals
+[2024-04-13 12:17:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: supamodel
+[2024-04-13 12:17:47] INFO root fetch - processPackages [kisa-utils]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-04-13 12:17:47] INFO root fetch - processPackages [kcli]: New version: [99.0.202404122133] Old Version: [99.0.202404121012]
+[2024-04-13 12:17:47] INFO root fetch - processPackages [kisa-utils]: Downloading https://files.pythonhosted.org/packages/ee/95/a05113f73e087421286b5a4c66118860a6f1df9cffbe081a209de2ccfc4c/kisa_utils-0.9.1-py3-none-any.whl
+[2024-04-13 12:17:47] WARNING root fetch - processPackages [scraping-items-package]: Skipping, unable to determine old version
+[2024-04-13 12:17:47] INFO root fetch - main [MainThread]: End processing [scraping-items-package] error
+[2024-04-13 12:17:47] INFO root fetch - processPackages [supamodel]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-04-13 12:17:47] INFO root fetch - processPackages [graphene-django-cruddals]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 12:17:47] INFO root fetch - processPackages [operagents]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 12:17:47] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/e5/60/67651d4be8810724b6737c557e5a6acf7ef8092d1921f0c357fe0cdfe09f/kcli-99.0.202404121012.tar.gz
+[2024-04-13 12:17:47] INFO root fetch - processPackages [operagents]: Downloading https://files.pythonhosted.org/packages/05/56/78ea07d413113cabe7ca03337446a069d6894d1d0e3324dc11d914d269bd/operagents-0.0.8.tar.gz
+[2024-04-13 12:17:47] INFO root fetch - processPackages [kisa-utils]: Downloading https://files.pythonhosted.org/packages/45/a9/4bbdc6afa54eafe6aeb55a578bba32e13d0173c8a6e64cabc8f226fc5941/kisa_utils-0.9.2-py3-none-any.whl
+[2024-04-13 12:17:47] INFO root fetch - processPackages [supamodel]: Downloading https://files.pythonhosted.org/packages/54/e3/42c70099aecb02c6465df2fbcda362f88fd4e689e32523d1a728547beba3/supamodel-0.5.1.tar.gz
+[2024-04-13 12:17:47] INFO root fetch - processPackages [graphene-django-cruddals]: Downloading https://files.pythonhosted.org/packages/bf/89/0f33e939ab1d8dc1185945c9a57b327afa2e86882d882cf40590eef79e02/graphene_django_cruddals-0.1.1.tar.gz
+[2024-04-13 12:17:47] INFO root fetch - processPackages [kisa-utils]: executing diffoscope
+[2024-04-13 12:17:47] INFO root fetch - processPackages [kisa-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kisa_utils-0.9.1-py3-none-any.whl.zip tmp/kisa_utils-0.9.2-py3-none-any.whl.zip --markdown 20240413/k/kisa-utils/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-04-13 12:17:47] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/c7/58/44d9a1a8cbbf8fa88ffffc0a44eba3004d7a18749a6f3b4e022d7a6bae46/kcli-99.0.202404122133.tar.gz
+[2024-04-13 12:17:47] INFO root fetch - processPackages [operagents]: Downloading https://files.pythonhosted.org/packages/b0/71/c6353e5f4f5875136783ea669333955fd7e91b22f4f9be4b5567ed1c97c5/operagents-0.0.9.tar.gz
+[2024-04-13 12:17:47] INFO root fetch - processPackages [supamodel]: Downloading https://files.pythonhosted.org/packages/9c/89/d210e971060fc9c40ea85b95d6c4ae48b959cc1d25b81a4dfd4a0a97f8ca/supamodel-0.5.2.tar.gz
+[2024-04-13 12:17:48] INFO root fetch - processPackages [operagents]: executing diffoscope
+[2024-04-13 12:17:48] INFO root fetch - processPackages [operagents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/operagents-0.0.8.tar.gz tmp/operagents-0.0.9.tar.gz --markdown 20240413/o/operagents/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 12:17:48] INFO root fetch - processPackages [graphene-django-cruddals]: Downloading https://files.pythonhosted.org/packages/48/aa/5a1dffff864eaac3c6242c5fbb4a67b3929e1d50748e07f10466d82b4ee1/graphene_django_cruddals-0.1.2.tar.gz
+[2024-04-13 12:17:48] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2024-04-13 12:17:48] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202404121012.tar.gz tmp/kcli-99.0.202404122133.tar.gz --markdown 20240413/k/kcli/99.0.202404121012-99.0.202404122133/README.md --exclude *.pyd
+[2024-04-13 12:17:48] INFO root fetch - processPackages [supamodel]: executing diffoscope
+[2024-04-13 12:17:48] INFO root fetch - processPackages [supamodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supamodel-0.5.1.tar.gz tmp/supamodel-0.5.2.tar.gz --markdown 20240413/s/supamodel/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-04-13 12:17:48] INFO root fetch - processPackages [graphene-django-cruddals]: executing diffoscope
+[2024-04-13 12:17:48] INFO root fetch - processPackages [graphene-django-cruddals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphene_django_cruddals-0.1.1.tar.gz tmp/graphene_django_cruddals-0.1.2.tar.gz --markdown 20240413/g/graphene-django-cruddals/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-13 12:17:48] INFO root fetch - processPackages [kisa-utils]: Remove: archive file [/home/abi/fetcher/tmp/kisa_utils-0.9.1-py3-none-any.whl.zip]
+[2024-04-13 12:17:48] INFO root fetch - processPackages [kisa-utils]: Remove: archive file [/home/abi/fetcher/tmp/kisa_utils-0.9.2-py3-none-any.whl.zip]
+[2024-04-13 12:17:48] INFO root fetch - main [MainThread]: End processing [kisa-utils]: success
+[2024-04-13 12:17:48] INFO root fetch - processPackages [supamodel]: Remove: archive file [/home/abi/fetcher/tmp/supamodel-0.5.1.tar.gz]
+[2024-04-13 12:17:48] INFO root fetch - processPackages [supamodel]: Remove: archive file [/home/abi/fetcher/tmp/supamodel-0.5.2.tar.gz]
+[2024-04-13 12:17:48] INFO root fetch - main [MainThread]: End processing [supamodel]: success
+[2024-04-13 12:17:48] INFO root fetch - processPackages [operagents]: Remove: archive file [/home/abi/fetcher/tmp/operagents-0.0.8.tar.gz]
+[2024-04-13 12:17:48] INFO root fetch - processPackages [operagents]: Remove: archive file [/home/abi/fetcher/tmp/operagents-0.0.9.tar.gz]
+[2024-04-13 12:17:48] INFO root fetch - main [MainThread]: End processing [operagents]: success
+[2024-04-13 12:17:48] INFO root fetch - processPackages [graphene-django-cruddals]: Remove: archive file [/home/abi/fetcher/tmp/graphene_django_cruddals-0.1.1.tar.gz]
+[2024-04-13 12:17:48] INFO root fetch - processPackages [graphene-django-cruddals]: Remove: archive file [/home/abi/fetcher/tmp/graphene_django_cruddals-0.1.2.tar.gz]
+[2024-04-13 12:17:48] INFO root fetch - main [MainThread]: End processing [graphene-django-cruddals]: success
+[2024-04-13 12:17:50] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202404121012.tar.gz]
+[2024-04-13 12:17:50] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202404122133.tar.gz]
+[2024-04-13 12:17:50] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2024-04-13 12:17:50] INFO root fetch - main [MainThread]: Store serial: [22751091]
