@@ -7082,3 +7082,19 @@
 [2024-04-13 04:48:33] INFO root fetch - processPackages [athina-logger]: Remove: archive file [/home/abi/fetcher/tmp/athina_logger-1.2.1.tar.gz]
 [2024-04-13 04:48:33] INFO root fetch - main [MainThread]: End processing [athina-logger]: success
 [2024-04-13 04:48:33] INFO root fetch - main [MainThread]: Store serial: [22749079]
+[2024-04-13 04:50:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749079]
+[2024-04-13 04:50:41] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 04:52:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749079]
+[2024-04-13 04:52:46] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 04:54:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749105]
+[2024-04-13 04:54:52] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 04:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: siggen
+[2024-04-13 04:54:52] INFO root fetch - processPackages [siggen]: New version: [2.1.20240412] Old Version: [2.0.20231009]
+[2024-04-13 04:54:52] INFO root fetch - processPackages [siggen]: Downloading https://files.pythonhosted.org/packages/fe/62/b6459c31219fcb3254bfc5bb6c4cc3be90ee6d1a9ab3456c72496b936836/siggen-2.0.20231009.tar.gz
+[2024-04-13 04:54:52] INFO root fetch - processPackages [siggen]: Downloading https://files.pythonhosted.org/packages/51/8b/6eeda6afc7e83dc3d682de43ed0e1c5475b76580e3379e37ed1a3dff081e/siggen-2.1.20240412.tar.gz
+[2024-04-13 04:54:52] INFO root fetch - processPackages [siggen]: executing diffoscope
+[2024-04-13 04:54:52] INFO root fetch - processPackages [siggen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/siggen-2.0.20231009.tar.gz tmp/siggen-2.1.20240412.tar.gz --markdown 20240413/s/siggen/2.0.20231009-2.1.20240412/README.md --exclude *.pyd
+[2024-04-13 04:54:53] INFO root fetch - processPackages [siggen]: Remove: archive file [/home/abi/fetcher/tmp/siggen-2.0.20231009.tar.gz]
+[2024-04-13 04:54:53] INFO root fetch - processPackages [siggen]: Remove: archive file [/home/abi/fetcher/tmp/siggen-2.1.20240412.tar.gz]
+[2024-04-13 04:54:53] INFO root fetch - main [MainThread]: End processing [siggen]: success
+[2024-04-13 04:54:53] INFO root fetch - main [MainThread]: Store serial: [22749131]
