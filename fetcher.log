@@ -17395,3 +17395,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:31:11] WARNING root fetch - processPackages [hidiffusion]: Skipping, unable to determine old version
 [2024-04-13 19:31:11] INFO root fetch - main [MainThread]: End processing [hidiffusion] error
 [2024-04-13 19:31:11] INFO root fetch - main [MainThread]: Store serial: [22753486]
+[2024-04-13 19:33:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753486]
+[2024-04-13 19:33:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 19:33:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reinforced-lib
+[2024-04-13 19:33:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotidex
+[2024-04-13 19:33:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: placeholder-img
+[2024-04-13 19:33:20] WARNING root fetch - processPackages [placeholder-img]: Skipping, unable to determine old version
+[2024-04-13 19:33:20] INFO root fetch - main [MainThread]: End processing [placeholder-img] error
+[2024-04-13 19:33:20] INFO root fetch - processPackages [reinforced-lib]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-13 19:33:20] INFO root fetch - processPackages [spotidex]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-13 19:33:20] INFO root fetch - processPackages [reinforced-lib]: Downloading https://files.pythonhosted.org/packages/92/51/47018f07b2ccaf098b64f1f5572c9215119ecf5cbbf704ddfb66af3f4630/reinforced-lib-1.1.0.tar.gz
+[2024-04-13 19:33:20] INFO root fetch - processPackages [spotidex]: Downloading https://files.pythonhosted.org/packages/59/0d/bce9620e2cfc947c81cf40975bff0348add738dd9fed7efdc11e31dbae03/spotidex-0.0.6.tar.gz
+[2024-04-13 19:33:20] INFO root fetch - processPackages [spotidex]: Downloading https://files.pythonhosted.org/packages/1c/f7/c172bff5070449c56fc4a0a3f78ecfd315ea77491d0d51c1e4e7b1272e32/spotidex-0.0.7.tar.gz
+[2024-04-13 19:33:20] INFO root fetch - processPackages [reinforced-lib]: Downloading https://files.pythonhosted.org/packages/3a/2b/627772a7fa6cc73aaa71bb91a52d5c208c9930220399c854993ed7db18af/reinforced_lib-1.1.1.tar.gz
+[2024-04-13 19:33:21] INFO root fetch - processPackages [spotidex]: executing diffoscope
+[2024-04-13 19:33:21] INFO root fetch - processPackages [spotidex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotidex-0.0.6.tar.gz tmp/spotidex-0.0.7.tar.gz --markdown 20240413/s/spotidex/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-13 19:33:21] INFO root fetch - processPackages [reinforced-lib]: executing diffoscope
+[2024-04-13 19:33:21] INFO root fetch - processPackages [reinforced-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reinforced-lib-1.1.0.tar.gz tmp/reinforced_lib-1.1.1.tar.gz --markdown 20240413/r/reinforced-lib/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-13 19:33:21] INFO root fetch - processPackages [spotidex]: Remove: archive file [/home/abi/fetcher/tmp/spotidex-0.0.6.tar.gz]
+[2024-04-13 19:33:21] INFO root fetch - processPackages [spotidex]: Remove: archive file [/home/abi/fetcher/tmp/spotidex-0.0.7.tar.gz]
+[2024-04-13 19:33:21] INFO root fetch - main [MainThread]: End processing [spotidex]: success
+[2024-04-13 19:33:21] INFO root fetch - processPackages [reinforced-lib]: Remove: archive file [/home/abi/fetcher/tmp/reinforced-lib-1.1.0.tar.gz]
+[2024-04-13 19:33:21] INFO root fetch - processPackages [reinforced-lib]: Remove: archive file [/home/abi/fetcher/tmp/reinforced_lib-1.1.1.tar.gz]
+[2024-04-13 19:33:21] INFO root fetch - main [MainThread]: End processing [reinforced-lib]: success
+[2024-04-13 19:33:21] INFO root fetch - main [MainThread]: Store serial: [22753497]
