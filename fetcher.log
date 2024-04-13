@@ -6807,3 +6807,30 @@
 [2024-04-13 04:04:51] WARNING root fetch - processPackages [goatools]: Skipping package: exceeds size limit 15091743>=10485760
 [2024-04-13 04:04:51] INFO root fetch - main [MainThread]: End processing [goatools] error
 [2024-04-13 04:04:51] INFO root fetch - main [MainThread]: Store serial: [22748927]
+[2024-04-13 04:06:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748927]
+[2024-04-13 04:07:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 04:07:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pr-pilot
+[2024-04-13 04:07:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stelladb
+[2024-04-13 04:07:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jcvi
+[2024-04-13 04:07:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: unidecode-rs
+[2024-04-13 04:07:00] WARNING root fetch - processPackages [unidecode-rs]: Skipping, unable to determine old version
+[2024-04-13 04:07:00] WARNING root fetch - processPackages [pr-pilot]: Skipping, unable to determine old version
+[2024-04-13 04:07:00] INFO root fetch - main [MainThread]: End processing [unidecode-rs] error
+[2024-04-13 04:07:00] INFO root fetch - main [MainThread]: End processing [pr-pilot] error
+[2024-04-13 04:07:00] INFO root fetch - processPackages [stelladb]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-13 04:07:00] INFO root fetch - processPackages [jcvi]: New version: [1.4.4] Old Version: [1.4.2]
+[2024-04-13 04:07:00] INFO root fetch - processPackages [jcvi]: Downloading https://files.pythonhosted.org/packages/b1/01/b730e94b778d678e7244ee6d77ca9aaa6871f2841b4263fc937cae211af6/jcvi-1.4.2.tar.gz
+[2024-04-13 04:07:00] INFO root fetch - processPackages [stelladb]: Downloading https://files.pythonhosted.org/packages/d3/80/4f33d4247ac0d4f462bb1c1260054e5317ad33c438911f5532a3835608dc/stelladb-0.2.8.tar.gz
+[2024-04-13 04:07:00] INFO root fetch - processPackages [stelladb]: Downloading https://files.pythonhosted.org/packages/1c/8a/be7d118e01bef7c65f59010a63f961541ae73c19979c1815c3a2d73c4229/stelladb-0.2.9.tar.gz
+[2024-04-13 04:07:01] INFO root fetch - processPackages [jcvi]: Downloading https://files.pythonhosted.org/packages/da/24/23424b89cdac6c1c0157ccb8a65d8a48a8229b5a729fb37631c6b20e66bf/jcvi-1.4.4.tar.gz
+[2024-04-13 04:07:01] INFO root fetch - processPackages [stelladb]: executing diffoscope
+[2024-04-13 04:07:01] INFO root fetch - processPackages [stelladb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stelladb-0.2.8.tar.gz tmp/stelladb-0.2.9.tar.gz --markdown 20240413/s/stelladb/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-13 04:07:01] INFO root fetch - processPackages [jcvi]: executing diffoscope
+[2024-04-13 04:07:01] INFO root fetch - processPackages [jcvi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jcvi-1.4.2.tar.gz tmp/jcvi-1.4.4.tar.gz --markdown 20240413/j/jcvi/1.4.2-1.4.4/README.md --exclude *.pyd
+[2024-04-13 04:07:01] INFO root fetch - processPackages [stelladb]: Remove: archive file [/home/abi/fetcher/tmp/stelladb-0.2.8.tar.gz]
+[2024-04-13 04:07:01] INFO root fetch - processPackages [stelladb]: Remove: archive file [/home/abi/fetcher/tmp/stelladb-0.2.9.tar.gz]
+[2024-04-13 04:07:01] INFO root fetch - main [MainThread]: End processing [stelladb]: success
+[2024-04-13 04:07:02] INFO root fetch - processPackages [jcvi]: Remove: archive file [/home/abi/fetcher/tmp/jcvi-1.4.2.tar.gz]
+[2024-04-13 04:07:02] INFO root fetch - processPackages [jcvi]: Remove: archive file [/home/abi/fetcher/tmp/jcvi-1.4.4.tar.gz]
+[2024-04-13 04:07:02] INFO root fetch - main [MainThread]: End processing [jcvi]: success
+[2024-04-13 04:07:02] INFO root fetch - main [MainThread]: Store serial: [22748943]
