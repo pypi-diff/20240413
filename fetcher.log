@@ -17308,3 +17308,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:20:19] INFO root fetch - processPackages [wakautosolver]: Remove: archive file [/home/abi/fetcher/tmp/wakautosolver-2024.4.9-py3-none-any.whl.zip]
 [2024-04-13 19:20:19] INFO root fetch - main [MainThread]: End processing [wakautosolver]: success
 [2024-04-13 19:20:19] INFO root fetch - main [MainThread]: Store serial: [22753429]
+[2024-04-13 19:22:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753429]
+[2024-04-13 19:22:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 19:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: grid-data-models
+[2024-04-13 19:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: communex
+[2024-04-13 19:22:27] WARNING root fetch - processPackages [grid-data-models]: Skipping, unable to determine old version
+[2024-04-13 19:22:27] INFO root fetch - main [MainThread]: End processing [grid-data-models] error
+[2024-04-13 19:22:27] INFO root fetch - processPackages [communex]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 19:22:28] INFO root fetch - processPackages [communex]: Downloading https://files.pythonhosted.org/packages/77/67/00051570e40b098c12038ef6aed5be120d14bfafef5d08885df5a9714f91/communex-0.1.8.tar.gz
+[2024-04-13 19:22:28] INFO root fetch - processPackages [communex]: Downloading https://files.pythonhosted.org/packages/51/79/c7d8079cf08c4dcf6ea1f984e64a67fe00acfd76303d2f7f6159f574d5da/communex-0.1.9.tar.gz
+[2024-04-13 19:22:28] INFO root fetch - processPackages [communex]: executing diffoscope
+[2024-04-13 19:22:28] INFO root fetch - processPackages [communex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/communex-0.1.8.tar.gz tmp/communex-0.1.9.tar.gz --markdown 20240413/c/communex/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 19:22:29] INFO root fetch - processPackages [communex]: Remove: archive file [/home/abi/fetcher/tmp/communex-0.1.8.tar.gz]
+[2024-04-13 19:22:29] INFO root fetch - processPackages [communex]: Remove: archive file [/home/abi/fetcher/tmp/communex-0.1.9.tar.gz]
+[2024-04-13 19:22:29] INFO root fetch - main [MainThread]: End processing [communex]: success
+[2024-04-13 19:22:29] INFO root fetch - main [MainThread]: Store serial: [22753442]
