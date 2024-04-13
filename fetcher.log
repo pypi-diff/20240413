@@ -16792,3 +16792,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 18:36:55] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.52.tar.gz]
 [2024-04-13 18:36:55] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
 [2024-04-13 18:36:55] INFO root fetch - main [MainThread]: Store serial: [22753181]
+[2024-04-13 18:38:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753181]
+[2024-04-13 18:39:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 18:39:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AnySugar
+[2024-04-13 18:39:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sideseeing-tools
+[2024-04-13 18:39:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-tgpt
+[2024-04-13 18:39:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cosmix-launcher
+[2024-04-13 18:39:03] INFO root fetch - processPackages [python-tgpt]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-04-13 18:39:03] INFO root fetch - processPackages [cosmix-launcher]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-13 18:39:03] WARNING root fetch - processPackages [AnySugar]: Skipping, unable to determine old version
+[2024-04-13 18:39:03] INFO root fetch - main [MainThread]: End processing [AnySugar] error
+[2024-04-13 18:39:03] INFO root fetch - processPackages [sideseeing-tools]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-13 18:39:03] INFO root fetch - processPackages [python-tgpt]: Downloading https://files.pythonhosted.org/packages/e2/37/de94750a92425b83e175471611c2ec9ec9f3ed20bf98c34f9e108dff6773/python-tgpt-0.6.0.tar.gz
+[2024-04-13 18:39:04] INFO root fetch - processPackages [sideseeing-tools]: Downloading https://files.pythonhosted.org/packages/1e/d6/4df70822b4d4510bc229858b7bd0fcb9f2907b5f42318d698a0675cc72fc/sideseeing-tools-0.1.4.tar.gz
+[2024-04-13 18:39:04] INFO root fetch - processPackages [cosmix-launcher]: Downloading https://files.pythonhosted.org/packages/8c/ef/a99879224a8a996e6c2907c4b90161c94d8643b43b33baf800db9e84efbd/cosmix_launcher-1.0.3.tar.gz
+[2024-04-13 18:39:04] INFO root fetch - processPackages [python-tgpt]: Downloading https://files.pythonhosted.org/packages/1a/55/740aab113e8c2ab9242eafd9575e5ca86d14dd99732bdfc668e598f8d4c9/python_tgpt-0.6.1.tar.gz
+[2024-04-13 18:39:04] INFO root fetch - processPackages [python-tgpt]: executing diffoscope
+[2024-04-13 18:39:04] INFO root fetch - processPackages [python-tgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-tgpt-0.6.0.tar.gz tmp/python_tgpt-0.6.1.tar.gz --markdown 20240413/p/python-tgpt/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-04-13 18:39:04] INFO root fetch - processPackages [sideseeing-tools]: Downloading https://files.pythonhosted.org/packages/4a/1c/5437a0fe6a6626918da139bcffcb3572a170a19cada9003f1171f9b668d7/sideseeing_tools-0.1.5.tar.gz
+[2024-04-13 18:39:04] INFO root fetch - processPackages [cosmix-launcher]: Downloading https://files.pythonhosted.org/packages/7d/ab/9ce2b405757fd74c5147e17251fdf7578273be43fff7d2bb804578f8990d/cosmix_launcher-1.0.4.tar.gz
+[2024-04-13 18:39:04] INFO root fetch - processPackages [sideseeing-tools]: executing diffoscope
+[2024-04-13 18:39:04] INFO root fetch - processPackages [sideseeing-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sideseeing-tools-0.1.4.tar.gz tmp/sideseeing_tools-0.1.5.tar.gz --markdown 20240413/s/sideseeing-tools/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-13 18:39:04] INFO root fetch - processPackages [cosmix-launcher]: executing diffoscope
+[2024-04-13 18:39:04] INFO root fetch - processPackages [cosmix-launcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cosmix_launcher-1.0.3.tar.gz tmp/cosmix_launcher-1.0.4.tar.gz --markdown 20240413/c/cosmix-launcher/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-13 18:39:04] INFO root fetch - processPackages [sideseeing-tools]: Remove: archive file [/home/abi/fetcher/tmp/sideseeing-tools-0.1.4.tar.gz]
+[2024-04-13 18:39:04] INFO root fetch - processPackages [sideseeing-tools]: Remove: archive file [/home/abi/fetcher/tmp/sideseeing_tools-0.1.5.tar.gz]
+[2024-04-13 18:39:04] INFO root fetch - main [MainThread]: End processing [sideseeing-tools]: success
+[2024-04-13 18:39:05] INFO root fetch - processPackages [cosmix-launcher]: Remove: archive file [/home/abi/fetcher/tmp/cosmix_launcher-1.0.3.tar.gz]
+[2024-04-13 18:39:05] INFO root fetch - processPackages [cosmix-launcher]: Remove: archive file [/home/abi/fetcher/tmp/cosmix_launcher-1.0.4.tar.gz]
+[2024-04-13 18:39:05] INFO root fetch - main [MainThread]: End processing [cosmix-launcher]: success
+[2024-04-13 18:39:05] INFO root fetch - processPackages [python-tgpt]: Remove: archive file [/home/abi/fetcher/tmp/python-tgpt-0.6.0.tar.gz]
+[2024-04-13 18:39:05] INFO root fetch - processPackages [python-tgpt]: Remove: archive file [/home/abi/fetcher/tmp/python_tgpt-0.6.1.tar.gz]
+[2024-04-13 18:39:05] INFO root fetch - main [MainThread]: End processing [python-tgpt]: success
+[2024-04-13 18:39:05] INFO root fetch - main [MainThread]: Store serial: [22753198]
