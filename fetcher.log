@@ -9501,3 +9501,24 @@
 [2024-04-13 08:56:24] INFO root fetch - processPackages [pulumi-openstack]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_openstack-3.9.0a1659603007.tar.gz]
 [2024-04-13 08:56:24] INFO root fetch - main [MainThread]: End processing [pulumi-openstack]: success
 [2024-04-13 08:56:24] INFO root fetch - main [MainThread]: Store serial: [22750010]
+[2024-04-13 08:58:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750010]
+[2024-04-13 08:58:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 08:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-rabbitmq
+[2024-04-13 08:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-postgresql
+[2024-04-13 08:58:34] INFO root fetch - processPackages [pulumi-rabbitmq]: New version: [3.4.0a1712989689] Old Version: [3.4.0a1712729688]
+[2024-04-13 08:58:34] INFO root fetch - processPackages [pulumi-postgresql]: New version: [3.9.0a1689896978] Old Version: [3.9.0a1689315090]
+[2024-04-13 08:58:34] INFO root fetch - processPackages [pulumi-rabbitmq]: Downloading https://files.pythonhosted.org/packages/76/c5/00e097c9a3b0154d59b74014e7acb807018e72fa1fe62a9b9cca98db6e52/pulumi_rabbitmq-3.4.0a1712729688.tar.gz
+[2024-04-13 08:58:34] INFO root fetch - processPackages [pulumi-postgresql]: Downloading https://files.pythonhosted.org/packages/ed/e0/7fdde90ef74fd102795261322b0ac8625336995854691a442d881f55cb87/pulumi_postgresql-3.9.0a1689315090.tar.gz
+[2024-04-13 08:58:34] INFO root fetch - processPackages [pulumi-rabbitmq]: Downloading https://files.pythonhosted.org/packages/6b/a9/428b922e413fa8e48d9deb400c34daf81ce104a4c92553faa9485bb8f0d0/pulumi_rabbitmq-3.4.0a1712989689.tar.gz
+[2024-04-13 08:58:34] INFO root fetch - processPackages [pulumi-rabbitmq]: executing diffoscope
+[2024-04-13 08:58:34] INFO root fetch - processPackages [pulumi-rabbitmq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_rabbitmq-3.4.0a1712729688.tar.gz tmp/pulumi_rabbitmq-3.4.0a1712989689.tar.gz --markdown 20240413/p/pulumi-rabbitmq/3.4.0a1712729688-3.4.0a1712989689/README.md --exclude *.pyd
+[2024-04-13 08:58:34] INFO root fetch - processPackages [pulumi-postgresql]: Downloading https://files.pythonhosted.org/packages/a0/7c/da57549229c7dc197fea08a82cd8c820b56d0bf8e0ed12fafc5fec8b3eff/pulumi_postgresql-3.9.0a1689896978.tar.gz
+[2024-04-13 08:58:34] INFO root fetch - processPackages [pulumi-postgresql]: executing diffoscope
+[2024-04-13 08:58:34] INFO root fetch - processPackages [pulumi-postgresql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_postgresql-3.9.0a1689315090.tar.gz tmp/pulumi_postgresql-3.9.0a1689896978.tar.gz --markdown 20240413/p/pulumi-postgresql/3.9.0a1689315090-3.9.0a1689896978/README.md --exclude *.pyd
+[2024-04-13 08:58:35] INFO root fetch - processPackages [pulumi-rabbitmq]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_rabbitmq-3.4.0a1712729688.tar.gz]
+[2024-04-13 08:58:35] INFO root fetch - processPackages [pulumi-rabbitmq]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_rabbitmq-3.4.0a1712989689.tar.gz]
+[2024-04-13 08:58:35] INFO root fetch - main [MainThread]: End processing [pulumi-rabbitmq]: success
+[2024-04-13 08:58:35] INFO root fetch - processPackages [pulumi-postgresql]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_postgresql-3.9.0a1689315090.tar.gz]
+[2024-04-13 08:58:35] INFO root fetch - processPackages [pulumi-postgresql]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_postgresql-3.9.0a1689896978.tar.gz]
+[2024-04-13 08:58:35] INFO root fetch - main [MainThread]: End processing [pulumi-postgresql]: success
+[2024-04-13 08:58:35] INFO root fetch - main [MainThread]: Store serial: [22750018]
