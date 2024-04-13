@@ -6873,3 +6873,15 @@
 [2024-04-13 04:13:38] INFO root fetch - processPackages [EllipSect]: Remove: archive file [/home/abi/fetcher/tmp/EllipSect-3.4.0.tar.gz]
 [2024-04-13 04:13:38] INFO root fetch - main [MainThread]: End processing [EllipSect]: success
 [2024-04-13 04:13:38] INFO root fetch - main [MainThread]: Store serial: [22748960]
+[2024-04-13 04:15:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748960]
+[2024-04-13 04:15:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 04:15:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xchtools
+[2024-04-13 04:15:46] INFO root fetch - processPackages [xchtools]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 04:15:47] INFO root fetch - processPackages [xchtools]: Downloading https://files.pythonhosted.org/packages/c7/f7/0e3e699372996b0555f04ae3bdd9042d57998abb0fc5b581e18e57f811c2/xchtools-0.1.8-py3-none-any.whl
+[2024-04-13 04:15:47] INFO root fetch - processPackages [xchtools]: Downloading https://files.pythonhosted.org/packages/7e/8c/49a42e45355d4fd4dd99e071963fbf682b1346a1dacd339e409657d906ab/xchtools-0.1.9-py3-none-any.whl
+[2024-04-13 04:15:47] INFO root fetch - processPackages [xchtools]: executing diffoscope
+[2024-04-13 04:15:47] INFO root fetch - processPackages [xchtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xchtools-0.1.8-py3-none-any.whl.zip tmp/xchtools-0.1.9-py3-none-any.whl.zip --markdown 20240413/x/xchtools/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 04:15:48] INFO root fetch - processPackages [xchtools]: Remove: archive file [/home/abi/fetcher/tmp/xchtools-0.1.8-py3-none-any.whl.zip]
+[2024-04-13 04:15:48] INFO root fetch - processPackages [xchtools]: Remove: archive file [/home/abi/fetcher/tmp/xchtools-0.1.9-py3-none-any.whl.zip]
+[2024-04-13 04:15:48] INFO root fetch - main [MainThread]: End processing [xchtools]: success
+[2024-04-13 04:15:48] INFO root fetch - main [MainThread]: Store serial: [22748963]
