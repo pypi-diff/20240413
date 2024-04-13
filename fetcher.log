@@ -12842,3 +12842,113 @@
 [2024-04-13 13:14:33] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
 [2024-04-13 13:14:33] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2024-04-13 13:14:33] INFO root fetch - main [MainThread]: Store serial: [22751341]
+[2024-04-13 13:16:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751341]
+[2024-04-13 13:16:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 13:16:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-core-xe-esimd-21
+[2024-04-13 13:16:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyppbox-ultralytics
+[2024-04-13 13:16:42] INFO root fetch - processPackages [pyppbox-ultralytics]: New version: [8.1.7] Old Version: [8.1.47]
+[2024-04-13 13:16:42] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: New version: [2.5.0b20240413] Old Version: [2.5.0b20240412]
+[2024-04-13 13:16:42] INFO root fetch - processPackages [pyppbox-ultralytics]: Downloading https://files.pythonhosted.org/packages/bd/e4/3a57f6a1e66eeba3348d3320d5889c828be3af395fb4bcdb8d02497f4e75/pyppbox-ultralytics-8.1.47.tar.gz
+[2024-04-13 13:16:42] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Downloading https://files.pythonhosted.org/packages/3e/45/683aef46c55ad8ec720f5486edd647c4d1ace125aae70d6934fd74db8fc2/bigdl_core_xe_esimd_21-2.5.0b20240412-cp39-cp39-win_amd64.whl
+[2024-04-13 13:16:42] INFO root fetch - processPackages [pyppbox-ultralytics]: Downloading https://files.pythonhosted.org/packages/b8/cf/3cb7eeb8de81716f1a6afc145f4335da23b8ca20d55c08ccb3f0f83add8c/pyppbox-ultralytics-8.1.7.tar.gz
+[2024-04-13 13:16:43] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Downloading https://files.pythonhosted.org/packages/9c/82/c7afe13e908fdda06f37862f4e11d0704adbfef145b45f95e8033bb75b9d/bigdl_core_xe_esimd_21-2.5.0b20240413-cp310-cp310-win_amd64.whl
+[2024-04-13 13:16:43] INFO root fetch - processPackages [pyppbox-ultralytics]: executing diffoscope
+[2024-04-13 13:16:43] INFO root fetch - processPackages [pyppbox-ultralytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyppbox-ultralytics-8.1.47.tar.gz tmp/pyppbox-ultralytics-8.1.7.tar.gz --markdown 20240413/p/pyppbox-ultralytics/8.1.47-8.1.7/README.md --exclude *.pyd
+[2024-04-13 13:16:43] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: executing diffoscope
+[2024-04-13 13:16:43] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_core_xe_esimd_21-2.5.0b20240412-cp39-cp39-win_amd64.whl.zip tmp/bigdl_core_xe_esimd_21-2.5.0b20240413-cp310-cp310-win_amd64.whl.zip --markdown 20240413/b/bigdl-core-xe-esimd-21/2.5.0b20240412-2.5.0b20240413/README.md --exclude *.pyd
+[2024-04-13 13:16:43] ERROR root fetch - processPackages [bigdl-core-xe-esimd-21]: Diffoscope failed: time="2024-04-13T13:16:43+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 134, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140155922947472)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 467, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 433, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/ar.py", line 71, in compare_details
+    Difference.from_text_readers(
+  File "/srv/diffoscope/diffoscope/difference.py", line 258, in from_text_readers
+    return Difference.from_feeder(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 134, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140156057165312)
+
+[2024-04-13 13:16:43] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd-21] error
+[2024-04-13 13:16:44] INFO root fetch - processPackages [pyppbox-ultralytics]: Remove: archive file [/home/abi/fetcher/tmp/pyppbox-ultralytics-8.1.47.tar.gz]
+[2024-04-13 13:16:44] INFO root fetch - processPackages [pyppbox-ultralytics]: Remove: archive file [/home/abi/fetcher/tmp/pyppbox-ultralytics-8.1.7.tar.gz]
+[2024-04-13 13:16:44] INFO root fetch - main [MainThread]: End processing [pyppbox-ultralytics]: success
+[2024-04-13 13:16:44] INFO root fetch - main [MainThread]: Store serial: [22751348]
