@@ -13727,3 +13727,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:30:47] INFO root fetch - processPackages [sherpa-onnx]: Remove: archive file [/home/abi/fetcher/tmp/sherpa-onnx-1.9.20.tar.gz]
 [2024-04-13 14:30:47] INFO root fetch - main [MainThread]: End processing [sherpa-onnx]: success
 [2024-04-13 14:30:47] INFO root fetch - main [MainThread]: Store serial: [22751727]
+[2024-04-13 14:32:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751727]
+[2024-04-13 14:32:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 14:32:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: repod
+[2024-04-13 14:32:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spstats
+[2024-04-13 14:32:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dtaas-cli
+[2024-04-13 14:32:56] INFO root fetch - processPackages [repod]: New version: [0.3.1] Old Version: [0.3.0.post0]
+[2024-04-13 14:32:56] INFO root fetch - processPackages [dtaas-cli]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-13 14:32:56] WARNING root fetch - processPackages [spstats]: Skipping, unable to determine old version
+[2024-04-13 14:32:56] INFO root fetch - main [MainThread]: End processing [spstats] error
+[2024-04-13 14:32:56] INFO root fetch - processPackages [repod]: Downloading https://files.pythonhosted.org/packages/5f/0e/b9bf7ec4e43735a0c60761c127e73dd010b3a01ebb04944df5fce7824b7b/repod-0.3.0.post0.tar.gz
+[2024-04-13 14:32:56] INFO root fetch - processPackages [dtaas-cli]: Downloading https://files.pythonhosted.org/packages/77/79/b99b8675a174497e287172cfb4d2424cc951dc664860bac9862f3ac263b6/dtaas_cli-0.1.2.tar.gz
+[2024-04-13 14:32:56] INFO root fetch - processPackages [repod]: Downloading https://files.pythonhosted.org/packages/bf/e2/a60273e74bd5d78cd5fff1bdbbc48cc3dea3850be3ee0d4fb99a029a609b/repod-0.3.1.tar.gz
+[2024-04-13 14:32:56] INFO root fetch - processPackages [dtaas-cli]: Downloading https://files.pythonhosted.org/packages/3e/7a/c1e9b13d54b9f199b9f27b95ae83cb2124c89f75fe9088f4460af33b38be/dtaas_cli-0.1.3.tar.gz
+[2024-04-13 14:32:56] INFO root fetch - processPackages [repod]: executing diffoscope
+[2024-04-13 14:32:56] INFO root fetch - processPackages [repod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/repod-0.3.0.post0.tar.gz tmp/repod-0.3.1.tar.gz --markdown 20240413/r/repod/0.3.0.post0-0.3.1/README.md --exclude *.pyd
+[2024-04-13 14:32:56] INFO root fetch - processPackages [dtaas-cli]: executing diffoscope
+[2024-04-13 14:32:56] INFO root fetch - processPackages [dtaas-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtaas_cli-0.1.2.tar.gz tmp/dtaas_cli-0.1.3.tar.gz --markdown 20240413/d/dtaas-cli/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-13 14:32:57] INFO root fetch - processPackages [dtaas-cli]: Remove: archive file [/home/abi/fetcher/tmp/dtaas_cli-0.1.2.tar.gz]
+[2024-04-13 14:32:57] INFO root fetch - processPackages [dtaas-cli]: Remove: archive file [/home/abi/fetcher/tmp/dtaas_cli-0.1.3.tar.gz]
+[2024-04-13 14:32:57] INFO root fetch - main [MainThread]: End processing [dtaas-cli]: success
+[2024-04-13 14:32:58] INFO root fetch - processPackages [repod]: Remove: archive file [/home/abi/fetcher/tmp/repod-0.3.0.post0.tar.gz]
+[2024-04-13 14:32:58] INFO root fetch - processPackages [repod]: Remove: archive file [/home/abi/fetcher/tmp/repod-0.3.1.tar.gz]
+[2024-04-13 14:32:58] INFO root fetch - main [MainThread]: End processing [repod]: success
+[2024-04-13 14:32:58] INFO root fetch - main [MainThread]: Store serial: [22751746]
