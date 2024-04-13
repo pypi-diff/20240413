@@ -9299,3 +9299,76 @@
 [2024-04-13 08:43:15] INFO root fetch - processPackages [odoo-addons-oca-timesheet]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_timesheet-16.0.20240308.0-py3-none-any.whl.zip]
 [2024-04-13 08:43:15] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-timesheet]: success
 [2024-04-13 08:43:15] INFO root fetch - main [MainThread]: Store serial: [22749942]
+[2024-04-13 08:45:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749942]
+[2024-04-13 08:45:24] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-13 08:45:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addons-oca-timesheet
+[2024-04-13 08:45:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-ns1
+[2024-04-13 08:45:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-onelogin
+[2024-04-13 08:45:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-docker
+[2024-04-13 08:45:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastapi-mctools
+[2024-04-13 08:45:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addons-oca-timesheet
+[2024-04-13 08:45:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ez-pyload
+[2024-04-13 08:45:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PyQt-Fluent-Widgets
+[2024-04-13 08:45:24] INFO root fetch - processPackages [odoo-addons-oca-timesheet]: New version: [16.0.20240308.0] Old Version: [16.0.20240301.0]
+[2024-04-13 08:45:24] INFO root fetch - processPackages [odoo-addons-oca-timesheet]: New version: [16.0.20240308.0] Old Version: [16.0.20240301.0]
+[2024-04-13 08:45:24] INFO root fetch - processPackages [odoo-addons-oca-timesheet]: Downloading https://files.pythonhosted.org/packages/62/db/85da23eeddafc5115f85dbea16baa9369f40ee4249f50c1c39f5b9771682/odoo_addons_oca_timesheet-16.0.20240301.0-py3-none-any.whl
+[2024-04-13 08:45:24] INFO root fetch - processPackages [pulumi-ns1]: New version: [3.3.0a1712988296] Old Version: [3.3.0a1712728778]
+[2024-04-13 08:45:24] INFO root fetch - processPackages [pulumi-onelogin]: New version: [0.6.3a1712988678] Old Version: [0.6.3a1712729246]
+[2024-04-13 08:45:24] INFO root fetch - processPackages [fastapi-mctools]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-04-13 08:45:24] INFO root fetch - processPackages [odoo-addons-oca-timesheet]: Downloading https://files.pythonhosted.org/packages/62/db/85da23eeddafc5115f85dbea16baa9369f40ee4249f50c1c39f5b9771682/odoo_addons_oca_timesheet-16.0.20240301.0-py3-none-any.whl
+[2024-04-13 08:45:24] INFO root fetch - processPackages [ez-pyload]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-13 08:45:24] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: New version: [1.5.5] Old Version: [1.5.4]
+[2024-04-13 08:45:24] INFO root fetch - processPackages [pulumi-docker]: New version: [4.7.0a1705628423] Old Version: [4.7.0a1705607229]
+[2024-04-13 08:45:24] INFO root fetch - processPackages [pulumi-onelogin]: Downloading https://files.pythonhosted.org/packages/aa/77/76da6ed072bda339feaaf5d2fc2bd36f6ef8eb9996159d15c0fda75e09c2/pulumi_onelogin-0.6.3a1712729246.tar.gz
+[2024-04-13 08:45:24] INFO root fetch - processPackages [pulumi-ns1]: Downloading https://files.pythonhosted.org/packages/72/68/fd4ee482765e5f81564b1ab694d9b1442dc8b281b7948e171aa21958982f/pulumi_ns1-3.3.0a1712728778.tar.gz
+[2024-04-13 08:45:24] INFO root fetch - processPackages [odoo-addons-oca-timesheet]: Downloading https://files.pythonhosted.org/packages/fb/af/af740ea492988d864046f70ad66925ea270732c4eb24192fb737637e6124/odoo_addons_oca_timesheet-16.0.20240308.0-py3-none-any.whl
+[2024-04-13 08:45:24] INFO root fetch - processPackages [odoo-addons-oca-timesheet]: Downloading https://files.pythonhosted.org/packages/fb/af/af740ea492988d864046f70ad66925ea270732c4eb24192fb737637e6124/odoo_addons_oca_timesheet-16.0.20240308.0-py3-none-any.whl
+[2024-04-13 08:45:24] INFO root fetch - processPackages [ez-pyload]: Downloading https://files.pythonhosted.org/packages/f2/05/e6b03f591c0a8e936a2f4c310ebb0502510a9a8b5c661b1fe45e531e8d64/ez_pyload-1.0.0.tar.gz
+[2024-04-13 08:45:24] INFO root fetch - processPackages [fastapi-mctools]: Downloading https://files.pythonhosted.org/packages/ed/f5/cfcbb649b4cf45a260194838b049793f35a97f39f1243833c1dbbe8bcb61/fastapi_mctools-0.3.0.tar.gz
+[2024-04-13 08:45:24] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/b4/9d/f9ff6bb9649417fd5947b77228698eb7fbd095f9d296d935e5b6b2cf503c/PyQt-Fluent-Widgets-1.5.4.tar.gz
+[2024-04-13 08:45:24] INFO root fetch - processPackages [pulumi-docker]: Downloading https://files.pythonhosted.org/packages/60/4d/20db01394ae207e38e34244a087a77010c3163b5176d5ed60b9e938b94df/pulumi_docker-4.7.0a1705607229.tar.gz
+[2024-04-13 08:45:25] INFO root fetch - processPackages [odoo-addons-oca-timesheet]: executing diffoscope
+[2024-04-13 08:45:25] INFO root fetch - processPackages [odoo-addons-oca-timesheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_timesheet-16.0.20240301.0-py3-none-any.whl.zip tmp/odoo_addons_oca_timesheet-16.0.20240308.0-py3-none-any.whl.zip --markdown 20240413/o/odoo-addons-oca-timesheet/16.0.20240301.0-16.0.20240308.0/README.md --exclude *.pyd
+[2024-04-13 08:45:25] INFO root fetch - processPackages [odoo-addons-oca-timesheet]: executing diffoscope
+[2024-04-13 08:45:25] INFO root fetch - processPackages [odoo-addons-oca-timesheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_timesheet-16.0.20240301.0-py3-none-any.whl.zip tmp/odoo_addons_oca_timesheet-16.0.20240308.0-py3-none-any.whl.zip --markdown 20240413/o/odoo-addons-oca-timesheet/16.0.20240301.0-16.0.20240308.0/README.md --exclude *.pyd
+[2024-04-13 08:45:25] INFO root fetch - processPackages [pulumi-ns1]: Downloading https://files.pythonhosted.org/packages/85/5c/f3eb044018cd0fab8343205187c9cf48fc09d4c1e262683f27e39a50d93d/pulumi_ns1-3.3.0a1712988296.tar.gz
+[2024-04-13 08:45:25] INFO root fetch - processPackages [ez-pyload]: Downloading https://files.pythonhosted.org/packages/f0/1d/82a88f7ee1cc3e578aabc10f3d54358df4facce8a388a606702d2ef2b3ad/ez_pyload-1.0.1.tar.gz
+[2024-04-13 08:45:25] INFO root fetch - processPackages [pulumi-onelogin]: Downloading https://files.pythonhosted.org/packages/43/23/720308ab4921a262a827d1976c4d6458b9fa217ad5cbab0ca28064c243fa/pulumi_onelogin-0.6.3a1712988678.tar.gz
+[2024-04-13 08:45:25] INFO root fetch - processPackages [fastapi-mctools]: Downloading https://files.pythonhosted.org/packages/4a/fe/095b2f66b1c491a68de0fa25a18933b9a2aefe9acea799e85530104f3047/fastapi_mctools-0.4.0.tar.gz
+[2024-04-13 08:45:25] INFO root fetch - processPackages [pulumi-ns1]: executing diffoscope
+[2024-04-13 08:45:25] INFO root fetch - processPackages [pulumi-ns1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_ns1-3.3.0a1712728778.tar.gz tmp/pulumi_ns1-3.3.0a1712988296.tar.gz --markdown 20240413/p/pulumi-ns1/3.3.0a1712728778-3.3.0a1712988296/README.md --exclude *.pyd
+[2024-04-13 08:45:25] INFO root fetch - processPackages [pulumi-docker]: Downloading https://files.pythonhosted.org/packages/3a/93/a866b50173039bae813e131505cf7ed97c33cb79c113926b2b63dfd1caf2/pulumi_docker-4.7.0a1705628423.tar.gz
+[2024-04-13 08:45:25] INFO root fetch - processPackages [ez-pyload]: executing diffoscope
+[2024-04-13 08:45:25] INFO root fetch - processPackages [ez-pyload]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ez_pyload-1.0.0.tar.gz tmp/ez_pyload-1.0.1.tar.gz --markdown 20240413/e/ez-pyload/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-13 08:45:25] INFO root fetch - processPackages [pulumi-onelogin]: executing diffoscope
+[2024-04-13 08:45:25] INFO root fetch - processPackages [pulumi-onelogin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_onelogin-0.6.3a1712729246.tar.gz tmp/pulumi_onelogin-0.6.3a1712988678.tar.gz --markdown 20240413/p/pulumi-onelogin/0.6.3a1712729246-0.6.3a1712988678/README.md --exclude *.pyd
+[2024-04-13 08:45:25] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/eb/0c/51e355b68f62ea12891297c928d8623f99b1195fb7d4af9e30ffc2d028d5/PyQt-Fluent-Widgets-1.5.5.tar.gz
+[2024-04-13 08:45:25] INFO root fetch - processPackages [fastapi-mctools]: executing diffoscope
+[2024-04-13 08:45:25] INFO root fetch - processPackages [fastapi-mctools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_mctools-0.3.0.tar.gz tmp/fastapi_mctools-0.4.0.tar.gz --markdown 20240413/f/fastapi-mctools/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-04-13 08:45:25] INFO root fetch - processPackages [pulumi-docker]: executing diffoscope
+[2024-04-13 08:45:25] INFO root fetch - processPackages [pulumi-docker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_docker-4.7.0a1705607229.tar.gz tmp/pulumi_docker-4.7.0a1705628423.tar.gz --markdown 20240413/p/pulumi-docker/4.7.0a1705607229-4.7.0a1705628423/README.md --exclude *.pyd
+[2024-04-13 08:45:25] INFO root fetch - processPackages [odoo-addons-oca-timesheet]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_timesheet-16.0.20240301.0-py3-none-any.whl.zip]
+[2024-04-13 08:45:25] INFO root fetch - processPackages [odoo-addons-oca-timesheet]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_timesheet-16.0.20240308.0-py3-none-any.whl.zip]
+[2024-04-13 08:45:25] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-timesheet]: success
+[2024-04-13 08:45:25] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: executing diffoscope
+[2024-04-13 08:45:25] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt-Fluent-Widgets-1.5.4.tar.gz tmp/PyQt-Fluent-Widgets-1.5.5.tar.gz --markdown 20240413/P/PyQt-Fluent-Widgets/1.5.4-1.5.5/README.md --exclude *.pyd
+[2024-04-13 08:45:25] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-timesheet]: success
+[2024-04-13 08:45:26] INFO root fetch - processPackages [pulumi-ns1]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_ns1-3.3.0a1712728778.tar.gz]
+[2024-04-13 08:45:26] INFO root fetch - processPackages [pulumi-ns1]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_ns1-3.3.0a1712988296.tar.gz]
+[2024-04-13 08:45:26] INFO root fetch - main [MainThread]: End processing [pulumi-ns1]: success
+[2024-04-13 08:45:26] INFO root fetch - processPackages [fastapi-mctools]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_mctools-0.3.0.tar.gz]
+[2024-04-13 08:45:26] INFO root fetch - processPackages [fastapi-mctools]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_mctools-0.4.0.tar.gz]
+[2024-04-13 08:45:26] INFO root fetch - main [MainThread]: End processing [fastapi-mctools]: success
+[2024-04-13 08:45:26] INFO root fetch - processPackages [pulumi-docker]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_docker-4.7.0a1705607229.tar.gz]
+[2024-04-13 08:45:26] INFO root fetch - processPackages [pulumi-docker]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_docker-4.7.0a1705628423.tar.gz]
+[2024-04-13 08:45:26] INFO root fetch - main [MainThread]: End processing [pulumi-docker]: success
+[2024-04-13 08:45:26] INFO root fetch - processPackages [ez-pyload]: Remove: archive file [/home/abi/fetcher/tmp/ez_pyload-1.0.0.tar.gz]
+[2024-04-13 08:45:26] INFO root fetch - processPackages [ez-pyload]: Remove: archive file [/home/abi/fetcher/tmp/ez_pyload-1.0.1.tar.gz]
+[2024-04-13 08:45:26] INFO root fetch - main [MainThread]: End processing [ez-pyload]: success
+[2024-04-13 08:45:26] INFO root fetch - processPackages [pulumi-onelogin]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_onelogin-0.6.3a1712729246.tar.gz]
+[2024-04-13 08:45:26] INFO root fetch - processPackages [pulumi-onelogin]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_onelogin-0.6.3a1712988678.tar.gz]
+[2024-04-13 08:45:26] INFO root fetch - main [MainThread]: End processing [pulumi-onelogin]: success
+[2024-04-13 08:45:27] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/PyQt-Fluent-Widgets-1.5.4.tar.gz]
+[2024-04-13 08:45:27] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/PyQt-Fluent-Widgets-1.5.5.tar.gz]
+[2024-04-13 08:45:27] INFO root fetch - main [MainThread]: End processing [PyQt-Fluent-Widgets]: success
+[2024-04-13 08:45:27] INFO root fetch - main [MainThread]: Store serial: [22749964]
