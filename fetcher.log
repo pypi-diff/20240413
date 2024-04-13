@@ -19466,3 +19466,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 21:54:41] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.54.tar.gz]
 [2024-04-13 21:54:41] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
 [2024-04-13 21:54:41] INFO root fetch - main [MainThread]: Store serial: [22754376]
+[2024-04-13 21:56:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754376]
+[2024-04-13 21:56:51] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 21:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anycrc
+[2024-04-13 21:56:51] WARNING root fetch - processPackages [anycrc]: Skipping, unable to determine old version
+[2024-04-13 21:56:51] INFO root fetch - main [MainThread]: End processing [anycrc] error
+[2024-04-13 21:56:51] INFO root fetch - main [MainThread]: Store serial: [22754433]
