@@ -10976,3 +10976,24 @@
 [2024-04-13 10:37:27] INFO root fetch - processPackages [cns]: Remove: archive file [/home/abi/fetcher/tmp/cns-1.8.33-py3-none-any.whl.zip]
 [2024-04-13 10:37:27] INFO root fetch - main [MainThread]: End processing [cns]: success
 [2024-04-13 10:37:27] INFO root fetch - main [MainThread]: Store serial: [22750578]
+[2024-04-13 10:39:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750578]
+[2024-04-13 10:39:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 10:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: speech_user_interface
+[2024-04-13 10:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kuzu
+[2024-04-13 10:39:36] INFO root fetch - processPackages [kuzu]: New version: [0.3.3.dev32] Old Version: [0.3.3.dev31]
+[2024-04-13 10:39:36] INFO root fetch - processPackages [speech_user_interface]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 10:39:36] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/02/b9/0acd9642e7736069e095afce0ea7eeb4034683e2e642afbeb060457aec04/kuzu-0.3.3.dev31.tar.gz
+[2024-04-13 10:39:36] INFO root fetch - processPackages [speech_user_interface]: Downloading https://files.pythonhosted.org/packages/97/bf/c7dfece81eb0a124cfa9feb33850aade26fa06da0334d6f84ad80c8ce2cf/speech_user_interface-0.1.8.tar.gz
+[2024-04-13 10:39:36] INFO root fetch - processPackages [speech_user_interface]: Downloading https://files.pythonhosted.org/packages/72/62/6d72986e4b3fcf8105225d36d3b4d0e6a4db4f4a60dda50b86a77e06cd68/speech_user_interface-0.1.9.tar.gz
+[2024-04-13 10:39:36] INFO root fetch - processPackages [speech_user_interface]: executing diffoscope
+[2024-04-13 10:39:36] INFO root fetch - processPackages [speech_user_interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speech_user_interface-0.1.8.tar.gz tmp/speech_user_interface-0.1.9.tar.gz --markdown 20240413/s/speech_user_interface/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 10:39:36] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/0c/03/cb635b30b90557ee1bd8a9aff6bd6ec425ba8dff2e78ff50f618af770c7c/kuzu-0.3.3.dev32.tar.gz
+[2024-04-13 10:39:37] INFO root fetch - processPackages [kuzu]: executing diffoscope
+[2024-04-13 10:39:37] INFO root fetch - processPackages [kuzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuzu-0.3.3.dev31.tar.gz tmp/kuzu-0.3.3.dev32.tar.gz --markdown 20240413/k/kuzu/0.3.3.dev31-0.3.3.dev32/README.md --exclude *.pyd
+[2024-04-13 10:39:37] INFO root fetch - processPackages [speech_user_interface]: Remove: archive file [/home/abi/fetcher/tmp/speech_user_interface-0.1.8.tar.gz]
+[2024-04-13 10:39:37] INFO root fetch - processPackages [speech_user_interface]: Remove: archive file [/home/abi/fetcher/tmp/speech_user_interface-0.1.9.tar.gz]
+[2024-04-13 10:39:37] INFO root fetch - main [MainThread]: End processing [speech_user_interface]: success
+[2024-04-13 10:39:42] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.3.3.dev31.tar.gz]
+[2024-04-13 10:39:42] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.3.3.dev32.tar.gz]
+[2024-04-13 10:39:42] INFO root fetch - main [MainThread]: End processing [kuzu]: success
+[2024-04-13 10:39:42] INFO root fetch - main [MainThread]: Store serial: [22750591]
