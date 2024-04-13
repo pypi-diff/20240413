@@ -1884,3 +1884,41 @@
 [2024-04-13 02:08:02] INFO root fetch - processPackages [tetun-lid]: Remove: archive file [/home/abi/fetcher/tmp/tetun_lid-1.1.0.tar.gz]
 [2024-04-13 02:08:02] INFO root fetch - main [MainThread]: End processing [tetun-lid]: success
 [2024-04-13 02:08:02] INFO root fetch - main [MainThread]: Store serial: [22747141]
+[2024-04-13 02:10:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22747141]
+[2024-04-13 02:10:11] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 02:10:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openbb-nightly
+[2024-04-13 02:10:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pt-br-verbs-lemmatizer
+[2024-04-13 02:10:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mct-quantizers-nightly
+[2024-04-13 02:10:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sfkit
+[2024-04-13 02:10:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: searchspotify
+[2024-04-13 02:10:11] INFO root fetch - processPackages [mct-quantizers-nightly]: New version: [1.5.0.20240412.post1034] Old Version: [1.5.0.20240411.post1046]
+[2024-04-13 02:10:11] INFO root fetch - processPackages [sfkit]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-13 02:10:11] INFO root fetch - processPackages [openbb-nightly]: New version: [4.1.6.dev202404120009] Old Version: [4.1.6.dev202404110009]
+[2024-04-13 02:10:11] INFO root fetch - processPackages [pt-br-verbs-lemmatizer]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 02:10:11] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/a6/54/afe0d505947859f425bf165b8166252b68411f317a0d9892e4b007f1288b/openbb_nightly-4.1.6.dev202404110009.tar.gz
+[2024-04-13 02:10:11] INFO root fetch - processPackages [sfkit]: Downloading https://files.pythonhosted.org/packages/69/8b/9a1f5060e155248ea5b8d75d6b7f8e1c798bf9c3a22c9f96083fb0ebca9e/sfkit-0.0.98-py3-none-any.whl
+[2024-04-13 02:10:11] WARNING root fetch - processPackages [searchspotify]: Skipping, unable to determine old version
+[2024-04-13 02:10:11] INFO root fetch - main [MainThread]: End processing [searchspotify] error
+[2024-04-13 02:10:11] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/e6/60/c007d9d6eb717831ff1d1631465ed37f1737e3fd2d658271986958b10fe7/mct-quantizers-nightly-1.5.0.20240411.post1046.tar.gz
+[2024-04-13 02:10:11] INFO root fetch - processPackages [pt-br-verbs-lemmatizer]: Downloading https://files.pythonhosted.org/packages/a0/97/28e7256c2ba21de6ad3775a9c6d1a6a9408c5fa68d6da7d90cc5241406f3/pt_br_verbs_lemmatizer-0.1.1.tar.gz
+[2024-04-13 02:10:12] WARNING root fetch - processPackages [pt-br-verbs-lemmatizer]: Skipping package: exceeds size limit 11425425>=10485760
+[2024-04-13 02:10:12] INFO root fetch - main [MainThread]: End processing [pt-br-verbs-lemmatizer] error
+[2024-04-13 02:10:12] INFO root fetch - processPackages [sfkit]: Downloading https://files.pythonhosted.org/packages/ec/6a/31917f962eb713dee0e13323371f569ef0aa4a601303df27a62825d946cf/sfkit-0.0.99-py3-none-any.whl
+[2024-04-13 02:10:12] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/23/42/ff1577d09cfa2f87fabe1cd51ce82d6f451457e34cafce12c4f73c1d28b0/mct-quantizers-nightly-1.5.0.20240412.post1034.tar.gz
+[2024-04-13 02:10:12] INFO root fetch - processPackages [sfkit]: executing diffoscope
+[2024-04-13 02:10:12] INFO root fetch - processPackages [sfkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sfkit-0.0.98-py3-none-any.whl.zip tmp/sfkit-0.0.99-py3-none-any.whl.zip --markdown 20240413/s/sfkit/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-13 02:10:12] INFO root fetch - processPackages [mct-quantizers-nightly]: executing diffoscope
+[2024-04-13 02:10:12] INFO root fetch - processPackages [mct-quantizers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-quantizers-nightly-1.5.0.20240411.post1046.tar.gz tmp/mct-quantizers-nightly-1.5.0.20240412.post1034.tar.gz --markdown 20240413/m/mct-quantizers-nightly/1.5.0.20240411.post1046-1.5.0.20240412.post1034/README.md --exclude *.pyd
+[2024-04-13 02:10:12] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/3f/d4/fc20b92caf3237fbb87f29b1b53496ac8983c1b7f1e390cc6eebe7b60e3c/openbb_nightly-4.1.6.dev202404120009.tar.gz
+[2024-04-13 02:10:12] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2024-04-13 02:10:12] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-4.1.6.dev202404110009.tar.gz tmp/openbb_nightly-4.1.6.dev202404120009.tar.gz --markdown 20240413/o/openbb-nightly/4.1.6.dev202404110009-4.1.6.dev202404120009/README.md --exclude *.pyd
+[2024-04-13 02:10:12] INFO root fetch - processPackages [sfkit]: Remove: archive file [/home/abi/fetcher/tmp/sfkit-0.0.98-py3-none-any.whl.zip]
+[2024-04-13 02:10:12] INFO root fetch - processPackages [sfkit]: Remove: archive file [/home/abi/fetcher/tmp/sfkit-0.0.99-py3-none-any.whl.zip]
+[2024-04-13 02:10:12] INFO root fetch - main [MainThread]: End processing [sfkit]: success
+[2024-04-13 02:10:13] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240411.post1046.tar.gz]
+[2024-04-13 02:10:13] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240412.post1034.tar.gz]
+[2024-04-13 02:10:13] INFO root fetch - main [MainThread]: End processing [mct-quantizers-nightly]: success
+[2024-04-13 02:10:15] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.6.dev202404110009.tar.gz]
+[2024-04-13 02:10:15] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.6.dev202404120009.tar.gz]
+[2024-04-13 02:10:15] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2024-04-13 02:10:15] INFO root fetch - main [MainThread]: Store serial: [22747159]
