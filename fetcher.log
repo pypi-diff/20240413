@@ -13229,3 +13229,97 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 13:42:47] INFO root fetch - processPackages [pyqpanda]: Remove: archive file [/home/abi/fetcher/tmp/pyqpanda-3.8.3.3-cp39-none-win_amd64.whl.zip]
 [2024-04-13 13:42:47] INFO root fetch - main [MainThread]: End processing [pyqpanda]: success
 [2024-04-13 13:42:47] INFO root fetch - main [MainThread]: Store serial: [22751517]
+[2024-04-13 13:44:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751517]
+[2024-04-13 13:44:56] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-04-13 13:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: brplotviz
+[2024-04-13 13:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tpds-application
+[2024-04-13 13:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tpds-application-root
+[2024-04-13 13:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tpds-core
+[2024-04-13 13:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tpds-extension-ecc204-support
+[2024-04-13 13:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tpds-extension-ecc608-sip-support
+[2024-04-13 13:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tpds-extension-sha104-105-support
+[2024-04-13 13:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tpds-extension-ta010-support
+[2024-04-13 13:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tpds-extension-wpc-transmitter
+[2024-04-13 13:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tpds-helper
+[2024-04-13 13:44:56] INFO root fetch - processPackages [tpds-extension-ecc608-sip-support]: New version: [1.6.4] Old Version: [1.6.3]
+[2024-04-13 13:44:56] INFO root fetch - processPackages [brplotviz]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-13 13:44:56] INFO root fetch - processPackages [tpds-application]: New version: [2.3.9] Old Version: [2.3.7]
+[2024-04-13 13:44:56] INFO root fetch - processPackages [tpds-application-root]: New version: [2.3.9] Old Version: [2.3.8]
+[2024-04-13 13:44:56] INFO root fetch - processPackages [tpds-extension-ta010-support]: New version: [1.5.7] Old Version: [1.5.6]
+[2024-04-13 13:44:56] INFO root fetch - processPackages [tpds-extension-sha104-105-support]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-13 13:44:56] INFO root fetch - processPackages [tpds-extension-ecc204-support]: New version: [1.8.7] Old Version: [1.8.6]
+[2024-04-13 13:44:56] INFO root fetch - processPackages [tpds-extension-wpc-transmitter]: New version: [2.3.6] Old Version: [2.3.5]
+[2024-04-13 13:44:56] INFO root fetch - processPackages [tpds-helper]: New version: [2.3.9] Old Version: [2.3.8]
+[2024-04-13 13:44:56] INFO root fetch - processPackages [tpds-core]: New version: [2.3.8] Old Version: [2.3.7]
+[2024-04-13 13:44:56] INFO root fetch - processPackages [brplotviz]: Downloading https://files.pythonhosted.org/packages/6a/65/373e15d21aae9a169fa1dba633c4000f040a85f56d878800a5b20f924d62/brplotviz-0.2.2.tar.gz
+[2024-04-13 13:44:56] INFO root fetch - processPackages [tpds-extension-ecc608-sip-support]: Downloading https://files.pythonhosted.org/packages/c6/8b/68f18f2312571c1a6600b9da2c8ba867b387408adf529e3d24d2ccdfb94a/tpds_extension_ecc608_sip_support-1.6.3-py3-none-any.whl
+[2024-04-13 13:44:56] INFO root fetch - processPackages [tpds-extension-ta010-support]: Downloading https://files.pythonhosted.org/packages/b5/fa/c2a571acdc1809dd3e0d7da9eff9ced4f8c9069e823610987704ca76ed13/tpds_extension_ta010_support-1.5.6-py3-none-any.whl
+[2024-04-13 13:44:56] INFO root fetch - processPackages [tpds-application]: Downloading https://files.pythonhosted.org/packages/80/67/3ce84bee32ea6ad0625a2decf6c52236a638171fc07c62aa9e5e7464592c/tpds_application-2.3.7-py3-none-any.whl
+[2024-04-13 13:44:56] INFO root fetch - processPackages [tpds-application-root]: Downloading https://files.pythonhosted.org/packages/d0/71/4e47386c313e8c255e5db7a3672782db575e16c825dc65d0ca917ac2d784/tpds_application_root-2.3.8-py3-none-any.whl
+[2024-04-13 13:44:56] WARNING root fetch - processPackages [tpds-extension-ecc608-sip-support]: Skipping package: exceeds size limit 41360765>=10485760
+[2024-04-13 13:44:56] INFO root fetch - processPackages [tpds-extension-ecc608-sip-support]: Start processing: cybereason
+[2024-04-13 13:44:56] INFO root fetch - main [MainThread]: End processing [tpds-extension-ecc608-sip-support] error
+[2024-04-13 13:44:56] INFO root fetch - processPackages [tpds-extension-wpc-transmitter]: Downloading https://files.pythonhosted.org/packages/da/b0/4ca60da766a9245c0216fe5112043544bcf05cb641afc0503d89bf37703d/tpds_extension_wpc_transmitter-2.3.5-py3-none-any.whl
+[2024-04-13 13:44:56] INFO root fetch - processPackages [cybereason]: New version: [0.5.0] Old Version: [0.4.3]
+[2024-04-13 13:44:56] INFO root fetch - processPackages [tpds-extension-sha104-105-support]: Downloading https://files.pythonhosted.org/packages/aa/22/3afc6073bd907499b5034987f2c2c4a3f03eb9cae744660c50517501b9c6/tpds_extension_sha104_105_support-1.1.0-py3-none-any.whl
+[2024-04-13 13:44:56] INFO root fetch - processPackages [tpds-extension-ecc204-support]: Downloading https://files.pythonhosted.org/packages/5d/99/3003283720441a518166e3b13210d70dc1a60b172539e620d35b7b869f8b/tpds_extension_ecc204_support-1.8.6-py3-none-any.whl
+[2024-04-13 13:44:56] INFO root fetch - processPackages [tpds-helper]: Downloading https://files.pythonhosted.org/packages/77/15/dea75f30afb0790a87db551210d4c739b2c8f370ef0823ab7352c0176633/tpds_helper-2.3.8-py3-none-any.whl
+[2024-04-13 13:44:56] WARNING root fetch - processPackages [tpds-extension-ecc204-support]: Skipping package: exceeds size limit 11100192>=10485760
+[2024-04-13 13:44:56] INFO root fetch - main [MainThread]: End processing [tpds-extension-ecc204-support] error
+[2024-04-13 13:44:56] INFO root fetch - processPackages [cybereason]: Downloading https://files.pythonhosted.org/packages/a3/a3/187f9447d2c99ea421c66c7476bc5d29d85c3d15a8b5bba484b9aeb93cc9/cybereason-0.4.3.tar.gz
+[2024-04-13 13:44:56] INFO root fetch - processPackages [tpds-core]: Downloading https://files.pythonhosted.org/packages/ec/68/337c922553078bac0ce454482893684a6fe1e6a0ef074973af5dd29a476f/tpds_core-2.3.7-py3-none-any.whl
+[2024-04-13 13:44:57] INFO root fetch - processPackages [brplotviz]: Downloading https://files.pythonhosted.org/packages/e1/d2/0197d19eb5e1e39320e2f45d390cafd5a25e71db2eb2964bf4ca12b94b36/brplotviz-0.2.3.tar.gz
+[2024-04-13 13:44:57] INFO root fetch - processPackages [cybereason]: Downloading https://files.pythonhosted.org/packages/1b/a5/1e485ec32d012b5aec7f38e707afc4739d1415ab3c3c021949face2adc32/cybereason-0.5.0.tar.gz
+[2024-04-13 13:44:57] INFO root fetch - processPackages [tpds-application]: Downloading https://files.pythonhosted.org/packages/02/f7/27443b818f19e31278083f3f3f5d71518353974e2f423df68e74349e48ad/tpds_application-2.3.9-py3-none-any.whl
+[2024-04-13 13:44:57] INFO root fetch - processPackages [brplotviz]: executing diffoscope
+[2024-04-13 13:44:57] INFO root fetch - processPackages [brplotviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brplotviz-0.2.2.tar.gz tmp/brplotviz-0.2.3.tar.gz --markdown 20240413/b/brplotviz/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-13 13:44:57] INFO root fetch - processPackages [cybereason]: executing diffoscope
+[2024-04-13 13:44:57] INFO root fetch - processPackages [cybereason]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybereason-0.4.3.tar.gz tmp/cybereason-0.5.0.tar.gz --markdown 20240413/c/cybereason/0.4.3-0.5.0/README.md --exclude *.pyd
+[2024-04-13 13:44:57] INFO root fetch - processPackages [tpds-core]: Downloading https://files.pythonhosted.org/packages/e9/07/9f8025fe13e6d3d99483c9339a255137f6fa0a296b90f6df20dd981c76de/tpds_core-2.3.8-py3-none-any.whl
+[2024-04-13 13:44:57] INFO root fetch - processPackages [tpds-helper]: Downloading https://files.pythonhosted.org/packages/8d/d8/c0b21962ea5d6cd1c38ac97a66090e9b04bdfc0fb33f58ceef16424c647d/tpds_helper-2.3.9-py3-none-any.whl
+[2024-04-13 13:44:57] INFO root fetch - processPackages [tpds-extension-ta010-support]: Downloading https://files.pythonhosted.org/packages/60/5d/65511b8be85fc148fcf90b4616e59033c98019c541da4361b4bdf54743c1/tpds_extension_ta010_support-1.5.7-py3-none-any.whl
+[2024-04-13 13:44:57] INFO root fetch - processPackages [tpds-extension-wpc-transmitter]: Downloading https://files.pythonhosted.org/packages/40/d3/3aa77a4b1e720c965a2fa6cb4da4819176de770d56ffc3f12585436ad0ca/tpds_extension_wpc_transmitter-2.3.6-py3-none-any.whl
+[2024-04-13 13:44:57] INFO root fetch - processPackages [tpds-core]: executing diffoscope
+[2024-04-13 13:44:57] INFO root fetch - processPackages [tpds-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tpds_core-2.3.7-py3-none-any.whl.zip tmp/tpds_core-2.3.8-py3-none-any.whl.zip --markdown 20240413/t/tpds-core/2.3.7-2.3.8/README.md --exclude *.pyd
+[2024-04-13 13:44:57] INFO root fetch - processPackages [tpds-application-root]: Downloading https://files.pythonhosted.org/packages/f5/e4/bb3ea60140cd1d8399b6c078d9ffe8da1010651308073dfe2bee486922e1/tpds_application_root-2.3.9-py3-none-any.whl
+[2024-04-13 13:44:57] INFO root fetch - processPackages [tpds-application]: executing diffoscope
+[2024-04-13 13:44:57] INFO root fetch - processPackages [tpds-application]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tpds_application-2.3.7-py3-none-any.whl.zip tmp/tpds_application-2.3.9-py3-none-any.whl.zip --markdown 20240413/t/tpds-application/2.3.7-2.3.9/README.md --exclude *.pyd
+[2024-04-13 13:44:57] INFO root fetch - processPackages [tpds-extension-sha104-105-support]: Downloading https://files.pythonhosted.org/packages/40/fc/46fa4f2995826e7b6a057c49eb517266cfb0589ed9db70d30cb6ff937306/tpds_extension_sha104_105_support-1.1.1-py3-none-any.whl
+[2024-04-13 13:44:57] INFO root fetch - processPackages [tpds-helper]: executing diffoscope
+[2024-04-13 13:44:57] INFO root fetch - processPackages [tpds-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tpds_helper-2.3.8-py3-none-any.whl.zip tmp/tpds_helper-2.3.9-py3-none-any.whl.zip --markdown 20240413/t/tpds-helper/2.3.8-2.3.9/README.md --exclude *.pyd
+[2024-04-13 13:44:57] INFO root fetch - processPackages [tpds-extension-ta010-support]: executing diffoscope
+[2024-04-13 13:44:57] INFO root fetch - processPackages [tpds-extension-ta010-support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tpds_extension_ta010_support-1.5.6-py3-none-any.whl.zip tmp/tpds_extension_ta010_support-1.5.7-py3-none-any.whl.zip --markdown 20240413/t/tpds-extension-ta010-support/1.5.6-1.5.7/README.md --exclude *.pyd
+[2024-04-13 13:44:57] INFO root fetch - processPackages [tpds-extension-wpc-transmitter]: executing diffoscope
+[2024-04-13 13:44:57] INFO root fetch - processPackages [tpds-extension-wpc-transmitter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tpds_extension_wpc_transmitter-2.3.5-py3-none-any.whl.zip tmp/tpds_extension_wpc_transmitter-2.3.6-py3-none-any.whl.zip --markdown 20240413/t/tpds-extension-wpc-transmitter/2.3.5-2.3.6/README.md --exclude *.pyd
+[2024-04-13 13:44:58] INFO root fetch - processPackages [cybereason]: Remove: archive file [/home/abi/fetcher/tmp/cybereason-0.4.3.tar.gz]
+[2024-04-13 13:44:58] INFO root fetch - processPackages [cybereason]: Remove: archive file [/home/abi/fetcher/tmp/cybereason-0.5.0.tar.gz]
+[2024-04-13 13:44:58] INFO root fetch - main [MainThread]: End processing [cybereason]: success
+[2024-04-13 13:44:58] INFO root fetch - processPackages [tpds-application-root]: executing diffoscope
+[2024-04-13 13:44:58] INFO root fetch - processPackages [tpds-extension-sha104-105-support]: executing diffoscope
+[2024-04-13 13:44:58] INFO root fetch - processPackages [tpds-extension-sha104-105-support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tpds_extension_sha104_105_support-1.1.0-py3-none-any.whl.zip tmp/tpds_extension_sha104_105_support-1.1.1-py3-none-any.whl.zip --markdown 20240413/t/tpds-extension-sha104-105-support/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-13 13:44:58] INFO root fetch - processPackages [tpds-application-root]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tpds_application_root-2.3.8-py3-none-any.whl.zip tmp/tpds_application_root-2.3.9-py3-none-any.whl.zip --markdown 20240413/t/tpds-application-root/2.3.8-2.3.9/README.md --exclude *.pyd
+[2024-04-13 13:44:58] INFO root fetch - processPackages [brplotviz]: Remove: archive file [/home/abi/fetcher/tmp/brplotviz-0.2.2.tar.gz]
+[2024-04-13 13:44:58] INFO root fetch - processPackages [brplotviz]: Remove: archive file [/home/abi/fetcher/tmp/brplotviz-0.2.3.tar.gz]
+[2024-04-13 13:44:58] INFO root fetch - main [MainThread]: End processing [brplotviz]: success
+[2024-04-13 13:44:58] INFO root fetch - processPackages [tpds-application]: Remove: archive file [/home/abi/fetcher/tmp/tpds_application-2.3.7-py3-none-any.whl.zip]
+[2024-04-13 13:44:58] INFO root fetch - processPackages [tpds-application]: Remove: archive file [/home/abi/fetcher/tmp/tpds_application-2.3.9-py3-none-any.whl.zip]
+[2024-04-13 13:44:58] INFO root fetch - main [MainThread]: End processing [tpds-application]: success
+[2024-04-13 13:44:58] INFO root fetch - processPackages [tpds-core]: Remove: archive file [/home/abi/fetcher/tmp/tpds_core-2.3.7-py3-none-any.whl.zip]
+[2024-04-13 13:44:58] INFO root fetch - processPackages [tpds-core]: Remove: archive file [/home/abi/fetcher/tmp/tpds_core-2.3.8-py3-none-any.whl.zip]
+[2024-04-13 13:44:58] INFO root fetch - main [MainThread]: End processing [tpds-core]: success
+[2024-04-13 13:44:58] INFO root fetch - processPackages [tpds-helper]: Remove: archive file [/home/abi/fetcher/tmp/tpds_helper-2.3.8-py3-none-any.whl.zip]
+[2024-04-13 13:44:58] INFO root fetch - processPackages [tpds-helper]: Remove: archive file [/home/abi/fetcher/tmp/tpds_helper-2.3.9-py3-none-any.whl.zip]
+[2024-04-13 13:44:58] INFO root fetch - main [MainThread]: End processing [tpds-helper]: success
+[2024-04-13 13:45:00] INFO root fetch - processPackages [tpds-extension-wpc-transmitter]: Remove: archive file [/home/abi/fetcher/tmp/tpds_extension_wpc_transmitter-2.3.5-py3-none-any.whl.zip]
+[2024-04-13 13:45:00] INFO root fetch - processPackages [tpds-extension-wpc-transmitter]: Remove: archive file [/home/abi/fetcher/tmp/tpds_extension_wpc_transmitter-2.3.6-py3-none-any.whl.zip]
+[2024-04-13 13:45:00] INFO root fetch - main [MainThread]: End processing [tpds-extension-wpc-transmitter]: success
+[2024-04-13 13:45:01] INFO root fetch - processPackages [tpds-extension-ta010-support]: Remove: archive file [/home/abi/fetcher/tmp/tpds_extension_ta010_support-1.5.6-py3-none-any.whl.zip]
+[2024-04-13 13:45:01] INFO root fetch - processPackages [tpds-extension-ta010-support]: Remove: archive file [/home/abi/fetcher/tmp/tpds_extension_ta010_support-1.5.7-py3-none-any.whl.zip]
+[2024-04-13 13:45:01] INFO root fetch - main [MainThread]: End processing [tpds-extension-ta010-support]: success
+[2024-04-13 13:45:02] INFO root fetch - processPackages [tpds-extension-sha104-105-support]: Remove: archive file [/home/abi/fetcher/tmp/tpds_extension_sha104_105_support-1.1.0-py3-none-any.whl.zip]
+[2024-04-13 13:45:02] INFO root fetch - processPackages [tpds-extension-sha104-105-support]: Remove: archive file [/home/abi/fetcher/tmp/tpds_extension_sha104_105_support-1.1.1-py3-none-any.whl.zip]
+[2024-04-13 13:45:02] INFO root fetch - main [MainThread]: End processing [tpds-extension-sha104-105-support]: success
+[2024-04-13 13:45:11] INFO root fetch - processPackages [tpds-application-root]: Remove: archive file [/home/abi/fetcher/tmp/tpds_application_root-2.3.8-py3-none-any.whl.zip]
+[2024-04-13 13:45:11] INFO root fetch - processPackages [tpds-application-root]: Remove: archive file [/home/abi/fetcher/tmp/tpds_application_root-2.3.9-py3-none-any.whl.zip]
+[2024-04-13 13:45:11] INFO root fetch - main [MainThread]: End processing [tpds-application-root]: success
+[2024-04-13 13:45:11] INFO root fetch - main [MainThread]: Store serial: [22751541]
