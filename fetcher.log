@@ -10005,3 +10005,47 @@
 [2024-04-13 09:23:04] INFO root fetch - processPackages [grimoirelab-panels]: Remove: archive file [/home/abi/fetcher/tmp/grimoirelab_panels-1.0.0rc1.tar.gz]
 [2024-04-13 09:23:04] INFO root fetch - main [MainThread]: End processing [grimoirelab-panels]: success
 [2024-04-13 09:23:04] INFO root fetch - main [MainThread]: Store serial: [22750185]
+[2024-04-13 09:25:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750185]
+[2024-04-13 09:25:12] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 09:27:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750185]
+[2024-04-13 09:27:17] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 09:27:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cereslib
+[2024-04-13 09:27:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: baseweb
+[2024-04-13 09:27:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mycalc043
+[2024-04-13 09:27:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: perceval
+[2024-04-13 09:27:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-rke
+[2024-04-13 09:27:18] WARNING root fetch - processPackages [mycalc043]: Skipping, unable to determine old version
+[2024-04-13 09:27:18] INFO root fetch - main [MainThread]: End processing [mycalc043] error
+[2024-04-13 09:27:18] INFO root fetch - processPackages [baseweb]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-13 09:27:18] INFO root fetch - processPackages [cereslib]: New version: [1.0.0rc1] Old Version: [1.0.0]
+[2024-04-13 09:27:18] INFO root fetch - processPackages [perceval]: New version: [1.0.0rc2] Old Version: [1.0.0rc1]
+[2024-04-13 09:27:18] INFO root fetch - processPackages [pulumi-rke]: New version: [3.5.0a1712990560] Old Version: [3.5.0a1712730845]
+[2024-04-13 09:27:18] INFO root fetch - processPackages [baseweb]: Downloading https://files.pythonhosted.org/packages/58/4b/8a6f563f8786bc0d2ac58e01e3d20ee4d2228722044026eb7b243b6c2ccd/baseweb-0.2.0.tar.gz
+[2024-04-13 09:27:18] INFO root fetch - processPackages [cereslib]: Downloading https://files.pythonhosted.org/packages/34/57/16af95f1c65927a4a5042fb29de6569c081d28da1b36919467e1fb7d2f73/cereslib-1.0.0.tar.gz
+[2024-04-13 09:27:18] INFO root fetch - processPackages [perceval]: Downloading https://files.pythonhosted.org/packages/05/98/6dd03250d3f1a5e630e3b7fd5ef27b407fb803b73fdca8cc1e13c04107a6/perceval-1.0.0rc1.tar.gz
+[2024-04-13 09:27:18] INFO root fetch - processPackages [pulumi-rke]: Downloading https://files.pythonhosted.org/packages/32/6b/7ffe0ac95ba76b1387b2f01b41805638ac42a0b5c20d0d3fd7bae3ec6d2c/pulumi_rke-3.5.0a1712730845.tar.gz
+[2024-04-13 09:27:18] INFO root fetch - processPackages [cereslib]: Downloading https://files.pythonhosted.org/packages/55/94/0ab74ca9eb9c54f93fa401b97c94456824d913c51da83f140ed41a5c4e30/cereslib-1.0.0rc1.tar.gz
+[2024-04-13 09:27:18] INFO root fetch - processPackages [baseweb]: Downloading https://files.pythonhosted.org/packages/f8/a8/4c6fb52a18749af3bd60afe0feaf0d282a8eb774541c8ed6b88db29e97b1/baseweb-0.2.1.tar.gz
+[2024-04-13 09:27:18] INFO root fetch - processPackages [cereslib]: executing diffoscope
+[2024-04-13 09:27:18] INFO root fetch - processPackages [cereslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cereslib-1.0.0.tar.gz tmp/cereslib-1.0.0rc1.tar.gz --markdown 20240413/c/cereslib/1.0.0-1.0.0rc1/README.md --exclude *.pyd
+[2024-04-13 09:27:18] INFO root fetch - processPackages [pulumi-rke]: Downloading https://files.pythonhosted.org/packages/3b/31/206056acda998d2d41e474d680d69c6d5e6cd5a888668c76c812c85d3472/pulumi_rke-3.5.0a1712990560.tar.gz
+[2024-04-13 09:27:19] INFO root fetch - processPackages [perceval]: Downloading https://files.pythonhosted.org/packages/5c/72/97cd27786ef0f1eaa11432c84abe8569599542ed2ec2b619798db9b6cc47/perceval-1.0.0rc2.tar.gz
+[2024-04-13 09:27:19] INFO root fetch - processPackages [baseweb]: executing diffoscope
+[2024-04-13 09:27:19] INFO root fetch - processPackages [baseweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baseweb-0.2.0.tar.gz tmp/baseweb-0.2.1.tar.gz --markdown 20240413/b/baseweb/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-13 09:27:19] INFO root fetch - processPackages [pulumi-rke]: executing diffoscope
+[2024-04-13 09:27:19] INFO root fetch - processPackages [pulumi-rke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_rke-3.5.0a1712730845.tar.gz tmp/pulumi_rke-3.5.0a1712990560.tar.gz --markdown 20240413/p/pulumi-rke/3.5.0a1712730845-3.5.0a1712990560/README.md --exclude *.pyd
+[2024-04-13 09:27:19] INFO root fetch - processPackages [perceval]: executing diffoscope
+[2024-04-13 09:27:19] INFO root fetch - processPackages [perceval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/perceval-1.0.0rc1.tar.gz tmp/perceval-1.0.0rc2.tar.gz --markdown 20240413/p/perceval/1.0.0rc1-1.0.0rc2/README.md --exclude *.pyd
+[2024-04-13 09:27:19] INFO root fetch - processPackages [cereslib]: Remove: archive file [/home/abi/fetcher/tmp/cereslib-1.0.0.tar.gz]
+[2024-04-13 09:27:19] INFO root fetch - processPackages [cereslib]: Remove: archive file [/home/abi/fetcher/tmp/cereslib-1.0.0rc1.tar.gz]
+[2024-04-13 09:27:19] INFO root fetch - main [MainThread]: End processing [cereslib]: success
+[2024-04-13 09:27:19] INFO root fetch - processPackages [pulumi-rke]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_rke-3.5.0a1712730845.tar.gz]
+[2024-04-13 09:27:19] INFO root fetch - processPackages [pulumi-rke]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_rke-3.5.0a1712990560.tar.gz]
+[2024-04-13 09:27:19] INFO root fetch - main [MainThread]: End processing [pulumi-rke]: success
+[2024-04-13 09:27:20] INFO root fetch - processPackages [baseweb]: Remove: archive file [/home/abi/fetcher/tmp/baseweb-0.2.0.tar.gz]
+[2024-04-13 09:27:20] INFO root fetch - processPackages [baseweb]: Remove: archive file [/home/abi/fetcher/tmp/baseweb-0.2.1.tar.gz]
+[2024-04-13 09:27:20] INFO root fetch - main [MainThread]: End processing [baseweb]: success
+[2024-04-13 09:27:20] INFO root fetch - processPackages [perceval]: Remove: archive file [/home/abi/fetcher/tmp/perceval-1.0.0rc1.tar.gz]
+[2024-04-13 09:27:20] INFO root fetch - processPackages [perceval]: Remove: archive file [/home/abi/fetcher/tmp/perceval-1.0.0rc2.tar.gz]
+[2024-04-13 09:27:20] INFO root fetch - main [MainThread]: End processing [perceval]: success
+[2024-04-13 09:27:20] INFO root fetch - main [MainThread]: Store serial: [22750200]
