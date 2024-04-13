@@ -16113,3 +16113,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 17:33:05] INFO root fetch - processPackages [furtheredge]: Remove: archive file [/home/abi/fetcher/tmp/furtheredge-0.0.6.tar.gz]
 [2024-04-13 17:33:05] INFO root fetch - main [MainThread]: End processing [furtheredge]: success
 [2024-04-13 17:33:05] INFO root fetch - main [MainThread]: Store serial: [22752923]
+[2024-04-13 17:35:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752923]
+[2024-04-13 17:35:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 17:35:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tulona
+[2024-04-13 17:35:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-dinkum-listener
+[2024-04-13 17:35:14] INFO root fetch - processPackages [tulona]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-13 17:35:14] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/e6/b9/ac89383fa74bf149e25dbf214b7bb74559b7721fecdae26da0441a26461e/tulona-0.5.0.tar.gz
+[2024-04-13 17:35:14] INFO root fetch - processPackages [ovos-dinkum-listener]: New version: [0.0.3a9] Old Version: [0.0.3a8]
+[2024-04-13 17:35:14] INFO root fetch - processPackages [ovos-dinkum-listener]: Downloading https://files.pythonhosted.org/packages/39/63/db189baaa13533fbd35dadc710e7531c833d88d1b295d2b468b0bf5a542b/ovos-dinkum-listener-0.0.3a8.tar.gz
+[2024-04-13 17:35:14] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/9a/a7/c7f8b435b4c11461854c0289b7207906366bb9c46851c5b661c11bbe61b3/tulona-0.5.1.tar.gz
+[2024-04-13 17:35:14] INFO root fetch - processPackages [tulona]: executing diffoscope
+[2024-04-13 17:35:14] INFO root fetch - processPackages [tulona]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tulona-0.5.0.tar.gz tmp/tulona-0.5.1.tar.gz --markdown 20240413/t/tulona/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-13 17:35:14] INFO root fetch - processPackages [ovos-dinkum-listener]: Downloading https://files.pythonhosted.org/packages/e5/5c/8edc5e23dfe2905957531961f3dcbead7d4598edbe052e4b3a806a71b58d/ovos-dinkum-listener-0.0.3a9.tar.gz
+[2024-04-13 17:35:15] INFO root fetch - processPackages [ovos-dinkum-listener]: executing diffoscope
+[2024-04-13 17:35:15] INFO root fetch - processPackages [ovos-dinkum-listener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-dinkum-listener-0.0.3a8.tar.gz tmp/ovos-dinkum-listener-0.0.3a9.tar.gz --markdown 20240413/o/ovos-dinkum-listener/0.0.3a8-0.0.3a9/README.md --exclude *.pyd
+[2024-04-13 17:35:15] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.5.0.tar.gz]
+[2024-04-13 17:35:15] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.5.1.tar.gz]
+[2024-04-13 17:35:15] INFO root fetch - main [MainThread]: End processing [tulona]: success
+[2024-04-13 17:35:15] INFO root fetch - processPackages [ovos-dinkum-listener]: Remove: archive file [/home/abi/fetcher/tmp/ovos-dinkum-listener-0.0.3a8.tar.gz]
+[2024-04-13 17:35:15] INFO root fetch - processPackages [ovos-dinkum-listener]: Remove: archive file [/home/abi/fetcher/tmp/ovos-dinkum-listener-0.0.3a9.tar.gz]
+[2024-04-13 17:35:15] INFO root fetch - main [MainThread]: End processing [ovos-dinkum-listener]: success
+[2024-04-13 17:35:15] INFO root fetch - main [MainThread]: Store serial: [22752929]
