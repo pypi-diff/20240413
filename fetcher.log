@@ -6951,3 +6951,15 @@
 [2024-04-13 04:22:19] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.9-py3-none-any.whl.zip]
 [2024-04-13 04:22:19] INFO root fetch - main [MainThread]: End processing [modal]: success
 [2024-04-13 04:22:19] INFO root fetch - main [MainThread]: Store serial: [22748984]
+[2024-04-13 04:24:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748984]
+[2024-04-13 04:24:27] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 04:24:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: roicat
+[2024-04-13 04:24:28] INFO root fetch - processPackages [roicat]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-13 04:24:28] INFO root fetch - processPackages [roicat]: Downloading https://files.pythonhosted.org/packages/1e/76/3319a560cc962bfcbe978d07647b470ff9fd675fd8a89a26743210729c6e/roicat-1.1.8.tar.gz
+[2024-04-13 04:24:28] INFO root fetch - processPackages [roicat]: Downloading https://files.pythonhosted.org/packages/59/a3/7a17e25adbcb0100ae09a5d6c89feb91a29f980445cde0be305f6cc9323b/roicat-1.1.9.tar.gz
+[2024-04-13 04:24:28] INFO root fetch - processPackages [roicat]: executing diffoscope
+[2024-04-13 04:24:28] INFO root fetch - processPackages [roicat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roicat-1.1.8.tar.gz tmp/roicat-1.1.9.tar.gz --markdown 20240413/r/roicat/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-13 04:24:29] INFO root fetch - processPackages [roicat]: Remove: archive file [/home/abi/fetcher/tmp/roicat-1.1.8.tar.gz]
+[2024-04-13 04:24:29] INFO root fetch - processPackages [roicat]: Remove: archive file [/home/abi/fetcher/tmp/roicat-1.1.9.tar.gz]
+[2024-04-13 04:24:29] INFO root fetch - main [MainThread]: End processing [roicat]: success
+[2024-04-13 04:24:29] INFO root fetch - main [MainThread]: Store serial: [22748987]
