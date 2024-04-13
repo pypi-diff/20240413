@@ -18263,3 +18263,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 20:16:01] INFO root fetch - processPackages [chatshit]: Remove: archive file [/home/abi/fetcher/tmp/chatshit-0.0.0.5.tar.gz]
 [2024-04-13 20:16:01] INFO root fetch - main [MainThread]: End processing [chatshit]: success
 [2024-04-13 20:16:01] INFO root fetch - main [MainThread]: Store serial: [22753871]
+[2024-04-13 20:18:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753871]
+[2024-04-13 20:18:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 20:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: whishow
+[2024-04-13 20:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dektools
+[2024-04-13 20:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sampa
+[2024-04-13 20:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdklabs.cdk-enterprise-iac
+[2024-04-13 20:18:09] WARNING root fetch - processPackages [sampa]: Skipping, unable to determine old version
+[2024-04-13 20:18:09] INFO root fetch - main [MainThread]: End processing [sampa] error
+[2024-04-13 20:18:09] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-13 20:18:10] WARNING root fetch - processPackages [whishow]: Skipping, unable to determine old version
+[2024-04-13 20:18:10] INFO root fetch - main [MainThread]: End processing [whishow] error
+[2024-04-13 20:18:10] INFO root fetch - processPackages [dektools]: New version: [0.1.9] Old Version: [0.1.81]
+[2024-04-13 20:18:10] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Downloading https://files.pythonhosted.org/packages/26/1b/2d98082d5a50de544ac5b0df408479fcedd8e3cbc7361e0cb0e9f362a0af/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz
+[2024-04-13 20:18:10] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/d8/7f/9c75b85521fecd2d9cf14b70f26432b62aca649b12479d39d1612ebe862b/dektools-0.1.81.tar.gz
+[2024-04-13 20:18:10] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/68/56/90836602efe1f93ffb0ab3da68807fa41e85e124836bcc0c3cc2d1b2c539/dektools-0.1.9-py3-none-any.whl
+[2024-04-13 20:18:10] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Downloading https://files.pythonhosted.org/packages/68/b7/1bc76974269d07601c13aaa5489dbaf5bfced52da0839a380231163281b2/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz
+[2024-04-13 20:18:10] INFO root fetch - processPackages [dektools]: executing diffoscope
+[2024-04-13 20:18:10] INFO root fetch - processPackages [dektools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dektools-0.1.81.tar.gz tmp/dektools-0.1.9-py3-none-any.whl.zip --markdown 20240413/d/dektools/0.1.81-0.1.9/README.md --exclude *.pyd
+[2024-04-13 20:18:11] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2024-04-13 20:18:11] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20240413/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-13 20:18:11] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.81.tar.gz]
+[2024-04-13 20:18:11] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.9-py3-none-any.whl.zip]
+[2024-04-13 20:18:11] INFO root fetch - main [MainThread]: End processing [dektools]: success
+[2024-04-13 20:18:12] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz]
+[2024-04-13 20:18:12] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz]
+[2024-04-13 20:18:12] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2024-04-13 20:18:12] INFO root fetch - main [MainThread]: Store serial: [22753884]
