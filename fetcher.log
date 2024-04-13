@@ -14529,3 +14529,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 15:34:02] INFO root fetch - processPackages [deep-image-matching]: Remove: archive file [/home/abi/fetcher/tmp/deep_image_matching-1.2.1.tar.gz]
 [2024-04-13 15:34:02] INFO root fetch - main [MainThread]: End processing [deep-image-matching]: success
 [2024-04-13 15:34:02] INFO root fetch - main [MainThread]: Store serial: [22752197]
+[2024-04-13 15:36:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752197]
+[2024-04-13 15:36:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 15:36:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deep-image-matching
+[2024-04-13 15:36:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: djangocms-frontend
+[2024-04-13 15:36:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: setuptools
+[2024-04-13 15:36:11] INFO root fetch - processPackages [deep-image-matching]: New version: [1.2.1] Old Version: [1.1.1]
+[2024-04-13 15:36:11] INFO root fetch - processPackages [setuptools]: New version: [9.1] Old Version: [9.0.1]
+[2024-04-13 15:36:11] INFO root fetch - processPackages [deep-image-matching]: Downloading https://files.pythonhosted.org/packages/12/b6/ad459cc0460e87245b458050da7134b55cad75a0050bddda64eb183603d3/deep_image_matching-1.1.1.tar.gz
+[2024-04-13 15:36:11] INFO root fetch - processPackages [djangocms-frontend]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-13 15:36:11] INFO root fetch - processPackages [setuptools]: Downloading https://files.pythonhosted.org/packages/16/2c/1ad571e85048c57b4e7ba2218d0fff3db0452e8bfa0c20e1543e26f85121/setuptools-9.0.1.zip
+[2024-04-13 15:36:12] INFO root fetch - processPackages [djangocms-frontend]: Downloading https://files.pythonhosted.org/packages/c2/84/5e87e37b3286f2acc8bf65b70ca225c34b6a5f51184a51f1f03727606bd5/djangocms-frontend-1.3.0.tar.gz
+[2024-04-13 15:36:12] INFO root fetch - processPackages [deep-image-matching]: Downloading https://files.pythonhosted.org/packages/77/03/9699cc57ef697996e25f060f5d3f5691f7eca46e248681296e103867d4b9/deep_image_matching-1.2.1.tar.gz
+[2024-04-13 15:36:12] INFO root fetch - processPackages [deep-image-matching]: executing diffoscope
+[2024-04-13 15:36:12] INFO root fetch - processPackages [deep-image-matching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_image_matching-1.1.1.tar.gz tmp/deep_image_matching-1.2.1.tar.gz --markdown 20240413/d/deep-image-matching/1.1.1-1.2.1/README.md --exclude *.pyd
+[2024-04-13 15:36:12] INFO root fetch - processPackages [setuptools]: Downloading https://files.pythonhosted.org/packages/35/b2/626974cb6f02c4d58c33471b597f6723560f74be322857e9cd24700c3c70/setuptools-9.1.zip
+[2024-04-13 15:36:12] INFO root fetch - processPackages [setuptools]: executing diffoscope
+[2024-04-13 15:36:12] INFO root fetch - processPackages [setuptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setuptools-9.0.1.zip tmp/setuptools-9.1.zip --markdown 20240413/s/setuptools/9.0.1-9.1/README.md --exclude *.pyd
+[2024-04-13 15:36:13] INFO root fetch - processPackages [djangocms-frontend]: Downloading https://files.pythonhosted.org/packages/88/7c/1689dc6020a453277ee225d72700d92e9297b01e47b5e519fa78b1d9ab40/djangocms_frontend-1.3.1.tar.gz
+[2024-04-13 15:36:13] INFO root fetch - processPackages [deep-image-matching]: Remove: archive file [/home/abi/fetcher/tmp/deep_image_matching-1.1.1.tar.gz]
+[2024-04-13 15:36:13] INFO root fetch - processPackages [deep-image-matching]: Remove: archive file [/home/abi/fetcher/tmp/deep_image_matching-1.2.1.tar.gz]
+[2024-04-13 15:36:13] INFO root fetch - main [MainThread]: End processing [deep-image-matching]: success
+[2024-04-13 15:36:13] INFO root fetch - processPackages [setuptools]: Remove: archive file [/home/abi/fetcher/tmp/setuptools-9.0.1.zip]
+[2024-04-13 15:36:13] INFO root fetch - processPackages [setuptools]: Remove: archive file [/home/abi/fetcher/tmp/setuptools-9.1.zip]
+[2024-04-13 15:36:13] INFO root fetch - main [MainThread]: End processing [setuptools]: success
+[2024-04-13 15:36:13] INFO root fetch - processPackages [djangocms-frontend]: executing diffoscope
+[2024-04-13 15:36:13] INFO root fetch - processPackages [djangocms-frontend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangocms-frontend-1.3.0.tar.gz tmp/djangocms_frontend-1.3.1.tar.gz --markdown 20240413/d/djangocms-frontend/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-04-13 15:36:15] INFO root fetch - processPackages [djangocms-frontend]: Remove: archive file [/home/abi/fetcher/tmp/djangocms-frontend-1.3.0.tar.gz]
+[2024-04-13 15:36:15] INFO root fetch - processPackages [djangocms-frontend]: Remove: archive file [/home/abi/fetcher/tmp/djangocms_frontend-1.3.1.tar.gz]
+[2024-04-13 15:36:15] INFO root fetch - main [MainThread]: End processing [djangocms-frontend]: success
+[2024-04-13 15:36:15] INFO root fetch - main [MainThread]: Store serial: [22752208]
