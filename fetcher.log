@@ -18437,3 +18437,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 20:26:53] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.9-py3-none-any.whl.zip]
 [2024-04-13 20:26:53] INFO root fetch - main [MainThread]: End processing [modal]: success
 [2024-04-13 20:26:53] INFO root fetch - main [MainThread]: Store serial: [22753937]
+[2024-04-13 20:28:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753937]
+[2024-04-13 20:29:02] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 20:29:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jupyterlab-color-picker
+[2024-04-13 20:29:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: whishow
+[2024-04-13 20:29:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dune-rivals
+[2024-04-13 20:29:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bsl-translator
+[2024-04-13 20:29:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rollplayerlib
+[2024-04-13 20:29:03] WARNING root fetch - processPackages [bsl-translator]: Skipping, unable to determine old version
+[2024-04-13 20:29:03] INFO root fetch - main [MainThread]: End processing [bsl-translator] error
+[2024-04-13 20:29:03] INFO root fetch - processPackages [whishow]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-13 20:29:03] INFO root fetch - processPackages [dune-rivals]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-13 20:29:03] INFO root fetch - processPackages [whishow]: Downloading https://files.pythonhosted.org/packages/f1/ad/313729dc3ad5b4e27fda3dcf77b0e45ae42fc2d416064597857e769b856e/whishow-0.1.0-py2.py3-none-any.whl
+[2024-04-13 20:29:03] WARNING root fetch - processPackages [rollplayerlib]: Skipping, unable to determine old version
+[2024-04-13 20:29:03] INFO root fetch - main [MainThread]: End processing [rollplayerlib] error
+[2024-04-13 20:29:03] WARNING root fetch - processPackages [jupyterlab-color-picker]: Skipping, unable to determine old version
+[2024-04-13 20:29:03] INFO root fetch - main [MainThread]: End processing [jupyterlab-color-picker] error
+[2024-04-13 20:29:03] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/f5/d0/f694e72b1c3c943a3494e3c0faba591925b3b63adf5447646d487b284049/dune_rivals-0.3.0.tar.gz
+[2024-04-13 20:29:03] INFO root fetch - processPackages [whishow]: Downloading https://files.pythonhosted.org/packages/f2/b7/a1f5d247cbd55ca7046c014fe5ac2c4ff585a4110e907280ce6a3e78795e/whishow-0.2.0-py2.py3-none-any.whl
+[2024-04-13 20:29:03] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/1e/02/b6477a76a35120470d15aa1b0de11fe78b1b27d6ab8232551c23e1c53f3e/dune_rivals-0.3.1.tar.gz
+[2024-04-13 20:29:03] INFO root fetch - processPackages [whishow]: executing diffoscope
+[2024-04-13 20:29:03] INFO root fetch - processPackages [whishow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whishow-0.1.0-py2.py3-none-any.whl.zip tmp/whishow-0.2.0-py2.py3-none-any.whl.zip --markdown 20240413/w/whishow/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-13 20:29:03] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-13 20:29:03] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.3.0.tar.gz tmp/dune_rivals-0.3.1.tar.gz --markdown 20240413/d/dune-rivals/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-13 20:29:04] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.0.tar.gz]
+[2024-04-13 20:29:04] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.1.tar.gz]
+[2024-04-13 20:29:04] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-13 20:29:04] INFO root fetch - processPackages [whishow]: Remove: archive file [/home/abi/fetcher/tmp/whishow-0.1.0-py2.py3-none-any.whl.zip]
+[2024-04-13 20:29:04] INFO root fetch - processPackages [whishow]: Remove: archive file [/home/abi/fetcher/tmp/whishow-0.2.0-py2.py3-none-any.whl.zip]
+[2024-04-13 20:29:04] INFO root fetch - main [MainThread]: End processing [whishow]: success
+[2024-04-13 20:29:04] INFO root fetch - main [MainThread]: Store serial: [22753956]
