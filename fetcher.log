@@ -7447,3 +7447,35 @@
 [2024-04-13 05:49:22] INFO root fetch - processPackages [acmebot]: Remove: archive file [/home/abi/fetcher/tmp/acmebot-2.9.0.tar.gz]
 [2024-04-13 05:49:22] INFO root fetch - main [MainThread]: End processing [acmebot]: success
 [2024-04-13 05:49:22] INFO root fetch - main [MainThread]: Store serial: [22749234]
+[2024-04-13 05:51:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749234]
+[2024-04-13 05:51:32] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 05:53:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749234]
+[2024-04-13 05:53:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 05:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: msfinance
+[2024-04-13 05:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: superagent-py
+[2024-04-13 05:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypomes-store
+[2024-04-13 05:53:39] INFO root fetch - processPackages [pypomes-store]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-13 05:53:39] INFO root fetch - processPackages [pypomes-store]: Downloading https://files.pythonhosted.org/packages/92/93/a2e0d54f48413d1f49d2274b28a1056e939fb52ad9ea6019b5d2bfcee168/pypomes_store-0.2.3.tar.gz
+[2024-04-13 05:53:39] INFO root fetch - processPackages [msfinance]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-13 05:53:39] INFO root fetch - processPackages [superagent-py]: New version: [0.2.29] Old Version: [0.2.28]
+[2024-04-13 05:53:39] INFO root fetch - processPackages [msfinance]: Downloading https://files.pythonhosted.org/packages/5a/22/ba0918ce975db270add0397a9b1aba8b4d5285e6078296ef4f6d0b0d7816/msfinance-0.2.1.tar.gz
+[2024-04-13 05:53:39] INFO root fetch - processPackages [superagent-py]: Downloading https://files.pythonhosted.org/packages/fc/16/9d267959f844ff6841b057176b84b618d436a1d2b438e0f7ebdc5a647cbf/superagent_py-0.2.28.tar.gz
+[2024-04-13 05:53:39] INFO root fetch - processPackages [pypomes-store]: Downloading https://files.pythonhosted.org/packages/e5/a8/492c7903b50d78789b326495f2abd3f7dfacb8543f53ddebab1c21a4d0f8/pypomes_store-0.2.4.tar.gz
+[2024-04-13 05:53:39] INFO root fetch - processPackages [pypomes-store]: executing diffoscope
+[2024-04-13 05:53:39] INFO root fetch - processPackages [pypomes-store]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_store-0.2.3.tar.gz tmp/pypomes_store-0.2.4.tar.gz --markdown 20240413/p/pypomes-store/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-13 05:53:39] INFO root fetch - processPackages [msfinance]: Downloading https://files.pythonhosted.org/packages/5f/b8/ac49d422695634fce455b2e160b56a8d26a7cd288ce5af8ea6c78c6a5fce/msfinance-0.2.2.tar.gz
+[2024-04-13 05:53:39] INFO root fetch - processPackages [superagent-py]: Downloading https://files.pythonhosted.org/packages/0e/28/e9f37e56024f9a5ed1af3453f03dbe4283ffe114161c3e6fbe79f4525548/superagent_py-0.2.29.tar.gz
+[2024-04-13 05:53:39] INFO root fetch - processPackages [msfinance]: executing diffoscope
+[2024-04-13 05:53:39] INFO root fetch - processPackages [msfinance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msfinance-0.2.1.tar.gz tmp/msfinance-0.2.2.tar.gz --markdown 20240413/m/msfinance/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-13 05:53:39] INFO root fetch - processPackages [superagent-py]: executing diffoscope
+[2024-04-13 05:53:39] INFO root fetch - processPackages [superagent-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superagent_py-0.2.28.tar.gz tmp/superagent_py-0.2.29.tar.gz --markdown 20240413/s/superagent-py/0.2.28-0.2.29/README.md --exclude *.pyd
+[2024-04-13 05:53:39] INFO root fetch - processPackages [pypomes-store]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_store-0.2.3.tar.gz]
+[2024-04-13 05:53:39] INFO root fetch - processPackages [pypomes-store]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_store-0.2.4.tar.gz]
+[2024-04-13 05:53:39] INFO root fetch - main [MainThread]: End processing [pypomes-store]: success
+[2024-04-13 05:53:40] INFO root fetch - processPackages [msfinance]: Remove: archive file [/home/abi/fetcher/tmp/msfinance-0.2.1.tar.gz]
+[2024-04-13 05:53:40] INFO root fetch - processPackages [msfinance]: Remove: archive file [/home/abi/fetcher/tmp/msfinance-0.2.2.tar.gz]
+[2024-04-13 05:53:40] INFO root fetch - main [MainThread]: End processing [msfinance]: success
+[2024-04-13 05:53:40] INFO root fetch - processPackages [superagent-py]: Remove: archive file [/home/abi/fetcher/tmp/superagent_py-0.2.28.tar.gz]
+[2024-04-13 05:53:40] INFO root fetch - processPackages [superagent-py]: Remove: archive file [/home/abi/fetcher/tmp/superagent_py-0.2.29.tar.gz]
+[2024-04-13 05:53:40] INFO root fetch - main [MainThread]: End processing [superagent-py]: success
+[2024-04-13 05:53:40] INFO root fetch - main [MainThread]: Store serial: [22749243]
