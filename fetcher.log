@@ -15483,3 +15483,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:41:41] INFO root fetch - processPackages [baypy]: Remove: archive file [/home/abi/fetcher/tmp/baypy-1.3.0.tar.gz]
 [2024-04-13 16:41:41] INFO root fetch - main [MainThread]: End processing [baypy]: success
 [2024-04-13 16:41:41] INFO root fetch - main [MainThread]: Store serial: [22752649]
+[2024-04-13 16:43:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752649]
+[2024-04-13 16:43:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 16:43:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pollychem
+[2024-04-13 16:43:50] WARNING root fetch - processPackages [pollychem]: Skipping, unable to determine old version
+[2024-04-13 16:43:50] INFO root fetch - main [MainThread]: End processing [pollychem] error
+[2024-04-13 16:43:50] INFO root fetch - main [MainThread]: Store serial: [22752654]
