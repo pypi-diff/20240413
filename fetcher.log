@@ -12533,3 +12533,15 @@
 [2024-04-13 12:52:41] INFO root fetch - processPackages [cybereason]: Remove: archive file [/home/abi/fetcher/tmp/cybereason-0.5.0.tar.gz]
 [2024-04-13 12:52:41] INFO root fetch - main [MainThread]: End processing [cybereason]: success
 [2024-04-13 12:52:41] INFO root fetch - main [MainThread]: Store serial: [22751224]
+[2024-04-13 12:54:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751224]
+[2024-04-13 12:54:50] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 12:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mixture-of-depth
+[2024-04-13 12:54:50] INFO root fetch - processPackages [mixture-of-depth]: New version: [1.0.0] Old Version: [0.0.1]
+[2024-04-13 12:54:50] INFO root fetch - processPackages [mixture-of-depth]: Downloading https://files.pythonhosted.org/packages/5b/29/3f993e16a3d69ddcedf73b21c00bb07ec448bcd7501f8dac2fc4b70a19ea/mixture-of-depth-0.0.1.tar.gz
+[2024-04-13 12:54:50] INFO root fetch - processPackages [mixture-of-depth]: Downloading https://files.pythonhosted.org/packages/b4/c7/02e65763839c36c3bc865dabb23a3486473ce53c98775cc79eda25f54889/mixture-of-depth-1.0.0.tar.gz
+[2024-04-13 12:54:50] INFO root fetch - processPackages [mixture-of-depth]: executing diffoscope
+[2024-04-13 12:54:50] INFO root fetch - processPackages [mixture-of-depth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixture-of-depth-0.0.1.tar.gz tmp/mixture-of-depth-1.0.0.tar.gz --markdown 20240413/m/mixture-of-depth/0.0.1-1.0.0/README.md --exclude *.pyd
+[2024-04-13 12:54:51] INFO root fetch - processPackages [mixture-of-depth]: Remove: archive file [/home/abi/fetcher/tmp/mixture-of-depth-0.0.1.tar.gz]
+[2024-04-13 12:54:51] INFO root fetch - processPackages [mixture-of-depth]: Remove: archive file [/home/abi/fetcher/tmp/mixture-of-depth-1.0.0.tar.gz]
+[2024-04-13 12:54:51] INFO root fetch - main [MainThread]: End processing [mixture-of-depth]: success
+[2024-04-13 12:54:51] INFO root fetch - main [MainThread]: Store serial: [22751224]
