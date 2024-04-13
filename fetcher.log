@@ -2148,3 +2148,46 @@
 [2024-04-13 02:17:27] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.99.tar.gz]
 [2024-04-13 02:17:27] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
 [2024-04-13 02:17:27] INFO root fetch - main [MainThread]: Store serial: [22747265]
+[2024-04-13 02:19:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22747265]
+[2024-04-13 02:19:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 02:19:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-aurora-globaldatabase
+[2024-04-13 02:19:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gcp-scraper
+[2024-04-13 02:19:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdklabs.cdk-ethereum-node
+[2024-04-13 02:19:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: LiteEFG
+[2024-04-13 02:19:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-cr-constructs
+[2024-04-13 02:19:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pt-br-verbs-lemmatizer
+[2024-04-13 02:19:36] INFO root fetch - processPackages [cdk-cr-constructs]: New version: [2.1.424] Old Version: [2.1.423]
+[2024-04-13 02:19:36] INFO root fetch - processPackages [pt-br-verbs-lemmatizer]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-13 02:19:36] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-13 02:19:36] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2024-04-13 02:19:36] WARNING root fetch - processPackages [LiteEFG]: Skipping, unable to determine old version
+[2024-04-13 02:19:36] INFO root fetch - main [MainThread]: End processing [LiteEFG] error
+[2024-04-13 02:19:36] INFO root fetch - processPackages [gcp-scraper]: New version: [3.6.8] Old Version: [3.6.7]
+[2024-04-13 02:19:36] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Downloading https://files.pythonhosted.org/packages/d8/1a/417af84315b2d52f6063ccf2072677259777d28fb73cab91e17879faaa26/cdklabs.cdk-ethereum-node-0.0.98.tar.gz
+[2024-04-13 02:19:36] INFO root fetch - processPackages [cdk-cr-constructs]: Downloading https://files.pythonhosted.org/packages/34/a8/6e41536c7d2b7a051e9696a2e37f6bede8e82ea46b0bff4e427a471f1e8b/cdk-cr-constructs-2.1.423.tar.gz
+[2024-04-13 02:19:36] WARNING root fetch - processPackages [cdk-cr-constructs]: Skipping package: exceeds size limit 15087846>=10485760
+[2024-04-13 02:19:36] INFO root fetch - main [MainThread]: End processing [cdk-cr-constructs] error
+[2024-04-13 02:19:36] INFO root fetch - processPackages [pt-br-verbs-lemmatizer]: Downloading https://files.pythonhosted.org/packages/b4/e1/a5728885c60ad2d13f666df719f2224c478f38903a9e5361d728764058c1/pt_br_verbs_lemmatizer-0.1.2.tar.gz
+[2024-04-13 02:19:36] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/e4/39/e997b5acac972df8d777c4a4ad6dfd9f51e03e75fc8e23c973a7772267d5/cdk-aurora-globaldatabase-2.3.98.tar.gz
+[2024-04-13 02:19:36] WARNING root fetch - processPackages [pt-br-verbs-lemmatizer]: Skipping package: exceeds size limit 11716330>=10485760
+[2024-04-13 02:19:36] INFO root fetch - main [MainThread]: End processing [pt-br-verbs-lemmatizer] error
+[2024-04-13 02:19:36] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Downloading https://files.pythonhosted.org/packages/2d/d8/3fd98f927d9988f7c189f488b1829ac7aa7f855bf93f6030e3bed9af9a97/cdklabs.cdk-ethereum-node-0.0.99.tar.gz
+[2024-04-13 02:19:36] INFO root fetch - processPackages [gcp-scraper]: Downloading https://files.pythonhosted.org/packages/73/da/84594d00a4cf1d8ad800e1c727ea2727905f1c9b5aa987e58abbd540225e/gcp-scraper-3.6.7.tar.gz
+[2024-04-13 02:19:36] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: executing diffoscope
+[2024-04-13 02:19:36] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz --markdown 20240413/c/cdklabs.cdk-ethereum-node/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-13 02:19:36] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/51/53/0158facaec2becec86707148eb931de78a7ad1c2b63f80b9911a53e4c17b/cdk-aurora-globaldatabase-2.3.99.tar.gz
+[2024-04-13 02:19:37] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2024-04-13 02:19:37] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20240413/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/README.md --exclude *.pyd
+[2024-04-13 02:19:37] INFO root fetch - processPackages [gcp-scraper]: Downloading https://files.pythonhosted.org/packages/6b/de/c6cdacc7d5ed055c316f0a619f16b895bd35d3e72464db0e8243d4e62092/gcp-scraper-3.6.8.tar.gz
+[2024-04-13 02:19:37] INFO root fetch - processPackages [gcp-scraper]: executing diffoscope
+[2024-04-13 02:19:37] INFO root fetch - processPackages [gcp-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcp-scraper-3.6.7.tar.gz tmp/gcp-scraper-3.6.8.tar.gz --markdown 20240413/g/gcp-scraper/3.6.7-3.6.8/README.md --exclude *.pyd
+[2024-04-13 02:19:37] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz]
+[2024-04-13 02:19:37] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz]
+[2024-04-13 02:19:37] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-ethereum-node]: success
+[2024-04-13 02:19:37] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz]
+[2024-04-13 02:19:37] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz]
+[2024-04-13 02:19:37] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2024-04-13 02:19:37] INFO root fetch - processPackages [gcp-scraper]: Remove: archive file [/home/abi/fetcher/tmp/gcp-scraper-3.6.7.tar.gz]
+[2024-04-13 02:19:37] INFO root fetch - processPackages [gcp-scraper]: Remove: archive file [/home/abi/fetcher/tmp/gcp-scraper-3.6.8.tar.gz]
+[2024-04-13 02:19:37] INFO root fetch - main [MainThread]: End processing [gcp-scraper]: success
+[2024-04-13 02:19:37] INFO root fetch - main [MainThread]: Store serial: [22747284]
