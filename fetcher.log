@@ -13332,3 +13332,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 13:47:20] WARNING root fetch - processPackages [okttendas-package]: Skipping, unable to determine old version
 [2024-04-13 13:47:20] INFO root fetch - main [MainThread]: End processing [okttendas-package] error
 [2024-04-13 13:47:20] INFO root fetch - main [MainThread]: Store serial: [22751549]
+[2024-04-13 13:49:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751549]
+[2024-04-13 13:49:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 13:49:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cmake-init
+[2024-04-13 13:49:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: serial_util
+[2024-04-13 13:49:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mkdocs-ledger
+[2024-04-13 13:49:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: okttendas-package
+[2024-04-13 13:49:29] WARNING root fetch - processPackages [mkdocs-ledger]: Skipping, unable to determine old version
+[2024-04-13 13:49:29] INFO root fetch - main [MainThread]: End processing [mkdocs-ledger] error
+[2024-04-13 13:49:29] WARNING root fetch - processPackages [okttendas-package]: Skipping, unable to determine old version
+[2024-04-13 13:49:29] INFO root fetch - main [MainThread]: End processing [okttendas-package] error
+[2024-04-13 13:49:29] INFO root fetch - processPackages [cmake-init]: New version: [0.40.6] Old Version: [0.40.5]
+[2024-04-13 13:49:29] WARNING root fetch - processPackages [serial_util]: Skipping, unable to determine old version
+[2024-04-13 13:49:29] INFO root fetch - main [MainThread]: End processing [serial_util] error
+[2024-04-13 13:49:30] INFO root fetch - processPackages [cmake-init]: Downloading https://files.pythonhosted.org/packages/34/b3/930d87c1b48ca3ed31dc6c3127c9bde0117524dc00f3269c7f451d49546a/cmake-init-0.40.5.tar.gz
+[2024-04-13 13:49:30] INFO root fetch - processPackages [cmake-init]: Downloading https://files.pythonhosted.org/packages/88/55/c05ad9efcf9665f6758757f1665d8e1522f795145ea3862c4af9a4b7a351/cmake-init-0.40.6.tar.gz
+[2024-04-13 13:49:30] INFO root fetch - processPackages [cmake-init]: executing diffoscope
+[2024-04-13 13:49:30] INFO root fetch - processPackages [cmake-init]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmake-init-0.40.5.tar.gz tmp/cmake-init-0.40.6.tar.gz --markdown 20240413/c/cmake-init/0.40.5-0.40.6/README.md --exclude *.pyd
+[2024-04-13 13:49:31] INFO root fetch - processPackages [cmake-init]: Remove: archive file [/home/abi/fetcher/tmp/cmake-init-0.40.5.tar.gz]
+[2024-04-13 13:49:31] INFO root fetch - processPackages [cmake-init]: Remove: archive file [/home/abi/fetcher/tmp/cmake-init-0.40.6.tar.gz]
+[2024-04-13 13:49:31] INFO root fetch - main [MainThread]: End processing [cmake-init]: success
+[2024-04-13 13:49:31] INFO root fetch - main [MainThread]: Store serial: [22751564]
