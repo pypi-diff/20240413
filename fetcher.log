@@ -10616,3 +10616,24 @@
 [2024-04-13 10:13:20] INFO root fetch - processPackages [s2wav]: Remove: archive file [/home/abi/fetcher/tmp/s2wav-1.0.3.tar.gz]
 [2024-04-13 10:13:20] INFO root fetch - main [MainThread]: End processing [s2wav]: success
 [2024-04-13 10:13:20] INFO root fetch - main [MainThread]: Store serial: [22750453]
+[2024-04-13 10:15:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750453]
+[2024-04-13 10:15:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 10:15:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vectara-cli
+[2024-04-13 10:15:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: speech_user_interface
+[2024-04-13 10:15:30] INFO root fetch - processPackages [speech_user_interface]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 10:15:30] INFO root fetch - processPackages [vectara-cli]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 10:15:30] INFO root fetch - processPackages [speech_user_interface]: Downloading https://files.pythonhosted.org/packages/63/f5/97600f50957b6a62ee5bef7ae6b53d9c13bcc1601776b7abefc2e844add7/speech_user_interface-0.1.1.tar.gz
+[2024-04-13 10:15:30] INFO root fetch - processPackages [vectara-cli]: Downloading https://files.pythonhosted.org/packages/2c/ee/38034782be8ce22c0047bcd128a8070a942598181089e251ad6a5806d92a/vectara-cli-0.1.8.tar.gz
+[2024-04-13 10:15:30] INFO root fetch - processPackages [vectara-cli]: Downloading https://files.pythonhosted.org/packages/0a/a8/ecbeeefe05fb43a1b2dd6785e1bb1218f907a8ff5b7fec7cb2f57c206166/vectara-cli-0.1.9.tar.gz
+[2024-04-13 10:15:30] INFO root fetch - processPackages [speech_user_interface]: Downloading https://files.pythonhosted.org/packages/25/a9/dce7870032b029901442eebb443f137ca238037fdb650b1da1878f6ec77a/speech_user_interface-0.1.2.tar.gz
+[2024-04-13 10:15:30] INFO root fetch - processPackages [vectara-cli]: executing diffoscope
+[2024-04-13 10:15:30] INFO root fetch - processPackages [vectara-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vectara-cli-0.1.8.tar.gz tmp/vectara-cli-0.1.9.tar.gz --markdown 20240413/v/vectara-cli/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 10:15:30] INFO root fetch - processPackages [speech_user_interface]: executing diffoscope
+[2024-04-13 10:15:30] INFO root fetch - processPackages [speech_user_interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speech_user_interface-0.1.1.tar.gz tmp/speech_user_interface-0.1.2.tar.gz --markdown 20240413/s/speech_user_interface/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-13 10:15:31] INFO root fetch - processPackages [vectara-cli]: Remove: archive file [/home/abi/fetcher/tmp/vectara-cli-0.1.8.tar.gz]
+[2024-04-13 10:15:31] INFO root fetch - processPackages [vectara-cli]: Remove: archive file [/home/abi/fetcher/tmp/vectara-cli-0.1.9.tar.gz]
+[2024-04-13 10:15:31] INFO root fetch - main [MainThread]: End processing [vectara-cli]: success
+[2024-04-13 10:15:31] INFO root fetch - processPackages [speech_user_interface]: Remove: archive file [/home/abi/fetcher/tmp/speech_user_interface-0.1.1.tar.gz]
+[2024-04-13 10:15:31] INFO root fetch - processPackages [speech_user_interface]: Remove: archive file [/home/abi/fetcher/tmp/speech_user_interface-0.1.2.tar.gz]
+[2024-04-13 10:15:31] INFO root fetch - main [MainThread]: End processing [speech_user_interface]: success
+[2024-04-13 10:15:31] INFO root fetch - main [MainThread]: Store serial: [22750459]
