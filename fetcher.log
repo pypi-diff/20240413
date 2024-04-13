@@ -15396,3 +15396,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:32:57] INFO root fetch - processPackages [flycraft]: Remove: archive file [/home/abi/fetcher/tmp/flycraft-0.0.8.tar.gz]
 [2024-04-13 16:32:57] INFO root fetch - main [MainThread]: End processing [flycraft]: success
 [2024-04-13 16:32:57] INFO root fetch - main [MainThread]: Store serial: [22752533]
+[2024-04-13 16:35:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752533]
+[2024-04-13 16:35:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 16:35:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blint
+[2024-04-13 16:35:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langflow
+[2024-04-13 16:35:06] INFO root fetch - processPackages [langflow]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2024-04-13 16:35:06] INFO root fetch - processPackages [langflow]: Downloading https://files.pythonhosted.org/packages/f1/f1/24fc8fab9078fe9a44249227b1e8c735ca2edcb3d35df1eb8fe21940eda2/langflow-1.0.0a8.tar.gz
+[2024-04-13 16:35:06] INFO root fetch - processPackages [blint]: New version: [2.1.2] Old Version: [2.1.1]
+[2024-04-13 16:35:06] INFO root fetch - processPackages [blint]: Downloading https://files.pythonhosted.org/packages/b2/e8/72135cb74a529741e6081f5b262585a61feab989ab25b3cd1f7255d23308/blint-2.1.1.tar.gz
+[2024-04-13 16:35:06] INFO root fetch - processPackages [langflow]: Downloading https://files.pythonhosted.org/packages/b0/40/f603fd33ef5b1456a6be83efd05ca28a5af58e3ed1070e760b30edb9080e/langflow-1.0.0a9.tar.gz
+[2024-04-13 16:35:06] INFO root fetch - processPackages [langflow]: executing diffoscope
+[2024-04-13 16:35:06] INFO root fetch - processPackages [langflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langflow-1.0.0a8.tar.gz tmp/langflow-1.0.0a9.tar.gz --markdown 20240413/l/langflow/1.0.0a8-1.0.0a9/README.md --exclude *.pyd
+[2024-04-13 16:35:06] INFO root fetch - processPackages [blint]: Downloading https://files.pythonhosted.org/packages/1e/24/ea60595cf5c70cb205479c71a85e47c7c6ecee04dbcb1e64e4c3783e7147/blint-2.1.2.tar.gz
+[2024-04-13 16:35:06] INFO root fetch - processPackages [blint]: executing diffoscope
+[2024-04-13 16:35:06] INFO root fetch - processPackages [blint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blint-2.1.1.tar.gz tmp/blint-2.1.2.tar.gz --markdown 20240413/b/blint/2.1.1-2.1.2/README.md --exclude *.pyd
+[2024-04-13 16:35:06] INFO root fetch - processPackages [langflow]: Remove: archive file [/home/abi/fetcher/tmp/langflow-1.0.0a8.tar.gz]
+[2024-04-13 16:35:06] INFO root fetch - processPackages [langflow]: Remove: archive file [/home/abi/fetcher/tmp/langflow-1.0.0a9.tar.gz]
+[2024-04-13 16:35:06] INFO root fetch - main [MainThread]: End processing [langflow]: success
+[2024-04-13 16:35:07] INFO root fetch - processPackages [blint]: Remove: archive file [/home/abi/fetcher/tmp/blint-2.1.1.tar.gz]
+[2024-04-13 16:35:07] INFO root fetch - processPackages [blint]: Remove: archive file [/home/abi/fetcher/tmp/blint-2.1.2.tar.gz]
+[2024-04-13 16:35:07] INFO root fetch - main [MainThread]: End processing [blint]: success
+[2024-04-13 16:35:07] INFO root fetch - main [MainThread]: Store serial: [22752545]
