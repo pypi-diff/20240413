@@ -16367,3 +16367,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 18:02:07] ERROR root fetch - processPackages [RePoE-Liberatorist]: Timeout during execution of pkgdiff
 [2024-04-13 18:02:07] INFO root fetch - main [MainThread]: End processing [RePoE-Liberatorist] error
 [2024-04-13 18:02:07] INFO root fetch - main [MainThread]: Store serial: [22753024]
+[2024-04-13 18:04:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753024]
+[2024-04-13 18:04:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 18:04:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certbot-nginx-unit
+[2024-04-13 18:04:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kani-ratelimits
+[2024-04-13 18:04:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ResearchTikPy
+[2024-04-13 18:04:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pipdeptree
+[2024-04-13 18:04:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gybe
+[2024-04-13 18:04:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: paperplotlib
+[2024-04-13 18:04:17] INFO root fetch - processPackages [ResearchTikPy]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 18:04:17] INFO root fetch - processPackages [paperplotlib]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-13 18:04:17] INFO root fetch - processPackages [certbot-nginx-unit]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-13 18:04:17] INFO root fetch - processPackages [paperplotlib]: Downloading https://files.pythonhosted.org/packages/7d/8d/bdbc0d9b5e3d06e8cefea5041d0201600927429074ac13995f9daa7adf9a/paperplotlib-0.0.2.tar.gz
+[2024-04-13 18:04:17] WARNING root fetch - processPackages [kani-ratelimits]: Skipping, unable to determine old version
+[2024-04-13 18:04:17] INFO root fetch - main [MainThread]: End processing [kani-ratelimits] error
+[2024-04-13 18:04:17] INFO root fetch - processPackages [gybe]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-13 18:04:17] INFO root fetch - processPackages [pipdeptree]: New version: [2.9.6] Old Version: [2.9.5]
+[2024-04-13 18:04:17] INFO root fetch - processPackages [ResearchTikPy]: Downloading https://files.pythonhosted.org/packages/9d/d1/dc78bcab6a7ce9ddfbdedcc6d94781d24fb4ea2876837919de8b19fd625e/ResearchTikPy-0.1.0-py3-none-any.whl
+[2024-04-13 18:04:17] INFO root fetch - processPackages [certbot-nginx-unit]: Downloading https://files.pythonhosted.org/packages/06/92/6185798b2e7b51017b6df89df353cc6b8fb58162387da529c8d5ccc2cb7d/certbot-nginx-unit-1.0.6.tar.gz
+[2024-04-13 18:04:17] INFO root fetch - processPackages [paperplotlib]: Downloading https://files.pythonhosted.org/packages/c2/e7/3415485214a9350f371558348e018ecc4727b8662eaf1f99c68fd611fbf0/paperplotlib-0.0.3.tar.gz
+[2024-04-13 18:04:17] INFO root fetch - processPackages [gybe]: Downloading https://files.pythonhosted.org/packages/16/10/41840cfa2f192af0939cb00ee7a2f1c64428b00d5851ebbafa04cca11745/gybe-0.3.0.tar.gz
+[2024-04-13 18:04:17] INFO root fetch - processPackages [pipdeptree]: Downloading https://files.pythonhosted.org/packages/89/86/cd4899dd11f30802f3ec5631ffc735ad120739c1e93ce51e4392ebc640b7/pipdeptree-2.9.5.tar.gz
+[2024-04-13 18:04:17] WARNING root fetch - processPackages [gybe]: Skipping package: exceeds size limit 42158865>=10485760
+[2024-04-13 18:04:17] INFO root fetch - main [MainThread]: End processing [gybe] error
+[2024-04-13 18:04:17] INFO root fetch - processPackages [paperplotlib]: executing diffoscope
+[2024-04-13 18:04:17] INFO root fetch - processPackages [paperplotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paperplotlib-0.0.2.tar.gz tmp/paperplotlib-0.0.3.tar.gz --markdown 20240413/p/paperplotlib/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-13 18:04:17] INFO root fetch - processPackages [ResearchTikPy]: Downloading https://files.pythonhosted.org/packages/c9/94/bab84c383de4dd09a858fd735058b0eb8da476b1f55e265461d549751a07/ResearchTikPy-0.1.1.tar.gz
+[2024-04-13 18:04:17] INFO root fetch - processPackages [certbot-nginx-unit]: Downloading https://files.pythonhosted.org/packages/e4/cc/f86cd0178ada8d1c89b332e7012505ab17904f5ea7c69f7979f1a1e94023/certbot_nginx_unit-1.0.7.tar.gz
+[2024-04-13 18:04:17] INFO root fetch - processPackages [ResearchTikPy]: executing diffoscope
+[2024-04-13 18:04:17] INFO root fetch - processPackages [ResearchTikPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ResearchTikPy-0.1.0-py3-none-any.whl.zip tmp/ResearchTikPy-0.1.1.tar.gz --markdown 20240413/R/ResearchTikPy/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 18:04:17] INFO root fetch - processPackages [pipdeptree]: Downloading https://files.pythonhosted.org/packages/0a/b2/2508e11f44e0e7b136555175f21c121f20642d43ab2a09797b178e968834/pipdeptree-2.9.6.tar.gz
+[2024-04-13 18:04:17] INFO root fetch - processPackages [certbot-nginx-unit]: executing diffoscope
+[2024-04-13 18:04:17] INFO root fetch - processPackages [certbot-nginx-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/certbot-nginx-unit-1.0.6.tar.gz tmp/certbot_nginx_unit-1.0.7.tar.gz --markdown 20240413/c/certbot-nginx-unit/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-13 18:04:17] INFO root fetch - processPackages [pipdeptree]: executing diffoscope
+[2024-04-13 18:04:17] INFO root fetch - processPackages [pipdeptree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipdeptree-2.9.5.tar.gz tmp/pipdeptree-2.9.6.tar.gz --markdown 20240413/p/pipdeptree/2.9.5-2.9.6/README.md --exclude *.pyd
+[2024-04-13 18:04:18] INFO root fetch - processPackages [paperplotlib]: Remove: archive file [/home/abi/fetcher/tmp/paperplotlib-0.0.2.tar.gz]
+[2024-04-13 18:04:18] INFO root fetch - processPackages [paperplotlib]: Remove: archive file [/home/abi/fetcher/tmp/paperplotlib-0.0.3.tar.gz]
+[2024-04-13 18:04:18] INFO root fetch - main [MainThread]: End processing [paperplotlib]: success
+[2024-04-13 18:04:18] INFO root fetch - processPackages [ResearchTikPy]: Remove: archive file [/home/abi/fetcher/tmp/ResearchTikPy-0.1.0-py3-none-any.whl.zip]
+[2024-04-13 18:04:18] INFO root fetch - processPackages [ResearchTikPy]: Remove: archive file [/home/abi/fetcher/tmp/ResearchTikPy-0.1.1.tar.gz]
+[2024-04-13 18:04:18] INFO root fetch - main [MainThread]: End processing [ResearchTikPy]: success
+[2024-04-13 18:04:18] INFO root fetch - processPackages [certbot-nginx-unit]: Remove: archive file [/home/abi/fetcher/tmp/certbot-nginx-unit-1.0.6.tar.gz]
+[2024-04-13 18:04:18] INFO root fetch - processPackages [certbot-nginx-unit]: Remove: archive file [/home/abi/fetcher/tmp/certbot_nginx_unit-1.0.7.tar.gz]
+[2024-04-13 18:04:18] INFO root fetch - main [MainThread]: End processing [certbot-nginx-unit]: success
+[2024-04-13 18:04:18] INFO root fetch - processPackages [pipdeptree]: Remove: archive file [/home/abi/fetcher/tmp/pipdeptree-2.9.5.tar.gz]
+[2024-04-13 18:04:18] INFO root fetch - processPackages [pipdeptree]: Remove: archive file [/home/abi/fetcher/tmp/pipdeptree-2.9.6.tar.gz]
+[2024-04-13 18:04:18] INFO root fetch - main [MainThread]: End processing [pipdeptree]: success
+[2024-04-13 18:04:18] INFO root fetch - main [MainThread]: Store serial: [22753044]
