@@ -13002,3 +13002,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 13:21:06] INFO root fetch - processPackages [mqi-sspd-api]: Remove: archive file [/home/abi/fetcher/tmp/mqi_sspd_api-0.0.6.tar.gz]
 [2024-04-13 13:21:06] INFO root fetch - main [MainThread]: End processing [mqi-sspd-api]: success
 [2024-04-13 13:21:06] INFO root fetch - main [MainThread]: Store serial: [22751400]
+[2024-04-13 13:23:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751400]
+[2024-04-13 13:23:15] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 13:23:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cc-package
+[2024-04-13 13:23:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: LinguAligner
+[2024-04-13 13:23:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyqie
+[2024-04-13 13:23:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: getcp
+[2024-04-13 13:23:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: HandyLLM
+[2024-04-13 13:23:15] INFO root fetch - processPackages [LinguAligner]: New version: [0.9] Old Version: [0.8]
+[2024-04-13 13:23:15] WARNING root fetch - processPackages [cc-package]: Skipping, unable to determine old version
+[2024-04-13 13:23:15] INFO root fetch - main [MainThread]: End processing [cc-package] error
+[2024-04-13 13:23:15] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/63/1f/fc1941e3d878f8643898c07bd958b932dd36b3b074928145bb430dfe0a04/lingualigner-0.8.tar.gz
+[2024-04-13 13:23:15] INFO root fetch - processPackages [HandyLLM]: New version: [0.6.3] Old Version: [0.6.2]
+[2024-04-13 13:23:15] INFO root fetch - processPackages [getcp]: New version: [1.0.22] Old Version: [1.0.21]
+[2024-04-13 13:23:15] WARNING root fetch - processPackages [pyqie]: Skipping, unable to determine old version
+[2024-04-13 13:23:15] INFO root fetch - main [MainThread]: End processing [pyqie] error
+[2024-04-13 13:23:15] INFO root fetch - processPackages [HandyLLM]: Downloading https://files.pythonhosted.org/packages/20/2f/bc812b24ec55c59f38c51a34bf1ef73d731fc97cb521aa3388316ede2f72/HandyLLM-0.6.2.tar.gz
+[2024-04-13 13:23:15] INFO root fetch - processPackages [getcp]: Downloading https://files.pythonhosted.org/packages/6c/7d/a5f8e672fa9f2606c1dc3b2b3da1657833a53cab0a197f1621fe999fc7be/getcp-1.0.21.tar.gz
+[2024-04-13 13:23:15] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/73/fb/3cad932ad4847785cbae099a96fb2ae5367c5b788dac0deece75b60a9254/lingualigner-0.9.tar.gz
+[2024-04-13 13:23:15] INFO root fetch - processPackages [LinguAligner]: executing diffoscope
+[2024-04-13 13:23:15] INFO root fetch - processPackages [LinguAligner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lingualigner-0.8.tar.gz tmp/lingualigner-0.9.tar.gz --markdown 20240413/L/LinguAligner/0.8-0.9/README.md --exclude *.pyd
+[2024-04-13 13:23:15] INFO root fetch - processPackages [getcp]: Downloading https://files.pythonhosted.org/packages/00/2e/14e8a0116984bf01880f99179e9387af60d4e8c27c88b622359f5252bb55/getcp-1.0.22.tar.gz
+[2024-04-13 13:23:15] INFO root fetch - processPackages [HandyLLM]: Downloading https://files.pythonhosted.org/packages/58/68/257b3ee55ce08daf54c94e8b90c44fb2dbbc459b296ae3f9eb61245d7b16/HandyLLM-0.6.3.tar.gz
+[2024-04-13 13:23:16] INFO root fetch - processPackages [getcp]: executing diffoscope
+[2024-04-13 13:23:16] INFO root fetch - processPackages [getcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getcp-1.0.21.tar.gz tmp/getcp-1.0.22.tar.gz --markdown 20240413/g/getcp/1.0.21-1.0.22/README.md --exclude *.pyd
+[2024-04-13 13:23:16] INFO root fetch - processPackages [HandyLLM]: executing diffoscope
+[2024-04-13 13:23:16] INFO root fetch - processPackages [HandyLLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HandyLLM-0.6.2.tar.gz tmp/HandyLLM-0.6.3.tar.gz --markdown 20240413/H/HandyLLM/0.6.2-0.6.3/README.md --exclude *.pyd
+[2024-04-13 13:23:16] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.8.tar.gz]
+[2024-04-13 13:23:16] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.9.tar.gz]
+[2024-04-13 13:23:16] INFO root fetch - main [MainThread]: End processing [LinguAligner]: success
+[2024-04-13 13:23:16] INFO root fetch - processPackages [getcp]: Remove: archive file [/home/abi/fetcher/tmp/getcp-1.0.21.tar.gz]
+[2024-04-13 13:23:16] INFO root fetch - processPackages [getcp]: Remove: archive file [/home/abi/fetcher/tmp/getcp-1.0.22.tar.gz]
+[2024-04-13 13:23:16] INFO root fetch - main [MainThread]: End processing [getcp]: success
+[2024-04-13 13:23:16] INFO root fetch - processPackages [HandyLLM]: Remove: archive file [/home/abi/fetcher/tmp/HandyLLM-0.6.2.tar.gz]
+[2024-04-13 13:23:16] INFO root fetch - processPackages [HandyLLM]: Remove: archive file [/home/abi/fetcher/tmp/HandyLLM-0.6.3.tar.gz]
+[2024-04-13 13:23:16] INFO root fetch - main [MainThread]: End processing [HandyLLM]: success
+[2024-04-13 13:23:16] INFO root fetch - main [MainThread]: Store serial: [22751417]
