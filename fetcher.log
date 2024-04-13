@@ -10358,3 +10358,78 @@
 [2024-04-13 09:57:53] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240413-cp39-cp39-win_amd64.whl.zip]
 [2024-04-13 09:57:53] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
 [2024-04-13 09:57:53] INFO root fetch - main [MainThread]: Store serial: [22750312]
+[2024-04-13 09:59:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750312]
+[2024-04-13 10:00:01] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-13 10:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sindapi
+[2024-04-13 10:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mindearth-gpu
+[2024-04-13 10:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mindearth-ascend
+[2024-04-13 10:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mindflow-gpu
+[2024-04-13 10:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mindflow-ascend
+[2024-04-13 10:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mindformers
+[2024-04-13 10:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: speech_user_interface
+[2024-04-13 10:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nonebot-plugin-orangejuice
+[2024-04-13 10:00:01] INFO root fetch - processPackages [speech_user_interface]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindformers]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindearth-gpu]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindflow-ascend]: New version: [0.2.0] Old Version: [0.1.0rc1]
+[2024-04-13 10:00:02] INFO root fetch - processPackages [sindapi]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindearth-ascend]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindflow-gpu]: New version: [0.2.0] Old Version: [0.1.0rc1]
+[2024-04-13 10:00:02] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-13 10:00:02] INFO root fetch - processPackages [speech_user_interface]: Downloading https://files.pythonhosted.org/packages/b6/fe/809f9ee286854f60619c01fac9c3e9e44ecb2d15e8256344f75949bdc0b9/speech_user_interface-0.1.0.tar.gz
+[2024-04-13 10:00:02] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: Downloading https://files.pythonhosted.org/packages/c8/38/90a39a14d7ba6d9112789021b6ef87aaf81e04767b4778d7406cbb277c9f/nonebot-plugin-orangejuice-0.9.0.tar.gz
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindformers]: Downloading https://files.pythonhosted.org/packages/90/88/2d197508374cb9a08afb8a1321abdaf88c31633d4b5019e4ec052f185820/mindformers-1.0.0-py3-none-any.whl
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindearth-gpu]: Downloading https://files.pythonhosted.org/packages/8a/6d/d8dfe7184ff53b5c378f47e38481a48e7270d5364c674df71a3886be9606/mindearth_gpu-0.1.0-py3-none-any.whl
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindflow-ascend]: Downloading https://files.pythonhosted.org/packages/fb/15/a6f3a31afb9770a183ba77ee39eabec17604ceab65fa915ab8ec9941980d/mindflow_ascend-0.1.0rc1-py3-none-any.whl
+[2024-04-13 10:00:02] INFO root fetch - processPackages [sindapi]: Downloading https://files.pythonhosted.org/packages/f2/c5/538168350df8dad7f531bb9eaac0d081a4f981f9ffc81bfe1b7e5256db06/sindapi-0.0.5.tar.gz
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindflow-gpu]: Downloading https://files.pythonhosted.org/packages/94/9a/d9149b65ebb262f57ca307afd5ef940ef9967f189d1f8ed87b88d264900b/mindflow_gpu-0.1.0rc1-py3-none-any.whl
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindearth-ascend]: Downloading https://files.pythonhosted.org/packages/b8/c4/b3598fe4c4b70b3b97880da6db97dd9c200b4431f68a16f3047474b8002a/mindearth_ascend-0.1.0-py3-none-any.whl
+[2024-04-13 10:00:02] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: Downloading https://files.pythonhosted.org/packages/7f/1d/3890a6434dd566ebff9d0e7fa7f151a8384e4bf47b0a22874773180f8977/nonebot-plugin-orangejuice-0.9.1.tar.gz
+[2024-04-13 10:00:02] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: executing diffoscope
+[2024-04-13 10:00:02] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-orangejuice-0.9.0.tar.gz tmp/nonebot-plugin-orangejuice-0.9.1.tar.gz --markdown 20240413/n/nonebot-plugin-orangejuice/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-13 10:00:02] INFO root fetch - processPackages [sindapi]: Downloading https://files.pythonhosted.org/packages/60/ec/1ec8f91b1d28086b974af596b37e14277e4826e073e4483a71bdb37dfa11/sindapi-0.0.6.tar.gz
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindflow-gpu]: Downloading https://files.pythonhosted.org/packages/70/fa/d3558f654973d197a4dd43dc9bf7b576f7cdec22bc621f253761e74385dd/mindflow_gpu-0.2.0-py3-none-any.whl
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindearth-gpu]: Downloading https://files.pythonhosted.org/packages/3b/8f/3720aebb9425c4fff5dd6522354c35b49a11ac92d17bbd817f8ac6ddcf07/mindearth_gpu-0.2.0-py3-none-any.whl
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindformers]: Downloading https://files.pythonhosted.org/packages/36/e1/2b301853a31d9570494e92e6fe12870eb32f42d5b2ac2fa6e9e796f311e8/mindformers-1.0.1-py3-none-any.whl
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindflow-ascend]: Downloading https://files.pythonhosted.org/packages/9e/22/9dd48481b8550d744766aca11931c5aa03a57ce813acc0abcc24729556a4/mindflow_ascend-0.2.0-py3-none-any.whl
+[2024-04-13 10:00:02] INFO root fetch - processPackages [sindapi]: executing diffoscope
+[2024-04-13 10:00:02] INFO root fetch - processPackages [sindapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sindapi-0.0.5.tar.gz tmp/sindapi-0.0.6.tar.gz --markdown 20240413/s/sindapi/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindearth-ascend]: Downloading https://files.pythonhosted.org/packages/d8/f1/087a1179d980276aaf421243a6e53b3d49acf9e8dd63f5abb4dc38d25d13/mindearth_ascend-0.2.0-py3-none-any.whl
+[2024-04-13 10:00:02] INFO root fetch - processPackages [speech_user_interface]: Downloading https://files.pythonhosted.org/packages/63/f5/97600f50957b6a62ee5bef7ae6b53d9c13bcc1601776b7abefc2e844add7/speech_user_interface-0.1.1.tar.gz
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindflow-gpu]: executing diffoscope
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindflow-gpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mindflow_gpu-0.1.0rc1-py3-none-any.whl.zip tmp/mindflow_gpu-0.2.0-py3-none-any.whl.zip --markdown 20240413/m/mindflow-gpu/0.1.0rc1-0.2.0/README.md --exclude *.pyd
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindearth-gpu]: executing diffoscope
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindearth-gpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mindearth_gpu-0.1.0-py3-none-any.whl.zip tmp/mindearth_gpu-0.2.0-py3-none-any.whl.zip --markdown 20240413/m/mindearth-gpu/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindearth-ascend]: executing diffoscope
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindearth-ascend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mindearth_ascend-0.1.0-py3-none-any.whl.zip tmp/mindearth_ascend-0.2.0-py3-none-any.whl.zip --markdown 20240413/m/mindearth-ascend/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindflow-ascend]: executing diffoscope
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindflow-ascend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mindflow_ascend-0.1.0rc1-py3-none-any.whl.zip tmp/mindflow_ascend-0.2.0-py3-none-any.whl.zip --markdown 20240413/m/mindflow-ascend/0.1.0rc1-0.2.0/README.md --exclude *.pyd
+[2024-04-13 10:00:02] INFO root fetch - processPackages [speech_user_interface]: executing diffoscope
+[2024-04-13 10:00:02] INFO root fetch - processPackages [speech_user_interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speech_user_interface-0.1.0.tar.gz tmp/speech_user_interface-0.1.1.tar.gz --markdown 20240413/s/speech_user_interface/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindformers]: executing diffoscope
+[2024-04-13 10:00:02] INFO root fetch - processPackages [mindformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mindformers-1.0.0-py3-none-any.whl.zip tmp/mindformers-1.0.1-py3-none-any.whl.zip --markdown 20240413/m/mindformers/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-13 10:00:03] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-orangejuice-0.9.0.tar.gz]
+[2024-04-13 10:00:03] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-orangejuice-0.9.1.tar.gz]
+[2024-04-13 10:00:03] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-orangejuice]: success
+[2024-04-13 10:00:03] INFO root fetch - processPackages [sindapi]: Remove: archive file [/home/abi/fetcher/tmp/sindapi-0.0.5.tar.gz]
+[2024-04-13 10:00:03] INFO root fetch - processPackages [sindapi]: Remove: archive file [/home/abi/fetcher/tmp/sindapi-0.0.6.tar.gz]
+[2024-04-13 10:00:03] INFO root fetch - main [MainThread]: End processing [sindapi]: success
+[2024-04-13 10:00:03] INFO root fetch - processPackages [speech_user_interface]: Remove: archive file [/home/abi/fetcher/tmp/speech_user_interface-0.1.0.tar.gz]
+[2024-04-13 10:00:03] INFO root fetch - processPackages [speech_user_interface]: Remove: archive file [/home/abi/fetcher/tmp/speech_user_interface-0.1.1.tar.gz]
+[2024-04-13 10:00:03] INFO root fetch - main [MainThread]: End processing [speech_user_interface]: success
+[2024-04-13 10:00:03] INFO root fetch - processPackages [mindearth-ascend]: Remove: archive file [/home/abi/fetcher/tmp/mindearth_ascend-0.1.0-py3-none-any.whl.zip]
+[2024-04-13 10:00:03] INFO root fetch - processPackages [mindearth-ascend]: Remove: archive file [/home/abi/fetcher/tmp/mindearth_ascend-0.2.0-py3-none-any.whl.zip]
+[2024-04-13 10:00:03] INFO root fetch - main [MainThread]: End processing [mindearth-ascend]: success
+[2024-04-13 10:00:03] INFO root fetch - processPackages [mindearth-gpu]: Remove: archive file [/home/abi/fetcher/tmp/mindearth_gpu-0.1.0-py3-none-any.whl.zip]
+[2024-04-13 10:00:03] INFO root fetch - processPackages [mindearth-gpu]: Remove: archive file [/home/abi/fetcher/tmp/mindearth_gpu-0.2.0-py3-none-any.whl.zip]
+[2024-04-13 10:00:03] INFO root fetch - main [MainThread]: End processing [mindearth-gpu]: success
+[2024-04-13 10:00:04] INFO root fetch - processPackages [mindflow-gpu]: Remove: archive file [/home/abi/fetcher/tmp/mindflow_gpu-0.1.0rc1-py3-none-any.whl.zip]
+[2024-04-13 10:00:04] INFO root fetch - processPackages [mindflow-gpu]: Remove: archive file [/home/abi/fetcher/tmp/mindflow_gpu-0.2.0-py3-none-any.whl.zip]
+[2024-04-13 10:00:04] INFO root fetch - main [MainThread]: End processing [mindflow-gpu]: success
+[2024-04-13 10:00:04] INFO root fetch - processPackages [mindflow-ascend]: Remove: archive file [/home/abi/fetcher/tmp/mindflow_ascend-0.1.0rc1-py3-none-any.whl.zip]
+[2024-04-13 10:00:04] INFO root fetch - processPackages [mindflow-ascend]: Remove: archive file [/home/abi/fetcher/tmp/mindflow_ascend-0.2.0-py3-none-any.whl.zip]
+[2024-04-13 10:00:04] INFO root fetch - main [MainThread]: End processing [mindflow-ascend]: success
+[2024-04-13 10:00:05] INFO root fetch - processPackages [mindformers]: Remove: archive file [/home/abi/fetcher/tmp/mindformers-1.0.0-py3-none-any.whl.zip]
+[2024-04-13 10:00:05] INFO root fetch - processPackages [mindformers]: Remove: archive file [/home/abi/fetcher/tmp/mindformers-1.0.1-py3-none-any.whl.zip]
+[2024-04-13 10:00:05] INFO root fetch - main [MainThread]: End processing [mindformers]: success
+[2024-04-13 10:00:05] INFO root fetch - main [MainThread]: Store serial: [22750330]
