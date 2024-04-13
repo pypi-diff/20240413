@@ -11141,3 +11141,18 @@
 [2024-04-13 10:50:40] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
 [2024-04-13 10:50:40] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2024-04-13 10:50:40] INFO root fetch - main [MainThread]: Store serial: [22750679]
+[2024-04-13 10:52:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750679]
+[2024-04-13 10:52:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 10:52:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: argsreq
+[2024-04-13 10:52:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gliner-finetune
+[2024-04-13 10:52:49] INFO root fetch - processPackages [argsreq]: New version: [1.2] Old Version: [1.1]
+[2024-04-13 10:52:49] WARNING root fetch - processPackages [gliner-finetune]: Skipping, unable to determine old version
+[2024-04-13 10:52:49] INFO root fetch - main [MainThread]: End processing [gliner-finetune] error
+[2024-04-13 10:52:49] INFO root fetch - processPackages [argsreq]: Downloading https://files.pythonhosted.org/packages/d2/0c/57116970e1a74b9bae4f6bfcf00eec7f1fcf6a4d39e0c437f2c3ca704d14/argsreq-1.1.tar.gz
+[2024-04-13 10:52:50] INFO root fetch - processPackages [argsreq]: Downloading https://files.pythonhosted.org/packages/df/1c/f76f5d5b46b82ebbc662f96b0b1193f8aea8e908331f3b7ea51d373470c7/argsreq-1.2.tar.gz
+[2024-04-13 10:52:50] INFO root fetch - processPackages [argsreq]: executing diffoscope
+[2024-04-13 10:52:50] INFO root fetch - processPackages [argsreq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argsreq-1.1.tar.gz tmp/argsreq-1.2.tar.gz --markdown 20240413/a/argsreq/1.1-1.2/README.md --exclude *.pyd
+[2024-04-13 10:52:50] INFO root fetch - processPackages [argsreq]: Remove: archive file [/home/abi/fetcher/tmp/argsreq-1.1.tar.gz]
+[2024-04-13 10:52:50] INFO root fetch - processPackages [argsreq]: Remove: archive file [/home/abi/fetcher/tmp/argsreq-1.2.tar.gz]
+[2024-04-13 10:52:50] INFO root fetch - main [MainThread]: End processing [argsreq]: success
+[2024-04-13 10:52:50] INFO root fetch - main [MainThread]: Store serial: [22750696]
