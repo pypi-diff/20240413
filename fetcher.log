@@ -14301,3 +14301,69 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 15:14:10] INFO root fetch - processPackages [pylops-mpi]: Remove: archive file [/home/abi/fetcher/tmp/pylops-mpi-0.1.0.tar.gz]
 [2024-04-13 15:14:10] INFO root fetch - main [MainThread]: End processing [pylops-mpi]: success
 [2024-04-13 15:14:10] INFO root fetch - main [MainThread]: Store serial: [22752008]
+[2024-04-13 15:16:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752008]
+[2024-04-13 15:16:18] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-13 15:16:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lightning-template
+[2024-04-13 15:16:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rack
+[2024-04-13 15:16:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oakvar
+[2024-04-13 15:16:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: freegenius
+[2024-04-13 15:16:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alembic-tools
+[2024-04-13 15:16:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyweatherfr
+[2024-04-13 15:16:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pybureaucrat
+[2024-04-13 15:16:18] INFO root fetch - processPackages [rack]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-13 15:16:18] INFO root fetch - processPackages [alembic-tools]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 15:16:18] INFO root fetch - processPackages [pybureaucrat]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-13 15:16:18] INFO root fetch - processPackages [pyweatherfr]: New version: [4.0.1] Old Version: [4.0.0]
+[2024-04-13 15:16:19] INFO root fetch - processPackages [freegenius]: New version: [0.0.9] Old Version: [0.0.81]
+[2024-04-13 15:16:19] INFO root fetch - processPackages [rack]: Downloading https://files.pythonhosted.org/packages/c7/17/88869d2f5b64ce1df09ce39e58c24fa41e04e286c119fde84eae65cf1098/rack-0.0.2.tar.gz
+[2024-04-13 15:16:19] INFO root fetch - processPackages [pybureaucrat]: Downloading https://files.pythonhosted.org/packages/81/27/d524dfdc2bd3950eeeea6068a45357224f829fc759bd9a70eb97c3db0fbb/pybureaucrat-1.0.6.tar.gz
+[2024-04-13 15:16:19] INFO root fetch - processPackages [alembic-tools]: Downloading https://files.pythonhosted.org/packages/e5/4d/6d0efc78832f1c616d3ee2d28d01e875c6a41b3598cf657d3edcd330f84a/alembic_tools-0.1.1.tar.gz
+[2024-04-13 15:16:19] INFO root fetch - processPackages [oakvar]: New version: [2.9.96] Old Version: [2.9.95]
+[2024-04-13 15:16:19] INFO root fetch - processPackages [lightning-template]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-04-13 15:16:19] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/22/fb/901eb8e52a375354bd795be70f9671b0e7faa63408d3a1832822ce0ab013/pyweatherfr-4.0.0.tar.gz
+[2024-04-13 15:16:19] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/5a/34/bb664d14b69aeeb2d724c22453a1c8d25a874a94423af9fc58a72c5f22d5/freegenius-0.0.81.tar.gz
+[2024-04-13 15:16:19] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/78/a5/7179f16c7ca684b81efd61d0c21688ee15071b74d3f3bde9d549618a0001/oakvar-2.9.95.tar.gz
+[2024-04-13 15:16:19] INFO root fetch - processPackages [lightning-template]: Downloading https://files.pythonhosted.org/packages/fa/82/328c153c3cef3a0ada6222c40fa83b5ee818320650480328dd587f9e4f86/lightning-template-1.8.1.tar.gz
+[2024-04-13 15:16:19] INFO root fetch - processPackages [alembic-tools]: Downloading https://files.pythonhosted.org/packages/d1/27/7441b7d3866a9716b0676816321552edb68a4aa83f67705a8be708b6fe64/alembic_tools-0.1.2.tar.gz
+[2024-04-13 15:16:19] INFO root fetch - processPackages [pybureaucrat]: Downloading https://files.pythonhosted.org/packages/c4/f2/601d88bc221d82e4954d6abd928d473195d95e6e901e70450942a84be4b0/pybureaucrat-1.0.7.tar.gz
+[2024-04-13 15:16:19] INFO root fetch - processPackages [rack]: Downloading https://files.pythonhosted.org/packages/13/3b/c73f70b67bf0a1a5dedf91e5dd43b06e8bd6a746bb0edc01f115a3560ef6/rack-0.0.3.tar.gz
+[2024-04-13 15:16:19] INFO root fetch - processPackages [alembic-tools]: executing diffoscope
+[2024-04-13 15:16:19] INFO root fetch - processPackages [alembic-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alembic_tools-0.1.1.tar.gz tmp/alembic_tools-0.1.2.tar.gz --markdown 20240413/a/alembic-tools/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-13 15:16:19] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/57/f0/46a0dcc15ca9aa3ceaf9bfdcaee80cac8beed5f8b398b591f07e5151eb16/pyweatherfr-4.0.1.tar.gz
+[2024-04-13 15:16:19] INFO root fetch - processPackages [pybureaucrat]: executing diffoscope
+[2024-04-13 15:16:19] INFO root fetch - processPackages [pybureaucrat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybureaucrat-1.0.6.tar.gz tmp/pybureaucrat-1.0.7.tar.gz --markdown 20240413/p/pybureaucrat/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-13 15:16:19] INFO root fetch - processPackages [rack]: executing diffoscope
+[2024-04-13 15:16:19] INFO root fetch - processPackages [rack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rack-0.0.2.tar.gz tmp/rack-0.0.3.tar.gz --markdown 20240413/r/rack/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-13 15:16:19] INFO root fetch - processPackages [pyweatherfr]: executing diffoscope
+[2024-04-13 15:16:19] INFO root fetch - processPackages [pyweatherfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyweatherfr-4.0.0.tar.gz tmp/pyweatherfr-4.0.1.tar.gz --markdown 20240413/p/pyweatherfr/4.0.0-4.0.1/README.md --exclude *.pyd
+[2024-04-13 15:16:19] INFO root fetch - processPackages [lightning-template]: Downloading https://files.pythonhosted.org/packages/ff/41/87c6ba8561d19aeec49fa0fbbd99b05f100ec898ff58f8d9d271912f646a/lightning-template-1.9.0.tar.gz
+[2024-04-13 15:16:19] INFO root fetch - processPackages [lightning-template]: executing diffoscope
+[2024-04-13 15:16:19] INFO root fetch - processPackages [lightning-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning-template-1.8.1.tar.gz tmp/lightning-template-1.9.0.tar.gz --markdown 20240413/l/lightning-template/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-04-13 15:16:19] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/df/1a/4d617e91f19c65692dd4618a585aadac4bde17005906530823cf8ef6adbe/oakvar-2.9.96.tar.gz
+[2024-04-13 15:16:19] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/64/a9/f3ae6b148a4bd786790a124582c069ff16ee88fb307a8ebff8181577bb4d/freegenius-0.0.9.tar.gz
+[2024-04-13 15:16:20] INFO root fetch - processPackages [alembic-tools]: Remove: archive file [/home/abi/fetcher/tmp/alembic_tools-0.1.1.tar.gz]
+[2024-04-13 15:16:20] INFO root fetch - processPackages [alembic-tools]: Remove: archive file [/home/abi/fetcher/tmp/alembic_tools-0.1.2.tar.gz]
+[2024-04-13 15:16:20] INFO root fetch - main [MainThread]: End processing [alembic-tools]: success
+[2024-04-13 15:16:20] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-04-13 15:16:20] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.0.81.tar.gz tmp/freegenius-0.0.9.tar.gz --markdown 20240413/f/freegenius/0.0.81-0.0.9/README.md --exclude *.pyd
+[2024-04-13 15:16:20] INFO root fetch - processPackages [pybureaucrat]: Remove: archive file [/home/abi/fetcher/tmp/pybureaucrat-1.0.6.tar.gz]
+[2024-04-13 15:16:20] INFO root fetch - processPackages [pybureaucrat]: Remove: archive file [/home/abi/fetcher/tmp/pybureaucrat-1.0.7.tar.gz]
+[2024-04-13 15:16:20] INFO root fetch - main [MainThread]: End processing [pybureaucrat]: success
+[2024-04-13 15:16:20] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-4.0.0.tar.gz]
+[2024-04-13 15:16:20] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-4.0.1.tar.gz]
+[2024-04-13 15:16:20] INFO root fetch - main [MainThread]: End processing [pyweatherfr]: success
+[2024-04-13 15:16:20] INFO root fetch - processPackages [rack]: Remove: archive file [/home/abi/fetcher/tmp/rack-0.0.2.tar.gz]
+[2024-04-13 15:16:20] INFO root fetch - processPackages [rack]: Remove: archive file [/home/abi/fetcher/tmp/rack-0.0.3.tar.gz]
+[2024-04-13 15:16:20] INFO root fetch - main [MainThread]: End processing [rack]: success
+[2024-04-13 15:16:20] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2024-04-13 15:16:20] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.95.tar.gz tmp/oakvar-2.9.96.tar.gz --markdown 20240413/o/oakvar/2.9.95-2.9.96/README.md --exclude *.pyd
+[2024-04-13 15:16:20] INFO root fetch - processPackages [lightning-template]: Remove: archive file [/home/abi/fetcher/tmp/lightning-template-1.8.1.tar.gz]
+[2024-04-13 15:16:20] INFO root fetch - processPackages [lightning-template]: Remove: archive file [/home/abi/fetcher/tmp/lightning-template-1.9.0.tar.gz]
+[2024-04-13 15:16:20] INFO root fetch - main [MainThread]: End processing [lightning-template]: success
+[2024-04-13 15:16:21] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.81.tar.gz]
+[2024-04-13 15:16:21] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.9.tar.gz]
+[2024-04-13 15:16:21] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-04-13 15:16:22] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.95.tar.gz]
+[2024-04-13 15:16:22] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.96.tar.gz]
+[2024-04-13 15:16:22] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2024-04-13 15:16:22] INFO root fetch - main [MainThread]: Store serial: [22752033]
