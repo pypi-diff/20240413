@@ -8161,3 +8161,42 @@
 [2024-04-13 07:15:48] INFO root fetch - processPackages [pytha-fuzz]: Remove: archive file [/home/abi/fetcher/tmp/pytha-fuzz-0.2.tar.gz]
 [2024-04-13 07:15:48] INFO root fetch - main [MainThread]: End processing [pytha-fuzz]: success
 [2024-04-13 07:15:48] INFO root fetch - main [MainThread]: Store serial: [22749561]
+[2024-04-13 07:17:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749561]
+[2024-04-13 07:17:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 07:17:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jageocoder
+[2024-04-13 07:17:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-syzygy
+[2024-04-13 07:17:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AgentBruno
+[2024-04-13 07:17:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ploomber-cloud
+[2024-04-13 07:17:57] INFO root fetch - processPackages [AgentBruno]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-13 07:17:57] INFO root fetch - processPackages [AgentBruno]: Downloading https://files.pythonhosted.org/packages/59/da/79d988a905de7df656c393084180ccc746c6f5b136a34338c9c4f8dcc997/AgentBruno-0.0.3-py3-none-any.whl
+[2024-04-13 07:17:57] INFO root fetch - processPackages [ploomber-cloud]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 07:17:57] INFO root fetch - processPackages [jageocoder]: New version: [2.1.4] Old Version: [2.1.2]
+[2024-04-13 07:17:57] INFO root fetch - processPackages [django-syzygy]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-13 07:17:57] INFO root fetch - processPackages [ploomber-cloud]: Downloading https://files.pythonhosted.org/packages/09/b7/440dcb1a0920e2be01c8f414f613165ff78c6816833a687736a9dc9162b1/ploomber-cloud-0.1.8.tar.gz
+[2024-04-13 07:17:57] INFO root fetch - processPackages [jageocoder]: Downloading https://files.pythonhosted.org/packages/1c/0d/9b53da9d0b124927ff7f6efb35c3d9a25d808b03851ab141b798cb869e07/jageocoder-2.1.2.tar.gz
+[2024-04-13 07:17:57] INFO root fetch - processPackages [django-syzygy]: Downloading https://files.pythonhosted.org/packages/26/f5/01fcb70a86409cf63689b5933ca64c72d9eeddead2bbbe4f2c42100015d2/django-syzygy-1.0.0.tar.gz
+[2024-04-13 07:17:57] INFO root fetch - processPackages [AgentBruno]: Downloading https://files.pythonhosted.org/packages/c3/30/48e32a86f47185f49d7d7e8a34936114419e1409e6b8f33bac225ae88700/AgentBruno-0.0.4-py3-none-any.whl
+[2024-04-13 07:17:58] INFO root fetch - processPackages [AgentBruno]: executing diffoscope
+[2024-04-13 07:17:58] INFO root fetch - processPackages [AgentBruno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AgentBruno-0.0.3-py3-none-any.whl.zip tmp/AgentBruno-0.0.4-py3-none-any.whl.zip --markdown 20240413/A/AgentBruno/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-13 07:17:58] INFO root fetch - processPackages [ploomber-cloud]: Downloading https://files.pythonhosted.org/packages/e6/f8/f4451ff0cb54c012c89da5286d33c3f73ca21e606814f7366bd6cda4738a/ploomber-cloud-0.1.9.tar.gz
+[2024-04-13 07:17:58] INFO root fetch - processPackages [jageocoder]: Downloading https://files.pythonhosted.org/packages/a1/15/42180158b3c306d4ab7d3a3c3d671c6909eca75a35199c626ea238a68aba/jageocoder-2.1.4.tar.gz
+[2024-04-13 07:17:58] INFO root fetch - processPackages [django-syzygy]: Downloading https://files.pythonhosted.org/packages/10/10/84c20ac7b0a6670cb50e324cb517ca4c560fa3033dba214923f15249d310/django-syzygy-1.0.1.tar.gz
+[2024-04-13 07:17:58] INFO root fetch - processPackages [ploomber-cloud]: executing diffoscope
+[2024-04-13 07:17:58] INFO root fetch - processPackages [ploomber-cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ploomber-cloud-0.1.8.tar.gz tmp/ploomber-cloud-0.1.9.tar.gz --markdown 20240413/p/ploomber-cloud/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 07:17:58] INFO root fetch - processPackages [jageocoder]: executing diffoscope
+[2024-04-13 07:17:58] INFO root fetch - processPackages [jageocoder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jageocoder-2.1.2.tar.gz tmp/jageocoder-2.1.4.tar.gz --markdown 20240413/j/jageocoder/2.1.2-2.1.4/README.md --exclude *.pyd
+[2024-04-13 07:17:58] INFO root fetch - processPackages [django-syzygy]: executing diffoscope
+[2024-04-13 07:17:58] INFO root fetch - processPackages [django-syzygy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-syzygy-1.0.0.tar.gz tmp/django-syzygy-1.0.1.tar.gz --markdown 20240413/d/django-syzygy/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-13 07:17:58] INFO root fetch - processPackages [AgentBruno]: Remove: archive file [/home/abi/fetcher/tmp/AgentBruno-0.0.3-py3-none-any.whl.zip]
+[2024-04-13 07:17:58] INFO root fetch - processPackages [AgentBruno]: Remove: archive file [/home/abi/fetcher/tmp/AgentBruno-0.0.4-py3-none-any.whl.zip]
+[2024-04-13 07:17:58] INFO root fetch - main [MainThread]: End processing [AgentBruno]: success
+[2024-04-13 07:17:58] INFO root fetch - processPackages [ploomber-cloud]: Remove: archive file [/home/abi/fetcher/tmp/ploomber-cloud-0.1.8.tar.gz]
+[2024-04-13 07:17:58] INFO root fetch - processPackages [ploomber-cloud]: Remove: archive file [/home/abi/fetcher/tmp/ploomber-cloud-0.1.9.tar.gz]
+[2024-04-13 07:17:58] INFO root fetch - main [MainThread]: End processing [ploomber-cloud]: success
+[2024-04-13 07:17:59] INFO root fetch - processPackages [django-syzygy]: Remove: archive file [/home/abi/fetcher/tmp/django-syzygy-1.0.0.tar.gz]
+[2024-04-13 07:17:59] INFO root fetch - processPackages [django-syzygy]: Remove: archive file [/home/abi/fetcher/tmp/django-syzygy-1.0.1.tar.gz]
+[2024-04-13 07:17:59] INFO root fetch - main [MainThread]: End processing [django-syzygy]: success
+[2024-04-13 07:17:59] INFO root fetch - processPackages [jageocoder]: Remove: archive file [/home/abi/fetcher/tmp/jageocoder-2.1.2.tar.gz]
+[2024-04-13 07:17:59] INFO root fetch - processPackages [jageocoder]: Remove: archive file [/home/abi/fetcher/tmp/jageocoder-2.1.4.tar.gz]
+[2024-04-13 07:17:59] INFO root fetch - main [MainThread]: End processing [jageocoder]: success
+[2024-04-13 07:17:59] INFO root fetch - main [MainThread]: Store serial: [22749572]
