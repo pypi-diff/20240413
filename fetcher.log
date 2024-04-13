@@ -7241,3 +7241,24 @@
 [2024-04-13 05:21:29] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nightly-3.2.1.dev2024041203.tar.gz]
 [2024-04-13 05:21:29] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2024-04-13 05:21:29] INFO root fetch - main [MainThread]: Store serial: [22749174]
+[2024-04-13 05:23:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749174]
+[2024-04-13 05:23:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 05:23:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ansar-connect
+[2024-04-13 05:23:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chuangliang
+[2024-04-13 05:23:38] INFO root fetch - processPackages [ansar-connect]: New version: [0.1.142] Old Version: [0.1.141]
+[2024-04-13 05:23:38] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/24/7d/61449500216a18138b1a3258d5577c7db212bf98413f94b26449468589a0/ansar-connect-0.1.141.tar.gz
+[2024-04-13 05:23:38] INFO root fetch - processPackages [chuangliang]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 05:23:38] INFO root fetch - processPackages [chuangliang]: Downloading https://files.pythonhosted.org/packages/af/79/a5db2fbc5ddab2e5abcf2123a7f1782688d53c409c4f06d88f618648684b/chuangliang-0.0.8.tar.gz
+[2024-04-13 05:23:38] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/34/4e/884db0a2ec3dc2c8670bf0338f23971b9c0132ee7622cb6e6152714020eb/ansar-connect-0.1.142.tar.gz
+[2024-04-13 05:23:38] INFO root fetch - processPackages [ansar-connect]: executing diffoscope
+[2024-04-13 05:23:38] INFO root fetch - processPackages [ansar-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansar-connect-0.1.141.tar.gz tmp/ansar-connect-0.1.142.tar.gz --markdown 20240413/a/ansar-connect/0.1.141-0.1.142/README.md --exclude *.pyd
+[2024-04-13 05:23:38] INFO root fetch - processPackages [chuangliang]: Downloading https://files.pythonhosted.org/packages/a3/8a/501568e72e49a8074d50ff13bcde70a6f46cf1738e5eeb1ea445a58a8934/chuangliang-0.0.9.tar.gz
+[2024-04-13 05:23:38] INFO root fetch - processPackages [chuangliang]: executing diffoscope
+[2024-04-13 05:23:38] INFO root fetch - processPackages [chuangliang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chuangliang-0.0.8.tar.gz tmp/chuangliang-0.0.9.tar.gz --markdown 20240413/c/chuangliang/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 05:23:39] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar-connect-0.1.141.tar.gz]
+[2024-04-13 05:23:39] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar-connect-0.1.142.tar.gz]
+[2024-04-13 05:23:39] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
+[2024-04-13 05:23:39] INFO root fetch - processPackages [chuangliang]: Remove: archive file [/home/abi/fetcher/tmp/chuangliang-0.0.8.tar.gz]
+[2024-04-13 05:23:39] INFO root fetch - processPackages [chuangliang]: Remove: archive file [/home/abi/fetcher/tmp/chuangliang-0.0.9.tar.gz]
+[2024-04-13 05:23:39] INFO root fetch - main [MainThread]: End processing [chuangliang]: success
+[2024-04-13 05:23:39] INFO root fetch - main [MainThread]: Store serial: [22749180]
