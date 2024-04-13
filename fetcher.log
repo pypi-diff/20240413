@@ -12308,3 +12308,36 @@
 [2024-04-13 12:35:22] INFO root fetch - processPackages [deribit-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/deribit_wrapper-0.3.1.tar.gz]
 [2024-04-13 12:35:22] INFO root fetch - main [MainThread]: End processing [deribit-wrapper]: success
 [2024-04-13 12:35:22] INFO root fetch - main [MainThread]: Store serial: [22751156]
+[2024-04-13 12:37:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751156]
+[2024-04-13 12:37:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 12:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rs4
+[2024-04-13 12:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: skitai
+[2024-04-13 12:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: atila
+[2024-04-13 12:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: furtheredge
+[2024-04-13 12:37:31] WARNING root fetch - processPackages [furtheredge]: Skipping, unable to determine old version
+[2024-04-13 12:37:31] INFO root fetch - main [MainThread]: End processing [furtheredge] error
+[2024-04-13 12:37:31] INFO root fetch - processPackages [rs4]: New version: [0.3.9] Old Version: [0.3.8.4]
+[2024-04-13 12:37:31] INFO root fetch - processPackages [atila]: New version: [0.9.7.1] Old Version: [0.9.7]
+[2024-04-13 12:37:31] INFO root fetch - processPackages [skitai]: New version: [0.9.4.21] Old Version: [0.57.0]
+[2024-04-13 12:37:31] INFO root fetch - processPackages [rs4]: Downloading https://files.pythonhosted.org/packages/b4/7a/65ad51c4df22c490759b4ed20ff1a5c84c9ba7a305c9ddd580d9203a1667/rs4-0.3.8.4-py3-none-any.whl
+[2024-04-13 12:37:31] INFO root fetch - processPackages [skitai]: Downloading https://files.pythonhosted.org/packages/83/ce/ec5e3fe8cbce3178bf15bb4728708834e39847db19319eb1097679e76f05/skitai-0.57.0-py3-none-any.whl
+[2024-04-13 12:37:31] INFO root fetch - processPackages [atila]: Downloading https://files.pythonhosted.org/packages/73/72/88ca7bf3e93e277b35f9ffbcb0d0ab076500429a5f5dbc889c41925a505f/atila-0.9.7-py3-none-any.whl
+[2024-04-13 12:37:31] INFO root fetch - processPackages [rs4]: Downloading https://files.pythonhosted.org/packages/65/cf/3850bcd9b17e216d2e14d9f7445030dc673959aa4ad05029f6c3c6b9e7c4/rs4-0.3.9-py3-none-any.whl
+[2024-04-13 12:37:31] INFO root fetch - processPackages [skitai]: Downloading https://files.pythonhosted.org/packages/8d/5d/a745681ceb89c9d426e23cf1ee7c610fe4cf82be126d0f18eea708f6527f/skitai-0.9.4.21.tar.gz
+[2024-04-13 12:37:31] INFO root fetch - processPackages [atila]: Downloading https://files.pythonhosted.org/packages/a3/f2/592a655fe2082a91ef438ffbb596679e93a2596f65d61473cff095549848/atila-0.9.7.1-py3-none-any.whl
+[2024-04-13 12:37:32] INFO root fetch - processPackages [skitai]: executing diffoscope
+[2024-04-13 12:37:32] INFO root fetch - processPackages [skitai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skitai-0.57.0-py3-none-any.whl.zip tmp/skitai-0.9.4.21.tar.gz --markdown 20240413/s/skitai/0.57.0-0.9.4.21/README.md --exclude *.pyd
+[2024-04-13 12:37:32] INFO root fetch - processPackages [rs4]: executing diffoscope
+[2024-04-13 12:37:32] INFO root fetch - processPackages [rs4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rs4-0.3.8.4-py3-none-any.whl.zip tmp/rs4-0.3.9-py3-none-any.whl.zip --markdown 20240413/r/rs4/0.3.8.4-0.3.9/README.md --exclude *.pyd
+[2024-04-13 12:37:32] INFO root fetch - processPackages [atila]: executing diffoscope
+[2024-04-13 12:37:32] INFO root fetch - processPackages [atila]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atila-0.9.7-py3-none-any.whl.zip tmp/atila-0.9.7.1-py3-none-any.whl.zip --markdown 20240413/a/atila/0.9.7-0.9.7.1/README.md --exclude *.pyd
+[2024-04-13 12:37:32] INFO root fetch - processPackages [skitai]: Remove: archive file [/home/abi/fetcher/tmp/skitai-0.57.0-py3-none-any.whl.zip]
+[2024-04-13 12:37:32] INFO root fetch - processPackages [skitai]: Remove: archive file [/home/abi/fetcher/tmp/skitai-0.9.4.21.tar.gz]
+[2024-04-13 12:37:32] INFO root fetch - main [MainThread]: End processing [skitai]: success
+[2024-04-13 12:37:32] INFO root fetch - processPackages [atila]: Remove: archive file [/home/abi/fetcher/tmp/atila-0.9.7-py3-none-any.whl.zip]
+[2024-04-13 12:37:32] INFO root fetch - processPackages [atila]: Remove: archive file [/home/abi/fetcher/tmp/atila-0.9.7.1-py3-none-any.whl.zip]
+[2024-04-13 12:37:32] INFO root fetch - main [MainThread]: End processing [atila]: success
+[2024-04-13 12:37:33] INFO root fetch - processPackages [rs4]: Remove: archive file [/home/abi/fetcher/tmp/rs4-0.3.8.4-py3-none-any.whl.zip]
+[2024-04-13 12:37:33] INFO root fetch - processPackages [rs4]: Remove: archive file [/home/abi/fetcher/tmp/rs4-0.3.9-py3-none-any.whl.zip]
+[2024-04-13 12:37:33] INFO root fetch - main [MainThread]: End processing [rs4]: success
+[2024-04-13 12:37:33] INFO root fetch - main [MainThread]: Store serial: [22751167]
