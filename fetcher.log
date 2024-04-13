@@ -11177,3 +11177,18 @@
 [2024-04-13 10:55:02] INFO root fetch - processPackages [aqtinstall]: Remove: archive file [/home/abi/fetcher/tmp/aqtinstall-3.1.9.tar.gz]
 [2024-04-13 10:55:02] INFO root fetch - main [MainThread]: End processing [aqtinstall]: success
 [2024-04-13 10:55:02] INFO root fetch - main [MainThread]: Store serial: [22750703]
+[2024-04-13 10:57:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750703]
+[2024-04-13 10:57:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 10:57:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sindapi
+[2024-04-13 10:57:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: batch-integrated-gradients
+[2024-04-13 10:57:11] INFO root fetch - processPackages [sindapi]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-13 10:57:11] INFO root fetch - processPackages [sindapi]: Downloading https://files.pythonhosted.org/packages/60/ec/1ec8f91b1d28086b974af596b37e14277e4826e073e4483a71bdb37dfa11/sindapi-0.0.6.tar.gz
+[2024-04-13 10:57:11] WARNING root fetch - processPackages [batch-integrated-gradients]: Skipping, unable to determine old version
+[2024-04-13 10:57:11] INFO root fetch - main [MainThread]: End processing [batch-integrated-gradients] error
+[2024-04-13 10:57:12] INFO root fetch - processPackages [sindapi]: Downloading https://files.pythonhosted.org/packages/ca/86/00cbc3737770da8839662d09ffc9a5948a9e29330802b274519261971fe3/sindapi-0.0.7.tar.gz
+[2024-04-13 10:57:12] INFO root fetch - processPackages [sindapi]: executing diffoscope
+[2024-04-13 10:57:12] INFO root fetch - processPackages [sindapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sindapi-0.0.6.tar.gz tmp/sindapi-0.0.7.tar.gz --markdown 20240413/s/sindapi/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-13 10:57:12] INFO root fetch - processPackages [sindapi]: Remove: archive file [/home/abi/fetcher/tmp/sindapi-0.0.6.tar.gz]
+[2024-04-13 10:57:12] INFO root fetch - processPackages [sindapi]: Remove: archive file [/home/abi/fetcher/tmp/sindapi-0.0.7.tar.gz]
+[2024-04-13 10:57:12] INFO root fetch - main [MainThread]: End processing [sindapi]: success
+[2024-04-13 10:57:12] INFO root fetch - main [MainThread]: Store serial: [22750711]
