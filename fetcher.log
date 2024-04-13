@@ -7098,3 +7098,15 @@
 [2024-04-13 04:54:53] INFO root fetch - processPackages [siggen]: Remove: archive file [/home/abi/fetcher/tmp/siggen-2.1.20240412.tar.gz]
 [2024-04-13 04:54:53] INFO root fetch - main [MainThread]: End processing [siggen]: success
 [2024-04-13 04:54:53] INFO root fetch - main [MainThread]: Store serial: [22749131]
+[2024-04-13 04:56:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749131]
+[2024-04-13 04:57:01] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 04:57:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simple-unit-system
+[2024-04-13 04:57:02] INFO root fetch - processPackages [simple-unit-system]: New version: [0.0.8] Old Version: [0.0.6]
+[2024-04-13 04:57:02] INFO root fetch - processPackages [simple-unit-system]: Downloading https://files.pythonhosted.org/packages/e0/95/27bafea44200656a3864b717d123922bafa0368fd2ae2d4b00fec400f375/simple-unit-system-0.0.6.tar.gz
+[2024-04-13 04:57:02] INFO root fetch - processPackages [simple-unit-system]: Downloading https://files.pythonhosted.org/packages/02/2c/77d831fb84093bd08cb4fd4909bcfee511ad24fd18ac700f2aacc69f4b0a/simple-unit-system-0.0.8.tar.gz
+[2024-04-13 04:57:02] INFO root fetch - processPackages [simple-unit-system]: executing diffoscope
+[2024-04-13 04:57:02] INFO root fetch - processPackages [simple-unit-system]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-unit-system-0.0.6.tar.gz tmp/simple-unit-system-0.0.8.tar.gz --markdown 20240413/s/simple-unit-system/0.0.6-0.0.8/README.md --exclude *.pyd
+[2024-04-13 04:57:03] INFO root fetch - processPackages [simple-unit-system]: Remove: archive file [/home/abi/fetcher/tmp/simple-unit-system-0.0.6.tar.gz]
+[2024-04-13 04:57:03] INFO root fetch - processPackages [simple-unit-system]: Remove: archive file [/home/abi/fetcher/tmp/simple-unit-system-0.0.8.tar.gz]
+[2024-04-13 04:57:03] INFO root fetch - main [MainThread]: End processing [simple-unit-system]: success
+[2024-04-13 04:57:03] INFO root fetch - main [MainThread]: Store serial: [22749134]
