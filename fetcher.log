@@ -14255,3 +14255,49 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 15:11:59] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.4.13-cp39-cp39-manylinux2014_x86_64.whl.zip]
 [2024-04-13 15:11:59] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2024-04-13 15:11:59] INFO root fetch - main [MainThread]: Store serial: [22751983]
+[2024-04-13 15:14:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751983]
+[2024-04-13 15:14:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 15:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: psyke
+[2024-04-13 15:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alembic-tools
+[2024-04-13 15:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Notion2Pelican
+[2024-04-13 15:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alembic-tools
+[2024-04-13 15:14:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pylops-mpi
+[2024-04-13 15:14:08] INFO root fetch - processPackages [Notion2Pelican]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-13 15:14:08] INFO root fetch - processPackages [alembic-tools]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 15:14:08] INFO root fetch - processPackages [alembic-tools]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 15:14:08] INFO root fetch - processPackages [pylops-mpi]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-04-13 15:14:08] INFO root fetch - processPackages [psyke]: New version: [0.8.2.dev8] Old Version: [0.8.2.dev4]
+[2024-04-13 15:14:08] INFO root fetch - processPackages [Notion2Pelican]: Downloading https://files.pythonhosted.org/packages/80/35/ca8df29b5ffc2734c860e585a8d5206b648161b3112d418da2068005e258/Notion2Pelican-0.0.1-py3-none-any.whl
+[2024-04-13 15:14:08] INFO root fetch - processPackages [alembic-tools]: Downloading https://files.pythonhosted.org/packages/e5/4d/6d0efc78832f1c616d3ee2d28d01e875c6a41b3598cf657d3edcd330f84a/alembic_tools-0.1.1.tar.gz
+[2024-04-13 15:14:08] INFO root fetch - processPackages [alembic-tools]: Downloading https://files.pythonhosted.org/packages/e5/4d/6d0efc78832f1c616d3ee2d28d01e875c6a41b3598cf657d3edcd330f84a/alembic_tools-0.1.1.tar.gz
+[2024-04-13 15:14:08] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/ce/8e/be863b3108617897f5651e4c3b993f430021754e55650b715168d4e7f5b1/psyke-0.8.2.dev4.tar.gz
+[2024-04-13 15:14:08] INFO root fetch - processPackages [pylops-mpi]: Downloading https://files.pythonhosted.org/packages/34/f7/b7b308d7059d8f93aab2b75ed18a007673fdaac96aa10f965e8d03454ecc/pylops-mpi-0.0.1.tar.gz
+[2024-04-13 15:14:08] INFO root fetch - processPackages [alembic-tools]: Downloading https://files.pythonhosted.org/packages/d1/27/7441b7d3866a9716b0676816321552edb68a4aa83f67705a8be708b6fe64/alembic_tools-0.1.2.tar.gz
+[2024-04-13 15:14:08] INFO root fetch - processPackages [alembic-tools]: Downloading https://files.pythonhosted.org/packages/d1/27/7441b7d3866a9716b0676816321552edb68a4aa83f67705a8be708b6fe64/alembic_tools-0.1.2.tar.gz
+[2024-04-13 15:14:08] INFO root fetch - processPackages [Notion2Pelican]: Downloading https://files.pythonhosted.org/packages/f8/ba/77d209bf07462f62f3249be256d5fa46b7704cc0eccb2ea45aef1b47afec/Notion2Pelican-0.0.2-py3-none-any.whl
+[2024-04-13 15:14:08] INFO root fetch - processPackages [pylops-mpi]: Downloading https://files.pythonhosted.org/packages/37/06/8a14d47ac4546bc3ed588502f94f80a2c49c21e36039a8e61cb3fef8cdbd/pylops-mpi-0.1.0.tar.gz
+[2024-04-13 15:14:08] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/4c/87/d0daf125b499e7076b921acf89cc606746e5e1f3a77d1ade86f88680589c/psyke-0.8.2.dev8.tar.gz
+[2024-04-13 15:14:08] INFO root fetch - processPackages [Notion2Pelican]: executing diffoscope
+[2024-04-13 15:14:08] INFO root fetch - processPackages [Notion2Pelican]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Notion2Pelican-0.0.1-py3-none-any.whl.zip tmp/Notion2Pelican-0.0.2-py3-none-any.whl.zip --markdown 20240413/N/Notion2Pelican/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-13 15:14:09] INFO root fetch - processPackages [alembic-tools]: executing diffoscope
+[2024-04-13 15:14:09] INFO root fetch - processPackages [alembic-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alembic_tools-0.1.1.tar.gz tmp/alembic_tools-0.1.2.tar.gz --markdown 20240413/a/alembic-tools/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-13 15:14:09] INFO root fetch - processPackages [alembic-tools]: executing diffoscope
+[2024-04-13 15:14:09] INFO root fetch - processPackages [alembic-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alembic_tools-0.1.1.tar.gz tmp/alembic_tools-0.1.2.tar.gz --markdown 20240413/a/alembic-tools/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-13 15:14:09] INFO root fetch - processPackages [psyke]: executing diffoscope
+[2024-04-13 15:14:09] INFO root fetch - processPackages [psyke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psyke-0.8.2.dev4.tar.gz tmp/psyke-0.8.2.dev8.tar.gz --markdown 20240413/p/psyke/0.8.2.dev4-0.8.2.dev8/README.md --exclude *.pyd
+[2024-04-13 15:14:09] INFO root fetch - processPackages [pylops-mpi]: executing diffoscope
+[2024-04-13 15:14:09] INFO root fetch - processPackages [pylops-mpi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylops-mpi-0.0.1.tar.gz tmp/pylops-mpi-0.1.0.tar.gz --markdown 20240413/p/pylops-mpi/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-04-13 15:14:09] INFO root fetch - processPackages [Notion2Pelican]: Remove: archive file [/home/abi/fetcher/tmp/Notion2Pelican-0.0.1-py3-none-any.whl.zip]
+[2024-04-13 15:14:09] INFO root fetch - processPackages [Notion2Pelican]: Remove: archive file [/home/abi/fetcher/tmp/Notion2Pelican-0.0.2-py3-none-any.whl.zip]
+[2024-04-13 15:14:09] INFO root fetch - main [MainThread]: End processing [Notion2Pelican]: success
+[2024-04-13 15:14:09] INFO root fetch - processPackages [alembic-tools]: Remove: archive file [/home/abi/fetcher/tmp/alembic_tools-0.1.1.tar.gz]
+[2024-04-13 15:14:09] INFO root fetch - processPackages [alembic-tools]: Remove: archive file [/home/abi/fetcher/tmp/alembic_tools-0.1.2.tar.gz]
+[2024-04-13 15:14:09] INFO root fetch - main [MainThread]: End processing [alembic-tools]: success
+[2024-04-13 15:14:09] INFO root fetch - main [MainThread]: End processing [alembic-tools]: success
+[2024-04-13 15:14:09] INFO root fetch - processPackages [psyke]: Remove: archive file [/home/abi/fetcher/tmp/psyke-0.8.2.dev4.tar.gz]
+[2024-04-13 15:14:09] INFO root fetch - processPackages [psyke]: Remove: archive file [/home/abi/fetcher/tmp/psyke-0.8.2.dev8.tar.gz]
+[2024-04-13 15:14:09] INFO root fetch - main [MainThread]: End processing [psyke]: success
+[2024-04-13 15:14:10] INFO root fetch - processPackages [pylops-mpi]: Remove: archive file [/home/abi/fetcher/tmp/pylops-mpi-0.0.1.tar.gz]
+[2024-04-13 15:14:10] INFO root fetch - processPackages [pylops-mpi]: Remove: archive file [/home/abi/fetcher/tmp/pylops-mpi-0.1.0.tar.gz]
+[2024-04-13 15:14:10] INFO root fetch - main [MainThread]: End processing [pylops-mpi]: success
+[2024-04-13 15:14:10] INFO root fetch - main [MainThread]: Store serial: [22752008]
