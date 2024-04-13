@@ -7621,3 +7621,24 @@
 [2024-04-13 06:10:57] INFO root fetch - processPackages [composabl-train-dev]: Remove: archive file [/home/abi/fetcher/tmp/composabl_train_dev-0.8.0.dev9-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-04-13 06:10:57] INFO root fetch - main [MainThread]: End processing [composabl-train-dev]: success
 [2024-04-13 06:10:57] INFO root fetch - main [MainThread]: Store serial: [22749321]
+[2024-04-13 06:13:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749321]
+[2024-04-13 06:13:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 06:13:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llama-index-storage-chat-store-redis
+[2024-04-13 06:13:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: emerald-hws
+[2024-04-13 06:13:06] INFO root fetch - processPackages [emerald-hws]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-13 06:13:06] INFO root fetch - processPackages [llama-index-storage-chat-store-redis]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-13 06:13:06] INFO root fetch - processPackages [llama-index-storage-chat-store-redis]: Downloading https://files.pythonhosted.org/packages/8a/01/e48806ddf254c4fbdb86a62fed25d12ea812d532f811457e3f84fefd9e97/llama_index_storage_chat_store_redis-0.1.2.tar.gz
+[2024-04-13 06:13:06] INFO root fetch - processPackages [emerald-hws]: Downloading https://files.pythonhosted.org/packages/e7/68/fdf977abcc9f8bf645047b9e344f2168e86e09a1fa9c88646c68a94752ba/emerald_hws-0.0.4.tar.gz
+[2024-04-13 06:13:06] INFO root fetch - processPackages [llama-index-storage-chat-store-redis]: Downloading https://files.pythonhosted.org/packages/d2/89/85973921aa0cebdc2728d9bb04f221439f7b0e4a0d59982dbd66af3f8682/llama_index_storage_chat_store_redis-0.1.3.tar.gz
+[2024-04-13 06:13:06] INFO root fetch - processPackages [emerald-hws]: Downloading https://files.pythonhosted.org/packages/ed/ed/08fe4b1b8fb42dcc39e108920ae7b3403b18cec56a783ee5ab519f95a50f/emerald_hws-0.0.5.tar.gz
+[2024-04-13 06:13:06] INFO root fetch - processPackages [llama-index-storage-chat-store-redis]: executing diffoscope
+[2024-04-13 06:13:06] INFO root fetch - processPackages [llama-index-storage-chat-store-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_storage_chat_store_redis-0.1.2.tar.gz tmp/llama_index_storage_chat_store_redis-0.1.3.tar.gz --markdown 20240413/l/llama-index-storage-chat-store-redis/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-13 06:13:06] INFO root fetch - processPackages [emerald-hws]: executing diffoscope
+[2024-04-13 06:13:06] INFO root fetch - processPackages [emerald-hws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emerald_hws-0.0.4.tar.gz tmp/emerald_hws-0.0.5.tar.gz --markdown 20240413/e/emerald-hws/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-13 06:13:07] INFO root fetch - processPackages [llama-index-storage-chat-store-redis]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_storage_chat_store_redis-0.1.2.tar.gz]
+[2024-04-13 06:13:07] INFO root fetch - processPackages [llama-index-storage-chat-store-redis]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_storage_chat_store_redis-0.1.3.tar.gz]
+[2024-04-13 06:13:07] INFO root fetch - main [MainThread]: End processing [llama-index-storage-chat-store-redis]: success
+[2024-04-13 06:13:07] INFO root fetch - processPackages [emerald-hws]: Remove: archive file [/home/abi/fetcher/tmp/emerald_hws-0.0.4.tar.gz]
+[2024-04-13 06:13:07] INFO root fetch - processPackages [emerald-hws]: Remove: archive file [/home/abi/fetcher/tmp/emerald_hws-0.0.5.tar.gz]
+[2024-04-13 06:13:07] INFO root fetch - main [MainThread]: End processing [emerald-hws]: success
+[2024-04-13 06:13:07] INFO root fetch - main [MainThread]: Store serial: [22749327]
