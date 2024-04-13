@@ -10510,3 +10510,24 @@
 [2024-04-13 10:06:37] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240412.tar.gz]
 [2024-04-13 10:06:37] INFO root fetch - main [MainThread]: End processing [pyglove]: success
 [2024-04-13 10:06:37] INFO root fetch - main [MainThread]: Store serial: [22750362]
+[2024-04-13 10:08:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750362]
+[2024-04-13 10:08:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 10:08:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: awscrt
+[2024-04-13 10:08:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tlhengine
+[2024-04-13 10:08:47] INFO root fetch - processPackages [tlhengine]: New version: [0.2] Old Version: [0.1]
+[2024-04-13 10:08:47] INFO root fetch - processPackages [awscrt]: New version: [0.9.7] Old Version: [0.9.4]
+[2024-04-13 10:08:47] INFO root fetch - processPackages [awscrt]: Downloading https://files.pythonhosted.org/packages/46/ab/3b367ec448a5241c543d4a096c957bc6d605ecb4f04eac8ea7f4e2281631/awscrt-0.9.4.tar.gz
+[2024-04-13 10:08:47] INFO root fetch - processPackages [tlhengine]: Downloading https://files.pythonhosted.org/packages/48/25/c0ff5e8ada8e49b2a16c8390df852521a5156b1702f0eb8d4b8f86ba6608/tlhengine-0.1-py2.py3-none-any.whl
+[2024-04-13 10:08:47] INFO root fetch - processPackages [tlhengine]: Downloading https://files.pythonhosted.org/packages/27/c9/9fd9cb0bdb9f83357c5fb9d2ed75298282e68cbe5cd12ab6ca1d27d6df0c/tlhengine-0.2-py3-none-any.whl
+[2024-04-13 10:08:47] INFO root fetch - processPackages [tlhengine]: executing diffoscope
+[2024-04-13 10:08:47] INFO root fetch - processPackages [tlhengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tlhengine-0.1-py2.py3-none-any.whl.zip tmp/tlhengine-0.2-py3-none-any.whl.zip --markdown 20240413/t/tlhengine/0.1-0.2/README.md --exclude *.pyd
+[2024-04-13 10:08:48] INFO root fetch - processPackages [awscrt]: Downloading https://files.pythonhosted.org/packages/2d/10/34168b8c690dce4b17faad06ffe89dad923da028b93d8379c2b2eb8d6d0a/awscrt-0.9.7.tar.gz
+[2024-04-13 10:08:48] INFO root fetch - processPackages [tlhengine]: Remove: archive file [/home/abi/fetcher/tmp/tlhengine-0.1-py2.py3-none-any.whl.zip]
+[2024-04-13 10:08:48] INFO root fetch - processPackages [tlhengine]: Remove: archive file [/home/abi/fetcher/tmp/tlhengine-0.2-py3-none-any.whl.zip]
+[2024-04-13 10:08:48] INFO root fetch - main [MainThread]: End processing [tlhengine]: success
+[2024-04-13 10:08:48] INFO root fetch - processPackages [awscrt]: executing diffoscope
+[2024-04-13 10:08:48] INFO root fetch - processPackages [awscrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awscrt-0.9.4.tar.gz tmp/awscrt-0.9.7.tar.gz --markdown 20240413/a/awscrt/0.9.4-0.9.7/README.md --exclude *.pyd
+[2024-04-13 10:08:58] INFO root fetch - processPackages [awscrt]: Remove: archive file [/home/abi/fetcher/tmp/awscrt-0.9.4.tar.gz]
+[2024-04-13 10:08:58] INFO root fetch - processPackages [awscrt]: Remove: archive file [/home/abi/fetcher/tmp/awscrt-0.9.7.tar.gz]
+[2024-04-13 10:08:58] INFO root fetch - main [MainThread]: End processing [awscrt]: success
+[2024-04-13 10:08:58] INFO root fetch - main [MainThread]: Store serial: [22750408]
