@@ -6781,3 +6781,29 @@
 [2024-04-13 04:02:40] INFO root fetch - processPackages [pyprjbtstrptst]: Remove: archive file [/home/abi/fetcher/tmp/pyprjbtstrptst-0.1.7-py3-none-any.whl.zip]
 [2024-04-13 04:02:41] INFO root fetch - main [MainThread]: End processing [pyprjbtstrptst]: success
 [2024-04-13 04:02:41] INFO root fetch - main [MainThread]: Store serial: [22748918]
+[2024-04-13 04:04:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748918]
+[2024-04-13 04:04:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 04:04:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bioimageio-chatbot
+[2024-04-13 04:04:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: goatools
+[2024-04-13 04:04:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sbcli-mig
+[2024-04-13 04:04:49] INFO root fetch - processPackages [bioimageio-chatbot]: New version: [0.1.96] Old Version: [0.1.94]
+[2024-04-13 04:04:50] INFO root fetch - processPackages [bioimageio-chatbot]: Downloading https://files.pythonhosted.org/packages/0e/c1/170f83ac0d178a476db61b1c07b0e8d9ee398d4657163f363b01f11ebd90/bioimageio-chatbot-0.1.94.tar.gz
+[2024-04-13 04:04:50] INFO root fetch - processPackages [sbcli-mig]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-13 04:04:50] INFO root fetch - processPackages [goatools]: New version: [1.4.4] Old Version: [1.3.9]
+[2024-04-13 04:04:50] INFO root fetch - processPackages [sbcli-mig]: Downloading https://files.pythonhosted.org/packages/06/2f/2b2f1cfa7b91365cf5cd645c5967a8e8a8bd7f1c8e89f91d7e43e2aefc87/sbcli-mig-1.0.8.zip
+[2024-04-13 04:04:50] INFO root fetch - processPackages [goatools]: Downloading https://files.pythonhosted.org/packages/f4/f5/ff606d413247a3d2843cbcb7753c54088d2019a921b268651936b51061fc/goatools-1.3.9.tar.gz
+[2024-04-13 04:04:50] INFO root fetch - processPackages [sbcli-mig]: Downloading https://files.pythonhosted.org/packages/4b/15/9c1afe915f08547ce582aeae079f597b2a173df003109bcd1d0f0bbf037e/sbcli-mig-1.0.9.zip
+[2024-04-13 04:04:50] INFO root fetch - processPackages [bioimageio-chatbot]: Downloading https://files.pythonhosted.org/packages/0a/8d/5f45efd688c9d8bdd39afa588cb8c4c4bdfb0b3616191355a19fa05bafc8/bioimageio-chatbot-0.1.96.tar.gz
+[2024-04-13 04:04:50] INFO root fetch - processPackages [sbcli-mig]: executing diffoscope
+[2024-04-13 04:04:50] INFO root fetch - processPackages [sbcli-mig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbcli-mig-1.0.8.zip tmp/sbcli-mig-1.0.9.zip --markdown 20240413/s/sbcli-mig/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-13 04:04:50] INFO root fetch - processPackages [bioimageio-chatbot]: executing diffoscope
+[2024-04-13 04:04:50] INFO root fetch - processPackages [bioimageio-chatbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioimageio-chatbot-0.1.94.tar.gz tmp/bioimageio-chatbot-0.1.96.tar.gz --markdown 20240413/b/bioimageio-chatbot/0.1.94-0.1.96/README.md --exclude *.pyd
+[2024-04-13 04:04:51] INFO root fetch - processPackages [bioimageio-chatbot]: Remove: archive file [/home/abi/fetcher/tmp/bioimageio-chatbot-0.1.94.tar.gz]
+[2024-04-13 04:04:51] INFO root fetch - processPackages [bioimageio-chatbot]: Remove: archive file [/home/abi/fetcher/tmp/bioimageio-chatbot-0.1.96.tar.gz]
+[2024-04-13 04:04:51] INFO root fetch - main [MainThread]: End processing [bioimageio-chatbot]: success
+[2024-04-13 04:04:51] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.8.zip]
+[2024-04-13 04:04:51] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.9.zip]
+[2024-04-13 04:04:51] INFO root fetch - main [MainThread]: End processing [sbcli-mig]: success
+[2024-04-13 04:04:51] WARNING root fetch - processPackages [goatools]: Skipping package: exceeds size limit 15091743>=10485760
+[2024-04-13 04:04:51] INFO root fetch - main [MainThread]: End processing [goatools] error
+[2024-04-13 04:04:51] INFO root fetch - main [MainThread]: Store serial: [22748927]
