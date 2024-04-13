@@ -13998,3 +13998,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:50:21] INFO root fetch - processPackages [chartgpt]: Remove: archive file [/home/abi/fetcher/tmp/chartgpt-0.0.7.tar.gz]
 [2024-04-13 14:50:21] INFO root fetch - main [MainThread]: End processing [chartgpt]: success
 [2024-04-13 14:50:21] INFO root fetch - main [MainThread]: Store serial: [22751843]
+[2024-04-13 14:52:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751843]
+[2024-04-13 14:52:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 14:52:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyqwe
+[2024-04-13 14:52:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: diaspora-event-sdk
+[2024-04-13 14:52:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: everywhereml
+[2024-04-13 14:52:30] INFO root fetch - processPackages [pyqwe]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-04-13 14:52:30] INFO root fetch - processPackages [everywhereml]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-13 14:52:30] INFO root fetch - processPackages [diaspora-event-sdk]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-13 14:52:30] INFO root fetch - processPackages [everywhereml]: Downloading https://files.pythonhosted.org/packages/c2/bd/3771c34767f14ed0d3138d497ea2d1f4e46e7410b5ae9d729721006c7ed8/everywhereml-0.2.8.tar.gz
+[2024-04-13 14:52:30] INFO root fetch - processPackages [pyqwe]: Downloading https://files.pythonhosted.org/packages/52/63/c2b6db94c65f8b47b69e678bcb540afd0491cec1129032bb9909c5bb52b3/pyqwe-1.3.0.tar.gz
+[2024-04-13 14:52:30] INFO root fetch - processPackages [diaspora-event-sdk]: Downloading https://files.pythonhosted.org/packages/52/ff/2b1d98a5065592b8e02d2fafbe44e52b073f9bf6fe2024e09619648648b3/diaspora-event-sdk-0.2.2.tar.gz
+[2024-04-13 14:52:30] INFO root fetch - processPackages [pyqwe]: Downloading https://files.pythonhosted.org/packages/bf/df/e3946af0e555613a86cfd8e96c1f6ff3f1183f84d1f6edee420aa1346c58/pyqwe-1.4.0.tar.gz
+[2024-04-13 14:52:30] INFO root fetch - processPackages [diaspora-event-sdk]: Downloading https://files.pythonhosted.org/packages/0e/00/56d541e0775c050c8d842976593bb495e75387e258c6a0cad04c5c387bbc/diaspora-event-sdk-0.2.3.tar.gz
+[2024-04-13 14:52:30] INFO root fetch - processPackages [everywhereml]: Downloading https://files.pythonhosted.org/packages/ee/fd/defb4dc17d5766e10a0a0bb5931d5c4b2a17654f9290be1cf85e67e59ffc/everywhereml-0.2.9.tar.gz
+[2024-04-13 14:52:30] INFO root fetch - processPackages [pyqwe]: executing diffoscope
+[2024-04-13 14:52:30] INFO root fetch - processPackages [pyqwe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqwe-1.3.0.tar.gz tmp/pyqwe-1.4.0.tar.gz --markdown 20240413/p/pyqwe/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-04-13 14:52:30] INFO root fetch - processPackages [diaspora-event-sdk]: executing diffoscope
+[2024-04-13 14:52:30] INFO root fetch - processPackages [diaspora-event-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diaspora-event-sdk-0.2.2.tar.gz tmp/diaspora-event-sdk-0.2.3.tar.gz --markdown 20240413/d/diaspora-event-sdk/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-13 14:52:30] INFO root fetch - processPackages [everywhereml]: executing diffoscope
+[2024-04-13 14:52:30] INFO root fetch - processPackages [everywhereml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/everywhereml-0.2.8.tar.gz tmp/everywhereml-0.2.9.tar.gz --markdown 20240413/e/everywhereml/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-13 14:52:31] INFO root fetch - processPackages [pyqwe]: Remove: archive file [/home/abi/fetcher/tmp/pyqwe-1.3.0.tar.gz]
+[2024-04-13 14:52:31] INFO root fetch - processPackages [pyqwe]: Remove: archive file [/home/abi/fetcher/tmp/pyqwe-1.4.0.tar.gz]
+[2024-04-13 14:52:31] INFO root fetch - main [MainThread]: End processing [pyqwe]: success
+[2024-04-13 14:52:31] INFO root fetch - processPackages [diaspora-event-sdk]: Remove: archive file [/home/abi/fetcher/tmp/diaspora-event-sdk-0.2.2.tar.gz]
+[2024-04-13 14:52:31] INFO root fetch - processPackages [diaspora-event-sdk]: Remove: archive file [/home/abi/fetcher/tmp/diaspora-event-sdk-0.2.3.tar.gz]
+[2024-04-13 14:52:31] INFO root fetch - main [MainThread]: End processing [diaspora-event-sdk]: success
+[2024-04-13 14:52:31] INFO root fetch - processPackages [everywhereml]: Remove: archive file [/home/abi/fetcher/tmp/everywhereml-0.2.8.tar.gz]
+[2024-04-13 14:52:31] INFO root fetch - processPackages [everywhereml]: Remove: archive file [/home/abi/fetcher/tmp/everywhereml-0.2.9.tar.gz]
+[2024-04-13 14:52:31] INFO root fetch - main [MainThread]: End processing [everywhereml]: success
+[2024-04-13 14:52:31] INFO root fetch - main [MainThread]: Store serial: [22751853]
