@@ -14430,3 +14430,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 15:23:07] INFO root fetch - processPackages [powerhub]: Remove: archive file [/home/abi/fetcher/tmp/powerhub-2.0.8.tar.gz]
 [2024-04-13 15:23:07] INFO root fetch - main [MainThread]: End processing [powerhub]: success
 [2024-04-13 15:23:07] INFO root fetch - main [MainThread]: Store serial: [22752151]
+[2024-04-13 15:25:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752151]
+[2024-04-13 15:25:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 15:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: freegenius
+[2024-04-13 15:25:16] INFO root fetch - processPackages [freegenius]: New version: [0.0.9] Old Version: [0.0.81]
+[2024-04-13 15:25:16] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/5a/34/bb664d14b69aeeb2d724c22453a1c8d25a874a94423af9fc58a72c5f22d5/freegenius-0.0.81.tar.gz
+[2024-04-13 15:25:17] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/64/a9/f3ae6b148a4bd786790a124582c069ff16ee88fb307a8ebff8181577bb4d/freegenius-0.0.9.tar.gz
+[2024-04-13 15:25:17] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-04-13 15:25:17] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.0.81.tar.gz tmp/freegenius-0.0.9.tar.gz --markdown 20240413/f/freegenius/0.0.81-0.0.9/README.md --exclude *.pyd
+[2024-04-13 15:25:18] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.81.tar.gz]
+[2024-04-13 15:25:18] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.9.tar.gz]
+[2024-04-13 15:25:18] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-04-13 15:25:18] INFO root fetch - main [MainThread]: Store serial: [22752158]
