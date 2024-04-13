@@ -8250,3 +8250,29 @@
 [2024-04-13 07:26:35] INFO root fetch - processPackages [pulumi-archive]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_archive-0.0.6a1712985068.tar.gz]
 [2024-04-13 07:26:35] INFO root fetch - main [MainThread]: End processing [pulumi-archive]: success
 [2024-04-13 07:26:35] INFO root fetch - main [MainThread]: Store serial: [22749589]
+[2024-04-13 07:28:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749589]
+[2024-04-13 07:28:45] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 07:30:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749589]
+[2024-04-13 07:30:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 07:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wgk-torch-training-module
+[2024-04-13 07:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: QuartzFramework
+[2024-04-13 07:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rack
+[2024-04-13 07:30:50] INFO root fetch - processPackages [QuartzFramework]: New version: [0.3] Old Version: [0.2]
+[2024-04-13 07:30:50] INFO root fetch - processPackages [QuartzFramework]: Downloading https://files.pythonhosted.org/packages/77/0a/02d2571d4dd241d2f795bb3fcbcd1090843318fa7fc670215b48bb6d25ff/QuartzFramework-0.2.tar.gz
+[2024-04-13 07:30:50] WARNING root fetch - processPackages [wgk-torch-training-module]: Skipping, unable to determine old version
+[2024-04-13 07:30:50] INFO root fetch - main [MainThread]: End processing [wgk-torch-training-module] error
+[2024-04-13 07:30:50] INFO root fetch - processPackages [rack]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-13 07:30:50] INFO root fetch - processPackages [rack]: Downloading https://files.pythonhosted.org/packages/e2/31/89e54fa6d49c156b4e150c68e78d0c777ea083a6008599055f7b1cf9ad8a/rack-0.0.1.tar.gz
+[2024-04-13 07:30:51] INFO root fetch - processPackages [QuartzFramework]: Downloading https://files.pythonhosted.org/packages/a5/89/f8d2080fb18d4ab1b04040510f5f1a4ccb6ccd4124cfb2f91b70423b64ff/QuartzFramework-0.3.tar.gz
+[2024-04-13 07:30:51] INFO root fetch - processPackages [QuartzFramework]: executing diffoscope
+[2024-04-13 07:30:51] INFO root fetch - processPackages [QuartzFramework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuartzFramework-0.2.tar.gz tmp/QuartzFramework-0.3.tar.gz --markdown 20240413/Q/QuartzFramework/0.2-0.3/README.md --exclude *.pyd
+[2024-04-13 07:30:51] INFO root fetch - processPackages [rack]: Downloading https://files.pythonhosted.org/packages/c7/17/88869d2f5b64ce1df09ce39e58c24fa41e04e286c119fde84eae65cf1098/rack-0.0.2.tar.gz
+[2024-04-13 07:30:51] INFO root fetch - processPackages [rack]: executing diffoscope
+[2024-04-13 07:30:51] INFO root fetch - processPackages [rack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rack-0.0.1.tar.gz tmp/rack-0.0.2.tar.gz --markdown 20240413/r/rack/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-13 07:30:51] INFO root fetch - processPackages [QuartzFramework]: Remove: archive file [/home/abi/fetcher/tmp/QuartzFramework-0.2.tar.gz]
+[2024-04-13 07:30:51] INFO root fetch - processPackages [QuartzFramework]: Remove: archive file [/home/abi/fetcher/tmp/QuartzFramework-0.3.tar.gz]
+[2024-04-13 07:30:51] INFO root fetch - main [MainThread]: End processing [QuartzFramework]: success
+[2024-04-13 07:30:51] INFO root fetch - processPackages [rack]: Remove: archive file [/home/abi/fetcher/tmp/rack-0.0.1.tar.gz]
+[2024-04-13 07:30:51] INFO root fetch - processPackages [rack]: Remove: archive file [/home/abi/fetcher/tmp/rack-0.0.2.tar.gz]
+[2024-04-13 07:30:51] INFO root fetch - main [MainThread]: End processing [rack]: success
+[2024-04-13 07:30:51] INFO root fetch - main [MainThread]: Store serial: [22749599]
