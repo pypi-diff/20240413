@@ -15032,3 +15032,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:11:02] INFO root fetch - processPackages [zorge]: Remove: archive file [/home/abi/fetcher/tmp/zorge-1.1.0.tar.gz]
 [2024-04-13 16:11:02] INFO root fetch - main [MainThread]: End processing [zorge]: success
 [2024-04-13 16:11:02] INFO root fetch - main [MainThread]: Store serial: [22752416]
+[2024-04-13 16:13:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752416]
+[2024-04-13 16:13:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 16:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: celery-streaming-result
+[2024-04-13 16:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: acctf
+[2024-04-13 16:13:11] INFO root fetch - processPackages [acctf]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-04-13 16:13:11] WARNING root fetch - processPackages [celery-streaming-result]: Skipping, unable to determine old version
+[2024-04-13 16:13:11] INFO root fetch - main [MainThread]: End processing [celery-streaming-result] error
+[2024-04-13 16:13:11] INFO root fetch - processPackages [acctf]: Downloading https://files.pythonhosted.org/packages/44/44/703c2dbd28e94754264f44991fe8a9059f407b179d844c95548158c64612/acctf-0.2.1.tar.gz
+[2024-04-13 16:13:12] INFO root fetch - processPackages [acctf]: Downloading https://files.pythonhosted.org/packages/6f/1d/3ecb745a5a609a54cc926ef81764f2974b470b1005b2fe017c6f0e57091a/acctf-0.3.0.tar.gz
+[2024-04-13 16:13:12] INFO root fetch - processPackages [acctf]: executing diffoscope
+[2024-04-13 16:13:12] INFO root fetch - processPackages [acctf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acctf-0.2.1.tar.gz tmp/acctf-0.3.0.tar.gz --markdown 20240413/a/acctf/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-04-13 16:13:12] INFO root fetch - processPackages [acctf]: Remove: archive file [/home/abi/fetcher/tmp/acctf-0.2.1.tar.gz]
+[2024-04-13 16:13:12] INFO root fetch - processPackages [acctf]: Remove: archive file [/home/abi/fetcher/tmp/acctf-0.3.0.tar.gz]
+[2024-04-13 16:13:12] INFO root fetch - main [MainThread]: End processing [acctf]: success
+[2024-04-13 16:13:12] INFO root fetch - main [MainThread]: Store serial: [22752424]
