@@ -16929,3 +16929,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 18:52:05] INFO root fetch - processPackages [pnu-portstreelint]: Remove: archive file [/home/abi/fetcher/tmp/pnu_portstreelint-1.4.0.tar.gz]
 [2024-04-13 18:52:05] INFO root fetch - main [MainThread]: End processing [pnu-portstreelint]: success
 [2024-04-13 18:52:05] INFO root fetch - main [MainThread]: Store serial: [22753238]
+[2024-04-13 18:54:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753238]
+[2024-04-13 18:54:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 18:54:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wakautosolver
+[2024-04-13 18:54:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blurry-cli
+[2024-04-13 18:54:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: micrOSDevToolKit
+[2024-04-13 18:54:14] INFO root fetch - processPackages [wakautosolver]: New version: [2024.4.9] Old Version: [2024.4.8]
+[2024-04-13 18:54:14] INFO root fetch - processPackages [blurry-cli]: New version: [0.7.0] Old Version: [0.6.2]
+[2024-04-13 18:54:14] INFO root fetch - processPackages [wakautosolver]: Downloading https://files.pythonhosted.org/packages/52/f2/edbc9e1fede5d191f47b9c700489fc78e0d567617c983288059d9aa321c5/wakautosolver-2024.4.8-py3-none-any.whl
+[2024-04-13 18:54:14] INFO root fetch - processPackages [micrOSDevToolKit]: New version: [2.0.6] Old Version: [2.0.5]
+[2024-04-13 18:54:14] INFO root fetch - processPackages [blurry-cli]: Downloading https://files.pythonhosted.org/packages/0b/f2/dccd0c1f9362ddbfa54cbcadaad150694fe860a9518e060c949e93c8c33a/blurry_cli-0.6.2.tar.gz
+[2024-04-13 18:54:14] INFO root fetch - processPackages [micrOSDevToolKit]: Downloading https://files.pythonhosted.org/packages/5a/b2/c83c0902795a674d0b6a4cecf4bbe70cfa248d0287865ee6330f109e9913/micrOSDevToolKit-2.0.5.tar.gz
+[2024-04-13 18:54:14] WARNING root fetch - processPackages [micrOSDevToolKit]: Skipping package: exceeds size limit 16921577>=10485760
+[2024-04-13 18:54:14] INFO root fetch - main [MainThread]: End processing [micrOSDevToolKit] error
+[2024-04-13 18:54:15] INFO root fetch - processPackages [wakautosolver]: Downloading https://files.pythonhosted.org/packages/40/ca/61b89ca987bcb692a98f7ed72d621ec962895d97b2b3c0ac3560e13f9f8c/wakautosolver-2024.4.9-py3-none-any.whl
+[2024-04-13 18:54:15] INFO root fetch - processPackages [blurry-cli]: Downloading https://files.pythonhosted.org/packages/d2/65/59761ad55035bf5752093dc4e7c9db75358192ae73cf4cd739a47e551f5e/blurry_cli-0.7.0.tar.gz
+[2024-04-13 18:54:15] INFO root fetch - processPackages [blurry-cli]: executing diffoscope
+[2024-04-13 18:54:15] INFO root fetch - processPackages [blurry-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blurry_cli-0.6.2.tar.gz tmp/blurry_cli-0.7.0.tar.gz --markdown 20240413/b/blurry-cli/0.6.2-0.7.0/README.md --exclude *.pyd
+[2024-04-13 18:54:15] INFO root fetch - processPackages [wakautosolver]: executing diffoscope
+[2024-04-13 18:54:15] INFO root fetch - processPackages [wakautosolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wakautosolver-2024.4.8-py3-none-any.whl.zip tmp/wakautosolver-2024.4.9-py3-none-any.whl.zip --markdown 20240413/w/wakautosolver/2024.4.8-2024.4.9/README.md --exclude *.pyd
+[2024-04-13 18:54:15] INFO root fetch - processPackages [blurry-cli]: Remove: archive file [/home/abi/fetcher/tmp/blurry_cli-0.6.2.tar.gz]
+[2024-04-13 18:54:15] INFO root fetch - processPackages [blurry-cli]: Remove: archive file [/home/abi/fetcher/tmp/blurry_cli-0.7.0.tar.gz]
+[2024-04-13 18:54:15] INFO root fetch - main [MainThread]: End processing [blurry-cli]: success
+[2024-04-13 18:54:15] INFO root fetch - processPackages [wakautosolver]: Remove: archive file [/home/abi/fetcher/tmp/wakautosolver-2024.4.8-py3-none-any.whl.zip]
+[2024-04-13 18:54:15] INFO root fetch - processPackages [wakautosolver]: Remove: archive file [/home/abi/fetcher/tmp/wakautosolver-2024.4.9-py3-none-any.whl.zip]
+[2024-04-13 18:54:15] INFO root fetch - main [MainThread]: End processing [wakautosolver]: success
+[2024-04-13 18:54:15] INFO root fetch - main [MainThread]: Store serial: [22753246]
