@@ -12512,3 +12512,24 @@
 [2024-04-13 12:50:31] INFO root fetch - processPackages [odoo-addon-l10n-es-igic]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_igic-16.0.1.1.0-py3-none-any.whl.zip]
 [2024-04-13 12:50:31] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-igic]: success
 [2024-04-13 12:50:31] INFO root fetch - main [MainThread]: Store serial: [22751218]
+[2024-04-13 12:52:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751218]
+[2024-04-13 12:52:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 12:52:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mqi-sspd-api
+[2024-04-13 12:52:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cybereason
+[2024-04-13 12:52:40] INFO root fetch - processPackages [cybereason]: New version: [0.5.0] Old Version: [0.4.3]
+[2024-04-13 12:52:40] INFO root fetch - processPackages [mqi-sspd-api]: New version: [0.0.5] Old Version: [0.0.3]
+[2024-04-13 12:52:40] INFO root fetch - processPackages [mqi-sspd-api]: Downloading https://files.pythonhosted.org/packages/fa/fd/0c8d800bc7a814614b2aa50548ba7411e4d268fbad3a1793c593ee6e6d49/mqi_sspd_api-0.0.3.tar.gz
+[2024-04-13 12:52:40] INFO root fetch - processPackages [cybereason]: Downloading https://files.pythonhosted.org/packages/a3/a3/187f9447d2c99ea421c66c7476bc5d29d85c3d15a8b5bba484b9aeb93cc9/cybereason-0.4.3.tar.gz
+[2024-04-13 12:52:40] INFO root fetch - processPackages [mqi-sspd-api]: Downloading https://files.pythonhosted.org/packages/51/09/5a1abef9cc3bf8a93622e44895eb38c2c207fae13067cd3da4e7a64e006f/mqi_sspd_api-0.0.5.tar.gz
+[2024-04-13 12:52:40] INFO root fetch - processPackages [mqi-sspd-api]: executing diffoscope
+[2024-04-13 12:52:40] INFO root fetch - processPackages [mqi-sspd-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mqi_sspd_api-0.0.3.tar.gz tmp/mqi_sspd_api-0.0.5.tar.gz --markdown 20240413/m/mqi-sspd-api/0.0.3-0.0.5/README.md --exclude *.pyd
+[2024-04-13 12:52:40] INFO root fetch - processPackages [cybereason]: Downloading https://files.pythonhosted.org/packages/1b/a5/1e485ec32d012b5aec7f38e707afc4739d1415ab3c3c021949face2adc32/cybereason-0.5.0.tar.gz
+[2024-04-13 12:52:41] INFO root fetch - processPackages [cybereason]: executing diffoscope
+[2024-04-13 12:52:41] INFO root fetch - processPackages [cybereason]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybereason-0.4.3.tar.gz tmp/cybereason-0.5.0.tar.gz --markdown 20240413/c/cybereason/0.4.3-0.5.0/README.md --exclude *.pyd
+[2024-04-13 12:52:41] INFO root fetch - processPackages [mqi-sspd-api]: Remove: archive file [/home/abi/fetcher/tmp/mqi_sspd_api-0.0.3.tar.gz]
+[2024-04-13 12:52:41] INFO root fetch - processPackages [mqi-sspd-api]: Remove: archive file [/home/abi/fetcher/tmp/mqi_sspd_api-0.0.5.tar.gz]
+[2024-04-13 12:52:41] INFO root fetch - main [MainThread]: End processing [mqi-sspd-api]: success
+[2024-04-13 12:52:41] INFO root fetch - processPackages [cybereason]: Remove: archive file [/home/abi/fetcher/tmp/cybereason-0.4.3.tar.gz]
+[2024-04-13 12:52:41] INFO root fetch - processPackages [cybereason]: Remove: archive file [/home/abi/fetcher/tmp/cybereason-0.5.0.tar.gz]
+[2024-04-13 12:52:41] INFO root fetch - main [MainThread]: End processing [cybereason]: success
+[2024-04-13 12:52:41] INFO root fetch - main [MainThread]: Store serial: [22751224]
