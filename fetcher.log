@@ -20029,3 +20029,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 22:42:31] INFO root fetch - processPackages [uaiDiffusers]: Remove: archive file [/home/abi/fetcher/tmp/uaiDiffusers-1.1.4-py2.py3-none-any.whl.zip]
 [2024-04-13 22:42:31] INFO root fetch - main [MainThread]: End processing [uaiDiffusers]: success
 [2024-04-13 22:42:31] INFO root fetch - main [MainThread]: Store serial: [22754652]
+[2024-04-13 22:44:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754652]
+[2024-04-13 22:44:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 22:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trieve-py-client
+[2024-04-13 22:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: indipyclient
+[2024-04-13 22:44:39] INFO root fetch - processPackages [trieve-py-client]: New version: [0.6.7] Old Version: [0.6.2]
+[2024-04-13 22:44:39] INFO root fetch - processPackages [indipyclient]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-13 22:44:39] INFO root fetch - processPackages [trieve-py-client]: Downloading https://files.pythonhosted.org/packages/8d/75/4ddc1a20147a9df0cdeae420eed2c281c019cfad7db9a44221576454f3c3/trieve_py_client-0.6.2-py3-none-any.whl
+[2024-04-13 22:44:39] INFO root fetch - processPackages [indipyclient]: Downloading https://files.pythonhosted.org/packages/65/f9/30ba6c03c566190475f7ed976d475b63f0163899262979c1a0d1158e00f7/indipyclient-0.0.4.tar.gz
+[2024-04-13 22:44:40] INFO root fetch - processPackages [trieve-py-client]: Downloading https://files.pythonhosted.org/packages/f6/57/7e8ad08c4521f26cf037778af90c82c0ae95a10bd42c7ee3987af452f94d/trieve_py_client-0.6.7-py3-none-any.whl
+[2024-04-13 22:44:40] INFO root fetch - processPackages [indipyclient]: Downloading https://files.pythonhosted.org/packages/9f/7a/13da8a9abb77a90678b6a6016b746895b873eb68257cd50ad70aebea0254/indipyclient-0.0.5.tar.gz
+[2024-04-13 22:44:40] INFO root fetch - processPackages [trieve-py-client]: executing diffoscope
+[2024-04-13 22:44:40] INFO root fetch - processPackages [trieve-py-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trieve_py_client-0.6.2-py3-none-any.whl.zip tmp/trieve_py_client-0.6.7-py3-none-any.whl.zip --markdown 20240413/t/trieve-py-client/0.6.2-0.6.7/README.md --exclude *.pyd
+[2024-04-13 22:44:40] INFO root fetch - processPackages [indipyclient]: executing diffoscope
+[2024-04-13 22:44:40] INFO root fetch - processPackages [indipyclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indipyclient-0.0.4.tar.gz tmp/indipyclient-0.0.5.tar.gz --markdown 20240413/i/indipyclient/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-13 22:44:40] INFO root fetch - processPackages [indipyclient]: Remove: archive file [/home/abi/fetcher/tmp/indipyclient-0.0.4.tar.gz]
+[2024-04-13 22:44:40] INFO root fetch - processPackages [indipyclient]: Remove: archive file [/home/abi/fetcher/tmp/indipyclient-0.0.5.tar.gz]
+[2024-04-13 22:44:40] INFO root fetch - main [MainThread]: End processing [indipyclient]: success
+[2024-04-13 22:44:41] INFO root fetch - processPackages [trieve-py-client]: Remove: archive file [/home/abi/fetcher/tmp/trieve_py_client-0.6.2-py3-none-any.whl.zip]
+[2024-04-13 22:44:41] INFO root fetch - processPackages [trieve-py-client]: Remove: archive file [/home/abi/fetcher/tmp/trieve_py_client-0.6.7-py3-none-any.whl.zip]
+[2024-04-13 22:44:41] INFO root fetch - main [MainThread]: End processing [trieve-py-client]: success
+[2024-04-13 22:44:41] INFO root fetch - main [MainThread]: Store serial: [22754657]
