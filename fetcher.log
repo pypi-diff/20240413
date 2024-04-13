@@ -20872,3 +20872,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 23:56:33] INFO root fetch - processPackages [plover-lapwing-aio]: Remove: archive file [/home/abi/fetcher/tmp/plover-lapwing-aio-1.1.9.tar.gz]
 [2024-04-13 23:56:33] INFO root fetch - main [MainThread]: End processing [plover-lapwing-aio]: success
 [2024-04-13 23:56:33] INFO root fetch - main [MainThread]: Store serial: [22755042]
+[2024-04-13 23:58:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755042]
+[2024-04-13 23:58:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 23:58:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dune-rivals
+[2024-04-13 23:58:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: emo-market-base
+[2024-04-13 23:58:42] INFO root fetch - processPackages [emo-market-base]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-13 23:58:42] INFO root fetch - processPackages [dune-rivals]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-04-13 23:58:42] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/75/09/94aead7e4c6035c27ef25cea4e85c30202f3116076f81cf6f6464e4300a1/dune_rivals-0.3.3.tar.gz
+[2024-04-13 23:58:42] INFO root fetch - processPackages [emo-market-base]: Downloading https://files.pythonhosted.org/packages/12/83/dcaa01266c017d354e5a117b850dd7d89c1274b1516333a03bbc95e47c8c/emo_market_base-0.0.3.tar.gz
+[2024-04-13 23:58:42] INFO root fetch - processPackages [emo-market-base]: Downloading https://files.pythonhosted.org/packages/aa/ee/42f071c92eb0cd86cad4f9d34ba1f86322341f2a6f9a9d21c5c827a559db/emo_market_base-0.0.4.tar.gz
+[2024-04-13 23:58:43] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/62/b1/e49728d0ae1c3ddfd698d0d0e991113b5bc44e8b6b2840372335e097ff58/dune_rivals-0.3.4.tar.gz
+[2024-04-13 23:58:43] INFO root fetch - processPackages [emo-market-base]: executing diffoscope
+[2024-04-13 23:58:43] INFO root fetch - processPackages [emo-market-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emo_market_base-0.0.3.tar.gz tmp/emo_market_base-0.0.4.tar.gz --markdown 20240413/e/emo-market-base/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-13 23:58:43] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-13 23:58:43] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.3.3.tar.gz tmp/dune_rivals-0.3.4.tar.gz --markdown 20240413/d/dune-rivals/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-04-13 23:58:43] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.3.tar.gz]
+[2024-04-13 23:58:43] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.4.tar.gz]
+[2024-04-13 23:58:43] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-13 23:58:43] INFO root fetch - processPackages [emo-market-base]: Remove: archive file [/home/abi/fetcher/tmp/emo_market_base-0.0.3.tar.gz]
+[2024-04-13 23:58:43] INFO root fetch - processPackages [emo-market-base]: Remove: archive file [/home/abi/fetcher/tmp/emo_market_base-0.0.4.tar.gz]
+[2024-04-13 23:58:43] INFO root fetch - main [MainThread]: End processing [emo-market-base]: success
+[2024-04-13 23:58:43] INFO root fetch - main [MainThread]: Store serial: [22755048]
