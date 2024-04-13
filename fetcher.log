@@ -1922,3 +1922,45 @@
 [2024-04-13 02:10:15] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.6.dev202404120009.tar.gz]
 [2024-04-13 02:10:15] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
 [2024-04-13 02:10:15] INFO root fetch - main [MainThread]: Store serial: [22747159]
+[2024-04-13 02:12:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22747159]
+[2024-04-13 02:12:25] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 02:12:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ec-portal-gun
+[2024-04-13 02:12:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: draggable-line-chart
+[2024-04-13 02:12:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-events-notify
+[2024-04-13 02:12:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: caustic.lexer
+[2024-04-13 02:12:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: speakeasy-client-sdk-python
+[2024-04-13 02:12:25] INFO root fetch - processPackages [caustic.lexer]: New version: [1.1.0] Old Version: [1.0.2]
+[2024-04-13 02:12:25] WARNING root fetch - processPackages [ec-portal-gun]: Skipping, unable to determine old version
+[2024-04-13 02:12:25] INFO root fetch - main [MainThread]: End processing [ec-portal-gun] error
+[2024-04-13 02:12:25] INFO root fetch - processPackages [draggable-line-chart]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-04-13 02:12:25] INFO root fetch - processPackages [speakeasy-client-sdk-python]: New version: [5.6.5] Old Version: [5.6.4]
+[2024-04-13 02:12:25] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.2.95] Old Version: [2.2.94]
+[2024-04-13 02:12:25] INFO root fetch - processPackages [caustic.lexer]: Downloading https://files.pythonhosted.org/packages/77/e3/ad0d44583f77a366d7e7964ab3777763ffd3639455bd7fc0a7274b64010d/caustic.lexer-1.0.2.tar.gz
+[2024-04-13 02:12:25] INFO root fetch - processPackages [draggable-line-chart]: Downloading https://files.pythonhosted.org/packages/e1/ae/ddd14bf17dbb1965f6c985e061430f9967d7e40cef315981f3fdafb8f0c6/draggable-line-chart-0.3.3.tar.gz
+[2024-04-13 02:12:25] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/a2/a7/9c61a2c6bab15bd55363b427bf380afe4595e3d2a43cf3c34d0f22f32dd1/cdk-events-notify-2.2.94.tar.gz
+[2024-04-13 02:12:25] INFO root fetch - processPackages [speakeasy-client-sdk-python]: Downloading https://files.pythonhosted.org/packages/e0/d0/c44d25827e8fb02dc00d3aab4188331cffb31c5ead901a04be5982b8a3f4/speakeasy-client-sdk-python-5.6.4.tar.gz
+[2024-04-13 02:12:26] INFO root fetch - processPackages [speakeasy-client-sdk-python]: Downloading https://files.pythonhosted.org/packages/9b/aa/7790826a471ccaeb28e25ea18aa7ab1c3a8db46b792013dbf8e2061f5d75/speakeasy-client-sdk-python-5.6.5.tar.gz
+[2024-04-13 02:12:26] INFO root fetch - processPackages [caustic.lexer]: Downloading https://files.pythonhosted.org/packages/c5/ab/9f6f8accdc481af9552c2b087cf49dd69be28903a45424912f046604e5ec/caustic.lexer-1.1.0.tar.gz
+[2024-04-13 02:12:26] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/cd/1d/f2abeaf14967f1dd554f8f77e4a43493fa4a25d80b06cc502ab328d6d35c/cdk-events-notify-2.2.95.tar.gz
+[2024-04-13 02:12:26] INFO root fetch - processPackages [draggable-line-chart]: Downloading https://files.pythonhosted.org/packages/86/96/7b8babd794b560656802fc883d32f20619bb28359ee5a6e674db486455c7/draggable-line-chart-0.3.4.tar.gz
+[2024-04-13 02:12:26] INFO root fetch - processPackages [speakeasy-client-sdk-python]: executing diffoscope
+[2024-04-13 02:12:26] INFO root fetch - processPackages [speakeasy-client-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speakeasy-client-sdk-python-5.6.4.tar.gz tmp/speakeasy-client-sdk-python-5.6.5.tar.gz --markdown 20240413/s/speakeasy-client-sdk-python/5.6.4-5.6.5/README.md --exclude *.pyd
+[2024-04-13 02:12:26] INFO root fetch - processPackages [caustic.lexer]: executing diffoscope
+[2024-04-13 02:12:26] INFO root fetch - processPackages [caustic.lexer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caustic.lexer-1.0.2.tar.gz tmp/caustic.lexer-1.1.0.tar.gz --markdown 20240413/c/caustic.lexer/1.0.2-1.1.0/README.md --exclude *.pyd
+[2024-04-13 02:12:26] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2024-04-13 02:12:26] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.2.94.tar.gz tmp/cdk-events-notify-2.2.95.tar.gz --markdown 20240413/c/cdk-events-notify/2.2.94-2.2.95/README.md --exclude *.pyd
+[2024-04-13 02:12:26] INFO root fetch - processPackages [draggable-line-chart]: executing diffoscope
+[2024-04-13 02:12:26] INFO root fetch - processPackages [draggable-line-chart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/draggable-line-chart-0.3.3.tar.gz tmp/draggable-line-chart-0.3.4.tar.gz --markdown 20240413/d/draggable-line-chart/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-04-13 02:12:26] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.94.tar.gz]
+[2024-04-13 02:12:26] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.95.tar.gz]
+[2024-04-13 02:12:26] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2024-04-13 02:12:26] INFO root fetch - processPackages [caustic.lexer]: Remove: archive file [/home/abi/fetcher/tmp/caustic.lexer-1.0.2.tar.gz]
+[2024-04-13 02:12:26] INFO root fetch - processPackages [caustic.lexer]: Remove: archive file [/home/abi/fetcher/tmp/caustic.lexer-1.1.0.tar.gz]
+[2024-04-13 02:12:26] INFO root fetch - main [MainThread]: End processing [caustic.lexer]: success
+[2024-04-13 02:12:27] INFO root fetch - processPackages [speakeasy-client-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/speakeasy-client-sdk-python-5.6.4.tar.gz]
+[2024-04-13 02:12:27] INFO root fetch - processPackages [speakeasy-client-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/speakeasy-client-sdk-python-5.6.5.tar.gz]
+[2024-04-13 02:12:27] INFO root fetch - main [MainThread]: End processing [speakeasy-client-sdk-python]: success
+[2024-04-13 02:13:03] INFO root fetch - processPackages [draggable-line-chart]: Remove: archive file [/home/abi/fetcher/tmp/draggable-line-chart-0.3.3.tar.gz]
+[2024-04-13 02:13:03] INFO root fetch - processPackages [draggable-line-chart]: Remove: archive file [/home/abi/fetcher/tmp/draggable-line-chart-0.3.4.tar.gz]
+[2024-04-13 02:13:03] INFO root fetch - main [MainThread]: End processing [draggable-line-chart]: success
+[2024-04-13 02:13:03] INFO root fetch - main [MainThread]: Store serial: [22747175]
