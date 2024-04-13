@@ -2420,3 +2420,45 @@
 [2024-04-13 02:30:29] INFO root fetch - processPackages [statmorph]: Remove: archive file [/home/abi/fetcher/tmp/statmorph-0.5.6.tar.gz]
 [2024-04-13 02:30:29] INFO root fetch - main [MainThread]: End processing [statmorph]: success
 [2024-04-13 02:30:29] INFO root fetch - main [MainThread]: Store serial: [22747415]
+[2024-04-13 02:32:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22747415]
+[2024-04-13 02:32:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 02:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: liveplotlib
+[2024-04-13 02:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: state-machine-semaphore
+[2024-04-13 02:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: LinguAligner
+[2024-04-13 02:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: realtime
+[2024-04-13 02:32:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ansar-connect
+[2024-04-13 02:32:38] INFO root fetch - processPackages [LinguAligner]: New version: [0.5] Old Version: [0.4]
+[2024-04-13 02:32:38] INFO root fetch - processPackages [ansar-connect]: New version: [0.1.140] Old Version: [0.1.139]
+[2024-04-13 02:32:38] WARNING root fetch - processPackages [liveplotlib]: Skipping, unable to determine old version
+[2024-04-13 02:32:38] INFO root fetch - main [MainThread]: End processing [liveplotlib] error
+[2024-04-13 02:32:38] INFO root fetch - processPackages [state-machine-semaphore]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-13 02:32:38] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/1a/2b/b587609f82fd4da155ea83ff6ed7b2440829dd095e4883014ec7dfdc215f/ansar-connect-0.1.139.tar.gz
+[2024-04-13 02:32:38] INFO root fetch - processPackages [realtime]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-13 02:32:38] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/41/5e/13f13f195cae34358aaac810663ee0de7db632e9a91a94bc2dd785cb1cbb/lingualigner-0.4.tar.gz
+[2024-04-13 02:32:38] INFO root fetch - processPackages [state-machine-semaphore]: Downloading https://files.pythonhosted.org/packages/fa/f7/eea494ef2079699969c054c97478b7e0d5db0ce186fbb2708d9a243b4366/state-machine-semaphore-0.1.98.tar.gz
+[2024-04-13 02:32:39] INFO root fetch - processPackages [realtime]: Downloading https://files.pythonhosted.org/packages/66/9e/a1ba5bf61bea95b178d37079cbd5936565d5a0e2e39b25449aee94f695c1/realtime-1.0.3.tar.gz
+[2024-04-13 02:32:39] INFO root fetch - processPackages [state-machine-semaphore]: Downloading https://files.pythonhosted.org/packages/80/0f/c73e069a7ceff3d9f61065aa4b5b338bc0b9f4f933b94a97692457bfa317/state-machine-semaphore-0.1.99.tar.gz
+[2024-04-13 02:32:39] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/db/8d/39989721017e65d0c7bf77ff9aa8e85419aa2bdde77ffd1c03eef3ac6dbb/ansar-connect-0.1.140.tar.gz
+[2024-04-13 02:32:39] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/38/f7/b8bda8a08a3c24369c9fee7b574160ec2e5312612d0f7627ead8c2c47508/lingualigner-0.5.tar.gz
+[2024-04-13 02:32:39] INFO root fetch - processPackages [LinguAligner]: executing diffoscope
+[2024-04-13 02:32:39] INFO root fetch - processPackages [LinguAligner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lingualigner-0.4.tar.gz tmp/lingualigner-0.5.tar.gz --markdown 20240413/L/LinguAligner/0.4-0.5/README.md --exclude *.pyd
+[2024-04-13 02:32:39] INFO root fetch - processPackages [realtime]: Downloading https://files.pythonhosted.org/packages/f0/0d/46442dc898027522f6a3c4f09f2e4e99477dfd132895a4f1bb2241dddd00/realtime-1.0.4.tar.gz
+[2024-04-13 02:32:39] INFO root fetch - processPackages [ansar-connect]: executing diffoscope
+[2024-04-13 02:32:39] INFO root fetch - processPackages [ansar-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansar-connect-0.1.139.tar.gz tmp/ansar-connect-0.1.140.tar.gz --markdown 20240413/a/ansar-connect/0.1.139-0.1.140/README.md --exclude *.pyd
+[2024-04-13 02:32:39] INFO root fetch - processPackages [state-machine-semaphore]: executing diffoscope
+[2024-04-13 02:32:39] INFO root fetch - processPackages [state-machine-semaphore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state-machine-semaphore-0.1.98.tar.gz tmp/state-machine-semaphore-0.1.99.tar.gz --markdown 20240413/s/state-machine-semaphore/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-13 02:32:39] INFO root fetch - processPackages [realtime]: executing diffoscope
+[2024-04-13 02:32:39] INFO root fetch - processPackages [realtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/realtime-1.0.3.tar.gz tmp/realtime-1.0.4.tar.gz --markdown 20240413/r/realtime/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-13 02:32:40] INFO root fetch - processPackages [state-machine-semaphore]: Remove: archive file [/home/abi/fetcher/tmp/state-machine-semaphore-0.1.98.tar.gz]
+[2024-04-13 02:32:40] INFO root fetch - processPackages [state-machine-semaphore]: Remove: archive file [/home/abi/fetcher/tmp/state-machine-semaphore-0.1.99.tar.gz]
+[2024-04-13 02:32:40] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
+[2024-04-13 02:32:40] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.4.tar.gz]
+[2024-04-13 02:32:40] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.5.tar.gz]
+[2024-04-13 02:32:40] INFO root fetch - main [MainThread]: End processing [LinguAligner]: success
+[2024-04-13 02:32:40] INFO root fetch - processPackages [realtime]: Remove: archive file [/home/abi/fetcher/tmp/realtime-1.0.3.tar.gz]
+[2024-04-13 02:32:40] INFO root fetch - processPackages [realtime]: Remove: archive file [/home/abi/fetcher/tmp/realtime-1.0.4.tar.gz]
+[2024-04-13 02:32:40] INFO root fetch - main [MainThread]: End processing [realtime]: success
+[2024-04-13 02:32:40] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar-connect-0.1.139.tar.gz]
+[2024-04-13 02:32:40] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar-connect-0.1.140.tar.gz]
+[2024-04-13 02:32:40] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
+[2024-04-13 02:32:40] INFO root fetch - main [MainThread]: Store serial: [22747430]
