@@ -15222,3 +15222,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:24:10] WARNING root fetch - processPackages [HSJworld]: Skipping, unable to determine old version
 [2024-04-13 16:24:10] INFO root fetch - main [MainThread]: End processing [HSJworld] error
 [2024-04-13 16:24:10] INFO root fetch - main [MainThread]: Store serial: [22752481]
+[2024-04-13 16:26:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752481]
+[2024-04-13 16:26:18] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 16:26:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SAMMEC2
+[2024-04-13 16:26:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spstats
+[2024-04-13 16:26:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: speech_user_interface
+[2024-04-13 16:26:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyfracgen
+[2024-04-13 16:26:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bestdori-api
+[2024-04-13 16:26:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: langflow-base
+[2024-04-13 16:26:18] INFO root fetch - processPackages [bestdori-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 16:26:18] INFO root fetch - processPackages [speech_user_interface]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 16:26:18] INFO root fetch - processPackages [langflow-base]: New version: [0.0.33] Old Version: [0.0.32]
+[2024-04-13 16:26:19] INFO root fetch - processPackages [pyfracgen]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-13 16:26:19] INFO root fetch - processPackages [bestdori-api]: Downloading https://files.pythonhosted.org/packages/81/fd/cfb845fb249267b8cd7573748f153416613ff4d92557b0588175d0ffa06c/bestdori_api-0.1.8.tar.gz
+[2024-04-13 16:26:19] INFO root fetch - processPackages [speech_user_interface]: Downloading https://files.pythonhosted.org/packages/97/bf/c7dfece81eb0a124cfa9feb33850aade26fa06da0334d6f84ad80c8ce2cf/speech_user_interface-0.1.8.tar.gz
+[2024-04-13 16:26:19] INFO root fetch - processPackages [spstats]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-13 16:26:19] INFO root fetch - processPackages [langflow-base]: Downloading https://files.pythonhosted.org/packages/f2/3e/5cb918c4807df1d4351a1831d8cbc64ad84e4f030db12c257f34e96a9545/langflow_base-0.0.32.tar.gz
+[2024-04-13 16:26:19] INFO root fetch - processPackages [SAMMEC2]: New version: [0.0.7] Old Version: [0.0.5]
+[2024-04-13 16:26:19] INFO root fetch - processPackages [pyfracgen]: Downloading https://files.pythonhosted.org/packages/bf/cf/05a626aacba20108af9751fc722217f7dcdb4d62ba7e044edede4cf804b1/pyfracgen-0.2.0.tar.gz
+[2024-04-13 16:26:19] INFO root fetch - processPackages [spstats]: Downloading https://files.pythonhosted.org/packages/84/b5/4e77b31833a36a5daf916ca2eb27ea41be6f99a10fac2e6f7b918e5e401b/spstats-0.0.4-py3-none-any.whl
+[2024-04-13 16:26:19] INFO root fetch - processPackages [SAMMEC2]: Downloading https://files.pythonhosted.org/packages/48/30/da403f4086e233cb41ded9ab89a9c192ab46bc4c5bb136e8a8155d0058a0/SAMMEC2-0.0.5.tar.gz
+[2024-04-13 16:26:19] INFO root fetch - processPackages [bestdori-api]: Downloading https://files.pythonhosted.org/packages/e8/c6/efff1f1ea01c0bd24d5e120c25cc983a43678412b030542c4a6cfffdd9ea/bestdori_api-0.1.9.tar.gz
+[2024-04-13 16:26:19] INFO root fetch - processPackages [speech_user_interface]: Downloading https://files.pythonhosted.org/packages/72/62/6d72986e4b3fcf8105225d36d3b4d0e6a4db4f4a60dda50b86a77e06cd68/speech_user_interface-0.1.9.tar.gz
+[2024-04-13 16:26:19] INFO root fetch - processPackages [speech_user_interface]: executing diffoscope
+[2024-04-13 16:26:19] INFO root fetch - processPackages [speech_user_interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speech_user_interface-0.1.8.tar.gz tmp/speech_user_interface-0.1.9.tar.gz --markdown 20240413/s/speech_user_interface/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 16:26:19] INFO root fetch - processPackages [bestdori-api]: executing diffoscope
+[2024-04-13 16:26:19] INFO root fetch - processPackages [bestdori-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bestdori_api-0.1.8.tar.gz tmp/bestdori_api-0.1.9.tar.gz --markdown 20240413/b/bestdori-api/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 16:26:19] INFO root fetch - processPackages [spstats]: Downloading https://files.pythonhosted.org/packages/20/81/ec1a4d15f5541fe7923b646feaa7178b54b4012fbcc31dc2bca5eba50896/spstats-0.0.5-py3-none-any.whl
+[2024-04-13 16:26:19] INFO root fetch - processPackages [langflow-base]: Downloading https://files.pythonhosted.org/packages/25/89/d15ad1aecd282c259866d5c443fe9b874b7ec78ef575ba6a048d7668ec36/langflow_base-0.0.33.tar.gz
+[2024-04-13 16:26:19] INFO root fetch - processPackages [SAMMEC2]: Downloading https://files.pythonhosted.org/packages/f5/fa/a402803ad000ad23be17cffd60c4d78461296c58fc1150bc9d70da47c477/SAMMEC2-0.0.7.tar.gz
+[2024-04-13 16:26:19] INFO root fetch - processPackages [pyfracgen]: Downloading https://files.pythonhosted.org/packages/75/ca/09c8d39f7f5f0ff5d930293996c8dc2e5a5ca95c8b187c70378e8fe95daf/pyfracgen-0.3.0.tar.gz
+[2024-04-13 16:26:19] INFO root fetch - processPackages [spstats]: executing diffoscope
+[2024-04-13 16:26:19] INFO root fetch - processPackages [spstats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spstats-0.0.4-py3-none-any.whl.zip tmp/spstats-0.0.5-py3-none-any.whl.zip --markdown 20240413/s/spstats/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-13 16:26:19] INFO root fetch - processPackages [SAMMEC2]: executing diffoscope
+[2024-04-13 16:26:19] INFO root fetch - processPackages [SAMMEC2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SAMMEC2-0.0.5.tar.gz tmp/SAMMEC2-0.0.7.tar.gz --markdown 20240413/S/SAMMEC2/0.0.5-0.0.7/README.md --exclude *.pyd
+[2024-04-13 16:26:19] INFO root fetch - processPackages [pyfracgen]: executing diffoscope
+[2024-04-13 16:26:19] INFO root fetch - processPackages [pyfracgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfracgen-0.2.0.tar.gz tmp/pyfracgen-0.3.0.tar.gz --markdown 20240413/p/pyfracgen/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-13 16:26:19] INFO root fetch - processPackages [langflow-base]: executing diffoscope
+[2024-04-13 16:26:19] INFO root fetch - processPackages [langflow-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langflow_base-0.0.32.tar.gz tmp/langflow_base-0.0.33.tar.gz --markdown 20240413/l/langflow-base/0.0.32-0.0.33/README.md --exclude *.pyd
+[2024-04-13 16:26:20] INFO root fetch - processPackages [speech_user_interface]: Remove: archive file [/home/abi/fetcher/tmp/speech_user_interface-0.1.8.tar.gz]
+[2024-04-13 16:26:20] INFO root fetch - processPackages [speech_user_interface]: Remove: archive file [/home/abi/fetcher/tmp/speech_user_interface-0.1.9.tar.gz]
+[2024-04-13 16:26:20] INFO root fetch - main [MainThread]: End processing [speech_user_interface]: success
+[2024-04-13 16:26:20] INFO root fetch - processPackages [bestdori-api]: Remove: archive file [/home/abi/fetcher/tmp/bestdori_api-0.1.8.tar.gz]
+[2024-04-13 16:26:20] INFO root fetch - processPackages [bestdori-api]: Remove: archive file [/home/abi/fetcher/tmp/bestdori_api-0.1.9.tar.gz]
+[2024-04-13 16:26:20] INFO root fetch - main [MainThread]: End processing [bestdori-api]: success
+[2024-04-13 16:26:20] INFO root fetch - processPackages [SAMMEC2]: Remove: archive file [/home/abi/fetcher/tmp/SAMMEC2-0.0.5.tar.gz]
+[2024-04-13 16:26:20] INFO root fetch - processPackages [SAMMEC2]: Remove: archive file [/home/abi/fetcher/tmp/SAMMEC2-0.0.7.tar.gz]
+[2024-04-13 16:26:20] INFO root fetch - main [MainThread]: End processing [SAMMEC2]: success
+[2024-04-13 16:26:20] INFO root fetch - processPackages [spstats]: Remove: archive file [/home/abi/fetcher/tmp/spstats-0.0.4-py3-none-any.whl.zip]
+[2024-04-13 16:26:20] INFO root fetch - processPackages [spstats]: Remove: archive file [/home/abi/fetcher/tmp/spstats-0.0.5-py3-none-any.whl.zip]
+[2024-04-13 16:26:20] INFO root fetch - main [MainThread]: End processing [spstats]: success
+[2024-04-13 16:26:20] INFO root fetch - processPackages [pyfracgen]: Remove: archive file [/home/abi/fetcher/tmp/pyfracgen-0.2.0.tar.gz]
+[2024-04-13 16:26:20] INFO root fetch - processPackages [pyfracgen]: Remove: archive file [/home/abi/fetcher/tmp/pyfracgen-0.3.0.tar.gz]
+[2024-04-13 16:26:20] INFO root fetch - main [MainThread]: End processing [pyfracgen]: success
+[2024-04-13 16:26:23] INFO root fetch - processPackages [langflow-base]: Remove: archive file [/home/abi/fetcher/tmp/langflow_base-0.0.32.tar.gz]
+[2024-04-13 16:26:23] INFO root fetch - processPackages [langflow-base]: Remove: archive file [/home/abi/fetcher/tmp/langflow_base-0.0.33.tar.gz]
+[2024-04-13 16:26:23] INFO root fetch - main [MainThread]: End processing [langflow-base]: success
+[2024-04-13 16:26:23] INFO root fetch - main [MainThread]: Store serial: [22752498]
