@@ -20741,3 +20741,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 23:43:17] INFO root fetch - processPackages [embed-anything]: Remove: archive file [/home/abi/fetcher/tmp/embed_anything-0.1.6.tar.gz]
 [2024-04-13 23:43:17] INFO root fetch - main [MainThread]: End processing [embed-anything]: success
 [2024-04-13 23:43:17] INFO root fetch - main [MainThread]: Store serial: [22754995]
+[2024-04-13 23:45:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754995]
+[2024-04-13 23:45:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 23:45:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyMutSpec
+[2024-04-13 23:45:26] INFO root fetch - processPackages [PyMutSpec]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-13 23:45:26] INFO root fetch - processPackages [PyMutSpec]: Downloading https://files.pythonhosted.org/packages/02/76/d7c36773e78be82bbf8cb3df9311a292886e01af198f5689a676502341f3/PyMutSpec-0.0.7.tar.gz
+[2024-04-13 23:45:27] INFO root fetch - processPackages [PyMutSpec]: Downloading https://files.pythonhosted.org/packages/2c/c7/8a57fb895f54b1b02dd8ca01a567a5f835aa383d85c1448a96f19d6d2d01/PyMutSpec-0.0.8.tar.gz
+[2024-04-13 23:45:27] INFO root fetch - processPackages [PyMutSpec]: executing diffoscope
+[2024-04-13 23:45:27] INFO root fetch - processPackages [PyMutSpec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyMutSpec-0.0.7.tar.gz tmp/PyMutSpec-0.0.8.tar.gz --markdown 20240413/P/PyMutSpec/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-13 23:45:27] INFO root fetch - processPackages [PyMutSpec]: Remove: archive file [/home/abi/fetcher/tmp/PyMutSpec-0.0.7.tar.gz]
+[2024-04-13 23:45:27] INFO root fetch - processPackages [PyMutSpec]: Remove: archive file [/home/abi/fetcher/tmp/PyMutSpec-0.0.8.tar.gz]
+[2024-04-13 23:45:27] INFO root fetch - main [MainThread]: End processing [PyMutSpec]: success
+[2024-04-13 23:45:27] INFO root fetch - main [MainThread]: Store serial: [22754998]
