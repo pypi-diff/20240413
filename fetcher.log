@@ -19946,3 +19946,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 22:38:10] WARNING root fetch - processPackages [opensees]: Skipping package: exceeds size limit 22392766>=10485760
 [2024-04-13 22:38:10] INFO root fetch - main [MainThread]: End processing [opensees] error
 [2024-04-13 22:38:10] INFO root fetch - main [MainThread]: Store serial: [22754617]
+[2024-04-13 22:40:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754617]
+[2024-04-13 22:40:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 22:40:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dpq
+[2024-04-13 22:40:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: whishow
+[2024-04-13 22:40:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyplotlib
+[2024-04-13 22:40:18] INFO root fetch - processPackages [pyplotlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 22:40:18] INFO root fetch - processPackages [whishow]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-13 22:40:18] INFO root fetch - processPackages [pyplotlib]: Downloading https://files.pythonhosted.org/packages/28/bb/58ba19c8fed8024ef2c0efd0523dded73560d64857fcd7916d35aa6aa8af/pyplotlib-0.0.8.tar.gz
+[2024-04-13 22:40:19] INFO root fetch - processPackages [dpq]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-13 22:40:19] INFO root fetch - processPackages [whishow]: Downloading https://files.pythonhosted.org/packages/d9/ae/db911dd7082b6c43a0b4a8929cddad51b2271877a685cf3a0def262d11da/whishow-1.3.0-py2.py3-none-any.whl
+[2024-04-13 22:40:19] INFO root fetch - processPackages [dpq]: Downloading https://files.pythonhosted.org/packages/3a/2b/f29b27f6d183597a471047ce2aa5171a362efb85f5b930a04c297c7f73a3/dpq-0.1.3.tar.gz
+[2024-04-13 22:40:19] INFO root fetch - processPackages [pyplotlib]: Downloading https://files.pythonhosted.org/packages/8b/f8/1cec6ba77c9aee645ad1564c6fe928db135b36bec387a9574c6422edd191/pyplotlib-0.0.9.tar.gz
+[2024-04-13 22:40:19] INFO root fetch - processPackages [pyplotlib]: executing diffoscope
+[2024-04-13 22:40:19] INFO root fetch - processPackages [pyplotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyplotlib-0.0.8.tar.gz tmp/pyplotlib-0.0.9.tar.gz --markdown 20240413/p/pyplotlib/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 22:40:19] INFO root fetch - processPackages [dpq]: Downloading https://files.pythonhosted.org/packages/ae/3a/f35f87de3b1c8d9ca202a687a3c5714c1959e370a5a0607f32d4a6d3ff86/dpq-0.1.4.tar.gz
+[2024-04-13 22:40:19] INFO root fetch - processPackages [whishow]: Downloading https://files.pythonhosted.org/packages/01/c8/7fcb6f96474f02d80edbaff6cca1c3b54333410cec55676579bcad07ac53/whishow-1.3.1-py2.py3-none-any.whl
+[2024-04-13 22:40:19] INFO root fetch - processPackages [dpq]: executing diffoscope
+[2024-04-13 22:40:19] INFO root fetch - processPackages [dpq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dpq-0.1.3.tar.gz tmp/dpq-0.1.4.tar.gz --markdown 20240413/d/dpq/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-13 22:40:19] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.8.tar.gz]
+[2024-04-13 22:40:19] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.9.tar.gz]
+[2024-04-13 22:40:19] INFO root fetch - main [MainThread]: End processing [pyplotlib]: success
+[2024-04-13 22:40:20] INFO root fetch - processPackages [whishow]: executing diffoscope
+[2024-04-13 22:40:20] INFO root fetch - processPackages [whishow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whishow-1.3.0-py2.py3-none-any.whl.zip tmp/whishow-1.3.1-py2.py3-none-any.whl.zip --markdown 20240413/w/whishow/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-04-13 22:40:20] INFO root fetch - processPackages [dpq]: Remove: archive file [/home/abi/fetcher/tmp/dpq-0.1.3.tar.gz]
+[2024-04-13 22:40:20] INFO root fetch - processPackages [dpq]: Remove: archive file [/home/abi/fetcher/tmp/dpq-0.1.4.tar.gz]
+[2024-04-13 22:40:20] INFO root fetch - main [MainThread]: End processing [dpq]: success
+[2024-04-13 22:40:20] INFO root fetch - processPackages [whishow]: Remove: archive file [/home/abi/fetcher/tmp/whishow-1.3.0-py2.py3-none-any.whl.zip]
+[2024-04-13 22:40:20] INFO root fetch - processPackages [whishow]: Remove: archive file [/home/abi/fetcher/tmp/whishow-1.3.1-py2.py3-none-any.whl.zip]
+[2024-04-13 22:40:20] INFO root fetch - main [MainThread]: End processing [whishow]: success
+[2024-04-13 22:40:20] INFO root fetch - main [MainThread]: Store serial: [22754627]
