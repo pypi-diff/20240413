@@ -18550,3 +18550,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 20:37:39] INFO root fetch - processPackages [whishow]: Remove: archive file [/home/abi/fetcher/tmp/whishow-0.3.0-py2.py3-none-any.whl.zip]
 [2024-04-13 20:37:39] INFO root fetch - main [MainThread]: End processing [whishow]: success
 [2024-04-13 20:37:39] INFO root fetch - main [MainThread]: Store serial: [22753980]
+[2024-04-13 20:39:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753980]
+[2024-04-13 20:39:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 20:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SignalFilters
+[2024-04-13 20:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-static-dtm
+[2024-04-13 20:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyplotlib
+[2024-04-13 20:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: poethepoet
+[2024-04-13 20:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rollplayerlib
+[2024-04-13 20:39:48] INFO root fetch - processPackages [pyplotlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 20:39:48] INFO root fetch - processPackages [py-static-dtm]: New version: [1.0.0a3] Old Version: [1.0.0a2]
+[2024-04-13 20:39:48] WARNING root fetch - processPackages [rollplayerlib]: Skipping, unable to determine old version
+[2024-04-13 20:39:48] WARNING root fetch - processPackages [SignalFilters]: Skipping, unable to determine old version
+[2024-04-13 20:39:48] INFO root fetch - main [MainThread]: End processing [rollplayerlib] error
+[2024-04-13 20:39:48] INFO root fetch - main [MainThread]: End processing [SignalFilters] error
+[2024-04-13 20:39:48] INFO root fetch - processPackages [poethepoet]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-13 20:39:48] INFO root fetch - processPackages [pyplotlib]: Downloading https://files.pythonhosted.org/packages/28/bb/58ba19c8fed8024ef2c0efd0523dded73560d64857fcd7916d35aa6aa8af/pyplotlib-0.0.8.tar.gz
+[2024-04-13 20:39:48] INFO root fetch - processPackages [py-static-dtm]: Downloading https://files.pythonhosted.org/packages/a4/e2/faeab9fca58e424011aa1c9143b1d3f730e4ebfdbc986a9a30043f089f09/py_static_dtm-1.0.0a2.tar.gz
+[2024-04-13 20:39:48] INFO root fetch - processPackages [poethepoet]: Downloading https://files.pythonhosted.org/packages/17/79/9c14ec804257040afca9612def3ae0a2160547fe80276f1c8445844084b7/poethepoet-0.8.0.tar.gz
+[2024-04-13 20:39:48] INFO root fetch - processPackages [pyplotlib]: Downloading https://files.pythonhosted.org/packages/8b/f8/1cec6ba77c9aee645ad1564c6fe928db135b36bec387a9574c6422edd191/pyplotlib-0.0.9.tar.gz
+[2024-04-13 20:39:49] INFO root fetch - processPackages [py-static-dtm]: Downloading https://files.pythonhosted.org/packages/4e/94/e73683d05f3f82f04a20a0dd15b6d2897617251aa3548e79287b6471598c/py_static_dtm-1.0.0a3.tar.gz
+[2024-04-13 20:39:49] INFO root fetch - processPackages [pyplotlib]: executing diffoscope
+[2024-04-13 20:39:49] INFO root fetch - processPackages [pyplotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyplotlib-0.0.8.tar.gz tmp/pyplotlib-0.0.9.tar.gz --markdown 20240413/p/pyplotlib/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 20:39:49] INFO root fetch - processPackages [py-static-dtm]: executing diffoscope
+[2024-04-13 20:39:49] INFO root fetch - processPackages [py-static-dtm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_static_dtm-1.0.0a2.tar.gz tmp/py_static_dtm-1.0.0a3.tar.gz --markdown 20240413/p/py-static-dtm/1.0.0a2-1.0.0a3/README.md --exclude *.pyd
+[2024-04-13 20:39:49] INFO root fetch - processPackages [poethepoet]: Downloading https://files.pythonhosted.org/packages/12/67/034b12e52f7f13a98d0a04c0f9c5330f08f7aa83096a13b1414a9d54e088/poethepoet-0.9.0.tar.gz
+[2024-04-13 20:39:49] INFO root fetch - processPackages [poethepoet]: executing diffoscope
+[2024-04-13 20:39:49] INFO root fetch - processPackages [poethepoet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poethepoet-0.8.0.tar.gz tmp/poethepoet-0.9.0.tar.gz --markdown 20240413/p/poethepoet/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-13 20:39:49] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.8.tar.gz]
+[2024-04-13 20:39:49] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.9.tar.gz]
+[2024-04-13 20:39:49] INFO root fetch - main [MainThread]: End processing [pyplotlib]: success
+[2024-04-13 20:39:49] INFO root fetch - processPackages [py-static-dtm]: Remove: archive file [/home/abi/fetcher/tmp/py_static_dtm-1.0.0a2.tar.gz]
+[2024-04-13 20:39:49] INFO root fetch - processPackages [py-static-dtm]: Remove: archive file [/home/abi/fetcher/tmp/py_static_dtm-1.0.0a3.tar.gz]
+[2024-04-13 20:39:49] INFO root fetch - main [MainThread]: End processing [py-static-dtm]: success
+[2024-04-13 20:39:49] INFO root fetch - processPackages [poethepoet]: Remove: archive file [/home/abi/fetcher/tmp/poethepoet-0.8.0.tar.gz]
+[2024-04-13 20:39:49] INFO root fetch - processPackages [poethepoet]: Remove: archive file [/home/abi/fetcher/tmp/poethepoet-0.9.0.tar.gz]
+[2024-04-13 20:39:49] INFO root fetch - main [MainThread]: End processing [poethepoet]: success
+[2024-04-13 20:39:49] INFO root fetch - main [MainThread]: Store serial: [22753996]
