@@ -7500,3 +7500,15 @@
 [2024-04-13 06:00:01] INFO root fetch - processPackages [py-reconciliation-service-api]: Remove: archive file [/home/abi/fetcher/tmp/py_reconciliation_service_api-0.2.1.tar.gz]
 [2024-04-13 06:00:01] INFO root fetch - main [MainThread]: End processing [py-reconciliation-service-api]: success
 [2024-04-13 06:00:01] INFO root fetch - main [MainThread]: Store serial: [22749249]
+[2024-04-13 06:02:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749249]
+[2024-04-13 06:02:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 06:02:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gllogger
+[2024-04-13 06:02:10] INFO root fetch - processPackages [gllogger]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-13 06:02:10] INFO root fetch - processPackages [gllogger]: Downloading https://files.pythonhosted.org/packages/ac/31/0e6eae75952feb22d3b16de41e9cc6d106de2fbbb7a8196179bbce1bbcc8/gllogger-0.0.1.tar.gz
+[2024-04-13 06:02:10] INFO root fetch - processPackages [gllogger]: Downloading https://files.pythonhosted.org/packages/85/4c/198dea3d02d0bce606ece29671063f8f326ac32e972585f83ec95f4cc398/gllogger-0.0.2.tar.gz
+[2024-04-13 06:02:10] INFO root fetch - processPackages [gllogger]: executing diffoscope
+[2024-04-13 06:02:10] INFO root fetch - processPackages [gllogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gllogger-0.0.1.tar.gz tmp/gllogger-0.0.2.tar.gz --markdown 20240413/g/gllogger/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-13 06:02:10] INFO root fetch - processPackages [gllogger]: Remove: archive file [/home/abi/fetcher/tmp/gllogger-0.0.1.tar.gz]
+[2024-04-13 06:02:10] INFO root fetch - processPackages [gllogger]: Remove: archive file [/home/abi/fetcher/tmp/gllogger-0.0.2.tar.gz]
+[2024-04-13 06:02:10] INFO root fetch - main [MainThread]: End processing [gllogger]: success
+[2024-04-13 06:02:10] INFO root fetch - main [MainThread]: Store serial: [22749252]
