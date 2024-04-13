@@ -10715,3 +10715,58 @@
 [2024-04-13 10:20:02] INFO root fetch - processPackages [silicon-analyser]: Remove: archive file [/home/abi/fetcher/tmp/silicon-analyser-1.0.2.tar.gz]
 [2024-04-13 10:20:02] INFO root fetch - main [MainThread]: End processing [silicon-analyser]: success
 [2024-04-13 10:20:02] INFO root fetch - main [MainThread]: Store serial: [22750483]
+[2024-04-13 10:22:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750483]
+[2024-04-13 10:22:11] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 10:22:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sirmordred
+[2024-04-13 10:22:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Agently
+[2024-04-13 10:22:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pynovnc
+[2024-04-13 10:22:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Agently
+[2024-04-13 10:22:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: speech_user_interface
+[2024-04-13 10:22:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: silicon-analyser
+[2024-04-13 10:22:12] INFO root fetch - processPackages [pynovnc]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-13 10:22:12] INFO root fetch - processPackages [Agently]: New version: [3.3.0.0a2] Old Version: [3.3.0.0a1]
+[2024-04-13 10:22:12] INFO root fetch - processPackages [silicon-analyser]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-13 10:22:12] INFO root fetch - processPackages [Agently]: New version: [3.3.0.0a2] Old Version: [3.3.0.0a1]
+[2024-04-13 10:22:12] INFO root fetch - processPackages [sirmordred]: New version: [1.0.0rc3] Old Version: [1.0.0rc2]
+[2024-04-13 10:22:12] INFO root fetch - processPackages [speech_user_interface]: New version: [0.1.6] Old Version: [0.1.4]
+[2024-04-13 10:22:12] INFO root fetch - processPackages [pynovnc]: Downloading https://files.pythonhosted.org/packages/20/19/0fe97725f9bed034000c6a5fa735f558704ebc1f9601d05efe7faf60b9c7/pynovnc-1.0.6.tar.gz
+[2024-04-13 10:22:12] INFO root fetch - processPackages [sirmordred]: Downloading https://files.pythonhosted.org/packages/0f/0d/83a9196d1f4c6e2680c34891da7cb7a576424db8e39050631a4a6f1decb4/sirmordred-1.0.0rc2.tar.gz
+[2024-04-13 10:22:12] INFO root fetch - processPackages [Agently]: Downloading https://files.pythonhosted.org/packages/24/76/9fed1c506a7563bedff66db4f4c02ff489d0bd32b0e318f61c446bf9d3f0/Agently-3.3.0.0a1.tar.gz
+[2024-04-13 10:22:12] INFO root fetch - processPackages [Agently]: Downloading https://files.pythonhosted.org/packages/24/76/9fed1c506a7563bedff66db4f4c02ff489d0bd32b0e318f61c446bf9d3f0/Agently-3.3.0.0a1.tar.gz
+[2024-04-13 10:22:12] INFO root fetch - processPackages [silicon-analyser]: Downloading https://files.pythonhosted.org/packages/2b/3f/3d55febce963be2dd7ebb8bb3cb8c63498360893383d575875c5a1fff733/silicon-analyser-1.0.1.tar.gz
+[2024-04-13 10:22:12] INFO root fetch - processPackages [speech_user_interface]: Downloading https://files.pythonhosted.org/packages/e0/3e/15f2e55a165fe8aa0536dd25a1f5698ef1b95e2e1f4a914cbe918aa941d9/speech_user_interface-0.1.4.tar.gz
+[2024-04-13 10:22:12] INFO root fetch - processPackages [silicon-analyser]: Downloading https://files.pythonhosted.org/packages/04/3f/1bc461b0a73030dff7078e1d045a84a1ff38eebae77c8f98158e43ddb4b3/silicon-analyser-1.0.2.tar.gz
+[2024-04-13 10:22:12] INFO root fetch - processPackages [pynovnc]: Downloading https://files.pythonhosted.org/packages/99/68/275d609f5e38e8bb82436c6a56c79f5239e3f532209eac0a60c464d691aa/pynovnc-1.0.7.tar.gz
+[2024-04-13 10:22:12] INFO root fetch - processPackages [Agently]: Downloading https://files.pythonhosted.org/packages/45/f3/c2db25680824376b4207b17c46e5772a6da935bae17474b16b04d3ab85af/Agently-3.3.0.0a2.tar.gz
+[2024-04-13 10:22:12] INFO root fetch - processPackages [Agently]: Downloading https://files.pythonhosted.org/packages/45/f3/c2db25680824376b4207b17c46e5772a6da935bae17474b16b04d3ab85af/Agently-3.3.0.0a2.tar.gz
+[2024-04-13 10:22:12] INFO root fetch - processPackages [silicon-analyser]: executing diffoscope
+[2024-04-13 10:22:12] INFO root fetch - processPackages [silicon-analyser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silicon-analyser-1.0.1.tar.gz tmp/silicon-analyser-1.0.2.tar.gz --markdown 20240413/s/silicon-analyser/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-13 10:22:12] INFO root fetch - processPackages [pynovnc]: executing diffoscope
+[2024-04-13 10:22:12] INFO root fetch - processPackages [pynovnc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynovnc-1.0.6.tar.gz tmp/pynovnc-1.0.7.tar.gz --markdown 20240413/p/pynovnc/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-13 10:22:12] INFO root fetch - processPackages [speech_user_interface]: Downloading https://files.pythonhosted.org/packages/5d/cd/db0a5302a8baa17609b80f6825ce7778013415eae73beb2cabd28ef1c421/speech_user_interface-0.1.6.tar.gz
+[2024-04-13 10:22:12] INFO root fetch - processPackages [sirmordred]: Downloading https://files.pythonhosted.org/packages/37/f4/d7ce4bf237de54a0e9ed8069c5630e21b267aa392717d7cf72321a94e03d/sirmordred-1.0.0rc3.tar.gz
+[2024-04-13 10:22:12] INFO root fetch - processPackages [Agently]: executing diffoscope
+[2024-04-13 10:22:12] INFO root fetch - processPackages [Agently]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Agently-3.3.0.0a1.tar.gz tmp/Agently-3.3.0.0a2.tar.gz --markdown 20240413/A/Agently/3.3.0.0a1-3.3.0.0a2/README.md --exclude *.pyd
+[2024-04-13 10:22:12] INFO root fetch - processPackages [Agently]: executing diffoscope
+[2024-04-13 10:22:12] INFO root fetch - processPackages [Agently]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Agently-3.3.0.0a1.tar.gz tmp/Agently-3.3.0.0a2.tar.gz --markdown 20240413/A/Agently/3.3.0.0a1-3.3.0.0a2/README.md --exclude *.pyd
+[2024-04-13 10:22:12] INFO root fetch - processPackages [speech_user_interface]: executing diffoscope
+[2024-04-13 10:22:12] INFO root fetch - processPackages [speech_user_interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speech_user_interface-0.1.4.tar.gz tmp/speech_user_interface-0.1.6.tar.gz --markdown 20240413/s/speech_user_interface/0.1.4-0.1.6/README.md --exclude *.pyd
+[2024-04-13 10:22:13] INFO root fetch - processPackages [sirmordred]: executing diffoscope
+[2024-04-13 10:22:13] INFO root fetch - processPackages [sirmordred]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sirmordred-1.0.0rc2.tar.gz tmp/sirmordred-1.0.0rc3.tar.gz --markdown 20240413/s/sirmordred/1.0.0rc2-1.0.0rc3/README.md --exclude *.pyd
+[2024-04-13 10:22:13] INFO root fetch - processPackages [pynovnc]: Remove: archive file [/home/abi/fetcher/tmp/pynovnc-1.0.6.tar.gz]
+[2024-04-13 10:22:13] INFO root fetch - processPackages [pynovnc]: Remove: archive file [/home/abi/fetcher/tmp/pynovnc-1.0.7.tar.gz]
+[2024-04-13 10:22:13] INFO root fetch - main [MainThread]: End processing [pynovnc]: success
+[2024-04-13 10:22:13] INFO root fetch - processPackages [silicon-analyser]: Remove: archive file [/home/abi/fetcher/tmp/silicon-analyser-1.0.1.tar.gz]
+[2024-04-13 10:22:13] INFO root fetch - processPackages [silicon-analyser]: Remove: archive file [/home/abi/fetcher/tmp/silicon-analyser-1.0.2.tar.gz]
+[2024-04-13 10:22:13] INFO root fetch - main [MainThread]: End processing [silicon-analyser]: success
+[2024-04-13 10:22:13] INFO root fetch - processPackages [speech_user_interface]: Remove: archive file [/home/abi/fetcher/tmp/speech_user_interface-0.1.4.tar.gz]
+[2024-04-13 10:22:13] INFO root fetch - processPackages [speech_user_interface]: Remove: archive file [/home/abi/fetcher/tmp/speech_user_interface-0.1.6.tar.gz]
+[2024-04-13 10:22:13] INFO root fetch - main [MainThread]: End processing [speech_user_interface]: success
+[2024-04-13 10:22:13] INFO root fetch - processPackages [Agently]: Remove: archive file [/home/abi/fetcher/tmp/Agently-3.3.0.0a1.tar.gz]
+[2024-04-13 10:22:13] INFO root fetch - processPackages [Agently]: Remove: archive file [/home/abi/fetcher/tmp/Agently-3.3.0.0a2.tar.gz]
+[2024-04-13 10:22:13] INFO root fetch - main [MainThread]: End processing [Agently]: success
+[2024-04-13 10:22:13] INFO root fetch - main [MainThread]: End processing [Agently]: success
+[2024-04-13 10:22:17] INFO root fetch - processPackages [sirmordred]: Remove: archive file [/home/abi/fetcher/tmp/sirmordred-1.0.0rc2.tar.gz]
+[2024-04-13 10:22:17] INFO root fetch - processPackages [sirmordred]: Remove: archive file [/home/abi/fetcher/tmp/sirmordred-1.0.0rc3.tar.gz]
+[2024-04-13 10:22:17] INFO root fetch - main [MainThread]: End processing [sirmordred]: success
+[2024-04-13 10:22:17] INFO root fetch - main [MainThread]: Store serial: [22750496]
