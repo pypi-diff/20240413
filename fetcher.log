@@ -20649,3 +20649,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 23:30:20] INFO root fetch - processPackages [gkeepapi]: Remove: archive file [/home/abi/fetcher/tmp/gkeepapi-0.9.8-py2.py3-none-any.whl.zip]
 [2024-04-13 23:30:20] INFO root fetch - main [MainThread]: End processing [gkeepapi]: success
 [2024-04-13 23:30:20] INFO root fetch - main [MainThread]: Store serial: [22754937]
+[2024-04-13 23:32:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754937]
+[2024-04-13 23:32:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 23:32:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: appier
+[2024-04-13 23:32:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: restx
+[2024-04-13 23:32:29] INFO root fetch - processPackages [restx]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-04-13 23:32:29] INFO root fetch - processPackages [appier]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-04-13 23:32:29] INFO root fetch - processPackages [restx]: Downloading https://files.pythonhosted.org/packages/50/be/eeaee4b1a491f3d99a5235b025d0d4e2bf9ba752b92905e22f10be31fd8e/restx-0.1.9.tar.gz
+[2024-04-13 23:32:29] INFO root fetch - processPackages [appier]: Downloading https://files.pythonhosted.org/packages/f5/37/c6fb2bc3cdb234063247c4f57d393150434db43253cebb2fc1f2a4149c80/appier-1.9.8.tar.gz
+[2024-04-13 23:32:29] INFO root fetch - processPackages [restx]: executing diffoscope
+[2024-04-13 23:32:29] INFO root fetch - processPackages [restx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/restx-0.1.7.tar.gz tmp/restx-0.1.9.tar.gz --markdown 20240413/r/restx/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-04-13 23:32:30] INFO root fetch - processPackages [appier]: Downloading https://files.pythonhosted.org/packages/88/65/6c516e4a2665879fdef191ce00f206533b70c31d56b7ba63a694664098b1/appier-1.9.9.tar.gz
+[2024-04-13 23:32:30] INFO root fetch - processPackages [restx]: Remove: archive file [/home/abi/fetcher/tmp/restx-0.1.7.tar.gz]
+[2024-04-13 23:32:30] INFO root fetch - processPackages [restx]: Remove: archive file [/home/abi/fetcher/tmp/restx-0.1.9.tar.gz]
+[2024-04-13 23:32:30] INFO root fetch - main [MainThread]: End processing [restx]: success
+[2024-04-13 23:32:30] INFO root fetch - processPackages [appier]: executing diffoscope
+[2024-04-13 23:32:30] INFO root fetch - processPackages [appier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appier-1.9.8.tar.gz tmp/appier-1.9.9.tar.gz --markdown 20240413/a/appier/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-04-13 23:32:31] INFO root fetch - processPackages [appier]: Remove: archive file [/home/abi/fetcher/tmp/appier-1.9.8.tar.gz]
+[2024-04-13 23:32:31] INFO root fetch - processPackages [appier]: Remove: archive file [/home/abi/fetcher/tmp/appier-1.9.9.tar.gz]
+[2024-04-13 23:32:31] INFO root fetch - main [MainThread]: End processing [appier]: success
+[2024-04-13 23:32:31] INFO root fetch - main [MainThread]: Store serial: [22754943]
