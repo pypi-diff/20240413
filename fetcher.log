@@ -6599,3 +6599,33 @@
 [2024-04-13 03:38:04] INFO root fetch - processPackages [bioimageio-chatbot]: Remove: archive file [/home/abi/fetcher/tmp/bioimageio-chatbot-0.1.96.tar.gz]
 [2024-04-13 03:38:04] INFO root fetch - main [MainThread]: End processing [bioimageio-chatbot]: success
 [2024-04-13 03:38:04] INFO root fetch - main [MainThread]: Store serial: [22748847]
+[2024-04-13 03:40:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748847]
+[2024-04-13 03:40:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 03:40:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gpt-all-star
+[2024-04-13 03:40:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nuon
+[2024-04-13 03:40:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: idc-index
+[2024-04-13 03:40:14] INFO root fetch - processPackages [gpt-all-star]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-04-13 03:40:14] INFO root fetch - processPackages [nuon]: New version: [0.19.98] Old Version: [0.19.97]
+[2024-04-13 03:40:14] INFO root fetch - processPackages [idc-index]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-13 03:40:14] INFO root fetch - processPackages [idc-index]: Downloading https://files.pythonhosted.org/packages/8b/e9/1a92d258569c7cabb0a7859a5d63a66002c00b83ff6b5cad4ad17056dd7b/idc_index-0.5.0.tar.gz
+[2024-04-13 03:40:14] INFO root fetch - processPackages [nuon]: Downloading https://files.pythonhosted.org/packages/b2/7c/9e7b64668894f5d63348d7f09d2ad8c27d6bca4945cc21e574b455695b3f/nuon-0.19.97.tar.gz
+[2024-04-13 03:40:14] INFO root fetch - processPackages [gpt-all-star]: Downloading https://files.pythonhosted.org/packages/95/00/47f2780dce549d1ce8aad7cb17a7c758209c4539c6f75dcdbe0e9322ce0e/gpt_all_star-0.0.7.tar.gz
+[2024-04-13 03:40:15] INFO root fetch - processPackages [idc-index]: Downloading https://files.pythonhosted.org/packages/43/48/97fe728e5befaba0e2e4c68605825f5e8201e894fa8b2e863286fa527613/idc_index-0.5.1.tar.gz
+[2024-04-13 03:40:15] INFO root fetch - processPackages [nuon]: Downloading https://files.pythonhosted.org/packages/8d/82/73a4a9564f53819f1d2ce0052786b8fbaac8797092a6e5b9ad8368807e5a/nuon-0.19.98.tar.gz
+[2024-04-13 03:40:15] INFO root fetch - processPackages [gpt-all-star]: Downloading https://files.pythonhosted.org/packages/96/40/c6f6b9dc146ffbf8c97d68b1ad200a51bb0f5a239c5e4d11725f1fff5f45/gpt_all_star-0.0.9.tar.gz
+[2024-04-13 03:40:15] INFO root fetch - processPackages [idc-index]: executing diffoscope
+[2024-04-13 03:40:15] INFO root fetch - processPackages [idc-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idc_index-0.5.0.tar.gz tmp/idc_index-0.5.1.tar.gz --markdown 20240413/i/idc-index/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-13 03:40:15] INFO root fetch - processPackages [nuon]: executing diffoscope
+[2024-04-13 03:40:15] INFO root fetch - processPackages [nuon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nuon-0.19.97.tar.gz tmp/nuon-0.19.98.tar.gz --markdown 20240413/n/nuon/0.19.97-0.19.98/README.md --exclude *.pyd
+[2024-04-13 03:40:15] INFO root fetch - processPackages [gpt-all-star]: executing diffoscope
+[2024-04-13 03:40:15] INFO root fetch - processPackages [gpt-all-star]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_all_star-0.0.7.tar.gz tmp/gpt_all_star-0.0.9.tar.gz --markdown 20240413/g/gpt-all-star/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-04-13 03:40:15] INFO root fetch - processPackages [idc-index]: Remove: archive file [/home/abi/fetcher/tmp/idc_index-0.5.0.tar.gz]
+[2024-04-13 03:40:15] INFO root fetch - processPackages [idc-index]: Remove: archive file [/home/abi/fetcher/tmp/idc_index-0.5.1.tar.gz]
+[2024-04-13 03:40:15] INFO root fetch - main [MainThread]: End processing [idc-index]: success
+[2024-04-13 03:40:16] INFO root fetch - processPackages [gpt-all-star]: Remove: archive file [/home/abi/fetcher/tmp/gpt_all_star-0.0.7.tar.gz]
+[2024-04-13 03:40:16] INFO root fetch - processPackages [gpt-all-star]: Remove: archive file [/home/abi/fetcher/tmp/gpt_all_star-0.0.9.tar.gz]
+[2024-04-13 03:40:16] INFO root fetch - main [MainThread]: End processing [gpt-all-star]: success
+[2024-04-13 03:40:17] INFO root fetch - processPackages [nuon]: Remove: archive file [/home/abi/fetcher/tmp/nuon-0.19.97.tar.gz]
+[2024-04-13 03:40:17] INFO root fetch - processPackages [nuon]: Remove: archive file [/home/abi/fetcher/tmp/nuon-0.19.98.tar.gz]
+[2024-04-13 03:40:17] INFO root fetch - main [MainThread]: End processing [nuon]: success
+[2024-04-13 03:40:17] INFO root fetch - main [MainThread]: Store serial: [22748855]
