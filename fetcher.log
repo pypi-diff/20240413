@@ -2536,3 +2536,51 @@
 [2024-04-13 02:41:36] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.99.tar.gz]
 [2024-04-13 02:41:36] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2024-04-13 02:41:36] INFO root fetch - main [MainThread]: Store serial: [22747454]
+[2024-04-13 02:43:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22747454]
+[2024-04-13 02:43:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 02:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: awsume-1password-plugin
+[2024-04-13 02:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: raydp-nightly
+[2024-04-13 02:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-sns-notify
+[2024-04-13 02:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: LinguAligner
+[2024-04-13 02:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tfds-nightly
+[2024-04-13 02:43:45] INFO root fetch - processPackages [LinguAligner]: New version: [0.6] Old Version: [0.5]
+[2024-04-13 02:43:45] INFO root fetch - processPackages [cdk-sns-notify]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-13 02:43:45] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.4.dev202404120045] Old Version: [4.9.4.dev202404110044]
+[2024-04-13 02:43:45] INFO root fetch - processPackages [raydp-nightly]: New version: [2024.4.13.dev0] Old Version: [2024.4.10.dev0]
+[2024-04-13 02:43:45] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/38/f7/b8bda8a08a3c24369c9fee7b574160ec2e5312612d0f7627ead8c2c47508/lingualigner-0.5.tar.gz
+[2024-04-13 02:43:45] INFO root fetch - processPackages [awsume-1password-plugin]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-04-13 02:43:45] INFO root fetch - processPackages [cdk-sns-notify]: Downloading https://files.pythonhosted.org/packages/63/7d/ec62f3b7c0e08e1437b2036911a0d42b75ee30ea2cbb819399bdf8b55111/cdk-sns-notify-0.0.98.tar.gz
+[2024-04-13 02:43:45] INFO root fetch - processPackages [raydp-nightly]: Downloading https://files.pythonhosted.org/packages/0d/0b/a91914054d315ebcd23518ea2ad1e084baa407a414d6b3f4679e40b605ae/raydp_nightly-2024.4.10.dev0-py3-none-any.whl
+[2024-04-13 02:43:45] INFO root fetch - processPackages [awsume-1password-plugin]: Downloading https://files.pythonhosted.org/packages/0e/bf/9544a9feb548af36805d5d99ef3ff7370d2fbf335b3ba8797eb4fa79623b/awsume_1password_plugin-1.2.2-py3-none-any.whl
+[2024-04-13 02:43:45] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/ac/0c/79d6ee0355e0361628c9e0d209208b39bf9a8443240f587def77b773b0a3/tfds-nightly-4.9.4.dev202404110044.tar.gz
+[2024-04-13 02:43:45] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/54/49/7682438ec5c21eb1b11d613bc83a9e7b8f4bc5635c9ca2f65059c04ca00b/lingualigner-0.6.tar.gz
+[2024-04-13 02:43:45] INFO root fetch - processPackages [cdk-sns-notify]: Downloading https://files.pythonhosted.org/packages/18/81/3593e022c53913815c1207f0d20763efc2764992a13c81d641f3a01edf7d/cdk-sns-notify-0.0.99.tar.gz
+[2024-04-13 02:43:45] INFO root fetch - processPackages [LinguAligner]: executing diffoscope
+[2024-04-13 02:43:45] INFO root fetch - processPackages [LinguAligner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lingualigner-0.5.tar.gz tmp/lingualigner-0.6.tar.gz --markdown 20240413/L/LinguAligner/0.5-0.6/README.md --exclude *.pyd
+[2024-04-13 02:43:45] INFO root fetch - processPackages [cdk-sns-notify]: executing diffoscope
+[2024-04-13 02:43:45] INFO root fetch - processPackages [cdk-sns-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sns-notify-0.0.98.tar.gz tmp/cdk-sns-notify-0.0.99.tar.gz --markdown 20240413/c/cdk-sns-notify/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-13 02:43:45] INFO root fetch - processPackages [awsume-1password-plugin]: Downloading https://files.pythonhosted.org/packages/25/11/312cfadbf0792d5c6da4c5e79b4aac9f28df98eb4cc06970fecc9888d28b/awsume_1password_plugin-1.2.3-py3-none-any.whl
+[2024-04-13 02:43:45] INFO root fetch - processPackages [raydp-nightly]: Downloading https://files.pythonhosted.org/packages/62/8b/735aeae465a46160419a24ab0277c59964b096689e353e8cacc9384a32e0/raydp_nightly-2024.4.13.dev0-py3-none-any.whl
+[2024-04-13 02:43:45] INFO root fetch - processPackages [awsume-1password-plugin]: executing diffoscope
+[2024-04-13 02:43:45] INFO root fetch - processPackages [awsume-1password-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awsume_1password_plugin-1.2.2-py3-none-any.whl.zip tmp/awsume_1password_plugin-1.2.3-py3-none-any.whl.zip --markdown 20240413/a/awsume-1password-plugin/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-04-13 02:43:46] INFO root fetch - processPackages [raydp-nightly]: executing diffoscope
+[2024-04-13 02:43:46] INFO root fetch - processPackages [raydp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raydp_nightly-2024.4.10.dev0-py3-none-any.whl.zip tmp/raydp_nightly-2024.4.13.dev0-py3-none-any.whl.zip --markdown 20240413/r/raydp-nightly/2024.4.10.dev0-2024.4.13.dev0/README.md --exclude *.pyd
+[2024-04-13 02:43:46] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/57/5c/7594c7bed67687a2e63ca9ca57980dd5e78a4339e66873e27a90679fcdc3/tfds-nightly-4.9.4.dev202404120045.tar.gz
+[2024-04-13 02:43:46] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.5.tar.gz]
+[2024-04-13 02:43:46] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.6.tar.gz]
+[2024-04-13 02:43:46] INFO root fetch - main [MainThread]: End processing [LinguAligner]: success
+[2024-04-13 02:43:46] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2024-04-13 02:43:46] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.4.dev202404110044.tar.gz tmp/tfds-nightly-4.9.4.dev202404120045.tar.gz --markdown 20240413/t/tfds-nightly/4.9.4.dev202404110044-4.9.4.dev202404120045/README.md --exclude *.pyd
+[2024-04-13 02:43:46] INFO root fetch - processPackages [cdk-sns-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sns-notify-0.0.98.tar.gz]
+[2024-04-13 02:43:46] INFO root fetch - processPackages [cdk-sns-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sns-notify-0.0.99.tar.gz]
+[2024-04-13 02:43:46] INFO root fetch - main [MainThread]: End processing [cdk-sns-notify]: success
+[2024-04-13 02:43:46] INFO root fetch - processPackages [awsume-1password-plugin]: Remove: archive file [/home/abi/fetcher/tmp/awsume_1password_plugin-1.2.2-py3-none-any.whl.zip]
+[2024-04-13 02:43:46] INFO root fetch - processPackages [awsume-1password-plugin]: Remove: archive file [/home/abi/fetcher/tmp/awsume_1password_plugin-1.2.3-py3-none-any.whl.zip]
+[2024-04-13 02:43:46] INFO root fetch - main [MainThread]: End processing [awsume-1password-plugin]: success
+[2024-04-13 02:43:47] INFO root fetch - processPackages [raydp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/raydp_nightly-2024.4.10.dev0-py3-none-any.whl.zip]
+[2024-04-13 02:43:47] INFO root fetch - processPackages [raydp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/raydp_nightly-2024.4.13.dev0-py3-none-any.whl.zip]
+[2024-04-13 02:43:47] INFO root fetch - main [MainThread]: End processing [raydp-nightly]: success
+[2024-04-13 02:43:55] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202404110044.tar.gz]
+[2024-04-13 02:43:55] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202404120045.tar.gz]
+[2024-04-13 02:43:55] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2024-04-13 02:43:55] INFO root fetch - main [MainThread]: Store serial: [22747467]
