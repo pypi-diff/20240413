@@ -10489,3 +10489,24 @@
 [2024-04-13 10:04:27] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240412.tar.gz]
 [2024-04-13 10:04:27] INFO root fetch - main [MainThread]: End processing [langfun]: success
 [2024-04-13 10:04:27] INFO root fetch - main [MainThread]: Store serial: [22750353]
+[2024-04-13 10:06:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750353]
+[2024-04-13 10:06:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 10:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mtutils
+[2024-04-13 10:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyglove
+[2024-04-13 10:06:36] INFO root fetch - processPackages [pyglove]: New version: [0.4.5.dev20240412] Old Version: [0.4.5.dev20240411]
+[2024-04-13 10:06:36] INFO root fetch - processPackages [mtutils]: New version: [2.1.9] Old Version: [2.1.87]
+[2024-04-13 10:06:36] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/8c/a3/65367fd16e815d40c8f2d9487edb843b4bb6a0b20d314338def3262dc841/pyglove-0.4.5.dev20240411.tar.gz
+[2024-04-13 10:06:36] INFO root fetch - processPackages [mtutils]: Downloading https://files.pythonhosted.org/packages/95/6b/3a8247249f96846fb8d63ea5ef0736f6bf88bdf68ea3612e947963e8322b/mtutils-2.1.87.tar.gz
+[2024-04-13 10:06:36] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/d6/f7/d4bdc022102e7ddda790244606f4a515b86f97e1edacc6d2238567859fc0/pyglove-0.4.5.dev20240412.tar.gz
+[2024-04-13 10:06:36] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2024-04-13 10:06:36] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.4.5.dev20240411.tar.gz tmp/pyglove-0.4.5.dev20240412.tar.gz --markdown 20240413/p/pyglove/0.4.5.dev20240411-0.4.5.dev20240412/README.md --exclude *.pyd
+[2024-04-13 10:06:36] INFO root fetch - processPackages [mtutils]: Downloading https://files.pythonhosted.org/packages/09/0b/f97ea00148e58ba821750da9233f98bde684788e7383c8b5006b35858f3e/mtutils-2.1.9.tar.gz
+[2024-04-13 10:06:36] INFO root fetch - processPackages [mtutils]: executing diffoscope
+[2024-04-13 10:06:36] INFO root fetch - processPackages [mtutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtutils-2.1.87.tar.gz tmp/mtutils-2.1.9.tar.gz --markdown 20240413/m/mtutils/2.1.87-2.1.9/README.md --exclude *.pyd
+[2024-04-13 10:06:37] INFO root fetch - processPackages [mtutils]: Remove: archive file [/home/abi/fetcher/tmp/mtutils-2.1.87.tar.gz]
+[2024-04-13 10:06:37] INFO root fetch - processPackages [mtutils]: Remove: archive file [/home/abi/fetcher/tmp/mtutils-2.1.9.tar.gz]
+[2024-04-13 10:06:37] INFO root fetch - main [MainThread]: End processing [mtutils]: success
+[2024-04-13 10:06:37] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240411.tar.gz]
+[2024-04-13 10:06:37] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240412.tar.gz]
+[2024-04-13 10:06:37] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2024-04-13 10:06:37] INFO root fetch - main [MainThread]: Store serial: [22750362]
