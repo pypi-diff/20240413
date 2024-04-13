@@ -8612,3 +8612,15 @@
 [2024-04-13 07:54:59] INFO root fetch - processPackages [pulumi-dnsimple]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_dnsimple-3.5.0a1712986309.tar.gz]
 [2024-04-13 07:54:59] INFO root fetch - main [MainThread]: End processing [pulumi-dnsimple]: success
 [2024-04-13 07:54:59] INFO root fetch - main [MainThread]: Store serial: [22749715]
+[2024-04-13 07:57:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749715]
+[2024-04-13 07:57:08] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 07:57:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ykenan-file
+[2024-04-13 07:57:08] INFO root fetch - processPackages [ykenan-file]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-13 07:57:08] INFO root fetch - processPackages [ykenan-file]: Downloading https://files.pythonhosted.org/packages/c0/a8/ce50aecf65eac4016dddd3dd3a5201c0660d2f745cc731d2220dd750054e/ykenan_file-0.2.3.tar.gz
+[2024-04-13 07:57:08] INFO root fetch - processPackages [ykenan-file]: Downloading https://files.pythonhosted.org/packages/08/e1/2d8f7cdef3da5d775b3ffb47486f9d9ac6e43c150374474f46c220d4a9aa/ykenan_file-0.2.4.tar.gz
+[2024-04-13 07:57:08] INFO root fetch - processPackages [ykenan-file]: executing diffoscope
+[2024-04-13 07:57:08] INFO root fetch - processPackages [ykenan-file]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ykenan_file-0.2.3.tar.gz tmp/ykenan_file-0.2.4.tar.gz --markdown 20240413/y/ykenan-file/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-13 07:57:09] INFO root fetch - processPackages [ykenan-file]: Remove: archive file [/home/abi/fetcher/tmp/ykenan_file-0.2.3.tar.gz]
+[2024-04-13 07:57:09] INFO root fetch - processPackages [ykenan-file]: Remove: archive file [/home/abi/fetcher/tmp/ykenan_file-0.2.4.tar.gz]
+[2024-04-13 07:57:09] INFO root fetch - main [MainThread]: End processing [ykenan-file]: success
+[2024-04-13 07:57:09] INFO root fetch - main [MainThread]: Store serial: [22749718]
