@@ -8657,3 +8657,51 @@
 [2024-04-13 08:01:30] INFO root fetch - processPackages [clfutils4r]: Remove: archive file [/home/abi/fetcher/tmp/clfutils4r-1.0.0.tar.gz]
 [2024-04-13 08:01:30] INFO root fetch - main [MainThread]: End processing [clfutils4r]: success
 [2024-04-13 08:01:30] INFO root fetch - main [MainThread]: Store serial: [22749728]
+[2024-04-13 08:03:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749728]
+[2024-04-13 08:03:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 08:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-fastly
+[2024-04-13 08:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-github
+[2024-04-13 08:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-http
+[2024-04-13 08:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-digitalocean
+[2024-04-13 08:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-datadog
+[2024-04-13 08:03:40] INFO root fetch - processPackages [pulumi-github]: New version: [6.3.0a1712727791] Old Version: [6.3.0a1712468118]
+[2024-04-13 08:03:40] INFO root fetch - processPackages [pulumi-http]: New version: [0.0.4a1712986868] Old Version: [0.0.4a1712727917]
+[2024-04-13 08:03:40] INFO root fetch - processPackages [pulumi-digitalocean]: New version: [4.9.0a1637244514] Old Version: [4.9.0]
+[2024-04-13 08:03:40] INFO root fetch - processPackages [pulumi-datadog]: New version: [4.9.0a1653604828] Old Version: [4.9.0a1650908051]
+[2024-04-13 08:03:40] INFO root fetch - processPackages [pulumi-fastly]: New version: [8.6.0a1712986611] Old Version: [8.6.0a1712727400]
+[2024-04-13 08:03:40] INFO root fetch - processPackages [pulumi-github]: Downloading https://files.pythonhosted.org/packages/30/c6/65bdf016c3981dfa66f2d8e2df1ce6b4e019b9b7d47cf82dfd98d41f4a08/pulumi_github-6.3.0a1712468118.tar.gz
+[2024-04-13 08:03:40] INFO root fetch - processPackages [pulumi-http]: Downloading https://files.pythonhosted.org/packages/36/ad/d5a7a842f453f1fb5ffb1b3fe00abeeb3a638a7a864247b6b682278c86d9/pulumi_http-0.0.4a1712727917.tar.gz
+[2024-04-13 08:03:41] INFO root fetch - processPackages [pulumi-fastly]: Downloading https://files.pythonhosted.org/packages/02/01/9d32d3271ec2aada2f5eb37d8f9397828164ed77b7aa77b8ce9e6394c3bc/pulumi_fastly-8.6.0a1712727400.tar.gz
+[2024-04-13 08:03:41] INFO root fetch - processPackages [pulumi-digitalocean]: Downloading https://files.pythonhosted.org/packages/27/fe/88f79d9daf961f609409c5330a59d5bf5ff3effa841b5317256e773c92dd/pulumi_digitalocean-4.9.0.tar.gz
+[2024-04-13 08:03:41] INFO root fetch - processPackages [pulumi-datadog]: Downloading https://files.pythonhosted.org/packages/d8/b5/8991a5e2174de51c32d71e18a0d3eb5ac2f6bb5fe9f15ca8f908cee6e214/pulumi_datadog-4.9.0a1650908051.tar.gz
+[2024-04-13 08:03:41] INFO root fetch - processPackages [pulumi-github]: Downloading https://files.pythonhosted.org/packages/83/c1/2f48dc3afd0f121cce183db9285337cebe6ef74e8ddf3092b304fd8d12b2/pulumi_github-6.3.0a1712727791.tar.gz
+[2024-04-13 08:03:41] INFO root fetch - processPackages [pulumi-http]: Downloading https://files.pythonhosted.org/packages/7e/58/2909bbe1ab07589bf03a9e93d00780a7e129113457816ff5a70dcc9460c7/pulumi_http-0.0.4a1712986868.tar.gz
+[2024-04-13 08:03:41] INFO root fetch - processPackages [pulumi-fastly]: Downloading https://files.pythonhosted.org/packages/ab/67/0facbae0fc91adb8c458aeb693093866e575eb003f4c8cc1ee778c425dc8/pulumi_fastly-8.6.0a1712986611.tar.gz
+[2024-04-13 08:03:41] INFO root fetch - processPackages [pulumi-github]: executing diffoscope
+[2024-04-13 08:03:41] INFO root fetch - processPackages [pulumi-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_github-6.3.0a1712468118.tar.gz tmp/pulumi_github-6.3.0a1712727791.tar.gz --markdown 20240413/p/pulumi-github/6.3.0a1712468118-6.3.0a1712727791/README.md --exclude *.pyd
+[2024-04-13 08:03:41] INFO root fetch - processPackages [pulumi-digitalocean]: Downloading https://files.pythonhosted.org/packages/aa/e4/0dfa539667fb3462b4c16072050ebf8e1a80d862ac88c8b00ae29b019195/pulumi_digitalocean-4.9.0a1637244514.tar.gz
+[2024-04-13 08:03:41] INFO root fetch - processPackages [pulumi-http]: executing diffoscope
+[2024-04-13 08:03:41] INFO root fetch - processPackages [pulumi-http]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_http-0.0.4a1712727917.tar.gz tmp/pulumi_http-0.0.4a1712986868.tar.gz --markdown 20240413/p/pulumi-http/0.0.4a1712727917-0.0.4a1712986868/README.md --exclude *.pyd
+[2024-04-13 08:03:41] INFO root fetch - processPackages [pulumi-datadog]: Downloading https://files.pythonhosted.org/packages/de/b3/aee4697d07beb69799f35031c032637a1c998c8ba8a18ace02fb30a3011f/pulumi_datadog-4.9.0a1653604828.tar.gz
+[2024-04-13 08:03:41] INFO root fetch - processPackages [pulumi-fastly]: executing diffoscope
+[2024-04-13 08:03:41] INFO root fetch - processPackages [pulumi-fastly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_fastly-8.6.0a1712727400.tar.gz tmp/pulumi_fastly-8.6.0a1712986611.tar.gz --markdown 20240413/p/pulumi-fastly/8.6.0a1712727400-8.6.0a1712986611/README.md --exclude *.pyd
+[2024-04-13 08:03:41] INFO root fetch - processPackages [pulumi-digitalocean]: executing diffoscope
+[2024-04-13 08:03:41] INFO root fetch - processPackages [pulumi-digitalocean]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_digitalocean-4.9.0.tar.gz tmp/pulumi_digitalocean-4.9.0a1637244514.tar.gz --markdown 20240413/p/pulumi-digitalocean/4.9.0-4.9.0a1637244514/README.md --exclude *.pyd
+[2024-04-13 08:03:41] INFO root fetch - processPackages [pulumi-datadog]: executing diffoscope
+[2024-04-13 08:03:41] INFO root fetch - processPackages [pulumi-datadog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_datadog-4.9.0a1650908051.tar.gz tmp/pulumi_datadog-4.9.0a1653604828.tar.gz --markdown 20240413/p/pulumi-datadog/4.9.0a1650908051-4.9.0a1653604828/README.md --exclude *.pyd
+[2024-04-13 08:03:42] INFO root fetch - processPackages [pulumi-http]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_http-0.0.4a1712727917.tar.gz]
+[2024-04-13 08:03:42] INFO root fetch - processPackages [pulumi-http]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_http-0.0.4a1712986868.tar.gz]
+[2024-04-13 08:03:42] INFO root fetch - main [MainThread]: End processing [pulumi-http]: success
+[2024-04-13 08:03:42] INFO root fetch - processPackages [pulumi-fastly]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_fastly-8.6.0a1712727400.tar.gz]
+[2024-04-13 08:03:42] INFO root fetch - processPackages [pulumi-fastly]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_fastly-8.6.0a1712986611.tar.gz]
+[2024-04-13 08:03:42] INFO root fetch - main [MainThread]: End processing [pulumi-fastly]: success
+[2024-04-13 08:03:42] INFO root fetch - processPackages [pulumi-github]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_github-6.3.0a1712468118.tar.gz]
+[2024-04-13 08:03:42] INFO root fetch - processPackages [pulumi-github]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_github-6.3.0a1712727791.tar.gz]
+[2024-04-13 08:03:42] INFO root fetch - main [MainThread]: End processing [pulumi-github]: success
+[2024-04-13 08:03:42] INFO root fetch - processPackages [pulumi-digitalocean]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_digitalocean-4.9.0.tar.gz]
+[2024-04-13 08:03:42] INFO root fetch - processPackages [pulumi-digitalocean]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_digitalocean-4.9.0a1637244514.tar.gz]
+[2024-04-13 08:03:42] INFO root fetch - main [MainThread]: End processing [pulumi-digitalocean]: success
+[2024-04-13 08:03:44] INFO root fetch - processPackages [pulumi-datadog]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_datadog-4.9.0a1650908051.tar.gz]
+[2024-04-13 08:03:44] INFO root fetch - processPackages [pulumi-datadog]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_datadog-4.9.0a1653604828.tar.gz]
+[2024-04-13 08:03:44] INFO root fetch - main [MainThread]: End processing [pulumi-datadog]: success
+[2024-04-13 08:03:44] INFO root fetch - main [MainThread]: Store serial: [22749743]
