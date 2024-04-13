@@ -9372,3 +9372,24 @@
 [2024-04-13 08:45:27] INFO root fetch - processPackages [PyQt-Fluent-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/PyQt-Fluent-Widgets-1.5.5.tar.gz]
 [2024-04-13 08:45:27] INFO root fetch - main [MainThread]: End processing [PyQt-Fluent-Widgets]: success
 [2024-04-13 08:45:27] INFO root fetch - main [MainThread]: Store serial: [22749964]
+[2024-04-13 08:47:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749964]
+[2024-04-13 08:47:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 08:47:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gma
+[2024-04-13 08:47:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pgeocode
+[2024-04-13 08:47:35] INFO root fetch - processPackages [pgeocode]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-04-13 08:47:35] INFO root fetch - processPackages [gma]: New version: [2.0.8] Old Version: [2.0.7]
+[2024-04-13 08:47:36] INFO root fetch - processPackages [gma]: Downloading https://files.pythonhosted.org/packages/a7/b9/0a5f075d85c21e67cabfd931bd65d46d327897ae98086f311043ad07e1fa/gma-2.0.7-cp39-cp39-win_amd64.whl
+[2024-04-13 08:47:36] INFO root fetch - processPackages [pgeocode]: Downloading https://files.pythonhosted.org/packages/d3/d9/3d2688b81c49f4355069f6b143dde4fae638e66046e7105e8e6a5e2b5dac/pgeocode-0.4.1.tar.gz
+[2024-04-13 08:47:36] INFO root fetch - processPackages [pgeocode]: Downloading https://files.pythonhosted.org/packages/91/27/0de1f3890a4b8c1a7ca0bd913251c1f414bf49d8d5d85482a8b95ba6c738/pgeocode-0.5.0.tar.gz
+[2024-04-13 08:47:36] INFO root fetch - processPackages [pgeocode]: executing diffoscope
+[2024-04-13 08:47:36] INFO root fetch - processPackages [pgeocode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgeocode-0.4.1.tar.gz tmp/pgeocode-0.5.0.tar.gz --markdown 20240413/p/pgeocode/0.4.1-0.5.0/README.md --exclude *.pyd
+[2024-04-13 08:47:36] INFO root fetch - processPackages [gma]: Downloading https://files.pythonhosted.org/packages/28/79/686f3aaf5d3465981fa3ab6dd199ef43afbd61e22464db5a8b6aba9c8a02/gma-2.0.8-cp39-cp39-win_amd64.whl
+[2024-04-13 08:47:37] INFO root fetch - processPackages [pgeocode]: Remove: archive file [/home/abi/fetcher/tmp/pgeocode-0.4.1.tar.gz]
+[2024-04-13 08:47:37] INFO root fetch - processPackages [pgeocode]: Remove: archive file [/home/abi/fetcher/tmp/pgeocode-0.5.0.tar.gz]
+[2024-04-13 08:47:37] INFO root fetch - main [MainThread]: End processing [pgeocode]: success
+[2024-04-13 08:47:37] INFO root fetch - processPackages [gma]: executing diffoscope
+[2024-04-13 08:47:37] INFO root fetch - processPackages [gma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gma-2.0.7-cp39-cp39-win_amd64.whl.zip tmp/gma-2.0.8-cp39-cp39-win_amd64.whl.zip --markdown 20240413/g/gma/2.0.7-2.0.8/README.md --exclude *.pyd
+[2024-04-13 08:47:39] INFO root fetch - processPackages [gma]: Remove: archive file [/home/abi/fetcher/tmp/gma-2.0.7-cp39-cp39-win_amd64.whl.zip]
+[2024-04-13 08:47:39] INFO root fetch - processPackages [gma]: Remove: archive file [/home/abi/fetcher/tmp/gma-2.0.8-cp39-cp39-win_amd64.whl.zip]
+[2024-04-13 08:47:39] INFO root fetch - main [MainThread]: End processing [gma]: success
+[2024-04-13 08:47:39] INFO root fetch - main [MainThread]: Store serial: [22749973]
