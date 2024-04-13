@@ -1773,3 +1773,36 @@
 [2024-04-13 02:01:26] INFO root fetch - processPackages [stim]: Remove: archive file [/home/abi/fetcher/tmp/stim-1.9.0.tar.gz]
 [2024-04-13 02:01:26] INFO root fetch - main [MainThread]: End processing [stim]: success
 [2024-04-13 02:01:26] INFO root fetch - main [MainThread]: Store serial: [22747076]
+[2024-04-13 02:03:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22747076]
+[2024-04-13 02:03:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 02:03:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stim
+[2024-04-13 02:03:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ec-portal-gun
+[2024-04-13 02:03:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stimcirq
+[2024-04-13 02:03:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sinter
+[2024-04-13 02:03:36] INFO root fetch - processPackages [stimcirq]: New version: [1.9.dev1657429876] Old Version: [1.9.dev1656756326]
+[2024-04-13 02:03:36] INFO root fetch - processPackages [stim]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-04-13 02:03:36] INFO root fetch - processPackages [sinter]: New version: [1.9.dev1657429876] Old Version: [1.9.dev1656756326]
+[2024-04-13 02:03:36] WARNING root fetch - processPackages [ec-portal-gun]: Skipping, unable to determine old version
+[2024-04-13 02:03:36] INFO root fetch - main [MainThread]: End processing [ec-portal-gun] error
+[2024-04-13 02:03:36] INFO root fetch - processPackages [stimcirq]: Downloading https://files.pythonhosted.org/packages/ec/fe/38fc995ba6685f64103f3cd62faa49cd869af074b36e401597d9d2b0278d/stimcirq-1.9.dev1656756326.tar.gz
+[2024-04-13 02:03:36] INFO root fetch - processPackages [stim]: Downloading https://files.pythonhosted.org/packages/a7/d7/36196ad48b77efebe7d5d4e198ad0a9cac4f5acb5e0a8a7035133184a641/stim-1.8.0.tar.gz
+[2024-04-13 02:03:36] INFO root fetch - processPackages [sinter]: Downloading https://files.pythonhosted.org/packages/df/c6/cb2622852c76647e7b6ad9a7a7e10f4e2cac9ecdfd523ac68df0bfc130af/sinter-1.9.dev1656756326.tar.gz
+[2024-04-13 02:03:36] INFO root fetch - processPackages [stimcirq]: Downloading https://files.pythonhosted.org/packages/a2/fe/5fa281db7d139ef59a3c4c47c96940bf9f3fab0d0017ea452412c0cfc8d3/stimcirq-1.9.dev1657429876.tar.gz
+[2024-04-13 02:03:36] INFO root fetch - processPackages [stim]: Downloading https://files.pythonhosted.org/packages/d4/c3/eba3f24b52d2c1ed2e7fd5490f31c7cafa4a0a82b9282b1ffee94eee8a4c/stim-1.9.0.tar.gz
+[2024-04-13 02:03:36] INFO root fetch - processPackages [sinter]: Downloading https://files.pythonhosted.org/packages/fd/5e/bd22cf7318b95a6cb630aede242c37ca8e376f51d3c73522d4d3fafd60c3/sinter-1.9.dev1657429876.tar.gz
+[2024-04-13 02:03:37] INFO root fetch - processPackages [stimcirq]: executing diffoscope
+[2024-04-13 02:03:37] INFO root fetch - processPackages [stimcirq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stimcirq-1.9.dev1656756326.tar.gz tmp/stimcirq-1.9.dev1657429876.tar.gz --markdown 20240413/s/stimcirq/1.9.dev1656756326-1.9.dev1657429876/README.md --exclude *.pyd
+[2024-04-13 02:03:37] INFO root fetch - processPackages [sinter]: executing diffoscope
+[2024-04-13 02:03:37] INFO root fetch - processPackages [sinter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sinter-1.9.dev1656756326.tar.gz tmp/sinter-1.9.dev1657429876.tar.gz --markdown 20240413/s/sinter/1.9.dev1656756326-1.9.dev1657429876/README.md --exclude *.pyd
+[2024-04-13 02:03:37] INFO root fetch - processPackages [stim]: executing diffoscope
+[2024-04-13 02:03:37] INFO root fetch - processPackages [stim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stim-1.8.0.tar.gz tmp/stim-1.9.0.tar.gz --markdown 20240413/s/stim/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-04-13 02:03:37] INFO root fetch - processPackages [stimcirq]: Remove: archive file [/home/abi/fetcher/tmp/stimcirq-1.9.dev1656756326.tar.gz]
+[2024-04-13 02:03:37] INFO root fetch - processPackages [stimcirq]: Remove: archive file [/home/abi/fetcher/tmp/stimcirq-1.9.dev1657429876.tar.gz]
+[2024-04-13 02:03:37] INFO root fetch - main [MainThread]: End processing [stimcirq]: success
+[2024-04-13 02:03:37] INFO root fetch - processPackages [sinter]: Remove: archive file [/home/abi/fetcher/tmp/sinter-1.9.dev1656756326.tar.gz]
+[2024-04-13 02:03:37] INFO root fetch - processPackages [sinter]: Remove: archive file [/home/abi/fetcher/tmp/sinter-1.9.dev1657429876.tar.gz]
+[2024-04-13 02:03:37] INFO root fetch - main [MainThread]: End processing [sinter]: success
+[2024-04-13 02:03:38] INFO root fetch - processPackages [stim]: Remove: archive file [/home/abi/fetcher/tmp/stim-1.8.0.tar.gz]
+[2024-04-13 02:03:38] INFO root fetch - processPackages [stim]: Remove: archive file [/home/abi/fetcher/tmp/stim-1.9.0.tar.gz]
+[2024-04-13 02:03:38] INFO root fetch - main [MainThread]: End processing [stim]: success
+[2024-04-13 02:03:38] INFO root fetch - main [MainThread]: Store serial: [22747118]
