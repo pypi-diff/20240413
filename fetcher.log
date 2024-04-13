@@ -15568,3 +15568,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:56:48] INFO root fetch - processPackages [furtheredge]: Remove: archive file [/home/abi/fetcher/tmp/furtheredge-0.0.4.tar.gz]
 [2024-04-13 16:56:48] INFO root fetch - main [MainThread]: End processing [furtheredge]: success
 [2024-04-13 16:56:48] INFO root fetch - main [MainThread]: Store serial: [22752681]
+[2024-04-13 16:58:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752681]
+[2024-04-13 16:58:56] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 16:58:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: VASP2KP
+[2024-04-13 16:58:56] INFO root fetch - processPackages [VASP2KP]: New version: [1.1.1] Old Version: [1.0.2]
+[2024-04-13 16:58:56] INFO root fetch - processPackages [VASP2KP]: Downloading https://files.pythonhosted.org/packages/ea/67/ee5c462f6b7fc965538bc64c0ffa582f851f01005528740a9b11da21a6d3/VASP2KP-1.0.2.tar.gz
+[2024-04-13 16:58:57] INFO root fetch - processPackages [VASP2KP]: Downloading https://files.pythonhosted.org/packages/f0/bb/6acef252e9d1f7783cf97da9345d0c1dd9b93a5fe2ae3636cfe373213753/VASP2KP-1.1.1.tar.gz
+[2024-04-13 16:58:57] INFO root fetch - processPackages [VASP2KP]: executing diffoscope
+[2024-04-13 16:58:57] INFO root fetch - processPackages [VASP2KP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VASP2KP-1.0.2.tar.gz tmp/VASP2KP-1.1.1.tar.gz --markdown 20240413/V/VASP2KP/1.0.2-1.1.1/README.md --exclude *.pyd
+[2024-04-13 16:58:58] INFO root fetch - processPackages [VASP2KP]: Remove: archive file [/home/abi/fetcher/tmp/VASP2KP-1.0.2.tar.gz]
+[2024-04-13 16:58:58] INFO root fetch - processPackages [VASP2KP]: Remove: archive file [/home/abi/fetcher/tmp/VASP2KP-1.1.1.tar.gz]
+[2024-04-13 16:58:58] INFO root fetch - main [MainThread]: End processing [VASP2KP]: success
+[2024-04-13 16:58:58] INFO root fetch - main [MainThread]: Store serial: [22752685]
