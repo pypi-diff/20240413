@@ -11631,3 +11631,21 @@
 [2024-04-13 11:31:58] INFO root fetch - processPackages [Agently]: Remove: archive file [/home/abi/fetcher/tmp/Agently-3.3.0.0a6.tar.gz]
 [2024-04-13 11:31:58] INFO root fetch - main [MainThread]: End processing [Agently]: success
 [2024-04-13 11:31:58] INFO root fetch - main [MainThread]: Store serial: [22750896]
+[2024-04-13 11:34:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750896]
+[2024-04-13 11:34:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 11:34:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: amazon-sagemaker-sql-execution
+[2024-04-13 11:34:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jsonapi-python
+[2024-04-13 11:34:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: istr-python
+[2024-04-13 11:34:06] INFO root fetch - processPackages [amazon-sagemaker-sql-execution]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-13 11:34:06] WARNING root fetch - processPackages [istr-python]: Skipping, unable to determine old version
+[2024-04-13 11:34:06] INFO root fetch - main [MainThread]: End processing [istr-python] error
+[2024-04-13 11:34:07] INFO root fetch - processPackages [amazon-sagemaker-sql-execution]: Downloading https://files.pythonhosted.org/packages/44/52/3fc1cfb41c730cc9c3e6285282ff94b77a856a0901567d0d9cf18eff31b2/amazon-sagemaker-sql-execution-0.1.3.tar.gz
+[2024-04-13 11:34:07] WARNING root fetch - processPackages [jsonapi-python]: Skipping, unable to determine old version
+[2024-04-13 11:34:07] INFO root fetch - main [MainThread]: End processing [jsonapi-python] error
+[2024-04-13 11:34:07] INFO root fetch - processPackages [amazon-sagemaker-sql-execution]: Downloading https://files.pythonhosted.org/packages/f4/b0/8ff8259358187b2e57a6961a3fa526e85f5fa320a9a86e1fcd6d217cdd5d/amazon_sagemaker_sql_execution-0.1.4.tar.gz
+[2024-04-13 11:34:07] INFO root fetch - processPackages [amazon-sagemaker-sql-execution]: executing diffoscope
+[2024-04-13 11:34:07] INFO root fetch - processPackages [amazon-sagemaker-sql-execution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amazon-sagemaker-sql-execution-0.1.3.tar.gz tmp/amazon_sagemaker_sql_execution-0.1.4.tar.gz --markdown 20240413/a/amazon-sagemaker-sql-execution/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-13 11:34:08] INFO root fetch - processPackages [amazon-sagemaker-sql-execution]: Remove: archive file [/home/abi/fetcher/tmp/amazon-sagemaker-sql-execution-0.1.3.tar.gz]
+[2024-04-13 11:34:08] INFO root fetch - processPackages [amazon-sagemaker-sql-execution]: Remove: archive file [/home/abi/fetcher/tmp/amazon_sagemaker_sql_execution-0.1.4.tar.gz]
+[2024-04-13 11:34:08] INFO root fetch - main [MainThread]: End processing [amazon-sagemaker-sql-execution]: success
+[2024-04-13 11:34:08] INFO root fetch - main [MainThread]: Store serial: [22750907]
