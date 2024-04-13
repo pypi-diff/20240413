@@ -19877,3 +19877,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 22:33:48] INFO root fetch - processPackages [shuttleai]: Remove: archive file [/home/abi/fetcher/tmp/shuttleai-3.9.0.tar.gz]
 [2024-04-13 22:33:48] INFO root fetch - main [MainThread]: End processing [shuttleai]: success
 [2024-04-13 22:33:48] INFO root fetch - main [MainThread]: Store serial: [22754589]
+[2024-04-13 22:35:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754589]
+[2024-04-13 22:35:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 22:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiogram-newsletter
+[2024-04-13 22:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-firebase-filefield
+[2024-04-13 22:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sembansurga
+[2024-04-13 22:35:57] INFO root fetch - processPackages [sembansurga]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-13 22:35:57] WARNING root fetch - processPackages [django-firebase-filefield]: Skipping, unable to determine old version
+[2024-04-13 22:35:57] INFO root fetch - main [MainThread]: End processing [django-firebase-filefield] error
+[2024-04-13 22:35:57] INFO root fetch - processPackages [aiogram-newsletter]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 22:35:57] INFO root fetch - processPackages [sembansurga]: Downloading https://files.pythonhosted.org/packages/65/ef/3bf568d31003344c02460bd2e150ab0efdd8199514160776f4a34f12196c/sembansurga-1.0.4.tar.gz
+[2024-04-13 22:35:57] INFO root fetch - processPackages [aiogram-newsletter]: Downloading https://files.pythonhosted.org/packages/27/79/4fb670c1974e5ab892d1dd4bae30cd55d66bb5828c50e0405ee094dd574f/aiogram-newsletter-0.0.8.tar.gz
+[2024-04-13 22:35:58] INFO root fetch - processPackages [sembansurga]: Downloading https://files.pythonhosted.org/packages/e0/58/b04adf5c23d495ea9745aa743d28565b223c5e82d58dd492f311b9e060b5/sembansurga-1.0.5.tar.gz
+[2024-04-13 22:35:58] INFO root fetch - processPackages [aiogram-newsletter]: Downloading https://files.pythonhosted.org/packages/c9/8d/464305a86b6076ab74dbb6473e547a548dd6e86119346d7055dbd671cfe0/aiogram-newsletter-0.0.9.tar.gz
+[2024-04-13 22:35:58] INFO root fetch - processPackages [aiogram-newsletter]: executing diffoscope
+[2024-04-13 22:35:58] INFO root fetch - processPackages [aiogram-newsletter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-newsletter-0.0.8.tar.gz tmp/aiogram-newsletter-0.0.9.tar.gz --markdown 20240413/a/aiogram-newsletter/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 22:35:58] INFO root fetch - processPackages [sembansurga]: executing diffoscope
+[2024-04-13 22:35:58] INFO root fetch - processPackages [sembansurga]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sembansurga-1.0.4.tar.gz tmp/sembansurga-1.0.5.tar.gz --markdown 20240413/s/sembansurga/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-04-13 22:35:58] INFO root fetch - processPackages [aiogram-newsletter]: Remove: archive file [/home/abi/fetcher/tmp/aiogram-newsletter-0.0.8.tar.gz]
+[2024-04-13 22:35:58] INFO root fetch - processPackages [aiogram-newsletter]: Remove: archive file [/home/abi/fetcher/tmp/aiogram-newsletter-0.0.9.tar.gz]
+[2024-04-13 22:35:58] INFO root fetch - main [MainThread]: End processing [aiogram-newsletter]: success
+[2024-04-13 22:35:59] INFO root fetch - processPackages [sembansurga]: Remove: archive file [/home/abi/fetcher/tmp/sembansurga-1.0.4.tar.gz]
+[2024-04-13 22:35:59] INFO root fetch - processPackages [sembansurga]: Remove: archive file [/home/abi/fetcher/tmp/sembansurga-1.0.5.tar.gz]
+[2024-04-13 22:35:59] INFO root fetch - main [MainThread]: End processing [sembansurga]: success
+[2024-04-13 22:35:59] INFO root fetch - main [MainThread]: Store serial: [22754599]
