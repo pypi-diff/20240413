@@ -7393,3 +7393,33 @@
 [2024-04-13 05:45:01] INFO root fetch - processPackages [xiaogpt]: Remove: archive file [/home/abi/fetcher/tmp/xiaogpt-2.32.tar.gz]
 [2024-04-13 05:45:01] INFO root fetch - main [MainThread]: End processing [xiaogpt]: success
 [2024-04-13 05:45:01] INFO root fetch - main [MainThread]: Store serial: [22749216]
+[2024-04-13 05:47:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749216]
+[2024-04-13 05:47:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 05:47:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: laorm
+[2024-04-13 05:47:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tiffx
+[2024-04-13 05:47:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mojo-interop
+[2024-04-13 05:47:09] INFO root fetch - processPackages [laorm]: New version: [2.3.0] Old Version: [2.2.0]
+[2024-04-13 05:47:09] INFO root fetch - processPackages [tiffx]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 05:47:09] INFO root fetch - processPackages [laorm]: Downloading https://files.pythonhosted.org/packages/6b/78/bd7b2fefd31b9722a2834f21054e31f9f67b36fcb70c58c4e28b5bcbc7ba/laorm-2.2.0.tar.gz
+[2024-04-13 05:47:09] INFO root fetch - processPackages [mojo-interop]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-04-13 05:47:09] INFO root fetch - processPackages [tiffx]: Downloading https://files.pythonhosted.org/packages/d0/41/cd6ca358ae8423ff10c5e39787ba1a2520952039cfaa19075363575d095e/tiffx-0.1.0.tar.gz
+[2024-04-13 05:47:09] INFO root fetch - processPackages [mojo-interop]: Downloading https://files.pythonhosted.org/packages/ab/a3/0b2448c3a7eaadce81ead97a0284b9eadde7fc11421c8a8ada144f88abe0/mojo_interop-1.3.8.tar.gz
+[2024-04-13 05:47:09] INFO root fetch - processPackages [laorm]: Downloading https://files.pythonhosted.org/packages/56/18/b9c3731a2a867a881688f6750c3895c109b9977a7e4769dddcc9cf6b884c/laorm-2.3.0.tar.gz
+[2024-04-13 05:47:09] INFO root fetch - processPackages [tiffx]: Downloading https://files.pythonhosted.org/packages/d4/51/936fc1e38c251e8c5e9d7529797873cbcc7324ccd041f2e2589b8b60a15e/tiffx-0.1.1.tar.gz
+[2024-04-13 05:47:10] INFO root fetch - processPackages [laorm]: executing diffoscope
+[2024-04-13 05:47:10] INFO root fetch - processPackages [laorm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/laorm-2.2.0.tar.gz tmp/laorm-2.3.0.tar.gz --markdown 20240413/l/laorm/2.2.0-2.3.0/README.md --exclude *.pyd
+[2024-04-13 05:47:10] INFO root fetch - processPackages [tiffx]: executing diffoscope
+[2024-04-13 05:47:10] INFO root fetch - processPackages [tiffx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiffx-0.1.0.tar.gz tmp/tiffx-0.1.1.tar.gz --markdown 20240413/t/tiffx/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 05:47:10] INFO root fetch - processPackages [mojo-interop]: Downloading https://files.pythonhosted.org/packages/87/86/ce6cbddd16154ffb5e383dbb481e623cb803fa9711c753daaa0ee1b22cef/mojo_interop-1.3.9.tar.gz
+[2024-04-13 05:47:10] INFO root fetch - processPackages [mojo-interop]: executing diffoscope
+[2024-04-13 05:47:10] INFO root fetch - processPackages [mojo-interop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_interop-1.3.8.tar.gz tmp/mojo_interop-1.3.9.tar.gz --markdown 20240413/m/mojo-interop/1.3.8-1.3.9/README.md --exclude *.pyd
+[2024-04-13 05:47:10] INFO root fetch - processPackages [laorm]: Remove: archive file [/home/abi/fetcher/tmp/laorm-2.2.0.tar.gz]
+[2024-04-13 05:47:10] INFO root fetch - processPackages [laorm]: Remove: archive file [/home/abi/fetcher/tmp/laorm-2.3.0.tar.gz]
+[2024-04-13 05:47:10] INFO root fetch - main [MainThread]: End processing [laorm]: success
+[2024-04-13 05:47:10] INFO root fetch - processPackages [tiffx]: Remove: archive file [/home/abi/fetcher/tmp/tiffx-0.1.0.tar.gz]
+[2024-04-13 05:47:10] INFO root fetch - processPackages [tiffx]: Remove: archive file [/home/abi/fetcher/tmp/tiffx-0.1.1.tar.gz]
+[2024-04-13 05:47:10] INFO root fetch - main [MainThread]: End processing [tiffx]: success
+[2024-04-13 05:47:12] INFO root fetch - processPackages [mojo-interop]: Remove: archive file [/home/abi/fetcher/tmp/mojo_interop-1.3.8.tar.gz]
+[2024-04-13 05:47:12] INFO root fetch - processPackages [mojo-interop]: Remove: archive file [/home/abi/fetcher/tmp/mojo_interop-1.3.9.tar.gz]
+[2024-04-13 05:47:12] INFO root fetch - main [MainThread]: End processing [mojo-interop]: success
+[2024-04-13 05:47:12] INFO root fetch - main [MainThread]: Store serial: [22749224]
