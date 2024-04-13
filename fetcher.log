@@ -9453,3 +9453,51 @@
 [2024-04-13 08:54:11] INFO root fetch - processPackages [pulumi-pagerduty]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_pagerduty-4.9.0a1709566454.tar.gz]
 [2024-04-13 08:54:11] INFO root fetch - main [MainThread]: End processing [pulumi-pagerduty]: success
 [2024-04-13 08:54:11] INFO root fetch - main [MainThread]: Store serial: [22749996]
+[2024-04-13 08:56:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749996]
+[2024-04-13 08:56:20] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 08:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chuangliang
+[2024-04-13 08:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sciveo
+[2024-04-13 08:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: litellm
+[2024-04-13 08:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-openstack
+[2024-04-13 08:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PySide2-Fluent-Widgets
+[2024-04-13 08:56:20] INFO root fetch - processPackages [chuangliang]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 08:56:20] INFO root fetch - processPackages [litellm]: New version: [1.9.dev0] Old Version: [1.9.5]
+[2024-04-13 08:56:20] INFO root fetch - processPackages [chuangliang]: Downloading https://files.pythonhosted.org/packages/af/79/a5db2fbc5ddab2e5abcf2123a7f1782688d53c409c4f06d88f618648684b/chuangliang-0.0.8.tar.gz
+[2024-04-13 08:56:20] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: New version: [1.5.5] Old Version: [1.5.4]
+[2024-04-13 08:56:20] INFO root fetch - processPackages [sciveo]: New version: [0.0.45] Old Version: [0.0.44]
+[2024-04-13 08:56:20] INFO root fetch - processPackages [pulumi-openstack]: New version: [3.9.0a1659603007] Old Version: [3.9.0a1654086724]
+[2024-04-13 08:56:20] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/38/f3/1cbeaf4074e7b284cd140263ff165948d8f4cc8f5dd72c89be43a0469387/litellm-1.9.5.tar.gz
+[2024-04-13 08:56:21] INFO root fetch - processPackages [sciveo]: Downloading https://files.pythonhosted.org/packages/91/5c/ad2f2153d0e438ccccaacf8e77a719539fcf938b50420d67ae82f49598e9/sciveo-0.0.44.tar.gz
+[2024-04-13 08:56:21] INFO root fetch - processPackages [chuangliang]: Downloading https://files.pythonhosted.org/packages/a3/8a/501568e72e49a8074d50ff13bcde70a6f46cf1738e5eeb1ea445a58a8934/chuangliang-0.0.9.tar.gz
+[2024-04-13 08:56:21] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/e7/0f/0ddbebdda0bfb88e8d0edb155d8a0b6508e114ae7792eaaa831598819cde/PySide2-Fluent-Widgets-1.5.4.tar.gz
+[2024-04-13 08:56:21] INFO root fetch - processPackages [pulumi-openstack]: Downloading https://files.pythonhosted.org/packages/bb/93/e4acd0fd6ccecb8338145c7929b4f11bbbcda13bd5c5523254ce8f946bd2/pulumi_openstack-3.9.0a1654086724.tar.gz
+[2024-04-13 08:56:21] INFO root fetch - processPackages [chuangliang]: executing diffoscope
+[2024-04-13 08:56:21] INFO root fetch - processPackages [chuangliang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chuangliang-0.0.8.tar.gz tmp/chuangliang-0.0.9.tar.gz --markdown 20240413/c/chuangliang/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 08:56:21] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/ad/6c/162b83e9cf68f5a94c30153e835414c3ee11c8602ffaacc9a032851dfa26/litellm-1.9.dev0.tar.gz
+[2024-04-13 08:56:21] INFO root fetch - processPackages [sciveo]: Downloading https://files.pythonhosted.org/packages/4a/bc/bb93c571912e8f344314a5b98037d2d86fa2f33f5da43d4149055159c2ee/sciveo-0.0.45.tar.gz
+[2024-04-13 08:56:21] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/c7/32/969cf78fb1ad70d55e1663399ca3395071e31569299f88f98049759c1b38/PySide2-Fluent-Widgets-1.5.5.tar.gz
+[2024-04-13 08:56:21] INFO root fetch - processPackages [litellm]: executing diffoscope
+[2024-04-13 08:56:21] INFO root fetch - processPackages [litellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litellm-1.9.5.tar.gz tmp/litellm-1.9.dev0.tar.gz --markdown 20240413/l/litellm/1.9.5-1.9.dev0/README.md --exclude *.pyd
+[2024-04-13 08:56:21] INFO root fetch - processPackages [sciveo]: executing diffoscope
+[2024-04-13 08:56:21] INFO root fetch - processPackages [sciveo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sciveo-0.0.44.tar.gz tmp/sciveo-0.0.45.tar.gz --markdown 20240413/s/sciveo/0.0.44-0.0.45/README.md --exclude *.pyd
+[2024-04-13 08:56:21] INFO root fetch - processPackages [pulumi-openstack]: Downloading https://files.pythonhosted.org/packages/cf/b9/1f6195a962138e9e532ea6da486cd8eab11855d8b0284a83af9bb290e254/pulumi_openstack-3.9.0a1659603007.tar.gz
+[2024-04-13 08:56:21] INFO root fetch - processPackages [pulumi-openstack]: executing diffoscope
+[2024-04-13 08:56:21] INFO root fetch - processPackages [pulumi-openstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_openstack-3.9.0a1654086724.tar.gz tmp/pulumi_openstack-3.9.0a1659603007.tar.gz --markdown 20240413/p/pulumi-openstack/3.9.0a1654086724-3.9.0a1659603007/README.md --exclude *.pyd
+[2024-04-13 08:56:21] INFO root fetch - processPackages [chuangliang]: Remove: archive file [/home/abi/fetcher/tmp/chuangliang-0.0.8.tar.gz]
+[2024-04-13 08:56:21] INFO root fetch - processPackages [chuangliang]: Remove: archive file [/home/abi/fetcher/tmp/chuangliang-0.0.9.tar.gz]
+[2024-04-13 08:56:21] INFO root fetch - main [MainThread]: End processing [chuangliang]: success
+[2024-04-13 08:56:21] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: executing diffoscope
+[2024-04-13 08:56:21] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySide2-Fluent-Widgets-1.5.4.tar.gz tmp/PySide2-Fluent-Widgets-1.5.5.tar.gz --markdown 20240413/P/PySide2-Fluent-Widgets/1.5.4-1.5.5/README.md --exclude *.pyd
+[2024-04-13 08:56:22] INFO root fetch - processPackages [sciveo]: Remove: archive file [/home/abi/fetcher/tmp/sciveo-0.0.44.tar.gz]
+[2024-04-13 08:56:22] INFO root fetch - processPackages [sciveo]: Remove: archive file [/home/abi/fetcher/tmp/sciveo-0.0.45.tar.gz]
+[2024-04-13 08:56:22] INFO root fetch - main [MainThread]: End processing [sciveo]: success
+[2024-04-13 08:56:22] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/PySide2-Fluent-Widgets-1.5.4.tar.gz]
+[2024-04-13 08:56:22] INFO root fetch - processPackages [PySide2-Fluent-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/PySide2-Fluent-Widgets-1.5.5.tar.gz]
+[2024-04-13 08:56:22] INFO root fetch - main [MainThread]: End processing [PySide2-Fluent-Widgets]: success
+[2024-04-13 08:56:22] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.5.tar.gz]
+[2024-04-13 08:56:22] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
+[2024-04-13 08:56:23] INFO root fetch - main [MainThread]: End processing [litellm]: success
+[2024-04-13 08:56:24] INFO root fetch - processPackages [pulumi-openstack]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_openstack-3.9.0a1654086724.tar.gz]
+[2024-04-13 08:56:24] INFO root fetch - processPackages [pulumi-openstack]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_openstack-3.9.0a1659603007.tar.gz]
+[2024-04-13 08:56:24] INFO root fetch - main [MainThread]: End processing [pulumi-openstack]: success
+[2024-04-13 08:56:24] INFO root fetch - main [MainThread]: Store serial: [22750010]
