@@ -14207,3 +14207,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 15:09:48] INFO root fetch - processPackages [sindapi]: Remove: archive file [/home/abi/fetcher/tmp/sindapi-0.0.8.tar.gz]
 [2024-04-13 15:09:48] INFO root fetch - main [MainThread]: End processing [sindapi]: success
 [2024-04-13 15:09:48] INFO root fetch - main [MainThread]: Store serial: [22751949]
+[2024-04-13 15:11:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751949]
+[2024-04-13 15:11:57] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 15:11:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-tbase-post-product
+[2024-04-13 15:11:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fbgemm-gpu-nightly-cpu
+[2024-04-13 15:11:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sem6
+[2024-04-13 15:11:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: betterproto-rust-codec
+[2024-04-13 15:11:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sherpa-onnx
+[2024-04-13 15:11:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cbpi4-BLEHydrom
+[2024-04-13 15:11:57] INFO root fetch - processPackages [betterproto-rust-codec]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 15:11:57] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2024.4.13] Old Version: [2024.4.12]
+[2024-04-13 15:11:57] WARNING root fetch - processPackages [sem6]: Skipping, unable to determine old version
+[2024-04-13 15:11:57] INFO root fetch - main [MainThread]: End processing [sem6] error
+[2024-04-13 15:11:57] INFO root fetch - processPackages [cbpi4-BLEHydrom]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-13 15:11:57] INFO root fetch - processPackages [django-tbase-post-product]: New version: [2024.4.1317130137] Old Version: [2024.3.1317103017]
+[2024-04-13 15:11:57] INFO root fetch - processPackages [sherpa-onnx]: New version: [1.9.21] Old Version: [1.9.20]
+[2024-04-13 15:11:57] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/6b/bb/df5f146ba6ae1f94a40cf97fcb555c792b663053ca463e20088188e86ca6/fbgemm_gpu_nightly_cpu-2024.4.12-cp39-cp39-manylinux2014_x86_64.whl
+[2024-04-13 15:11:57] INFO root fetch - processPackages [betterproto-rust-codec]: Downloading https://files.pythonhosted.org/packages/c3/48/0a2d147d24678bce0c8e65badaccbe51afcc0f6d315c816ffa1197e2b0ab/betterproto_rust_codec-0.1.0.tar.gz
+[2024-04-13 15:11:57] INFO root fetch - processPackages [django-tbase-post-product]: Downloading https://files.pythonhosted.org/packages/d1/ea/7b096a4209548d9d30c4b5524518a2d5ddb8d767dead8cd0eb57524b42ea/django_tbase_post_product-2024.3.1317103017.tar.gz
+[2024-04-13 15:11:57] INFO root fetch - processPackages [cbpi4-BLEHydrom]: Downloading https://files.pythonhosted.org/packages/37/6c/16c5c7350e43d44d8eb3aa1c231e8c4e27d091b60bf93a055c378ebff1b7/cbpi4-BLEHydrom-0.0.6.tar.gz
+[2024-04-13 15:11:57] INFO root fetch - processPackages [sherpa-onnx]: Downloading https://files.pythonhosted.org/packages/33/50/9a797575a9f074c96e1fa444105d72bd47605b25772bf270a06170df726f/sherpa-onnx-1.9.20.tar.gz
+[2024-04-13 15:11:58] INFO root fetch - processPackages [betterproto-rust-codec]: Downloading https://files.pythonhosted.org/packages/b4/3f/083cb1363bfd18f1e062d70215589448b8f4ec822acefbc1f64662c2471b/betterproto_rust_codec-0.1.1.tar.gz
+[2024-04-13 15:11:58] INFO root fetch - processPackages [cbpi4-BLEHydrom]: Downloading https://files.pythonhosted.org/packages/b5/cc/91082aba5088615bd9ac5d984e0fe71d4b9951abc890800df5b55b6192f2/cbpi4-BLEHydrom-0.0.7.tar.gz
+[2024-04-13 15:11:58] INFO root fetch - processPackages [sherpa-onnx]: Downloading https://files.pythonhosted.org/packages/76/8b/109214be64a2392e0e7ee686e641ccffc7a484b8944ce69353b303c79a56/sherpa_onnx-1.9.21-cp311-cp311-win_amd64.whl
+[2024-04-13 15:11:58] INFO root fetch - processPackages [django-tbase-post-product]: Downloading https://files.pythonhosted.org/packages/cc/5e/c61f8985e3130ae4752e86945337d810c75be7b92b42de6626ce3856cde9/django_tbase_post_product-2024.4.1317130137.tar.gz
+[2024-04-13 15:11:58] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/91/8a/2355db3e3fcb766de3e51adb9b79deb1a51edb8af21460aa1b2a1f2bd5d1/fbgemm_gpu_nightly_cpu-2024.4.13-cp39-cp39-manylinux2014_x86_64.whl
+[2024-04-13 15:11:58] WARNING root fetch - processPackages [sherpa-onnx]: Skipping package: exceeds size limit 16597991>=10485760
+[2024-04-13 15:11:58] INFO root fetch - main [MainThread]: End processing [sherpa-onnx] error
+[2024-04-13 15:11:58] INFO root fetch - processPackages [betterproto-rust-codec]: executing diffoscope
+[2024-04-13 15:11:58] INFO root fetch - processPackages [betterproto-rust-codec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betterproto_rust_codec-0.1.0.tar.gz tmp/betterproto_rust_codec-0.1.1.tar.gz --markdown 20240413/b/betterproto-rust-codec/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 15:11:58] INFO root fetch - processPackages [cbpi4-BLEHydrom]: executing diffoscope
+[2024-04-13 15:11:58] INFO root fetch - processPackages [cbpi4-BLEHydrom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbpi4-BLEHydrom-0.0.6.tar.gz tmp/cbpi4-BLEHydrom-0.0.7.tar.gz --markdown 20240413/c/cbpi4-BLEHydrom/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-13 15:11:58] INFO root fetch - processPackages [django-tbase-post-product]: executing diffoscope
+[2024-04-13 15:11:58] INFO root fetch - processPackages [django-tbase-post-product]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_tbase_post_product-2024.3.1317103017.tar.gz tmp/django_tbase_post_product-2024.4.1317130137.tar.gz --markdown 20240413/d/django-tbase-post-product/2024.3.1317103017-2024.4.1317130137/README.md --exclude *.pyd
+[2024-04-13 15:11:58] INFO root fetch - processPackages [cbpi4-BLEHydrom]: Remove: archive file [/home/abi/fetcher/tmp/cbpi4-BLEHydrom-0.0.6.tar.gz]
+[2024-04-13 15:11:58] INFO root fetch - processPackages [cbpi4-BLEHydrom]: Remove: archive file [/home/abi/fetcher/tmp/cbpi4-BLEHydrom-0.0.7.tar.gz]
+[2024-04-13 15:11:58] INFO root fetch - main [MainThread]: End processing [cbpi4-BLEHydrom]: success
+[2024-04-13 15:11:58] INFO root fetch - processPackages [django-tbase-post-product]: Remove: archive file [/home/abi/fetcher/tmp/django_tbase_post_product-2024.3.1317103017.tar.gz]
+[2024-04-13 15:11:58] INFO root fetch - processPackages [django-tbase-post-product]: Remove: archive file [/home/abi/fetcher/tmp/django_tbase_post_product-2024.4.1317130137.tar.gz]
+[2024-04-13 15:11:58] INFO root fetch - main [MainThread]: End processing [django-tbase-post-product]: success
+[2024-04-13 15:11:58] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2024-04-13 15:11:58] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2024.4.12-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2024.4.13-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20240413/f/fbgemm-gpu-nightly-cpu/2024.4.12-2024.4.13/README.md --exclude *.pyd
+[2024-04-13 15:11:59] INFO root fetch - processPackages [betterproto-rust-codec]: Remove: archive file [/home/abi/fetcher/tmp/betterproto_rust_codec-0.1.0.tar.gz]
+[2024-04-13 15:11:59] INFO root fetch - processPackages [betterproto-rust-codec]: Remove: archive file [/home/abi/fetcher/tmp/betterproto_rust_codec-0.1.1.tar.gz]
+[2024-04-13 15:11:59] INFO root fetch - main [MainThread]: End processing [betterproto-rust-codec]: success
+[2024-04-13 15:11:59] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.4.12-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-04-13 15:11:59] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.4.13-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-04-13 15:11:59] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2024-04-13 15:11:59] INFO root fetch - main [MainThread]: Store serial: [22751983]
