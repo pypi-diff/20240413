@@ -16970,3 +16970,72 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 18:56:25] INFO root fetch - processPackages [piwiPre]: Remove: archive file [/home/abi/fetcher/tmp/piwiPre-0.8.5.tar.gz]
 [2024-04-13 18:56:25] INFO root fetch - main [MainThread]: End processing [piwiPre]: success
 [2024-04-13 18:56:25] INFO root fetch - main [MainThread]: Store serial: [22753253]
+[2024-04-13 18:58:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753253]
+[2024-04-13 18:58:34] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-13 18:58:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-toolkit
+[2024-04-13 18:58:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: napari-threedee
+[2024-04-13 18:58:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: modal
+[2024-04-13 18:58:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mcaption
+[2024-04-13 18:58:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: modal-client
+[2024-04-13 18:58:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: piwiPre
+[2024-04-13 18:58:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: unscribe
+[2024-04-13 18:58:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ortfodb
+[2024-04-13 18:58:34] WARNING root fetch - processPackages [pytest-toolkit]: Skipping, unable to determine old version
+[2024-04-13 18:58:34] INFO root fetch - main [MainThread]: End processing [pytest-toolkit] error
+[2024-04-13 18:58:34] INFO root fetch - processPackages [piwiPre]: New version: [0.8.5] Old Version: [0.8.4]
+[2024-04-13 18:58:34] INFO root fetch - processPackages [ortfodb]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-13 18:58:34] INFO root fetch - processPackages [modal]: New version: [0.62.9] Old Version: [0.62.8]
+[2024-04-13 18:58:34] INFO root fetch - processPackages [modal-client]: New version: [0.62.9] Old Version: [0.62.8]
+[2024-04-13 18:58:34] INFO root fetch - processPackages [napari-threedee]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 18:58:34] INFO root fetch - processPackages [unscribe]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-13 18:58:34] INFO root fetch - processPackages [mcaption]: New version: [0.0.5] Old Version: [0.0.3]
+[2024-04-13 18:58:34] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/8a/dd/32da92c8c574400929f770cfc5c78136ebc7b566de71c8e84a423d0ee9cc/modal-0.62.8-py3-none-any.whl
+[2024-04-13 18:58:34] INFO root fetch - processPackages [piwiPre]: Downloading https://files.pythonhosted.org/packages/ad/fc/9cf4c3c37cd2895067bd93495f09c783b2a9d4650f43ea0506b7b50e1f67/piwiPre-0.8.4.tar.gz
+[2024-04-13 18:58:34] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/d0/c2/c05a679647fc54f88ed4f2453aec5ec1ea866c5ddaf1d85b52981f84c662/modal_client-0.62.8-py3-none-any.whl
+[2024-04-13 18:58:34] INFO root fetch - processPackages [ortfodb]: Downloading https://files.pythonhosted.org/packages/57/01/25c2d87ebcef2a8a4fb4e3da167bdf6ac73da9f0ca2f09a507313d05218a/ortfodb-0.3.1.tar.gz
+[2024-04-13 18:58:34] INFO root fetch - processPackages [napari-threedee]: Downloading https://files.pythonhosted.org/packages/3b/70/4e892251e0c8510fee507d7cbc0832629ed70e29e75ca555e1f782195d87/napari-threedee-0.0.8.tar.gz
+[2024-04-13 18:58:34] INFO root fetch - processPackages [mcaption]: Downloading https://files.pythonhosted.org/packages/ac/7a/f1e7f0361af8bb9b39a63c951cf9c2a148d772c547affa96f8fa5d85e63b/mcaption-0.0.3.tar.gz
+[2024-04-13 18:58:34] INFO root fetch - processPackages [unscribe]: Downloading https://files.pythonhosted.org/packages/63/c1/a4f5f45712ba1b54f68bc3e09c10359f17de6bb70008afda835b29f59bb2/unscribe-0.0.1.tar.gz
+[2024-04-13 18:58:34] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/08/2d/ba9d3e39c32f579d689b9f619a197109b7086b3f8e0764e5eed9501a303e/modal_client-0.62.9-py3-none-any.whl
+[2024-04-13 18:58:34] INFO root fetch - processPackages [piwiPre]: Downloading https://files.pythonhosted.org/packages/e7/59/c5cfd3133f61e11e92c5834c1ac8dde4bd134a5d7fb13d632d1efa6ef294/piwiPre-0.8.5.tar.gz
+[2024-04-13 18:58:34] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/c0/f7/8dd227328bcea0baf27836ce9f00c26e7e27195101883dc782c55387e12f/modal-0.62.9-py3-none-any.whl
+[2024-04-13 18:58:35] INFO root fetch - processPackages [modal-client]: executing diffoscope
+[2024-04-13 18:58:35] INFO root fetch - processPackages [modal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal_client-0.62.8-py3-none-any.whl.zip tmp/modal_client-0.62.9-py3-none-any.whl.zip --markdown 20240413/m/modal-client/0.62.8-0.62.9/README.md --exclude *.pyd
+[2024-04-13 18:58:35] INFO root fetch - processPackages [piwiPre]: executing diffoscope
+[2024-04-13 18:58:35] INFO root fetch - processPackages [piwiPre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piwiPre-0.8.4.tar.gz tmp/piwiPre-0.8.5.tar.gz --markdown 20240413/p/piwiPre/0.8.4-0.8.5/README.md --exclude *.pyd
+[2024-04-13 18:58:35] INFO root fetch - processPackages [modal]: executing diffoscope
+[2024-04-13 18:58:35] INFO root fetch - processPackages [modal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal-0.62.8-py3-none-any.whl.zip tmp/modal-0.62.9-py3-none-any.whl.zip --markdown 20240413/m/modal/0.62.8-0.62.9/README.md --exclude *.pyd
+[2024-04-13 18:58:35] INFO root fetch - processPackages [mcaption]: Downloading https://files.pythonhosted.org/packages/4c/81/c4f3f55657323c7618ecbab0fe41e4ec6d564165cb983357c4e9369a5e7d/mcaption-0.0.5.tar.gz
+[2024-04-13 18:58:35] INFO root fetch - processPackages [napari-threedee]: Downloading https://files.pythonhosted.org/packages/81/1f/82e3d9c32140273bc57be3c479e8e5ee885204a3dca7be7d2476b777ac72/napari-threedee-0.0.9.tar.gz
+[2024-04-13 18:58:35] INFO root fetch - processPackages [ortfodb]: Downloading https://files.pythonhosted.org/packages/0b/af/36d0927222ab80f49cd0c32bf60c43a2fc1e98a57fea8991217dbc12bde6/ortfodb-0.3.2.tar.gz
+[2024-04-13 18:58:35] INFO root fetch - processPackages [unscribe]: Downloading https://files.pythonhosted.org/packages/1f/31/3863fd733ea01aac674e3dd4df5fa27ed3d3643070a7233e18580a18f816/unscribe-0.0.2.tar.gz
+[2024-04-13 18:58:35] INFO root fetch - processPackages [mcaption]: executing diffoscope
+[2024-04-13 18:58:35] INFO root fetch - processPackages [mcaption]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcaption-0.0.3.tar.gz tmp/mcaption-0.0.5.tar.gz --markdown 20240413/m/mcaption/0.0.3-0.0.5/README.md --exclude *.pyd
+[2024-04-13 18:58:35] INFO root fetch - processPackages [ortfodb]: executing diffoscope
+[2024-04-13 18:58:35] INFO root fetch - processPackages [ortfodb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ortfodb-0.3.1.tar.gz tmp/ortfodb-0.3.2.tar.gz --markdown 20240413/o/ortfodb/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-13 18:58:35] INFO root fetch - processPackages [napari-threedee]: executing diffoscope
+[2024-04-13 18:58:35] INFO root fetch - processPackages [napari-threedee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-threedee-0.0.8.tar.gz tmp/napari-threedee-0.0.9.tar.gz --markdown 20240413/n/napari-threedee/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 18:58:35] INFO root fetch - processPackages [unscribe]: executing diffoscope
+[2024-04-13 18:58:35] INFO root fetch - processPackages [unscribe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unscribe-0.0.1.tar.gz tmp/unscribe-0.0.2.tar.gz --markdown 20240413/u/unscribe/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-13 18:58:35] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.8-py3-none-any.whl.zip]
+[2024-04-13 18:58:35] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.9-py3-none-any.whl.zip]
+[2024-04-13 18:58:35] INFO root fetch - main [MainThread]: End processing [modal-client]: success
+[2024-04-13 18:58:36] INFO root fetch - processPackages [ortfodb]: Remove: archive file [/home/abi/fetcher/tmp/ortfodb-0.3.1.tar.gz]
+[2024-04-13 18:58:36] INFO root fetch - processPackages [ortfodb]: Remove: archive file [/home/abi/fetcher/tmp/ortfodb-0.3.2.tar.gz]
+[2024-04-13 18:58:36] INFO root fetch - main [MainThread]: End processing [ortfodb]: success
+[2024-04-13 18:58:36] INFO root fetch - processPackages [mcaption]: Remove: archive file [/home/abi/fetcher/tmp/mcaption-0.0.3.tar.gz]
+[2024-04-13 18:58:36] INFO root fetch - processPackages [mcaption]: Remove: archive file [/home/abi/fetcher/tmp/mcaption-0.0.5.tar.gz]
+[2024-04-13 18:58:36] INFO root fetch - main [MainThread]: End processing [mcaption]: success
+[2024-04-13 18:58:36] INFO root fetch - processPackages [piwiPre]: Remove: archive file [/home/abi/fetcher/tmp/piwiPre-0.8.4.tar.gz]
+[2024-04-13 18:58:36] INFO root fetch - processPackages [piwiPre]: Remove: archive file [/home/abi/fetcher/tmp/piwiPre-0.8.5.tar.gz]
+[2024-04-13 18:58:36] INFO root fetch - main [MainThread]: End processing [piwiPre]: success
+[2024-04-13 18:58:36] INFO root fetch - processPackages [unscribe]: Remove: archive file [/home/abi/fetcher/tmp/unscribe-0.0.1.tar.gz]
+[2024-04-13 18:58:36] INFO root fetch - processPackages [unscribe]: Remove: archive file [/home/abi/fetcher/tmp/unscribe-0.0.2.tar.gz]
+[2024-04-13 18:58:36] INFO root fetch - main [MainThread]: End processing [unscribe]: success
+[2024-04-13 18:58:36] INFO root fetch - processPackages [napari-threedee]: Remove: archive file [/home/abi/fetcher/tmp/napari-threedee-0.0.8.tar.gz]
+[2024-04-13 18:58:36] INFO root fetch - processPackages [napari-threedee]: Remove: archive file [/home/abi/fetcher/tmp/napari-threedee-0.0.9.tar.gz]
+[2024-04-13 18:58:36] INFO root fetch - main [MainThread]: End processing [napari-threedee]: success
+[2024-04-13 18:58:36] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.8-py3-none-any.whl.zip]
+[2024-04-13 18:58:36] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.9-py3-none-any.whl.zip]
+[2024-04-13 18:58:36] INFO root fetch - main [MainThread]: End processing [modal]: success
+[2024-04-13 18:58:36] INFO root fetch - main [MainThread]: Store serial: [22753274]
