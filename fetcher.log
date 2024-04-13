@@ -12768,3 +12768,42 @@
 [2024-04-13 13:10:09] INFO root fetch - processPackages [pydantic-settings-vault]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_settings_vault-2.1.0.tar.gz]
 [2024-04-13 13:10:09] INFO root fetch - main [MainThread]: End processing [pydantic-settings-vault]: success
 [2024-04-13 13:10:09] INFO root fetch - main [MainThread]: Store serial: [22751317]
+[2024-04-13 13:12:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751317]
+[2024-04-13 13:12:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 13:12:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: LinguAligner
+[2024-04-13 13:12:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: localstack-core
+[2024-04-13 13:12:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flask-rpc
+[2024-04-13 13:12:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fastlane-bot
+[2024-04-13 13:12:17] INFO root fetch - processPackages [LinguAligner]: New version: [0.9] Old Version: [0.8]
+[2024-04-13 13:12:17] INFO root fetch - processPackages [flask-rpc]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-13 13:12:17] INFO root fetch - processPackages [localstack-core]: New version: [3.3.1.dev20240412141820] Old Version: [3.3.1.dev20240412123144]
+[2024-04-13 13:12:18] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/63/1f/fc1941e3d878f8643898c07bd958b932dd36b3b074928145bb430dfe0a04/lingualigner-0.8.tar.gz
+[2024-04-13 13:12:18] INFO root fetch - processPackages [flask-rpc]: Downloading https://files.pythonhosted.org/packages/0a/8e/fc3372e0530d42b342211c7c47d03c15dde621b381afd3b3ebb587771595/flask_rpc-0.2.0.tar.gz
+[2024-04-13 13:12:18] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/36/98/889ad03bc89499c2ea6790dd5c9e034e17ceb9cbee8365656f98ce98da18/localstack-core-3.3.1.dev20240412123144.tar.gz
+[2024-04-13 13:12:18] INFO root fetch - processPackages [fastlane-bot]: New version: [3.1.8] Old Version: [3.1.7]
+[2024-04-13 13:12:18] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/73/fb/3cad932ad4847785cbae099a96fb2ae5367c5b788dac0deece75b60a9254/lingualigner-0.9.tar.gz
+[2024-04-13 13:12:18] INFO root fetch - processPackages [fastlane-bot]: Downloading https://files.pythonhosted.org/packages/84/86/631688b721f1783cd53ea63fbcbfe7160223297152a2256c9fc3225f1f2c/fastlane_bot-3.1.7-py3-none-any.whl
+[2024-04-13 13:12:18] INFO root fetch - processPackages [flask-rpc]: Downloading https://files.pythonhosted.org/packages/29/3d/6b5cd55f42ed309f4d22b6d4a2042830108ad01d6a491984b4e19ce52796/flask_rpc-0.2.1.tar.gz
+[2024-04-13 13:12:18] INFO root fetch - processPackages [LinguAligner]: executing diffoscope
+[2024-04-13 13:12:18] INFO root fetch - processPackages [LinguAligner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lingualigner-0.8.tar.gz tmp/lingualigner-0.9.tar.gz --markdown 20240413/L/LinguAligner/0.8-0.9/README.md --exclude *.pyd
+[2024-04-13 13:12:18] INFO root fetch - processPackages [flask-rpc]: executing diffoscope
+[2024-04-13 13:12:18] INFO root fetch - processPackages [flask-rpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_rpc-0.2.0.tar.gz tmp/flask_rpc-0.2.1.tar.gz --markdown 20240413/f/flask-rpc/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-13 13:12:18] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/e4/b4/15306fca07f141a4f48ce5a0696c3fa2964b19455d942fe7b0604f4e6b50/localstack-core-3.3.1.dev20240412141820.tar.gz
+[2024-04-13 13:12:18] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2024-04-13 13:12:18] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack-core-3.3.1.dev20240412123144.tar.gz tmp/localstack-core-3.3.1.dev20240412141820.tar.gz --markdown 20240413/l/localstack-core/3.3.1.dev20240412123144-3.3.1.dev20240412141820/README.md --exclude *.pyd
+[2024-04-13 13:12:18] INFO root fetch - processPackages [fastlane-bot]: Downloading https://files.pythonhosted.org/packages/b1/b1/c895475c0b15c9d665e02918a2edf2bca5d89da75115651ebb7fb543c713/fastlane_bot-3.1.8-py3-none-any.whl
+[2024-04-13 13:12:19] INFO root fetch - processPackages [fastlane-bot]: executing diffoscope
+[2024-04-13 13:12:19] INFO root fetch - processPackages [fastlane-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastlane_bot-3.1.7-py3-none-any.whl.zip tmp/fastlane_bot-3.1.8-py3-none-any.whl.zip --markdown 20240413/f/fastlane-bot/3.1.7-3.1.8/README.md --exclude *.pyd
+[2024-04-13 13:12:19] INFO root fetch - processPackages [flask-rpc]: Remove: archive file [/home/abi/fetcher/tmp/flask_rpc-0.2.0.tar.gz]
+[2024-04-13 13:12:19] INFO root fetch - processPackages [flask-rpc]: Remove: archive file [/home/abi/fetcher/tmp/flask_rpc-0.2.1.tar.gz]
+[2024-04-13 13:12:19] INFO root fetch - main [MainThread]: End processing [flask-rpc]: success
+[2024-04-13 13:12:19] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.8.tar.gz]
+[2024-04-13 13:12:19] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.9.tar.gz]
+[2024-04-13 13:12:19] INFO root fetch - main [MainThread]: End processing [LinguAligner]: success
+[2024-04-13 13:12:19] INFO root fetch - processPackages [fastlane-bot]: Remove: archive file [/home/abi/fetcher/tmp/fastlane_bot-3.1.7-py3-none-any.whl.zip]
+[2024-04-13 13:12:19] INFO root fetch - processPackages [fastlane-bot]: Remove: archive file [/home/abi/fetcher/tmp/fastlane_bot-3.1.8-py3-none-any.whl.zip]
+[2024-04-13 13:12:19] INFO root fetch - main [MainThread]: End processing [fastlane-bot]: success
+[2024-04-13 13:12:22] INFO root fetch - processPackages [localstack-core]: Remove: archive file [/home/abi/fetcher/tmp/localstack-core-3.3.1.dev20240412123144.tar.gz]
+[2024-04-13 13:12:22] INFO root fetch - processPackages [localstack-core]: Remove: archive file [/home/abi/fetcher/tmp/localstack-core-3.3.1.dev20240412141820.tar.gz]
+[2024-04-13 13:12:22] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2024-04-13 13:12:22] INFO root fetch - main [MainThread]: Store serial: [22751331]
