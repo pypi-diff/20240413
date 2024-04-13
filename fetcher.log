@@ -20389,3 +20389,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 23:15:05] INFO root fetch - processPackages [fastapi-xroad-soap]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_xroad_soap-0.2.1.tar.gz]
 [2024-04-13 23:15:05] INFO root fetch - main [MainThread]: End processing [fastapi-xroad-soap]: success
 [2024-04-13 23:15:05] INFO root fetch - main [MainThread]: Store serial: [22754785]
+[2024-04-13 23:17:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754785]
+[2024-04-13 23:17:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 23:17:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pogema
+[2024-04-13 23:17:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yuag
+[2024-04-13 23:17:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chromastone
+[2024-04-13 23:17:14] INFO root fetch - processPackages [pogema]: New version: [1.2.3a0] Old Version: [1.2.2]
+[2024-04-13 23:17:14] INFO root fetch - processPackages [pogema]: Downloading https://files.pythonhosted.org/packages/b0/51/a60fda1c015b553c2fe8e5e87caf90840c6417b4da2a9f18d6c774786fc0/pogema-1.2.2.tar.gz
+[2024-04-13 23:17:14] INFO root fetch - processPackages [chromastone]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-13 23:17:14] INFO root fetch - processPackages [yuag]: New version: [0.0.66] Old Version: [0.0.65]
+[2024-04-13 23:17:15] INFO root fetch - processPackages [pogema]: Downloading https://files.pythonhosted.org/packages/e8/28/820ed9677038d91118f330c531953b2db3d8d4d3b1c27b1c94f6b9a9ac73/pogema-1.2.3a0.tar.gz
+[2024-04-13 23:17:15] INFO root fetch - processPackages [yuag]: Downloading https://files.pythonhosted.org/packages/bc/a1/772cc9a8a5243b771c84c2106ff0435a88e3dddee66b4a2c2b1ee93075ba/yuag-0.0.65.tar.gz
+[2024-04-13 23:17:15] INFO root fetch - processPackages [chromastone]: Downloading https://files.pythonhosted.org/packages/06/e8/6643ca5bca746c394c367ae26fbcdb48450c396965c6af9a53cfa35b354f/chromastone-0.1.7.tar.gz
+[2024-04-13 23:17:15] INFO root fetch - processPackages [pogema]: executing diffoscope
+[2024-04-13 23:17:15] INFO root fetch - processPackages [pogema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pogema-1.2.2.tar.gz tmp/pogema-1.2.3a0.tar.gz --markdown 20240413/p/pogema/1.2.2-1.2.3a0/README.md --exclude *.pyd
+[2024-04-13 23:17:15] INFO root fetch - processPackages [yuag]: Downloading https://files.pythonhosted.org/packages/02/5a/6e37e04d5745d68ed7efc3a9b54c50deafc00da2ad05f8d5b99b1c58cbd8/yuag-0.0.66.tar.gz
+[2024-04-13 23:17:15] INFO root fetch - processPackages [chromastone]: Downloading https://files.pythonhosted.org/packages/51/a1/5d4f7d5e2915e33392487cd98cfdc91a423716753a10624d65ddeed384ce/chromastone-0.1.8.tar.gz
+[2024-04-13 23:17:15] INFO root fetch - processPackages [yuag]: executing diffoscope
+[2024-04-13 23:17:15] INFO root fetch - processPackages [yuag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yuag-0.0.65.tar.gz tmp/yuag-0.0.66.tar.gz --markdown 20240413/y/yuag/0.0.65-0.0.66/README.md --exclude *.pyd
+[2024-04-13 23:17:15] INFO root fetch - processPackages [chromastone]: executing diffoscope
+[2024-04-13 23:17:15] INFO root fetch - processPackages [chromastone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromastone-0.1.7.tar.gz tmp/chromastone-0.1.8.tar.gz --markdown 20240413/c/chromastone/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-13 23:17:15] INFO root fetch - processPackages [pogema]: Remove: archive file [/home/abi/fetcher/tmp/pogema-1.2.2.tar.gz]
+[2024-04-13 23:17:15] INFO root fetch - processPackages [pogema]: Remove: archive file [/home/abi/fetcher/tmp/pogema-1.2.3a0.tar.gz]
+[2024-04-13 23:17:15] INFO root fetch - main [MainThread]: End processing [pogema]: success
+[2024-04-13 23:17:16] INFO root fetch - processPackages [chromastone]: Remove: archive file [/home/abi/fetcher/tmp/chromastone-0.1.7.tar.gz]
+[2024-04-13 23:17:16] INFO root fetch - processPackages [chromastone]: Remove: archive file [/home/abi/fetcher/tmp/chromastone-0.1.8.tar.gz]
+[2024-04-13 23:17:16] INFO root fetch - main [MainThread]: End processing [chromastone]: success
+[2024-04-13 23:17:16] INFO root fetch - processPackages [yuag]: Remove: archive file [/home/abi/fetcher/tmp/yuag-0.0.65.tar.gz]
+[2024-04-13 23:17:16] INFO root fetch - processPackages [yuag]: Remove: archive file [/home/abi/fetcher/tmp/yuag-0.0.66.tar.gz]
+[2024-04-13 23:17:16] INFO root fetch - main [MainThread]: End processing [yuag]: success
+[2024-04-13 23:17:16] INFO root fetch - main [MainThread]: Store serial: [22754796]
