@@ -17871,3 +17871,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 20:04:57] INFO root fetch - processPackages [ds20kdb-avt]: Remove: archive file [/home/abi/fetcher/tmp/ds20kdb_avt-1.0.7.tar.gz]
 [2024-04-13 20:04:57] INFO root fetch - main [MainThread]: End processing [ds20kdb-avt]: success
 [2024-04-13 20:04:57] INFO root fetch - main [MainThread]: Store serial: [22753745]
+[2024-04-13 20:07:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753745]
+[2024-04-13 20:07:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 20:07:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-nightly-tpu
+[2024-04-13 20:07:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lama2923
+[2024-04-13 20:07:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: impactpy
+[2024-04-13 20:07:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: invest-guard
+[2024-04-13 20:07:06] WARNING root fetch - processPackages [impactpy]: Skipping, unable to determine old version
+[2024-04-13 20:07:06] INFO root fetch - main [MainThread]: End processing [impactpy] error
+[2024-04-13 20:07:06] INFO root fetch - processPackages [invest-guard]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 20:07:06] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/4b/9c/dbd7a0b0827b73782e9d2cac2d85d6748041c259666e0d9c6eddb690d2e7/invest_guard-0.1.0.tar.gz
+[2024-04-13 20:07:06] INFO root fetch - processPackages [tf-nightly-tpu]: New version: [2.17.0.dev20240413] Old Version: [2.17.0.dev20240412]
+[2024-04-13 20:07:06] INFO root fetch - processPackages [lama2923]: New version: [0.6] Old Version: [0.5]
+[2024-04-13 20:07:06] INFO root fetch - processPackages [tf-nightly-tpu]: Downloading https://files.pythonhosted.org/packages/d8/68/c3a0ad04448673dd9df427f64c4404bfc58e6b4773098e0f8a981e3e96fd/tf_nightly_tpu-2.17.0.dev20240412-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-13 20:07:06] INFO root fetch - processPackages [lama2923]: Downloading https://files.pythonhosted.org/packages/a2/58/de4ae86d9c649950df2c73b2c6f013918b02fe0f4e050e620ee426011add/lama2923-0.5.tar.gz
+[2024-04-13 20:07:06] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/73/cc/d3769d64f4a9767300eb88c34ed96d18a8cf7a062f91c434c763bf31db9b/invest_guard-0.1.1.tar.gz
+[2024-04-13 20:07:06] WARNING root fetch - processPackages [tf-nightly-tpu]: Skipping package: exceeds size limit 219416923>=10485760
+[2024-04-13 20:07:06] INFO root fetch - main [MainThread]: End processing [tf-nightly-tpu] error
+[2024-04-13 20:07:06] INFO root fetch - processPackages [invest-guard]: executing diffoscope
+[2024-04-13 20:07:06] INFO root fetch - processPackages [invest-guard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invest_guard-0.1.0.tar.gz tmp/invest_guard-0.1.1.tar.gz --markdown 20240413/i/invest-guard/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 20:07:06] INFO root fetch - processPackages [lama2923]: Downloading https://files.pythonhosted.org/packages/a6/4c/087bcbbc844e98f4b0e431f0fdcb741c5629b43193d3b1e759888c6adaac/lama2923-0.6.tar.gz
+[2024-04-13 20:07:06] INFO root fetch - processPackages [lama2923]: executing diffoscope
+[2024-04-13 20:07:06] INFO root fetch - processPackages [lama2923]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lama2923-0.5.tar.gz tmp/lama2923-0.6.tar.gz --markdown 20240413/l/lama2923/0.5-0.6/README.md --exclude *.pyd
+[2024-04-13 20:07:07] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest_guard-0.1.0.tar.gz]
+[2024-04-13 20:07:07] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest_guard-0.1.1.tar.gz]
+[2024-04-13 20:07:07] INFO root fetch - main [MainThread]: End processing [invest-guard]: success
+[2024-04-13 20:07:07] INFO root fetch - processPackages [lama2923]: Remove: archive file [/home/abi/fetcher/tmp/lama2923-0.5.tar.gz]
+[2024-04-13 20:07:07] INFO root fetch - processPackages [lama2923]: Remove: archive file [/home/abi/fetcher/tmp/lama2923-0.6.tar.gz]
+[2024-04-13 20:07:07] INFO root fetch - main [MainThread]: End processing [lama2923]: success
+[2024-04-13 20:07:07] INFO root fetch - main [MainThread]: Store serial: [22753760]
