@@ -9203,3 +9203,33 @@
 [2024-04-13 08:34:32] INFO root fetch - processPackages [pydicts]: Remove: archive file [/home/abi/fetcher/tmp/pydicts-0.9.0.tar.gz]
 [2024-04-13 08:34:32] INFO root fetch - main [MainThread]: End processing [pydicts]: success
 [2024-04-13 08:34:32] INFO root fetch - main [MainThread]: Store serial: [22749916]
+[2024-04-13 08:36:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749916]
+[2024-04-13 08:36:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 08:36:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-stock-reserve
+[2024-04-13 08:36:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-stock-move-packaging-qty
+[2024-04-13 08:36:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ynab-api-import
+[2024-04-13 08:36:41] INFO root fetch - processPackages [odoo-addon-stock-move-packaging-qty]: New version: [16.0.1.2.0] Old Version: [16.0.1.1.1.2]
+[2024-04-13 08:36:41] INFO root fetch - processPackages [odoo-addon-stock-move-packaging-qty]: Downloading https://files.pythonhosted.org/packages/79/b9/0dae83cfafe62a22e5093355e25704966a5c76a659756fa18e71b427f81a/odoo_addon_stock_move_packaging_qty-16.0.1.1.1.2-py3-none-any.whl
+[2024-04-13 08:36:41] INFO root fetch - processPackages [ynab-api-import]: New version: [1.2.1] Old Version: [1.1.0]
+[2024-04-13 08:36:41] INFO root fetch - processPackages [odoo-addon-stock-reserve]: New version: [17.0.1.0.0.4] Old Version: [17.0.1.0.0.3]
+[2024-04-13 08:36:41] INFO root fetch - processPackages [odoo-addon-stock-reserve]: Downloading https://files.pythonhosted.org/packages/e3/e7/1e794b0eba33b4a8f179abb07ec073a9799f84e6a57509767527f9f839d8/odoo_addon_stock_reserve-17.0.1.0.0.3-py3-none-any.whl
+[2024-04-13 08:36:41] INFO root fetch - processPackages [odoo-addon-stock-move-packaging-qty]: Downloading https://files.pythonhosted.org/packages/0b/54/a8f4654ed0afe6b8164ba026f1353013fe3dc1e82f060235f5880083d051/odoo_addon_stock_move_packaging_qty-16.0.1.2.0-py3-none-any.whl
+[2024-04-13 08:36:41] INFO root fetch - processPackages [ynab-api-import]: Downloading https://files.pythonhosted.org/packages/17/b1/82e171dd0334236092528d261c046f2aecfa71cc7165531df24bcdedcd93/ynab_api_import-1.1.0.tar.gz
+[2024-04-13 08:36:41] INFO root fetch - processPackages [odoo-addon-stock-move-packaging-qty]: executing diffoscope
+[2024-04-13 08:36:41] INFO root fetch - processPackages [odoo-addon-stock-move-packaging-qty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_move_packaging_qty-16.0.1.1.1.2-py3-none-any.whl.zip tmp/odoo_addon_stock_move_packaging_qty-16.0.1.2.0-py3-none-any.whl.zip --markdown 20240413/o/odoo-addon-stock-move-packaging-qty/16.0.1.1.1.2-16.0.1.2.0/README.md --exclude *.pyd
+[2024-04-13 08:36:41] INFO root fetch - processPackages [odoo-addon-stock-reserve]: Downloading https://files.pythonhosted.org/packages/88/5c/d7ceeac07f5303118daa8ffc0265de1c2aef9b6ffd0bb40b31d7ef8d5b04/odoo_addon_stock_reserve-17.0.1.0.0.4-py3-none-any.whl
+[2024-04-13 08:36:41] INFO root fetch - processPackages [ynab-api-import]: Downloading https://files.pythonhosted.org/packages/28/46/d81ee8ec3d6702fa7b7deda28b7ab439964ce194acb71d9450252cf6602e/ynab_api_import-1.2.1.tar.gz
+[2024-04-13 08:36:42] INFO root fetch - processPackages [odoo-addon-stock-reserve]: executing diffoscope
+[2024-04-13 08:36:42] INFO root fetch - processPackages [odoo-addon-stock-reserve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_reserve-17.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_stock_reserve-17.0.1.0.0.4-py3-none-any.whl.zip --markdown 20240413/o/odoo-addon-stock-reserve/17.0.1.0.0.3-17.0.1.0.0.4/README.md --exclude *.pyd
+[2024-04-13 08:36:42] INFO root fetch - processPackages [ynab-api-import]: executing diffoscope
+[2024-04-13 08:36:42] INFO root fetch - processPackages [ynab-api-import]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ynab_api_import-1.1.0.tar.gz tmp/ynab_api_import-1.2.1.tar.gz --markdown 20240413/y/ynab-api-import/1.1.0-1.2.1/README.md --exclude *.pyd
+[2024-04-13 08:36:42] INFO root fetch - processPackages [odoo-addon-stock-move-packaging-qty]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_move_packaging_qty-16.0.1.1.1.2-py3-none-any.whl.zip]
+[2024-04-13 08:36:42] INFO root fetch - processPackages [odoo-addon-stock-move-packaging-qty]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_move_packaging_qty-16.0.1.2.0-py3-none-any.whl.zip]
+[2024-04-13 08:36:42] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-move-packaging-qty]: success
+[2024-04-13 08:36:42] INFO root fetch - processPackages [ynab-api-import]: Remove: archive file [/home/abi/fetcher/tmp/ynab_api_import-1.1.0.tar.gz]
+[2024-04-13 08:36:42] INFO root fetch - processPackages [ynab-api-import]: Remove: archive file [/home/abi/fetcher/tmp/ynab_api_import-1.2.1.tar.gz]
+[2024-04-13 08:36:42] INFO root fetch - main [MainThread]: End processing [ynab-api-import]: success
+[2024-04-13 08:36:42] INFO root fetch - processPackages [odoo-addon-stock-reserve]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_reserve-17.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-04-13 08:36:42] INFO root fetch - processPackages [odoo-addon-stock-reserve]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_reserve-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-04-13 08:36:42] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-reserve]: success
+[2024-04-13 08:36:42] INFO root fetch - main [MainThread]: Store serial: [22749923]
