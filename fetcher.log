@@ -6885,3 +6885,18 @@
 [2024-04-13 04:15:48] INFO root fetch - processPackages [xchtools]: Remove: archive file [/home/abi/fetcher/tmp/xchtools-0.1.9-py3-none-any.whl.zip]
 [2024-04-13 04:15:48] INFO root fetch - main [MainThread]: End processing [xchtools]: success
 [2024-04-13 04:15:48] INFO root fetch - main [MainThread]: Store serial: [22748963]
+[2024-04-13 04:17:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748963]
+[2024-04-13 04:17:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 04:17:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: grid-data-models
+[2024-04-13 04:17:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: renovosolutions.aws-cdk-aws-sso
+[2024-04-13 04:17:57] WARNING root fetch - processPackages [grid-data-models]: Skipping, unable to determine old version
+[2024-04-13 04:17:57] INFO root fetch - main [MainThread]: End processing [grid-data-models] error
+[2024-04-13 04:17:57] INFO root fetch - processPackages [renovosolutions.aws-cdk-aws-sso]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-13 04:17:57] INFO root fetch - processPackages [renovosolutions.aws-cdk-aws-sso]: Downloading https://files.pythonhosted.org/packages/87/6f/3f556260faf7f7139ad9821da7df8d152b36d9736bc44e88bde80736bc7a/renovosolutions.aws-cdk-aws-sso-0.1.98.tar.gz
+[2024-04-13 04:17:57] INFO root fetch - processPackages [renovosolutions.aws-cdk-aws-sso]: Downloading https://files.pythonhosted.org/packages/a5/c0/fb7343945467b9fa3a35b6f6091f7d543ff25b9d464ce45d785787b4df58/renovosolutions.aws-cdk-aws-sso-0.1.99.tar.gz
+[2024-04-13 04:17:57] INFO root fetch - processPackages [renovosolutions.aws-cdk-aws-sso]: executing diffoscope
+[2024-04-13 04:17:57] INFO root fetch - processPackages [renovosolutions.aws-cdk-aws-sso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renovosolutions.aws-cdk-aws-sso-0.1.98.tar.gz tmp/renovosolutions.aws-cdk-aws-sso-0.1.99.tar.gz --markdown 20240413/r/renovosolutions.aws-cdk-aws-sso/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-13 04:17:58] INFO root fetch - processPackages [renovosolutions.aws-cdk-aws-sso]: Remove: archive file [/home/abi/fetcher/tmp/renovosolutions.aws-cdk-aws-sso-0.1.98.tar.gz]
+[2024-04-13 04:17:58] INFO root fetch - processPackages [renovosolutions.aws-cdk-aws-sso]: Remove: archive file [/home/abi/fetcher/tmp/renovosolutions.aws-cdk-aws-sso-0.1.99.tar.gz]
+[2024-04-13 04:17:58] INFO root fetch - main [MainThread]: End processing [renovosolutions.aws-cdk-aws-sso]: success
+[2024-04-13 04:17:58] INFO root fetch - main [MainThread]: Store serial: [22748973]
