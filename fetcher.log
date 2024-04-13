@@ -12651,3 +12651,42 @@
 [2024-04-13 13:01:22] INFO root fetch - processPackages [gen3-tracker]: Remove: archive file [/home/abi/fetcher/tmp/gen3_tracker-0.0.3rc5.tar.gz]
 [2024-04-13 13:01:22] INFO root fetch - main [MainThread]: End processing [gen3-tracker]: success
 [2024-04-13 13:01:22] INFO root fetch - main [MainThread]: Store serial: [22751270]
+[2024-04-13 13:03:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751270]
+[2024-04-13 13:03:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 13:03:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airgradient
+[2024-04-13 13:03:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: feedcrawler
+[2024-04-13 13:03:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mqi-sspd-api
+[2024-04-13 13:03:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wansuite
+[2024-04-13 13:03:30] INFO root fetch - processPackages [mqi-sspd-api]: New version: [0.0.5] Old Version: [0.0.3]
+[2024-04-13 13:03:30] INFO root fetch - processPackages [wansuite]: New version: [2.2] Old Version: [2.0]
+[2024-04-13 13:03:30] INFO root fetch - processPackages [mqi-sspd-api]: Downloading https://files.pythonhosted.org/packages/fa/fd/0c8d800bc7a814614b2aa50548ba7411e4d268fbad3a1793c593ee6e6d49/mqi_sspd_api-0.0.3.tar.gz
+[2024-04-13 13:03:30] INFO root fetch - processPackages [wansuite]: Downloading https://files.pythonhosted.org/packages/2d/82/00aa0f05520ab0d2c580bcd4a5bc55c29644c9f001af43a3720e5454c8f8/wansuite-2.0.tar.gz
+[2024-04-13 13:03:30] INFO root fetch - processPackages [airgradient]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-13 13:03:30] INFO root fetch - processPackages [feedcrawler]: New version: [19.1.0] Old Version: [19.0.6]
+[2024-04-13 13:03:30] INFO root fetch - processPackages [airgradient]: Downloading https://files.pythonhosted.org/packages/e1/48/28c3e992bcc91394fa9f6a81badbdcb34ccfb40183ecdd1de9ead5fede5c/airgradient-0.2.0.tar.gz
+[2024-04-13 13:03:30] INFO root fetch - processPackages [feedcrawler]: Downloading https://files.pythonhosted.org/packages/13/02/06674f04cb2f40621c08f5ebfd5f75e5669c9ebfa62b7df06d763b504c99/feedcrawler-19.0.6.tar.gz
+[2024-04-13 13:03:30] INFO root fetch - processPackages [mqi-sspd-api]: Downloading https://files.pythonhosted.org/packages/51/09/5a1abef9cc3bf8a93622e44895eb38c2c207fae13067cd3da4e7a64e006f/mqi_sspd_api-0.0.5.tar.gz
+[2024-04-13 13:03:31] INFO root fetch - processPackages [wansuite]: Downloading https://files.pythonhosted.org/packages/ee/6f/c541fa3beaf6e0bc4b2f0e1da2532fb41e856ccd299b4e91499f8c16e780/wansuite-2.2.tar.gz
+[2024-04-13 13:03:31] INFO root fetch - processPackages [mqi-sspd-api]: executing diffoscope
+[2024-04-13 13:03:31] INFO root fetch - processPackages [mqi-sspd-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mqi_sspd_api-0.0.3.tar.gz tmp/mqi_sspd_api-0.0.5.tar.gz --markdown 20240413/m/mqi-sspd-api/0.0.3-0.0.5/README.md --exclude *.pyd
+[2024-04-13 13:03:31] INFO root fetch - processPackages [wansuite]: executing diffoscope
+[2024-04-13 13:03:31] INFO root fetch - processPackages [wansuite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wansuite-2.0.tar.gz tmp/wansuite-2.2.tar.gz --markdown 20240413/w/wansuite/2.0-2.2/README.md --exclude *.pyd
+[2024-04-13 13:03:31] INFO root fetch - processPackages [airgradient]: Downloading https://files.pythonhosted.org/packages/72/df/8f7714d0ae4c65fd389b18e983d167ac448f5e45057e805d51cd36fe5c1f/airgradient-0.3.0.tar.gz
+[2024-04-13 13:03:31] INFO root fetch - processPackages [airgradient]: executing diffoscope
+[2024-04-13 13:03:31] INFO root fetch - processPackages [airgradient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airgradient-0.2.0.tar.gz tmp/airgradient-0.3.0.tar.gz --markdown 20240413/a/airgradient/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-13 13:03:31] INFO root fetch - processPackages [feedcrawler]: Downloading https://files.pythonhosted.org/packages/2f/3b/dbcda455f09c8bcc022bb1f267638fb6afda5ff41a3aa5616b79788b3840/feedcrawler-19.1.0.tar.gz
+[2024-04-13 13:03:31] INFO root fetch - processPackages [feedcrawler]: executing diffoscope
+[2024-04-13 13:03:31] INFO root fetch - processPackages [feedcrawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feedcrawler-19.0.6.tar.gz tmp/feedcrawler-19.1.0.tar.gz --markdown 20240413/f/feedcrawler/19.0.6-19.1.0/README.md --exclude *.pyd
+[2024-04-13 13:03:31] INFO root fetch - processPackages [mqi-sspd-api]: Remove: archive file [/home/abi/fetcher/tmp/mqi_sspd_api-0.0.3.tar.gz]
+[2024-04-13 13:03:31] INFO root fetch - processPackages [mqi-sspd-api]: Remove: archive file [/home/abi/fetcher/tmp/mqi_sspd_api-0.0.5.tar.gz]
+[2024-04-13 13:03:31] INFO root fetch - main [MainThread]: End processing [mqi-sspd-api]: success
+[2024-04-13 13:03:31] INFO root fetch - processPackages [wansuite]: Remove: archive file [/home/abi/fetcher/tmp/wansuite-2.0.tar.gz]
+[2024-04-13 13:03:31] INFO root fetch - processPackages [wansuite]: Remove: archive file [/home/abi/fetcher/tmp/wansuite-2.2.tar.gz]
+[2024-04-13 13:03:31] INFO root fetch - main [MainThread]: End processing [wansuite]: success
+[2024-04-13 13:03:31] INFO root fetch - processPackages [airgradient]: Remove: archive file [/home/abi/fetcher/tmp/airgradient-0.2.0.tar.gz]
+[2024-04-13 13:03:31] INFO root fetch - processPackages [airgradient]: Remove: archive file [/home/abi/fetcher/tmp/airgradient-0.3.0.tar.gz]
+[2024-04-13 13:03:31] INFO root fetch - main [MainThread]: End processing [airgradient]: success
+[2024-04-13 13:03:37] INFO root fetch - processPackages [feedcrawler]: Remove: archive file [/home/abi/fetcher/tmp/feedcrawler-19.0.6.tar.gz]
+[2024-04-13 13:03:37] INFO root fetch - processPackages [feedcrawler]: Remove: archive file [/home/abi/fetcher/tmp/feedcrawler-19.1.0.tar.gz]
+[2024-04-13 13:03:37] INFO root fetch - main [MainThread]: End processing [feedcrawler]: success
+[2024-04-13 13:03:37] INFO root fetch - main [MainThread]: Store serial: [22751282]
