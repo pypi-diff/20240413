@@ -20669,3 +20669,17 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 23:32:31] INFO root fetch - processPackages [appier]: Remove: archive file [/home/abi/fetcher/tmp/appier-1.9.9.tar.gz]
 [2024-04-13 23:32:31] INFO root fetch - main [MainThread]: End processing [appier]: success
 [2024-04-13 23:32:31] INFO root fetch - main [MainThread]: Store serial: [22754943]
+[2024-04-13 23:34:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754943]
+[2024-04-13 23:34:40] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 23:36:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754943]
+[2024-04-13 23:36:45] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 23:36:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AstroToolkit
+[2024-04-13 23:36:45] INFO root fetch - processPackages [AstroToolkit]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-04-13 23:36:45] INFO root fetch - processPackages [AstroToolkit]: Downloading https://files.pythonhosted.org/packages/bd/b9/54de1bddbccd150911e2994f4c1b70c1b1f7d1be3e82b084c4631c1af57b/AstroToolkit-1.4.0.tar.gz
+[2024-04-13 23:36:46] INFO root fetch - processPackages [AstroToolkit]: Downloading https://files.pythonhosted.org/packages/0e/8b/c43121b6117556dbf7312f5bc2aa88523d185ff2ecf72cd53aa65a6e1fe9/astrotoolkit-1.4.1.tar.gz
+[2024-04-13 23:36:46] INFO root fetch - processPackages [AstroToolkit]: executing diffoscope
+[2024-04-13 23:36:46] INFO root fetch - processPackages [AstroToolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AstroToolkit-1.4.0.tar.gz tmp/astrotoolkit-1.4.1.tar.gz --markdown 20240413/A/AstroToolkit/1.4.0-1.4.1/README.md --exclude *.pyd
+[2024-04-13 23:36:47] INFO root fetch - processPackages [AstroToolkit]: Remove: archive file [/home/abi/fetcher/tmp/AstroToolkit-1.4.0.tar.gz]
+[2024-04-13 23:36:47] INFO root fetch - processPackages [AstroToolkit]: Remove: archive file [/home/abi/fetcher/tmp/astrotoolkit-1.4.1.tar.gz]
+[2024-04-13 23:36:47] INFO root fetch - main [MainThread]: End processing [AstroToolkit]: success
+[2024-04-13 23:36:47] INFO root fetch - main [MainThread]: Store serial: [22754946]
