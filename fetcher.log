@@ -11216,3 +11216,33 @@
 [2024-04-13 11:01:33] INFO root fetch - processPackages [PaifuLogger]: Remove: archive file [/home/abi/fetcher/tmp/PaifuLogger-0.4.0.tar.gz]
 [2024-04-13 11:01:33] INFO root fetch - main [MainThread]: End processing [PaifuLogger]: success
 [2024-04-13 11:01:33] INFO root fetch - main [MainThread]: Store serial: [22750720]
+[2024-04-13 11:03:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750720]
+[2024-04-13 11:03:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 11:03:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: robotslacker-testcli
+[2024-04-13 11:03:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: getcp
+[2024-04-13 11:03:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: contact-local
+[2024-04-13 11:03:42] INFO root fetch - processPackages [getcp]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-13 11:03:42] INFO root fetch - processPackages [contact-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 11:03:42] INFO root fetch - processPackages [robotslacker-testcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 11:03:42] INFO root fetch - processPackages [contact-local]: Downloading https://files.pythonhosted.org/packages/75/64/f3f752681a48297a9101e7de65d41056da1800a0fbd5a27df6e29dd07b37/contact-local-0.0.8.tar.gz
+[2024-04-13 11:03:42] INFO root fetch - processPackages [getcp]: Downloading https://files.pythonhosted.org/packages/b9/e0/789b59edffee93d1f5619b20acfc0265a10414ce6252e1416de1eef68599/getcp-1.0.1.tar.gz
+[2024-04-13 11:03:42] INFO root fetch - processPackages [robotslacker-testcli]: Downloading https://files.pythonhosted.org/packages/57/71/45cf11c2c66e7969006d17b79832678705ed38a0df644acf7ca1110f208b/robotslacker-testcli-0.0.8.tar.gz
+[2024-04-13 11:03:42] INFO root fetch - processPackages [contact-local]: Downloading https://files.pythonhosted.org/packages/ac/77/272714857d28dc1134b82bfb3d430920fe69a296e6c0ff88f036b594474b/contact-local-0.0.9.tar.gz
+[2024-04-13 11:03:42] INFO root fetch - processPackages [contact-local]: executing diffoscope
+[2024-04-13 11:03:42] INFO root fetch - processPackages [contact-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-local-0.0.8.tar.gz tmp/contact-local-0.0.9.tar.gz --markdown 20240413/c/contact-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 11:03:42] INFO root fetch - processPackages [getcp]: Downloading https://files.pythonhosted.org/packages/c1/95/620ec8d43ecb7d3d44a23afdf0bd94105060adbe25b838822b17bfa53559/getcp-1.0.2.tar.gz
+[2024-04-13 11:03:42] INFO root fetch - processPackages [getcp]: executing diffoscope
+[2024-04-13 11:03:42] INFO root fetch - processPackages [getcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getcp-1.0.1.tar.gz tmp/getcp-1.0.2.tar.gz --markdown 20240413/g/getcp/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-13 11:03:43] INFO root fetch - processPackages [contact-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-local-0.0.8.tar.gz]
+[2024-04-13 11:03:43] INFO root fetch - processPackages [contact-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-local-0.0.9.tar.gz]
+[2024-04-13 11:03:43] INFO root fetch - main [MainThread]: End processing [contact-local]: success
+[2024-04-13 11:03:43] INFO root fetch - processPackages [getcp]: Remove: archive file [/home/abi/fetcher/tmp/getcp-1.0.1.tar.gz]
+[2024-04-13 11:03:43] INFO root fetch - processPackages [getcp]: Remove: archive file [/home/abi/fetcher/tmp/getcp-1.0.2.tar.gz]
+[2024-04-13 11:03:43] INFO root fetch - main [MainThread]: End processing [getcp]: success
+[2024-04-13 11:03:43] INFO root fetch - processPackages [robotslacker-testcli]: Downloading https://files.pythonhosted.org/packages/49/c7/4e9f25562dae606566643edd46e0c7fdfcb015dd742780c7eeb381d4ae43/robotslacker-testcli-0.0.9.tar.gz
+[2024-04-13 11:03:45] INFO root fetch - processPackages [robotslacker-testcli]: executing diffoscope
+[2024-04-13 11:03:45] INFO root fetch - processPackages [robotslacker-testcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotslacker-testcli-0.0.8.tar.gz tmp/robotslacker-testcli-0.0.9.tar.gz --markdown 20240413/r/robotslacker-testcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 11:03:46] INFO root fetch - processPackages [robotslacker-testcli]: Remove: archive file [/home/abi/fetcher/tmp/robotslacker-testcli-0.0.8.tar.gz]
+[2024-04-13 11:03:46] INFO root fetch - processPackages [robotslacker-testcli]: Remove: archive file [/home/abi/fetcher/tmp/robotslacker-testcli-0.0.9.tar.gz]
+[2024-04-13 11:03:46] INFO root fetch - main [MainThread]: End processing [robotslacker-testcli]: success
+[2024-04-13 11:03:46] INFO root fetch - main [MainThread]: Store serial: [22750732]
