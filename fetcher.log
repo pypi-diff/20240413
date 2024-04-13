@@ -18682,3 +18682,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 20:48:29] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest-guard-0.1.3.tar.gz]
 [2024-04-13 20:48:29] INFO root fetch - main [MainThread]: End processing [invest-guard]: success
 [2024-04-13 20:48:29] INFO root fetch - main [MainThread]: Store serial: [22754042]
+[2024-04-13 20:50:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754042]
+[2024-04-13 20:50:38] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 20:50:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sopel-amputator
+[2024-04-13 20:50:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sleipnirgroup-jormungandr
+[2024-04-13 20:50:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xibabel
+[2024-04-13 20:50:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MobileInventoryCLI
+[2024-04-13 20:50:38] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.53] Old Version: [0.4.52]
+[2024-04-13 20:50:38] INFO root fetch - processPackages [xibabel]: New version: [0.0.1rc1] Old Version: [0.0.1b4]
+[2024-04-13 20:50:38] INFO root fetch - processPackages [sopel-amputator]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-13 20:50:38] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/26/59/02de6574473b6771b511a0c8ddd4d7d9da3716aadccda526fcbe7fdeed80/MobileInventoryCLI-0.4.52.tar.gz
+[2024-04-13 20:50:38] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: New version: [0.0.1.dev99] Old Version: [0.0.1.dev98]
+[2024-04-13 20:50:38] INFO root fetch - processPackages [xibabel]: Downloading https://files.pythonhosted.org/packages/b7/f3/58e8040b513d8d0480fe55fdc2b738b2c52cb8332dd68e4c583875c24636/xibabel-0.0.1b4.tar.gz
+[2024-04-13 20:50:38] INFO root fetch - processPackages [sopel-amputator]: Downloading https://files.pythonhosted.org/packages/a7/be/024b7b58a4ece15c2d95afe9bbb1676d0b6f78d9ad22728723e59aa22975/sopel_amputator-0.1.tar.gz
+[2024-04-13 20:50:38] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Downloading https://files.pythonhosted.org/packages/cc/12/913e734462cf5d457ad69ec174744b76c771c8b63ebfb55efeb3cf02373e/sleipnirgroup_jormungandr-0.0.1.dev98.tar.gz
+[2024-04-13 20:50:38] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/db/ca/1694f949fb18977d0a7bfb1188ac7c2f476927a843e8d24f5ffbd06392ba/MobileInventoryCLI-0.4.53.tar.gz
+[2024-04-13 20:50:39] INFO root fetch - processPackages [sopel-amputator]: Downloading https://files.pythonhosted.org/packages/86/11/56038690cf5f0116117e50a101c295d210559b94800548d4cd47610468ba/sopel_amputator-0.2.0.tar.gz
+[2024-04-13 20:50:39] INFO root fetch - processPackages [xibabel]: Downloading https://files.pythonhosted.org/packages/08/ce/fdfc6e65dc446bc9fe046dfe72afcf98473827e31e68bfe8e375ed7428ff/xibabel-0.0.1rc1.tar.gz
+[2024-04-13 20:50:39] INFO root fetch - processPackages [sopel-amputator]: executing diffoscope
+[2024-04-13 20:50:39] INFO root fetch - processPackages [sopel-amputator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sopel_amputator-0.1.tar.gz tmp/sopel_amputator-0.2.0.tar.gz --markdown 20240413/s/sopel-amputator/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-13 20:50:39] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Downloading https://files.pythonhosted.org/packages/c4/65/9e9a4eafe0a550c5be12a69cf1665a71a4b5c434089722b18386b65569f5/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz
+[2024-04-13 20:50:39] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-04-13 20:50:39] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.52.tar.gz tmp/MobileInventoryCLI-0.4.53.tar.gz --markdown 20240413/M/MobileInventoryCLI/0.4.52-0.4.53/README.md --exclude *.pyd
+[2024-04-13 20:50:39] INFO root fetch - processPackages [xibabel]: executing diffoscope
+[2024-04-13 20:50:39] INFO root fetch - processPackages [xibabel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xibabel-0.0.1b4.tar.gz tmp/xibabel-0.0.1rc1.tar.gz --markdown 20240413/x/xibabel/0.0.1b4-0.0.1rc1/README.md --exclude *.pyd
+[2024-04-13 20:50:39] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: executing diffoscope
+[2024-04-13 20:50:39] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sleipnirgroup_jormungandr-0.0.1.dev98.tar.gz tmp/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz --markdown 20240413/s/sleipnirgroup-jormungandr/0.0.1.dev98-0.0.1.dev99/README.md --exclude *.pyd
+[2024-04-13 20:50:39] INFO root fetch - processPackages [sopel-amputator]: Remove: archive file [/home/abi/fetcher/tmp/sopel_amputator-0.1.tar.gz]
+[2024-04-13 20:50:39] INFO root fetch - processPackages [sopel-amputator]: Remove: archive file [/home/abi/fetcher/tmp/sopel_amputator-0.2.0.tar.gz]
+[2024-04-13 20:50:39] INFO root fetch - main [MainThread]: End processing [sopel-amputator]: success
+[2024-04-13 20:50:39] INFO root fetch - processPackages [xibabel]: Remove: archive file [/home/abi/fetcher/tmp/xibabel-0.0.1b4.tar.gz]
+[2024-04-13 20:50:39] INFO root fetch - processPackages [xibabel]: Remove: archive file [/home/abi/fetcher/tmp/xibabel-0.0.1rc1.tar.gz]
+[2024-04-13 20:50:39] INFO root fetch - main [MainThread]: End processing [xibabel]: success
+[2024-04-13 20:50:39] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.52.tar.gz]
+[2024-04-13 20:50:39] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.53.tar.gz]
+[2024-04-13 20:50:39] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-04-13 20:50:40] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Remove: archive file [/home/abi/fetcher/tmp/sleipnirgroup_jormungandr-0.0.1.dev98.tar.gz]
+[2024-04-13 20:50:40] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Remove: archive file [/home/abi/fetcher/tmp/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz]
+[2024-04-13 20:50:40] INFO root fetch - main [MainThread]: End processing [sleipnirgroup-jormungandr]: success
+[2024-04-13 20:50:40] INFO root fetch - main [MainThread]: Store serial: [22754063]
