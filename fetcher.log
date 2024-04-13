@@ -10049,3 +10049,42 @@
 [2024-04-13 09:27:20] INFO root fetch - processPackages [perceval]: Remove: archive file [/home/abi/fetcher/tmp/perceval-1.0.0rc2.tar.gz]
 [2024-04-13 09:27:20] INFO root fetch - main [MainThread]: End processing [perceval]: success
 [2024-04-13 09:27:20] INFO root fetch - main [MainThread]: Store serial: [22750200]
+[2024-04-13 09:29:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750200]
+[2024-04-13 09:29:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 09:29:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-admin-rangefilter
+[2024-04-13 09:29:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flgo
+[2024-04-13 09:29:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sortinghat
+[2024-04-13 09:29:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: valx
+[2024-04-13 09:29:29] INFO root fetch - processPackages [valx]: New version: [0.1.5] Old Version: [0.1.3]
+[2024-04-13 09:29:29] INFO root fetch - processPackages [flgo]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-04-13 09:29:29] INFO root fetch - processPackages [sortinghat]: New version: [1.0.0rc3] Old Version: [1.0.0rc2]
+[2024-04-13 09:29:29] INFO root fetch - processPackages [valx]: Downloading https://files.pythonhosted.org/packages/27/99/23c74ae793c2a8bfbe5e8c2f8e189a9fd1aa1a9c63195a6ef92e0b558c74/valx-0.1.3.tar.gz
+[2024-04-13 09:29:29] INFO root fetch - processPackages [flgo]: Downloading https://files.pythonhosted.org/packages/fa/38/95d4b66468a0f4972d25c8974f55743c09a5e49c1753ae4520c6665769d4/flgo-0.2.5.tar.gz
+[2024-04-13 09:29:29] INFO root fetch - processPackages [django-admin-rangefilter]: New version: [0.9.0] Old Version: [0.8.8]
+[2024-04-13 09:29:29] INFO root fetch - processPackages [sortinghat]: Downloading https://files.pythonhosted.org/packages/d2/2a/effb7864fef153fcc0563aa7e3b0a742d21629cc8d9c3f86d8e7bbba1dab/sortinghat-1.0.0rc2.tar.gz
+[2024-04-13 09:29:29] INFO root fetch - processPackages [django-admin-rangefilter]: Downloading https://files.pythonhosted.org/packages/92/62/a828470981d75676c0d3abc22823bf7ed44cc34f7d9520cb138ce58326ea/django-admin-rangefilter-0.8.8.tar.gz
+[2024-04-13 09:29:29] INFO root fetch - processPackages [valx]: Downloading https://files.pythonhosted.org/packages/6a/ca/fc2693a2b7290c2fb000f72b5d9673dfd0ca2ad326788081e049e83b2f04/valx-0.1.5.tar.gz
+[2024-04-13 09:29:29] INFO root fetch - processPackages [flgo]: Downloading https://files.pythonhosted.org/packages/1a/86/7f9bec2ae7a39281914de405649b408b0347fd1d86839c8bf6fc73b507a1/flgo-0.2.6.tar.gz
+[2024-04-13 09:29:29] INFO root fetch - processPackages [valx]: executing diffoscope
+[2024-04-13 09:29:29] INFO root fetch - processPackages [valx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valx-0.1.3.tar.gz tmp/valx-0.1.5.tar.gz --markdown 20240413/v/valx/0.1.3-0.1.5/README.md --exclude *.pyd
+[2024-04-13 09:29:29] INFO root fetch - processPackages [flgo]: executing diffoscope
+[2024-04-13 09:29:29] INFO root fetch - processPackages [flgo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flgo-0.2.5.tar.gz tmp/flgo-0.2.6.tar.gz --markdown 20240413/f/flgo/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-04-13 09:29:29] INFO root fetch - processPackages [sortinghat]: Downloading https://files.pythonhosted.org/packages/75/38/ccfa1157e151394aa9202f8e4e663c57be19a58629233b7764e90e7fc2b1/sortinghat-1.0.0rc3.tar.gz
+[2024-04-13 09:29:30] INFO root fetch - processPackages [valx]: Remove: archive file [/home/abi/fetcher/tmp/valx-0.1.3.tar.gz]
+[2024-04-13 09:29:30] INFO root fetch - processPackages [valx]: Remove: archive file [/home/abi/fetcher/tmp/valx-0.1.5.tar.gz]
+[2024-04-13 09:29:30] INFO root fetch - main [MainThread]: End processing [valx]: success
+[2024-04-13 09:29:30] INFO root fetch - processPackages [sortinghat]: executing diffoscope
+[2024-04-13 09:29:30] INFO root fetch - processPackages [sortinghat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sortinghat-1.0.0rc2.tar.gz tmp/sortinghat-1.0.0rc3.tar.gz --markdown 20240413/s/sortinghat/1.0.0rc2-1.0.0rc3/README.md --exclude *.pyd
+[2024-04-13 09:29:30] INFO root fetch - processPackages [django-admin-rangefilter]: Downloading https://files.pythonhosted.org/packages/7d/f9/79df40d2bc4461d9badb807a90136f5652662831eebd8f2a5a87dcad005f/django-admin-rangefilter-0.9.0.tar.gz
+[2024-04-13 09:29:30] INFO root fetch - processPackages [django-admin-rangefilter]: executing diffoscope
+[2024-04-13 09:29:30] INFO root fetch - processPackages [django-admin-rangefilter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-admin-rangefilter-0.8.8.tar.gz tmp/django-admin-rangefilter-0.9.0.tar.gz --markdown 20240413/d/django-admin-rangefilter/0.8.8-0.9.0/README.md --exclude *.pyd
+[2024-04-13 09:29:31] INFO root fetch - processPackages [flgo]: Remove: archive file [/home/abi/fetcher/tmp/flgo-0.2.5.tar.gz]
+[2024-04-13 09:29:31] INFO root fetch - processPackages [flgo]: Remove: archive file [/home/abi/fetcher/tmp/flgo-0.2.6.tar.gz]
+[2024-04-13 09:29:31] INFO root fetch - main [MainThread]: End processing [flgo]: success
+[2024-04-13 09:29:31] INFO root fetch - processPackages [django-admin-rangefilter]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-rangefilter-0.8.8.tar.gz]
+[2024-04-13 09:29:31] INFO root fetch - processPackages [django-admin-rangefilter]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-rangefilter-0.9.0.tar.gz]
+[2024-04-13 09:29:31] INFO root fetch - main [MainThread]: End processing [django-admin-rangefilter]: success
+[2024-04-13 09:29:32] INFO root fetch - processPackages [sortinghat]: Remove: archive file [/home/abi/fetcher/tmp/sortinghat-1.0.0rc2.tar.gz]
+[2024-04-13 09:29:32] INFO root fetch - processPackages [sortinghat]: Remove: archive file [/home/abi/fetcher/tmp/sortinghat-1.0.0rc3.tar.gz]
+[2024-04-13 09:29:32] INFO root fetch - main [MainThread]: End processing [sortinghat]: success
+[2024-04-13 09:29:32] INFO root fetch - main [MainThread]: Store serial: [22750215]
