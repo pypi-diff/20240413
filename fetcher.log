@@ -9248,3 +9248,33 @@
 [2024-04-13 08:38:53] INFO root fetch - processPackages [wiki_tool_python]: Remove: archive file [/home/abi/fetcher/tmp/wiki_tool_python-0.2.2.tar.gz]
 [2024-04-13 08:38:53] INFO root fetch - main [MainThread]: End processing [wiki_tool_python]: success
 [2024-04-13 08:38:53] INFO root fetch - main [MainThread]: Store serial: [22749930]
+[2024-04-13 08:40:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749930]
+[2024-04-13 08:41:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 08:41:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyhtml-enhanced
+[2024-04-13 08:41:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: syllogistic
+[2024-04-13 08:41:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PySide6-Fluent-Widgets
+[2024-04-13 08:41:02] INFO root fetch - processPackages [syllogistic]: New version: [0.1.1] Old Version: [0.0.44]
+[2024-04-13 08:41:02] INFO root fetch - processPackages [pyhtml-enhanced]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-04-13 08:41:03] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: New version: [1.5.5] Old Version: [1.5.4]
+[2024-04-13 08:41:03] INFO root fetch - processPackages [syllogistic]: Downloading https://files.pythonhosted.org/packages/4c/1c/c1dc66a698d9f65bc0f336c87cb6e9f505e8967809c721fe31b05b890480/syllogistic-0.0.44.tar.gz
+[2024-04-13 08:41:03] INFO root fetch - processPackages [pyhtml-enhanced]: Downloading https://files.pythonhosted.org/packages/6a/f6/3aa8db9a1324c94f37b25cd697cd50a7cc0d9dbc0e87ed21edef2f0a2566/pyhtml_enhanced-2.0.1.tar.gz
+[2024-04-13 08:41:03] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/5c/ce/037f0496ed2981c95c51a04778ae17a2067e598fb9812176e0d5f246f6a5/PySide6-Fluent-Widgets-1.5.4.tar.gz
+[2024-04-13 08:41:03] INFO root fetch - processPackages [syllogistic]: Downloading https://files.pythonhosted.org/packages/1a/db/21dc45174ac760db7f4a1be140d1349c4187740e6d4f4ff56a05b6754c0f/syllogistic-0.1.1.tar.gz
+[2024-04-13 08:41:03] INFO root fetch - processPackages [pyhtml-enhanced]: Downloading https://files.pythonhosted.org/packages/54/ef/27258529cecaf9ff6b3f63c7db238dc5d0395aba52f5080bde7658b73b8f/pyhtml_enhanced-2.0.2.tar.gz
+[2024-04-13 08:41:03] INFO root fetch - processPackages [syllogistic]: executing diffoscope
+[2024-04-13 08:41:03] INFO root fetch - processPackages [syllogistic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syllogistic-0.0.44.tar.gz tmp/syllogistic-0.1.1.tar.gz --markdown 20240413/s/syllogistic/0.0.44-0.1.1/README.md --exclude *.pyd
+[2024-04-13 08:41:03] INFO root fetch - processPackages [pyhtml-enhanced]: executing diffoscope
+[2024-04-13 08:41:03] INFO root fetch - processPackages [pyhtml-enhanced]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhtml_enhanced-2.0.1.tar.gz tmp/pyhtml_enhanced-2.0.2.tar.gz --markdown 20240413/p/pyhtml-enhanced/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-04-13 08:41:03] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: Downloading https://files.pythonhosted.org/packages/37/bf/e743defc272f6db120812a2e3c9bc34f7ed8c895c2dabfa658ce68643f71/PySide6-Fluent-Widgets-1.5.5.tar.gz
+[2024-04-13 08:41:04] INFO root fetch - processPackages [syllogistic]: Remove: archive file [/home/abi/fetcher/tmp/syllogistic-0.0.44.tar.gz]
+[2024-04-13 08:41:04] INFO root fetch - processPackages [syllogistic]: Remove: archive file [/home/abi/fetcher/tmp/syllogistic-0.1.1.tar.gz]
+[2024-04-13 08:41:04] INFO root fetch - main [MainThread]: End processing [syllogistic]: success
+[2024-04-13 08:41:04] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: executing diffoscope
+[2024-04-13 08:41:04] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySide6-Fluent-Widgets-1.5.4.tar.gz tmp/PySide6-Fluent-Widgets-1.5.5.tar.gz --markdown 20240413/P/PySide6-Fluent-Widgets/1.5.4-1.5.5/README.md --exclude *.pyd
+[2024-04-13 08:41:04] INFO root fetch - processPackages [pyhtml-enhanced]: Remove: archive file [/home/abi/fetcher/tmp/pyhtml_enhanced-2.0.1.tar.gz]
+[2024-04-13 08:41:04] INFO root fetch - processPackages [pyhtml-enhanced]: Remove: archive file [/home/abi/fetcher/tmp/pyhtml_enhanced-2.0.2.tar.gz]
+[2024-04-13 08:41:04] INFO root fetch - main [MainThread]: End processing [pyhtml-enhanced]: success
+[2024-04-13 08:41:05] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/PySide6-Fluent-Widgets-1.5.4.tar.gz]
+[2024-04-13 08:41:05] INFO root fetch - processPackages [PySide6-Fluent-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/PySide6-Fluent-Widgets-1.5.5.tar.gz]
+[2024-04-13 08:41:05] INFO root fetch - main [MainThread]: End processing [PySide6-Fluent-Widgets]: success
+[2024-04-13 08:41:05] INFO root fetch - main [MainThread]: Store serial: [22749939]
