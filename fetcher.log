@@ -11541,3 +11541,34 @@
 [2024-04-13 11:21:12] INFO root fetch - processPackages [function-schema]: Remove: archive file [/home/abi/fetcher/tmp/function_schema-0.3.4.tar.gz]
 [2024-04-13 11:21:12] INFO root fetch - main [MainThread]: End processing [function-schema]: success
 [2024-04-13 11:21:12] INFO root fetch - main [MainThread]: Store serial: [22750857]
+[2024-04-13 11:23:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750857]
+[2024-04-13 11:23:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 11:23:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: argsreq
+[2024-04-13 11:23:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AgentlyCmd
+[2024-04-13 11:23:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: catasta
+[2024-04-13 11:23:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: HiYaPyCo
+[2024-04-13 11:23:22] INFO root fetch - processPackages [argsreq]: New version: [1.6] Old Version: [1.5]
+[2024-04-13 11:23:22] INFO root fetch - processPackages [AgentlyCmd]: New version: [0.0.0.2a0] Old Version: [0.0.0.1a4]
+[2024-04-13 11:23:22] INFO root fetch - processPackages [argsreq]: Downloading https://files.pythonhosted.org/packages/81/7d/dfd4ed8cc76e822a44a42460d9b43430e61ca40266d81231f846eb40247a/argsreq-1.5.tar.gz
+[2024-04-13 11:23:22] INFO root fetch - processPackages [AgentlyCmd]: Downloading https://files.pythonhosted.org/packages/19/0c/d411e5a5f0531fafe576a94a7d4fe833fcf3c046810eb4311bb085705e95/AgentlyCmd-0.0.0.1a4.tar.gz
+[2024-04-13 11:23:22] INFO root fetch - processPackages [catasta]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 11:23:22] INFO root fetch - processPackages [HiYaPyCo]: New version: [0.5.5] Old Version: [0.5.4]
+[2024-04-13 11:23:22] INFO root fetch - processPackages [catasta]: Downloading https://files.pythonhosted.org/packages/14/61/1eec5cff2cd285a2cc027bba864b0521a16757f1ab074f595fd9ac8834fc/catasta-0.1.1.tar.gz
+[2024-04-13 11:23:22] WARNING root fetch - processPackages [catasta]: Skipping package: exceeds size limit 22925243>=10485760
+[2024-04-13 11:23:22] INFO root fetch - main [MainThread]: End processing [catasta] error
+[2024-04-13 11:23:22] INFO root fetch - processPackages [HiYaPyCo]: Downloading https://files.pythonhosted.org/packages/64/6a/bfcb07251fbe01c151f28b06e4d3fcc24eb876351d151c607f76c936c307/HiYaPyCo-0.5.4.tar.gz
+[2024-04-13 11:23:22] ERROR root fetch - processPackages [AgentlyCmd]: Unable to fetch info: No such project/version 'AgentlyCmd' 0.0.0.2a0
+[2024-04-13 11:23:22] INFO root fetch - main [MainThread]: End processing [AgentlyCmd] error
+[2024-04-13 11:23:22] INFO root fetch - processPackages [argsreq]: Downloading https://files.pythonhosted.org/packages/05/55/b23065a123e9779f30f8091072e4ee93c56eca98985e0b28933f96a50578/argsreq-1.6.tar.gz
+[2024-04-13 11:23:22] INFO root fetch - processPackages [argsreq]: executing diffoscope
+[2024-04-13 11:23:22] INFO root fetch - processPackages [argsreq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argsreq-1.5.tar.gz tmp/argsreq-1.6.tar.gz --markdown 20240413/a/argsreq/1.5-1.6/README.md --exclude *.pyd
+[2024-04-13 11:23:22] INFO root fetch - processPackages [HiYaPyCo]: Downloading https://files.pythonhosted.org/packages/53/7a/2e27a4fb1d27bb4da91de1a00d9b69d43a7211be5f923f652b56797bc623/HiYaPyCo-0.5.5.tar.gz
+[2024-04-13 11:23:23] INFO root fetch - processPackages [HiYaPyCo]: executing diffoscope
+[2024-04-13 11:23:23] INFO root fetch - processPackages [HiYaPyCo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HiYaPyCo-0.5.4.tar.gz tmp/HiYaPyCo-0.5.5.tar.gz --markdown 20240413/H/HiYaPyCo/0.5.4-0.5.5/README.md --exclude *.pyd
+[2024-04-13 11:23:23] INFO root fetch - processPackages [argsreq]: Remove: archive file [/home/abi/fetcher/tmp/argsreq-1.5.tar.gz]
+[2024-04-13 11:23:23] INFO root fetch - processPackages [argsreq]: Remove: archive file [/home/abi/fetcher/tmp/argsreq-1.6.tar.gz]
+[2024-04-13 11:23:23] INFO root fetch - main [MainThread]: End processing [argsreq]: success
+[2024-04-13 11:23:23] INFO root fetch - processPackages [HiYaPyCo]: Remove: archive file [/home/abi/fetcher/tmp/HiYaPyCo-0.5.4.tar.gz]
+[2024-04-13 11:23:23] INFO root fetch - processPackages [HiYaPyCo]: Remove: archive file [/home/abi/fetcher/tmp/HiYaPyCo-0.5.5.tar.gz]
+[2024-04-13 11:23:23] INFO root fetch - main [MainThread]: End processing [HiYaPyCo]: success
+[2024-04-13 11:23:23] INFO root fetch - main [MainThread]: Store serial: [22750871]
