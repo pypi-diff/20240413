@@ -10459,3 +10459,33 @@
 [2024-04-13 10:02:16] INFO root fetch - processPackages [fastapi-sqlmodel-starter]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_sqlmodel_starter-1.0.0b1.tar.gz]
 [2024-04-13 10:02:16] INFO root fetch - main [MainThread]: End processing [fastapi-sqlmodel-starter]: success
 [2024-04-13 10:02:16] INFO root fetch - main [MainThread]: Store serial: [22750341]
+[2024-04-13 10:04:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750341]
+[2024-04-13 10:04:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 10:04:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pynovnc
+[2024-04-13 10:04:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: typedspark
+[2024-04-13 10:04:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: langfun
+[2024-04-13 10:04:25] INFO root fetch - processPackages [pynovnc]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-13 10:04:25] INFO root fetch - processPackages [typedspark]: New version: [1.3.3] Old Version: [1.3.2]
+[2024-04-13 10:04:25] INFO root fetch - processPackages [langfun]: New version: [0.0.2.dev20240412] Old Version: [0.0.2.dev20240411]
+[2024-04-13 10:04:25] INFO root fetch - processPackages [pynovnc]: Downloading https://files.pythonhosted.org/packages/72/f3/4bb5fe5803435c3ac34ae8f3831b6a805c5ae869dacd16452c6b856dfa09/pynovnc-1.0.2.tar.gz
+[2024-04-13 10:04:25] INFO root fetch - processPackages [typedspark]: Downloading https://files.pythonhosted.org/packages/99/df/4c52a41a126a31497a0fbd30963abc6b75f9104a17afe742aa067fd964d8/typedspark-1.3.2.tar.gz
+[2024-04-13 10:04:25] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/01/ff/4a6173064adedf95b32fed923f5fe2ff2063527d09667209f146c181b232/langfun-0.0.2.dev20240411.tar.gz
+[2024-04-13 10:04:26] INFO root fetch - processPackages [typedspark]: Downloading https://files.pythonhosted.org/packages/20/48/cdec896eebbaf444312e25e623dfd6066892636f3a84e9810014c5eecf05/typedspark-1.3.3.tar.gz
+[2024-04-13 10:04:26] INFO root fetch - processPackages [pynovnc]: Downloading https://files.pythonhosted.org/packages/a2/2e/6bbe1612f9f74535ca6830d2bdc5c9397ac0d5c27e269be553305952d4e5/pynovnc-1.0.3.tar.gz
+[2024-04-13 10:04:26] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/fb/53/5cb52eba42a9c78951fcd4f919bd899e83884322ce9b1a45d618cd520f61/langfun-0.0.2.dev20240412.tar.gz
+[2024-04-13 10:04:26] INFO root fetch - processPackages [typedspark]: executing diffoscope
+[2024-04-13 10:04:26] INFO root fetch - processPackages [typedspark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typedspark-1.3.2.tar.gz tmp/typedspark-1.3.3.tar.gz --markdown 20240413/t/typedspark/1.3.2-1.3.3/README.md --exclude *.pyd
+[2024-04-13 10:04:26] INFO root fetch - processPackages [pynovnc]: executing diffoscope
+[2024-04-13 10:04:26] INFO root fetch - processPackages [pynovnc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynovnc-1.0.2.tar.gz tmp/pynovnc-1.0.3.tar.gz --markdown 20240413/p/pynovnc/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-13 10:04:26] INFO root fetch - processPackages [langfun]: executing diffoscope
+[2024-04-13 10:04:26] INFO root fetch - processPackages [langfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langfun-0.0.2.dev20240411.tar.gz tmp/langfun-0.0.2.dev20240412.tar.gz --markdown 20240413/l/langfun/0.0.2.dev20240411-0.0.2.dev20240412/README.md --exclude *.pyd
+[2024-04-13 10:04:26] INFO root fetch - processPackages [pynovnc]: Remove: archive file [/home/abi/fetcher/tmp/pynovnc-1.0.2.tar.gz]
+[2024-04-13 10:04:26] INFO root fetch - processPackages [pynovnc]: Remove: archive file [/home/abi/fetcher/tmp/pynovnc-1.0.3.tar.gz]
+[2024-04-13 10:04:26] INFO root fetch - main [MainThread]: End processing [pynovnc]: success
+[2024-04-13 10:04:26] INFO root fetch - processPackages [typedspark]: Remove: archive file [/home/abi/fetcher/tmp/typedspark-1.3.2.tar.gz]
+[2024-04-13 10:04:26] INFO root fetch - processPackages [typedspark]: Remove: archive file [/home/abi/fetcher/tmp/typedspark-1.3.3.tar.gz]
+[2024-04-13 10:04:26] INFO root fetch - main [MainThread]: End processing [typedspark]: success
+[2024-04-13 10:04:27] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240411.tar.gz]
+[2024-04-13 10:04:27] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240412.tar.gz]
+[2024-04-13 10:04:27] INFO root fetch - main [MainThread]: End processing [langfun]: success
+[2024-04-13 10:04:27] INFO root fetch - main [MainThread]: Store serial: [22750353]
