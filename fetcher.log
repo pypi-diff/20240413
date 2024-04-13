@@ -8735,3 +8735,15 @@
 [2024-04-13 08:05:56] INFO root fetch - processPackages [pymatgen]: Remove: archive file [/home/abi/fetcher/tmp/pymatgen-4.7.7.tar.gz]
 [2024-04-13 08:05:56] INFO root fetch - main [MainThread]: End processing [pymatgen]: success
 [2024-04-13 08:05:56] INFO root fetch - main [MainThread]: Store serial: [22749762]
+[2024-04-13 08:08:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749762]
+[2024-04-13 08:08:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 08:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ngstrefftz
+[2024-04-13 08:08:06] INFO root fetch - processPackages [ngstrefftz]: New version: [0.3.2401.post6] Old Version: [0.3.2401.post4]
+[2024-04-13 08:08:06] INFO root fetch - processPackages [ngstrefftz]: Downloading https://files.pythonhosted.org/packages/c0/56/3c08f31be3ce53beecc884d5207efba82848a6ae8dfef3b0e36a9265360a/ngstrefftz-0.3.2401.post4.tar.gz
+[2024-04-13 08:08:07] INFO root fetch - processPackages [ngstrefftz]: Downloading https://files.pythonhosted.org/packages/84/e8/f0fd9f424c60118f3c85212dbe5d46554d66273b2e289df684792ffb5671/ngstrefftz-0.3.2401.post6.tar.gz
+[2024-04-13 08:08:07] INFO root fetch - processPackages [ngstrefftz]: executing diffoscope
+[2024-04-13 08:08:07] INFO root fetch - processPackages [ngstrefftz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ngstrefftz-0.3.2401.post4.tar.gz tmp/ngstrefftz-0.3.2401.post6.tar.gz --markdown 20240413/n/ngstrefftz/0.3.2401.post4-0.3.2401.post6/README.md --exclude *.pyd
+[2024-04-13 08:08:08] INFO root fetch - processPackages [ngstrefftz]: Remove: archive file [/home/abi/fetcher/tmp/ngstrefftz-0.3.2401.post4.tar.gz]
+[2024-04-13 08:08:08] INFO root fetch - processPackages [ngstrefftz]: Remove: archive file [/home/abi/fetcher/tmp/ngstrefftz-0.3.2401.post6.tar.gz]
+[2024-04-13 08:08:08] INFO root fetch - main [MainThread]: End processing [ngstrefftz]: success
+[2024-04-13 08:08:08] INFO root fetch - main [MainThread]: Store serial: [22749777]
