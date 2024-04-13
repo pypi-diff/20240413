@@ -12600,3 +12600,30 @@
 [2024-04-13 12:57:02] INFO root fetch - processPackages [tempren]: Remove: archive file [/home/abi/fetcher/tmp/tempren-1.1.0.tar.gz]
 [2024-04-13 12:57:02] INFO root fetch - main [MainThread]: End processing [tempren]: success
 [2024-04-13 12:57:02] INFO root fetch - main [MainThread]: Store serial: [22751241]
+[2024-04-13 12:59:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751241]
+[2024-04-13 12:59:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 12:59:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wansuite
+[2024-04-13 12:59:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: LinguAligner
+[2024-04-13 12:59:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sherpa-onnx
+[2024-04-13 12:59:11] INFO root fetch - processPackages [wansuite]: New version: [2.0] Old Version: [1.18]
+[2024-04-13 12:59:11] INFO root fetch - processPackages [LinguAligner]: New version: [0.9] Old Version: [0.8]
+[2024-04-13 12:59:11] INFO root fetch - processPackages [wansuite]: Downloading https://files.pythonhosted.org/packages/24/79/cf26234419e3fa158f9c50002709e9506749d4cc8f86a24d647d7b510291/wansuite-1.18.tar.gz
+[2024-04-13 12:59:11] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/63/1f/fc1941e3d878f8643898c07bd958b932dd36b3b074928145bb430dfe0a04/lingualigner-0.8.tar.gz
+[2024-04-13 12:59:11] INFO root fetch - processPackages [sherpa-onnx]: New version: [1.9.19] Old Version: [1.9.18]
+[2024-04-13 12:59:11] INFO root fetch - processPackages [sherpa-onnx]: Downloading https://files.pythonhosted.org/packages/a2/89/94f99dd3670e70ce6bb87de71758f6201eeec43288a2624547d505b07d0c/sherpa-onnx-1.9.18.tar.gz
+[2024-04-13 12:59:11] INFO root fetch - processPackages [wansuite]: Downloading https://files.pythonhosted.org/packages/2d/82/00aa0f05520ab0d2c580bcd4a5bc55c29644c9f001af43a3720e5454c8f8/wansuite-2.0.tar.gz
+[2024-04-13 12:59:11] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/73/fb/3cad932ad4847785cbae099a96fb2ae5367c5b788dac0deece75b60a9254/lingualigner-0.9.tar.gz
+[2024-04-13 12:59:11] INFO root fetch - processPackages [wansuite]: executing diffoscope
+[2024-04-13 12:59:11] INFO root fetch - processPackages [wansuite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wansuite-1.18.tar.gz tmp/wansuite-2.0.tar.gz --markdown 20240413/w/wansuite/1.18-2.0/README.md --exclude *.pyd
+[2024-04-13 12:59:11] INFO root fetch - processPackages [LinguAligner]: executing diffoscope
+[2024-04-13 12:59:11] INFO root fetch - processPackages [LinguAligner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lingualigner-0.8.tar.gz tmp/lingualigner-0.9.tar.gz --markdown 20240413/L/LinguAligner/0.8-0.9/README.md --exclude *.pyd
+[2024-04-13 12:59:11] INFO root fetch - processPackages [sherpa-onnx]: Downloading https://files.pythonhosted.org/packages/98/33/a7eeebf2db51ce77b3c3e4ec4a19386395443763c5157c5e84d2573a50ec/sherpa_onnx-1.9.19-cp312-cp312-win_amd64.whl
+[2024-04-13 12:59:11] WARNING root fetch - processPackages [sherpa-onnx]: Skipping package: exceeds size limit 16602687>=10485760
+[2024-04-13 12:59:11] INFO root fetch - main [MainThread]: End processing [sherpa-onnx] error
+[2024-04-13 12:59:12] INFO root fetch - processPackages [wansuite]: Remove: archive file [/home/abi/fetcher/tmp/wansuite-1.18.tar.gz]
+[2024-04-13 12:59:12] INFO root fetch - processPackages [wansuite]: Remove: archive file [/home/abi/fetcher/tmp/wansuite-2.0.tar.gz]
+[2024-04-13 12:59:12] INFO root fetch - main [MainThread]: End processing [wansuite]: success
+[2024-04-13 12:59:12] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.8.tar.gz]
+[2024-04-13 12:59:12] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.9.tar.gz]
+[2024-04-13 12:59:12] INFO root fetch - main [MainThread]: End processing [LinguAligner]: success
+[2024-04-13 12:59:12] INFO root fetch - main [MainThread]: Store serial: [22751249]
