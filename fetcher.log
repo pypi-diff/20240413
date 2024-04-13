@@ -6722,3 +6722,14 @@
 [2024-04-13 03:51:53] INFO root fetch - processPackages [cybrid-api-bank-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-bank-python-0.99.0.tar.gz]
 [2024-04-13 03:51:53] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
 [2024-04-13 03:51:53] INFO root fetch - main [MainThread]: Store serial: [22748888]
+[2024-04-13 03:53:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748888]
+[2024-04-13 03:54:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 03:54:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tiffx
+[2024-04-13 03:54:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: procastro
+[2024-04-13 03:54:02] INFO root fetch - processPackages [procastro]: New version: [0.0.22] Old Version: [0.0.21]
+[2024-04-13 03:54:02] INFO root fetch - processPackages [procastro]: Downloading https://files.pythonhosted.org/packages/ff/ed/e166f22165a49879f58bc22f1e608c9c089786ee17e2eb54926cf9cf8081/procastro-0.0.21.tar.gz
+[2024-04-13 03:54:02] WARNING root fetch - processPackages [tiffx]: Skipping, unable to determine old version
+[2024-04-13 03:54:02] INFO root fetch - main [MainThread]: End processing [tiffx] error
+[2024-04-13 03:54:02] WARNING root fetch - processPackages [procastro]: Skipping package: exceeds size limit 11191720>=10485760
+[2024-04-13 03:54:02] INFO root fetch - main [MainThread]: End processing [procastro] error
+[2024-04-13 03:54:02] INFO root fetch - main [MainThread]: Store serial: [22748896]
