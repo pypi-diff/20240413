@@ -13598,3 +13598,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:19:51] INFO root fetch - processPackages [qcfinancial]: Remove: archive file [/home/abi/fetcher/tmp/qcfinancial-0.8.2-cp39-cp39-macosx_14_0_arm64.whl.zip]
 [2024-04-13 14:19:51] INFO root fetch - main [MainThread]: End processing [qcfinancial]: success
 [2024-04-13 14:19:51] INFO root fetch - main [MainThread]: Store serial: [22751673]
+[2024-04-13 14:21:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751673]
+[2024-04-13 14:22:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 14:22:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bbot
+[2024-04-13 14:22:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EnhancedWebdriver
+[2024-04-13 14:22:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bsl-translator
+[2024-04-13 14:22:02] INFO root fetch - processPackages [EnhancedWebdriver]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 14:22:02] INFO root fetch - processPackages [bbot]: New version: [1.1.7.7rc0] Old Version: [1.1.7.6rc0]
+[2024-04-13 14:22:02] INFO root fetch - processPackages [EnhancedWebdriver]: Downloading https://files.pythonhosted.org/packages/e0/97/32bd046918dde0a8177c9c3e8d02052c9b441ea2229d80cc648e3fabdf92/enhancedwebdriver-0.1.1.tar.gz
+[2024-04-13 14:22:02] WARNING root fetch - processPackages [bsl-translator]: Skipping, unable to determine old version
+[2024-04-13 14:22:02] INFO root fetch - main [MainThread]: End processing [bsl-translator] error
+[2024-04-13 14:22:02] INFO root fetch - processPackages [bbot]: Downloading https://files.pythonhosted.org/packages/0e/89/05677f40d2885a5aa8306d6e691a9c8e8bde59b2659d8c45e30c01a31b74/bbot-1.1.7.6rc0.tar.gz
+[2024-04-13 14:22:03] INFO root fetch - processPackages [EnhancedWebdriver]: Downloading https://files.pythonhosted.org/packages/2c/10/6d4c78fc7bdc0c1d04511192a0ec5a8668b0eaf676f19223d5f6c88fb71e/enhancedwebdriver-0.1.2.tar.gz
+[2024-04-13 14:22:03] INFO root fetch - processPackages [bbot]: Downloading https://files.pythonhosted.org/packages/84/41/8580d0cea5bf01417fb7b7db4ce6c0bc6617c939c9859c98790d2121b508/bbot-1.1.7.7rc0.tar.gz
+[2024-04-13 14:22:03] INFO root fetch - processPackages [EnhancedWebdriver]: executing diffoscope
+[2024-04-13 14:22:03] INFO root fetch - processPackages [EnhancedWebdriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enhancedwebdriver-0.1.1.tar.gz tmp/enhancedwebdriver-0.1.2.tar.gz --markdown 20240413/E/EnhancedWebdriver/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-13 14:22:03] INFO root fetch - processPackages [bbot]: executing diffoscope
+[2024-04-13 14:22:03] INFO root fetch - processPackages [bbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bbot-1.1.7.6rc0.tar.gz tmp/bbot-1.1.7.7rc0.tar.gz --markdown 20240413/b/bbot/1.1.7.6rc0-1.1.7.7rc0/README.md --exclude *.pyd
+[2024-04-13 14:22:03] INFO root fetch - processPackages [EnhancedWebdriver]: Remove: archive file [/home/abi/fetcher/tmp/enhancedwebdriver-0.1.1.tar.gz]
+[2024-04-13 14:22:03] INFO root fetch - processPackages [EnhancedWebdriver]: Remove: archive file [/home/abi/fetcher/tmp/enhancedwebdriver-0.1.2.tar.gz]
+[2024-04-13 14:22:03] INFO root fetch - main [MainThread]: End processing [EnhancedWebdriver]: success
+[2024-04-13 14:22:04] INFO root fetch - processPackages [bbot]: Remove: archive file [/home/abi/fetcher/tmp/bbot-1.1.7.6rc0.tar.gz]
+[2024-04-13 14:22:04] INFO root fetch - processPackages [bbot]: Remove: archive file [/home/abi/fetcher/tmp/bbot-1.1.7.7rc0.tar.gz]
+[2024-04-13 14:22:04] INFO root fetch - main [MainThread]: End processing [bbot]: success
+[2024-04-13 14:22:04] INFO root fetch - main [MainThread]: Store serial: [22751686]
