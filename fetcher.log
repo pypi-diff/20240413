@@ -15002,3 +15002,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:06:42] INFO root fetch - processPackages [curvey]: Remove: archive file [/home/abi/fetcher/tmp/curvey-0.0.3.tar.gz]
 [2024-04-13 16:06:42] INFO root fetch - main [MainThread]: End processing [curvey]: success
 [2024-04-13 16:06:42] INFO root fetch - main [MainThread]: Store serial: [22752395]
+[2024-04-13 16:08:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752395]
+[2024-04-13 16:08:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 16:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: template-dict
+[2024-04-13 16:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libsrg
+[2024-04-13 16:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: area-of-a-shape-2
+[2024-04-13 16:08:51] INFO root fetch - processPackages [libsrg]: New version: [4.1.4] Old Version: [4.1.3]
+[2024-04-13 16:08:51] INFO root fetch - processPackages [libsrg]: Downloading https://files.pythonhosted.org/packages/bb/43/00dcd4b5d0b4402bfc47a8cb4c5f304382e1940718305c80b54b48cd690a/libsrg-4.1.3-py3-none-any.whl
+[2024-04-13 16:08:51] WARNING root fetch - processPackages [template-dict]: Skipping, unable to determine old version
+[2024-04-13 16:08:51] INFO root fetch - main [MainThread]: End processing [template-dict] error
+[2024-04-13 16:08:51] WARNING root fetch - processPackages [area-of-a-shape-2]: Skipping, unable to determine old version
+[2024-04-13 16:08:51] INFO root fetch - main [MainThread]: End processing [area-of-a-shape-2] error
+[2024-04-13 16:08:51] INFO root fetch - processPackages [libsrg]: Downloading https://files.pythonhosted.org/packages/06/8e/5f5129e0ab5f15605d154a4ac244560d50f364d9aa8cbead52dbfd63e9f4/libsrg-4.1.4-py3-none-any.whl
+[2024-04-13 16:08:51] INFO root fetch - processPackages [libsrg]: executing diffoscope
+[2024-04-13 16:08:51] INFO root fetch - processPackages [libsrg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libsrg-4.1.3-py3-none-any.whl.zip tmp/libsrg-4.1.4-py3-none-any.whl.zip --markdown 20240413/l/libsrg/4.1.3-4.1.4/README.md --exclude *.pyd
+[2024-04-13 16:08:52] INFO root fetch - processPackages [libsrg]: Remove: archive file [/home/abi/fetcher/tmp/libsrg-4.1.3-py3-none-any.whl.zip]
+[2024-04-13 16:08:52] INFO root fetch - processPackages [libsrg]: Remove: archive file [/home/abi/fetcher/tmp/libsrg-4.1.4-py3-none-any.whl.zip]
+[2024-04-13 16:08:52] INFO root fetch - main [MainThread]: End processing [libsrg]: success
+[2024-04-13 16:08:52] INFO root fetch - main [MainThread]: Store serial: [22752412]
