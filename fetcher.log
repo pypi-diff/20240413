@@ -15657,3 +15657,84 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 17:06:18] ERROR root fetch - processPackages [RePoE-Liberatorist]: Timeout during execution of pkgdiff
 [2024-04-13 17:06:18] INFO root fetch - main [MainThread]: End processing [RePoE-Liberatorist] error
 [2024-04-13 17:06:18] INFO root fetch - main [MainThread]: Store serial: [22752724]
+[2024-04-13 17:08:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752724]
+[2024-04-13 17:08:27] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-13 17:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sense-data-ng
+[2024-04-13 17:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rclip
+[2024-04-13 17:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: snake-environment
+[2024-04-13 17:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sae-lens
+[2024-04-13 17:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hiddifypanel
+[2024-04-13 17:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chipmunkdb-python-client
+[2024-04-13 17:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aic-tools-fs
+[2024-04-13 17:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ipex-llm
+[2024-04-13 17:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: llonebot
+[2024-04-13 17:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: LangTorch
+[2024-04-13 17:08:27] WARNING root fetch - processPackages [llonebot]: Skipping, unable to determine old version
+[2024-04-13 17:08:27] INFO root fetch - main [MainThread]: End processing [llonebot] error
+[2024-04-13 17:08:27] INFO root fetch - processPackages [ipex-llm]: New version: [2.1.0b20240412] Old Version: [2.1.0b20240411]
+[2024-04-13 17:08:27] INFO root fetch - processPackages [snake-environment]: New version: [0.2.4] Old Version: [0.2.2]
+[2024-04-13 17:08:27] INFO root fetch - processPackages [hiddifypanel]: New version: [8.8.99] Old Version: [8.8.97]
+[2024-04-13 17:08:27] INFO root fetch - processPackages [LangTorch]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-13 17:08:27] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/2f/ec/d7fefff6ac526c315b0be041c1050b495cd81a1b17cc33cfacb1a36a4780/ipex_llm-2.1.0b20240411-py3-none-win_amd64.whl
+[2024-04-13 17:08:27] INFO root fetch - processPackages [snake-environment]: Downloading https://files.pythonhosted.org/packages/d7/50/767cff8197761e25102f3884a4eecfcbccf47e865fabdcb1f54b1ccdd107/snake_environment-0.2.2.tar.gz
+[2024-04-13 17:08:27] INFO root fetch - processPackages [chipmunkdb-python-client]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-13 17:08:27] INFO root fetch - processPackages [sense-data-ng]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-04-13 17:08:27] WARNING root fetch - processPackages [aic-tools-fs]: Skipping, unable to determine old version
+[2024-04-13 17:08:27] INFO root fetch - main [MainThread]: End processing [aic-tools-fs] error
+[2024-04-13 17:08:27] INFO root fetch - processPackages [sae-lens]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-13 17:08:27] INFO root fetch - processPackages [rclip]: New version: [1.8.6] Old Version: [1.8.5]
+[2024-04-13 17:08:27] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/3b/4c/15ca81d9764c196bd632b929c178a21ce2569604e1b7958aaf21f3591f24/hiddifypanel-8.8.97.tar.gz
+[2024-04-13 17:08:27] INFO root fetch - processPackages [sae-lens]: Downloading https://files.pythonhosted.org/packages/19/c9/f4b91fd75911613d9a4523aae6d66cc77c2b00a50830621c6f277f69e3b6/sae_lens-0.2.0.tar.gz
+[2024-04-13 17:08:27] INFO root fetch - processPackages [sense-data-ng]: Downloading https://files.pythonhosted.org/packages/28/3f/7881168c32c0c7870201d9059f4cfa9e70333f0dc85127d06560cb3a86b7/sense-data-ng-0.6.0.tar.gz
+[2024-04-13 17:08:27] INFO root fetch - processPackages [chipmunkdb-python-client]: Downloading https://files.pythonhosted.org/packages/4f/c7/f002a900023c9ff73783c7dd696a1766082dec94d492b56022ec97752ff5/chipmunkdb_python_client-2.0.8.tar.gz
+[2024-04-13 17:08:27] INFO root fetch - processPackages [LangTorch]: Downloading https://files.pythonhosted.org/packages/bf/1f/6e07f2dd850c964fc21893d4476e01c4853c64fd5019e9bd39a37c073d86/LangTorch-1.0.0.tar.gz
+[2024-04-13 17:08:27] INFO root fetch - processPackages [rclip]: Downloading https://files.pythonhosted.org/packages/21/e9/ad1dc77b43471472daf9b2eae8459b468263ad8209058b6034b6bd1b27d1/rclip-1.8.5.tar.gz
+[2024-04-13 17:08:27] INFO root fetch - processPackages [snake-environment]: Downloading https://files.pythonhosted.org/packages/77/e5/eae15030479018640c05b9a934bb634dff72d22ecbabf9c7b6a09bc1406a/snake_environment-0.2.4.tar.gz
+[2024-04-13 17:08:27] INFO root fetch - processPackages [sae-lens]: Downloading https://files.pythonhosted.org/packages/fb/bf/7e3e66cf927955e1ff966f4c606ebd6ffe1a799a6efbff9f50155a22016d/sae_lens-0.2.1.tar.gz
+[2024-04-13 17:08:28] INFO root fetch - processPackages [snake-environment]: executing diffoscope
+[2024-04-13 17:08:28] INFO root fetch - processPackages [snake-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snake_environment-0.2.2.tar.gz tmp/snake_environment-0.2.4.tar.gz --markdown 20240413/s/snake-environment/0.2.2-0.2.4/README.md --exclude *.pyd
+[2024-04-13 17:08:28] INFO root fetch - processPackages [sense-data-ng]: Downloading https://files.pythonhosted.org/packages/00/bd/9ac608c45d461979d65202655a84c350d839a85ee242de6295962b398394/sense-data-ng-0.7.0.tar.gz
+[2024-04-13 17:08:28] INFO root fetch - processPackages [chipmunkdb-python-client]: Downloading https://files.pythonhosted.org/packages/a2/44/4f3da7ddbd9a9346a01ae41698404a384d2203e5e8be8134fd74828ffd70/chipmunkdb_python_client-2.0.9.tar.gz
+[2024-04-13 17:08:28] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/ef/74/ab9bc5ebe1c31d96fcff0642f25280d3eebba3d867bbf874c9e8c9fe2a23/hiddifypanel-8.8.99.tar.gz
+[2024-04-13 17:08:28] INFO root fetch - processPackages [sae-lens]: executing diffoscope
+[2024-04-13 17:08:28] INFO root fetch - processPackages [sae-lens]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sae_lens-0.2.0.tar.gz tmp/sae_lens-0.2.1.tar.gz --markdown 20240413/s/sae-lens/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-13 17:08:28] INFO root fetch - processPackages [rclip]: Downloading https://files.pythonhosted.org/packages/fa/c3/afa74a66d64cec57c685f8077ec93336ae714852084e7802ba16dfccfbe7/rclip-1.8.6.tar.gz
+[2024-04-13 17:08:28] INFO root fetch - processPackages [LangTorch]: Downloading https://files.pythonhosted.org/packages/bf/d0/a19433eea241a6458986e50e71d9ecdad61aae3985da9a60aa062466b468/LangTorch-1.0.1.tar.gz
+[2024-04-13 17:08:28] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/6b/ef/aea61c861897b122a9b21b0475ef40b12eb45b7dcdd0daa1ff8da694ab9a/ipex_llm-2.1.0b20240412-py3-none-win_amd64.whl
+[2024-04-13 17:08:28] INFO root fetch - processPackages [sense-data-ng]: executing diffoscope
+[2024-04-13 17:08:28] INFO root fetch - processPackages [sense-data-ng]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sense-data-ng-0.6.0.tar.gz tmp/sense-data-ng-0.7.0.tar.gz --markdown 20240413/s/sense-data-ng/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-04-13 17:08:28] INFO root fetch - processPackages [chipmunkdb-python-client]: executing diffoscope
+[2024-04-13 17:08:28] INFO root fetch - processPackages [chipmunkdb-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chipmunkdb_python_client-2.0.8.tar.gz tmp/chipmunkdb_python_client-2.0.9.tar.gz --markdown 20240413/c/chipmunkdb-python-client/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-13 17:08:28] INFO root fetch - processPackages [rclip]: executing diffoscope
+[2024-04-13 17:08:28] INFO root fetch - processPackages [rclip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rclip-1.8.5.tar.gz tmp/rclip-1.8.6.tar.gz --markdown 20240413/r/rclip/1.8.5-1.8.6/README.md --exclude *.pyd
+[2024-04-13 17:08:28] INFO root fetch - processPackages [LangTorch]: executing diffoscope
+[2024-04-13 17:08:28] INFO root fetch - processPackages [LangTorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LangTorch-1.0.0.tar.gz tmp/LangTorch-1.0.1.tar.gz --markdown 20240413/L/LangTorch/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-13 17:08:28] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2024-04-13 17:08:28] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-8.8.97.tar.gz tmp/hiddifypanel-8.8.99.tar.gz --markdown 20240413/h/hiddifypanel/8.8.97-8.8.99/README.md --exclude *.pyd
+[2024-04-13 17:08:28] INFO root fetch - processPackages [ipex-llm]: executing diffoscope
+[2024-04-13 17:08:28] INFO root fetch - processPackages [ipex-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipex_llm-2.1.0b20240411-py3-none-win_amd64.whl.zip tmp/ipex_llm-2.1.0b20240412-py3-none-win_amd64.whl.zip --markdown 20240413/i/ipex-llm/2.1.0b20240411-2.1.0b20240412/README.md --exclude *.pyd
+[2024-04-13 17:08:28] INFO root fetch - processPackages [snake-environment]: Remove: archive file [/home/abi/fetcher/tmp/snake_environment-0.2.2.tar.gz]
+[2024-04-13 17:08:28] INFO root fetch - processPackages [snake-environment]: Remove: archive file [/home/abi/fetcher/tmp/snake_environment-0.2.4.tar.gz]
+[2024-04-13 17:08:28] INFO root fetch - main [MainThread]: End processing [snake-environment]: success
+[2024-04-13 17:08:28] INFO root fetch - processPackages [sense-data-ng]: Remove: archive file [/home/abi/fetcher/tmp/sense-data-ng-0.6.0.tar.gz]
+[2024-04-13 17:08:28] INFO root fetch - processPackages [sense-data-ng]: Remove: archive file [/home/abi/fetcher/tmp/sense-data-ng-0.7.0.tar.gz]
+[2024-04-13 17:08:28] INFO root fetch - main [MainThread]: End processing [sense-data-ng]: success
+[2024-04-13 17:08:29] INFO root fetch - processPackages [chipmunkdb-python-client]: Remove: archive file [/home/abi/fetcher/tmp/chipmunkdb_python_client-2.0.8.tar.gz]
+[2024-04-13 17:08:29] INFO root fetch - processPackages [chipmunkdb-python-client]: Remove: archive file [/home/abi/fetcher/tmp/chipmunkdb_python_client-2.0.9.tar.gz]
+[2024-04-13 17:08:29] INFO root fetch - main [MainThread]: End processing [chipmunkdb-python-client]: success
+[2024-04-13 17:08:29] INFO root fetch - processPackages [sae-lens]: Remove: archive file [/home/abi/fetcher/tmp/sae_lens-0.2.0.tar.gz]
+[2024-04-13 17:08:29] INFO root fetch - processPackages [sae-lens]: Remove: archive file [/home/abi/fetcher/tmp/sae_lens-0.2.1.tar.gz]
+[2024-04-13 17:08:29] INFO root fetch - main [MainThread]: End processing [sae-lens]: success
+[2024-04-13 17:08:29] INFO root fetch - processPackages [rclip]: Remove: archive file [/home/abi/fetcher/tmp/rclip-1.8.5.tar.gz]
+[2024-04-13 17:08:29] INFO root fetch - processPackages [rclip]: Remove: archive file [/home/abi/fetcher/tmp/rclip-1.8.6.tar.gz]
+[2024-04-13 17:08:29] INFO root fetch - main [MainThread]: End processing [rclip]: success
+[2024-04-13 17:08:29] INFO root fetch - processPackages [LangTorch]: Remove: archive file [/home/abi/fetcher/tmp/LangTorch-1.0.0.tar.gz]
+[2024-04-13 17:08:29] INFO root fetch - processPackages [LangTorch]: Remove: archive file [/home/abi/fetcher/tmp/LangTorch-1.0.1.tar.gz]
+[2024-04-13 17:08:29] INFO root fetch - main [MainThread]: End processing [LangTorch]: success
+[2024-04-13 17:08:32] INFO root fetch - processPackages [hiddifypanel]: Remove: archive file [/home/abi/fetcher/tmp/hiddifypanel-8.8.97.tar.gz]
+[2024-04-13 17:08:32] INFO root fetch - processPackages [hiddifypanel]: Remove: archive file [/home/abi/fetcher/tmp/hiddifypanel-8.8.99.tar.gz]
+[2024-04-13 17:08:32] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2024-04-13 17:08:54] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240411-py3-none-win_amd64.whl.zip]
+[2024-04-13 17:08:54] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240412-py3-none-win_amd64.whl.zip]
+[2024-04-13 17:08:54] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
+[2024-04-13 17:08:54] INFO root fetch - main [MainThread]: Store serial: [22752754]
