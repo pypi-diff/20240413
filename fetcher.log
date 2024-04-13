@@ -19352,3 +19352,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 21:45:49] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.5.5.tar.gz]
 [2024-04-13 21:45:49] INFO root fetch - main [MainThread]: End processing [rio-ui]: success
 [2024-04-13 21:45:49] INFO root fetch - main [MainThread]: Store serial: [22754339]
+[2024-04-13 21:48:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754339]
+[2024-04-13 21:48:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 21:48:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: utrc
+[2024-04-13 21:48:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fudstop
+[2024-04-13 21:48:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-static-dtm
+[2024-04-13 21:48:08] INFO root fetch - processPackages [py-static-dtm]: New version: [1.0.0a5] Old Version: [1.0.0a4]
+[2024-04-13 21:48:08] INFO root fetch - processPackages [fudstop]: New version: [2.4.5] Old Version: [2.4.4]
+[2024-04-13 21:48:08] INFO root fetch - processPackages [py-static-dtm]: Downloading https://files.pythonhosted.org/packages/64/7e/acaf52d127f532517296deca27bc1f12c96a57ccbce11f54a2dee230681b/py_static_dtm-1.0.0a4.tar.gz
+[2024-04-13 21:48:08] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/2e/6d/d11d6f15e07ffa8cf482cf3a71755e20c4e89cf9fe6adecd0182f29a4ec7/fudstop-2.4.4.tar.gz
+[2024-04-13 21:48:08] INFO root fetch - processPackages [utrc]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-13 21:48:09] INFO root fetch - processPackages [utrc]: Downloading https://files.pythonhosted.org/packages/b1/9e/5286e98c3a6ee5476e256954778f26ab5de671d0847baa7bc09c9c6c0edd/utrc-0.0.5.tar.gz
+[2024-04-13 21:48:09] INFO root fetch - processPackages [py-static-dtm]: Downloading https://files.pythonhosted.org/packages/fc/f4/e2cc3e7589ed6e2c16ba6b1f3e085701684e50650630699bda2c1ed47ebe/py_static_dtm-1.0.0a5.tar.gz
+[2024-04-13 21:48:09] INFO root fetch - processPackages [py-static-dtm]: executing diffoscope
+[2024-04-13 21:48:09] INFO root fetch - processPackages [py-static-dtm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_static_dtm-1.0.0a4.tar.gz tmp/py_static_dtm-1.0.0a5.tar.gz --markdown 20240413/p/py-static-dtm/1.0.0a4-1.0.0a5/README.md --exclude *.pyd
+[2024-04-13 21:48:09] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/fb/28/a9d66d6f20971c825e8f9d2bcddc8c33de7b96c87a146ebf8007b6ee6539/fudstop-2.4.5.tar.gz
+[2024-04-13 21:48:09] INFO root fetch - processPackages [utrc]: Downloading https://files.pythonhosted.org/packages/39/c1/dd0a427e993771ccaf0b3f0a3f09312393cf84bc0169502f8baf1054f86f/utrc-0.0.6.tar.gz
+[2024-04-13 21:48:09] INFO root fetch - processPackages [fudstop]: executing diffoscope
+[2024-04-13 21:48:09] INFO root fetch - processPackages [fudstop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fudstop-2.4.4.tar.gz tmp/fudstop-2.4.5.tar.gz --markdown 20240413/f/fudstop/2.4.4-2.4.5/README.md --exclude *.pyd
+[2024-04-13 21:48:09] INFO root fetch - processPackages [utrc]: executing diffoscope
+[2024-04-13 21:48:09] INFO root fetch - processPackages [utrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utrc-0.0.5.tar.gz tmp/utrc-0.0.6.tar.gz --markdown 20240413/u/utrc/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-13 21:48:09] INFO root fetch - processPackages [py-static-dtm]: Remove: archive file [/home/abi/fetcher/tmp/py_static_dtm-1.0.0a4.tar.gz]
+[2024-04-13 21:48:09] INFO root fetch - processPackages [py-static-dtm]: Remove: archive file [/home/abi/fetcher/tmp/py_static_dtm-1.0.0a5.tar.gz]
+[2024-04-13 21:48:09] INFO root fetch - main [MainThread]: End processing [py-static-dtm]: success
+[2024-04-13 21:48:10] INFO root fetch - processPackages [utrc]: Remove: archive file [/home/abi/fetcher/tmp/utrc-0.0.5.tar.gz]
+[2024-04-13 21:48:10] INFO root fetch - processPackages [utrc]: Remove: archive file [/home/abi/fetcher/tmp/utrc-0.0.6.tar.gz]
+[2024-04-13 21:48:10] INFO root fetch - main [MainThread]: End processing [utrc]: success
+[2024-04-13 21:48:10] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.4.4.tar.gz]
+[2024-04-13 21:48:10] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.4.5.tar.gz]
+[2024-04-13 21:48:10] INFO root fetch - main [MainThread]: End processing [fudstop]: success
+[2024-04-13 21:48:10] INFO root fetch - main [MainThread]: Store serial: [22754349]
