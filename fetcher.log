@@ -12255,3 +12255,9 @@
 [2024-04-13 12:26:48] INFO root fetch - processPackages [proq]: Remove: archive file [/home/abi/fetcher/tmp/proq-0.0.3.tar.gz]
 [2024-04-13 12:26:48] INFO root fetch - main [MainThread]: End processing [proq]: success
 [2024-04-13 12:26:48] INFO root fetch - main [MainThread]: Store serial: [22751136]
+[2024-04-13 12:28:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751136]
+[2024-04-13 12:28:56] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 12:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: area-of-a-shape
+[2024-04-13 12:28:56] WARNING root fetch - processPackages [area-of-a-shape]: Skipping, unable to determine old version
+[2024-04-13 12:28:56] INFO root fetch - main [MainThread]: End processing [area-of-a-shape] error
+[2024-04-13 12:28:56] INFO root fetch - main [MainThread]: Store serial: [22751141]
