@@ -20073,3 +20073,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 22:46:52] INFO root fetch - processPackages [handouter]: Remove: archive file [/home/abi/fetcher/tmp/handouter-0.0.9.tar.gz]
 [2024-04-13 22:46:52] INFO root fetch - main [MainThread]: End processing [handouter]: success
 [2024-04-13 22:46:52] INFO root fetch - main [MainThread]: Store serial: [22754672]
+[2024-04-13 22:48:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754672]
+[2024-04-13 22:49:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 22:49:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dgenerate
+[2024-04-13 22:49:00] INFO root fetch - processPackages [dgenerate]: New version: [3.4.1] Old Version: [3.4.0]
+[2024-04-13 22:49:01] INFO root fetch - processPackages [dgenerate]: Downloading https://files.pythonhosted.org/packages/2c/c2/c002f06b7fe88d69f0f7afabadec6fe23e4f91e0516e3a2cebec1b6e3410/dgenerate-3.4.0.tar.gz
+[2024-04-13 22:49:01] INFO root fetch - processPackages [dgenerate]: Downloading https://files.pythonhosted.org/packages/63/e5/1404a4bbbda4269b6fb6f9b8efa447198ad19891e87d825eb168ab41c01e/dgenerate-3.4.1.tar.gz
+[2024-04-13 22:49:01] INFO root fetch - processPackages [dgenerate]: executing diffoscope
+[2024-04-13 22:49:01] INFO root fetch - processPackages [dgenerate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dgenerate-3.4.0.tar.gz tmp/dgenerate-3.4.1.tar.gz --markdown 20240413/d/dgenerate/3.4.0-3.4.1/README.md --exclude *.pyd
+[2024-04-13 22:49:03] INFO root fetch - processPackages [dgenerate]: Remove: archive file [/home/abi/fetcher/tmp/dgenerate-3.4.0.tar.gz]
+[2024-04-13 22:49:03] INFO root fetch - processPackages [dgenerate]: Remove: archive file [/home/abi/fetcher/tmp/dgenerate-3.4.1.tar.gz]
+[2024-04-13 22:49:03] INFO root fetch - main [MainThread]: End processing [dgenerate]: success
+[2024-04-13 22:49:03] INFO root fetch - main [MainThread]: Store serial: [22754675]
