@@ -9233,3 +9233,18 @@
 [2024-04-13 08:36:42] INFO root fetch - processPackages [odoo-addon-stock-reserve]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_reserve-17.0.1.0.0.4-py3-none-any.whl.zip]
 [2024-04-13 08:36:42] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-reserve]: success
 [2024-04-13 08:36:42] INFO root fetch - main [MainThread]: Store serial: [22749923]
+[2024-04-13 08:38:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749923]
+[2024-04-13 08:38:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 08:38:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: close-chrome
+[2024-04-13 08:38:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wiki_tool_python
+[2024-04-13 08:38:51] WARNING root fetch - processPackages [close-chrome]: Skipping, unable to determine old version
+[2024-04-13 08:38:51] INFO root fetch - main [MainThread]: End processing [close-chrome] error
+[2024-04-13 08:38:51] INFO root fetch - processPackages [wiki_tool_python]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-13 08:38:52] INFO root fetch - processPackages [wiki_tool_python]: Downloading https://files.pythonhosted.org/packages/f8/dc/3cd525fde92d6052f29f48d6be4afbaa77f8a849ea3961d5f674eae2813f/wiki_tool_python-0.2.1.tar.gz
+[2024-04-13 08:38:52] INFO root fetch - processPackages [wiki_tool_python]: Downloading https://files.pythonhosted.org/packages/ea/a8/f02849ced6183e3dd3985bdf398f17fc8a45b3e0a63ac51e465bfa5958c6/wiki_tool_python-0.2.2.tar.gz
+[2024-04-13 08:38:52] INFO root fetch - processPackages [wiki_tool_python]: executing diffoscope
+[2024-04-13 08:38:52] INFO root fetch - processPackages [wiki_tool_python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wiki_tool_python-0.2.1.tar.gz tmp/wiki_tool_python-0.2.2.tar.gz --markdown 20240413/w/wiki_tool_python/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-13 08:38:53] INFO root fetch - processPackages [wiki_tool_python]: Remove: archive file [/home/abi/fetcher/tmp/wiki_tool_python-0.2.1.tar.gz]
+[2024-04-13 08:38:53] INFO root fetch - processPackages [wiki_tool_python]: Remove: archive file [/home/abi/fetcher/tmp/wiki_tool_python-0.2.2.tar.gz]
+[2024-04-13 08:38:53] INFO root fetch - main [MainThread]: End processing [wiki_tool_python]: success
+[2024-04-13 08:38:53] INFO root fetch - main [MainThread]: Store serial: [22749930]
