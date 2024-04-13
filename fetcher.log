@@ -17713,3 +17713,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:51:46] INFO root fetch - processPackages [restx]: Remove: archive file [/home/abi/fetcher/tmp/restx-0.1.4.tar.gz]
 [2024-04-13 19:51:46] INFO root fetch - main [MainThread]: End processing [restx]: success
 [2024-04-13 19:51:46] INFO root fetch - main [MainThread]: Store serial: [22753651]
+[2024-04-13 19:53:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753651]
+[2024-04-13 19:53:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 19:53:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: provisioner-runtime
+[2024-04-13 19:53:55] INFO root fetch - processPackages [provisioner-runtime]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-13 19:53:55] INFO root fetch - processPackages [provisioner-runtime]: Downloading https://files.pythonhosted.org/packages/20/98/86f8ef055e32670947f590d784b5e513a8fbebd477a2de02fbd116e43960/provisioner_runtime-0.1.2-py3-none-any.whl
+[2024-04-13 19:53:55] INFO root fetch - processPackages [provisioner-runtime]: Downloading https://files.pythonhosted.org/packages/07/df/22e19eeafe8a5f40e891caa853869d15835b76e439cdf545efd60a62d5f6/provisioner_runtime-0.1.3-py3-none-any.whl
+[2024-04-13 19:53:56] INFO root fetch - processPackages [provisioner-runtime]: executing diffoscope
+[2024-04-13 19:53:56] INFO root fetch - processPackages [provisioner-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/provisioner_runtime-0.1.2-py3-none-any.whl.zip tmp/provisioner_runtime-0.1.3-py3-none-any.whl.zip --markdown 20240413/p/provisioner-runtime/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-13 19:53:56] INFO root fetch - processPackages [provisioner-runtime]: Remove: archive file [/home/abi/fetcher/tmp/provisioner_runtime-0.1.2-py3-none-any.whl.zip]
+[2024-04-13 19:53:56] INFO root fetch - processPackages [provisioner-runtime]: Remove: archive file [/home/abi/fetcher/tmp/provisioner_runtime-0.1.3-py3-none-any.whl.zip]
+[2024-04-13 19:53:56] INFO root fetch - main [MainThread]: End processing [provisioner-runtime]: success
+[2024-04-13 19:53:56] INFO root fetch - main [MainThread]: Store serial: [22753653]
