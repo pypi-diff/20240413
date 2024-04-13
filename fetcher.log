@@ -7765,3 +7765,27 @@
 [2024-04-13 06:24:01] INFO root fetch - processPackages [luminesce-sdk-preview]: Remove: archive file [/home/abi/fetcher/tmp/luminesce-sdk-preview-1.9.92.tar.gz]
 [2024-04-13 06:24:01] INFO root fetch - main [MainThread]: End processing [luminesce-sdk-preview]: success
 [2024-04-13 06:24:01] INFO root fetch - main [MainThread]: Store serial: [22749388]
+[2024-04-13 06:26:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749388]
+[2024-04-13 06:26:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 06:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: luminesce-sdk
+[2024-04-13 06:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypomes-store
+[2024-04-13 06:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gptify
+[2024-04-13 06:26:10] WARNING root fetch - processPackages [gptify]: Skipping, unable to determine old version
+[2024-04-13 06:26:10] INFO root fetch - main [MainThread]: End processing [gptify] error
+[2024-04-13 06:26:10] INFO root fetch - processPackages [pypomes-store]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-13 06:26:10] INFO root fetch - processPackages [luminesce-sdk]: New version: [2.1.7] Old Version: [2.1.6]
+[2024-04-13 06:26:10] INFO root fetch - processPackages [pypomes-store]: Downloading https://files.pythonhosted.org/packages/e5/a8/492c7903b50d78789b326495f2abd3f7dfacb8543f53ddebab1c21a4d0f8/pypomes_store-0.2.4.tar.gz
+[2024-04-13 06:26:10] INFO root fetch - processPackages [luminesce-sdk]: Downloading https://files.pythonhosted.org/packages/14/89/7af41fc8afeca4c24d581c0e654946a38a919a1475048500d5f30e88418d/luminesce_sdk-2.1.6.tar.gz
+[2024-04-13 06:26:10] INFO root fetch - processPackages [pypomes-store]: Downloading https://files.pythonhosted.org/packages/52/04/64cc7200ddb89b656a43568d2814f484fc03de9780cf28ff62b73795a51b/pypomes_store-0.2.5.tar.gz
+[2024-04-13 06:26:10] INFO root fetch - processPackages [luminesce-sdk]: Downloading https://files.pythonhosted.org/packages/e4/62/2c9694a763d0d4d3ada85e946b478964d37a37adceb87feb0ecbe48b8d96/luminesce_sdk-2.1.7.tar.gz
+[2024-04-13 06:26:10] INFO root fetch - processPackages [pypomes-store]: executing diffoscope
+[2024-04-13 06:26:10] INFO root fetch - processPackages [pypomes-store]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_store-0.2.4.tar.gz tmp/pypomes_store-0.2.5.tar.gz --markdown 20240413/p/pypomes-store/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-13 06:26:10] INFO root fetch - processPackages [luminesce-sdk]: executing diffoscope
+[2024-04-13 06:26:10] INFO root fetch - processPackages [luminesce-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luminesce_sdk-2.1.6.tar.gz tmp/luminesce_sdk-2.1.7.tar.gz --markdown 20240413/l/luminesce-sdk/2.1.6-2.1.7/README.md --exclude *.pyd
+[2024-04-13 06:26:11] INFO root fetch - processPackages [pypomes-store]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_store-0.2.4.tar.gz]
+[2024-04-13 06:26:11] INFO root fetch - processPackages [pypomes-store]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_store-0.2.5.tar.gz]
+[2024-04-13 06:26:11] INFO root fetch - main [MainThread]: End processing [pypomes-store]: success
+[2024-04-13 06:26:11] INFO root fetch - processPackages [luminesce-sdk]: Remove: archive file [/home/abi/fetcher/tmp/luminesce_sdk-2.1.6.tar.gz]
+[2024-04-13 06:26:11] INFO root fetch - processPackages [luminesce-sdk]: Remove: archive file [/home/abi/fetcher/tmp/luminesce_sdk-2.1.7.tar.gz]
+[2024-04-13 06:26:11] INFO root fetch - main [MainThread]: End processing [luminesce-sdk]: success
+[2024-04-13 06:26:11] INFO root fetch - main [MainThread]: Store serial: [22749397]
