@@ -7276,3 +7276,27 @@
 [2024-04-13 05:27:54] INFO root fetch - processPackages [odoo-addon-base-phone]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_phone-17.0.1.0.0.4-py3-none-any.whl.zip]
 [2024-04-13 05:27:54] INFO root fetch - main [MainThread]: End processing [odoo-addon-base-phone]: success
 [2024-04-13 05:27:54] INFO root fetch - main [MainThread]: Store serial: [22749180]
+[2024-04-13 05:29:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749180]
+[2024-04-13 05:30:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 05:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-base-phone
+[2024-04-13 05:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addons-oca-connector-telephony
+[2024-04-13 05:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keras-nlp-nightly
+[2024-04-13 05:30:03] INFO root fetch - processPackages [odoo-addon-base-phone]: New version: [17.0.1.0.0.4] Old Version: [17.0.1.0.0.3]
+[2024-04-13 05:30:03] INFO root fetch - processPackages [keras-nlp-nightly]: New version: [0.9.0.dev2024041003] Old Version: [0.9.0.dev2024040803]
+[2024-04-13 05:30:03] INFO root fetch - processPackages [odoo-addon-base-phone]: Downloading https://files.pythonhosted.org/packages/35/b0/4c846bf37a24a07f5cee12850ea900f47336d7acdd0a28aae94bdca48ce1/odoo_addon_base_phone-17.0.1.0.0.3-py3-none-any.whl
+[2024-04-13 05:30:03] WARNING root fetch - processPackages [odoo-addons-oca-connector-telephony]: Skipping, unable to determine old version
+[2024-04-13 05:30:03] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-connector-telephony] error
+[2024-04-13 05:30:03] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/e9/c8/7f581d2ae825faa0b7973bcc73c15e31c01c7e1f5c085a746ded34473011/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz
+[2024-04-13 05:30:03] INFO root fetch - processPackages [odoo-addon-base-phone]: Downloading https://files.pythonhosted.org/packages/15/4b/23f5d6a4226adbdd0de69fe86a207a23f76ebe8c42fc2570ff10edd39f19/odoo_addon_base_phone-17.0.1.0.0.4-py3-none-any.whl
+[2024-04-13 05:30:03] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/74/95/bdeb12dec2c7c5b69ee11a239dcb09345f2e4180ca0e26e6f12bef8f5013/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz
+[2024-04-13 05:30:03] INFO root fetch - processPackages [odoo-addon-base-phone]: executing diffoscope
+[2024-04-13 05:30:03] INFO root fetch - processPackages [odoo-addon-base-phone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_phone-17.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_base_phone-17.0.1.0.0.4-py3-none-any.whl.zip --markdown 20240413/o/odoo-addon-base-phone/17.0.1.0.0.3-17.0.1.0.0.4/README.md --exclude *.pyd
+[2024-04-13 05:30:03] INFO root fetch - processPackages [keras-nlp-nightly]: executing diffoscope
+[2024-04-13 05:30:03] INFO root fetch - processPackages [keras-nlp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz --markdown 20240413/k/keras-nlp-nightly/0.9.0.dev2024040803-0.9.0.dev2024041003/README.md --exclude *.pyd
+[2024-04-13 05:30:04] INFO root fetch - processPackages [odoo-addon-base-phone]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_phone-17.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-04-13 05:30:04] INFO root fetch - processPackages [odoo-addon-base-phone]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_phone-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-04-13 05:30:04] INFO root fetch - main [MainThread]: End processing [odoo-addon-base-phone]: success
+[2024-04-13 05:30:05] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz]
+[2024-04-13 05:30:05] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz]
+[2024-04-13 05:30:05] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
+[2024-04-13 05:30:05] INFO root fetch - main [MainThread]: Store serial: [22749189]
