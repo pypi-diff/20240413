@@ -11765,3 +11765,42 @@
 [2024-04-13 11:51:25] INFO root fetch - processPackages [retried]: Remove: archive file [/home/abi/fetcher/tmp/retried-7.3.0.tar.gz]
 [2024-04-13 11:51:25] INFO root fetch - main [MainThread]: End processing [retried]: success
 [2024-04-13 11:51:25] INFO root fetch - main [MainThread]: Store serial: [22750955]
+[2024-04-13 11:53:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750955]
+[2024-04-13 11:53:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 11:53:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: promplate
+[2024-04-13 11:53:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyqie
+[2024-04-13 11:53:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: carthooks
+[2024-04-13 11:53:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ourJWT
+[2024-04-13 11:53:34] INFO root fetch - processPackages [ourJWT]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-13 11:53:34] INFO root fetch - processPackages [pyqie]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-13 11:53:34] INFO root fetch - processPackages [ourJWT]: Downloading https://files.pythonhosted.org/packages/fb/6d/76137e8321dbb6476ae794d26ea5f4a2d2d3290d3b320baee463bbe70004/ourJWT-0.0.2.tar.gz
+[2024-04-13 11:53:34] INFO root fetch - processPackages [carthooks]: New version: [0.1.2] Old Version: [0.1.0]
+[2024-04-13 11:53:34] INFO root fetch - processPackages [pyqie]: Downloading https://files.pythonhosted.org/packages/1e/b7/411c9318d2447243768d1afd0a20e04c4f633275bbdd366ae75be6e04e9e/pyqie-0.0.1-cp37-abi3-win_amd64.whl
+[2024-04-13 11:53:34] INFO root fetch - processPackages [promplate]: New version: [0.3.4.2] Old Version: [0.3.4.1]
+[2024-04-13 11:53:34] INFO root fetch - processPackages [carthooks]: Downloading https://files.pythonhosted.org/packages/c6/81/77e4bdaf604ed1b7c2c9d950b6d23b6063bff084c574711566dfa7bb84c8/carthooks-0.1.0.tar.gz
+[2024-04-13 11:53:34] INFO root fetch - processPackages [promplate]: Downloading https://files.pythonhosted.org/packages/b4/92/18f51a480554c80de73ccd52c29ad653823b89fb717e489650628c767cfa/promplate-0.3.4.1.tar.gz
+[2024-04-13 11:53:34] INFO root fetch - processPackages [pyqie]: Downloading https://files.pythonhosted.org/packages/4b/7d/97a60ef97d73afa618998d15c7708024ab422be7f5c080f094530789d7cc/pyqie-0.0.2-cp37-abi3-win_amd64.whl
+[2024-04-13 11:53:34] INFO root fetch - processPackages [ourJWT]: Downloading https://files.pythonhosted.org/packages/ff/b2/211dd8ecb91c0ff46f13060c71c85a1bbfcecf161763d8ee3320c8be7a4f/ourJWT-0.0.3.tar.gz
+[2024-04-13 11:53:34] INFO root fetch - processPackages [pyqie]: executing diffoscope
+[2024-04-13 11:53:34] INFO root fetch - processPackages [pyqie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqie-0.0.1-cp37-abi3-win_amd64.whl.zip tmp/pyqie-0.0.2-cp37-abi3-win_amd64.whl.zip --markdown 20240413/p/pyqie/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-13 11:53:34] INFO root fetch - processPackages [ourJWT]: executing diffoscope
+[2024-04-13 11:53:34] INFO root fetch - processPackages [ourJWT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ourJWT-0.0.2.tar.gz tmp/ourJWT-0.0.3.tar.gz --markdown 20240413/o/ourJWT/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-13 11:53:34] INFO root fetch - processPackages [carthooks]: Downloading https://files.pythonhosted.org/packages/ec/3a/7b72eb73682db7402b8daeed0df55d8aa333f8efa587e3a5984d5b50d454/carthooks-0.1.2.tar.gz
+[2024-04-13 11:53:34] INFO root fetch - processPackages [promplate]: Downloading https://files.pythonhosted.org/packages/57/ac/7ef16aa0cc5517be22c66e56d7518ec065cc6e03278f43bf1952e23ebf37/promplate-0.3.4.2.tar.gz
+[2024-04-13 11:53:34] INFO root fetch - processPackages [carthooks]: executing diffoscope
+[2024-04-13 11:53:34] INFO root fetch - processPackages [carthooks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carthooks-0.1.0.tar.gz tmp/carthooks-0.1.2.tar.gz --markdown 20240413/c/carthooks/0.1.0-0.1.2/README.md --exclude *.pyd
+[2024-04-13 11:53:34] INFO root fetch - processPackages [promplate]: executing diffoscope
+[2024-04-13 11:53:34] INFO root fetch - processPackages [promplate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promplate-0.3.4.1.tar.gz tmp/promplate-0.3.4.2.tar.gz --markdown 20240413/p/promplate/0.3.4.1-0.3.4.2/README.md --exclude *.pyd
+[2024-04-13 11:53:35] INFO root fetch - processPackages [ourJWT]: Remove: archive file [/home/abi/fetcher/tmp/ourJWT-0.0.2.tar.gz]
+[2024-04-13 11:53:35] INFO root fetch - processPackages [ourJWT]: Remove: archive file [/home/abi/fetcher/tmp/ourJWT-0.0.3.tar.gz]
+[2024-04-13 11:53:35] INFO root fetch - main [MainThread]: End processing [ourJWT]: success
+[2024-04-13 11:53:35] INFO root fetch - processPackages [pyqie]: Remove: archive file [/home/abi/fetcher/tmp/pyqie-0.0.1-cp37-abi3-win_amd64.whl.zip]
+[2024-04-13 11:53:35] INFO root fetch - processPackages [pyqie]: Remove: archive file [/home/abi/fetcher/tmp/pyqie-0.0.2-cp37-abi3-win_amd64.whl.zip]
+[2024-04-13 11:53:35] INFO root fetch - main [MainThread]: End processing [pyqie]: success
+[2024-04-13 11:53:35] INFO root fetch - processPackages [carthooks]: Remove: archive file [/home/abi/fetcher/tmp/carthooks-0.1.0.tar.gz]
+[2024-04-13 11:53:35] INFO root fetch - processPackages [carthooks]: Remove: archive file [/home/abi/fetcher/tmp/carthooks-0.1.2.tar.gz]
+[2024-04-13 11:53:35] INFO root fetch - main [MainThread]: End processing [carthooks]: success
+[2024-04-13 11:53:35] INFO root fetch - processPackages [promplate]: Remove: archive file [/home/abi/fetcher/tmp/promplate-0.3.4.1.tar.gz]
+[2024-04-13 11:53:35] INFO root fetch - processPackages [promplate]: Remove: archive file [/home/abi/fetcher/tmp/promplate-0.3.4.2.tar.gz]
+[2024-04-13 11:53:35] INFO root fetch - main [MainThread]: End processing [promplate]: success
+[2024-04-13 11:53:35] INFO root fetch - main [MainThread]: Store serial: [22750965]
