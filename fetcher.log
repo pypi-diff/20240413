@@ -16134,3 +16134,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 17:35:15] INFO root fetch - processPackages [ovos-dinkum-listener]: Remove: archive file [/home/abi/fetcher/tmp/ovos-dinkum-listener-0.0.3a9.tar.gz]
 [2024-04-13 17:35:15] INFO root fetch - main [MainThread]: End processing [ovos-dinkum-listener]: success
 [2024-04-13 17:35:15] INFO root fetch - main [MainThread]: Store serial: [22752929]
+[2024-04-13 17:37:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752929]
+[2024-04-13 17:37:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 17:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyQtUIkit
+[2024-04-13 17:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: acctf
+[2024-04-13 17:37:24] INFO root fetch - processPackages [acctf]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-04-13 17:37:24] INFO root fetch - processPackages [acctf]: Downloading https://files.pythonhosted.org/packages/44/44/703c2dbd28e94754264f44991fe8a9059f407b179d844c95548158c64612/acctf-0.2.1.tar.gz
+[2024-04-13 17:37:24] INFO root fetch - processPackages [PyQtUIkit]: New version: [2.4.2] Old Version: [2.4.1]
+[2024-04-13 17:37:24] INFO root fetch - processPackages [PyQtUIkit]: Downloading https://files.pythonhosted.org/packages/4b/1c/300968faf784aa23accdd994c4fbce8a0fc1c5e1182147872b7ba9acbf11/PyQtUIkit-2.4.1.tar.gz
+[2024-04-13 17:37:24] INFO root fetch - processPackages [acctf]: Downloading https://files.pythonhosted.org/packages/6f/1d/3ecb745a5a609a54cc926ef81764f2974b470b1005b2fe017c6f0e57091a/acctf-0.3.0.tar.gz
+[2024-04-13 17:37:25] INFO root fetch - processPackages [acctf]: executing diffoscope
+[2024-04-13 17:37:25] INFO root fetch - processPackages [acctf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acctf-0.2.1.tar.gz tmp/acctf-0.3.0.tar.gz --markdown 20240413/a/acctf/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-04-13 17:37:25] INFO root fetch - processPackages [PyQtUIkit]: Downloading https://files.pythonhosted.org/packages/67/47/0068b4cb90b9cab431ddb04a93f558956785c7c24299023bfade809510c1/PyQtUIkit-2.4.2.tar.gz
+[2024-04-13 17:37:25] INFO root fetch - processPackages [acctf]: Remove: archive file [/home/abi/fetcher/tmp/acctf-0.2.1.tar.gz]
+[2024-04-13 17:37:25] INFO root fetch - processPackages [acctf]: Remove: archive file [/home/abi/fetcher/tmp/acctf-0.3.0.tar.gz]
+[2024-04-13 17:37:25] INFO root fetch - main [MainThread]: End processing [acctf]: success
+[2024-04-13 17:37:25] INFO root fetch - processPackages [PyQtUIkit]: executing diffoscope
+[2024-04-13 17:37:25] INFO root fetch - processPackages [PyQtUIkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQtUIkit-2.4.1.tar.gz tmp/PyQtUIkit-2.4.2.tar.gz --markdown 20240413/P/PyQtUIkit/2.4.1-2.4.2/README.md --exclude *.pyd
+[2024-04-13 17:37:26] INFO root fetch - processPackages [PyQtUIkit]: Remove: archive file [/home/abi/fetcher/tmp/PyQtUIkit-2.4.1.tar.gz]
+[2024-04-13 17:37:26] INFO root fetch - processPackages [PyQtUIkit]: Remove: archive file [/home/abi/fetcher/tmp/PyQtUIkit-2.4.2.tar.gz]
+[2024-04-13 17:37:26] INFO root fetch - main [MainThread]: End processing [PyQtUIkit]: success
+[2024-04-13 17:37:26] INFO root fetch - main [MainThread]: Store serial: [22752934]
