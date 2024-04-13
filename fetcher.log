@@ -10088,3 +10088,15 @@
 [2024-04-13 09:29:32] INFO root fetch - processPackages [sortinghat]: Remove: archive file [/home/abi/fetcher/tmp/sortinghat-1.0.0rc3.tar.gz]
 [2024-04-13 09:29:32] INFO root fetch - main [MainThread]: End processing [sortinghat]: success
 [2024-04-13 09:29:32] INFO root fetch - main [MainThread]: Store serial: [22750215]
+[2024-04-13 09:31:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750215]
+[2024-04-13 09:31:41] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 09:31:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sealights-python-agent
+[2024-04-13 09:31:41] INFO root fetch - processPackages [sealights-python-agent]: New version: [2.2.0] Old Version: [2.1.0]
+[2024-04-13 09:31:42] INFO root fetch - processPackages [sealights-python-agent]: Downloading https://files.pythonhosted.org/packages/bc/ff/085b51edde7c6b5fb1c24d2193a1c422a622398942fb3e9043f82b97dd7f/sealights-python-agent-2.1.0.tar.gz
+[2024-04-13 09:31:42] INFO root fetch - processPackages [sealights-python-agent]: Downloading https://files.pythonhosted.org/packages/77/21/a1166a52693cd70149ca093b802a67396c60dd1f8acfdc4018396c1c63ae/sealights-python-agent-2.2.0.tar.gz
+[2024-04-13 09:31:42] INFO root fetch - processPackages [sealights-python-agent]: executing diffoscope
+[2024-04-13 09:31:42] INFO root fetch - processPackages [sealights-python-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sealights-python-agent-2.1.0.tar.gz tmp/sealights-python-agent-2.2.0.tar.gz --markdown 20240413/s/sealights-python-agent/2.1.0-2.2.0/README.md --exclude *.pyd
+[2024-04-13 09:31:44] INFO root fetch - processPackages [sealights-python-agent]: Remove: archive file [/home/abi/fetcher/tmp/sealights-python-agent-2.1.0.tar.gz]
+[2024-04-13 09:31:44] INFO root fetch - processPackages [sealights-python-agent]: Remove: archive file [/home/abi/fetcher/tmp/sealights-python-agent-2.2.0.tar.gz]
+[2024-04-13 09:31:44] INFO root fetch - main [MainThread]: End processing [sealights-python-agent]: success
+[2024-04-13 09:31:44] INFO root fetch - main [MainThread]: Store serial: [22750220]
