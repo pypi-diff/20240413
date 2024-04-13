@@ -8411,3 +8411,51 @@
 [2024-04-13 07:39:43] INFO root fetch - processPackages [pulumi-civo]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_civo-2.4.0a1712985677.tar.gz]
 [2024-04-13 07:39:43] INFO root fetch - main [MainThread]: End processing [pulumi-civo]: success
 [2024-04-13 07:39:43] INFO root fetch - main [MainThread]: Store serial: [22749647]
+[2024-04-13 07:41:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749647]
+[2024-04-13 07:41:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 07:41:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pybuoy
+[2024-04-13 07:41:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vs-colabi
+[2024-04-13 07:41:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-aiven
+[2024-04-13 07:41:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alpaca-eval
+[2024-04-13 07:41:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: crawlist
+[2024-04-13 07:41:52] INFO root fetch - processPackages [crawlist]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-13 07:41:53] INFO root fetch - processPackages [crawlist]: Downloading https://files.pythonhosted.org/packages/22/71/7b7b370b3005e72a11b64ffed142fd154eef9e31ea921c65bf7d1e5539fa/crawlist-0.0.1.tar.gz
+[2024-04-13 07:41:53] INFO root fetch - processPackages [pybuoy]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-04-13 07:41:53] INFO root fetch - processPackages [vs-colabi]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-04-13 07:41:53] INFO root fetch - processPackages [alpaca-eval]: New version: [0.6.1] Old Version: [0.6]
+[2024-04-13 07:41:53] INFO root fetch - processPackages [pulumi-aiven]: New version: [6.9.0a1704274395] Old Version: [6.9.0a1704258951]
+[2024-04-13 07:41:53] INFO root fetch - processPackages [pybuoy]: Downloading https://files.pythonhosted.org/packages/e2/3c/348cf0706d3614f9a899ab3c04a83bc5ab0a8c5653b8ba24167f36cd440c/pybuoy-0.5.3.tar.gz
+[2024-04-13 07:41:53] INFO root fetch - processPackages [vs-colabi]: Downloading https://files.pythonhosted.org/packages/b6/56/87c380f006bb9ce629b15ef55560a86bbe9aa2573766e92f291ded8d7427/vs-colabi-1.1.2.tar.gz
+[2024-04-13 07:41:53] INFO root fetch - processPackages [crawlist]: Downloading https://files.pythonhosted.org/packages/17/a1/31f87e09d7883006b20e7f24a23b0692f3e7a3b6bba195db1dd12239e0f4/crawlist-0.0.2.tar.gz
+[2024-04-13 07:41:53] INFO root fetch - processPackages [pulumi-aiven]: Downloading https://files.pythonhosted.org/packages/89/fb/adacc179c277b4328f00f1483cac3f1c2227c33318802c8f88e0ee8e93c3/pulumi_aiven-6.9.0a1704258951.tar.gz
+[2024-04-13 07:41:53] INFO root fetch - processPackages [crawlist]: executing diffoscope
+[2024-04-13 07:41:53] INFO root fetch - processPackages [crawlist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crawlist-0.0.1.tar.gz tmp/crawlist-0.0.2.tar.gz --markdown 20240413/c/crawlist/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-13 07:41:53] INFO root fetch - processPackages [alpaca-eval]: Downloading https://files.pythonhosted.org/packages/fd/be/5625495fcb0b4c7b7accc048c88b7c7f59035e3b473e9c3e010632d22810/alpaca_eval-0.6.tar.gz
+[2024-04-13 07:41:53] INFO root fetch - processPackages [vs-colabi]: Downloading https://files.pythonhosted.org/packages/97/1b/d01d4c0b26b88014406776b0ab83a7a4f17dde73e5d679734f08d7443c5a/vs-colabi-1.1.3.tar.gz
+[2024-04-13 07:41:53] INFO root fetch - processPackages [pybuoy]: Downloading https://files.pythonhosted.org/packages/5d/8e/753fad3509ca57a10376e39a2c361b71e03efd91b6750a9a8f57c4d28386/pybuoy-0.5.4.tar.gz
+[2024-04-13 07:41:53] INFO root fetch - processPackages [pulumi-aiven]: Downloading https://files.pythonhosted.org/packages/58/4d/df63cee14469cb3bb5ff7e2a4af56d19adf0cd17ce9192b84188dc240736/pulumi_aiven-6.9.0a1704274395.tar.gz
+[2024-04-13 07:41:53] INFO root fetch - processPackages [vs-colabi]: executing diffoscope
+[2024-04-13 07:41:53] INFO root fetch - processPackages [vs-colabi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vs-colabi-1.1.2.tar.gz tmp/vs-colabi-1.1.3.tar.gz --markdown 20240413/v/vs-colabi/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-04-13 07:41:53] INFO root fetch - processPackages [pybuoy]: executing diffoscope
+[2024-04-13 07:41:53] INFO root fetch - processPackages [pybuoy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybuoy-0.5.3.tar.gz tmp/pybuoy-0.5.4.tar.gz --markdown 20240413/p/pybuoy/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-04-13 07:41:53] INFO root fetch - processPackages [alpaca-eval]: Downloading https://files.pythonhosted.org/packages/5a/0c/c46d793fa6f171816c6cc0e1f84488a71487a118b2d3800017198d424005/alpaca_eval-0.6.1.tar.gz
+[2024-04-13 07:41:53] INFO root fetch - processPackages [pulumi-aiven]: executing diffoscope
+[2024-04-13 07:41:53] INFO root fetch - processPackages [pulumi-aiven]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aiven-6.9.0a1704258951.tar.gz tmp/pulumi_aiven-6.9.0a1704274395.tar.gz --markdown 20240413/p/pulumi-aiven/6.9.0a1704258951-6.9.0a1704274395/README.md --exclude *.pyd
+[2024-04-13 07:41:53] INFO root fetch - processPackages [crawlist]: Remove: archive file [/home/abi/fetcher/tmp/crawlist-0.0.1.tar.gz]
+[2024-04-13 07:41:53] INFO root fetch - processPackages [crawlist]: Remove: archive file [/home/abi/fetcher/tmp/crawlist-0.0.2.tar.gz]
+[2024-04-13 07:41:53] INFO root fetch - main [MainThread]: End processing [crawlist]: success
+[2024-04-13 07:41:54] INFO root fetch - processPackages [alpaca-eval]: executing diffoscope
+[2024-04-13 07:41:54] INFO root fetch - processPackages [alpaca-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alpaca_eval-0.6.tar.gz tmp/alpaca_eval-0.6.1.tar.gz --markdown 20240413/a/alpaca-eval/0.6-0.6.1/README.md --exclude *.pyd
+[2024-04-13 07:41:54] INFO root fetch - processPackages [vs-colabi]: Remove: archive file [/home/abi/fetcher/tmp/vs-colabi-1.1.2.tar.gz]
+[2024-04-13 07:41:54] INFO root fetch - processPackages [vs-colabi]: Remove: archive file [/home/abi/fetcher/tmp/vs-colabi-1.1.3.tar.gz]
+[2024-04-13 07:41:54] INFO root fetch - main [MainThread]: End processing [vs-colabi]: success
+[2024-04-13 07:41:54] INFO root fetch - processPackages [pybuoy]: Remove: archive file [/home/abi/fetcher/tmp/pybuoy-0.5.3.tar.gz]
+[2024-04-13 07:41:54] INFO root fetch - processPackages [pybuoy]: Remove: archive file [/home/abi/fetcher/tmp/pybuoy-0.5.4.tar.gz]
+[2024-04-13 07:41:54] INFO root fetch - main [MainThread]: End processing [pybuoy]: success
+[2024-04-13 07:41:55] INFO root fetch - processPackages [pulumi-aiven]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aiven-6.9.0a1704258951.tar.gz]
+[2024-04-13 07:41:55] INFO root fetch - processPackages [pulumi-aiven]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aiven-6.9.0a1704274395.tar.gz]
+[2024-04-13 07:41:55] INFO root fetch - main [MainThread]: End processing [pulumi-aiven]: success
+[2024-04-13 07:41:55] INFO root fetch - processPackages [alpaca-eval]: Remove: archive file [/home/abi/fetcher/tmp/alpaca_eval-0.6.tar.gz]
+[2024-04-13 07:41:55] INFO root fetch - processPackages [alpaca-eval]: Remove: archive file [/home/abi/fetcher/tmp/alpaca_eval-0.6.1.tar.gz]
+[2024-04-13 07:41:55] INFO root fetch - main [MainThread]: End processing [alpaca-eval]: success
+[2024-04-13 07:41:55] INFO root fetch - main [MainThread]: Store serial: [22749662]
