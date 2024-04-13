@@ -12747,3 +12747,24 @@
 [2024-04-13 13:07:59] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
 [2024-04-13 13:07:59] INFO root fetch - main [MainThread]: End processing [akshare]: success
 [2024-04-13 13:07:59] INFO root fetch - main [MainThread]: Store serial: [22751305]
+[2024-04-13 13:10:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751305]
+[2024-04-13 13:10:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 13:10:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tempren
+[2024-04-13 13:10:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydantic-settings-vault
+[2024-04-13 13:10:08] INFO root fetch - processPackages [tempren]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-04-13 13:10:08] INFO root fetch - processPackages [tempren]: Downloading https://files.pythonhosted.org/packages/cd/1b/ce3644487ab5f53cd4fe9d45fe0fbd94966db560ba66ea37275e261370d6/tempren-1.0.1.tar.gz
+[2024-04-13 13:10:08] INFO root fetch - processPackages [pydantic-settings-vault]: New version: [2.1.0] Old Version: [2.0.0]
+[2024-04-13 13:10:08] INFO root fetch - processPackages [pydantic-settings-vault]: Downloading https://files.pythonhosted.org/packages/d0/1d/6b65ed2f0c40491d68c57411901ecee799573a63ec9afafb25b8337e7048/pydantic_settings_vault-2.0.0.tar.gz
+[2024-04-13 13:10:08] INFO root fetch - processPackages [tempren]: Downloading https://files.pythonhosted.org/packages/c9/8e/e13347a3e4636300af913d7bce16d34a91ebc3e616b9031886fda1d7a1cd/tempren-1.1.0.tar.gz
+[2024-04-13 13:10:08] INFO root fetch - processPackages [tempren]: executing diffoscope
+[2024-04-13 13:10:08] INFO root fetch - processPackages [tempren]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tempren-1.0.1.tar.gz tmp/tempren-1.1.0.tar.gz --markdown 20240413/t/tempren/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-04-13 13:10:08] INFO root fetch - processPackages [pydantic-settings-vault]: Downloading https://files.pythonhosted.org/packages/e9/f5/ed68fbdb8ff006fc2b6d64c6fb62eaa9550f1b47fa426ef6af03760f4a75/pydantic_settings_vault-2.1.0.tar.gz
+[2024-04-13 13:10:08] INFO root fetch - processPackages [pydantic-settings-vault]: executing diffoscope
+[2024-04-13 13:10:08] INFO root fetch - processPackages [pydantic-settings-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_settings_vault-2.0.0.tar.gz tmp/pydantic_settings_vault-2.1.0.tar.gz --markdown 20240413/p/pydantic-settings-vault/2.0.0-2.1.0/README.md --exclude *.pyd
+[2024-04-13 13:10:09] INFO root fetch - processPackages [tempren]: Remove: archive file [/home/abi/fetcher/tmp/tempren-1.0.1.tar.gz]
+[2024-04-13 13:10:09] INFO root fetch - processPackages [tempren]: Remove: archive file [/home/abi/fetcher/tmp/tempren-1.1.0.tar.gz]
+[2024-04-13 13:10:09] INFO root fetch - main [MainThread]: End processing [tempren]: success
+[2024-04-13 13:10:09] INFO root fetch - processPackages [pydantic-settings-vault]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_settings_vault-2.0.0.tar.gz]
+[2024-04-13 13:10:09] INFO root fetch - processPackages [pydantic-settings-vault]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_settings_vault-2.1.0.tar.gz]
+[2024-04-13 13:10:09] INFO root fetch - main [MainThread]: End processing [pydantic-settings-vault]: success
+[2024-04-13 13:10:09] INFO root fetch - main [MainThread]: Store serial: [22751317]
