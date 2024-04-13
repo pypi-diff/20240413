@@ -9954,3 +9954,54 @@
 [2024-04-13 09:20:52] INFO root fetch - processPackages [pulumi-oci]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_oci-1.9.0a1693981063.tar.gz]
 [2024-04-13 09:20:52] INFO root fetch - main [MainThread]: End processing [pulumi-oci]: success
 [2024-04-13 09:20:52] INFO root fetch - main [MainThread]: Store serial: [22750164]
+[2024-04-13 09:22:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750164]
+[2024-04-13 09:23:02] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 09:23:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: grimoirelab-panels
+[2024-04-13 09:23:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: grimoirelab-toolkit
+[2024-04-13 09:23:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kidash
+[2024-04-13 09:23:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ccnuacm-datamocker
+[2024-04-13 09:23:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pipe21
+[2024-04-13 09:23:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chainlit2
+[2024-04-13 09:23:02] INFO root fetch - processPackages [ccnuacm-datamocker]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-13 09:23:02] INFO root fetch - processPackages [grimoirelab-panels]: New version: [1.0.0rc1] Old Version: [1.0.0]
+[2024-04-13 09:23:02] INFO root fetch - processPackages [pipe21]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-04-13 09:23:02] INFO root fetch - processPackages [grimoirelab-toolkit]: New version: [1.0.0rc2] Old Version: [1.0.0rc1]
+[2024-04-13 09:23:02] WARNING root fetch - processPackages [chainlit2]: Skipping, unable to determine old version
+[2024-04-13 09:23:02] INFO root fetch - main [MainThread]: End processing [chainlit2] error
+[2024-04-13 09:23:02] INFO root fetch - processPackages [kidash]: New version: [1.0.0rc2] Old Version: [1.0.0rc1]
+[2024-04-13 09:23:02] INFO root fetch - processPackages [ccnuacm-datamocker]: Downloading https://files.pythonhosted.org/packages/1b/d2/9fc12e4084c279252e448e9758a3ae22a722a160b894f6fcf7e949d17c7a/ccnuacm_datamocker-0.0.1.tar.gz
+[2024-04-13 09:23:02] INFO root fetch - processPackages [grimoirelab-panels]: Downloading https://files.pythonhosted.org/packages/62/f6/eb1f44478917d5019955665736eb5fbb142369550b75030e7f184c6cdd85/grimoirelab_panels-1.0.0.tar.gz
+[2024-04-13 09:23:02] INFO root fetch - processPackages [grimoirelab-toolkit]: Downloading https://files.pythonhosted.org/packages/4c/95/66c8f35ae65311ad45846924482c49e4493aec72cf5105bbcd20823a95f7/grimoirelab_toolkit-1.0.0rc1.tar.gz
+[2024-04-13 09:23:02] INFO root fetch - processPackages [kidash]: Downloading https://files.pythonhosted.org/packages/9b/c6/8d0e3c8677a5e634b9c95652ea1a5906d30cf41b390439cc6e9a1b114988/kidash-1.0.0rc1.tar.gz
+[2024-04-13 09:23:02] INFO root fetch - processPackages [pipe21]: Downloading https://files.pythonhosted.org/packages/51/39/24c442c6db5e924109871bfd746531a14c6069a8f9b3e456e72c8efa05cd/pipe21-1.8.0.tar.gz
+[2024-04-13 09:23:02] INFO root fetch - processPackages [ccnuacm-datamocker]: Downloading https://files.pythonhosted.org/packages/60/97/826031ab883f7883deb0f9ded0fefe10ea978323d20230c49026af1b4eef/ccnuacm_datamocker-0.0.2.tar.gz
+[2024-04-13 09:23:02] INFO root fetch - processPackages [ccnuacm-datamocker]: executing diffoscope
+[2024-04-13 09:23:02] INFO root fetch - processPackages [ccnuacm-datamocker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccnuacm_datamocker-0.0.1.tar.gz tmp/ccnuacm_datamocker-0.0.2.tar.gz --markdown 20240413/c/ccnuacm-datamocker/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-13 09:23:03] INFO root fetch - processPackages [kidash]: Downloading https://files.pythonhosted.org/packages/f0/44/a3737fdc43884e7c0446c9d4a064f55042c9c89cb9757fd55e6f07bd8f6c/kidash-1.0.0rc2.tar.gz
+[2024-04-13 09:23:03] INFO root fetch - processPackages [pipe21]: Downloading https://files.pythonhosted.org/packages/06/d2/ce18067a3e0d49128faaaa14a4a4c575a2c94bb1d4faf3fdbfec1625ee96/pipe21-1.9.0.tar.gz
+[2024-04-13 09:23:03] INFO root fetch - processPackages [grimoirelab-toolkit]: Downloading https://files.pythonhosted.org/packages/1b/2d/42d4ffaef1bc36ffe97738c2f17126c44e004bdf7d22693a80946c2bf512/grimoirelab_toolkit-1.0.0rc2.tar.gz
+[2024-04-13 09:23:03] INFO root fetch - processPackages [kidash]: executing diffoscope
+[2024-04-13 09:23:03] INFO root fetch - processPackages [kidash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kidash-1.0.0rc1.tar.gz tmp/kidash-1.0.0rc2.tar.gz --markdown 20240413/k/kidash/1.0.0rc1-1.0.0rc2/README.md --exclude *.pyd
+[2024-04-13 09:23:03] INFO root fetch - processPackages [grimoirelab-panels]: Downloading https://files.pythonhosted.org/packages/79/36/72f6a531b559be290e8cfd098b525f58bddf65bb452a4d499fd5e742fca6/grimoirelab_panels-1.0.0rc1.tar.gz
+[2024-04-13 09:23:03] INFO root fetch - processPackages [pipe21]: executing diffoscope
+[2024-04-13 09:23:03] INFO root fetch - processPackages [pipe21]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipe21-1.8.0.tar.gz tmp/pipe21-1.9.0.tar.gz --markdown 20240413/p/pipe21/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-04-13 09:23:03] INFO root fetch - processPackages [grimoirelab-toolkit]: executing diffoscope
+[2024-04-13 09:23:03] INFO root fetch - processPackages [grimoirelab-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grimoirelab_toolkit-1.0.0rc1.tar.gz tmp/grimoirelab_toolkit-1.0.0rc2.tar.gz --markdown 20240413/g/grimoirelab-toolkit/1.0.0rc1-1.0.0rc2/README.md --exclude *.pyd
+[2024-04-13 09:23:03] INFO root fetch - processPackages [grimoirelab-panels]: executing diffoscope
+[2024-04-13 09:23:03] INFO root fetch - processPackages [grimoirelab-panels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grimoirelab_panels-1.0.0.tar.gz tmp/grimoirelab_panels-1.0.0rc1.tar.gz --markdown 20240413/g/grimoirelab-panels/1.0.0-1.0.0rc1/README.md --exclude *.pyd
+[2024-04-13 09:23:03] INFO root fetch - processPackages [ccnuacm-datamocker]: Remove: archive file [/home/abi/fetcher/tmp/ccnuacm_datamocker-0.0.1.tar.gz]
+[2024-04-13 09:23:03] INFO root fetch - processPackages [ccnuacm-datamocker]: Remove: archive file [/home/abi/fetcher/tmp/ccnuacm_datamocker-0.0.2.tar.gz]
+[2024-04-13 09:23:03] INFO root fetch - main [MainThread]: End processing [ccnuacm-datamocker]: success
+[2024-04-13 09:23:03] INFO root fetch - processPackages [kidash]: Remove: archive file [/home/abi/fetcher/tmp/kidash-1.0.0rc1.tar.gz]
+[2024-04-13 09:23:03] INFO root fetch - processPackages [kidash]: Remove: archive file [/home/abi/fetcher/tmp/kidash-1.0.0rc2.tar.gz]
+[2024-04-13 09:23:03] INFO root fetch - main [MainThread]: End processing [kidash]: success
+[2024-04-13 09:23:03] INFO root fetch - processPackages [pipe21]: Remove: archive file [/home/abi/fetcher/tmp/pipe21-1.8.0.tar.gz]
+[2024-04-13 09:23:03] INFO root fetch - processPackages [pipe21]: Remove: archive file [/home/abi/fetcher/tmp/pipe21-1.9.0.tar.gz]
+[2024-04-13 09:23:03] INFO root fetch - main [MainThread]: End processing [pipe21]: success
+[2024-04-13 09:23:03] INFO root fetch - processPackages [grimoirelab-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/grimoirelab_toolkit-1.0.0rc1.tar.gz]
+[2024-04-13 09:23:03] INFO root fetch - processPackages [grimoirelab-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/grimoirelab_toolkit-1.0.0rc2.tar.gz]
+[2024-04-13 09:23:03] INFO root fetch - main [MainThread]: End processing [grimoirelab-toolkit]: success
+[2024-04-13 09:23:04] INFO root fetch - processPackages [grimoirelab-panels]: Remove: archive file [/home/abi/fetcher/tmp/grimoirelab_panels-1.0.0.tar.gz]
+[2024-04-13 09:23:04] INFO root fetch - processPackages [grimoirelab-panels]: Remove: archive file [/home/abi/fetcher/tmp/grimoirelab_panels-1.0.0rc1.tar.gz]
+[2024-04-13 09:23:04] INFO root fetch - main [MainThread]: End processing [grimoirelab-panels]: success
+[2024-04-13 09:23:04] INFO root fetch - main [MainThread]: Store serial: [22750185]
