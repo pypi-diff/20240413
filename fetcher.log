@@ -12627,3 +12627,27 @@
 [2024-04-13 12:59:12] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.9.tar.gz]
 [2024-04-13 12:59:12] INFO root fetch - main [MainThread]: End processing [LinguAligner]: success
 [2024-04-13 12:59:12] INFO root fetch - main [MainThread]: Store serial: [22751249]
+[2024-04-13 13:01:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751249]
+[2024-04-13 13:01:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 13:01:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyaction
+[2024-04-13 13:01:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: LinguAligner
+[2024-04-13 13:01:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gen3-tracker
+[2024-04-13 13:01:21] INFO root fetch - processPackages [gen3-tracker]: New version: [0.0.3rc5] Old Version: [0.0.3rc4]
+[2024-04-13 13:01:21] INFO root fetch - processPackages [LinguAligner]: New version: [0.9] Old Version: [0.8]
+[2024-04-13 13:01:21] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/63/1f/fc1941e3d878f8643898c07bd958b932dd36b3b074928145bb430dfe0a04/lingualigner-0.8.tar.gz
+[2024-04-13 13:01:21] INFO root fetch - processPackages [gen3-tracker]: Downloading https://files.pythonhosted.org/packages/67/ed/bf30bec92687323b97626196a74b314e9e92b3e39f4c0c081a84c0ef5815/gen3_tracker-0.0.3rc4.tar.gz
+[2024-04-13 13:01:21] WARNING root fetch - processPackages [pyaction]: Skipping, unable to determine old version
+[2024-04-13 13:01:21] INFO root fetch - main [MainThread]: End processing [pyaction] error
+[2024-04-13 13:01:21] INFO root fetch - processPackages [LinguAligner]: Downloading https://files.pythonhosted.org/packages/73/fb/3cad932ad4847785cbae099a96fb2ae5367c5b788dac0deece75b60a9254/lingualigner-0.9.tar.gz
+[2024-04-13 13:01:21] INFO root fetch - processPackages [LinguAligner]: executing diffoscope
+[2024-04-13 13:01:21] INFO root fetch - processPackages [LinguAligner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lingualigner-0.8.tar.gz tmp/lingualigner-0.9.tar.gz --markdown 20240413/L/LinguAligner/0.8-0.9/README.md --exclude *.pyd
+[2024-04-13 13:01:21] INFO root fetch - processPackages [gen3-tracker]: Downloading https://files.pythonhosted.org/packages/bb/b3/deba74c24b42dad1429b7ce823503a0c930dbf0bafaab235d9f5016dd29a/gen3_tracker-0.0.3rc5.tar.gz
+[2024-04-13 13:01:21] INFO root fetch - processPackages [gen3-tracker]: executing diffoscope
+[2024-04-13 13:01:21] INFO root fetch - processPackages [gen3-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gen3_tracker-0.0.3rc4.tar.gz tmp/gen3_tracker-0.0.3rc5.tar.gz --markdown 20240413/g/gen3-tracker/0.0.3rc4-0.0.3rc5/README.md --exclude *.pyd
+[2024-04-13 13:01:22] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.8.tar.gz]
+[2024-04-13 13:01:22] INFO root fetch - processPackages [LinguAligner]: Remove: archive file [/home/abi/fetcher/tmp/lingualigner-0.9.tar.gz]
+[2024-04-13 13:01:22] INFO root fetch - main [MainThread]: End processing [LinguAligner]: success
+[2024-04-13 13:01:22] INFO root fetch - processPackages [gen3-tracker]: Remove: archive file [/home/abi/fetcher/tmp/gen3_tracker-0.0.3rc4.tar.gz]
+[2024-04-13 13:01:22] INFO root fetch - processPackages [gen3-tracker]: Remove: archive file [/home/abi/fetcher/tmp/gen3_tracker-0.0.3rc5.tar.gz]
+[2024-04-13 13:01:22] INFO root fetch - main [MainThread]: End processing [gen3-tracker]: success
+[2024-04-13 13:01:22] INFO root fetch - main [MainThread]: Store serial: [22751270]
