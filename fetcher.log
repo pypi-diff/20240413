@@ -20523,3 +20523,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 23:21:36] INFO root fetch - processPackages [simple-value-object]: Remove: archive file [/home/abi/fetcher/tmp/simple_value_object-3.0.tar.gz]
 [2024-04-13 23:21:36] INFO root fetch - main [MainThread]: End processing [simple-value-object]: success
 [2024-04-13 23:21:36] INFO root fetch - main [MainThread]: Store serial: [22754897]
+[2024-04-13 23:23:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754897]
+[2024-04-13 23:23:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 23:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sap-python-automation
+[2024-04-13 23:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyplotlib
+[2024-04-13 23:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-confluentcloud
+[2024-04-13 23:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: invest-guard
+[2024-04-13 23:23:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-opensearch-dsl
+[2024-04-13 23:23:45] INFO root fetch - processPackages [invest-guard]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-13 23:23:45] INFO root fetch - processPackages [pyplotlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 23:23:45] INFO root fetch - processPackages [pulumi-confluentcloud]: New version: [1.9.0a1675887560] Old Version: [1.9.0]
+[2024-04-13 23:23:45] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/2f/50/1403ed83985d15933b77f9240712a361e30523e249a70e4dfcf298352dcb/invest-guard-0.1.7.tar.gz
+[2024-04-13 23:23:45] WARNING root fetch - processPackages [sap-python-automation]: Skipping, unable to determine old version
+[2024-04-13 23:23:45] INFO root fetch - main [MainThread]: End processing [sap-python-automation] error
+[2024-04-13 23:23:45] INFO root fetch - processPackages [pyplotlib]: Downloading https://files.pythonhosted.org/packages/28/bb/58ba19c8fed8024ef2c0efd0523dded73560d64857fcd7916d35aa6aa8af/pyplotlib-0.0.8.tar.gz
+[2024-04-13 23:23:45] INFO root fetch - processPackages [pulumi-confluentcloud]: Downloading https://files.pythonhosted.org/packages/ee/5c/83ab7b1cf2467d8b22165c469862d15e131885dbf277da0d1bb686af03fe/pulumi_confluentcloud-1.9.0.tar.gz
+[2024-04-13 23:23:45] INFO root fetch - processPackages [django-opensearch-dsl]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-04-13 23:23:45] INFO root fetch - processPackages [pyplotlib]: Downloading https://files.pythonhosted.org/packages/8b/f8/1cec6ba77c9aee645ad1564c6fe928db135b36bec387a9574c6422edd191/pyplotlib-0.0.9.tar.gz
+[2024-04-13 23:23:45] INFO root fetch - processPackages [pulumi-confluentcloud]: Downloading https://files.pythonhosted.org/packages/ec/f6/4c3900e97797a3f84c4c58458a6334035e702bd96d9ed3ec48d8e6e20f4e/pulumi_confluentcloud-1.9.0a1675887560.tar.gz
+[2024-04-13 23:23:46] INFO root fetch - processPackages [django-opensearch-dsl]: Downloading https://files.pythonhosted.org/packages/8a/50/e8836a677f452a1cde2d36c8265618201ef48f38403076f70ee23c68594e/django-opensearch-dsl-0.6.0.tar.gz
+[2024-04-13 23:23:46] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/eb/6f/a538f1f3ec2a02556ab820577518334c02975e2f3c855c719865dcac357c/invest-guard-0.1.8.tar.gz
+[2024-04-13 23:23:46] INFO root fetch - processPackages [pyplotlib]: executing diffoscope
+[2024-04-13 23:23:46] INFO root fetch - processPackages [pyplotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyplotlib-0.0.8.tar.gz tmp/pyplotlib-0.0.9.tar.gz --markdown 20240413/p/pyplotlib/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 23:23:46] INFO root fetch - processPackages [pulumi-confluentcloud]: executing diffoscope
+[2024-04-13 23:23:46] INFO root fetch - processPackages [pulumi-confluentcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_confluentcloud-1.9.0.tar.gz tmp/pulumi_confluentcloud-1.9.0a1675887560.tar.gz --markdown 20240413/p/pulumi-confluentcloud/1.9.0-1.9.0a1675887560/README.md --exclude *.pyd
+[2024-04-13 23:23:46] INFO root fetch - processPackages [invest-guard]: executing diffoscope
+[2024-04-13 23:23:46] INFO root fetch - processPackages [invest-guard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invest-guard-0.1.7.tar.gz tmp/invest-guard-0.1.8.tar.gz --markdown 20240413/i/invest-guard/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-13 23:23:46] INFO root fetch - processPackages [django-opensearch-dsl]: Downloading https://files.pythonhosted.org/packages/e1/c0/7877906b557a7ff4f32c5534d3f8a745b68bf7b41f6a8b6a1002d54f57ae/django_opensearch_dsl-0.6.1.tar.gz
+[2024-04-13 23:23:46] INFO root fetch - processPackages [django-opensearch-dsl]: executing diffoscope
+[2024-04-13 23:23:46] INFO root fetch - processPackages [django-opensearch-dsl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-opensearch-dsl-0.6.0.tar.gz tmp/django_opensearch_dsl-0.6.1.tar.gz --markdown 20240413/d/django-opensearch-dsl/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-04-13 23:23:46] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.8.tar.gz]
+[2024-04-13 23:23:46] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.9.tar.gz]
+[2024-04-13 23:23:46] INFO root fetch - main [MainThread]: End processing [pyplotlib]: success
+[2024-04-13 23:23:46] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest-guard-0.1.7.tar.gz]
+[2024-04-13 23:23:46] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest-guard-0.1.8.tar.gz]
+[2024-04-13 23:23:46] INFO root fetch - main [MainThread]: End processing [invest-guard]: success
+[2024-04-13 23:23:46] INFO root fetch - processPackages [pulumi-confluentcloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_confluentcloud-1.9.0.tar.gz]
+[2024-04-13 23:23:46] INFO root fetch - processPackages [pulumi-confluentcloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_confluentcloud-1.9.0a1675887560.tar.gz]
+[2024-04-13 23:23:46] INFO root fetch - main [MainThread]: End processing [pulumi-confluentcloud]: success
+[2024-04-13 23:23:47] INFO root fetch - processPackages [django-opensearch-dsl]: Remove: archive file [/home/abi/fetcher/tmp/django-opensearch-dsl-0.6.0.tar.gz]
+[2024-04-13 23:23:47] INFO root fetch - processPackages [django-opensearch-dsl]: Remove: archive file [/home/abi/fetcher/tmp/django_opensearch_dsl-0.6.1.tar.gz]
+[2024-04-13 23:23:47] INFO root fetch - main [MainThread]: End processing [django-opensearch-dsl]: success
+[2024-04-13 23:23:47] INFO root fetch - main [MainThread]: Store serial: [22754910]
