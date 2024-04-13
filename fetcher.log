@@ -15738,3 +15738,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 17:08:54] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240412-py3-none-win_amd64.whl.zip]
 [2024-04-13 17:08:54] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
 [2024-04-13 17:08:54] INFO root fetch - main [MainThread]: Store serial: [22752754]
+[2024-04-13 17:10:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752754]
+[2024-04-13 17:11:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 17:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hepai
+[2024-04-13 17:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: my-playground
+[2024-04-13 17:11:03] INFO root fetch - processPackages [hepai]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-13 17:11:03] WARNING root fetch - processPackages [my-playground]: Skipping, unable to determine old version
+[2024-04-13 17:11:03] INFO root fetch - main [MainThread]: End processing [my-playground] error
+[2024-04-13 17:11:03] INFO root fetch - processPackages [hepai]: Downloading https://files.pythonhosted.org/packages/c4/29/2fd57ddedc9e13e91537b1899dea14f61da2d7e644b579e0b104fc20b748/hepai-1.1.1.tar.gz
+[2024-04-13 17:11:04] INFO root fetch - processPackages [hepai]: Downloading https://files.pythonhosted.org/packages/7c/af/7b134eaa354e121bd8d3a4acdd13f18c3b78395b9cca8defb789fc0c3839/hepai-1.1.2.tar.gz
+[2024-04-13 17:11:04] INFO root fetch - processPackages [hepai]: executing diffoscope
+[2024-04-13 17:11:04] INFO root fetch - processPackages [hepai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hepai-1.1.1.tar.gz tmp/hepai-1.1.2.tar.gz --markdown 20240413/h/hepai/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-04-13 17:11:04] INFO root fetch - processPackages [hepai]: Remove: archive file [/home/abi/fetcher/tmp/hepai-1.1.1.tar.gz]
+[2024-04-13 17:11:04] INFO root fetch - processPackages [hepai]: Remove: archive file [/home/abi/fetcher/tmp/hepai-1.1.2.tar.gz]
+[2024-04-13 17:11:04] INFO root fetch - main [MainThread]: End processing [hepai]: success
+[2024-04-13 17:11:04] INFO root fetch - main [MainThread]: Store serial: [22752760]
