@@ -7034,3 +7034,18 @@
 [2024-04-13 04:41:40] WARNING root fetch - processPackages [gradio-huggingfacehub-search]: Skipping package: exceeds size limit 93257378>=10485760
 [2024-04-13 04:41:40] INFO root fetch - main [MainThread]: End processing [gradio-huggingfacehub-search] error
 [2024-04-13 04:41:40] INFO root fetch - main [MainThread]: Store serial: [22749050]
+[2024-04-13 04:43:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749050]
+[2024-04-13 04:43:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 04:43:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dserver
+[2024-04-13 04:43:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nest-asyncio-adv
+[2024-04-13 04:43:50] INFO root fetch - processPackages [dserver]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-13 04:43:50] INFO root fetch - processPackages [dserver]: Downloading https://files.pythonhosted.org/packages/15/88/a7190cb0771413c02700498c3968099de82b97b12338faef3fb17de90475/dserver-0.2.6-py3-none-any.whl
+[2024-04-13 04:43:50] WARNING root fetch - processPackages [nest-asyncio-adv]: Skipping, unable to determine old version
+[2024-04-13 04:43:50] INFO root fetch - main [MainThread]: End processing [nest-asyncio-adv] error
+[2024-04-13 04:43:51] INFO root fetch - processPackages [dserver]: Downloading https://files.pythonhosted.org/packages/3e/5c/fcb00ccdaf629178703f0455a289c67964c394b09be42042074cab8e6c9c/dserver-0.2.7-py3-none-any.whl
+[2024-04-13 04:43:51] INFO root fetch - processPackages [dserver]: executing diffoscope
+[2024-04-13 04:43:51] INFO root fetch - processPackages [dserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dserver-0.2.6-py3-none-any.whl.zip tmp/dserver-0.2.7-py3-none-any.whl.zip --markdown 20240413/d/dserver/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-13 04:43:52] INFO root fetch - processPackages [dserver]: Remove: archive file [/home/abi/fetcher/tmp/dserver-0.2.6-py3-none-any.whl.zip]
+[2024-04-13 04:43:52] INFO root fetch - processPackages [dserver]: Remove: archive file [/home/abi/fetcher/tmp/dserver-0.2.7-py3-none-any.whl.zip]
+[2024-04-13 04:43:52] INFO root fetch - main [MainThread]: End processing [dserver]: success
+[2024-04-13 04:43:52] INFO root fetch - main [MainThread]: Store serial: [22749057]
