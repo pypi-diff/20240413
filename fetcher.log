@@ -15279,3 +15279,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:26:23] INFO root fetch - processPackages [langflow-base]: Remove: archive file [/home/abi/fetcher/tmp/langflow_base-0.0.33.tar.gz]
 [2024-04-13 16:26:23] INFO root fetch - main [MainThread]: End processing [langflow-base]: success
 [2024-04-13 16:26:23] INFO root fetch - main [MainThread]: Store serial: [22752498]
+[2024-04-13 16:28:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752498]
+[2024-04-13 16:28:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 16:28:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prosperity2bt
+[2024-04-13 16:28:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kellyapi
+[2024-04-13 16:28:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: schedulefree
+[2024-04-13 16:28:32] INFO root fetch - processPackages [kellyapi]: New version: [0.0.1.2] Old Version: [0.0.1.1]
+[2024-04-13 16:28:32] INFO root fetch - processPackages [schedulefree]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-04-13 16:28:32] INFO root fetch - processPackages [kellyapi]: Downloading https://files.pythonhosted.org/packages/be/0a/8b6147c75248ccd4035d21a3a44b488254e967b4940c03b258348106ccbf/kellyapi-0.0.1.1.tar.gz
+[2024-04-13 16:28:32] INFO root fetch - processPackages [schedulefree]: Downloading https://files.pythonhosted.org/packages/91/fa/30c6aa6fbf7940843a2b84e2b60263f21f8ff17ad13f30c59da46d6ddde0/schedulefree-1.2.2.tar.gz
+[2024-04-13 16:28:32] INFO root fetch - processPackages [prosperity2bt]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-04-13 16:28:33] INFO root fetch - processPackages [prosperity2bt]: Downloading https://files.pythonhosted.org/packages/3e/a1/c42164e94f1b744d9b14d0716e9d73639209b8ad3156ba9555bdc5efe29b/prosperity2bt-0.4.3.tar.gz
+[2024-04-13 16:28:33] INFO root fetch - processPackages [schedulefree]: Downloading https://files.pythonhosted.org/packages/b6/90/00ac89df78ab2513ded17abd17189103b972d2fc585f55c123d569b784f4/schedulefree-1.2.3.tar.gz
+[2024-04-13 16:28:33] INFO root fetch - processPackages [kellyapi]: Downloading https://files.pythonhosted.org/packages/ac/ab/7f0f7b7585c94be830f0a2c001143b07e2a2e13669ea5248ffd94ca69720/kellyapi-0.0.1.2.tar.gz
+[2024-04-13 16:28:33] INFO root fetch - processPackages [schedulefree]: executing diffoscope
+[2024-04-13 16:28:33] INFO root fetch - processPackages [schedulefree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schedulefree-1.2.2.tar.gz tmp/schedulefree-1.2.3.tar.gz --markdown 20240413/s/schedulefree/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-04-13 16:28:33] INFO root fetch - processPackages [kellyapi]: executing diffoscope
+[2024-04-13 16:28:33] INFO root fetch - processPackages [kellyapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kellyapi-0.0.1.1.tar.gz tmp/kellyapi-0.0.1.2.tar.gz --markdown 20240413/k/kellyapi/0.0.1.1-0.0.1.2/README.md --exclude *.pyd
+[2024-04-13 16:28:33] INFO root fetch - processPackages [prosperity2bt]: Downloading https://files.pythonhosted.org/packages/3f/a8/b38e5ecec2a0a354a5b768e035e18d721626c2401ad6b977c73676baf2fa/prosperity2bt-0.4.4.tar.gz
+[2024-04-13 16:28:33] INFO root fetch - processPackages [prosperity2bt]: executing diffoscope
+[2024-04-13 16:28:33] INFO root fetch - processPackages [prosperity2bt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prosperity2bt-0.4.3.tar.gz tmp/prosperity2bt-0.4.4.tar.gz --markdown 20240413/p/prosperity2bt/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-04-13 16:28:33] INFO root fetch - processPackages [kellyapi]: Remove: archive file [/home/abi/fetcher/tmp/kellyapi-0.0.1.1.tar.gz]
+[2024-04-13 16:28:33] INFO root fetch - processPackages [kellyapi]: Remove: archive file [/home/abi/fetcher/tmp/kellyapi-0.0.1.2.tar.gz]
+[2024-04-13 16:28:33] INFO root fetch - main [MainThread]: End processing [kellyapi]: success
+[2024-04-13 16:28:33] INFO root fetch - processPackages [schedulefree]: Remove: archive file [/home/abi/fetcher/tmp/schedulefree-1.2.2.tar.gz]
+[2024-04-13 16:28:33] INFO root fetch - processPackages [schedulefree]: Remove: archive file [/home/abi/fetcher/tmp/schedulefree-1.2.3.tar.gz]
+[2024-04-13 16:28:33] INFO root fetch - main [MainThread]: End processing [schedulefree]: success
+[2024-04-13 16:28:34] INFO root fetch - processPackages [prosperity2bt]: Remove: archive file [/home/abi/fetcher/tmp/prosperity2bt-0.4.3.tar.gz]
+[2024-04-13 16:28:34] INFO root fetch - processPackages [prosperity2bt]: Remove: archive file [/home/abi/fetcher/tmp/prosperity2bt-0.4.4.tar.gz]
+[2024-04-13 16:28:34] INFO root fetch - main [MainThread]: End processing [prosperity2bt]: success
+[2024-04-13 16:28:34] INFO root fetch - main [MainThread]: Store serial: [22752508]
