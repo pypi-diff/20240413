@@ -20050,3 +20050,26 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 22:44:41] INFO root fetch - processPackages [trieve-py-client]: Remove: archive file [/home/abi/fetcher/tmp/trieve_py_client-0.6.7-py3-none-any.whl.zip]
 [2024-04-13 22:44:41] INFO root fetch - main [MainThread]: End processing [trieve-py-client]: success
 [2024-04-13 22:44:41] INFO root fetch - main [MainThread]: Store serial: [22754657]
+[2024-04-13 22:46:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754657]
+[2024-04-13 22:46:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 22:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ext-f-str
+[2024-04-13 22:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: invest-guard
+[2024-04-13 22:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-firebase-filefield
+[2024-04-13 22:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: handouter
+[2024-04-13 22:46:50] WARNING root fetch - processPackages [django-firebase-filefield]: Skipping, unable to determine old version
+[2024-04-13 22:46:50] INFO root fetch - main [MainThread]: End processing [django-firebase-filefield] error
+[2024-04-13 22:46:50] INFO root fetch - processPackages [invest-guard]: New version: [20240413233625] Old Version: [2024.4.13]
+[2024-04-13 22:46:51] INFO root fetch - processPackages [handouter]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 22:46:51] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/ff/3a/4ea064cb5bed2bfd854fe5bd3f225297738cdddddaa94b799e6875d0e1c5/invest-guard-2024.4.13.tar.gz
+[2024-04-13 22:46:51] WARNING root fetch - processPackages [ext-f-str]: Skipping, unable to determine old version
+[2024-04-13 22:46:51] INFO root fetch - main [MainThread]: End processing [ext-f-str] error
+[2024-04-13 22:46:51] INFO root fetch - processPackages [handouter]: Downloading https://files.pythonhosted.org/packages/a5/d2/2419fd3dc8887fa811a56b90f1ae30f416e627bb7745179d2aca2ae4b006/handouter-0.0.8.tar.gz
+[2024-04-13 22:46:51] ERROR root fetch - processPackages [invest-guard]: Unable to fetch info: No such project/version 'invest-guard' 20240413233625
+[2024-04-13 22:46:51] INFO root fetch - main [MainThread]: End processing [invest-guard] error
+[2024-04-13 22:46:51] INFO root fetch - processPackages [handouter]: Downloading https://files.pythonhosted.org/packages/fe/5c/a64fa94d9bb640bc33cee78787a42441ab0047305c5fa89b34c7b523e653/handouter-0.0.9.tar.gz
+[2024-04-13 22:46:51] INFO root fetch - processPackages [handouter]: executing diffoscope
+[2024-04-13 22:46:51] INFO root fetch - processPackages [handouter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/handouter-0.0.8.tar.gz tmp/handouter-0.0.9.tar.gz --markdown 20240413/h/handouter/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 22:46:52] INFO root fetch - processPackages [handouter]: Remove: archive file [/home/abi/fetcher/tmp/handouter-0.0.8.tar.gz]
+[2024-04-13 22:46:52] INFO root fetch - processPackages [handouter]: Remove: archive file [/home/abi/fetcher/tmp/handouter-0.0.9.tar.gz]
+[2024-04-13 22:46:52] INFO root fetch - main [MainThread]: End processing [handouter]: success
+[2024-04-13 22:46:52] INFO root fetch - main [MainThread]: Store serial: [22754672]
