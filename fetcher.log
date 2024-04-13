@@ -13413,3 +13413,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 13:58:09] WARNING root fetch - processPackages [okttendas-package]: Skipping, unable to determine old version
 [2024-04-13 13:58:09] INFO root fetch - main [MainThread]: End processing [okttendas-package] error
 [2024-04-13 13:58:09] INFO root fetch - main [MainThread]: Store serial: [22751594]
+[2024-04-13 14:00:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751594]
+[2024-04-13 14:00:18] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 14:02:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751594]
+[2024-04-13 14:02:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 14:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yamlex
+[2024-04-13 14:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: auto-docker-labels
+[2024-04-13 14:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streamlit-pianoroll
+[2024-04-13 14:02:23] INFO root fetch - processPackages [yamlex]: New version: [1.0.9] Old Version: [1.0.7]
+[2024-04-13 14:02:23] WARNING root fetch - processPackages [auto-docker-labels]: Skipping, unable to determine old version
+[2024-04-13 14:02:23] INFO root fetch - main [MainThread]: End processing [auto-docker-labels] error
+[2024-04-13 14:02:23] INFO root fetch - processPackages [streamlit-pianoroll]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-04-13 14:02:23] INFO root fetch - processPackages [yamlex]: Downloading https://files.pythonhosted.org/packages/a0/9b/d3cbd600007c10a0b46ace626b8427e0fb506a7e415828730cd64ae02e79/yamlex-1.0.7.tar.gz
+[2024-04-13 14:02:24] INFO root fetch - processPackages [streamlit-pianoroll]: Downloading https://files.pythonhosted.org/packages/b7/70/5f1d25b4e00ee79e448fc6b7b7927f04482423cdb4a271cfc6e238f24cfc/streamlit-pianoroll-0.7.0.tar.gz
+[2024-04-13 14:02:24] INFO root fetch - processPackages [yamlex]: Downloading https://files.pythonhosted.org/packages/44/30/c7dbad25b37d527fe0ae9c527086e8b3437c977247abf068465369c89e41/yamlex-1.0.9.tar.gz
+[2024-04-13 14:02:24] INFO root fetch - processPackages [yamlex]: executing diffoscope
+[2024-04-13 14:02:24] INFO root fetch - processPackages [yamlex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yamlex-1.0.7.tar.gz tmp/yamlex-1.0.9.tar.gz --markdown 20240413/y/yamlex/1.0.7-1.0.9/README.md --exclude *.pyd
+[2024-04-13 14:02:24] INFO root fetch - processPackages [streamlit-pianoroll]: Downloading https://files.pythonhosted.org/packages/19/d6/2ef336c74c708aed92436139bfc63d49e39b618216ad42e74b2fe3b7ecfe/streamlit_pianoroll-0.7.1-py3-none-any.whl
+[2024-04-13 14:02:24] INFO root fetch - processPackages [yamlex]: Remove: archive file [/home/abi/fetcher/tmp/yamlex-1.0.7.tar.gz]
+[2024-04-13 14:02:24] INFO root fetch - processPackages [yamlex]: Remove: archive file [/home/abi/fetcher/tmp/yamlex-1.0.9.tar.gz]
+[2024-04-13 14:02:24] INFO root fetch - main [MainThread]: End processing [yamlex]: success
+[2024-04-13 14:02:26] INFO root fetch - processPackages [streamlit-pianoroll]: executing diffoscope
+[2024-04-13 14:02:26] INFO root fetch - processPackages [streamlit-pianoroll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-pianoroll-0.7.0.tar.gz tmp/streamlit_pianoroll-0.7.1-py3-none-any.whl.zip --markdown 20240413/s/streamlit-pianoroll/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-04-13 14:02:27] INFO root fetch - processPackages [streamlit-pianoroll]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-pianoroll-0.7.0.tar.gz]
+[2024-04-13 14:02:27] INFO root fetch - processPackages [streamlit-pianoroll]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_pianoroll-0.7.1-py3-none-any.whl.zip]
+[2024-04-13 14:02:27] INFO root fetch - main [MainThread]: End processing [streamlit-pianoroll]: success
+[2024-04-13 14:02:27] INFO root fetch - main [MainThread]: Store serial: [22751602]
