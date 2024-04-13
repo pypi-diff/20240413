@@ -10193,3 +10193,33 @@
 [2024-04-13 09:38:16] INFO root fetch - processPackages [img64]: Remove: archive file [/home/abi/fetcher/tmp/img64-1.1.0.tar.gz]
 [2024-04-13 09:38:16] INFO root fetch - main [MainThread]: End processing [img64]: success
 [2024-04-13 09:38:16] INFO root fetch - main [MainThread]: Store serial: [22750254]
+[2024-04-13 09:40:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750254]
+[2024-04-13 09:40:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 09:40:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-gcp
+[2024-04-13 09:40:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygpsclient
+[2024-04-13 09:40:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: graal
+[2024-04-13 09:40:25] INFO root fetch - processPackages [graal]: New version: [1.0.0rc2] Old Version: [1.0.0rc1]
+[2024-04-13 09:40:25] INFO root fetch - processPackages [pygpsclient]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-04-13 09:40:25] INFO root fetch - processPackages [pulumi-gcp]: New version: [7.9.0a1707934510] Old Version: [7.9.0a1707891532]
+[2024-04-13 09:40:25] INFO root fetch - processPackages [pulumi-gcp]: Downloading https://files.pythonhosted.org/packages/f0/b4/677e3618cc42a30dd41030c6dee1b6b9d52e956632b9a1eeb84c0c2d8e3c/pulumi_gcp-7.9.0a1707891532.tar.gz
+[2024-04-13 09:40:25] INFO root fetch - processPackages [graal]: Downloading https://files.pythonhosted.org/packages/25/87/967dd889ba5afc1468d8ad2a3cdf19e7ed5141e316a88694cc6f7ec83068/graal-1.0.0rc1.tar.gz
+[2024-04-13 09:40:25] INFO root fetch - processPackages [pygpsclient]: Downloading https://files.pythonhosted.org/packages/d8/d5/f01514b696150ce640913f2b2ce771bbebcb4b263c1a969c6a2118e0a1d2/pygpsclient-1.4.8.tar.gz
+[2024-04-13 09:40:26] INFO root fetch - processPackages [graal]: Downloading https://files.pythonhosted.org/packages/da/75/a143a82e0e665f1f42b0e49912fbf659908453d00338dcda1c602c9ea3bf/graal-1.0.0rc2.tar.gz
+[2024-04-13 09:40:26] INFO root fetch - processPackages [graal]: executing diffoscope
+[2024-04-13 09:40:26] INFO root fetch - processPackages [graal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graal-1.0.0rc1.tar.gz tmp/graal-1.0.0rc2.tar.gz --markdown 20240413/g/graal/1.0.0rc1-1.0.0rc2/README.md --exclude *.pyd
+[2024-04-13 09:40:26] INFO root fetch - processPackages [pygpsclient]: Downloading https://files.pythonhosted.org/packages/4a/14/9646dc156cf69e2a385f2b6f0fac5ad7e048bfefa8d074543aaf2223a1c7/pygpsclient-1.4.9.tar.gz
+[2024-04-13 09:40:26] INFO root fetch - processPackages [pulumi-gcp]: Downloading https://files.pythonhosted.org/packages/e8/4f/d6c8ded38a6c81689a5fb00b6aea9daeef82f4686f3ad6c74eba94b37d8b/pulumi_gcp-7.9.0a1707934510.tar.gz
+[2024-04-13 09:40:26] INFO root fetch - processPackages [pygpsclient]: executing diffoscope
+[2024-04-13 09:40:26] INFO root fetch - processPackages [pygpsclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygpsclient-1.4.8.tar.gz tmp/pygpsclient-1.4.9.tar.gz --markdown 20240413/p/pygpsclient/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-04-13 09:40:26] INFO root fetch - processPackages [graal]: Remove: archive file [/home/abi/fetcher/tmp/graal-1.0.0rc1.tar.gz]
+[2024-04-13 09:40:26] INFO root fetch - processPackages [graal]: Remove: archive file [/home/abi/fetcher/tmp/graal-1.0.0rc2.tar.gz]
+[2024-04-13 09:40:26] INFO root fetch - main [MainThread]: End processing [graal]: success
+[2024-04-13 09:40:27] INFO root fetch - processPackages [pygpsclient]: Remove: archive file [/home/abi/fetcher/tmp/pygpsclient-1.4.8.tar.gz]
+[2024-04-13 09:40:27] INFO root fetch - processPackages [pygpsclient]: Remove: archive file [/home/abi/fetcher/tmp/pygpsclient-1.4.9.tar.gz]
+[2024-04-13 09:40:27] INFO root fetch - main [MainThread]: End processing [pygpsclient]: success
+[2024-04-13 09:40:27] INFO root fetch - processPackages [pulumi-gcp]: executing diffoscope
+[2024-04-13 09:40:27] INFO root fetch - processPackages [pulumi-gcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_gcp-7.9.0a1707891532.tar.gz tmp/pulumi_gcp-7.9.0a1707934510.tar.gz --markdown 20240413/p/pulumi-gcp/7.9.0a1707891532-7.9.0a1707934510/README.md --exclude *.pyd
+[2024-04-13 09:40:37] INFO root fetch - processPackages [pulumi-gcp]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_gcp-7.9.0a1707891532.tar.gz]
+[2024-04-13 09:40:37] INFO root fetch - processPackages [pulumi-gcp]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_gcp-7.9.0a1707934510.tar.gz]
+[2024-04-13 09:40:37] INFO root fetch - main [MainThread]: End processing [pulumi-gcp]: success
+[2024-04-13 09:40:37] INFO root fetch - main [MainThread]: Store serial: [22750263]
