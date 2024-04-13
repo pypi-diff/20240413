@@ -12952,3 +12952,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 13:16:44] INFO root fetch - processPackages [pyppbox-ultralytics]: Remove: archive file [/home/abi/fetcher/tmp/pyppbox-ultralytics-8.1.7.tar.gz]
 [2024-04-13 13:16:44] INFO root fetch - main [MainThread]: End processing [pyppbox-ultralytics]: success
 [2024-04-13 13:16:44] INFO root fetch - main [MainThread]: Store serial: [22751348]
+[2024-04-13 13:18:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751348]
+[2024-04-13 13:18:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 13:18:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aplr
+[2024-04-13 13:18:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-core-xe
+[2024-04-13 13:18:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lemmymodbot-test
+[2024-04-13 13:18:54] INFO root fetch - processPackages [bigdl-core-xe]: New version: [2.5.0b20240413] Old Version: [2.5.0b20240412]
+[2024-04-13 13:18:54] INFO root fetch - processPackages [lemmymodbot-test]: New version: [0.6.0a6] Old Version: [0.6.0a3]
+[2024-04-13 13:18:54] INFO root fetch - processPackages [bigdl-core-xe]: Downloading https://files.pythonhosted.org/packages/ab/9a/1c8f88f78524a781848c3a10465c998d6999961e0a2f7eecf067bb6861e6/bigdl_core_xe-2.5.0b20240412-cp39-cp39-manylinux2010_x86_64.whl
+[2024-04-13 13:18:54] INFO root fetch - processPackages [aplr]: New version: [9.5.0] Old Version: [9.4.3]
+[2024-04-13 13:18:54] INFO root fetch - processPackages [lemmymodbot-test]: Downloading https://files.pythonhosted.org/packages/8a/88/63c66c5a25a2f1f7b1796aa1d97b887343e6bb92ae1dca6aa30d400b155e/lemmymodbot-test-0.6.0a3.tar.gz
+[2024-04-13 13:18:54] INFO root fetch - processPackages [aplr]: Downloading https://files.pythonhosted.org/packages/0c/8c/401a0a1f13089cd9fafbd2534a499d05fad25b328f66924cd2f862faa011/aplr-9.4.3.tar.gz
+[2024-04-13 13:18:54] WARNING root fetch - processPackages [bigdl-core-xe]: Skipping package: exceeds size limit 95125453>=10485760
+[2024-04-13 13:18:54] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe] error
+[2024-04-13 13:18:54] INFO root fetch - processPackages [lemmymodbot-test]: Downloading https://files.pythonhosted.org/packages/1c/a8/3618ecd3d203b6f04f8d7dc7095bf9a847c5f98f752018f1e9c93dded159/lemmymodbot-test-0.6.0a6.tar.gz
+[2024-04-13 13:18:55] INFO root fetch - processPackages [lemmymodbot-test]: executing diffoscope
+[2024-04-13 13:18:55] INFO root fetch - processPackages [lemmymodbot-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lemmymodbot-test-0.6.0a3.tar.gz tmp/lemmymodbot-test-0.6.0a6.tar.gz --markdown 20240413/l/lemmymodbot-test/0.6.0a3-0.6.0a6/README.md --exclude *.pyd
+[2024-04-13 13:18:55] INFO root fetch - processPackages [aplr]: Downloading https://files.pythonhosted.org/packages/0c/a7/cc4640f6ee7c2dae548683ac88cb0e3be517be6c79f81b64c14a17aaf99d/aplr-9.5.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-13 13:18:55] INFO root fetch - processPackages [aplr]: executing diffoscope
+[2024-04-13 13:18:55] INFO root fetch - processPackages [aplr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aplr-9.4.3.tar.gz tmp/aplr-9.5.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240413/a/aplr/9.4.3-9.5.0/README.md --exclude *.pyd
+[2024-04-13 13:18:55] INFO root fetch - processPackages [lemmymodbot-test]: Remove: archive file [/home/abi/fetcher/tmp/lemmymodbot-test-0.6.0a3.tar.gz]
+[2024-04-13 13:18:55] INFO root fetch - processPackages [lemmymodbot-test]: Remove: archive file [/home/abi/fetcher/tmp/lemmymodbot-test-0.6.0a6.tar.gz]
+[2024-04-13 13:18:55] INFO root fetch - main [MainThread]: End processing [lemmymodbot-test]: success
+[2024-04-13 13:18:56] INFO root fetch - processPackages [aplr]: Remove: archive file [/home/abi/fetcher/tmp/aplr-9.4.3.tar.gz]
+[2024-04-13 13:18:56] INFO root fetch - processPackages [aplr]: Remove: archive file [/home/abi/fetcher/tmp/aplr-9.5.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-13 13:18:56] INFO root fetch - main [MainThread]: End processing [aplr]: success
+[2024-04-13 13:18:56] INFO root fetch - main [MainThread]: Store serial: [22751387]
