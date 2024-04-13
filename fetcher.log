@@ -8122,3 +8122,42 @@
 [2024-04-13 07:13:37] INFO root fetch - processPackages [relax-py]: Remove: archive file [/home/abi/fetcher/tmp/relax_py-0.5.0.tar.gz]
 [2024-04-13 07:13:37] INFO root fetch - main [MainThread]: End processing [relax-py]: success
 [2024-04-13 07:13:37] INFO root fetch - main [MainThread]: Store serial: [22749551]
+[2024-04-13 07:15:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749551]
+[2024-04-13 07:15:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 07:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bcelogger
+[2024-04-13 07:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: relax-py
+[2024-04-13 07:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: QuartzFramework
+[2024-04-13 07:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytha-fuzz
+[2024-04-13 07:15:47] INFO root fetch - processPackages [pytha-fuzz]: New version: [0.2] Old Version: [0.1]
+[2024-04-13 07:15:47] INFO root fetch - processPackages [relax-py]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-13 07:15:47] INFO root fetch - processPackages [relax-py]: Downloading https://files.pythonhosted.org/packages/21/ee/399242760e90b0328146cc5bcf97784d61f0f9a1f3b175cf64e7e0338507/relax_py-0.4.0.tar.gz
+[2024-04-13 07:15:47] INFO root fetch - processPackages [QuartzFramework]: New version: [0.3] Old Version: [0.2]
+[2024-04-13 07:15:47] INFO root fetch - processPackages [bcelogger]: New version: [1.2.0.3] Old Version: [1.2.0.2]
+[2024-04-13 07:15:47] INFO root fetch - processPackages [pytha-fuzz]: Downloading https://files.pythonhosted.org/packages/57/44/dd48e0caaab9a62cd547cb404fe0c4f4362a1ccb2b92e49895aad2c52dc5/pytha-fuzz-0.1.tar.gz
+[2024-04-13 07:15:47] INFO root fetch - processPackages [QuartzFramework]: Downloading https://files.pythonhosted.org/packages/77/0a/02d2571d4dd241d2f795bb3fcbcd1090843318fa7fc670215b48bb6d25ff/QuartzFramework-0.2.tar.gz
+[2024-04-13 07:15:47] INFO root fetch - processPackages [relax-py]: Downloading https://files.pythonhosted.org/packages/8f/88/201c338ec89a05a2361b5eb367650aea624c993e288d227a7b23a7cfb296/relax_py-0.5.0.tar.gz
+[2024-04-13 07:15:47] INFO root fetch - processPackages [bcelogger]: Downloading https://files.pythonhosted.org/packages/3b/4e/e2ee35f3f93ae5f29ecce466d91065a007af62fe2348aa706a28554f2fe3/bcelogger-1.2.0.2-py3-none-any.whl
+[2024-04-13 07:15:47] INFO root fetch - processPackages [relax-py]: executing diffoscope
+[2024-04-13 07:15:47] INFO root fetch - processPackages [relax-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relax_py-0.4.0.tar.gz tmp/relax_py-0.5.0.tar.gz --markdown 20240413/r/relax-py/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-13 07:15:47] INFO root fetch - processPackages [QuartzFramework]: Downloading https://files.pythonhosted.org/packages/a5/89/f8d2080fb18d4ab1b04040510f5f1a4ccb6ccd4124cfb2f91b70423b64ff/QuartzFramework-0.3.tar.gz
+[2024-04-13 07:15:47] INFO root fetch - processPackages [pytha-fuzz]: Downloading https://files.pythonhosted.org/packages/c5/c3/19f03871547d27aa0ccb472b4e9e31f74ed438d7c0e35ff36e38642f5c99/pytha-fuzz-0.2.tar.gz
+[2024-04-13 07:15:47] INFO root fetch - processPackages [bcelogger]: Downloading https://files.pythonhosted.org/packages/ee/db/d51058d4994edcffce95961ffd3de0fc9da0cccdef4f9ba1d7b817b6bda3/bcelogger-1.2.0.3-py3-none-any.whl
+[2024-04-13 07:15:47] INFO root fetch - processPackages [QuartzFramework]: executing diffoscope
+[2024-04-13 07:15:47] INFO root fetch - processPackages [QuartzFramework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuartzFramework-0.2.tar.gz tmp/QuartzFramework-0.3.tar.gz --markdown 20240413/Q/QuartzFramework/0.2-0.3/README.md --exclude *.pyd
+[2024-04-13 07:15:47] INFO root fetch - processPackages [pytha-fuzz]: executing diffoscope
+[2024-04-13 07:15:47] INFO root fetch - processPackages [pytha-fuzz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytha-fuzz-0.1.tar.gz tmp/pytha-fuzz-0.2.tar.gz --markdown 20240413/p/pytha-fuzz/0.1-0.2/README.md --exclude *.pyd
+[2024-04-13 07:15:48] INFO root fetch - processPackages [bcelogger]: executing diffoscope
+[2024-04-13 07:15:48] INFO root fetch - processPackages [bcelogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bcelogger-1.2.0.2-py3-none-any.whl.zip tmp/bcelogger-1.2.0.3-py3-none-any.whl.zip --markdown 20240413/b/bcelogger/1.2.0.2-1.2.0.3/README.md --exclude *.pyd
+[2024-04-13 07:15:48] INFO root fetch - processPackages [relax-py]: Remove: archive file [/home/abi/fetcher/tmp/relax_py-0.4.0.tar.gz]
+[2024-04-13 07:15:48] INFO root fetch - processPackages [relax-py]: Remove: archive file [/home/abi/fetcher/tmp/relax_py-0.5.0.tar.gz]
+[2024-04-13 07:15:48] INFO root fetch - main [MainThread]: End processing [relax-py]: success
+[2024-04-13 07:15:48] INFO root fetch - processPackages [QuartzFramework]: Remove: archive file [/home/abi/fetcher/tmp/QuartzFramework-0.2.tar.gz]
+[2024-04-13 07:15:48] INFO root fetch - processPackages [QuartzFramework]: Remove: archive file [/home/abi/fetcher/tmp/QuartzFramework-0.3.tar.gz]
+[2024-04-13 07:15:48] INFO root fetch - main [MainThread]: End processing [QuartzFramework]: success
+[2024-04-13 07:15:48] INFO root fetch - processPackages [bcelogger]: Remove: archive file [/home/abi/fetcher/tmp/bcelogger-1.2.0.2-py3-none-any.whl.zip]
+[2024-04-13 07:15:48] INFO root fetch - processPackages [bcelogger]: Remove: archive file [/home/abi/fetcher/tmp/bcelogger-1.2.0.3-py3-none-any.whl.zip]
+[2024-04-13 07:15:48] INFO root fetch - main [MainThread]: End processing [bcelogger]: success
+[2024-04-13 07:15:48] INFO root fetch - processPackages [pytha-fuzz]: Remove: archive file [/home/abi/fetcher/tmp/pytha-fuzz-0.1.tar.gz]
+[2024-04-13 07:15:48] INFO root fetch - processPackages [pytha-fuzz]: Remove: archive file [/home/abi/fetcher/tmp/pytha-fuzz-0.2.tar.gz]
+[2024-04-13 07:15:48] INFO root fetch - main [MainThread]: End processing [pytha-fuzz]: success
+[2024-04-13 07:15:48] INFO root fetch - main [MainThread]: Store serial: [22749561]
