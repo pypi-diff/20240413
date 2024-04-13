@@ -13622,3 +13622,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:22:04] INFO root fetch - processPackages [bbot]: Remove: archive file [/home/abi/fetcher/tmp/bbot-1.1.7.7rc0.tar.gz]
 [2024-04-13 14:22:04] INFO root fetch - main [MainThread]: End processing [bbot]: success
 [2024-04-13 14:22:04] INFO root fetch - main [MainThread]: Store serial: [22751686]
+[2024-04-13 14:24:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751686]
+[2024-04-13 14:24:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 14:24:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gmcapsule
+[2024-04-13 14:24:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pubmed-parser
+[2024-04-13 14:24:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: haunts
+[2024-04-13 14:24:13] INFO root fetch - processPackages [gmcapsule]: New version: [0.7.0] Old Version: [0.6.1]
+[2024-04-13 14:24:13] INFO root fetch - processPackages [haunts]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-04-13 14:24:13] INFO root fetch - processPackages [pubmed-parser]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-13 14:24:13] INFO root fetch - processPackages [pubmed-parser]: Downloading https://files.pythonhosted.org/packages/fb/02/b554692c83e4441326704c0c0c42dcf010813fd0e66fb1f29edbf193fbb7/pubmed_parser-0.3.1.tar.gz
+[2024-04-13 14:24:13] INFO root fetch - processPackages [haunts]: Downloading https://files.pythonhosted.org/packages/2f/c3/d1be6ec0a8528b8dfa585f35c22ed5e838efa43acaca4d8c31a8c336e1c0/haunts-0.7.0.tar.gz
+[2024-04-13 14:24:14] INFO root fetch - processPackages [gmcapsule]: Downloading https://files.pythonhosted.org/packages/50/15/430758a2295cae438de8082d15c46273ee2ac61a740e049398bfc106dbec/gmcapsule-0.6.1.tar.gz
+[2024-04-13 14:24:14] INFO root fetch - processPackages [pubmed-parser]: Downloading https://files.pythonhosted.org/packages/a9/02/9afb05991a417b7758b55fb7a7eae98edeb9bfb4df3d3ddc351ebf334130/pubmed_parser-0.4.0.tar.gz
+[2024-04-13 14:24:14] INFO root fetch - processPackages [haunts]: Downloading https://files.pythonhosted.org/packages/8b/f0/c608e83cc3d79f6bfbce78854853a65e33ada4efee4bf974407c6c24623f/haunts-0.7.1.tar.gz
+[2024-04-13 14:24:14] INFO root fetch - processPackages [pubmed-parser]: executing diffoscope
+[2024-04-13 14:24:14] INFO root fetch - processPackages [pubmed-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pubmed_parser-0.3.1.tar.gz tmp/pubmed_parser-0.4.0.tar.gz --markdown 20240413/p/pubmed-parser/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-04-13 14:24:14] INFO root fetch - processPackages [gmcapsule]: Downloading https://files.pythonhosted.org/packages/a7/b1/02e92bc62299ecc58079cd22b98ed40f7f68a5374a9b7dc259b07f6f43a2/gmcapsule-0.7.0.tar.gz
+[2024-04-13 14:24:14] INFO root fetch - processPackages [haunts]: executing diffoscope
+[2024-04-13 14:24:14] INFO root fetch - processPackages [haunts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haunts-0.7.0.tar.gz tmp/haunts-0.7.1.tar.gz --markdown 20240413/h/haunts/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-04-13 14:24:14] INFO root fetch - processPackages [gmcapsule]: executing diffoscope
+[2024-04-13 14:24:14] INFO root fetch - processPackages [gmcapsule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmcapsule-0.6.1.tar.gz tmp/gmcapsule-0.7.0.tar.gz --markdown 20240413/g/gmcapsule/0.6.1-0.7.0/README.md --exclude *.pyd
+[2024-04-13 14:24:15] INFO root fetch - processPackages [pubmed-parser]: Remove: archive file [/home/abi/fetcher/tmp/pubmed_parser-0.3.1.tar.gz]
+[2024-04-13 14:24:15] INFO root fetch - processPackages [pubmed-parser]: Remove: archive file [/home/abi/fetcher/tmp/pubmed_parser-0.4.0.tar.gz]
+[2024-04-13 14:24:15] INFO root fetch - main [MainThread]: End processing [pubmed-parser]: success
+[2024-04-13 14:24:15] INFO root fetch - processPackages [haunts]: Remove: archive file [/home/abi/fetcher/tmp/haunts-0.7.0.tar.gz]
+[2024-04-13 14:24:15] INFO root fetch - processPackages [haunts]: Remove: archive file [/home/abi/fetcher/tmp/haunts-0.7.1.tar.gz]
+[2024-04-13 14:24:15] INFO root fetch - main [MainThread]: End processing [haunts]: success
+[2024-04-13 14:24:15] INFO root fetch - processPackages [gmcapsule]: Remove: archive file [/home/abi/fetcher/tmp/gmcapsule-0.6.1.tar.gz]
+[2024-04-13 14:24:15] INFO root fetch - processPackages [gmcapsule]: Remove: archive file [/home/abi/fetcher/tmp/gmcapsule-0.7.0.tar.gz]
+[2024-04-13 14:24:15] INFO root fetch - main [MainThread]: End processing [gmcapsule]: success
+[2024-04-13 14:24:15] INFO root fetch - main [MainThread]: Store serial: [22751695]
