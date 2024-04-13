@@ -19493,3 +19493,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 21:59:02] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.4.7.tar.gz]
 [2024-04-13 21:59:02] INFO root fetch - main [MainThread]: End processing [fudstop]: success
 [2024-04-13 21:59:02] INFO root fetch - main [MainThread]: Store serial: [22754449]
+[2024-04-13 22:01:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754449]
+[2024-04-13 22:01:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 22:01:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dumpyara
+[2024-04-13 22:01:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MobileInventoryCLI
+[2024-04-13 22:01:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: codebase-to-text
+[2024-04-13 22:01:10] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.541] Old Version: [0.4.54]
+[2024-04-13 22:01:10] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/72/25/8bc86482595a7024ddf018fc41c85463b9f8fd0490779bba882f597e46e7/MobileInventoryCLI-0.4.54.tar.gz
+[2024-04-13 22:01:10] INFO root fetch - processPackages [dumpyara]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-13 22:01:10] INFO root fetch - processPackages [dumpyara]: Downloading https://files.pythonhosted.org/packages/6a/8e/9bc3022bfead15d5ec33668b18416d4b2012ce2b9e26c9e5495edf9d0e87/dumpyara-1.0.4.tar.gz
+[2024-04-13 22:01:10] INFO root fetch - processPackages [codebase-to-text]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-13 22:01:11] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/ae/f6/3ff42e8979fc7d5eb5905771710bf178b572d9b370bb4e025413cfccd00f/MobileInventoryCLI-0.4.541.tar.gz
+[2024-04-13 22:01:11] INFO root fetch - processPackages [codebase-to-text]: Downloading https://files.pythonhosted.org/packages/7d/65/10e87587fc0400d95c1800cddac3ce343ead50e8c82793e298bb642cb210/codebase-to-text-1.0.2.tar.gz
+[2024-04-13 22:01:11] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-04-13 22:01:11] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.54.tar.gz tmp/MobileInventoryCLI-0.4.541.tar.gz --markdown 20240413/M/MobileInventoryCLI/0.4.54-0.4.541/README.md --exclude *.pyd
+[2024-04-13 22:01:11] INFO root fetch - processPackages [dumpyara]: Downloading https://files.pythonhosted.org/packages/57/7a/7d0218f4df0ca797a213e7d0ea9e12f6927606edd351016e9880f4d85a58/dumpyara-1.0.5.tar.gz
+[2024-04-13 22:01:11] INFO root fetch - processPackages [dumpyara]: executing diffoscope
+[2024-04-13 22:01:11] INFO root fetch - processPackages [dumpyara]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dumpyara-1.0.4.tar.gz tmp/dumpyara-1.0.5.tar.gz --markdown 20240413/d/dumpyara/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-04-13 22:01:11] INFO root fetch - processPackages [codebase-to-text]: Downloading https://files.pythonhosted.org/packages/19/07/504a39bf7edacbde5265e7aea9938a9daf1bdfd37517af918fcf40beaa07/codebase-to-text-1.0.3.tar.gz
+[2024-04-13 22:01:11] INFO root fetch - processPackages [codebase-to-text]: executing diffoscope
+[2024-04-13 22:01:11] INFO root fetch - processPackages [codebase-to-text]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codebase-to-text-1.0.2.tar.gz tmp/codebase-to-text-1.0.3.tar.gz --markdown 20240413/c/codebase-to-text/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-13 22:01:11] INFO root fetch - processPackages [dumpyara]: Remove: archive file [/home/abi/fetcher/tmp/dumpyara-1.0.4.tar.gz]
+[2024-04-13 22:01:11] INFO root fetch - processPackages [dumpyara]: Remove: archive file [/home/abi/fetcher/tmp/dumpyara-1.0.5.tar.gz]
+[2024-04-13 22:01:11] INFO root fetch - main [MainThread]: End processing [dumpyara]: success
+[2024-04-13 22:01:11] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.54.tar.gz]
+[2024-04-13 22:01:11] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.541.tar.gz]
+[2024-04-13 22:01:11] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-04-13 22:01:12] INFO root fetch - processPackages [codebase-to-text]: Remove: archive file [/home/abi/fetcher/tmp/codebase-to-text-1.0.2.tar.gz]
+[2024-04-13 22:01:12] INFO root fetch - processPackages [codebase-to-text]: Remove: archive file [/home/abi/fetcher/tmp/codebase-to-text-1.0.3.tar.gz]
+[2024-04-13 22:01:12] INFO root fetch - main [MainThread]: End processing [codebase-to-text]: success
+[2024-04-13 22:01:12] INFO root fetch - main [MainThread]: Store serial: [22754456]
