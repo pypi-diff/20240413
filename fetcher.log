@@ -14824,3 +14824,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 15:55:48] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.4.9-cp39-cp39-win_amd64.whl.zip]
 [2024-04-13 15:55:48] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
 [2024-04-13 15:55:48] INFO root fetch - main [MainThread]: Store serial: [22752309]
+[2024-04-13 15:57:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752309]
+[2024-04-13 15:57:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 15:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plover-uinput
+[2024-04-13 15:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: latex-rubber
+[2024-04-13 15:57:57] INFO root fetch - processPackages [plover-uinput]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-13 15:57:57] INFO root fetch - processPackages [latex-rubber]: New version: [1.6.5] Old Version: [1.6.4]
+[2024-04-13 15:57:57] INFO root fetch - processPackages [plover-uinput]: Downloading https://files.pythonhosted.org/packages/7e/8e/c257777304965c353c775768d9838452ded8e3aa56eba1e5a0d9f1d4e0f4/plover-uinput-0.0.2.tar.gz
+[2024-04-13 15:57:57] INFO root fetch - processPackages [latex-rubber]: Downloading https://files.pythonhosted.org/packages/9f/29/33f507303b13bc07562f737279d7d049396d26d12647a3c00fcdefce2f11/latex_rubber-1.6.4.tar.gz
+[2024-04-13 15:57:57] INFO root fetch - processPackages [plover-uinput]: Downloading https://files.pythonhosted.org/packages/d7/b7/217d8500655bf4c00794f5a2042040727c64b2de99426e89598bdfabcd53/plover-uinput-0.0.3.tar.gz
+[2024-04-13 15:57:57] INFO root fetch - processPackages [latex-rubber]: Downloading https://files.pythonhosted.org/packages/07/90/bfa5b29e2196e71b439be96054cac04338c896dbadd21ce09c35981ba929/latex_rubber-1.6.5.tar.gz
+[2024-04-13 15:57:58] INFO root fetch - processPackages [plover-uinput]: executing diffoscope
+[2024-04-13 15:57:58] INFO root fetch - processPackages [plover-uinput]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plover-uinput-0.0.2.tar.gz tmp/plover-uinput-0.0.3.tar.gz --markdown 20240413/p/plover-uinput/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-13 15:57:58] INFO root fetch - processPackages [latex-rubber]: executing diffoscope
+[2024-04-13 15:57:58] INFO root fetch - processPackages [latex-rubber]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latex_rubber-1.6.4.tar.gz tmp/latex_rubber-1.6.5.tar.gz --markdown 20240413/l/latex-rubber/1.6.4-1.6.5/README.md --exclude *.pyd
+[2024-04-13 15:57:58] INFO root fetch - processPackages [plover-uinput]: Remove: archive file [/home/abi/fetcher/tmp/plover-uinput-0.0.2.tar.gz]
+[2024-04-13 15:57:58] INFO root fetch - processPackages [plover-uinput]: Remove: archive file [/home/abi/fetcher/tmp/plover-uinput-0.0.3.tar.gz]
+[2024-04-13 15:57:58] INFO root fetch - main [MainThread]: End processing [plover-uinput]: success
+[2024-04-13 15:57:59] INFO root fetch - processPackages [latex-rubber]: Remove: archive file [/home/abi/fetcher/tmp/latex_rubber-1.6.4.tar.gz]
+[2024-04-13 15:57:59] INFO root fetch - processPackages [latex-rubber]: Remove: archive file [/home/abi/fetcher/tmp/latex_rubber-1.6.5.tar.gz]
+[2024-04-13 15:57:59] INFO root fetch - main [MainThread]: End processing [latex-rubber]: success
+[2024-04-13 15:57:59] INFO root fetch - main [MainThread]: Store serial: [22752323]
