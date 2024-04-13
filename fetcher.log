@@ -6557,3 +6557,24 @@
 [2024-04-13 03:33:35] INFO root fetch - processPackages [paddle2onnx]: Remove: archive file [/home/abi/fetcher/tmp/paddle2onnx-1.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-04-13 03:33:35] INFO root fetch - main [MainThread]: End processing [paddle2onnx]: success
 [2024-04-13 03:33:35] INFO root fetch - main [MainThread]: Store serial: [22748834]
+[2024-04-13 03:35:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748834]
+[2024-04-13 03:35:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 03:35:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-fishing
+[2024-04-13 03:35:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scrummd
+[2024-04-13 03:35:52] INFO root fetch - processPackages [scrummd]: New version: [0.0.8] Old Version: [0.0.5]
+[2024-04-13 03:35:52] INFO root fetch - processPackages [nonebot-plugin-fishing]: New version: [0.2.3a2] Old Version: [0.2.3a1]
+[2024-04-13 03:35:52] INFO root fetch - processPackages [scrummd]: Downloading https://files.pythonhosted.org/packages/63/33/c2bdbb2224f22f7a418ebb792ca43769f756214abb36116e90a3bd6fbb86/scrummd-0.0.5.tar.gz
+[2024-04-13 03:35:52] INFO root fetch - processPackages [scrummd]: Downloading https://files.pythonhosted.org/packages/ab/bc/ad646c14af8c5a1a51459edb6cd29af47c96b89061172252a3bd63c22b8a/scrummd-0.0.8.tar.gz
+[2024-04-13 03:35:52] INFO root fetch - processPackages [nonebot-plugin-fishing]: Downloading https://files.pythonhosted.org/packages/f1/f1/8e0bbc26ec3cf162e8e51021b5c0a3a239c16fe2ca7dfbb33c8e4f55e666/nonebot-plugin-fishing-0.2.3a1.tar.gz
+[2024-04-13 03:35:52] INFO root fetch - processPackages [scrummd]: executing diffoscope
+[2024-04-13 03:35:52] INFO root fetch - processPackages [scrummd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrummd-0.0.5.tar.gz tmp/scrummd-0.0.8.tar.gz --markdown 20240413/s/scrummd/0.0.5-0.0.8/README.md --exclude *.pyd
+[2024-04-13 03:35:52] INFO root fetch - processPackages [nonebot-plugin-fishing]: Downloading https://files.pythonhosted.org/packages/77/5b/b4309c119105a6b34387eb7b6454322c5bebc454ad241b55dd9d701843b4/nonebot-plugin-fishing-0.2.3a2.tar.gz
+[2024-04-13 03:35:53] INFO root fetch - processPackages [nonebot-plugin-fishing]: executing diffoscope
+[2024-04-13 03:35:53] INFO root fetch - processPackages [nonebot-plugin-fishing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-fishing-0.2.3a1.tar.gz tmp/nonebot-plugin-fishing-0.2.3a2.tar.gz --markdown 20240413/n/nonebot-plugin-fishing/0.2.3a1-0.2.3a2/README.md --exclude *.pyd
+[2024-04-13 03:35:53] INFO root fetch - processPackages [nonebot-plugin-fishing]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-fishing-0.2.3a1.tar.gz]
+[2024-04-13 03:35:53] INFO root fetch - processPackages [nonebot-plugin-fishing]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-fishing-0.2.3a2.tar.gz]
+[2024-04-13 03:35:53] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-fishing]: success
+[2024-04-13 03:35:53] INFO root fetch - processPackages [scrummd]: Remove: archive file [/home/abi/fetcher/tmp/scrummd-0.0.5.tar.gz]
+[2024-04-13 03:35:53] INFO root fetch - processPackages [scrummd]: Remove: archive file [/home/abi/fetcher/tmp/scrummd-0.0.8.tar.gz]
+[2024-04-13 03:35:53] INFO root fetch - main [MainThread]: End processing [scrummd]: success
+[2024-04-13 03:35:53] INFO root fetch - main [MainThread]: Store serial: [22748841]
