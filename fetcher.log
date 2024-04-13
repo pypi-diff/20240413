@@ -14559,3 +14559,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 15:36:15] INFO root fetch - processPackages [djangocms-frontend]: Remove: archive file [/home/abi/fetcher/tmp/djangocms_frontend-1.3.1.tar.gz]
 [2024-04-13 15:36:15] INFO root fetch - main [MainThread]: End processing [djangocms-frontend]: success
 [2024-04-13 15:36:15] INFO root fetch - main [MainThread]: Store serial: [22752208]
+[2024-04-13 15:38:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752208]
+[2024-04-13 15:38:24] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-13 15:38:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: argsreq
+[2024-04-13 15:38:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pomodorable
+[2024-04-13 15:38:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-import-export
+[2024-04-13 15:38:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: setuptools
+[2024-04-13 15:38:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zodchy-fastapi
+[2024-04-13 15:38:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: half-orm
+[2024-04-13 15:38:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: inseq
+[2024-04-13 15:38:24] INFO root fetch - processPackages [setuptools]: New version: [9.1] Old Version: [9.0.1]
+[2024-04-13 15:38:24] WARNING root fetch - processPackages [zodchy-fastapi]: Skipping, unable to determine old version
+[2024-04-13 15:38:24] INFO root fetch - main [MainThread]: End processing [zodchy-fastapi] error
+[2024-04-13 15:38:24] INFO root fetch - processPackages [argsreq]: New version: [1.8] Old Version: [1.7]
+[2024-04-13 15:38:24] INFO root fetch - processPackages [pomodorable]: New version: [0.1.dev9] Old Version: [0.1.dev8]
+[2024-04-13 15:38:24] INFO root fetch - processPackages [django-import-export]: New version: [4.0.0rc3] Old Version: [4.0.0rc2]
+[2024-04-13 15:38:24] INFO root fetch - processPackages [half-orm]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-13 15:38:24] INFO root fetch - processPackages [inseq]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-04-13 15:38:24] INFO root fetch - processPackages [setuptools]: Downloading https://files.pythonhosted.org/packages/16/2c/1ad571e85048c57b4e7ba2218d0fff3db0452e8bfa0c20e1543e26f85121/setuptools-9.0.1.zip
+[2024-04-13 15:38:25] INFO root fetch - processPackages [argsreq]: Downloading https://files.pythonhosted.org/packages/c0/b0/64910453e2469bb1d8dea355c3a9a0821929a39e971829b61bd38bc49e0a/argsreq-1.7.tar.gz
+[2024-04-13 15:38:25] INFO root fetch - processPackages [django-import-export]: Downloading https://files.pythonhosted.org/packages/7f/bc/ef5cd32a122a85be44f83949819f88a22cf51623b7842c6a65127606b97f/django-import-export-4.0.0rc2.tar.gz
+[2024-04-13 15:38:25] INFO root fetch - processPackages [pomodorable]: Downloading https://files.pythonhosted.org/packages/d3/ad/517479bdc5c62854d59457c9cf5b4e6c6e9cf861d961bdbafb55857f6a86/pomodorable-0.1.dev8.tar.gz
+[2024-04-13 15:38:25] INFO root fetch - processPackages [half-orm]: Downloading https://files.pythonhosted.org/packages/03/5b/7ad7adf499f569d057fff1e0e6bc40a51103c154388596eab2c850d378f4/half_orm-0.9.8.tar.gz
+[2024-04-13 15:38:25] INFO root fetch - processPackages [inseq]: Downloading https://files.pythonhosted.org/packages/38/0e/36a912709b5a19774df6688e963dd9f48a7ab77963ad64fffcf13873575c/inseq-0.5.0.tar.gz
+[2024-04-13 15:38:25] INFO root fetch - processPackages [setuptools]: Downloading https://files.pythonhosted.org/packages/35/b2/626974cb6f02c4d58c33471b597f6723560f74be322857e9cd24700c3c70/setuptools-9.1.zip
+[2024-04-13 15:38:25] INFO root fetch - processPackages [argsreq]: Downloading https://files.pythonhosted.org/packages/e0/c1/9c40977087d89b83b28ab9d5f671e1c40fcdda1a7bfe3075d4d99588c2a8/argsreq-1.8.tar.gz
+[2024-04-13 15:38:25] INFO root fetch - processPackages [pomodorable]: Downloading https://files.pythonhosted.org/packages/92/5d/b91c67f6c7dae00041e39f7688d01b87851bf8d8d273efb1a25cc434849e/pomodorable-0.1.dev9.tar.gz
+[2024-04-13 15:38:25] INFO root fetch - processPackages [setuptools]: executing diffoscope
+[2024-04-13 15:38:25] INFO root fetch - processPackages [setuptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setuptools-9.0.1.zip tmp/setuptools-9.1.zip --markdown 20240413/s/setuptools/9.0.1-9.1/README.md --exclude *.pyd
+[2024-04-13 15:38:25] INFO root fetch - processPackages [django-import-export]: Downloading https://files.pythonhosted.org/packages/b2/b3/303edc33f78f60788bc60f87e0825f75e00c732c6a0fe811935923d42e53/django_import_export-4.0.0rc3.tar.gz
+[2024-04-13 15:38:25] INFO root fetch - processPackages [argsreq]: executing diffoscope
+[2024-04-13 15:38:25] INFO root fetch - processPackages [argsreq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argsreq-1.7.tar.gz tmp/argsreq-1.8.tar.gz --markdown 20240413/a/argsreq/1.7-1.8/README.md --exclude *.pyd
+[2024-04-13 15:38:25] INFO root fetch - processPackages [inseq]: Downloading https://files.pythonhosted.org/packages/bf/83/499413b48bcf0fab5213d253b1203702c8a8fa64f5ba24f10cc186942ad3/inseq-0.6.0.tar.gz
+[2024-04-13 15:38:25] INFO root fetch - processPackages [pomodorable]: executing diffoscope
+[2024-04-13 15:38:25] INFO root fetch - processPackages [pomodorable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pomodorable-0.1.dev8.tar.gz tmp/pomodorable-0.1.dev9.tar.gz --markdown 20240413/p/pomodorable/0.1.dev8-0.1.dev9/README.md --exclude *.pyd
+[2024-04-13 15:38:25] INFO root fetch - processPackages [half-orm]: Downloading https://files.pythonhosted.org/packages/9b/56/df1f5dae72d6953a2f5458c12c0689212adb79ad73442b5934bc404993bd/half_orm-0.9.9.tar.gz
+[2024-04-13 15:38:25] INFO root fetch - processPackages [inseq]: executing diffoscope
+[2024-04-13 15:38:25] INFO root fetch - processPackages [inseq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inseq-0.5.0.tar.gz tmp/inseq-0.6.0.tar.gz --markdown 20240413/i/inseq/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-04-13 15:38:25] INFO root fetch - processPackages [django-import-export]: executing diffoscope
+[2024-04-13 15:38:25] INFO root fetch - processPackages [django-import-export]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-import-export-4.0.0rc2.tar.gz tmp/django_import_export-4.0.0rc3.tar.gz --markdown 20240413/d/django-import-export/4.0.0rc2-4.0.0rc3/README.md --exclude *.pyd
+[2024-04-13 15:38:26] INFO root fetch - processPackages [half-orm]: executing diffoscope
+[2024-04-13 15:38:26] INFO root fetch - processPackages [half-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/half_orm-0.9.8.tar.gz tmp/half_orm-0.9.9.tar.gz --markdown 20240413/h/half-orm/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-13 15:38:26] INFO root fetch - processPackages [argsreq]: Remove: archive file [/home/abi/fetcher/tmp/argsreq-1.7.tar.gz]
+[2024-04-13 15:38:26] INFO root fetch - processPackages [argsreq]: Remove: archive file [/home/abi/fetcher/tmp/argsreq-1.8.tar.gz]
+[2024-04-13 15:38:26] INFO root fetch - main [MainThread]: End processing [argsreq]: success
+[2024-04-13 15:38:26] INFO root fetch - processPackages [pomodorable]: Remove: archive file [/home/abi/fetcher/tmp/pomodorable-0.1.dev8.tar.gz]
+[2024-04-13 15:38:26] INFO root fetch - processPackages [pomodorable]: Remove: archive file [/home/abi/fetcher/tmp/pomodorable-0.1.dev9.tar.gz]
+[2024-04-13 15:38:26] INFO root fetch - main [MainThread]: End processing [pomodorable]: success
+[2024-04-13 15:38:26] INFO root fetch - processPackages [half-orm]: Remove: archive file [/home/abi/fetcher/tmp/half_orm-0.9.8.tar.gz]
+[2024-04-13 15:38:26] INFO root fetch - processPackages [half-orm]: Remove: archive file [/home/abi/fetcher/tmp/half_orm-0.9.9.tar.gz]
+[2024-04-13 15:38:26] INFO root fetch - main [MainThread]: End processing [half-orm]: success
+[2024-04-13 15:38:26] INFO root fetch - processPackages [inseq]: Remove: archive file [/home/abi/fetcher/tmp/inseq-0.5.0.tar.gz]
+[2024-04-13 15:38:26] INFO root fetch - processPackages [inseq]: Remove: archive file [/home/abi/fetcher/tmp/inseq-0.6.0.tar.gz]
+[2024-04-13 15:38:26] INFO root fetch - main [MainThread]: End processing [inseq]: success
+[2024-04-13 15:38:26] INFO root fetch - processPackages [setuptools]: Remove: archive file [/home/abi/fetcher/tmp/setuptools-9.0.1.zip]
+[2024-04-13 15:38:26] INFO root fetch - processPackages [setuptools]: Remove: archive file [/home/abi/fetcher/tmp/setuptools-9.1.zip]
+[2024-04-13 15:38:26] INFO root fetch - main [MainThread]: End processing [setuptools]: success
+[2024-04-13 15:38:27] INFO root fetch - processPackages [django-import-export]: Remove: archive file [/home/abi/fetcher/tmp/django-import-export-4.0.0rc2.tar.gz]
+[2024-04-13 15:38:27] INFO root fetch - processPackages [django-import-export]: Remove: archive file [/home/abi/fetcher/tmp/django_import_export-4.0.0rc3.tar.gz]
+[2024-04-13 15:38:27] INFO root fetch - main [MainThread]: End processing [django-import-export]: success
+[2024-04-13 15:38:27] INFO root fetch - main [MainThread]: Store serial: [22752232]
