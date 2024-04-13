@@ -18634,3 +18634,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 20:44:09] INFO root fetch - processPackages [communex]: Remove: archive file [/home/abi/fetcher/tmp/communex-0.1.9.tar.gz]
 [2024-04-13 20:44:09] INFO root fetch - main [MainThread]: End processing [communex]: success
 [2024-04-13 20:44:09] INFO root fetch - main [MainThread]: Store serial: [22754016]
+[2024-04-13 20:46:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754016]
+[2024-04-13 20:46:18] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 20:46:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyarcS
+[2024-04-13 20:46:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyhdl-pi-if
+[2024-04-13 20:46:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wristwatch
+[2024-04-13 20:46:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dyff-schema
+[2024-04-13 20:46:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rollplayerlib
+[2024-04-13 20:46:18] WARNING root fetch - processPackages [wristwatch]: Skipping, unable to determine old version
+[2024-04-13 20:46:18] INFO root fetch - processPackages [rollplayerlib]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-13 20:46:18] INFO root fetch - main [MainThread]: End processing [wristwatch] error
+[2024-04-13 20:46:18] INFO root fetch - processPackages [pyhdl-pi-if]: New version: [0.0.1.8675558542] Old Version: [0.0.1.8655851045]
+[2024-04-13 20:46:18] INFO root fetch - processPackages [dyff-schema]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-13 20:46:18] WARNING root fetch - processPackages [pyarcS]: Skipping, unable to determine old version
+[2024-04-13 20:46:18] INFO root fetch - main [MainThread]: End processing [pyarcS] error
+[2024-04-13 20:46:18] INFO root fetch - processPackages [rollplayerlib]: Downloading https://files.pythonhosted.org/packages/12/a5/957e6865c79bc81884af90112499758c781870b7c66f1a8466a1ca5487b1/rollplayerlib-0.2.0.tar.gz
+[2024-04-13 20:46:18] INFO root fetch - processPackages [dyff-schema]: Downloading https://files.pythonhosted.org/packages/54/e9/d0b3269090eb5544f8aa3b31253230102958ac2854743ea8f192444d6f66/dyff-schema-0.3.8.tar.gz
+[2024-04-13 20:46:18] INFO root fetch - processPackages [pyhdl-pi-if]: Downloading https://files.pythonhosted.org/packages/4e/37/00fab872dd27beca9da528b3196978203355822c4392d492fea2f5e18114/pyhdl_pi_if-0.0.1.8655851045-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-13 20:46:18] INFO root fetch - processPackages [rollplayerlib]: Downloading https://files.pythonhosted.org/packages/f4/01/fa4bac14f957f2aeeef1fbc4f55469b5e9b652cc51a8d451308710d78647/rollplayerlib-0.3.0.tar.gz
+[2024-04-13 20:46:19] INFO root fetch - processPackages [dyff-schema]: Downloading https://files.pythonhosted.org/packages/c3/55/4a24e01dce238f482c616f567827b7320b81ec5fa6c53968ff926ed9897a/dyff_schema-0.3.9.tar.gz
+[2024-04-13 20:46:19] INFO root fetch - processPackages [pyhdl-pi-if]: Downloading https://files.pythonhosted.org/packages/36/93/bdd9260356509319bf7959d9da2b52e6edcb3d6e7dbdc04928d72d51d122/pyhdl_pi_if-0.0.1.8675558542-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-13 20:46:19] INFO root fetch - processPackages [rollplayerlib]: executing diffoscope
+[2024-04-13 20:46:19] INFO root fetch - processPackages [rollplayerlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rollplayerlib-0.2.0.tar.gz tmp/rollplayerlib-0.3.0.tar.gz --markdown 20240413/r/rollplayerlib/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-13 20:46:19] INFO root fetch - processPackages [dyff-schema]: executing diffoscope
+[2024-04-13 20:46:19] INFO root fetch - processPackages [dyff-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dyff-schema-0.3.8.tar.gz tmp/dyff_schema-0.3.9.tar.gz --markdown 20240413/d/dyff-schema/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-13 20:46:19] INFO root fetch - processPackages [pyhdl-pi-if]: executing diffoscope
+[2024-04-13 20:46:19] INFO root fetch - processPackages [pyhdl-pi-if]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhdl_pi_if-0.0.1.8655851045-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/pyhdl_pi_if-0.0.1.8675558542-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240413/p/pyhdl-pi-if/0.0.1.8655851045-0.0.1.8675558542/README.md --exclude *.pyd
+[2024-04-13 20:46:19] INFO root fetch - processPackages [rollplayerlib]: Remove: archive file [/home/abi/fetcher/tmp/rollplayerlib-0.2.0.tar.gz]
+[2024-04-13 20:46:19] INFO root fetch - processPackages [rollplayerlib]: Remove: archive file [/home/abi/fetcher/tmp/rollplayerlib-0.3.0.tar.gz]
+[2024-04-13 20:46:19] INFO root fetch - main [MainThread]: End processing [rollplayerlib]: success
+[2024-04-13 20:46:19] INFO root fetch - processPackages [dyff-schema]: Remove: archive file [/home/abi/fetcher/tmp/dyff-schema-0.3.8.tar.gz]
+[2024-04-13 20:46:19] INFO root fetch - processPackages [dyff-schema]: Remove: archive file [/home/abi/fetcher/tmp/dyff_schema-0.3.9.tar.gz]
+[2024-04-13 20:46:19] INFO root fetch - main [MainThread]: End processing [dyff-schema]: success
+[2024-04-13 20:46:19] INFO root fetch - processPackages [pyhdl-pi-if]: Remove: archive file [/home/abi/fetcher/tmp/pyhdl_pi_if-0.0.1.8655851045-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-13 20:46:19] INFO root fetch - processPackages [pyhdl-pi-if]: Remove: archive file [/home/abi/fetcher/tmp/pyhdl_pi_if-0.0.1.8675558542-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-13 20:46:19] INFO root fetch - main [MainThread]: End processing [pyhdl-pi-if]: success
+[2024-04-13 20:46:19] INFO root fetch - main [MainThread]: Store serial: [22754036]
