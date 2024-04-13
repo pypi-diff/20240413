@@ -8330,3 +8330,63 @@
 [2024-04-13 07:35:15] INFO root fetch - processPackages [petrovisor]: Remove: archive file [/home/abi/fetcher/tmp/petrovisor-0.1.3.tar.gz]
 [2024-04-13 07:35:15] INFO root fetch - main [MainThread]: End processing [petrovisor]: success
 [2024-04-13 07:35:15] INFO root fetch - main [MainThread]: Store serial: [22749621]
+[2024-04-13 07:37:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749621]
+[2024-04-13 07:37:24] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-13 07:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wgk-torch-training-module
+[2024-04-13 07:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: centralcli
+[2024-04-13 07:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MOPUp
+[2024-04-13 07:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pymemgpt
+[2024-04-13 07:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pymemgpt-nightly
+[2024-04-13 07:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rack
+[2024-04-13 07:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo-addon-product-cost-security
+[2024-04-13 07:37:24] INFO root fetch - processPackages [rack]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-13 07:37:24] INFO root fetch - processPackages [pymemgpt-nightly]: New version: [0.3.9.dev20240412103904] Old Version: [0.3.9.dev20240411103902]
+[2024-04-13 07:37:24] INFO root fetch - processPackages [odoo-addon-product-cost-security]: New version: [16.0.1.2.0] Old Version: [16.0.1.1.0.3]
+[2024-04-13 07:37:24] WARNING root fetch - processPackages [wgk-torch-training-module]: Skipping, unable to determine old version
+[2024-04-13 07:37:24] INFO root fetch - main [MainThread]: End processing [wgk-torch-training-module] error
+[2024-04-13 07:37:24] INFO root fetch - processPackages [rack]: Downloading https://files.pythonhosted.org/packages/e2/31/89e54fa6d49c156b4e150c68e78d0c777ea083a6008599055f7b1cf9ad8a/rack-0.0.1.tar.gz
+[2024-04-13 07:37:24] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/28/e7/e8c0c970c21e3670e810627cef085bbbbac1f9e994540354838d7781a0ac/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz
+[2024-04-13 07:37:24] INFO root fetch - processPackages [odoo-addon-product-cost-security]: Downloading https://files.pythonhosted.org/packages/d9/2d/5f405b5317cc69205fe843827d725ab0b272ae8b9d012bb0e50293646135/odoo_addon_product_cost_security-16.0.1.1.0.3-py3-none-any.whl
+[2024-04-13 07:37:24] INFO root fetch - processPackages [MOPUp]: New version: [2024.4.12] Old Version: [2022.6.27.1]
+[2024-04-13 07:37:24] INFO root fetch - processPackages [pymemgpt]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-13 07:37:24] INFO root fetch - processPackages [centralcli]: New version: [2.4.0] Old Version: [2.3.9]
+[2024-04-13 07:37:24] INFO root fetch - processPackages [MOPUp]: Downloading https://files.pythonhosted.org/packages/37/91/4199a4e15a169c45445848cdc0ebac1a936ef020e91d815487ca0648ec84/MOPUp-2022.6.27.1.tar.gz
+[2024-04-13 07:37:24] INFO root fetch - processPackages [rack]: Downloading https://files.pythonhosted.org/packages/c7/17/88869d2f5b64ce1df09ce39e58c24fa41e04e286c119fde84eae65cf1098/rack-0.0.2.tar.gz
+[2024-04-13 07:37:24] INFO root fetch - processPackages [centralcli]: Downloading https://files.pythonhosted.org/packages/08/81/428cd2ad1fb792c19f3aacd587160c345461c4730d2a02842e3c72ad68d5/centralcli-2.3.9.tar.gz
+[2024-04-13 07:37:24] INFO root fetch - processPackages [odoo-addon-product-cost-security]: Downloading https://files.pythonhosted.org/packages/7d/5b/dafb2b0a31992044a6a3656ab16d571f07c0dd1fcf50ad2576c2f84930cb/odoo_addon_product_cost_security-16.0.1.2.0-py3-none-any.whl
+[2024-04-13 07:37:24] INFO root fetch - processPackages [pymemgpt]: Downloading https://files.pythonhosted.org/packages/06/f9/30dc88091552c220242217b9fd60e294f4f9792315fa873eceb3375e0b87/pymemgpt-0.3.8.tar.gz
+[2024-04-13 07:37:24] INFO root fetch - processPackages [rack]: executing diffoscope
+[2024-04-13 07:37:24] INFO root fetch - processPackages [rack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rack-0.0.1.tar.gz tmp/rack-0.0.2.tar.gz --markdown 20240413/r/rack/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-13 07:37:25] INFO root fetch - processPackages [odoo-addon-product-cost-security]: executing diffoscope
+[2024-04-13 07:37:25] INFO root fetch - processPackages [odoo-addon-product-cost-security]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_product_cost_security-16.0.1.1.0.3-py3-none-any.whl.zip tmp/odoo_addon_product_cost_security-16.0.1.2.0-py3-none-any.whl.zip --markdown 20240413/o/odoo-addon-product-cost-security/16.0.1.1.0.3-16.0.1.2.0/README.md --exclude *.pyd
+[2024-04-13 07:37:25] INFO root fetch - processPackages [MOPUp]: Downloading https://files.pythonhosted.org/packages/61/4f/89ca96940b13d6760043ff812fba0a116f418fa727f1fca3570b9b4db711/mopup-2024.4.12.tar.gz
+[2024-04-13 07:37:25] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/50/4a/4c9c1fb70a7ee971f3c8697cc6dedb251e3b10cafdd23be4d035ece0f2ec/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz
+[2024-04-13 07:37:25] INFO root fetch - processPackages [centralcli]: Downloading https://files.pythonhosted.org/packages/c5/c5/1d2b16fb31a837887c39d6b751400bfc97f0d67ffad297d64aafa813d2c4/centralcli-2.4.0.tar.gz
+[2024-04-13 07:37:25] INFO root fetch - processPackages [MOPUp]: executing diffoscope
+[2024-04-13 07:37:25] INFO root fetch - processPackages [MOPUp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MOPUp-2022.6.27.1.tar.gz tmp/mopup-2024.4.12.tar.gz --markdown 20240413/M/MOPUp/2022.6.27.1-2024.4.12/README.md --exclude *.pyd
+[2024-04-13 07:37:25] INFO root fetch - processPackages [pymemgpt]: Downloading https://files.pythonhosted.org/packages/cd/2e/4361ff93f07d87ed5b38cfc0fa22c2bf04b2bc5429a7d4cd910728659112/pymemgpt-0.3.9.tar.gz
+[2024-04-13 07:37:25] INFO root fetch - processPackages [pymemgpt-nightly]: executing diffoscope
+[2024-04-13 07:37:25] INFO root fetch - processPackages [pymemgpt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz --markdown 20240413/p/pymemgpt-nightly/0.3.9.dev20240411103902-0.3.9.dev20240412103904/README.md --exclude *.pyd
+[2024-04-13 07:37:25] INFO root fetch - processPackages [centralcli]: executing diffoscope
+[2024-04-13 07:37:25] INFO root fetch - processPackages [centralcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/centralcli-2.3.9.tar.gz tmp/centralcli-2.4.0.tar.gz --markdown 20240413/c/centralcli/2.3.9-2.4.0/README.md --exclude *.pyd
+[2024-04-13 07:37:25] INFO root fetch - processPackages [pymemgpt]: executing diffoscope
+[2024-04-13 07:37:25] INFO root fetch - processPackages [pymemgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemgpt-0.3.8.tar.gz tmp/pymemgpt-0.3.9.tar.gz --markdown 20240413/p/pymemgpt/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-13 07:37:25] INFO root fetch - processPackages [odoo-addon-product-cost-security]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_product_cost_security-16.0.1.1.0.3-py3-none-any.whl.zip]
+[2024-04-13 07:37:25] INFO root fetch - processPackages [odoo-addon-product-cost-security]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_product_cost_security-16.0.1.2.0-py3-none-any.whl.zip]
+[2024-04-13 07:37:25] INFO root fetch - main [MainThread]: End processing [odoo-addon-product-cost-security]: success
+[2024-04-13 07:37:25] INFO root fetch - processPackages [rack]: Remove: archive file [/home/abi/fetcher/tmp/rack-0.0.1.tar.gz]
+[2024-04-13 07:37:25] INFO root fetch - processPackages [rack]: Remove: archive file [/home/abi/fetcher/tmp/rack-0.0.2.tar.gz]
+[2024-04-13 07:37:25] INFO root fetch - main [MainThread]: End processing [rack]: success
+[2024-04-13 07:37:25] INFO root fetch - processPackages [MOPUp]: Remove: archive file [/home/abi/fetcher/tmp/MOPUp-2022.6.27.1.tar.gz]
+[2024-04-13 07:37:25] INFO root fetch - processPackages [MOPUp]: Remove: archive file [/home/abi/fetcher/tmp/mopup-2024.4.12.tar.gz]
+[2024-04-13 07:37:25] INFO root fetch - main [MainThread]: End processing [MOPUp]: success
+[2024-04-13 07:37:26] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz]
+[2024-04-13 07:37:26] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz]
+[2024-04-13 07:37:26] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
+[2024-04-13 07:37:27] INFO root fetch - processPackages [centralcli]: Remove: archive file [/home/abi/fetcher/tmp/centralcli-2.3.9.tar.gz]
+[2024-04-13 07:37:27] INFO root fetch - processPackages [centralcli]: Remove: archive file [/home/abi/fetcher/tmp/centralcli-2.4.0.tar.gz]
+[2024-04-13 07:37:27] INFO root fetch - main [MainThread]: End processing [centralcli]: success
+[2024-04-13 07:37:32] INFO root fetch - processPackages [pymemgpt]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt-0.3.8.tar.gz]
+[2024-04-13 07:37:32] INFO root fetch - processPackages [pymemgpt]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt-0.3.9.tar.gz]
+[2024-04-13 07:37:32] INFO root fetch - main [MainThread]: End processing [pymemgpt]: success
+[2024-04-13 07:37:32] INFO root fetch - main [MainThread]: Store serial: [22749641]
