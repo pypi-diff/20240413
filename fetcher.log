@@ -18290,3 +18290,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 20:18:12] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz]
 [2024-04-13 20:18:12] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
 [2024-04-13 20:18:12] INFO root fetch - main [MainThread]: Store serial: [22753884]
+[2024-04-13 20:20:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753884]
+[2024-04-13 20:20:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 20:20:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: impactpy
+[2024-04-13 20:20:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bellek
+[2024-04-13 20:20:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: altscore
+[2024-04-13 20:20:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bsl-translator40494773
+[2024-04-13 20:20:20] INFO root fetch - processPackages [impactpy]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-13 20:20:20] INFO root fetch - processPackages [altscore]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-13 20:20:20] INFO root fetch - processPackages [bellek]: New version: [0.9.0] Old Version: [0.75.1]
+[2024-04-13 20:20:20] INFO root fetch - processPackages [impactpy]: Downloading https://files.pythonhosted.org/packages/3e/e4/3651d962d238e5cca49d0b18f0bae34c9e394cfe8f5f8bebefa4dc9e04a4/impactpy-0.0.2.tar.gz
+[2024-04-13 20:20:20] WARNING root fetch - processPackages [bsl-translator40494773]: Skipping, unable to determine old version
+[2024-04-13 20:20:20] INFO root fetch - main [MainThread]: End processing [bsl-translator40494773] error
+[2024-04-13 20:20:20] INFO root fetch - processPackages [altscore]: Downloading https://files.pythonhosted.org/packages/5f/a6/fb416592a06e3f048aaf0891b596bd989dcd5841cb33ab09db5bb52d0970/altscore-0.1.98.tar.gz
+[2024-04-13 20:20:20] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/a0/de/6053a700fde73fc09e0754c38bfa3b14fddeab0176984b68abbb40d00838/bellek-0.75.1.tar.gz
+[2024-04-13 20:20:21] INFO root fetch - processPackages [altscore]: Downloading https://files.pythonhosted.org/packages/e3/b6/865ff08cbdee5b1522cc15ce8760f46380d0a77722135623bdfa5b3ab9f5/altscore-0.1.99.tar.gz
+[2024-04-13 20:20:21] INFO root fetch - processPackages [impactpy]: Downloading https://files.pythonhosted.org/packages/38/ae/874781978b6b7434d62f511983b288bf55ff327a3a2ec2c19887bf8eb6ed/impactpy-0.0.3.tar.gz
+[2024-04-13 20:20:21] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/ec/cb/2e453e973c51c52f57d3533e8d2f7192b8c626e0078fe08fb907191e69fb/bellek-0.9.0.tar.gz
+[2024-04-13 20:20:21] INFO root fetch - processPackages [altscore]: executing diffoscope
+[2024-04-13 20:20:21] INFO root fetch - processPackages [altscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altscore-0.1.98.tar.gz tmp/altscore-0.1.99.tar.gz --markdown 20240413/a/altscore/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-13 20:20:21] INFO root fetch - processPackages [impactpy]: executing diffoscope
+[2024-04-13 20:20:21] INFO root fetch - processPackages [impactpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/impactpy-0.0.2.tar.gz tmp/impactpy-0.0.3.tar.gz --markdown 20240413/i/impactpy/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-13 20:20:21] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-13 20:20:21] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.75.1.tar.gz tmp/bellek-0.9.0.tar.gz --markdown 20240413/b/bellek/0.75.1-0.9.0/README.md --exclude *.pyd
+[2024-04-13 20:20:21] INFO root fetch - processPackages [impactpy]: Remove: archive file [/home/abi/fetcher/tmp/impactpy-0.0.2.tar.gz]
+[2024-04-13 20:20:21] INFO root fetch - processPackages [impactpy]: Remove: archive file [/home/abi/fetcher/tmp/impactpy-0.0.3.tar.gz]
+[2024-04-13 20:20:21] INFO root fetch - main [MainThread]: End processing [impactpy]: success
+[2024-04-13 20:20:21] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.75.1.tar.gz]
+[2024-04-13 20:20:21] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.9.0.tar.gz]
+[2024-04-13 20:20:21] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-13 20:20:21] INFO root fetch - processPackages [altscore]: Remove: archive file [/home/abi/fetcher/tmp/altscore-0.1.98.tar.gz]
+[2024-04-13 20:20:21] INFO root fetch - processPackages [altscore]: Remove: archive file [/home/abi/fetcher/tmp/altscore-0.1.99.tar.gz]
+[2024-04-13 20:20:21] INFO root fetch - main [MainThread]: End processing [altscore]: success
+[2024-04-13 20:20:21] INFO root fetch - main [MainThread]: Store serial: [22753898]
