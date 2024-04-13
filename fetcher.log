@@ -6659,3 +6659,33 @@
 [2024-04-13 03:47:32] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
 [2024-04-13 03:47:32] INFO root fetch - main [MainThread]: End processing [netron] error
 [2024-04-13 03:47:32] INFO root fetch - main [MainThread]: Store serial: [22748863]
+[2024-04-13 03:49:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748863]
+[2024-04-13 03:49:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 03:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arize-phoenix-evals
+[2024-04-13 03:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mustopt
+[2024-04-13 03:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cybrid-api-id-python
+[2024-04-13 03:49:40] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.99.0] Old Version: [0.98.2]
+[2024-04-13 03:49:40] INFO root fetch - processPackages [mustopt]: New version: [1.0.1] Old Version: [0.1.4]
+[2024-04-13 03:49:40] INFO root fetch - processPackages [arize-phoenix-evals]: New version: [0.7.0] Old Version: [0.6.1]
+[2024-04-13 03:49:40] INFO root fetch - processPackages [cybrid-api-id-python]: Downloading https://files.pythonhosted.org/packages/2d/66/0d5dc17801b737dd53e021a1548eb784ef8520799bdffbae60e088bf723c/cybrid-api-id-python-0.98.2.tar.gz
+[2024-04-13 03:49:40] INFO root fetch - processPackages [mustopt]: Downloading https://files.pythonhosted.org/packages/37/3b/73df7dbcc95f87020303ca67d8e21b7ab6ec25c4f910a33765dc8a86300c/mustopt-0.1.4.tar.gz
+[2024-04-13 03:49:40] INFO root fetch - processPackages [cybrid-api-id-python]: Downloading https://files.pythonhosted.org/packages/de/07/de389a95ca98f482f653401dbe8342cf8d4930d1efee86d1f28f3c1afcd1/cybrid-api-id-python-0.99.0.tar.gz
+[2024-04-13 03:49:40] INFO root fetch - processPackages [arize-phoenix-evals]: Downloading https://files.pythonhosted.org/packages/8f/ed/8bb443c9fdd38c4a5fe63f003ebaf26224de0f3330c02bdc3a0a4503e970/arize_phoenix_evals-0.6.1.tar.gz
+[2024-04-13 03:49:40] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2024-04-13 03:49:40] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.98.2.tar.gz tmp/cybrid-api-id-python-0.99.0.tar.gz --markdown 20240413/c/cybrid-api-id-python/0.98.2-0.99.0/README.md --exclude *.pyd
+[2024-04-13 03:49:40] INFO root fetch - processPackages [mustopt]: Downloading https://files.pythonhosted.org/packages/9c/39/2132e168a24999f82e937ee8537f1fba73eef69c47e4f212ce4295d11cb2/mustopt-1.0.1.tar.gz
+[2024-04-13 03:49:40] INFO root fetch - processPackages [arize-phoenix-evals]: Downloading https://files.pythonhosted.org/packages/5f/64/295e56b522264c3b6a7edcd29e89c1a6c2e775a76d6d06c52c38f286e84e/arize_phoenix_evals-0.7.0.tar.gz
+[2024-04-13 03:49:40] INFO root fetch - processPackages [mustopt]: executing diffoscope
+[2024-04-13 03:49:40] INFO root fetch - processPackages [mustopt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mustopt-0.1.4.tar.gz tmp/mustopt-1.0.1.tar.gz --markdown 20240413/m/mustopt/0.1.4-1.0.1/README.md --exclude *.pyd
+[2024-04-13 03:49:41] INFO root fetch - processPackages [arize-phoenix-evals]: executing diffoscope
+[2024-04-13 03:49:41] INFO root fetch - processPackages [arize-phoenix-evals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arize_phoenix_evals-0.6.1.tar.gz tmp/arize_phoenix_evals-0.7.0.tar.gz --markdown 20240413/a/arize-phoenix-evals/0.6.1-0.7.0/README.md --exclude *.pyd
+[2024-04-13 03:49:41] INFO root fetch - processPackages [mustopt]: Remove: archive file [/home/abi/fetcher/tmp/mustopt-0.1.4.tar.gz]
+[2024-04-13 03:49:41] INFO root fetch - processPackages [mustopt]: Remove: archive file [/home/abi/fetcher/tmp/mustopt-1.0.1.tar.gz]
+[2024-04-13 03:49:41] INFO root fetch - main [MainThread]: End processing [mustopt]: success
+[2024-04-13 03:49:41] INFO root fetch - processPackages [arize-phoenix-evals]: Remove: archive file [/home/abi/fetcher/tmp/arize_phoenix_evals-0.6.1.tar.gz]
+[2024-04-13 03:49:41] INFO root fetch - processPackages [arize-phoenix-evals]: Remove: archive file [/home/abi/fetcher/tmp/arize_phoenix_evals-0.7.0.tar.gz]
+[2024-04-13 03:49:41] INFO root fetch - main [MainThread]: End processing [arize-phoenix-evals]: success
+[2024-04-13 03:49:41] INFO root fetch - processPackages [cybrid-api-id-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-id-python-0.98.2.tar.gz]
+[2024-04-13 03:49:41] INFO root fetch - processPackages [cybrid-api-id-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-id-python-0.99.0.tar.gz]
+[2024-04-13 03:49:41] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2024-04-13 03:49:41] INFO root fetch - main [MainThread]: Store serial: [22748874]
