@@ -10433,3 +10433,29 @@
 [2024-04-13 10:00:05] INFO root fetch - processPackages [mindformers]: Remove: archive file [/home/abi/fetcher/tmp/mindformers-1.0.1-py3-none-any.whl.zip]
 [2024-04-13 10:00:05] INFO root fetch - main [MainThread]: End processing [mindformers]: success
 [2024-04-13 10:00:05] INFO root fetch - main [MainThread]: Store serial: [22750330]
+[2024-04-13 10:02:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750330]
+[2024-04-13 10:02:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 10:02:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mindspore
+[2024-04-13 10:02:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reset-tolkien
+[2024-04-13 10:02:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastapi-sqlmodel-starter
+[2024-04-13 10:02:14] INFO root fetch - processPackages [fastapi-sqlmodel-starter]: New version: [1.0.0b1] Old Version: [1.0.0b0]
+[2024-04-13 10:02:14] INFO root fetch - processPackages [reset-tolkien]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-13 10:02:14] INFO root fetch - processPackages [mindspore]: New version: [2.2.12] Old Version: [2.2.11]
+[2024-04-13 10:02:14] INFO root fetch - processPackages [reset-tolkien]: Downloading https://files.pythonhosted.org/packages/72/d8/a6810c602d0f2ac94a654d1a7f5f8daf854e1ed0104db13a9ce6000fcfb1/reset-tolkien-1.0.0.tar.gz
+[2024-04-13 10:02:14] INFO root fetch - processPackages [mindspore]: Downloading https://files.pythonhosted.org/packages/8c/53/1188d9e57f4cb81a009e8867bcdc6cf4399d7e925ada02cc497d0123b259/mindspore-2.2.11-cp39-none-any.whl
+[2024-04-13 10:02:14] WARNING root fetch - processPackages [mindspore]: Skipping package: exceeds size limit 185768310>=10485760
+[2024-04-13 10:02:14] INFO root fetch - main [MainThread]: End processing [mindspore] error
+[2024-04-13 10:02:14] INFO root fetch - processPackages [fastapi-sqlmodel-starter]: Downloading https://files.pythonhosted.org/packages/67/e3/8620686487d11183f8ea9665178c7d91a888aa3f8a23ea5f41dc54e57ded/fastapi_sqlmodel_starter-1.0.0b0.tar.gz
+[2024-04-13 10:02:14] INFO root fetch - processPackages [reset-tolkien]: Downloading https://files.pythonhosted.org/packages/0d/04/7a0756cb8ce6bdcd574214b6c48d4a69c50c749947bbf032a820943058d9/reset-tolkien-1.1.0.tar.gz
+[2024-04-13 10:02:14] INFO root fetch - processPackages [fastapi-sqlmodel-starter]: Downloading https://files.pythonhosted.org/packages/15/87/851758b00386cca5e181ba890fdb0eb7fd106b7b08c9e45921bbb7f59984/fastapi_sqlmodel_starter-1.0.0b1.tar.gz
+[2024-04-13 10:02:14] INFO root fetch - processPackages [reset-tolkien]: executing diffoscope
+[2024-04-13 10:02:14] INFO root fetch - processPackages [reset-tolkien]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reset-tolkien-1.0.0.tar.gz tmp/reset-tolkien-1.1.0.tar.gz --markdown 20240413/r/reset-tolkien/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-04-13 10:02:15] INFO root fetch - processPackages [fastapi-sqlmodel-starter]: executing diffoscope
+[2024-04-13 10:02:15] INFO root fetch - processPackages [fastapi-sqlmodel-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_sqlmodel_starter-1.0.0b0.tar.gz tmp/fastapi_sqlmodel_starter-1.0.0b1.tar.gz --markdown 20240413/f/fastapi-sqlmodel-starter/1.0.0b0-1.0.0b1/README.md --exclude *.pyd
+[2024-04-13 10:02:15] INFO root fetch - processPackages [reset-tolkien]: Remove: archive file [/home/abi/fetcher/tmp/reset-tolkien-1.0.0.tar.gz]
+[2024-04-13 10:02:15] INFO root fetch - processPackages [reset-tolkien]: Remove: archive file [/home/abi/fetcher/tmp/reset-tolkien-1.1.0.tar.gz]
+[2024-04-13 10:02:15] INFO root fetch - main [MainThread]: End processing [reset-tolkien]: success
+[2024-04-13 10:02:16] INFO root fetch - processPackages [fastapi-sqlmodel-starter]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_sqlmodel_starter-1.0.0b0.tar.gz]
+[2024-04-13 10:02:16] INFO root fetch - processPackages [fastapi-sqlmodel-starter]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_sqlmodel_starter-1.0.0b1.tar.gz]
+[2024-04-13 10:02:16] INFO root fetch - main [MainThread]: End processing [fastapi-sqlmodel-starter]: success
+[2024-04-13 10:02:16] INFO root fetch - main [MainThread]: Store serial: [22750341]
