@@ -17248,3 +17248,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:13:48] INFO root fetch - processPackages [comfy-script]: Remove: archive file [/home/abi/fetcher/tmp/comfy_script-0.4.6.tar.gz]
 [2024-04-13 19:13:48] INFO root fetch - main [MainThread]: End processing [comfy-script]: success
 [2024-04-13 19:13:48] INFO root fetch - main [MainThread]: Store serial: [22753336]
+[2024-04-13 19:15:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753336]
+[2024-04-13 19:15:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 19:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deeplx-tr
+[2024-04-13 19:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fotolab
+[2024-04-13 19:15:57] INFO root fetch - processPackages [deeplx-tr]: New version: [0.1.0a1] Old Version: [0.1.0a0]
+[2024-04-13 19:15:57] INFO root fetch - processPackages [fotolab]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-13 19:15:57] INFO root fetch - processPackages [deeplx-tr]: Downloading https://files.pythonhosted.org/packages/4f/73/f21b20003d3820484dc7805f84fd65ff2b295d40adf35fadcb11bf001428/deeplx_tr-0.1.0a0.tar.gz
+[2024-04-13 19:15:57] INFO root fetch - processPackages [fotolab]: Downloading https://files.pythonhosted.org/packages/a2/ab/c10acca0ef62a7fc9ee21e1a91f04225aa100f106ea8efe4bafd9b0ec125/fotolab-0.9.0.tar.gz
+[2024-04-13 19:15:57] INFO root fetch - processPackages [deeplx-tr]: Downloading https://files.pythonhosted.org/packages/48/02/942504dccee2d43d7bdaeca3e1fb02ef319f09aaf8c8980b00a456b74cf7/deeplx_tr-0.1.0a1.tar.gz
+[2024-04-13 19:15:57] INFO root fetch - processPackages [deeplx-tr]: executing diffoscope
+[2024-04-13 19:15:57] INFO root fetch - processPackages [deeplx-tr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deeplx_tr-0.1.0a0.tar.gz tmp/deeplx_tr-0.1.0a1.tar.gz --markdown 20240413/d/deeplx-tr/0.1.0a0-0.1.0a1/README.md --exclude *.pyd
+[2024-04-13 19:15:57] INFO root fetch - processPackages [fotolab]: Downloading https://files.pythonhosted.org/packages/f8/7b/ec556508973366d646773454865fe94705524c44efe6ab092e8b0b223dba/fotolab-0.9.1.tar.gz
+[2024-04-13 19:15:58] INFO root fetch - processPackages [fotolab]: executing diffoscope
+[2024-04-13 19:15:58] INFO root fetch - processPackages [fotolab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fotolab-0.9.0.tar.gz tmp/fotolab-0.9.1.tar.gz --markdown 20240413/f/fotolab/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-13 19:15:58] INFO root fetch - processPackages [deeplx-tr]: Remove: archive file [/home/abi/fetcher/tmp/deeplx_tr-0.1.0a0.tar.gz]
+[2024-04-13 19:15:58] INFO root fetch - processPackages [deeplx-tr]: Remove: archive file [/home/abi/fetcher/tmp/deeplx_tr-0.1.0a1.tar.gz]
+[2024-04-13 19:15:58] INFO root fetch - main [MainThread]: End processing [deeplx-tr]: success
+[2024-04-13 19:15:58] INFO root fetch - processPackages [fotolab]: Remove: archive file [/home/abi/fetcher/tmp/fotolab-0.9.0.tar.gz]
+[2024-04-13 19:15:58] INFO root fetch - processPackages [fotolab]: Remove: archive file [/home/abi/fetcher/tmp/fotolab-0.9.1.tar.gz]
+[2024-04-13 19:15:58] INFO root fetch - main [MainThread]: End processing [fotolab]: success
+[2024-04-13 19:15:58] INFO root fetch - main [MainThread]: Store serial: [22753343]
