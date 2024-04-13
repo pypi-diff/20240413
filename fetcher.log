@@ -13472,3 +13472,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:06:50] INFO root fetch - processPackages [FATtools]: Remove: archive file [/home/abi/fetcher/tmp/FATtools-1.0.9.tar.gz]
 [2024-04-13 14:06:50] INFO root fetch - main [MainThread]: End processing [FATtools]: success
 [2024-04-13 14:06:50] INFO root fetch - main [MainThread]: Store serial: [22751613]
+[2024-04-13 14:08:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751613]
+[2024-04-13 14:08:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 14:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wikidot
+[2024-04-13 14:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: geopak
+[2024-04-13 14:08:59] INFO root fetch - processPackages [wikidot]: New version: [3.0.0a2] Old Version: [3.0.0a11]
+[2024-04-13 14:08:59] INFO root fetch - processPackages [geopak]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-13 14:09:00] INFO root fetch - processPackages [wikidot]: Downloading https://files.pythonhosted.org/packages/91/02/1f11a82f76f975467358056f36b7b56e7afb57a435a3cd8825a0dfde5e90/wikidot-3.0.0a11.tar.gz
+[2024-04-13 14:09:00] INFO root fetch - processPackages [geopak]: Downloading https://files.pythonhosted.org/packages/13/5c/a2412cc5798a5e74be8d0c7cb31d1057dbb81df6c03cd1204374efe17645/geopak-0.0.2.tar.gz
+[2024-04-13 14:09:00] INFO root fetch - processPackages [geopak]: Downloading https://files.pythonhosted.org/packages/55/99/5b18f0ec19b25e27ce3f5ec5d84240130bdcee8d2a0254d65814d56b0d18/geopak-0.0.3.tar.gz
+[2024-04-13 14:09:00] INFO root fetch - processPackages [wikidot]: Downloading https://files.pythonhosted.org/packages/cd/0c/3243782fdc58ae7ac8c44281766351e788f75bfc02b5065aba49ea129d8b/wikidot-3.0.0a2.tar.gz
+[2024-04-13 14:09:00] INFO root fetch - processPackages [geopak]: executing diffoscope
+[2024-04-13 14:09:00] INFO root fetch - processPackages [geopak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geopak-0.0.2.tar.gz tmp/geopak-0.0.3.tar.gz --markdown 20240413/g/geopak/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-13 14:09:00] INFO root fetch - processPackages [wikidot]: executing diffoscope
+[2024-04-13 14:09:00] INFO root fetch - processPackages [wikidot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wikidot-3.0.0a11.tar.gz tmp/wikidot-3.0.0a2.tar.gz --markdown 20240413/w/wikidot/3.0.0a11-3.0.0a2/README.md --exclude *.pyd
+[2024-04-13 14:09:01] INFO root fetch - processPackages [wikidot]: Remove: archive file [/home/abi/fetcher/tmp/wikidot-3.0.0a11.tar.gz]
+[2024-04-13 14:09:01] INFO root fetch - processPackages [wikidot]: Remove: archive file [/home/abi/fetcher/tmp/wikidot-3.0.0a2.tar.gz]
+[2024-04-13 14:09:01] INFO root fetch - main [MainThread]: End processing [wikidot]: success
+[2024-04-13 14:09:01] INFO root fetch - processPackages [geopak]: Remove: archive file [/home/abi/fetcher/tmp/geopak-0.0.2.tar.gz]
+[2024-04-13 14:09:01] INFO root fetch - processPackages [geopak]: Remove: archive file [/home/abi/fetcher/tmp/geopak-0.0.3.tar.gz]
+[2024-04-13 14:09:01] INFO root fetch - main [MainThread]: End processing [geopak]: success
+[2024-04-13 14:09:01] INFO root fetch - main [MainThread]: Store serial: [22751621]
