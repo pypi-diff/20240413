@@ -19644,3 +19644,61 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 22:12:03] INFO root fetch - processPackages [blurry-cli]: Remove: archive file [/home/abi/fetcher/tmp/blurry_cli-0.7.0.tar.gz]
 [2024-04-13 22:12:03] INFO root fetch - main [MainThread]: End processing [blurry-cli]: success
 [2024-04-13 22:12:03] INFO root fetch - main [MainThread]: Store serial: [22754497]
+[2024-04-13 22:14:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754497]
+[2024-04-13 22:14:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-13 22:14:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastapi-xroad-soap
+[2024-04-13 22:14:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: apache-airflow-providers-databricks
+[2024-04-13 22:14:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apache-airflow-providers-yandex
+[2024-04-13 22:14:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2024-04-13 22:14:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: whishow
+[2024-04-13 22:14:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spanishconjugator
+[2024-04-13 22:14:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: restx
+[2024-04-13 22:14:12] WARNING root fetch - processPackages [whishow]: Skipping, unable to determine old version
+[2024-04-13 22:14:12] INFO root fetch - main [MainThread]: End processing [whishow] error
+[2024-04-13 22:14:12] INFO root fetch - processPackages [restx]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-13 22:14:12] INFO root fetch - processPackages [restx]: Downloading https://files.pythonhosted.org/packages/cf/db/f579ec11a11d0d8368fa1fb4e1fd939e74b79b0cef3230e3d1717b289a4f/restx-0.1.6.tar.gz
+[2024-04-13 22:14:12] INFO root fetch - processPackages [apache-airflow-providers-yandex]: New version: [3.9.1rc1] Old Version: [3.9.0rc1]
+[2024-04-13 22:14:12] INFO root fetch - processPackages [fastapi-xroad-soap]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-13 22:14:12] INFO root fetch - processPackages [apache-airflow-providers-databricks]: New version: [6.3.0rc2] Old Version: [6.3.0rc1]
+[2024-04-13 22:14:12] INFO root fetch - processPackages [apache-airflow-providers-yandex]: Downloading https://files.pythonhosted.org/packages/74/3a/74696360b5444744e6f48048a534e005565a9f55c462cba67833eff1701c/apache_airflow_providers_yandex-3.9.0rc1.tar.gz
+[2024-04-13 22:14:12] INFO root fetch - processPackages [fastapi-xroad-soap]: Downloading https://files.pythonhosted.org/packages/0d/df/180258fd38ab22fb9c16dca80a800264eb1ff5f7695ec3dc96fbcf6057e4/fastapi_xroad_soap-0.1.0.tar.gz
+[2024-04-13 22:14:12] INFO root fetch - processPackages [apache-airflow-providers-databricks]: Downloading https://files.pythonhosted.org/packages/b6/52/8e69f8f9eb6f06bde4b4ac2d86fbad2cf2e58a4d782d608099109fa8600d/apache_airflow_providers_databricks-6.3.0rc1.tar.gz
+[2024-04-13 22:14:12] INFO root fetch - processPackages [restx]: Downloading https://files.pythonhosted.org/packages/74/78/0edabe8e2ff1ac413755e17d404df324d46be0902879aceaa247af9fc57c/restx-0.1.7.tar.gz
+[2024-04-13 22:14:12] INFO root fetch - processPackages [restx]: executing diffoscope
+[2024-04-13 22:14:12] INFO root fetch - processPackages [restx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/restx-0.1.6.tar.gz tmp/restx-0.1.7.tar.gz --markdown 20240413/r/restx/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-13 22:14:12] INFO root fetch - processPackages [apache-airflow-providers-yandex]: Downloading https://files.pythonhosted.org/packages/b8/35/427d826572313a744dfe5c9c5f82b2cdbf68a062057912b9a1dd9783753e/apache_airflow_providers_yandex-3.9.1rc1.tar.gz
+[2024-04-13 22:14:12] INFO root fetch - processPackages [fastapi-xroad-soap]: Downloading https://files.pythonhosted.org/packages/6e/2c/5bb717dccee85f37c5867bf8790b4eb6b8d9e3cdd9a4499fcdcbc92cbcf2/fastapi_xroad_soap-0.2.0.tar.gz
+[2024-04-13 22:14:12] INFO root fetch - processPackages [apache-airflow-providers-databricks]: Downloading https://files.pythonhosted.org/packages/f4/41/11c05401f6612be8516eedc49bab3e94d36919ee2b0bf8ef3d4f8ac93911/apache_airflow_providers_databricks-6.3.0rc2.tar.gz
+[2024-04-13 22:14:13] INFO root fetch - processPackages [apache-airflow-providers-yandex]: executing diffoscope
+[2024-04-13 22:14:13] INFO root fetch - processPackages [apache-airflow-providers-yandex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache_airflow_providers_yandex-3.9.0rc1.tar.gz tmp/apache_airflow_providers_yandex-3.9.1rc1.tar.gz --markdown 20240413/a/apache-airflow-providers-yandex/3.9.0rc1-3.9.1rc1/README.md --exclude *.pyd
+[2024-04-13 22:14:13] INFO root fetch - processPackages [fastapi-xroad-soap]: executing diffoscope
+[2024-04-13 22:14:13] INFO root fetch - processPackages [fastapi-xroad-soap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_xroad_soap-0.1.0.tar.gz tmp/fastapi_xroad_soap-0.2.0.tar.gz --markdown 20240413/f/fastapi-xroad-soap/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-13 22:14:13] INFO root fetch - processPackages [apache-airflow-providers-databricks]: executing diffoscope
+[2024-04-13 22:14:13] INFO root fetch - processPackages [apache-airflow-providers-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache_airflow_providers_databricks-6.3.0rc1.tar.gz tmp/apache_airflow_providers_databricks-6.3.0rc2.tar.gz --markdown 20240413/a/apache-airflow-providers-databricks/6.3.0rc1-6.3.0rc2/README.md --exclude *.pyd
+[2024-04-13 22:14:13] INFO root fetch - processPackages [restx]: Remove: archive file [/home/abi/fetcher/tmp/restx-0.1.6.tar.gz]
+[2024-04-13 22:14:13] INFO root fetch - processPackages [restx]: Remove: archive file [/home/abi/fetcher/tmp/restx-0.1.7.tar.gz]
+[2024-04-13 22:14:13] INFO root fetch - main [MainThread]: End processing [restx]: success
+[2024-04-13 22:14:13] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-13 22:14:13] INFO root fetch - processPackages [fastapi-xroad-soap]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_xroad_soap-0.1.0.tar.gz]
+[2024-04-13 22:14:13] INFO root fetch - processPackages [fastapi-xroad-soap]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_xroad_soap-0.2.0.tar.gz]
+[2024-04-13 22:14:13] INFO root fetch - main [MainThread]: End processing [fastapi-xroad-soap]: success
+[2024-04-13 22:14:13] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-13 22:14:13] INFO root fetch - processPackages [apache-airflow-providers-yandex]: Remove: archive file [/home/abi/fetcher/tmp/apache_airflow_providers_yandex-3.9.0rc1.tar.gz]
+[2024-04-13 22:14:13] INFO root fetch - processPackages [apache-airflow-providers-yandex]: Remove: archive file [/home/abi/fetcher/tmp/apache_airflow_providers_yandex-3.9.1rc1.tar.gz]
+[2024-04-13 22:14:13] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-yandex]: success
+[2024-04-13 22:14:13] INFO root fetch - processPackages [apache-airflow-providers-databricks]: Remove: archive file [/home/abi/fetcher/tmp/apache_airflow_providers_databricks-6.3.0rc1.tar.gz]
+[2024-04-13 22:14:13] INFO root fetch - processPackages [apache-airflow-providers-databricks]: Remove: archive file [/home/abi/fetcher/tmp/apache_airflow_providers_databricks-6.3.0rc2.tar.gz]
+[2024-04-13 22:14:13] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-databricks]: success
+[2024-04-13 22:14:14] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-13 22:14:14] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-13 22:14:14] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-13 22:14:14] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-13 22:14:14] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-13 22:14:14] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240413/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-04-13 22:14:14] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-13 22:14:14] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240413/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-04-13 22:14:15] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-04-13 22:14:15] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-04-13 22:14:15] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-13 22:14:15] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-13 22:14:15] INFO root fetch - main [MainThread]: Store serial: [22754518]
