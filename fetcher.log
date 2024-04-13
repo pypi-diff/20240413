@@ -19808,3 +19808,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 22:25:08] INFO root fetch - processPackages [sae-vis]: Remove: archive file [/home/abi/fetcher/tmp/sae-vis-0.2.9.tar.gz]
 [2024-04-13 22:25:08] INFO root fetch - main [MainThread]: End processing [sae-vis]: success
 [2024-04-13 22:25:08] INFO root fetch - main [MainThread]: Store serial: [22754573]
+[2024-04-13 22:27:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754573]
+[2024-04-13 22:27:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 22:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: whishow
+[2024-04-13 22:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nuumpy
+[2024-04-13 22:27:16] WARNING root fetch - processPackages [nuumpy]: Skipping, unable to determine old version
+[2024-04-13 22:27:16] INFO root fetch - main [MainThread]: End processing [nuumpy] error
+[2024-04-13 22:27:16] INFO root fetch - processPackages [whishow]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-13 22:27:16] INFO root fetch - processPackages [whishow]: Downloading https://files.pythonhosted.org/packages/d9/ae/db911dd7082b6c43a0b4a8929cddad51b2271877a685cf3a0def262d11da/whishow-1.3.0-py2.py3-none-any.whl
+[2024-04-13 22:27:17] INFO root fetch - processPackages [whishow]: Downloading https://files.pythonhosted.org/packages/01/c8/7fcb6f96474f02d80edbaff6cca1c3b54333410cec55676579bcad07ac53/whishow-1.3.1-py2.py3-none-any.whl
+[2024-04-13 22:27:17] INFO root fetch - processPackages [whishow]: executing diffoscope
+[2024-04-13 22:27:17] INFO root fetch - processPackages [whishow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whishow-1.3.0-py2.py3-none-any.whl.zip tmp/whishow-1.3.1-py2.py3-none-any.whl.zip --markdown 20240413/w/whishow/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-04-13 22:27:18] INFO root fetch - processPackages [whishow]: Remove: archive file [/home/abi/fetcher/tmp/whishow-1.3.0-py2.py3-none-any.whl.zip]
+[2024-04-13 22:27:18] INFO root fetch - processPackages [whishow]: Remove: archive file [/home/abi/fetcher/tmp/whishow-1.3.1-py2.py3-none-any.whl.zip]
+[2024-04-13 22:27:18] INFO root fetch - main [MainThread]: End processing [whishow]: success
+[2024-04-13 22:27:18] INFO root fetch - main [MainThread]: Store serial: [22754575]
