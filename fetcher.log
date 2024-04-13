@@ -20326,3 +20326,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 23:10:44] INFO root fetch - processPackages [arion-library]: Remove: archive file [/home/abi/fetcher/tmp/arion_library-1.1rc51.dev51.tar.gz]
 [2024-04-13 23:10:44] INFO root fetch - main [MainThread]: End processing [arion-library]: success
 [2024-04-13 23:10:44] INFO root fetch - main [MainThread]: Store serial: [22754756]
+[2024-04-13 23:12:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754756]
+[2024-04-13 23:12:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 23:12:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: faster-coco-eval
+[2024-04-13 23:12:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kilosort
+[2024-04-13 23:12:53] INFO root fetch - processPackages [kilosort]: New version: [4.0.4] Old Version: [4.0.3]
+[2024-04-13 23:12:53] INFO root fetch - processPackages [faster-coco-eval]: New version: [1.5.1] Old Version: [1.4.3]
+[2024-04-13 23:12:53] INFO root fetch - processPackages [kilosort]: Downloading https://files.pythonhosted.org/packages/cd/4b/1f53fa62b5997bf533deca6f7d35d3194e1efd92226ceaca2b6eda9e5eaa/kilosort-4.0.3.tar.gz
+[2024-04-13 23:12:53] INFO root fetch - processPackages [faster-coco-eval]: Downloading https://files.pythonhosted.org/packages/aa/46/7b404ee246edb4680a2482a97d14f4bee03b3f5bcfbe555fe5e4f966df05/faster-coco-eval-1.4.3.tar.gz
+[2024-04-13 23:12:54] INFO root fetch - processPackages [faster-coco-eval]: Downloading https://files.pythonhosted.org/packages/3f/7d/017927141f975669627722fd0d365212e6e7c84a2b5a9d6dde710eb7ba18/faster_coco_eval-1.5.1.tar.gz
+[2024-04-13 23:12:54] INFO root fetch - processPackages [kilosort]: Downloading https://files.pythonhosted.org/packages/97/72/2894e6f4beefbcf0a3490239cbc948cbf1104472e9504cef57da165fd87e/kilosort-4.0.4.tar.gz
+[2024-04-13 23:12:54] INFO root fetch - processPackages [faster-coco-eval]: executing diffoscope
+[2024-04-13 23:12:54] INFO root fetch - processPackages [faster-coco-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faster-coco-eval-1.4.3.tar.gz tmp/faster_coco_eval-1.5.1.tar.gz --markdown 20240413/f/faster-coco-eval/1.4.3-1.5.1/README.md --exclude *.pyd
+[2024-04-13 23:12:54] INFO root fetch - processPackages [kilosort]: executing diffoscope
+[2024-04-13 23:12:54] INFO root fetch - processPackages [kilosort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kilosort-4.0.3.tar.gz tmp/kilosort-4.0.4.tar.gz --markdown 20240413/k/kilosort/4.0.3-4.0.4/README.md --exclude *.pyd
+[2024-04-13 23:12:55] INFO root fetch - processPackages [faster-coco-eval]: Remove: archive file [/home/abi/fetcher/tmp/faster-coco-eval-1.4.3.tar.gz]
+[2024-04-13 23:12:55] INFO root fetch - processPackages [faster-coco-eval]: Remove: archive file [/home/abi/fetcher/tmp/faster_coco_eval-1.5.1.tar.gz]
+[2024-04-13 23:12:55] INFO root fetch - main [MainThread]: End processing [faster-coco-eval]: success
+[2024-04-13 23:12:55] INFO root fetch - processPackages [kilosort]: Remove: archive file [/home/abi/fetcher/tmp/kilosort-4.0.3.tar.gz]
+[2024-04-13 23:12:55] INFO root fetch - processPackages [kilosort]: Remove: archive file [/home/abi/fetcher/tmp/kilosort-4.0.4.tar.gz]
+[2024-04-13 23:12:55] INFO root fetch - main [MainThread]: End processing [kilosort]: success
+[2024-04-13 23:12:55] INFO root fetch - main [MainThread]: Store serial: [22754768]
