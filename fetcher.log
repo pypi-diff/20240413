@@ -7110,3 +7110,17 @@
 [2024-04-13 04:57:03] INFO root fetch - processPackages [simple-unit-system]: Remove: archive file [/home/abi/fetcher/tmp/simple-unit-system-0.0.8.tar.gz]
 [2024-04-13 04:57:03] INFO root fetch - main [MainThread]: End processing [simple-unit-system]: success
 [2024-04-13 04:57:03] INFO root fetch - main [MainThread]: Store serial: [22749134]
+[2024-04-13 04:59:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749134]
+[2024-04-13 04:59:12] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 05:01:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749140]
+[2024-04-13 05:01:17] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 05:01:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: leonranp
+[2024-04-13 05:01:17] INFO root fetch - processPackages [leonranp]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 05:01:17] INFO root fetch - processPackages [leonranp]: Downloading https://files.pythonhosted.org/packages/f2/ac/9bf418728b1f901959cce9f922e71b5f8f99b1d239a53987f4cd6d288ac6/leonranp-0.1.1.tar.gz
+[2024-04-13 05:01:18] INFO root fetch - processPackages [leonranp]: Downloading https://files.pythonhosted.org/packages/e7/1b/6aef0a5f32d85e251fe543e8e227178aa46f3dcb3a73dff54a16a9166b1f/leonranp-0.1.2.tar.gz
+[2024-04-13 05:01:18] INFO root fetch - processPackages [leonranp]: executing diffoscope
+[2024-04-13 05:01:18] INFO root fetch - processPackages [leonranp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leonranp-0.1.1.tar.gz tmp/leonranp-0.1.2.tar.gz --markdown 20240413/l/leonranp/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-13 05:01:18] INFO root fetch - processPackages [leonranp]: Remove: archive file [/home/abi/fetcher/tmp/leonranp-0.1.1.tar.gz]
+[2024-04-13 05:01:18] INFO root fetch - processPackages [leonranp]: Remove: archive file [/home/abi/fetcher/tmp/leonranp-0.1.2.tar.gz]
+[2024-04-13 05:01:18] INFO root fetch - main [MainThread]: End processing [leonranp]: success
+[2024-04-13 05:01:18] INFO root fetch - main [MainThread]: Store serial: [22749143]
