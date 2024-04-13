@@ -18242,3 +18242,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 20:13:50] INFO root fetch - processPackages [apache-airflow-providers-google]: Remove: archive file [/home/abi/fetcher/tmp/apache-airflow-providers-google-9.0.0rc2.tar.gz]
 [2024-04-13 20:13:50] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-google]: success
 [2024-04-13 20:13:50] INFO root fetch - main [MainThread]: Store serial: [22753865]
+[2024-04-13 20:15:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753865]
+[2024-04-13 20:15:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 20:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: revoize
+[2024-04-13 20:15:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chatshit
+[2024-04-13 20:16:00] INFO root fetch - processPackages [revoize]: New version: [0.1.0] Old Version: [0.0.4]
+[2024-04-13 20:16:00] INFO root fetch - processPackages [revoize]: Downloading https://files.pythonhosted.org/packages/7f/c4/995800a447d5223d11132936272b7a200fbad2e0177c0dddb79a70f86f39/revoize-0.0.4.tar.gz
+[2024-04-13 20:16:00] INFO root fetch - processPackages [chatshit]: New version: [0.0.0.5] Old Version: [0.0.0.2]
+[2024-04-13 20:16:00] INFO root fetch - processPackages [revoize]: Downloading https://files.pythonhosted.org/packages/c0/6f/efc5f0758269ab2995157616c66354078ce8ce8234afa6e40e618b4d836f/revoize-0.1.0.tar.gz
+[2024-04-13 20:16:00] INFO root fetch - processPackages [chatshit]: Downloading https://files.pythonhosted.org/packages/37/e7/b34ab60031c9431da96beb978b650b1c6376c42acdab6bab65a9609e9cab/chatshit-0.0.0.2.tar.gz
+[2024-04-13 20:16:00] INFO root fetch - processPackages [revoize]: executing diffoscope
+[2024-04-13 20:16:00] INFO root fetch - processPackages [revoize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revoize-0.0.4.tar.gz tmp/revoize-0.1.0.tar.gz --markdown 20240413/r/revoize/0.0.4-0.1.0/README.md --exclude *.pyd
+[2024-04-13 20:16:00] INFO root fetch - processPackages [chatshit]: Downloading https://files.pythonhosted.org/packages/f0/56/11bdc3b652779714025988264ba131574bcc4f2a7653ac67030fe4fb706e/chatshit-0.0.0.5.tar.gz
+[2024-04-13 20:16:00] INFO root fetch - processPackages [revoize]: Remove: archive file [/home/abi/fetcher/tmp/revoize-0.0.4.tar.gz]
+[2024-04-13 20:16:00] INFO root fetch - processPackages [revoize]: Remove: archive file [/home/abi/fetcher/tmp/revoize-0.1.0.tar.gz]
+[2024-04-13 20:16:00] INFO root fetch - main [MainThread]: End processing [revoize]: success
+[2024-04-13 20:16:00] INFO root fetch - processPackages [chatshit]: executing diffoscope
+[2024-04-13 20:16:00] INFO root fetch - processPackages [chatshit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatshit-0.0.0.2.tar.gz tmp/chatshit-0.0.0.5.tar.gz --markdown 20240413/c/chatshit/0.0.0.2-0.0.0.5/README.md --exclude *.pyd
+[2024-04-13 20:16:01] INFO root fetch - processPackages [chatshit]: Remove: archive file [/home/abi/fetcher/tmp/chatshit-0.0.0.2.tar.gz]
+[2024-04-13 20:16:01] INFO root fetch - processPackages [chatshit]: Remove: archive file [/home/abi/fetcher/tmp/chatshit-0.0.0.5.tar.gz]
+[2024-04-13 20:16:01] INFO root fetch - main [MainThread]: End processing [chatshit]: success
+[2024-04-13 20:16:01] INFO root fetch - main [MainThread]: Store serial: [22753871]
