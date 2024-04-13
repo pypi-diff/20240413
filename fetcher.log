@@ -1806,3 +1806,51 @@
 [2024-04-13 02:03:38] INFO root fetch - processPackages [stim]: Remove: archive file [/home/abi/fetcher/tmp/stim-1.9.0.tar.gz]
 [2024-04-13 02:03:38] INFO root fetch - main [MainThread]: End processing [stim]: success
 [2024-04-13 02:03:38] INFO root fetch - main [MainThread]: Store serial: [22747118]
+[2024-04-13 02:05:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22747118]
+[2024-04-13 02:05:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 02:05:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: glayout
+[2024-04-13 02:05:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mct-nightly
+[2024-04-13 02:05:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onnxscript
+[2024-04-13 02:05:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: finterion-investing-algorithm-framework
+[2024-04-13 02:05:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jaxkern-nightly
+[2024-04-13 02:05:47] INFO root fetch - processPackages [glayout]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-13 02:05:47] INFO root fetch - processPackages [finterion-investing-algorithm-framework]: New version: [0.9.1] Old Version: [0.9]
+[2024-04-13 02:05:47] INFO root fetch - processPackages [onnxscript]: New version: [0.1.0.dev20240412] Old Version: [0.1.0.dev20240411]
+[2024-04-13 02:05:47] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2024-04-13 02:05:47] INFO root fetch - processPackages [finterion-investing-algorithm-framework]: Downloading https://files.pythonhosted.org/packages/b0/e6/0a50432d134e7c0f4a5bedde103c44500b2cb69ccd7dfc528a8a95358339/finterion_investing_algorithm_framework-0.9-py3-none-any.whl
+[2024-04-13 02:05:47] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/0f/06/1026fb19759448a5b0358f0e9327d68c28a65d9e3481d18ff294c494834f/onnxscript-0.1.0.dev20240411.tar.gz
+[2024-04-13 02:05:47] INFO root fetch - processPackages [mct-nightly]: New version: [2.0.0.20240413.406] Old Version: [2.0.0.20240412.408]
+[2024-04-13 02:05:47] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/76/55/ef13835e3e8e1570e91b3bc7235725e556f183e3222d5e7e66ac8de58ba0/jaxkern-nightly-0.dev20221221.tar.gz
+[2024-04-13 02:05:47] INFO root fetch - processPackages [glayout]: Downloading https://files.pythonhosted.org/packages/bb/36/966e79596f42c98adb9dfcb70cabcf722e844e0894a0ceec4b28190035a3/glayout-0.0.1.tar.gz
+[2024-04-13 02:05:47] INFO root fetch - processPackages [finterion-investing-algorithm-framework]: Downloading https://files.pythonhosted.org/packages/82/79/e5af7b68843cba4d6e8464b90323d7f80d9df1628e0096cfcc27d5281e2e/finterion_investing_algorithm_framework-0.9.1-py3-none-any.whl
+[2024-04-13 02:05:47] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/2f/f2/71f67b9954c5efe2b9eb965926bc4fb926840e21c4dd396d7caa0f69c35f/mct-nightly-2.0.0.20240412.408.tar.gz
+[2024-04-13 02:05:47] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/ea/b1/fbac44f07e48f8800aada2de8e9114775baf3f3d605ee80382db18a1c728/jaxkern-nightly-0.dev20221222.tar.gz
+[2024-04-13 02:05:47] INFO root fetch - processPackages [finterion-investing-algorithm-framework]: executing diffoscope
+[2024-04-13 02:05:47] INFO root fetch - processPackages [finterion-investing-algorithm-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finterion_investing_algorithm_framework-0.9-py3-none-any.whl.zip tmp/finterion_investing_algorithm_framework-0.9.1-py3-none-any.whl.zip --markdown 20240413/f/finterion-investing-algorithm-framework/0.9-0.9.1/README.md --exclude *.pyd
+[2024-04-13 02:05:47] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/b2/97/a86285881ec40f96fb8c67fbd33b575031827b4ca57a6452ee6aa62b7bbb/onnxscript-0.1.0.dev20240412.tar.gz
+[2024-04-13 02:05:47] INFO root fetch - processPackages [glayout]: Downloading https://files.pythonhosted.org/packages/1b/26/0c9fbf3f8a0b65b1d18f24cfa5d45dcf2c642a36b0a35162d1b117887771/glayout-0.0.2.tar.gz
+[2024-04-13 02:05:47] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2024-04-13 02:05:47] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20240413/j/jaxkern-nightly/0.dev20221221-0.dev20221222/README.md --exclude *.pyd
+[2024-04-13 02:05:47] INFO root fetch - processPackages [glayout]: executing diffoscope
+[2024-04-13 02:05:47] INFO root fetch - processPackages [glayout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glayout-0.0.1.tar.gz tmp/glayout-0.0.2.tar.gz --markdown 20240413/g/glayout/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-13 02:05:47] INFO root fetch - processPackages [onnxscript]: executing diffoscope
+[2024-04-13 02:05:47] INFO root fetch - processPackages [onnxscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxscript-0.1.0.dev20240411.tar.gz tmp/onnxscript-0.1.0.dev20240412.tar.gz --markdown 20240413/o/onnxscript/0.1.0.dev20240411-0.1.0.dev20240412/README.md --exclude *.pyd
+[2024-04-13 02:05:47] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/d8/6f/ae46863b4647cf3b75adf5e1607dbed53890b63952da9f4cbf0c4afe5870/mct-nightly-2.0.0.20240413.406.tar.gz
+[2024-04-13 02:05:47] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2024-04-13 02:05:47] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-2.0.0.20240412.408.tar.gz tmp/mct-nightly-2.0.0.20240413.406.tar.gz --markdown 20240413/m/mct-nightly/2.0.0.20240412.408-2.0.0.20240413.406/README.md --exclude *.pyd
+[2024-04-13 02:05:48] INFO root fetch - processPackages [finterion-investing-algorithm-framework]: Remove: archive file [/home/abi/fetcher/tmp/finterion_investing_algorithm_framework-0.9-py3-none-any.whl.zip]
+[2024-04-13 02:05:48] INFO root fetch - processPackages [finterion-investing-algorithm-framework]: Remove: archive file [/home/abi/fetcher/tmp/finterion_investing_algorithm_framework-0.9.1-py3-none-any.whl.zip]
+[2024-04-13 02:05:48] INFO root fetch - main [MainThread]: End processing [finterion-investing-algorithm-framework]: success
+[2024-04-13 02:05:48] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221221.tar.gz]
+[2024-04-13 02:05:48] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221222.tar.gz]
+[2024-04-13 02:05:48] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2024-04-13 02:05:48] INFO root fetch - processPackages [glayout]: Remove: archive file [/home/abi/fetcher/tmp/glayout-0.0.1.tar.gz]
+[2024-04-13 02:05:48] INFO root fetch - processPackages [glayout]: Remove: archive file [/home/abi/fetcher/tmp/glayout-0.0.2.tar.gz]
+[2024-04-13 02:05:48] INFO root fetch - main [MainThread]: End processing [glayout]: success
+[2024-04-13 02:05:48] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240411.tar.gz]
+[2024-04-13 02:05:48] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240412.tar.gz]
+[2024-04-13 02:05:48] INFO root fetch - main [MainThread]: End processing [onnxscript]: success
+[2024-04-13 02:05:50] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240412.408.tar.gz]
+[2024-04-13 02:05:50] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240413.406.tar.gz]
+[2024-04-13 02:05:50] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2024-04-13 02:05:50] INFO root fetch - main [MainThread]: Store serial: [22747133]
