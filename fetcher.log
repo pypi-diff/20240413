@@ -17839,3 +17839,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 20:00:41] INFO root fetch - processPackages [yt-queue]: Remove: archive file [/home/abi/fetcher/tmp/yt_queue-0.9.1.tar.gz]
 [2024-04-13 20:00:41] INFO root fetch - main [MainThread]: End processing [yt-queue]: success
 [2024-04-13 20:00:41] INFO root fetch - main [MainThread]: Store serial: [22753717]
+[2024-04-13 20:02:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753717]
+[2024-04-13 20:02:50] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 20:04:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753726]
+[2024-04-13 20:04:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 20:04:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: machineroom
+[2024-04-13 20:04:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dune-rivals
+[2024-04-13 20:04:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ds20kdb-avt
+[2024-04-13 20:04:56] INFO root fetch - processPackages [machineroom]: New version: [0.45.1] Old Version: [0.45.0]
+[2024-04-13 20:04:56] INFO root fetch - processPackages [dune-rivals]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-04-13 20:04:56] INFO root fetch - processPackages [ds20kdb-avt]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-13 20:04:56] INFO root fetch - processPackages [machineroom]: Downloading https://files.pythonhosted.org/packages/08/36/f51cb07178c19b182de86646fb9acf28bcb0ed157873516c295d86b511b2/machineroom-0.45.0.tar.gz
+[2024-04-13 20:04:56] INFO root fetch - processPackages [ds20kdb-avt]: Downloading https://files.pythonhosted.org/packages/78/db/9ca7b45dae9179e807b10581be3a58970cfa05fa4c49c155c0d9aaff8729/ds20kdb_avt-1.0.6.tar.gz
+[2024-04-13 20:04:56] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/cb/d8/ed0880127df8295a92a4b9d6227081348a235d0fadb5eda4d837c8e1062a/dune_rivals-0.2.9.tar.gz
+[2024-04-13 20:04:56] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/f5/d0/f694e72b1c3c943a3494e3c0faba591925b3b63adf5447646d487b284049/dune_rivals-0.3.0.tar.gz
+[2024-04-13 20:04:56] INFO root fetch - processPackages [machineroom]: Downloading https://files.pythonhosted.org/packages/85/9f/5305d33d53db22ba9adbf8ee2e94f5732b88806518387a586ce7797567c8/machineroom-0.45.1.tar.gz
+[2024-04-13 20:04:56] INFO root fetch - processPackages [ds20kdb-avt]: Downloading https://files.pythonhosted.org/packages/6b/47/9fe8b9be976f587520adfbaa4f51c035f7d48f6d1fecb6c92d8a1695fe21/ds20kdb_avt-1.0.7.tar.gz
+[2024-04-13 20:04:56] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-13 20:04:56] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.2.9.tar.gz tmp/dune_rivals-0.3.0.tar.gz --markdown 20240413/d/dune-rivals/0.2.9-0.3.0/README.md --exclude *.pyd
+[2024-04-13 20:04:56] INFO root fetch - processPackages [machineroom]: executing diffoscope
+[2024-04-13 20:04:56] INFO root fetch - processPackages [machineroom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/machineroom-0.45.0.tar.gz tmp/machineroom-0.45.1.tar.gz --markdown 20240413/m/machineroom/0.45.0-0.45.1/README.md --exclude *.pyd
+[2024-04-13 20:04:56] INFO root fetch - processPackages [ds20kdb-avt]: executing diffoscope
+[2024-04-13 20:04:56] INFO root fetch - processPackages [ds20kdb-avt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ds20kdb_avt-1.0.6.tar.gz tmp/ds20kdb_avt-1.0.7.tar.gz --markdown 20240413/d/ds20kdb-avt/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-13 20:04:57] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.2.9.tar.gz]
+[2024-04-13 20:04:57] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.0.tar.gz]
+[2024-04-13 20:04:57] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-13 20:04:57] INFO root fetch - processPackages [machineroom]: Remove: archive file [/home/abi/fetcher/tmp/machineroom-0.45.0.tar.gz]
+[2024-04-13 20:04:57] INFO root fetch - processPackages [machineroom]: Remove: archive file [/home/abi/fetcher/tmp/machineroom-0.45.1.tar.gz]
+[2024-04-13 20:04:57] INFO root fetch - main [MainThread]: End processing [machineroom]: success
+[2024-04-13 20:04:57] INFO root fetch - processPackages [ds20kdb-avt]: Remove: archive file [/home/abi/fetcher/tmp/ds20kdb_avt-1.0.6.tar.gz]
+[2024-04-13 20:04:57] INFO root fetch - processPackages [ds20kdb-avt]: Remove: archive file [/home/abi/fetcher/tmp/ds20kdb_avt-1.0.7.tar.gz]
+[2024-04-13 20:04:57] INFO root fetch - main [MainThread]: End processing [ds20kdb-avt]: success
+[2024-04-13 20:04:57] INFO root fetch - main [MainThread]: Store serial: [22753745]
