@@ -19027,3 +19027,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 21:14:29] INFO root fetch - processPackages [cosmopy]: Remove: archive file [/home/abi/fetcher/tmp/cosmopy-3.6.tar.gz]
 [2024-04-13 21:14:29] INFO root fetch - main [MainThread]: End processing [cosmopy]: success
 [2024-04-13 21:14:29] INFO root fetch - main [MainThread]: Store serial: [22754186]
+[2024-04-13 21:16:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754186]
+[2024-04-13 21:16:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 21:16:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trinnov-altitude
+[2024-04-13 21:16:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: whishow
+[2024-04-13 21:16:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stagpy
+[2024-04-13 21:16:38] INFO root fetch - processPackages [whishow]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-04-13 21:16:38] INFO root fetch - processPackages [trinnov-altitude]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-13 21:16:38] INFO root fetch - processPackages [stagpy]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-04-13 21:16:38] INFO root fetch - processPackages [whishow]: Downloading https://files.pythonhosted.org/packages/20/32/48067081f91ab8a2f54e8a93ed0d4e8a8dc32397dff8fda7afde54dce25f/whishow-0.3.0-py2.py3-none-any.whl
+[2024-04-13 21:16:38] INFO root fetch - processPackages [trinnov-altitude]: Downloading https://files.pythonhosted.org/packages/cc/d9/ee9d1cbf7055943e47c36d78020bec592f896bdaa19bf1ffe01c164387c2/trinnov_altitude-1.1.0.tar.gz
+[2024-04-13 21:16:38] INFO root fetch - processPackages [stagpy]: Downloading https://files.pythonhosted.org/packages/9b/dd/170789ac3dd58a784758c5b2ef94b8fde04679c458671a331460c8105fe7/stagpy-0.9.1.tar.gz
+[2024-04-13 21:16:38] INFO root fetch - processPackages [whishow]: Downloading https://files.pythonhosted.org/packages/8f/fd/f3c33d9c32889548fe673dfff7710f895c42fa53c0bd177150582e1cc3b1/whishow-0.4.0-py2.py3-none-any.whl
+[2024-04-13 21:16:38] INFO root fetch - processPackages [trinnov-altitude]: Downloading https://files.pythonhosted.org/packages/e5/dc/227053617af490a9d6982141c06df96a4821551a163ed71039cbd72dd191/trinnov_altitude-1.2.0.tar.gz
+[2024-04-13 21:16:38] INFO root fetch - processPackages [whishow]: executing diffoscope
+[2024-04-13 21:16:38] INFO root fetch - processPackages [whishow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whishow-0.3.0-py2.py3-none-any.whl.zip tmp/whishow-0.4.0-py2.py3-none-any.whl.zip --markdown 20240413/w/whishow/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-04-13 21:16:38] INFO root fetch - processPackages [trinnov-altitude]: executing diffoscope
+[2024-04-13 21:16:38] INFO root fetch - processPackages [trinnov-altitude]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trinnov_altitude-1.1.0.tar.gz tmp/trinnov_altitude-1.2.0.tar.gz --markdown 20240413/t/trinnov-altitude/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-04-13 21:16:39] INFO root fetch - processPackages [stagpy]: Downloading https://files.pythonhosted.org/packages/61/3a/d90d38fa91d175cf0e26cc13bf252b679167d4036f8f98c2b54846fd6bb4/stagpy-0.9.2.tar.gz
+[2024-04-13 21:16:39] INFO root fetch - processPackages [stagpy]: executing diffoscope
+[2024-04-13 21:16:39] INFO root fetch - processPackages [stagpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stagpy-0.9.1.tar.gz tmp/stagpy-0.9.2.tar.gz --markdown 20240413/s/stagpy/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-04-13 21:16:39] INFO root fetch - processPackages [whishow]: Remove: archive file [/home/abi/fetcher/tmp/whishow-0.3.0-py2.py3-none-any.whl.zip]
+[2024-04-13 21:16:39] INFO root fetch - processPackages [whishow]: Remove: archive file [/home/abi/fetcher/tmp/whishow-0.4.0-py2.py3-none-any.whl.zip]
+[2024-04-13 21:16:39] INFO root fetch - main [MainThread]: End processing [whishow]: success
+[2024-04-13 21:16:39] INFO root fetch - processPackages [trinnov-altitude]: Remove: archive file [/home/abi/fetcher/tmp/trinnov_altitude-1.1.0.tar.gz]
+[2024-04-13 21:16:39] INFO root fetch - processPackages [trinnov-altitude]: Remove: archive file [/home/abi/fetcher/tmp/trinnov_altitude-1.2.0.tar.gz]
+[2024-04-13 21:16:39] INFO root fetch - main [MainThread]: End processing [trinnov-altitude]: success
+[2024-04-13 21:16:40] INFO root fetch - processPackages [stagpy]: Remove: archive file [/home/abi/fetcher/tmp/stagpy-0.9.1.tar.gz]
+[2024-04-13 21:16:40] INFO root fetch - processPackages [stagpy]: Remove: archive file [/home/abi/fetcher/tmp/stagpy-0.9.2.tar.gz]
+[2024-04-13 21:16:40] INFO root fetch - main [MainThread]: End processing [stagpy]: success
+[2024-04-13 21:16:40] INFO root fetch - main [MainThread]: Store serial: [22754194]
