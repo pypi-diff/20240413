@@ -16004,3 +16004,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 17:22:20] INFO root fetch - processPackages [literal-dict]: Remove: archive file [/home/abi/fetcher/tmp/literal_dict-1.0.1.tar.gz]
 [2024-04-13 17:22:20] INFO root fetch - main [MainThread]: End processing [literal-dict]: success
 [2024-04-13 17:22:20] INFO root fetch - main [MainThread]: Store serial: [22752886]
+[2024-04-13 17:24:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752886]
+[2024-04-13 17:24:29] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 17:26:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752887]
+[2024-04-13 17:26:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 17:26:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gearpy
+[2024-04-13 17:26:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: absbox
+[2024-04-13 17:26:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: my-playground
+[2024-04-13 17:26:34] INFO root fetch - processPackages [my-playground]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 17:26:34] INFO root fetch - processPackages [gearpy]: New version: [1.0.0] Old Version: [0.7.2]
+[2024-04-13 17:26:34] INFO root fetch - processPackages [absbox]: New version: [0.9.3] Old Version: [0.8.9]
+[2024-04-13 17:26:34] INFO root fetch - processPackages [my-playground]: Downloading https://files.pythonhosted.org/packages/94/96/bdf8a33c6df61b2b46f80e6e086e93a7551d970e6d6f2789d5abe61e1dbe/my_playground-0.1.0.tar.gz
+[2024-04-13 17:26:34] INFO root fetch - processPackages [gearpy]: Downloading https://files.pythonhosted.org/packages/d9/72/d04fa9fa8fbdff53ce6f0e4c097e3c4b7326f12a4dde979ffcf3bc24429f/gearpy-0.7.2.tar.gz
+[2024-04-13 17:26:34] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/f2/f5/d913079148fbe1aebd6fc56849f3245eda346886eb6d2488747d9a978493/AbsBox-0.8.9.tar.gz
+[2024-04-13 17:26:34] INFO root fetch - processPackages [my-playground]: Downloading https://files.pythonhosted.org/packages/3b/e8/638c5e36d6c1d527ea4ef538f9a366f8e6948850352eca7a7934247232a7/my_playground-0.1.1.tar.gz
+[2024-04-13 17:26:34] INFO root fetch - processPackages [gearpy]: Downloading https://files.pythonhosted.org/packages/a5/ac/24100acf824a5bba870098893bac73bc85b72efc292e96c21264a62e86a0/gearpy-1.0.0.tar.gz
+[2024-04-13 17:26:34] INFO root fetch - processPackages [my-playground]: executing diffoscope
+[2024-04-13 17:26:34] INFO root fetch - processPackages [my-playground]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_playground-0.1.0.tar.gz tmp/my_playground-0.1.1.tar.gz --markdown 20240413/m/my-playground/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 17:26:34] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/63/df/8bc5a95a40d1cc98f7aa27a8baf79a5df19fa8dc2f6836ff02171d21c08a/AbsBox-0.9.3.tar.gz
+[2024-04-13 17:26:35] INFO root fetch - processPackages [gearpy]: executing diffoscope
+[2024-04-13 17:26:35] INFO root fetch - processPackages [gearpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gearpy-0.7.2.tar.gz tmp/gearpy-1.0.0.tar.gz --markdown 20240413/g/gearpy/0.7.2-1.0.0/README.md --exclude *.pyd
+[2024-04-13 17:26:35] INFO root fetch - processPackages [absbox]: executing diffoscope
+[2024-04-13 17:26:35] INFO root fetch - processPackages [absbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AbsBox-0.8.9.tar.gz tmp/AbsBox-0.9.3.tar.gz --markdown 20240413/a/absbox/0.8.9-0.9.3/README.md --exclude *.pyd
+[2024-04-13 17:26:35] INFO root fetch - processPackages [my-playground]: Remove: archive file [/home/abi/fetcher/tmp/my_playground-0.1.0.tar.gz]
+[2024-04-13 17:26:35] INFO root fetch - processPackages [my-playground]: Remove: archive file [/home/abi/fetcher/tmp/my_playground-0.1.1.tar.gz]
+[2024-04-13 17:26:35] INFO root fetch - main [MainThread]: End processing [my-playground]: success
+[2024-04-13 17:26:35] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.8.9.tar.gz]
+[2024-04-13 17:26:35] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
+[2024-04-13 17:26:35] INFO root fetch - main [MainThread]: End processing [absbox]: success
+[2024-04-13 17:26:35] INFO root fetch - processPackages [gearpy]: Remove: archive file [/home/abi/fetcher/tmp/gearpy-0.7.2.tar.gz]
+[2024-04-13 17:26:35] INFO root fetch - processPackages [gearpy]: Remove: archive file [/home/abi/fetcher/tmp/gearpy-1.0.0.tar.gz]
+[2024-04-13 17:26:35] INFO root fetch - main [MainThread]: End processing [gearpy]: success
+[2024-04-13 17:26:35] INFO root fetch - main [MainThread]: Store serial: [22752896]
