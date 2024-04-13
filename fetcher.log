@@ -17819,3 +17819,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:58:32] INFO root fetch - processPackages [vagrant-creator]: Remove: archive file [/home/abi/fetcher/tmp/vagrant-creator-0.0.6.tar.gz]
 [2024-04-13 19:58:32] INFO root fetch - main [MainThread]: End processing [vagrant-creator]: success
 [2024-04-13 19:58:32] INFO root fetch - main [MainThread]: Store serial: [22753706]
+[2024-04-13 20:00:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753706]
+[2024-04-13 20:00:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 20:00:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yt-queue
+[2024-04-13 20:00:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: secator
+[2024-04-13 20:00:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytelegrambotapi-fixed
+[2024-04-13 20:00:40] INFO root fetch - processPackages [secator]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-13 20:00:40] INFO root fetch - processPackages [yt-queue]: New version: [0.9.1] Old Version: [0.8.0]
+[2024-04-13 20:00:40] WARNING root fetch - processPackages [pytelegrambotapi-fixed]: Skipping, unable to determine old version
+[2024-04-13 20:00:40] INFO root fetch - main [MainThread]: End processing [pytelegrambotapi-fixed] error
+[2024-04-13 20:00:40] INFO root fetch - processPackages [secator]: Downloading https://files.pythonhosted.org/packages/85/e6/e08ba7ce3f07696a92fb7adf15875e8fa217b23e9f99cb3718be8b2dffe4/secator-0.3.2.tar.gz
+[2024-04-13 20:00:40] INFO root fetch - processPackages [yt-queue]: Downloading https://files.pythonhosted.org/packages/2b/f2/21e925d73a92e0893cd553108adef375e4a5b788eac0fb8457efc2d8acbb/yt-queue-0.8.0.tar.gz
+[2024-04-13 20:00:41] WARNING root fetch - processPackages [secator]: Skipping package: exceeds size limit 23069580>=10485760
+[2024-04-13 20:00:41] INFO root fetch - main [MainThread]: End processing [secator] error
+[2024-04-13 20:00:41] INFO root fetch - processPackages [yt-queue]: Downloading https://files.pythonhosted.org/packages/6c/bd/72a022468f75a329159e74736e3d51543b324508f8f08ff19f5e35912c1d/yt_queue-0.9.1.tar.gz
+[2024-04-13 20:00:41] INFO root fetch - processPackages [yt-queue]: executing diffoscope
+[2024-04-13 20:00:41] INFO root fetch - processPackages [yt-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt-queue-0.8.0.tar.gz tmp/yt_queue-0.9.1.tar.gz --markdown 20240413/y/yt-queue/0.8.0-0.9.1/README.md --exclude *.pyd
+[2024-04-13 20:00:41] INFO root fetch - processPackages [yt-queue]: Remove: archive file [/home/abi/fetcher/tmp/yt-queue-0.8.0.tar.gz]
+[2024-04-13 20:00:41] INFO root fetch - processPackages [yt-queue]: Remove: archive file [/home/abi/fetcher/tmp/yt_queue-0.9.1.tar.gz]
+[2024-04-13 20:00:41] INFO root fetch - main [MainThread]: End processing [yt-queue]: success
+[2024-04-13 20:00:41] INFO root fetch - main [MainThread]: Store serial: [22753717]
