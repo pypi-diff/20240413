@@ -15864,3 +15864,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 17:13:33] INFO root fetch - processPackages [haupt]: Remove: archive file [/home/abi/fetcher/tmp/haupt-2.1.6rc0.tar.gz]
 [2024-04-13 17:13:33] INFO root fetch - main [MainThread]: End processing [haupt]: success
 [2024-04-13 17:13:33] INFO root fetch - main [MainThread]: Store serial: [22752804]
+[2024-04-13 17:15:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752804]
+[2024-04-13 17:15:42] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 17:15:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CircuitCalculator
+[2024-04-13 17:15:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lapa-database-structure
+[2024-04-13 17:15:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: udio-wrapper
+[2024-04-13 17:15:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: snake-environment
+[2024-04-13 17:15:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MotionMySql
+[2024-04-13 17:15:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: musical_games
+[2024-04-13 17:15:42] INFO root fetch - processPackages [snake-environment]: New version: [0.2.8] Old Version: [0.2.6]
+[2024-04-13 17:15:42] INFO root fetch - processPackages [lapa-database-structure]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 17:15:42] WARNING root fetch - processPackages [udio-wrapper]: Skipping, unable to determine old version
+[2024-04-13 17:15:42] INFO root fetch - main [MainThread]: End processing [udio-wrapper] error
+[2024-04-13 17:15:43] INFO root fetch - processPackages [snake-environment]: Downloading https://files.pythonhosted.org/packages/c9/e7/29cd2303a6c5f5fb74879e6353320edcc5814909dc665f88372c85312f2b/snake_environment-0.2.6.tar.gz
+[2024-04-13 17:15:43] INFO root fetch - processPackages [lapa-database-structure]: Downloading https://files.pythonhosted.org/packages/b7/e1/a5c07c4eed48e0dda2e9143180963d07a936bbf658c769b388422e506720/lapa_database_structure-0.0.8.tar.gz
+[2024-04-13 17:15:43] WARNING root fetch - processPackages [MotionMySql]: Skipping, unable to determine old version
+[2024-04-13 17:15:43] INFO root fetch - main [MainThread]: End processing [MotionMySql] error
+[2024-04-13 17:15:43] INFO root fetch - processPackages [CircuitCalculator]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-13 17:15:43] INFO root fetch - processPackages [musical_games]: New version: [0.6.1] Old Version: [0.5.2]
+[2024-04-13 17:15:43] INFO root fetch - processPackages [CircuitCalculator]: Downloading https://files.pythonhosted.org/packages/07/d4/247f2439a978c04417118891534896421d8e19156ccb126e1281af5774d6/CircuitCalculator-0.2.3.tar.gz
+[2024-04-13 17:15:43] INFO root fetch - processPackages [lapa-database-structure]: Downloading https://files.pythonhosted.org/packages/1a/3e/42e4e371470e2caa35ed9fd1f763e4f463b6d29b554e208f1589743ce80c/lapa_database_structure-0.0.9.tar.gz
+[2024-04-13 17:15:43] INFO root fetch - processPackages [snake-environment]: Downloading https://files.pythonhosted.org/packages/56/49/61e29e0d3648a9340d61faaa8d998a524187e7fc62b1f56cc575fa4db327/snake_environment-0.2.8.tar.gz
+[2024-04-13 17:15:43] INFO root fetch - processPackages [lapa-database-structure]: executing diffoscope
+[2024-04-13 17:15:43] INFO root fetch - processPackages [lapa-database-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lapa_database_structure-0.0.8.tar.gz tmp/lapa_database_structure-0.0.9.tar.gz --markdown 20240413/l/lapa-database-structure/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 17:15:43] INFO root fetch - processPackages [musical_games]: Downloading https://files.pythonhosted.org/packages/6a/af/afc0d2cb8b1fa576f0c3dbf0dc39c5cac44bb0da7232f2892f752c6b5536/musical_games-0.5.2.tar.gz
+[2024-04-13 17:15:43] INFO root fetch - processPackages [snake-environment]: executing diffoscope
+[2024-04-13 17:15:43] INFO root fetch - processPackages [snake-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snake_environment-0.2.6.tar.gz tmp/snake_environment-0.2.8.tar.gz --markdown 20240413/s/snake-environment/0.2.6-0.2.8/README.md --exclude *.pyd
+[2024-04-13 17:15:43] INFO root fetch - processPackages [CircuitCalculator]: Downloading https://files.pythonhosted.org/packages/22/ed/a4b1df3249f12c3b1aa22d58be27bde22d53f6bb7a23e8caa1bb83789d60/circuitcalculator-0.2.4.tar.gz
+[2024-04-13 17:15:43] INFO root fetch - processPackages [CircuitCalculator]: executing diffoscope
+[2024-04-13 17:15:43] INFO root fetch - processPackages [CircuitCalculator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CircuitCalculator-0.2.3.tar.gz tmp/circuitcalculator-0.2.4.tar.gz --markdown 20240413/C/CircuitCalculator/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-13 17:15:43] INFO root fetch - processPackages [musical_games]: Downloading https://files.pythonhosted.org/packages/b6/37/a37f9150a9dc5ec58076809edb9bd355c28b77499208525e9df067140e78/musical_games-0.6.1-py3-none-any.whl
+[2024-04-13 17:15:43] INFO root fetch - processPackages [snake-environment]: Remove: archive file [/home/abi/fetcher/tmp/snake_environment-0.2.6.tar.gz]
+[2024-04-13 17:15:43] INFO root fetch - processPackages [snake-environment]: Remove: archive file [/home/abi/fetcher/tmp/snake_environment-0.2.8.tar.gz]
+[2024-04-13 17:15:43] INFO root fetch - main [MainThread]: End processing [snake-environment]: success
+[2024-04-13 17:15:43] INFO root fetch - processPackages [lapa-database-structure]: Remove: archive file [/home/abi/fetcher/tmp/lapa_database_structure-0.0.8.tar.gz]
+[2024-04-13 17:15:43] INFO root fetch - processPackages [lapa-database-structure]: Remove: archive file [/home/abi/fetcher/tmp/lapa_database_structure-0.0.9.tar.gz]
+[2024-04-13 17:15:43] INFO root fetch - main [MainThread]: End processing [lapa-database-structure]: success
+[2024-04-13 17:15:44] INFO root fetch - processPackages [CircuitCalculator]: Remove: archive file [/home/abi/fetcher/tmp/CircuitCalculator-0.2.3.tar.gz]
+[2024-04-13 17:15:44] INFO root fetch - processPackages [CircuitCalculator]: Remove: archive file [/home/abi/fetcher/tmp/circuitcalculator-0.2.4.tar.gz]
+[2024-04-13 17:15:44] INFO root fetch - main [MainThread]: End processing [CircuitCalculator]: success
+[2024-04-13 17:15:44] INFO root fetch - processPackages [musical_games]: executing diffoscope
+[2024-04-13 17:15:44] INFO root fetch - processPackages [musical_games]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musical_games-0.5.2.tar.gz tmp/musical_games-0.6.1-py3-none-any.whl.zip --markdown 20240413/m/musical_games/0.5.2-0.6.1/README.md --exclude *.pyd
+[2024-04-13 17:15:44] INFO root fetch - processPackages [musical_games]: Remove: archive file [/home/abi/fetcher/tmp/musical_games-0.5.2.tar.gz]
+[2024-04-13 17:15:44] INFO root fetch - processPackages [musical_games]: Remove: archive file [/home/abi/fetcher/tmp/musical_games-0.6.1-py3-none-any.whl.zip]
+[2024-04-13 17:15:44] INFO root fetch - main [MainThread]: End processing [musical_games]: success
+[2024-04-13 17:15:44] INFO root fetch - main [MainThread]: Store serial: [22752822]
