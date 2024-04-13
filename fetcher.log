@@ -18404,3 +18404,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 20:24:42] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.9.tar.gz]
 [2024-04-13 20:24:42] INFO root fetch - main [MainThread]: End processing [pyplotlib]: success
 [2024-04-13 20:24:42] INFO root fetch - main [MainThread]: Store serial: [22753926]
+[2024-04-13 20:26:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753926]
+[2024-04-13 20:26:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 20:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: modal
+[2024-04-13 20:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: modal-client
+[2024-04-13 20:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: srinadhch07
+[2024-04-13 20:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: revoize
+[2024-04-13 20:26:51] INFO root fetch - processPackages [revoize]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 20:26:51] INFO root fetch - processPackages [modal]: New version: [0.62.9] Old Version: [0.62.8]
+[2024-04-13 20:26:51] INFO root fetch - processPackages [modal-client]: New version: [0.62.9] Old Version: [0.62.8]
+[2024-04-13 20:26:51] WARNING root fetch - processPackages [srinadhch07]: Skipping, unable to determine old version
+[2024-04-13 20:26:51] INFO root fetch - main [MainThread]: End processing [srinadhch07] error
+[2024-04-13 20:26:51] INFO root fetch - processPackages [revoize]: Downloading https://files.pythonhosted.org/packages/c0/6f/efc5f0758269ab2995157616c66354078ce8ce8234afa6e40e618b4d836f/revoize-0.1.0.tar.gz
+[2024-04-13 20:26:51] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/8a/dd/32da92c8c574400929f770cfc5c78136ebc7b566de71c8e84a423d0ee9cc/modal-0.62.8-py3-none-any.whl
+[2024-04-13 20:26:51] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/d0/c2/c05a679647fc54f88ed4f2453aec5ec1ea866c5ddaf1d85b52981f84c662/modal_client-0.62.8-py3-none-any.whl
+[2024-04-13 20:26:51] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/08/2d/ba9d3e39c32f579d689b9f619a197109b7086b3f8e0764e5eed9501a303e/modal_client-0.62.9-py3-none-any.whl
+[2024-04-13 20:26:52] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/c0/f7/8dd227328bcea0baf27836ce9f00c26e7e27195101883dc782c55387e12f/modal-0.62.9-py3-none-any.whl
+[2024-04-13 20:26:52] INFO root fetch - processPackages [revoize]: Downloading https://files.pythonhosted.org/packages/48/11/88d0b3804cdfb00cafe228e3afdac933377a3015c36cb8aef87dfd461eca/revoize-0.1.1.tar.gz
+[2024-04-13 20:26:52] INFO root fetch - processPackages [modal-client]: executing diffoscope
+[2024-04-13 20:26:52] INFO root fetch - processPackages [modal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal_client-0.62.8-py3-none-any.whl.zip tmp/modal_client-0.62.9-py3-none-any.whl.zip --markdown 20240413/m/modal-client/0.62.8-0.62.9/README.md --exclude *.pyd
+[2024-04-13 20:26:52] INFO root fetch - processPackages [revoize]: executing diffoscope
+[2024-04-13 20:26:52] INFO root fetch - processPackages [revoize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revoize-0.1.0.tar.gz tmp/revoize-0.1.1.tar.gz --markdown 20240413/r/revoize/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 20:26:52] INFO root fetch - processPackages [modal]: executing diffoscope
+[2024-04-13 20:26:52] INFO root fetch - processPackages [modal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal-0.62.8-py3-none-any.whl.zip tmp/modal-0.62.9-py3-none-any.whl.zip --markdown 20240413/m/modal/0.62.8-0.62.9/README.md --exclude *.pyd
+[2024-04-13 20:26:52] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.8-py3-none-any.whl.zip]
+[2024-04-13 20:26:52] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.9-py3-none-any.whl.zip]
+[2024-04-13 20:26:52] INFO root fetch - main [MainThread]: End processing [modal-client]: success
+[2024-04-13 20:26:52] INFO root fetch - processPackages [revoize]: Remove: archive file [/home/abi/fetcher/tmp/revoize-0.1.0.tar.gz]
+[2024-04-13 20:26:52] INFO root fetch - processPackages [revoize]: Remove: archive file [/home/abi/fetcher/tmp/revoize-0.1.1.tar.gz]
+[2024-04-13 20:26:52] INFO root fetch - main [MainThread]: End processing [revoize]: success
+[2024-04-13 20:26:53] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.8-py3-none-any.whl.zip]
+[2024-04-13 20:26:53] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.9-py3-none-any.whl.zip]
+[2024-04-13 20:26:53] INFO root fetch - main [MainThread]: End processing [modal]: success
+[2024-04-13 20:26:53] INFO root fetch - main [MainThread]: Store serial: [22753937]
