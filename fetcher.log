@@ -19171,3 +19171,59 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 21:27:30] INFO root fetch - processPackages [maadsbml]: Remove: archive file [/home/abi/fetcher/tmp/maadsbml-1.3.9.tar.gz]
 [2024-04-13 21:27:30] INFO root fetch - main [MainThread]: End processing [maadsbml]: success
 [2024-04-13 21:27:30] INFO root fetch - main [MainThread]: Store serial: [22754247]
+[2024-04-13 21:29:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754247]
+[2024-04-13 21:29:39] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-13 21:29:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ipvanishproxy
+[2024-04-13 21:29:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hotsos
+[2024-04-13 21:29:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: efriser
+[2024-04-13 21:29:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Flask-Cognito
+[2024-04-13 21:29:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-beta
+[2024-04-13 21:29:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ownlib
+[2024-04-13 21:29:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: segmentation-skeleton-metrics
+[2024-04-13 21:29:39] INFO root fetch - processPackages [hotsos]: New version: [1.17.0.post9] Old Version: [1.17.0.post8]
+[2024-04-13 21:29:39] INFO root fetch - processPackages [efriser]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-13 21:29:39] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/a7/57/15e4fe4e4dbc4381d9bf00a81267a7c13df4ca3f2dc3b2afa7db65518860/hotsos-1.17.0.post8.tar.gz
+[2024-04-13 21:29:39] INFO root fetch - processPackages [efriser]: Downloading https://files.pythonhosted.org/packages/82/62/9426520a630b95198b8e01a121f8c7c05895788d22e56d24dd3514c2e8b6/efriser-0.1.4.tar.gz
+[2024-04-13 21:29:39] WARNING root fetch - processPackages [ipvanishproxy]: Skipping, unable to determine old version
+[2024-04-13 21:29:39] INFO root fetch - main [MainThread]: End processing [ipvanishproxy] error
+[2024-04-13 21:29:39] INFO root fetch - processPackages [Flask-Cognito]: New version: [1.9] Old Version: [1.8]
+[2024-04-13 21:29:39] INFO root fetch - processPackages [ownlib]: New version: [0.0.1b4] Old Version: [0.0.1a4]
+[2024-04-13 21:29:39] INFO root fetch - processPackages [segmentation-skeleton-metrics]: New version: [4.1.4] Old Version: [4.1.3]
+[2024-04-13 21:29:39] INFO root fetch - processPackages [certora-cli-beta]: New version: [7.4.0] Old Version: [7.3.0]
+[2024-04-13 21:29:39] INFO root fetch - processPackages [Flask-Cognito]: Downloading https://files.pythonhosted.org/packages/ef/82/ea41758db3de05d9d4a2994bfb4349b53d9b800a8c1a3fca517070546380/Flask-Cognito-1.8.tar.gz
+[2024-04-13 21:29:39] INFO root fetch - processPackages [ownlib]: Downloading https://files.pythonhosted.org/packages/b0/e7/577136d6a2b0b956a315249297c393f32184812ea22f4082c0675ed70337/ownlib-0.0.1a4.tar.gz
+[2024-04-13 21:29:39] INFO root fetch - processPackages [certora-cli-beta]: Downloading https://files.pythonhosted.org/packages/78/27/72d3a7d4a3b5850a548d15fdec3945f9ac9e31ae4bb78718bac3470ad2af/certora-cli-beta-7.3.0.tar.gz
+[2024-04-13 21:29:39] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/7f/57/f6a4fc3900f977e567bcf108bd2787ce8624445d42b84c26b710b18c7c3d/hotsos-1.17.0.post9.tar.gz
+[2024-04-13 21:29:39] INFO root fetch - processPackages [segmentation-skeleton-metrics]: Downloading https://files.pythonhosted.org/packages/13/1c/dd6433b6313feea848c6da92f283522b88dd32ee0469fa2b60986b21b5c4/segmentation_skeleton_metrics-4.1.3.tar.gz
+[2024-04-13 21:29:39] WARNING root fetch - processPackages [certora-cli-beta]: Skipping package: exceeds size limit 14475813>=10485760
+[2024-04-13 21:29:39] INFO root fetch - main [MainThread]: End processing [certora-cli-beta] error
+[2024-04-13 21:29:40] INFO root fetch - processPackages [efriser]: Downloading https://files.pythonhosted.org/packages/b5/d6/2ee75ff76ab85e37a25ed363710f44cd1a75f13df735baaf6aa5a1674b65/efriser-0.1.5.tar.gz
+[2024-04-13 21:29:40] INFO root fetch - processPackages [hotsos]: executing diffoscope
+[2024-04-13 21:29:40] INFO root fetch - processPackages [hotsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotsos-1.17.0.post8.tar.gz tmp/hotsos-1.17.0.post9.tar.gz --markdown 20240413/h/hotsos/1.17.0.post8-1.17.0.post9/README.md --exclude *.pyd
+[2024-04-13 21:29:40] INFO root fetch - processPackages [efriser]: executing diffoscope
+[2024-04-13 21:29:40] INFO root fetch - processPackages [efriser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/efriser-0.1.4.tar.gz tmp/efriser-0.1.5.tar.gz --markdown 20240413/e/efriser/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-13 21:29:40] INFO root fetch - processPackages [ownlib]: Downloading https://files.pythonhosted.org/packages/53/bf/8f2795d3849162bec1bb5d7d3c381dc21e4a7cf0192428aa36842ea599ae/ownlib-0.0.1b4.tar.gz
+[2024-04-13 21:29:40] INFO root fetch - processPackages [Flask-Cognito]: Downloading https://files.pythonhosted.org/packages/77/b2/b04d33db4b854faf06441b42f700693ee8aa66b6c2bde3004ac829b0b84a/Flask-Cognito-1.9.tar.gz
+[2024-04-13 21:29:40] INFO root fetch - processPackages [segmentation-skeleton-metrics]: Downloading https://files.pythonhosted.org/packages/ba/eb/492f34246beaacb76b40f1ac8c2f7d5f0c748362039a61f9e5d8a04dbffd/segmentation_skeleton_metrics-4.1.4.tar.gz
+[2024-04-13 21:29:40] INFO root fetch - processPackages [ownlib]: executing diffoscope
+[2024-04-13 21:29:40] INFO root fetch - processPackages [ownlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ownlib-0.0.1a4.tar.gz tmp/ownlib-0.0.1b4.tar.gz --markdown 20240413/o/ownlib/0.0.1a4-0.0.1b4/README.md --exclude *.pyd
+[2024-04-13 21:29:40] INFO root fetch - processPackages [segmentation-skeleton-metrics]: executing diffoscope
+[2024-04-13 21:29:40] INFO root fetch - processPackages [segmentation-skeleton-metrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/segmentation_skeleton_metrics-4.1.3.tar.gz tmp/segmentation_skeleton_metrics-4.1.4.tar.gz --markdown 20240413/s/segmentation-skeleton-metrics/4.1.3-4.1.4/README.md --exclude *.pyd
+[2024-04-13 21:29:40] INFO root fetch - processPackages [Flask-Cognito]: executing diffoscope
+[2024-04-13 21:29:40] INFO root fetch - processPackages [Flask-Cognito]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flask-Cognito-1.8.tar.gz tmp/Flask-Cognito-1.9.tar.gz --markdown 20240413/F/Flask-Cognito/1.8-1.9/README.md --exclude *.pyd
+[2024-04-13 21:29:40] INFO root fetch - processPackages [efriser]: Remove: archive file [/home/abi/fetcher/tmp/efriser-0.1.4.tar.gz]
+[2024-04-13 21:29:40] INFO root fetch - processPackages [efriser]: Remove: archive file [/home/abi/fetcher/tmp/efriser-0.1.5.tar.gz]
+[2024-04-13 21:29:40] INFO root fetch - main [MainThread]: End processing [efriser]: success
+[2024-04-13 21:29:41] INFO root fetch - processPackages [ownlib]: Remove: archive file [/home/abi/fetcher/tmp/ownlib-0.0.1a4.tar.gz]
+[2024-04-13 21:29:41] INFO root fetch - processPackages [ownlib]: Remove: archive file [/home/abi/fetcher/tmp/ownlib-0.0.1b4.tar.gz]
+[2024-04-13 21:29:41] INFO root fetch - main [MainThread]: End processing [ownlib]: success
+[2024-04-13 21:29:41] INFO root fetch - processPackages [Flask-Cognito]: Remove: archive file [/home/abi/fetcher/tmp/Flask-Cognito-1.8.tar.gz]
+[2024-04-13 21:29:41] INFO root fetch - processPackages [Flask-Cognito]: Remove: archive file [/home/abi/fetcher/tmp/Flask-Cognito-1.9.tar.gz]
+[2024-04-13 21:29:41] INFO root fetch - main [MainThread]: End processing [Flask-Cognito]: success
+[2024-04-13 21:29:41] INFO root fetch - processPackages [hotsos]: Remove: archive file [/home/abi/fetcher/tmp/hotsos-1.17.0.post8.tar.gz]
+[2024-04-13 21:29:41] INFO root fetch - processPackages [hotsos]: Remove: archive file [/home/abi/fetcher/tmp/hotsos-1.17.0.post9.tar.gz]
+[2024-04-13 21:29:41] INFO root fetch - main [MainThread]: End processing [hotsos]: success
+[2024-04-13 21:29:42] INFO root fetch - processPackages [segmentation-skeleton-metrics]: Remove: archive file [/home/abi/fetcher/tmp/segmentation_skeleton_metrics-4.1.3.tar.gz]
+[2024-04-13 21:29:42] INFO root fetch - processPackages [segmentation-skeleton-metrics]: Remove: archive file [/home/abi/fetcher/tmp/segmentation_skeleton_metrics-4.1.4.tar.gz]
+[2024-04-13 21:29:42] INFO root fetch - main [MainThread]: End processing [segmentation-skeleton-metrics]: success
+[2024-04-13 21:29:42] INFO root fetch - main [MainThread]: Store serial: [22754271]
