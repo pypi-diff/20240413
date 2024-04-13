@@ -17485,3 +17485,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:37:42] INFO root fetch - processPackages [lokzzpylib]: Remove: archive file [/home/abi/fetcher/tmp/lokzzpylib-0.2.dev9.tar.gz]
 [2024-04-13 19:37:42] INFO root fetch - main [MainThread]: End processing [lokzzpylib]: success
 [2024-04-13 19:37:42] INFO root fetch - main [MainThread]: Store serial: [22753531]
+[2024-04-13 19:39:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753531]
+[2024-04-13 19:39:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 19:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mcaption
+[2024-04-13 19:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: telescope-sdk
+[2024-04-13 19:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pluralize
+[2024-04-13 19:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-static-dtm
+[2024-04-13 19:39:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lokzzpylib
+[2024-04-13 19:39:51] INFO root fetch - processPackages [mcaption]: New version: [0.0.5] Old Version: [0.0.3]
+[2024-04-13 19:39:51] WARNING root fetch - processPackages [py-static-dtm]: Skipping, unable to determine old version
+[2024-04-13 19:39:51] INFO root fetch - main [MainThread]: End processing [py-static-dtm] error
+[2024-04-13 19:39:51] INFO root fetch - processPackages [lokzzpylib]: New version: [0.2.dev9] Old Version: [0.2.dev8]
+[2024-04-13 19:39:51] INFO root fetch - processPackages [mcaption]: Downloading https://files.pythonhosted.org/packages/ac/7a/f1e7f0361af8bb9b39a63c951cf9c2a148d772c547affa96f8fa5d85e63b/mcaption-0.0.3.tar.gz
+[2024-04-13 19:39:51] INFO root fetch - processPackages [lokzzpylib]: Downloading https://files.pythonhosted.org/packages/e2/59/899dd08722b859f214b6eee5335384aa5e1bb485140945e6cb65257098a5/lokzzpylib-0.2.dev8.tar.gz
+[2024-04-13 19:39:51] INFO root fetch - processPackages [pluralize]: New version: [20240413.1] Old Version: [20231008.1]
+[2024-04-13 19:39:51] INFO root fetch - processPackages [telescope-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 19:39:52] INFO root fetch - processPackages [mcaption]: Downloading https://files.pythonhosted.org/packages/4c/81/c4f3f55657323c7618ecbab0fe41e4ec6d564165cb983357c4e9369a5e7d/mcaption-0.0.5.tar.gz
+[2024-04-13 19:39:52] INFO root fetch - processPackages [lokzzpylib]: Downloading https://files.pythonhosted.org/packages/d3/9b/e4bbf15840f86c58df052ec37f778b6563255557c0f8edc61797a91a6dcf/lokzzpylib-0.2.dev9.tar.gz
+[2024-04-13 19:39:52] INFO root fetch - processPackages [pluralize]: Downloading https://files.pythonhosted.org/packages/87/81/8b55011b4d5a469899c26d2996754cfe937364dfbd4a2e967b54671f3050/pluralize-20231008.1.tar.gz
+[2024-04-13 19:39:52] INFO root fetch - processPackages [telescope-sdk]: Downloading https://files.pythonhosted.org/packages/54/a7/775080f9207b9b2addc9ec2bad02d9935f1341c8f2a1e5872ce9322753cc/telescope_sdk-0.1.8.tar.gz
+[2024-04-13 19:39:52] INFO root fetch - processPackages [mcaption]: executing diffoscope
+[2024-04-13 19:39:52] INFO root fetch - processPackages [mcaption]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcaption-0.0.3.tar.gz tmp/mcaption-0.0.5.tar.gz --markdown 20240413/m/mcaption/0.0.3-0.0.5/README.md --exclude *.pyd
+[2024-04-13 19:39:52] INFO root fetch - processPackages [lokzzpylib]: executing diffoscope
+[2024-04-13 19:39:52] INFO root fetch - processPackages [lokzzpylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lokzzpylib-0.2.dev8.tar.gz tmp/lokzzpylib-0.2.dev9.tar.gz --markdown 20240413/l/lokzzpylib/0.2.dev8-0.2.dev9/README.md --exclude *.pyd
+[2024-04-13 19:39:52] INFO root fetch - processPackages [pluralize]: Downloading https://files.pythonhosted.org/packages/e3/3d/15d02998e588bf9b28477c3fd0d09d9508c057fa069a6cec6492fe7c8daa/pluralize-20240413.1.tar.gz
+[2024-04-13 19:39:52] INFO root fetch - processPackages [telescope-sdk]: Downloading https://files.pythonhosted.org/packages/0a/bb/38861a90d251e67f2517742bb238c8e3c1fcddda5f965901c92e3e9a1b3d/telescope_sdk-0.1.9.tar.gz
+[2024-04-13 19:39:52] INFO root fetch - processPackages [pluralize]: executing diffoscope
+[2024-04-13 19:39:52] INFO root fetch - processPackages [pluralize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pluralize-20231008.1.tar.gz tmp/pluralize-20240413.1.tar.gz --markdown 20240413/p/pluralize/20231008.1-20240413.1/README.md --exclude *.pyd
+[2024-04-13 19:39:52] INFO root fetch - processPackages [telescope-sdk]: executing diffoscope
+[2024-04-13 19:39:52] INFO root fetch - processPackages [telescope-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telescope_sdk-0.1.8.tar.gz tmp/telescope_sdk-0.1.9.tar.gz --markdown 20240413/t/telescope-sdk/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 19:39:52] INFO root fetch - processPackages [lokzzpylib]: Remove: archive file [/home/abi/fetcher/tmp/lokzzpylib-0.2.dev8.tar.gz]
+[2024-04-13 19:39:52] INFO root fetch - processPackages [lokzzpylib]: Remove: archive file [/home/abi/fetcher/tmp/lokzzpylib-0.2.dev9.tar.gz]
+[2024-04-13 19:39:52] INFO root fetch - main [MainThread]: End processing [lokzzpylib]: success
+[2024-04-13 19:39:52] INFO root fetch - processPackages [mcaption]: Remove: archive file [/home/abi/fetcher/tmp/mcaption-0.0.3.tar.gz]
+[2024-04-13 19:39:52] INFO root fetch - processPackages [mcaption]: Remove: archive file [/home/abi/fetcher/tmp/mcaption-0.0.5.tar.gz]
+[2024-04-13 19:39:52] INFO root fetch - main [MainThread]: End processing [mcaption]: success
+[2024-04-13 19:39:53] INFO root fetch - processPackages [telescope-sdk]: Remove: archive file [/home/abi/fetcher/tmp/telescope_sdk-0.1.8.tar.gz]
+[2024-04-13 19:39:53] INFO root fetch - processPackages [telescope-sdk]: Remove: archive file [/home/abi/fetcher/tmp/telescope_sdk-0.1.9.tar.gz]
+[2024-04-13 19:39:53] INFO root fetch - main [MainThread]: End processing [telescope-sdk]: success
+[2024-04-13 19:39:53] INFO root fetch - processPackages [pluralize]: Remove: archive file [/home/abi/fetcher/tmp/pluralize-20231008.1.tar.gz]
+[2024-04-13 19:39:53] INFO root fetch - processPackages [pluralize]: Remove: archive file [/home/abi/fetcher/tmp/pluralize-20240413.1.tar.gz]
+[2024-04-13 19:39:53] INFO root fetch - main [MainThread]: End processing [pluralize]: success
+[2024-04-13 19:39:53] INFO root fetch - main [MainThread]: Store serial: [22753546]
