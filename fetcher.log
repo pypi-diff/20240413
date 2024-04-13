@@ -8591,3 +8591,24 @@
 [2024-04-13 07:52:50] INFO root fetch - processPackages [pulumi-cloudflare]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_cloudflare-5.9.0a1692854882.tar.gz]
 [2024-04-13 07:52:50] INFO root fetch - main [MainThread]: End processing [pulumi-cloudflare]: success
 [2024-04-13 07:52:50] INFO root fetch - main [MainThread]: Store serial: [22749709]
+[2024-04-13 07:54:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749709]
+[2024-04-13 07:54:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 07:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-dnsimple
+[2024-04-13 07:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-external
+[2024-04-13 07:54:58] INFO root fetch - processPackages [pulumi-dnsimple]: New version: [3.5.0a1712986309] Old Version: [3.5.0a1712727031]
+[2024-04-13 07:54:58] INFO root fetch - processPackages [pulumi-external]: New version: [0.0.4a1712986406] Old Version: [0.0.4a1712727133]
+[2024-04-13 07:54:58] INFO root fetch - processPackages [pulumi-external]: Downloading https://files.pythonhosted.org/packages/de/11/b0fc937b276e7b17f3181c890f261c6af61703eb6ac5d7b2361012b8bfb3/pulumi_external-0.0.4a1712727133.tar.gz
+[2024-04-13 07:54:58] INFO root fetch - processPackages [pulumi-dnsimple]: Downloading https://files.pythonhosted.org/packages/23/d6/0ac1fd1532606d0c17c961e35268009aaeff028216d53cc2097e280d24cc/pulumi_dnsimple-3.5.0a1712727031.tar.gz
+[2024-04-13 07:54:59] INFO root fetch - processPackages [pulumi-external]: Downloading https://files.pythonhosted.org/packages/15/df/92d2f393fe2e28595cca93dbf620ca22146b89149de6dcf961a1f43e5a32/pulumi_external-0.0.4a1712986406.tar.gz
+[2024-04-13 07:54:59] INFO root fetch - processPackages [pulumi-dnsimple]: Downloading https://files.pythonhosted.org/packages/ba/93/6651dae365393eaf453f05ee40d9ccf1eddc726df15202d43fe41b04137d/pulumi_dnsimple-3.5.0a1712986309.tar.gz
+[2024-04-13 07:54:59] INFO root fetch - processPackages [pulumi-external]: executing diffoscope
+[2024-04-13 07:54:59] INFO root fetch - processPackages [pulumi-external]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_external-0.0.4a1712727133.tar.gz tmp/pulumi_external-0.0.4a1712986406.tar.gz --markdown 20240413/p/pulumi-external/0.0.4a1712727133-0.0.4a1712986406/README.md --exclude *.pyd
+[2024-04-13 07:54:59] INFO root fetch - processPackages [pulumi-dnsimple]: executing diffoscope
+[2024-04-13 07:54:59] INFO root fetch - processPackages [pulumi-dnsimple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_dnsimple-3.5.0a1712727031.tar.gz tmp/pulumi_dnsimple-3.5.0a1712986309.tar.gz --markdown 20240413/p/pulumi-dnsimple/3.5.0a1712727031-3.5.0a1712986309/README.md --exclude *.pyd
+[2024-04-13 07:54:59] INFO root fetch - processPackages [pulumi-external]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_external-0.0.4a1712727133.tar.gz]
+[2024-04-13 07:54:59] INFO root fetch - processPackages [pulumi-external]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_external-0.0.4a1712986406.tar.gz]
+[2024-04-13 07:54:59] INFO root fetch - main [MainThread]: End processing [pulumi-external]: success
+[2024-04-13 07:54:59] INFO root fetch - processPackages [pulumi-dnsimple]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_dnsimple-3.5.0a1712727031.tar.gz]
+[2024-04-13 07:54:59] INFO root fetch - processPackages [pulumi-dnsimple]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_dnsimple-3.5.0a1712986309.tar.gz]
+[2024-04-13 07:54:59] INFO root fetch - main [MainThread]: End processing [pulumi-dnsimple]: success
+[2024-04-13 07:54:59] INFO root fetch - main [MainThread]: Store serial: [22749715]
