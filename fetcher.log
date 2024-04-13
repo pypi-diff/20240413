@@ -14699,3 +14699,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 15:47:04] INFO root fetch - processPackages [qianfan]: Remove: archive file [/home/abi/fetcher/tmp/qianfan-0.3.8.tar.gz]
 [2024-04-13 15:47:04] INFO root fetch - main [MainThread]: End processing [qianfan]: success
 [2024-04-13 15:47:04] INFO root fetch - main [MainThread]: Store serial: [22752264]
+[2024-04-13 15:49:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752264]
+[2024-04-13 15:49:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 15:49:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fnsecure
+[2024-04-13 15:49:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: maestral
+[2024-04-13 15:49:14] INFO root fetch - processPackages [fnsecure]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 15:49:14] INFO root fetch - processPackages [maestral]: New version: [1.9.3.dev1] Old Version: [1.9.3.dev0]
+[2024-04-13 15:49:14] INFO root fetch - processPackages [fnsecure]: Downloading https://files.pythonhosted.org/packages/0a/ef/2c1964308368ec68213e4b5998ee98fda38594d935da9d16b7a23102df98/fnsecure-0.1.0.tar.gz
+[2024-04-13 15:49:14] INFO root fetch - processPackages [maestral]: Downloading https://files.pythonhosted.org/packages/6c/c5/8ae6483a6a3bb8f5fa06b41dfa212298f4ea13959145230f0b197ab50587/maestral-1.9.3.dev0.tar.gz
+[2024-04-13 15:49:14] INFO root fetch - processPackages [fnsecure]: Downloading https://files.pythonhosted.org/packages/e4/7f/dab488c41ebc6e19803d0857fb657c0ff279491abca4bbd6c37bd8800db3/fnsecure-0.1.1.tar.gz
+[2024-04-13 15:49:14] INFO root fetch - processPackages [fnsecure]: executing diffoscope
+[2024-04-13 15:49:14] INFO root fetch - processPackages [fnsecure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fnsecure-0.1.0.tar.gz tmp/fnsecure-0.1.1.tar.gz --markdown 20240413/f/fnsecure/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 15:49:14] INFO root fetch - processPackages [maestral]: Downloading https://files.pythonhosted.org/packages/4e/b8/c06f31af2b8dcdef5e84dbec9483732b9f6335b3458aed569069dd2399ee/maestral-1.9.3.dev1.tar.gz
+[2024-04-13 15:49:14] INFO root fetch - processPackages [maestral]: executing diffoscope
+[2024-04-13 15:49:14] INFO root fetch - processPackages [maestral]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestral-1.9.3.dev0.tar.gz tmp/maestral-1.9.3.dev1.tar.gz --markdown 20240413/m/maestral/1.9.3.dev0-1.9.3.dev1/README.md --exclude *.pyd
+[2024-04-13 15:49:15] INFO root fetch - processPackages [fnsecure]: Remove: archive file [/home/abi/fetcher/tmp/fnsecure-0.1.0.tar.gz]
+[2024-04-13 15:49:15] INFO root fetch - processPackages [fnsecure]: Remove: archive file [/home/abi/fetcher/tmp/fnsecure-0.1.1.tar.gz]
+[2024-04-13 15:49:15] INFO root fetch - main [MainThread]: End processing [fnsecure]: success
+[2024-04-13 15:49:15] INFO root fetch - processPackages [maestral]: Remove: archive file [/home/abi/fetcher/tmp/maestral-1.9.3.dev0.tar.gz]
+[2024-04-13 15:49:15] INFO root fetch - processPackages [maestral]: Remove: archive file [/home/abi/fetcher/tmp/maestral-1.9.3.dev1.tar.gz]
+[2024-04-13 15:49:15] INFO root fetch - main [MainThread]: End processing [maestral]: success
+[2024-04-13 15:49:15] INFO root fetch - main [MainThread]: Store serial: [22752270]
