@@ -7591,3 +7591,33 @@
 [2024-04-13 06:08:44] INFO root fetch - processPackages [composabl-cli-dev]: Remove: archive file [/home/abi/fetcher/tmp/composabl_cli_dev-0.8.0.dev9-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-04-13 06:08:44] INFO root fetch - main [MainThread]: End processing [composabl-cli-dev]: success
 [2024-04-13 06:08:44] INFO root fetch - main [MainThread]: Store serial: [22749291]
+[2024-04-13 06:10:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749291]
+[2024-04-13 06:10:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 06:10:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: composabl-train-dev
+[2024-04-13 06:10:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: composabl-dev
+[2024-04-13 06:10:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyBlindRL
+[2024-04-13 06:10:55] INFO root fetch - processPackages [pyBlindRL]: New version: [0.0.2rc53.post1] Old Version: [0.0.2rc52.post1]
+[2024-04-13 06:10:55] INFO root fetch - processPackages [composabl-train-dev]: New version: [0.8.0.dev9] Old Version: [0.8.0.dev6]
+[2024-04-13 06:10:55] INFO root fetch - processPackages [composabl-dev]: New version: [0.8.0.dev9] Old Version: [0.8.0.dev6]
+[2024-04-13 06:10:55] INFO root fetch - processPackages [composabl-train-dev]: Downloading https://files.pythonhosted.org/packages/19/92/d2cc81d1932bc78afddf0cf92c75659eee58d38d34d9e8471d60b63233f7/composabl_train_dev-0.8.0.dev6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-13 06:10:55] INFO root fetch - processPackages [composabl-dev]: Downloading https://files.pythonhosted.org/packages/3f/87/aeed0c05640a655a9f7a9651405c023e800537ac5400c580f59a119cd1bf/composabl_dev-0.8.0.dev6-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-13 06:10:55] INFO root fetch - processPackages [pyBlindRL]: Downloading https://files.pythonhosted.org/packages/cf/d4/9886771f6965767dd31eb0643a8c5bbfb9ac1b566e5cf4c7c75b1d444e27/pyblindrl-0.0.2rc52.post1.tar.gz
+[2024-04-13 06:10:56] INFO root fetch - processPackages [composabl-dev]: Downloading https://files.pythonhosted.org/packages/a1/f2/4e1924d1039233c3b0c2448b4add74067504cd2e888b319ad5a03135216f/composabl_dev-0.8.0.dev9-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-13 06:10:56] INFO root fetch - processPackages [composabl-dev]: executing diffoscope
+[2024-04-13 06:10:56] INFO root fetch - processPackages [composabl-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composabl_dev-0.8.0.dev6-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/composabl_dev-0.8.0.dev9-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240413/c/composabl-dev/0.8.0.dev6-0.8.0.dev9/README.md --exclude *.pyd
+[2024-04-13 06:10:56] INFO root fetch - processPackages [pyBlindRL]: Downloading https://files.pythonhosted.org/packages/b3/05/64b40921b5868abe1ec55bb4a5fb5cdd7b599745dd5f82169c1b8be540f9/pyblindrl-0.0.2rc53.post1.tar.gz
+[2024-04-13 06:10:56] INFO root fetch - processPackages [pyBlindRL]: executing diffoscope
+[2024-04-13 06:10:56] INFO root fetch - processPackages [pyBlindRL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyblindrl-0.0.2rc52.post1.tar.gz tmp/pyblindrl-0.0.2rc53.post1.tar.gz --markdown 20240413/p/pyBlindRL/0.0.2rc52.post1-0.0.2rc53.post1/README.md --exclude *.pyd
+[2024-04-13 06:10:56] INFO root fetch - processPackages [composabl-train-dev]: Downloading https://files.pythonhosted.org/packages/95/20/8e2aca4bfa5f684869b85085faa073c8a53504bf7d60833952d33bbdf05a/composabl_train_dev-0.8.0.dev9-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-13 06:10:56] INFO root fetch - processPackages [composabl-train-dev]: executing diffoscope
+[2024-04-13 06:10:56] INFO root fetch - processPackages [composabl-train-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composabl_train_dev-0.8.0.dev6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/composabl_train_dev-0.8.0.dev9-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240413/c/composabl-train-dev/0.8.0.dev6-0.8.0.dev9/README.md --exclude *.pyd
+[2024-04-13 06:10:56] INFO root fetch - processPackages [composabl-dev]: Remove: archive file [/home/abi/fetcher/tmp/composabl_dev-0.8.0.dev6-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-13 06:10:56] INFO root fetch - processPackages [composabl-dev]: Remove: archive file [/home/abi/fetcher/tmp/composabl_dev-0.8.0.dev9-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-13 06:10:56] INFO root fetch - main [MainThread]: End processing [composabl-dev]: success
+[2024-04-13 06:10:56] INFO root fetch - processPackages [pyBlindRL]: Remove: archive file [/home/abi/fetcher/tmp/pyblindrl-0.0.2rc52.post1.tar.gz]
+[2024-04-13 06:10:56] INFO root fetch - processPackages [pyBlindRL]: Remove: archive file [/home/abi/fetcher/tmp/pyblindrl-0.0.2rc53.post1.tar.gz]
+[2024-04-13 06:10:56] INFO root fetch - main [MainThread]: End processing [pyBlindRL]: success
+[2024-04-13 06:10:57] INFO root fetch - processPackages [composabl-train-dev]: Remove: archive file [/home/abi/fetcher/tmp/composabl_train_dev-0.8.0.dev6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-13 06:10:57] INFO root fetch - processPackages [composabl-train-dev]: Remove: archive file [/home/abi/fetcher/tmp/composabl_train_dev-0.8.0.dev9-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-13 06:10:57] INFO root fetch - main [MainThread]: End processing [composabl-train-dev]: success
+[2024-04-13 06:10:57] INFO root fetch - main [MainThread]: Store serial: [22749321]
