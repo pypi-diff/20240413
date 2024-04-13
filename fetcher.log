@@ -8624,3 +8624,15 @@
 [2024-04-13 07:57:09] INFO root fetch - processPackages [ykenan-file]: Remove: archive file [/home/abi/fetcher/tmp/ykenan_file-0.2.4.tar.gz]
 [2024-04-13 07:57:09] INFO root fetch - main [MainThread]: End processing [ykenan-file]: success
 [2024-04-13 07:57:09] INFO root fetch - main [MainThread]: Store serial: [22749718]
+[2024-04-13 07:59:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749718]
+[2024-04-13 07:59:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 07:59:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fb-tools
+[2024-04-13 07:59:18] INFO root fetch - processPackages [fb-tools]: New version: [2.5.1] Old Version: [2.5.0]
+[2024-04-13 07:59:18] INFO root fetch - processPackages [fb-tools]: Downloading https://files.pythonhosted.org/packages/13/82/8b651631a16376eb3324a709fb76b09110c50bb4c39e64f1b53c8c3cb8b4/fb_tools-2.5.0.tar.gz
+[2024-04-13 07:59:18] INFO root fetch - processPackages [fb-tools]: Downloading https://files.pythonhosted.org/packages/60/b9/923071d3727fc7904cfd610bb04e68432c220de9ad58ef0944c27eed610f/fb_tools-2.5.1.tar.gz
+[2024-04-13 07:59:19] INFO root fetch - processPackages [fb-tools]: executing diffoscope
+[2024-04-13 07:59:19] INFO root fetch - processPackages [fb-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fb_tools-2.5.0.tar.gz tmp/fb_tools-2.5.1.tar.gz --markdown 20240413/f/fb-tools/2.5.0-2.5.1/README.md --exclude *.pyd
+[2024-04-13 07:59:19] INFO root fetch - processPackages [fb-tools]: Remove: archive file [/home/abi/fetcher/tmp/fb_tools-2.5.0.tar.gz]
+[2024-04-13 07:59:19] INFO root fetch - processPackages [fb-tools]: Remove: archive file [/home/abi/fetcher/tmp/fb_tools-2.5.1.tar.gz]
+[2024-04-13 07:59:19] INFO root fetch - main [MainThread]: End processing [fb-tools]: success
+[2024-04-13 07:59:19] INFO root fetch - main [MainThread]: Store serial: [22749721]
