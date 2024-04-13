@@ -19331,3 +19331,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 21:43:35] ERROR root fetch - processPackages [ogcore]: Timeout during execution of pkgdiff
 [2024-04-13 21:43:35] INFO root fetch - main [MainThread]: End processing [ogcore] error
 [2024-04-13 21:43:35] INFO root fetch - main [MainThread]: Store serial: [22754333]
+[2024-04-13 21:45:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754333]
+[2024-04-13 21:45:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 21:45:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rio-ui
+[2024-04-13 21:45:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uWSGI
+[2024-04-13 21:45:44] INFO root fetch - processPackages [rio-ui]: New version: [0.5.5] Old Version: [0.5.4]
+[2024-04-13 21:45:44] INFO root fetch - processPackages [rio-ui]: Downloading https://files.pythonhosted.org/packages/94/60/1a2da1908604c1adb5494f2340f51d9b18baeb37cabdca761086fc223599/rio_ui-0.5.4-py3-none-any.whl
+[2024-04-13 21:45:44] INFO root fetch - processPackages [uWSGI]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-13 21:45:44] INFO root fetch - processPackages [uWSGI]: Downloading https://files.pythonhosted.org/packages/4c/3f/7276c97817bd710aada1e3e69f45d6eed11fc625474a34f57799f762d77f/uwsgi-2.0.8.tar.gz
+[2024-04-13 21:45:45] INFO root fetch - processPackages [rio-ui]: Downloading https://files.pythonhosted.org/packages/59/bc/bded4126eeb94e6c16171c4d37779a2b6b246eaf9bc799f9242e9e29bed1/rio_ui-0.5.5.tar.gz
+[2024-04-13 21:45:45] INFO root fetch - processPackages [uWSGI]: Downloading https://files.pythonhosted.org/packages/21/c1/f1ea1477667659044e87bc6785bdf1bad9b07b31b18c0004865f9b03239b/uwsgi-2.0.9.tar.gz
+[2024-04-13 21:45:45] INFO root fetch - processPackages [uWSGI]: executing diffoscope
+[2024-04-13 21:45:45] INFO root fetch - processPackages [uWSGI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uwsgi-2.0.8.tar.gz tmp/uwsgi-2.0.9.tar.gz --markdown 20240413/u/uWSGI/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-13 21:45:45] INFO root fetch - processPackages [rio-ui]: executing diffoscope
+[2024-04-13 21:45:45] INFO root fetch - processPackages [rio-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rio_ui-0.5.4-py3-none-any.whl.zip tmp/rio_ui-0.5.5.tar.gz --markdown 20240413/r/rio-ui/0.5.4-0.5.5/README.md --exclude *.pyd
+[2024-04-13 21:45:47] INFO root fetch - processPackages [uWSGI]: Remove: archive file [/home/abi/fetcher/tmp/uwsgi-2.0.8.tar.gz]
+[2024-04-13 21:45:47] INFO root fetch - processPackages [uWSGI]: Remove: archive file [/home/abi/fetcher/tmp/uwsgi-2.0.9.tar.gz]
+[2024-04-13 21:45:47] INFO root fetch - main [MainThread]: End processing [uWSGI]: success
+[2024-04-13 21:45:49] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.5.4-py3-none-any.whl.zip]
+[2024-04-13 21:45:49] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.5.5.tar.gz]
+[2024-04-13 21:45:49] INFO root fetch - main [MainThread]: End processing [rio-ui]: success
+[2024-04-13 21:45:49] INFO root fetch - main [MainThread]: Store serial: [22754339]
