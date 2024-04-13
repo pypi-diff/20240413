@@ -6356,3 +6356,24 @@
 [2024-04-13 03:10:45] INFO root fetch - processPackages [bioregistry]: Remove: archive file [/home/abi/fetcher/tmp/bioregistry-0.9.97.tar.gz]
 [2024-04-13 03:10:45] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
 [2024-04-13 03:10:45] INFO root fetch - main [MainThread]: Store serial: [22748421]
+[2024-04-13 03:13:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748421]
+[2024-04-13 03:13:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 03:13:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kucoin-futures-lib
+[2024-04-13 03:13:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tree-sitter-tlaplus
+[2024-04-13 03:13:05] INFO root fetch - processPackages [kucoin-futures-lib]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-04-13 03:13:05] INFO root fetch - processPackages [tree-sitter-tlaplus]: New version: [1.2.6] Old Version: [1.2.5]
+[2024-04-13 03:13:05] INFO root fetch - processPackages [kucoin-futures-lib]: Downloading https://files.pythonhosted.org/packages/18/69/4ca9194dfb17a7f140e6654af61069dba88b091f8585fa7dd5355a738050/kucoin_futures_lib-0.7.0.tar.gz
+[2024-04-13 03:13:05] INFO root fetch - processPackages [tree-sitter-tlaplus]: Downloading https://files.pythonhosted.org/packages/04/92/8e0680cc9dd7f4d6519e34165634c08856d7c51577f47dc243c90eb8aa57/tree_sitter_tlaplus-1.2.5-cp38-abi3-win_amd64.whl
+[2024-04-13 03:13:05] INFO root fetch - processPackages [kucoin-futures-lib]: Downloading https://files.pythonhosted.org/packages/5d/eb/71e3dc106cc0416cabaf6da1adf160c29249cbdf7caed2c9e285d84f0100/kucoin_futures_lib-0.8.0.tar.gz
+[2024-04-13 03:13:05] INFO root fetch - processPackages [kucoin-futures-lib]: executing diffoscope
+[2024-04-13 03:13:05] INFO root fetch - processPackages [kucoin-futures-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kucoin_futures_lib-0.7.0.tar.gz tmp/kucoin_futures_lib-0.8.0.tar.gz --markdown 20240413/k/kucoin-futures-lib/0.7.0-0.8.0/README.md --exclude *.pyd
+[2024-04-13 03:13:05] INFO root fetch - processPackages [tree-sitter-tlaplus]: Downloading https://files.pythonhosted.org/packages/92/bb/6a1f6c265c723155f926fd6eb6001c1e873205425750f3a4a836d0eb0959/tree_sitter_tlaplus-1.2.6-cp38-abi3-win_amd64.whl
+[2024-04-13 03:13:06] INFO root fetch - processPackages [tree-sitter-tlaplus]: executing diffoscope
+[2024-04-13 03:13:06] INFO root fetch - processPackages [tree-sitter-tlaplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tree_sitter_tlaplus-1.2.5-cp38-abi3-win_amd64.whl.zip tmp/tree_sitter_tlaplus-1.2.6-cp38-abi3-win_amd64.whl.zip --markdown 20240413/t/tree-sitter-tlaplus/1.2.5-1.2.6/README.md --exclude *.pyd
+[2024-04-13 03:13:06] INFO root fetch - processPackages [kucoin-futures-lib]: Remove: archive file [/home/abi/fetcher/tmp/kucoin_futures_lib-0.7.0.tar.gz]
+[2024-04-13 03:13:06] INFO root fetch - processPackages [kucoin-futures-lib]: Remove: archive file [/home/abi/fetcher/tmp/kucoin_futures_lib-0.8.0.tar.gz]
+[2024-04-13 03:13:06] INFO root fetch - main [MainThread]: End processing [kucoin-futures-lib]: success
+[2024-04-13 03:13:06] INFO root fetch - processPackages [tree-sitter-tlaplus]: Remove: archive file [/home/abi/fetcher/tmp/tree_sitter_tlaplus-1.2.5-cp38-abi3-win_amd64.whl.zip]
+[2024-04-13 03:13:06] INFO root fetch - processPackages [tree-sitter-tlaplus]: Remove: archive file [/home/abi/fetcher/tmp/tree_sitter_tlaplus-1.2.6-cp38-abi3-win_amd64.whl.zip]
+[2024-04-13 03:13:06] INFO root fetch - main [MainThread]: End processing [tree-sitter-tlaplus]: success
+[2024-04-13 03:13:06] INFO root fetch - main [MainThread]: Store serial: [22748532]
