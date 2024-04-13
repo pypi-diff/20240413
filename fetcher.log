@@ -7330,3 +7330,11 @@
 [2024-04-13 05:32:15] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.9.zip]
 [2024-04-13 05:32:15] INFO root fetch - main [MainThread]: End processing [sbcli-mig]: success
 [2024-04-13 05:32:15] INFO root fetch - main [MainThread]: Store serial: [22749199]
+[2024-04-13 05:34:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749199]
+[2024-04-13 05:34:24] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 05:36:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749199]
+[2024-04-13 05:36:29] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 05:36:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tiffx
+[2024-04-13 05:36:29] WARNING root fetch - processPackages [tiffx]: Skipping, unable to determine old version
+[2024-04-13 05:36:29] INFO root fetch - main [MainThread]: End processing [tiffx] error
+[2024-04-13 05:36:29] INFO root fetch - main [MainThread]: Store serial: [22749202]
