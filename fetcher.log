@@ -13323,3 +13323,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 13:45:11] INFO root fetch - processPackages [tpds-application-root]: Remove: archive file [/home/abi/fetcher/tmp/tpds_application_root-2.3.9-py3-none-any.whl.zip]
 [2024-04-13 13:45:11] INFO root fetch - main [MainThread]: End processing [tpds-application-root]: success
 [2024-04-13 13:45:11] INFO root fetch - main [MainThread]: Store serial: [22751541]
+[2024-04-13 13:47:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751541]
+[2024-04-13 13:47:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 13:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: faster-translate
+[2024-04-13 13:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: okttendas-package
+[2024-04-13 13:47:20] WARNING root fetch - processPackages [faster-translate]: Skipping, unable to determine old version
+[2024-04-13 13:47:20] INFO root fetch - main [MainThread]: End processing [faster-translate] error
+[2024-04-13 13:47:20] WARNING root fetch - processPackages [okttendas-package]: Skipping, unable to determine old version
+[2024-04-13 13:47:20] INFO root fetch - main [MainThread]: End processing [okttendas-package] error
+[2024-04-13 13:47:20] INFO root fetch - main [MainThread]: Store serial: [22751549]
