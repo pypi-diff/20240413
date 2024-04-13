@@ -7845,3 +7845,24 @@
 [2024-04-13 06:32:39] WARNING root fetch - processPackages [ti84]: Skipping, unable to determine old version
 [2024-04-13 06:32:39] INFO root fetch - main [MainThread]: End processing [ti84] error
 [2024-04-13 06:32:39] INFO root fetch - main [MainThread]: Store serial: [22749461]
+[2024-04-13 06:34:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749461]
+[2024-04-13 06:34:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 06:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llama-index-llms-bedrock
+[2024-04-13 06:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: glitter-proto
+[2024-04-13 06:34:49] INFO root fetch - processPackages [llama-index-llms-bedrock]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-13 06:34:49] INFO root fetch - processPackages [glitter-proto]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-04-13 06:34:49] INFO root fetch - processPackages [llama-index-llms-bedrock]: Downloading https://files.pythonhosted.org/packages/0c/ac/af3ac66ff4f34c3bed1962bf88350abf340a4832e69a43252fbb8341d716/llama_index_llms_bedrock-0.1.5.tar.gz
+[2024-04-13 06:34:49] INFO root fetch - processPackages [glitter-proto]: Downloading https://files.pythonhosted.org/packages/56/7c/2fecf974b646361dd0f600eaa04742c0a207d6edf4e6ecdd471303ba7e04/glitter_proto-0.5.0.tar.gz
+[2024-04-13 06:34:49] INFO root fetch - processPackages [llama-index-llms-bedrock]: Downloading https://files.pythonhosted.org/packages/7d/ae/08410f771c33bddf19f70b03230c5c9b16c2e21f737a4e4639988e9fa0a4/llama_index_llms_bedrock-0.1.6.tar.gz
+[2024-04-13 06:34:49] INFO root fetch - processPackages [glitter-proto]: Downloading https://files.pythonhosted.org/packages/bf/d5/7fee0d04a0e025948924c0a1ddf7033c551ab649bf592ee503c422054479/glitter_proto-0.6.0.tar.gz
+[2024-04-13 06:34:49] INFO root fetch - processPackages [llama-index-llms-bedrock]: executing diffoscope
+[2024-04-13 06:34:49] INFO root fetch - processPackages [llama-index-llms-bedrock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_llms_bedrock-0.1.5.tar.gz tmp/llama_index_llms_bedrock-0.1.6.tar.gz --markdown 20240413/l/llama-index-llms-bedrock/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-13 06:34:50] INFO root fetch - processPackages [glitter-proto]: executing diffoscope
+[2024-04-13 06:34:50] INFO root fetch - processPackages [glitter-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glitter_proto-0.5.0.tar.gz tmp/glitter_proto-0.6.0.tar.gz --markdown 20240413/g/glitter-proto/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-04-13 06:34:50] INFO root fetch - processPackages [llama-index-llms-bedrock]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_llms_bedrock-0.1.5.tar.gz]
+[2024-04-13 06:34:50] INFO root fetch - processPackages [llama-index-llms-bedrock]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_llms_bedrock-0.1.6.tar.gz]
+[2024-04-13 06:34:50] INFO root fetch - main [MainThread]: End processing [llama-index-llms-bedrock]: success
+[2024-04-13 06:34:50] INFO root fetch - processPackages [glitter-proto]: Remove: archive file [/home/abi/fetcher/tmp/glitter_proto-0.5.0.tar.gz]
+[2024-04-13 06:34:50] INFO root fetch - processPackages [glitter-proto]: Remove: archive file [/home/abi/fetcher/tmp/glitter_proto-0.6.0.tar.gz]
+[2024-04-13 06:34:50] INFO root fetch - main [MainThread]: End processing [glitter-proto]: success
+[2024-04-13 06:34:50] INFO root fetch - main [MainThread]: Store serial: [22749467]
