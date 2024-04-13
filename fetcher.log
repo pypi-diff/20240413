@@ -20222,3 +20222,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 23:02:01] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.9.tar.gz]
 [2024-04-13 23:02:01] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-04-13 23:02:01] INFO root fetch - main [MainThread]: Store serial: [22754719]
+[2024-04-13 23:04:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754719]
+[2024-04-13 23:04:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 23:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datascope-experiments
+[2024-04-13 23:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-confluentcloud
+[2024-04-13 23:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arion-library
+[2024-04-13 23:04:10] INFO root fetch - processPackages [datascope-experiments]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 23:04:10] INFO root fetch - processPackages [arion-library]: New version: [1.1rc50.dev50] Old Version: [1.1rc48.dev48]
+[2024-04-13 23:04:10] INFO root fetch - processPackages [pulumi-confluentcloud]: New version: [1.9.0a1675887560] Old Version: [1.9.0]
+[2024-04-13 23:04:10] INFO root fetch - processPackages [datascope-experiments]: Downloading https://files.pythonhosted.org/packages/45/04/38d90a22277d9e206a1f680f99cbfda58ca9cb856a5fdfdcee40e032f0e8/datascope-experiments-0.0.8.tar.gz
+[2024-04-13 23:04:10] INFO root fetch - processPackages [arion-library]: Downloading https://files.pythonhosted.org/packages/a4/f8/5db993eb1e5f3d5ddf74d245da54e76f9a3be6a1d05d8dd2a04ca7eb7d2a/arion_library-1.1rc48.dev48.tar.gz
+[2024-04-13 23:04:10] INFO root fetch - processPackages [pulumi-confluentcloud]: Downloading https://files.pythonhosted.org/packages/ee/5c/83ab7b1cf2467d8b22165c469862d15e131885dbf277da0d1bb686af03fe/pulumi_confluentcloud-1.9.0.tar.gz
+[2024-04-13 23:04:11] INFO root fetch - processPackages [arion-library]: Downloading https://files.pythonhosted.org/packages/e8/28/31d6106d29b4c0c6997f385454993e1864521709d99fa715007788febeb1/arion_library-1.1rc50.dev50.tar.gz
+[2024-04-13 23:04:11] INFO root fetch - processPackages [datascope-experiments]: Downloading https://files.pythonhosted.org/packages/b1/bc/05ddc96ba1314c3a59709691d24646790023b2b8b38620c39e9ae4412371/datascope-experiments-0.0.9.tar.gz
+[2024-04-13 23:04:11] INFO root fetch - processPackages [pulumi-confluentcloud]: Downloading https://files.pythonhosted.org/packages/ec/f6/4c3900e97797a3f84c4c58458a6334035e702bd96d9ed3ec48d8e6e20f4e/pulumi_confluentcloud-1.9.0a1675887560.tar.gz
+[2024-04-13 23:04:11] INFO root fetch - processPackages [arion-library]: executing diffoscope
+[2024-04-13 23:04:11] INFO root fetch - processPackages [arion-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arion_library-1.1rc48.dev48.tar.gz tmp/arion_library-1.1rc50.dev50.tar.gz --markdown 20240413/a/arion-library/1.1rc48.dev48-1.1rc50.dev50/README.md --exclude *.pyd
+[2024-04-13 23:04:11] INFO root fetch - processPackages [datascope-experiments]: executing diffoscope
+[2024-04-13 23:04:11] INFO root fetch - processPackages [datascope-experiments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datascope-experiments-0.0.8.tar.gz tmp/datascope-experiments-0.0.9.tar.gz --markdown 20240413/d/datascope-experiments/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 23:04:11] INFO root fetch - processPackages [pulumi-confluentcloud]: executing diffoscope
+[2024-04-13 23:04:11] INFO root fetch - processPackages [pulumi-confluentcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_confluentcloud-1.9.0.tar.gz tmp/pulumi_confluentcloud-1.9.0a1675887560.tar.gz --markdown 20240413/p/pulumi-confluentcloud/1.9.0-1.9.0a1675887560/README.md --exclude *.pyd
+[2024-04-13 23:04:11] INFO root fetch - processPackages [arion-library]: Remove: archive file [/home/abi/fetcher/tmp/arion_library-1.1rc48.dev48.tar.gz]
+[2024-04-13 23:04:11] INFO root fetch - processPackages [arion-library]: Remove: archive file [/home/abi/fetcher/tmp/arion_library-1.1rc50.dev50.tar.gz]
+[2024-04-13 23:04:11] INFO root fetch - main [MainThread]: End processing [arion-library]: success
+[2024-04-13 23:04:12] INFO root fetch - processPackages [datascope-experiments]: Remove: archive file [/home/abi/fetcher/tmp/datascope-experiments-0.0.8.tar.gz]
+[2024-04-13 23:04:12] INFO root fetch - processPackages [datascope-experiments]: Remove: archive file [/home/abi/fetcher/tmp/datascope-experiments-0.0.9.tar.gz]
+[2024-04-13 23:04:12] INFO root fetch - main [MainThread]: End processing [datascope-experiments]: success
+[2024-04-13 23:04:12] INFO root fetch - processPackages [pulumi-confluentcloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_confluentcloud-1.9.0.tar.gz]
+[2024-04-13 23:04:12] INFO root fetch - processPackages [pulumi-confluentcloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_confluentcloud-1.9.0a1675887560.tar.gz]
+[2024-04-13 23:04:12] INFO root fetch - main [MainThread]: End processing [pulumi-confluentcloud]: success
+[2024-04-13 23:04:12] INFO root fetch - main [MainThread]: Store serial: [22754726]
