@@ -14675,3 +14675,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 15:44:53] INFO root fetch - processPackages [bambulabs-api]: Remove: archive file [/home/abi/fetcher/tmp/bambulabs_api-2.2.tar.gz]
 [2024-04-13 15:44:53] INFO root fetch - main [MainThread]: End processing [bambulabs-api]: success
 [2024-04-13 15:44:53] INFO root fetch - main [MainThread]: Store serial: [22752253]
+[2024-04-13 15:46:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752253]
+[2024-04-13 15:47:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 15:47:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zodchy-identity
+[2024-04-13 15:47:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: glitter-sdk-lite
+[2024-04-13 15:47:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qianfan
+[2024-04-13 15:47:02] INFO root fetch - processPackages [glitter-sdk-lite]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-13 15:47:02] INFO root fetch - processPackages [glitter-sdk-lite]: Downloading https://files.pythonhosted.org/packages/6c/45/a484673d2c0283e51b344a465ed3bd3bc54d7192ea044056df0b0f538459/glitter_sdk_lite-0.0.1.tar.gz
+[2024-04-13 15:47:02] WARNING root fetch - processPackages [zodchy-identity]: Skipping, unable to determine old version
+[2024-04-13 15:47:02] INFO root fetch - main [MainThread]: End processing [zodchy-identity] error
+[2024-04-13 15:47:02] INFO root fetch - processPackages [qianfan]: New version: [0.3.8] Old Version: [0.3.7.1]
+[2024-04-13 15:47:02] INFO root fetch - processPackages [qianfan]: Downloading https://files.pythonhosted.org/packages/c3/e5/dd928d0527b24c15daa6846841333315ac7e192d83a5ac2262ea9cd0b205/qianfan-0.3.7.1.tar.gz
+[2024-04-13 15:47:02] INFO root fetch - processPackages [glitter-sdk-lite]: Downloading https://files.pythonhosted.org/packages/2d/58/1ddb071bda0789f9b0047be3b017a93a3ccbc4da32ea122584e32b257942/glitter_sdk_lite-0.0.2.tar.gz
+[2024-04-13 15:47:03] INFO root fetch - processPackages [glitter-sdk-lite]: executing diffoscope
+[2024-04-13 15:47:03] INFO root fetch - processPackages [glitter-sdk-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glitter_sdk_lite-0.0.1.tar.gz tmp/glitter_sdk_lite-0.0.2.tar.gz --markdown 20240413/g/glitter-sdk-lite/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-13 15:47:03] INFO root fetch - processPackages [qianfan]: Downloading https://files.pythonhosted.org/packages/f7/9c/21f3e4eca83f6cafc205126a7f41b5aee4563703d8f2cc9323a65b9de9a6/qianfan-0.3.8.tar.gz
+[2024-04-13 15:47:03] INFO root fetch - processPackages [qianfan]: executing diffoscope
+[2024-04-13 15:47:03] INFO root fetch - processPackages [qianfan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qianfan-0.3.7.1.tar.gz tmp/qianfan-0.3.8.tar.gz --markdown 20240413/q/qianfan/0.3.7.1-0.3.8/README.md --exclude *.pyd
+[2024-04-13 15:47:03] INFO root fetch - processPackages [glitter-sdk-lite]: Remove: archive file [/home/abi/fetcher/tmp/glitter_sdk_lite-0.0.1.tar.gz]
+[2024-04-13 15:47:03] INFO root fetch - processPackages [glitter-sdk-lite]: Remove: archive file [/home/abi/fetcher/tmp/glitter_sdk_lite-0.0.2.tar.gz]
+[2024-04-13 15:47:03] INFO root fetch - main [MainThread]: End processing [glitter-sdk-lite]: success
+[2024-04-13 15:47:04] INFO root fetch - processPackages [qianfan]: Remove: archive file [/home/abi/fetcher/tmp/qianfan-0.3.7.1.tar.gz]
+[2024-04-13 15:47:04] INFO root fetch - processPackages [qianfan]: Remove: archive file [/home/abi/fetcher/tmp/qianfan-0.3.8.tar.gz]
+[2024-04-13 15:47:04] INFO root fetch - main [MainThread]: End processing [qianfan]: success
+[2024-04-13 15:47:04] INFO root fetch - main [MainThread]: Store serial: [22752264]
