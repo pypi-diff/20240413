@@ -16414,3 +16414,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 18:04:18] INFO root fetch - processPackages [pipdeptree]: Remove: archive file [/home/abi/fetcher/tmp/pipdeptree-2.9.6.tar.gz]
 [2024-04-13 18:04:18] INFO root fetch - main [MainThread]: End processing [pipdeptree]: success
 [2024-04-13 18:04:18] INFO root fetch - main [MainThread]: Store serial: [22753044]
+[2024-04-13 18:06:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753044]
+[2024-04-13 18:06:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 18:06:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ccAFv2
+[2024-04-13 18:06:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: weedata
+[2024-04-13 18:06:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: novelai-python
+[2024-04-13 18:06:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kani-ratelimits
+[2024-04-13 18:06:27] INFO root fetch - processPackages [ccAFv2]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-13 18:06:27] WARNING root fetch - processPackages [kani-ratelimits]: Skipping, unable to determine old version
+[2024-04-13 18:06:27] INFO root fetch - main [MainThread]: End processing [kani-ratelimits] error
+[2024-04-13 18:06:27] INFO root fetch - processPackages [ccAFv2]: Downloading https://files.pythonhosted.org/packages/9a/16/43750a720c1f12989ee38b2fecd60acff4dbeadc33cea30e840e59ad7c19/ccAFv2-2.0.0.tar.gz
+[2024-04-13 18:06:27] INFO root fetch - processPackages [weedata]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-13 18:06:27] INFO root fetch - processPackages [novelai-python]: New version: [0.4.8] Old Version: [0.4.7]
+[2024-04-13 18:06:27] INFO root fetch - processPackages [weedata]: Downloading https://files.pythonhosted.org/packages/bd/21/72124789250d148a582baa2bdf258487db37985991ced41a4d98663dac06/weedata-0.2.2.tar.gz
+[2024-04-13 18:06:27] INFO root fetch - processPackages [novelai-python]: Downloading https://files.pythonhosted.org/packages/70/19/5cebb269516a282071cd67c4144202d68226d9d51e7e027926e6aacd2022/novelai_python-0.4.7.tar.gz
+[2024-04-13 18:06:28] INFO root fetch - processPackages [ccAFv2]: Downloading https://files.pythonhosted.org/packages/00/d8/868a7314179ba5c01c26e6afd5bff67e80c3bedd58259324a7ad53cc2b31/ccAFv2-2.0.1.tar.gz
+[2024-04-13 18:06:28] INFO root fetch - processPackages [weedata]: Downloading https://files.pythonhosted.org/packages/1f/aa/d95ab0323157e7fb98a377b4bd23a47e542703c463ffd6bea173b7d715bb/weedata-0.2.3.tar.gz
+[2024-04-13 18:06:28] INFO root fetch - processPackages [weedata]: executing diffoscope
+[2024-04-13 18:06:28] INFO root fetch - processPackages [weedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weedata-0.2.2.tar.gz tmp/weedata-0.2.3.tar.gz --markdown 20240413/w/weedata/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-13 18:06:28] INFO root fetch - processPackages [ccAFv2]: executing diffoscope
+[2024-04-13 18:06:28] INFO root fetch - processPackages [ccAFv2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccAFv2-2.0.0.tar.gz tmp/ccAFv2-2.0.1.tar.gz --markdown 20240413/c/ccAFv2/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-04-13 18:06:28] INFO root fetch - processPackages [weedata]: Remove: archive file [/home/abi/fetcher/tmp/weedata-0.2.2.tar.gz]
+[2024-04-13 18:06:28] INFO root fetch - processPackages [weedata]: Remove: archive file [/home/abi/fetcher/tmp/weedata-0.2.3.tar.gz]
+[2024-04-13 18:06:28] INFO root fetch - main [MainThread]: End processing [weedata]: success
+[2024-04-13 18:06:29] INFO root fetch - processPackages [ccAFv2]: Remove: archive file [/home/abi/fetcher/tmp/ccAFv2-2.0.0.tar.gz]
+[2024-04-13 18:06:29] INFO root fetch - processPackages [ccAFv2]: Remove: archive file [/home/abi/fetcher/tmp/ccAFv2-2.0.1.tar.gz]
+[2024-04-13 18:06:29] INFO root fetch - main [MainThread]: End processing [ccAFv2]: success
+[2024-04-13 18:06:29] INFO root fetch - processPackages [novelai-python]: Downloading https://files.pythonhosted.org/packages/cb/0f/d3aaf6c5b8daeb677183113e4d615b1fcb19f8b38cad5c92ef95516f97ec/novelai_python-0.4.8.tar.gz
+[2024-04-13 18:06:29] INFO root fetch - processPackages [novelai-python]: executing diffoscope
+[2024-04-13 18:06:29] INFO root fetch - processPackages [novelai-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novelai_python-0.4.7.tar.gz tmp/novelai_python-0.4.8.tar.gz --markdown 20240413/n/novelai-python/0.4.7-0.4.8/README.md --exclude *.pyd
+[2024-04-13 18:06:30] INFO root fetch - processPackages [novelai-python]: Remove: archive file [/home/abi/fetcher/tmp/novelai_python-0.4.7.tar.gz]
+[2024-04-13 18:06:30] INFO root fetch - processPackages [novelai-python]: Remove: archive file [/home/abi/fetcher/tmp/novelai_python-0.4.8.tar.gz]
+[2024-04-13 18:06:30] INFO root fetch - main [MainThread]: End processing [novelai-python]: success
+[2024-04-13 18:06:30] INFO root fetch - main [MainThread]: Store serial: [22753056]
