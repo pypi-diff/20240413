@@ -16155,3 +16155,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 17:37:26] INFO root fetch - processPackages [PyQtUIkit]: Remove: archive file [/home/abi/fetcher/tmp/PyQtUIkit-2.4.2.tar.gz]
 [2024-04-13 17:37:26] INFO root fetch - main [MainThread]: End processing [PyQtUIkit]: success
 [2024-04-13 17:37:26] INFO root fetch - main [MainThread]: Store serial: [22752934]
+[2024-04-13 17:39:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752934]
+[2024-04-13 17:39:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 17:39:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyiron-base
+[2024-04-13 17:39:35] INFO root fetch - processPackages [pyiron-base]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-04-13 17:39:35] INFO root fetch - processPackages [pyiron-base]: Downloading https://files.pythonhosted.org/packages/01/82/8f3031a1fe8a57903f091623cc2e29b62aed14d534db2d994e13829db143/pyiron_base-0.8.0.tar.gz
+[2024-04-13 17:39:35] INFO root fetch - processPackages [pyiron-base]: Downloading https://files.pythonhosted.org/packages/dc/94/0da2343802cb8a4c4dac21047a357e456498aeae47f9c569e0e72cfb5960/pyiron_base-0.8.1.tar.gz
+[2024-04-13 17:39:35] INFO root fetch - processPackages [pyiron-base]: executing diffoscope
+[2024-04-13 17:39:35] INFO root fetch - processPackages [pyiron-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyiron_base-0.8.0.tar.gz tmp/pyiron_base-0.8.1.tar.gz --markdown 20240413/p/pyiron-base/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-04-13 17:39:36] INFO root fetch - processPackages [pyiron-base]: Remove: archive file [/home/abi/fetcher/tmp/pyiron_base-0.8.0.tar.gz]
+[2024-04-13 17:39:36] INFO root fetch - processPackages [pyiron-base]: Remove: archive file [/home/abi/fetcher/tmp/pyiron_base-0.8.1.tar.gz]
+[2024-04-13 17:39:36] INFO root fetch - main [MainThread]: End processing [pyiron-base]: success
+[2024-04-13 17:39:36] INFO root fetch - main [MainThread]: Store serial: [22752939]
