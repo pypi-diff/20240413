@@ -16492,3 +16492,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 18:10:51] INFO root fetch - processPackages [hotsos]: Remove: archive file [/home/abi/fetcher/tmp/hotsos-1.17.0.post9.tar.gz]
 [2024-04-13 18:10:51] INFO root fetch - main [MainThread]: End processing [hotsos]: success
 [2024-04-13 18:10:51] INFO root fetch - main [MainThread]: Store serial: [22753073]
+[2024-04-13 18:12:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753073]
+[2024-04-13 18:13:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 18:13:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: epidemik
+[2024-04-13 18:13:00] INFO root fetch - processPackages [epidemik]: New version: [0.0.20] Old Version: [0.0.19]
+[2024-04-13 18:13:00] INFO root fetch - processPackages [epidemik]: Downloading https://files.pythonhosted.org/packages/63/f7/3e3b805a69599b0ce6b20c0755bd10e85e79630bb4499794ed743bb4ff7a/epidemik-0.0.19.tar.gz
+[2024-04-13 18:13:00] INFO root fetch - processPackages [epidemik]: Downloading https://files.pythonhosted.org/packages/57/f5/90c67b2174cb0fa5f983fbde7f58d938133bae335c9f23cc7d743bcbaf2c/epidemik-0.0.20.tar.gz
+[2024-04-13 18:13:00] INFO root fetch - processPackages [epidemik]: executing diffoscope
+[2024-04-13 18:13:00] INFO root fetch - processPackages [epidemik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epidemik-0.0.19.tar.gz tmp/epidemik-0.0.20.tar.gz --markdown 20240413/e/epidemik/0.0.19-0.0.20/README.md --exclude *.pyd
+[2024-04-13 18:13:01] INFO root fetch - processPackages [epidemik]: Remove: archive file [/home/abi/fetcher/tmp/epidemik-0.0.19.tar.gz]
+[2024-04-13 18:13:01] INFO root fetch - processPackages [epidemik]: Remove: archive file [/home/abi/fetcher/tmp/epidemik-0.0.20.tar.gz]
+[2024-04-13 18:13:01] INFO root fetch - main [MainThread]: End processing [epidemik]: success
+[2024-04-13 18:13:01] INFO root fetch - main [MainThread]: Store serial: [22753076]
