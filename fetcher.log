@@ -9155,3 +9155,51 @@
 [2024-04-13 08:32:21] INFO root fetch - processPackages [flgo]: Remove: archive file [/home/abi/fetcher/tmp/flgo-0.2.6.tar.gz]
 [2024-04-13 08:32:21] INFO root fetch - main [MainThread]: End processing [flgo]: success
 [2024-04-13 08:32:21] INFO root fetch - main [MainThread]: Store serial: [22749901]
+[2024-04-13 08:34:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749901]
+[2024-04-13 08:34:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 08:34:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sdRDM
+[2024-04-13 08:34:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-mysql
+[2024-04-13 08:34:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fin-maestro-kin
+[2024-04-13 08:34:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dxsp
+[2024-04-13 08:34:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pydicts
+[2024-04-13 08:34:30] INFO root fetch - processPackages [dxsp]: New version: [9.0.7] Old Version: [9.0.6]
+[2024-04-13 08:34:30] INFO root fetch - processPackages [fin-maestro-kin]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-13 08:34:30] INFO root fetch - processPackages [sdRDM]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-13 08:34:30] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/a1/1f/4b20f69e5b75066726b10760e4d553170d395263325ba26fe170c2978d0b/dxsp-9.0.6.tar.gz
+[2024-04-13 08:34:30] INFO root fetch - processPackages [pulumi-mysql]: New version: [3.3.0a1712987962] Old Version: [3.3.0a1712728632]
+[2024-04-13 08:34:30] INFO root fetch - processPackages [pydicts]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-13 08:34:30] INFO root fetch - processPackages [sdRDM]: Downloading https://files.pythonhosted.org/packages/f8/e8/4eb1028c82ea502e1dc93ca5712e4771067e2ade0d8d37d3cbd991614909/sdrdm-0.2.2.tar.gz
+[2024-04-13 08:34:30] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/c1/02/3119800c1eceb087f71694d8f6d21bce46ec401d2511bf92ed3ee83d9db4/dxsp-9.0.7.tar.gz
+[2024-04-13 08:34:30] INFO root fetch - processPackages [fin-maestro-kin]: Downloading https://files.pythonhosted.org/packages/d3/5f/7faad776fedaa6410b3705f331ace79ed21697d74af2d5940207960995a1/fin_maestro_kin-0.2.2.tar.gz
+[2024-04-13 08:34:30] INFO root fetch - processPackages [pulumi-mysql]: Downloading https://files.pythonhosted.org/packages/ea/d7/8eab23cf83afe82b6944c14da6bc6f81de95d3ef0955951054d4364a1035/pulumi_mysql-3.3.0a1712728632.tar.gz
+[2024-04-13 08:34:31] INFO root fetch - processPackages [pydicts]: Downloading https://files.pythonhosted.org/packages/ab/c5/169ea1e36c85240a97fcb05e40c2bd9cdcdbe7a89387c549a7b52a48889e/pydicts-0.8.0.tar.gz
+[2024-04-13 08:34:31] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2024-04-13 08:34:31] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-9.0.6.tar.gz tmp/dxsp-9.0.7.tar.gz --markdown 20240413/d/dxsp/9.0.6-9.0.7/README.md --exclude *.pyd
+[2024-04-13 08:34:31] INFO root fetch - processPackages [sdRDM]: Downloading https://files.pythonhosted.org/packages/96/1c/a7d598ed2263c2e329f6e5ea698681c79d40c3676d99c16c7c738020907f/sdrdm-0.2.3.tar.gz
+[2024-04-13 08:34:31] INFO root fetch - processPackages [fin-maestro-kin]: Downloading https://files.pythonhosted.org/packages/59/70/9a98404dc6a56b9c80c4c2ab9a93385583c30097a20c3b4f0ae106c6ae83/fin_maestro_kin-0.2.3.tar.gz
+[2024-04-13 08:34:31] INFO root fetch - processPackages [pulumi-mysql]: Downloading https://files.pythonhosted.org/packages/0d/42/866390565612d1e16054f94b51c1ea77f3b2dc77c99591964ecc467caf58/pulumi_mysql-3.3.0a1712987962.tar.gz
+[2024-04-13 08:34:31] INFO root fetch - processPackages [sdRDM]: executing diffoscope
+[2024-04-13 08:34:31] INFO root fetch - processPackages [sdRDM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdrdm-0.2.2.tar.gz tmp/sdrdm-0.2.3.tar.gz --markdown 20240413/s/sdRDM/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-13 08:34:31] INFO root fetch - processPackages [fin-maestro-kin]: executing diffoscope
+[2024-04-13 08:34:31] INFO root fetch - processPackages [fin-maestro-kin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fin_maestro_kin-0.2.2.tar.gz tmp/fin_maestro_kin-0.2.3.tar.gz --markdown 20240413/f/fin-maestro-kin/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-13 08:34:31] INFO root fetch - processPackages [pulumi-mysql]: executing diffoscope
+[2024-04-13 08:34:31] INFO root fetch - processPackages [pulumi-mysql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_mysql-3.3.0a1712728632.tar.gz tmp/pulumi_mysql-3.3.0a1712987962.tar.gz --markdown 20240413/p/pulumi-mysql/3.3.0a1712728632-3.3.0a1712987962/README.md --exclude *.pyd
+[2024-04-13 08:34:31] INFO root fetch - processPackages [pydicts]: Downloading https://files.pythonhosted.org/packages/0e/e2/61988f9d1844f86fd56b48d505dfd77c71e04e93d2dd2b7a9cb0b254031d/pydicts-0.9.0.tar.gz
+[2024-04-13 08:34:31] INFO root fetch - processPackages [dxsp]: Remove: archive file [/home/abi/fetcher/tmp/dxsp-9.0.6.tar.gz]
+[2024-04-13 08:34:31] INFO root fetch - processPackages [dxsp]: Remove: archive file [/home/abi/fetcher/tmp/dxsp-9.0.7.tar.gz]
+[2024-04-13 08:34:31] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2024-04-13 08:34:31] INFO root fetch - processPackages [pydicts]: executing diffoscope
+[2024-04-13 08:34:31] INFO root fetch - processPackages [pydicts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydicts-0.8.0.tar.gz tmp/pydicts-0.9.0.tar.gz --markdown 20240413/p/pydicts/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-13 08:34:32] INFO root fetch - processPackages [fin-maestro-kin]: Remove: archive file [/home/abi/fetcher/tmp/fin_maestro_kin-0.2.2.tar.gz]
+[2024-04-13 08:34:32] INFO root fetch - processPackages [fin-maestro-kin]: Remove: archive file [/home/abi/fetcher/tmp/fin_maestro_kin-0.2.3.tar.gz]
+[2024-04-13 08:34:32] INFO root fetch - main [MainThread]: End processing [fin-maestro-kin]: success
+[2024-04-13 08:34:32] INFO root fetch - processPackages [sdRDM]: Remove: archive file [/home/abi/fetcher/tmp/sdrdm-0.2.2.tar.gz]
+[2024-04-13 08:34:32] INFO root fetch - processPackages [sdRDM]: Remove: archive file [/home/abi/fetcher/tmp/sdrdm-0.2.3.tar.gz]
+[2024-04-13 08:34:32] INFO root fetch - main [MainThread]: End processing [sdRDM]: success
+[2024-04-13 08:34:32] INFO root fetch - processPackages [pulumi-mysql]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_mysql-3.3.0a1712728632.tar.gz]
+[2024-04-13 08:34:32] INFO root fetch - processPackages [pulumi-mysql]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_mysql-3.3.0a1712987962.tar.gz]
+[2024-04-13 08:34:32] INFO root fetch - main [MainThread]: End processing [pulumi-mysql]: success
+[2024-04-13 08:34:32] INFO root fetch - processPackages [pydicts]: Remove: archive file [/home/abi/fetcher/tmp/pydicts-0.8.0.tar.gz]
+[2024-04-13 08:34:32] INFO root fetch - processPackages [pydicts]: Remove: archive file [/home/abi/fetcher/tmp/pydicts-0.9.0.tar.gz]
+[2024-04-13 08:34:32] INFO root fetch - main [MainThread]: End processing [pydicts]: success
+[2024-04-13 08:34:32] INFO root fetch - main [MainThread]: Store serial: [22749916]
