@@ -9393,3 +9393,9 @@
 [2024-04-13 08:47:39] INFO root fetch - processPackages [gma]: Remove: archive file [/home/abi/fetcher/tmp/gma-2.0.8-cp39-cp39-win_amd64.whl.zip]
 [2024-04-13 08:47:39] INFO root fetch - main [MainThread]: End processing [gma]: success
 [2024-04-13 08:47:39] INFO root fetch - main [MainThread]: Store serial: [22749973]
+[2024-04-13 08:49:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749973]
+[2024-04-13 08:49:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 08:49:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ctis
+[2024-04-13 08:49:50] WARNING root fetch - processPackages [ctis]: Skipping, unable to determine old version
+[2024-04-13 08:49:50] INFO root fetch - main [MainThread]: End processing [ctis] error
+[2024-04-13 08:49:50] INFO root fetch - main [MainThread]: Store serial: [22749979]
