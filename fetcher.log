@@ -7738,3 +7738,30 @@
 [2024-04-13 06:21:51] INFO root fetch - processPackages [glitter-sdk-lite]: Remove: archive file [/home/abi/fetcher/tmp/glitter_sdk_lite-0.0.2.tar.gz]
 [2024-04-13 06:21:51] INFO root fetch - main [MainThread]: End processing [glitter-sdk-lite]: success
 [2024-04-13 06:21:51] INFO root fetch - main [MainThread]: Store serial: [22749372]
+[2024-04-13 06:23:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749372]
+[2024-04-13 06:23:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 06:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: luminesce-sdk-preview
+[2024-04-13 06:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyBlindRL
+[2024-04-13 06:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytha-fuzz
+[2024-04-13 06:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: storex
+[2024-04-13 06:24:00] INFO root fetch - processPackages [pyBlindRL]: New version: [0.0.2rc54.post1] Old Version: [0.0.2rc53.post1]
+[2024-04-13 06:24:00] INFO root fetch - processPackages [luminesce-sdk-preview]: New version: [1.9.92] Old Version: [1.9.88]
+[2024-04-13 06:24:00] INFO root fetch - processPackages [pyBlindRL]: Downloading https://files.pythonhosted.org/packages/b3/05/64b40921b5868abe1ec55bb4a5fb5cdd7b599745dd5f82169c1b8be540f9/pyblindrl-0.0.2rc53.post1.tar.gz
+[2024-04-13 06:24:00] WARNING root fetch - processPackages [pytha-fuzz]: Skipping, unable to determine old version
+[2024-04-13 06:24:00] INFO root fetch - main [MainThread]: End processing [pytha-fuzz] error
+[2024-04-13 06:24:00] INFO root fetch - processPackages [luminesce-sdk-preview]: Downloading https://files.pythonhosted.org/packages/d3/7b/a9c3e829fb03ae79379224fe34adb99d80c6dbfc5f00ccc44cf429d34f61/luminesce-sdk-preview-1.9.88.tar.gz
+[2024-04-13 06:24:00] WARNING root fetch - processPackages [storex]: Skipping, unable to determine old version
+[2024-04-13 06:24:00] INFO root fetch - main [MainThread]: End processing [storex] error
+[2024-04-13 06:24:00] INFO root fetch - processPackages [luminesce-sdk-preview]: Downloading https://files.pythonhosted.org/packages/b4/a1/29e30342ad6b0ee5f31f57c9ebeee25c12a4805f3f972e1908bf31abd599/luminesce-sdk-preview-1.9.92.tar.gz
+[2024-04-13 06:24:00] INFO root fetch - processPackages [pyBlindRL]: Downloading https://files.pythonhosted.org/packages/3c/2e/32b9bdfa82b870f9ca8f280b3cc3ea366e50231ad4c1b9d12751c0b8355d/pyblindrl-0.0.2rc54.post1.tar.gz
+[2024-04-13 06:24:00] INFO root fetch - processPackages [luminesce-sdk-preview]: executing diffoscope
+[2024-04-13 06:24:00] INFO root fetch - processPackages [luminesce-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luminesce-sdk-preview-1.9.88.tar.gz tmp/luminesce-sdk-preview-1.9.92.tar.gz --markdown 20240413/l/luminesce-sdk-preview/1.9.88-1.9.92/README.md --exclude *.pyd
+[2024-04-13 06:24:00] INFO root fetch - processPackages [pyBlindRL]: executing diffoscope
+[2024-04-13 06:24:00] INFO root fetch - processPackages [pyBlindRL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyblindrl-0.0.2rc53.post1.tar.gz tmp/pyblindrl-0.0.2rc54.post1.tar.gz --markdown 20240413/p/pyBlindRL/0.0.2rc53.post1-0.0.2rc54.post1/README.md --exclude *.pyd
+[2024-04-13 06:24:01] INFO root fetch - processPackages [pyBlindRL]: Remove: archive file [/home/abi/fetcher/tmp/pyblindrl-0.0.2rc53.post1.tar.gz]
+[2024-04-13 06:24:01] INFO root fetch - processPackages [pyBlindRL]: Remove: archive file [/home/abi/fetcher/tmp/pyblindrl-0.0.2rc54.post1.tar.gz]
+[2024-04-13 06:24:01] INFO root fetch - main [MainThread]: End processing [pyBlindRL]: success
+[2024-04-13 06:24:01] INFO root fetch - processPackages [luminesce-sdk-preview]: Remove: archive file [/home/abi/fetcher/tmp/luminesce-sdk-preview-1.9.88.tar.gz]
+[2024-04-13 06:24:01] INFO root fetch - processPackages [luminesce-sdk-preview]: Remove: archive file [/home/abi/fetcher/tmp/luminesce-sdk-preview-1.9.92.tar.gz]
+[2024-04-13 06:24:01] INFO root fetch - main [MainThread]: End processing [luminesce-sdk-preview]: success
+[2024-04-13 06:24:01] INFO root fetch - main [MainThread]: Store serial: [22749388]
