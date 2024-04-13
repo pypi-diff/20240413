@@ -17440,3 +17440,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:35:32] INFO root fetch - processPackages [langwatch]: Remove: archive file [/home/abi/fetcher/tmp/langwatch-0.0.9.tar.gz]
 [2024-04-13 19:35:32] INFO root fetch - main [MainThread]: End processing [langwatch]: success
 [2024-04-13 19:35:32] INFO root fetch - main [MainThread]: Store serial: [22753508]
+[2024-04-13 19:37:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753508]
+[2024-04-13 19:37:40] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 19:37:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SignalFilters
+[2024-04-13 19:37:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: authwa
+[2024-04-13 19:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: factorial-aio
+[2024-04-13 19:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lokzzpylib
+[2024-04-13 19:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aiotgm
+[2024-04-13 19:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ds20kdb-avt
+[2024-04-13 19:37:41] INFO root fetch - processPackages [ds20kdb-avt]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-13 19:37:41] WARNING root fetch - processPackages [SignalFilters]: Skipping, unable to determine old version
+[2024-04-13 19:37:41] INFO root fetch - main [MainThread]: End processing [SignalFilters] error
+[2024-04-13 19:37:41] INFO root fetch - processPackages [ds20kdb-avt]: Downloading https://files.pythonhosted.org/packages/1b/49/9c96691925eb92e030e711c815efd23404b576aec8b6fa81de385d791152/ds20kdb-avt-1.0.4.tar.gz
+[2024-04-13 19:37:41] INFO root fetch - processPackages [aiotgm]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-04-13 19:37:41] WARNING root fetch - processPackages [factorial-aio]: Skipping, unable to determine old version
+[2024-04-13 19:37:41] INFO root fetch - main [MainThread]: End processing [factorial-aio] error
+[2024-04-13 19:37:41] INFO root fetch - processPackages [authwa]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-13 19:37:41] INFO root fetch - processPackages [lokzzpylib]: New version: [0.2.dev9] Old Version: [0.2.dev8]
+[2024-04-13 19:37:41] INFO root fetch - processPackages [authwa]: Downloading https://files.pythonhosted.org/packages/ef/3f/942a69666f63b9bf850889b7918f5f6711b2c1e109b7a94c44acf9f87f34/authwa-0.3.8.tar.gz
+[2024-04-13 19:37:41] INFO root fetch - processPackages [aiotgm]: Downloading https://files.pythonhosted.org/packages/0b/e6/7c0921ea74c3a15896e45d406fc6191f3a6d5d64d5e46bf8a142e116f345/aiotgm-0.3.6.tar.gz
+[2024-04-13 19:37:41] INFO root fetch - processPackages [lokzzpylib]: Downloading https://files.pythonhosted.org/packages/e2/59/899dd08722b859f214b6eee5335384aa5e1bb485140945e6cb65257098a5/lokzzpylib-0.2.dev8.tar.gz
+[2024-04-13 19:37:41] INFO root fetch - processPackages [ds20kdb-avt]: Downloading https://files.pythonhosted.org/packages/5d/cc/42e8efd0c3dec4d1036c2655705074364adc7bf245fab20b9345bc69d6e9/ds20kdb_avt-1.0.5.tar.gz
+[2024-04-13 19:37:41] INFO root fetch - processPackages [ds20kdb-avt]: executing diffoscope
+[2024-04-13 19:37:41] INFO root fetch - processPackages [ds20kdb-avt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ds20kdb-avt-1.0.4.tar.gz tmp/ds20kdb_avt-1.0.5.tar.gz --markdown 20240413/d/ds20kdb-avt/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-04-13 19:37:41] INFO root fetch - processPackages [authwa]: Downloading https://files.pythonhosted.org/packages/eb/8e/24ba062d1d809b08a8907c7b16cb3bb2a774774312578dfffcf7102874cc/authwa-0.3.9.tar.gz
+[2024-04-13 19:37:41] INFO root fetch - processPackages [aiotgm]: Downloading https://files.pythonhosted.org/packages/a4/f3/0960c0a91cb5cbf0aa54d220ea6ccbe16c316ccd36200647f6003852982e/aiotgm-0.3.7.tar.gz
+[2024-04-13 19:37:41] INFO root fetch - processPackages [authwa]: executing diffoscope
+[2024-04-13 19:37:41] INFO root fetch - processPackages [authwa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/authwa-0.3.8.tar.gz tmp/authwa-0.3.9.tar.gz --markdown 20240413/a/authwa/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-13 19:37:42] INFO root fetch - processPackages [lokzzpylib]: Downloading https://files.pythonhosted.org/packages/d3/9b/e4bbf15840f86c58df052ec37f778b6563255557c0f8edc61797a91a6dcf/lokzzpylib-0.2.dev9.tar.gz
+[2024-04-13 19:37:42] INFO root fetch - processPackages [aiotgm]: executing diffoscope
+[2024-04-13 19:37:42] INFO root fetch - processPackages [aiotgm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiotgm-0.3.6.tar.gz tmp/aiotgm-0.3.7.tar.gz --markdown 20240413/a/aiotgm/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-04-13 19:37:42] INFO root fetch - processPackages [lokzzpylib]: executing diffoscope
+[2024-04-13 19:37:42] INFO root fetch - processPackages [lokzzpylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lokzzpylib-0.2.dev8.tar.gz tmp/lokzzpylib-0.2.dev9.tar.gz --markdown 20240413/l/lokzzpylib/0.2.dev8-0.2.dev9/README.md --exclude *.pyd
+[2024-04-13 19:37:42] INFO root fetch - processPackages [ds20kdb-avt]: Remove: archive file [/home/abi/fetcher/tmp/ds20kdb-avt-1.0.4.tar.gz]
+[2024-04-13 19:37:42] INFO root fetch - processPackages [ds20kdb-avt]: Remove: archive file [/home/abi/fetcher/tmp/ds20kdb_avt-1.0.5.tar.gz]
+[2024-04-13 19:37:42] INFO root fetch - main [MainThread]: End processing [ds20kdb-avt]: success
+[2024-04-13 19:37:42] INFO root fetch - processPackages [authwa]: Remove: archive file [/home/abi/fetcher/tmp/authwa-0.3.8.tar.gz]
+[2024-04-13 19:37:42] INFO root fetch - processPackages [authwa]: Remove: archive file [/home/abi/fetcher/tmp/authwa-0.3.9.tar.gz]
+[2024-04-13 19:37:42] INFO root fetch - main [MainThread]: End processing [authwa]: success
+[2024-04-13 19:37:42] INFO root fetch - processPackages [aiotgm]: Remove: archive file [/home/abi/fetcher/tmp/aiotgm-0.3.6.tar.gz]
+[2024-04-13 19:37:42] INFO root fetch - processPackages [aiotgm]: Remove: archive file [/home/abi/fetcher/tmp/aiotgm-0.3.7.tar.gz]
+[2024-04-13 19:37:42] INFO root fetch - main [MainThread]: End processing [aiotgm]: success
+[2024-04-13 19:37:42] INFO root fetch - processPackages [lokzzpylib]: Remove: archive file [/home/abi/fetcher/tmp/lokzzpylib-0.2.dev8.tar.gz]
+[2024-04-13 19:37:42] INFO root fetch - processPackages [lokzzpylib]: Remove: archive file [/home/abi/fetcher/tmp/lokzzpylib-0.2.dev9.tar.gz]
+[2024-04-13 19:37:42] INFO root fetch - main [MainThread]: End processing [lokzzpylib]: success
+[2024-04-13 19:37:42] INFO root fetch - main [MainThread]: Store serial: [22753531]
