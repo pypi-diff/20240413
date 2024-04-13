@@ -20830,3 +20830,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 23:52:11] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.6.tar.gz]
 [2024-04-13 23:52:11] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
 [2024-04-13 23:52:11] INFO root fetch - main [MainThread]: Store serial: [22755022]
+[2024-04-13 23:54:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755022]
+[2024-04-13 23:54:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 23:54:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: octomy-batch
+[2024-04-13 23:54:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dune-rivals
+[2024-04-13 23:54:20] INFO root fetch - processPackages [dune-rivals]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-13 23:54:20] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/d4/3e/57bce13714578a049eee77fbe5da09b621b2788595a9b374a296eb27f048/dune_rivals-0.3.2.tar.gz
+[2024-04-13 23:54:20] INFO root fetch - processPackages [octomy-batch]: New version: [2.0.5] Old Version: [2.0.4]
+[2024-04-13 23:54:20] INFO root fetch - processPackages [octomy-batch]: Downloading https://files.pythonhosted.org/packages/62/01/795f8b5398dcc0a02b5470f8fca74dca1803624173e3380ed00871f5cedf/octomy-batch-2.0.4.tar.gz
+[2024-04-13 23:54:21] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/75/09/94aead7e4c6035c27ef25cea4e85c30202f3116076f81cf6f6464e4300a1/dune_rivals-0.3.3.tar.gz
+[2024-04-13 23:54:21] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-13 23:54:21] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.3.2.tar.gz tmp/dune_rivals-0.3.3.tar.gz --markdown 20240413/d/dune-rivals/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-13 23:54:21] INFO root fetch - processPackages [octomy-batch]: Downloading https://files.pythonhosted.org/packages/21/64/5f9581f7bd80a73d6fb9a2d24f3ac960855def6b3d4c975f74c9a2b08484/octomy-batch-2.0.5.tar.gz
+[2024-04-13 23:54:21] INFO root fetch - processPackages [octomy-batch]: executing diffoscope
+[2024-04-13 23:54:21] INFO root fetch - processPackages [octomy-batch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-batch-2.0.4.tar.gz tmp/octomy-batch-2.0.5.tar.gz --markdown 20240413/o/octomy-batch/2.0.4-2.0.5/README.md --exclude *.pyd
+[2024-04-13 23:54:21] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.2.tar.gz]
+[2024-04-13 23:54:21] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.3.tar.gz]
+[2024-04-13 23:54:21] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-13 23:54:21] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.4.tar.gz]
+[2024-04-13 23:54:21] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.5.tar.gz]
+[2024-04-13 23:54:21] INFO root fetch - main [MainThread]: End processing [octomy-batch]: success
+[2024-04-13 23:54:21] INFO root fetch - main [MainThread]: Store serial: [22755035]
