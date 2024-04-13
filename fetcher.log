@@ -11048,3 +11048,51 @@
 [2024-04-13 10:44:05] INFO root fetch - processPackages [diskinfo]: Remove: archive file [/home/abi/fetcher/tmp/diskinfo-3.1.2.tar.gz]
 [2024-04-13 10:44:05] INFO root fetch - main [MainThread]: End processing [diskinfo]: success
 [2024-04-13 10:44:05] INFO root fetch - main [MainThread]: Store serial: [22750643]
+[2024-04-13 10:46:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750643]
+[2024-04-13 10:46:13] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-13 10:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pylivemaker
+[2024-04-13 10:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hagworm
+[2024-04-13 10:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sindapi
+[2024-04-13 10:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: AgentlyCmd
+[2024-04-13 10:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-nightly-cpu
+[2024-04-13 10:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: AgentlyCmd
+[2024-04-13 10:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: argsreq
+[2024-04-13 10:46:13] WARNING root fetch - processPackages [argsreq]: Skipping, unable to determine old version
+[2024-04-13 10:46:13] INFO root fetch - main [MainThread]: End processing [argsreq] error
+[2024-04-13 10:46:13] WARNING root fetch - processPackages [AgentlyCmd]: Skipping, unable to determine old version
+[2024-04-13 10:46:13] INFO root fetch - main [MainThread]: End processing [AgentlyCmd] error
+[2024-04-13 10:46:13] INFO root fetch - processPackages [sindapi]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-13 10:46:13] WARNING root fetch - processPackages [AgentlyCmd]: Skipping, unable to determine old version
+[2024-04-13 10:46:13] INFO root fetch - main [MainThread]: End processing [AgentlyCmd] error
+[2024-04-13 10:46:13] INFO root fetch - processPackages [pylivemaker]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-04-13 10:46:13] INFO root fetch - processPackages [sindapi]: Downloading https://files.pythonhosted.org/packages/f2/c5/538168350df8dad7f531bb9eaac0d081a4f981f9ffc81bfe1b7e5256db06/sindapi-0.0.5.tar.gz
+[2024-04-13 10:46:13] INFO root fetch - processPackages [hagworm]: New version: [5.9.9] Old Version: [5.9.8]
+[2024-04-13 10:46:13] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.17.0.dev20240413] Old Version: [2.17.0.dev20240412]
+[2024-04-13 10:46:13] INFO root fetch - processPackages [pylivemaker]: Downloading https://files.pythonhosted.org/packages/83/c0/0d8bff9721b0fafc73713c4d6bd16d592c973f62aebf9ff7257b421506a5/pylivemaker-1.2.0.tar.gz
+[2024-04-13 10:46:14] INFO root fetch - processPackages [sindapi]: Downloading https://files.pythonhosted.org/packages/60/ec/1ec8f91b1d28086b974af596b37e14277e4826e073e4483a71bdb37dfa11/sindapi-0.0.6.tar.gz
+[2024-04-13 10:46:14] INFO root fetch - processPackages [hagworm]: Downloading https://files.pythonhosted.org/packages/e0/1c/5dac91f7c38d49ccecfdc58d536db8299a6047d9ff58930a0d6013757ea4/hagworm-5.9.8.tar.gz
+[2024-04-13 10:46:14] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/f3/c2/cbc49172d668dd2afd4adcd58686f9aa54745bf4d3e76d38c86d2c76abe6/tf_nightly_cpu-2.17.0.dev20240412-cp39-cp39-win_amd64.whl
+[2024-04-13 10:46:14] INFO root fetch - processPackages [sindapi]: executing diffoscope
+[2024-04-13 10:46:14] INFO root fetch - processPackages [sindapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sindapi-0.0.5.tar.gz tmp/sindapi-0.0.6.tar.gz --markdown 20240413/s/sindapi/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-13 10:46:14] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/4c/dd/050c7e149cb2f7f839fbc2eeffce73b5893d6c90b3ff268134072988f939/tf_nightly_cpu-2.17.0.dev20240413-cp39-cp39-win_amd64.whl
+[2024-04-13 10:46:14] INFO root fetch - processPackages [hagworm]: Downloading https://files.pythonhosted.org/packages/2f/0d/16fd32d0754a2e5208aede68d6b772bc36ed5dcefe41035760e37a84fbbc/hagworm-5.9.9.tar.gz
+[2024-04-13 10:46:14] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2024-04-13 10:46:14] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.17.0.dev20240412-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.17.0.dev20240413-cp39-cp39-win_amd64.whl.zip --markdown 20240413/t/tf-nightly-cpu/2.17.0.dev20240412-2.17.0.dev20240413/README.md --exclude *.pyd
+[2024-04-13 10:46:14] INFO root fetch - processPackages [hagworm]: executing diffoscope
+[2024-04-13 10:46:14] INFO root fetch - processPackages [hagworm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagworm-5.9.8.tar.gz tmp/hagworm-5.9.9.tar.gz --markdown 20240413/h/hagworm/5.9.8-5.9.9/README.md --exclude *.pyd
+[2024-04-13 10:46:14] INFO root fetch - processPackages [pylivemaker]: Downloading https://files.pythonhosted.org/packages/06/4e/f2ce10814dbf30b885d1b6fb34e1679594069f230146c73f1cd257c735c7/pylivemaker-1.2.1.tar.gz
+[2024-04-13 10:46:14] INFO root fetch - processPackages [sindapi]: Remove: archive file [/home/abi/fetcher/tmp/sindapi-0.0.5.tar.gz]
+[2024-04-13 10:46:14] INFO root fetch - processPackages [sindapi]: Remove: archive file [/home/abi/fetcher/tmp/sindapi-0.0.6.tar.gz]
+[2024-04-13 10:46:14] INFO root fetch - main [MainThread]: End processing [sindapi]: success
+[2024-04-13 10:46:14] INFO root fetch - processPackages [pylivemaker]: executing diffoscope
+[2024-04-13 10:46:14] INFO root fetch - processPackages [pylivemaker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylivemaker-1.2.0.tar.gz tmp/pylivemaker-1.2.1.tar.gz --markdown 20240413/p/pylivemaker/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-04-13 10:46:15] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240412-cp39-cp39-win_amd64.whl.zip]
+[2024-04-13 10:46:15] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240413-cp39-cp39-win_amd64.whl.zip]
+[2024-04-13 10:46:15] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2024-04-13 10:46:15] INFO root fetch - processPackages [hagworm]: Remove: archive file [/home/abi/fetcher/tmp/hagworm-5.9.8.tar.gz]
+[2024-04-13 10:46:15] INFO root fetch - processPackages [hagworm]: Remove: archive file [/home/abi/fetcher/tmp/hagworm-5.9.9.tar.gz]
+[2024-04-13 10:46:15] INFO root fetch - main [MainThread]: End processing [hagworm]: success
+[2024-04-13 10:46:16] INFO root fetch - processPackages [pylivemaker]: Remove: archive file [/home/abi/fetcher/tmp/pylivemaker-1.2.0.tar.gz]
+[2024-04-13 10:46:16] INFO root fetch - processPackages [pylivemaker]: Remove: archive file [/home/abi/fetcher/tmp/pylivemaker-1.2.1.tar.gz]
+[2024-04-13 10:46:16] INFO root fetch - main [MainThread]: End processing [pylivemaker]: success
+[2024-04-13 10:46:16] INFO root fetch - main [MainThread]: Store serial: [22750663]
