@@ -16179,3 +16179,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 17:41:46] INFO root fetch - processPackages [rococo]: Remove: archive file [/home/abi/fetcher/tmp/rococo-1.0.8.tar.gz]
 [2024-04-13 17:41:46] INFO root fetch - main [MainThread]: End processing [rococo]: success
 [2024-04-13 17:41:46] INFO root fetch - main [MainThread]: Store serial: [22752946]
+[2024-04-13 17:43:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752946]
+[2024-04-13 17:43:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 17:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymonzo
+[2024-04-13 17:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: geodynamic
+[2024-04-13 17:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dialog-lib
+[2024-04-13 17:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: htagui
+[2024-04-13 17:43:55] INFO root fetch - processPackages [dialog-lib]: New version: [0.0.1.3] Old Version: [0.0.1.1]
+[2024-04-13 17:43:55] INFO root fetch - processPackages [geodynamic]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-13 17:43:55] INFO root fetch - processPackages [pymonzo]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-13 17:43:55] INFO root fetch - processPackages [htagui]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-13 17:43:55] INFO root fetch - processPackages [dialog-lib]: Downloading https://files.pythonhosted.org/packages/52/7a/9e0e4a317ed8b5105f1c210cd4936bff08b5291350f30ac5dd54cc9e083c/dialog_lib-0.0.1.1.tar.gz
+[2024-04-13 17:43:56] INFO root fetch - processPackages [geodynamic]: Downloading https://files.pythonhosted.org/packages/fd/24/47a7b60010e9068b80e55a8a53f13f8f9e8c67f0c007b707a33accc8dfec/geodynamic-0.0.3.tar.gz
+[2024-04-13 17:43:56] INFO root fetch - processPackages [pymonzo]: Downloading https://files.pythonhosted.org/packages/8c/74/3cea58df2b67ef42d99795cca1e5c53cd81e57cc9b6608c7e8b76d487976/pymonzo-2.0.0.tar.gz
+[2024-04-13 17:43:56] INFO root fetch - processPackages [htagui]: Downloading https://files.pythonhosted.org/packages/b9/7f/828085d6ed14d926b3c0dc538cd1989585d34f1c14079d324437d67e26d0/htagui-0.2.0.tar.gz
+[2024-04-13 17:43:56] INFO root fetch - processPackages [dialog-lib]: Downloading https://files.pythonhosted.org/packages/08/79/2a7fc25e41b1021afe6814f6de53dbbb9148643144ab3d2277be8a4c5f22/dialog_lib-0.0.1.3.tar.gz
+[2024-04-13 17:43:56] INFO root fetch - processPackages [dialog-lib]: executing diffoscope
+[2024-04-13 17:43:56] INFO root fetch - processPackages [dialog-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dialog_lib-0.0.1.1.tar.gz tmp/dialog_lib-0.0.1.3.tar.gz --markdown 20240413/d/dialog-lib/0.0.1.1-0.0.1.3/README.md --exclude *.pyd
+[2024-04-13 17:43:56] INFO root fetch - processPackages [geodynamic]: Downloading https://files.pythonhosted.org/packages/28/7c/83465b6db59fe9369e537e449d1d9b5349cd167047f5b6597dd6f27dec13/geodynamic-0.0.4.tar.gz
+[2024-04-13 17:43:56] INFO root fetch - processPackages [pymonzo]: Downloading https://files.pythonhosted.org/packages/c4/27/4a89611b063755af657187720c5bbf61166917f007f9416d29e044c38a3a/pymonzo-2.0.1.tar.gz
+[2024-04-13 17:43:56] INFO root fetch - processPackages [htagui]: Downloading https://files.pythonhosted.org/packages/30/73/1354c9f97e9587dd9c83e08ecdcd73793bb4fd76f2a038bac1cfbca6c501/htagui-0.3.0.tar.gz
+[2024-04-13 17:43:56] INFO root fetch - processPackages [geodynamic]: executing diffoscope
+[2024-04-13 17:43:56] INFO root fetch - processPackages [geodynamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geodynamic-0.0.3.tar.gz tmp/geodynamic-0.0.4.tar.gz --markdown 20240413/g/geodynamic/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-13 17:43:56] INFO root fetch - processPackages [pymonzo]: executing diffoscope
+[2024-04-13 17:43:56] INFO root fetch - processPackages [pymonzo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymonzo-2.0.0.tar.gz tmp/pymonzo-2.0.1.tar.gz --markdown 20240413/p/pymonzo/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-04-13 17:43:56] INFO root fetch - processPackages [htagui]: executing diffoscope
+[2024-04-13 17:43:56] INFO root fetch - processPackages [htagui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htagui-0.2.0.tar.gz tmp/htagui-0.3.0.tar.gz --markdown 20240413/h/htagui/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-13 17:43:56] INFO root fetch - processPackages [dialog-lib]: Remove: archive file [/home/abi/fetcher/tmp/dialog_lib-0.0.1.1.tar.gz]
+[2024-04-13 17:43:56] INFO root fetch - processPackages [dialog-lib]: Remove: archive file [/home/abi/fetcher/tmp/dialog_lib-0.0.1.3.tar.gz]
+[2024-04-13 17:43:56] INFO root fetch - main [MainThread]: End processing [dialog-lib]: success
+[2024-04-13 17:43:57] INFO root fetch - processPackages [pymonzo]: Remove: archive file [/home/abi/fetcher/tmp/pymonzo-2.0.0.tar.gz]
+[2024-04-13 17:43:57] INFO root fetch - processPackages [pymonzo]: Remove: archive file [/home/abi/fetcher/tmp/pymonzo-2.0.1.tar.gz]
+[2024-04-13 17:43:57] INFO root fetch - main [MainThread]: End processing [pymonzo]: success
+[2024-04-13 17:43:57] INFO root fetch - processPackages [geodynamic]: Remove: archive file [/home/abi/fetcher/tmp/geodynamic-0.0.3.tar.gz]
+[2024-04-13 17:43:57] INFO root fetch - processPackages [geodynamic]: Remove: archive file [/home/abi/fetcher/tmp/geodynamic-0.0.4.tar.gz]
+[2024-04-13 17:43:57] INFO root fetch - main [MainThread]: End processing [geodynamic]: success
+[2024-04-13 17:43:57] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.2.0.tar.gz]
+[2024-04-13 17:43:57] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.3.0.tar.gz]
+[2024-04-13 17:43:57] INFO root fetch - main [MainThread]: End processing [htagui]: success
+[2024-04-13 17:43:57] INFO root fetch - main [MainThread]: Store serial: [22752961]
