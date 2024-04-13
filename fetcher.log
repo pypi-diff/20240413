@@ -16846,3 +16846,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 18:41:16] INFO root fetch - processPackages [deep-image-matching]: Remove: archive file [/home/abi/fetcher/tmp/deep_image_matching-1.2.4.tar.gz]
 [2024-04-13 18:41:16] INFO root fetch - main [MainThread]: End processing [deep-image-matching]: success
 [2024-04-13 18:41:16] INFO root fetch - main [MainThread]: Store serial: [22753203]
+[2024-04-13 18:43:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753203]
+[2024-04-13 18:43:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 18:43:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hnt-nf-jira-library
+[2024-04-13 18:43:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydantic2-schemaorg
+[2024-04-13 18:43:24] INFO root fetch - processPackages [hnt-nf-jira-library]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-13 18:43:24] WARNING root fetch - processPackages [pydantic2-schemaorg]: Skipping, unable to determine old version
+[2024-04-13 18:43:24] INFO root fetch - main [MainThread]: End processing [pydantic2-schemaorg] error
+[2024-04-13 18:43:24] INFO root fetch - processPackages [hnt-nf-jira-library]: Downloading https://files.pythonhosted.org/packages/77/af/74955190a5018cf949276a057ea232e0f2ff0f2788a0f48bcc594f0bef6b/hnt_nf_jira_library-0.3.0.tar.gz
+[2024-04-13 18:43:24] INFO root fetch - processPackages [hnt-nf-jira-library]: Downloading https://files.pythonhosted.org/packages/88/b1/d3b8bf67b9b90fc090ab75d9568b660e609703d26c745c83d403fdc121eb/hnt_nf_jira_library-0.3.1.tar.gz
+[2024-04-13 18:43:25] INFO root fetch - processPackages [hnt-nf-jira-library]: executing diffoscope
+[2024-04-13 18:43:25] INFO root fetch - processPackages [hnt-nf-jira-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hnt_nf_jira_library-0.3.0.tar.gz tmp/hnt_nf_jira_library-0.3.1.tar.gz --markdown 20240413/h/hnt-nf-jira-library/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-13 18:43:25] INFO root fetch - processPackages [hnt-nf-jira-library]: Remove: archive file [/home/abi/fetcher/tmp/hnt_nf_jira_library-0.3.0.tar.gz]
+[2024-04-13 18:43:25] INFO root fetch - processPackages [hnt-nf-jira-library]: Remove: archive file [/home/abi/fetcher/tmp/hnt_nf_jira_library-0.3.1.tar.gz]
+[2024-04-13 18:43:25] INFO root fetch - main [MainThread]: End processing [hnt-nf-jira-library]: success
+[2024-04-13 18:43:25] INFO root fetch - main [MainThread]: Store serial: [22753210]
