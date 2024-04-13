@@ -8825,3 +8825,42 @@
 [2024-04-13 08:10:26] INFO root fetch - processPackages [pulumi-alicloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_alicloud-3.9.0a1637592974.tar.gz]
 [2024-04-13 08:10:26] INFO root fetch - main [MainThread]: End processing [pulumi-alicloud]: success
 [2024-04-13 08:10:26] INFO root fetch - main [MainThread]: Store serial: [22749808]
+[2024-04-13 08:12:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749808]
+[2024-04-13 08:12:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 08:12:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sbcli-mig
+[2024-04-13 08:12:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-kong
+[2024-04-13 08:12:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-auth-oidc
+[2024-04-13 08:12:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-gitlab
+[2024-04-13 08:12:39] INFO root fetch - processPackages [sbcli-mig]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-13 08:12:39] INFO root fetch - processPackages [odoo-addon-auth-oidc]: New version: [17.0.1.0.0.3] Old Version: [17.0.1.0.0.2]
+[2024-04-13 08:12:39] INFO root fetch - processPackages [pulumi-kong]: New version: [4.6.0a1712914540] Old Version: [4.6.0a1712728140]
+[2024-04-13 08:12:39] INFO root fetch - processPackages [pulumi-gitlab]: New version: [6.9.0a1708340471] Old Version: [6.9.0a1708063247]
+[2024-04-13 08:12:39] INFO root fetch - processPackages [odoo-addon-auth-oidc]: Downloading https://files.pythonhosted.org/packages/0a/17/b041fc2aab17cd214d6f5c75239a485a0bfa97d9f3e5a8001a900b9788ab/odoo_addon_auth_oidc-17.0.1.0.0.2-py3-none-any.whl
+[2024-04-13 08:12:39] INFO root fetch - processPackages [pulumi-kong]: Downloading https://files.pythonhosted.org/packages/8f/9a/4a5217ab27ae07cd303af1e971e01c99c68d8a212bde0d53f345c1ca8188/pulumi_kong-4.6.0a1712728140.tar.gz
+[2024-04-13 08:12:39] INFO root fetch - processPackages [sbcli-mig]: Downloading https://files.pythonhosted.org/packages/06/2f/2b2f1cfa7b91365cf5cd645c5967a8e8a8bd7f1c8e89f91d7e43e2aefc87/sbcli-mig-1.0.8.zip
+[2024-04-13 08:12:39] INFO root fetch - processPackages [pulumi-gitlab]: Downloading https://files.pythonhosted.org/packages/58/07/ab2778876b4db96da370ecc6d084f38b132c7d1e47cda0350b3de396d7e4/pulumi_gitlab-6.9.0a1708063247.tar.gz
+[2024-04-13 08:12:39] INFO root fetch - processPackages [odoo-addon-auth-oidc]: Downloading https://files.pythonhosted.org/packages/57/e3/7c59e33cbd5742494a3234a464a86c7566393abeeea6e23dd0417b0b0cc9/odoo_addon_auth_oidc-17.0.1.0.0.3-py3-none-any.whl
+[2024-04-13 08:12:39] INFO root fetch - processPackages [pulumi-kong]: Downloading https://files.pythonhosted.org/packages/64/be/572ec6233c754432a4478642f709837367c5d8b07e96057356963e02ebd2/pulumi_kong-4.6.0a1712914540.tar.gz
+[2024-04-13 08:12:39] INFO root fetch - processPackages [sbcli-mig]: Downloading https://files.pythonhosted.org/packages/4b/15/9c1afe915f08547ce582aeae079f597b2a173df003109bcd1d0f0bbf037e/sbcli-mig-1.0.9.zip
+[2024-04-13 08:12:39] INFO root fetch - processPackages [pulumi-gitlab]: Downloading https://files.pythonhosted.org/packages/ec/de/e27b5fc2f3f3a7a5f878850b1b8d0f82d5624c70b642a39146c756ea3d5c/pulumi_gitlab-6.9.0a1708340471.tar.gz
+[2024-04-13 08:12:39] INFO root fetch - processPackages [odoo-addon-auth-oidc]: executing diffoscope
+[2024-04-13 08:12:39] INFO root fetch - processPackages [odoo-addon-auth-oidc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_auth_oidc-17.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_auth_oidc-17.0.1.0.0.3-py3-none-any.whl.zip --markdown 20240413/o/odoo-addon-auth-oidc/17.0.1.0.0.2-17.0.1.0.0.3/README.md --exclude *.pyd
+[2024-04-13 08:12:39] INFO root fetch - processPackages [pulumi-kong]: executing diffoscope
+[2024-04-13 08:12:39] INFO root fetch - processPackages [pulumi-kong]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kong-4.6.0a1712728140.tar.gz tmp/pulumi_kong-4.6.0a1712914540.tar.gz --markdown 20240413/p/pulumi-kong/4.6.0a1712728140-4.6.0a1712914540/README.md --exclude *.pyd
+[2024-04-13 08:12:39] INFO root fetch - processPackages [sbcli-mig]: executing diffoscope
+[2024-04-13 08:12:39] INFO root fetch - processPackages [sbcli-mig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbcli-mig-1.0.8.zip tmp/sbcli-mig-1.0.9.zip --markdown 20240413/s/sbcli-mig/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-13 08:12:40] INFO root fetch - processPackages [pulumi-gitlab]: executing diffoscope
+[2024-04-13 08:12:40] INFO root fetch - processPackages [pulumi-gitlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_gitlab-6.9.0a1708063247.tar.gz tmp/pulumi_gitlab-6.9.0a1708340471.tar.gz --markdown 20240413/p/pulumi-gitlab/6.9.0a1708063247-6.9.0a1708340471/README.md --exclude *.pyd
+[2024-04-13 08:12:40] INFO root fetch - processPackages [odoo-addon-auth-oidc]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_auth_oidc-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-04-13 08:12:40] INFO root fetch - processPackages [odoo-addon-auth-oidc]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_auth_oidc-17.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-04-13 08:12:40] INFO root fetch - main [MainThread]: End processing [odoo-addon-auth-oidc]: success
+[2024-04-13 08:12:40] INFO root fetch - processPackages [pulumi-kong]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kong-4.6.0a1712728140.tar.gz]
+[2024-04-13 08:12:40] INFO root fetch - processPackages [pulumi-kong]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kong-4.6.0a1712914540.tar.gz]
+[2024-04-13 08:12:40] INFO root fetch - main [MainThread]: End processing [pulumi-kong]: success
+[2024-04-13 08:12:41] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.8.zip]
+[2024-04-13 08:12:41] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.9.zip]
+[2024-04-13 08:12:41] INFO root fetch - main [MainThread]: End processing [sbcli-mig]: success
+[2024-04-13 08:12:41] INFO root fetch - processPackages [pulumi-gitlab]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_gitlab-6.9.0a1708063247.tar.gz]
+[2024-04-13 08:12:41] INFO root fetch - processPackages [pulumi-gitlab]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_gitlab-6.9.0a1708340471.tar.gz]
+[2024-04-13 08:12:41] INFO root fetch - main [MainThread]: End processing [pulumi-gitlab]: success
+[2024-04-13 08:12:41] INFO root fetch - main [MainThread]: Store serial: [22749818]
