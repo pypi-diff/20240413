@@ -11712,3 +11712,29 @@
 [2024-04-13 11:42:48] WARNING root fetch - processPackages [benchita]: Skipping, unable to determine old version
 [2024-04-13 11:42:48] INFO root fetch - main [MainThread]: End processing [benchita] error
 [2024-04-13 11:42:48] INFO root fetch - main [MainThread]: Store serial: [22750931]
+[2024-04-13 11:44:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750931]
+[2024-04-13 11:44:57] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 11:46:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750932]
+[2024-04-13 11:47:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 11:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ckip2tei
+[2024-04-13 11:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jsonapi-python
+[2024-04-13 11:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fnsecure
+[2024-04-13 11:47:04] INFO root fetch - processPackages [jsonapi-python]: New version: [0.1.1.post1] Old Version: [0.1.1]
+[2024-04-13 11:47:04] WARNING root fetch - processPackages [fnsecure]: Skipping, unable to determine old version
+[2024-04-13 11:47:04] INFO root fetch - main [MainThread]: End processing [fnsecure] error
+[2024-04-13 11:47:04] INFO root fetch - processPackages [ckip2tei]: New version: [1.1.2] Old Version: [1.0.2]
+[2024-04-13 11:47:04] INFO root fetch - processPackages [jsonapi-python]: Downloading https://files.pythonhosted.org/packages/9f/cc/baf5d53df9db25667cf228e6e8abe50efb79c84cec3c0e041f9ab0b4d4f4/jsonapi_python-0.1.1.tar.gz
+[2024-04-13 11:47:04] INFO root fetch - processPackages [ckip2tei]: Downloading https://files.pythonhosted.org/packages/2f/ab/b00f62592c9e99ea14d01b6ec99db6dcabc589d6daea627cfe40f6959d70/ckip2tei-1.0.2.tar.gz
+[2024-04-13 11:47:04] INFO root fetch - processPackages [jsonapi-python]: Downloading https://files.pythonhosted.org/packages/de/19/467943a51b0ab5e9473392c8129799728259e85df10bcd6c705b187a1469/jsonapi_python-0.1.1.post1.tar.gz
+[2024-04-13 11:47:04] INFO root fetch - processPackages [jsonapi-python]: executing diffoscope
+[2024-04-13 11:47:04] INFO root fetch - processPackages [jsonapi-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonapi_python-0.1.1.tar.gz tmp/jsonapi_python-0.1.1.post1.tar.gz --markdown 20240413/j/jsonapi-python/0.1.1-0.1.1.post1/README.md --exclude *.pyd
+[2024-04-13 11:47:04] INFO root fetch - processPackages [ckip2tei]: Downloading https://files.pythonhosted.org/packages/fa/bd/0dfe06b3f043ea7e54a59f88e7a165332fc647ad4de98be6662479d20e8d/ckip2tei-1.1.2.tar.gz
+[2024-04-13 11:47:05] INFO root fetch - processPackages [ckip2tei]: executing diffoscope
+[2024-04-13 11:47:05] INFO root fetch - processPackages [ckip2tei]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckip2tei-1.0.2.tar.gz tmp/ckip2tei-1.1.2.tar.gz --markdown 20240413/c/ckip2tei/1.0.2-1.1.2/README.md --exclude *.pyd
+[2024-04-13 11:47:05] INFO root fetch - processPackages [jsonapi-python]: Remove: archive file [/home/abi/fetcher/tmp/jsonapi_python-0.1.1.tar.gz]
+[2024-04-13 11:47:05] INFO root fetch - processPackages [jsonapi-python]: Remove: archive file [/home/abi/fetcher/tmp/jsonapi_python-0.1.1.post1.tar.gz]
+[2024-04-13 11:47:05] INFO root fetch - main [MainThread]: End processing [jsonapi-python]: success
+[2024-04-13 11:47:05] INFO root fetch - processPackages [ckip2tei]: Remove: archive file [/home/abi/fetcher/tmp/ckip2tei-1.0.2.tar.gz]
+[2024-04-13 11:47:05] INFO root fetch - processPackages [ckip2tei]: Remove: archive file [/home/abi/fetcher/tmp/ckip2tei-1.1.2.tar.gz]
+[2024-04-13 11:47:05] INFO root fetch - main [MainThread]: End processing [ckip2tei]: success
+[2024-04-13 11:47:05] INFO root fetch - main [MainThread]: Store serial: [22750944]
