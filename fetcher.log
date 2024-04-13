@@ -8390,3 +8390,24 @@
 [2024-04-13 07:37:32] INFO root fetch - processPackages [pymemgpt]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt-0.3.9.tar.gz]
 [2024-04-13 07:37:32] INFO root fetch - main [MainThread]: End processing [pymemgpt]: success
 [2024-04-13 07:37:32] INFO root fetch - main [MainThread]: Store serial: [22749641]
+[2024-04-13 07:39:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749641]
+[2024-04-13 07:39:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 07:39:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-cloudinit
+[2024-04-13 07:39:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-civo
+[2024-04-13 07:39:42] INFO root fetch - processPackages [pulumi-civo]: New version: [2.4.0a1712985677] Old Version: [2.4.0a1712726540]
+[2024-04-13 07:39:42] INFO root fetch - processPackages [pulumi-cloudinit]: New version: [1.5.0a1712985751] Old Version: [1.5.0a1712726635]
+[2024-04-13 07:39:42] INFO root fetch - processPackages [pulumi-cloudinit]: Downloading https://files.pythonhosted.org/packages/af/cd/6343d0044fa9396ac9923206b7bf8d44922b8ec4da08b4a7d2e85b686d93/pulumi_cloudinit-1.5.0a1712726635.tar.gz
+[2024-04-13 07:39:42] INFO root fetch - processPackages [pulumi-civo]: Downloading https://files.pythonhosted.org/packages/69/67/029de6e0a254b953cd6e71059356eeb3de39337866c26414e9b1cdd1dcda/pulumi_civo-2.4.0a1712726540.tar.gz
+[2024-04-13 07:39:42] INFO root fetch - processPackages [pulumi-cloudinit]: Downloading https://files.pythonhosted.org/packages/eb/7e/9bd829bdf7e0f230344e2a56c9afabc10829acb199f7ee8d48e1185ce66e/pulumi_cloudinit-1.5.0a1712985751.tar.gz
+[2024-04-13 07:39:43] INFO root fetch - processPackages [pulumi-civo]: Downloading https://files.pythonhosted.org/packages/79/31/3c20b536be70317849b82cc2c592b5373deb98a31754dc21b9770cf7beb9/pulumi_civo-2.4.0a1712985677.tar.gz
+[2024-04-13 07:39:43] INFO root fetch - processPackages [pulumi-cloudinit]: executing diffoscope
+[2024-04-13 07:39:43] INFO root fetch - processPackages [pulumi-cloudinit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_cloudinit-1.5.0a1712726635.tar.gz tmp/pulumi_cloudinit-1.5.0a1712985751.tar.gz --markdown 20240413/p/pulumi-cloudinit/1.5.0a1712726635-1.5.0a1712985751/README.md --exclude *.pyd
+[2024-04-13 07:39:43] INFO root fetch - processPackages [pulumi-civo]: executing diffoscope
+[2024-04-13 07:39:43] INFO root fetch - processPackages [pulumi-civo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_civo-2.4.0a1712726540.tar.gz tmp/pulumi_civo-2.4.0a1712985677.tar.gz --markdown 20240413/p/pulumi-civo/2.4.0a1712726540-2.4.0a1712985677/README.md --exclude *.pyd
+[2024-04-13 07:39:43] INFO root fetch - processPackages [pulumi-cloudinit]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_cloudinit-1.5.0a1712726635.tar.gz]
+[2024-04-13 07:39:43] INFO root fetch - processPackages [pulumi-cloudinit]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_cloudinit-1.5.0a1712985751.tar.gz]
+[2024-04-13 07:39:43] INFO root fetch - main [MainThread]: End processing [pulumi-cloudinit]: success
+[2024-04-13 07:39:43] INFO root fetch - processPackages [pulumi-civo]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_civo-2.4.0a1712726540.tar.gz]
+[2024-04-13 07:39:43] INFO root fetch - processPackages [pulumi-civo]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_civo-2.4.0a1712985677.tar.gz]
+[2024-04-13 07:39:43] INFO root fetch - main [MainThread]: End processing [pulumi-civo]: success
+[2024-04-13 07:39:43] INFO root fetch - main [MainThread]: Store serial: [22749647]
