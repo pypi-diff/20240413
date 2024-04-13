@@ -11682,3 +11682,27 @@
 [2024-04-13 11:38:30] INFO root fetch - processPackages [parsee-core]: Remove: archive file [/home/abi/fetcher/tmp/parsee_core-0.1.4.5.tar.gz]
 [2024-04-13 11:38:30] INFO root fetch - main [MainThread]: End processing [parsee-core]: success
 [2024-04-13 11:38:30] INFO root fetch - main [MainThread]: Store serial: [22750917]
+[2024-04-13 11:40:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750917]
+[2024-04-13 11:40:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 11:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: WPEMPhase
+[2024-04-13 11:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agenta
+[2024-04-13 11:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jsonapi-python
+[2024-04-13 11:40:39] WARNING root fetch - processPackages [jsonapi-python]: Skipping, unable to determine old version
+[2024-04-13 11:40:39] INFO root fetch - main [MainThread]: End processing [jsonapi-python] error
+[2024-04-13 11:40:39] INFO root fetch - processPackages [WPEMPhase]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-13 11:40:39] INFO root fetch - processPackages [agenta]: New version: [0.9.0] Old Version: [0.8.4]
+[2024-04-13 11:40:39] INFO root fetch - processPackages [WPEMPhase]: Downloading https://files.pythonhosted.org/packages/61/99/13eb37b288f1ea07c6e853126a737e32a132289124d6ea743bf98ae0c909/WPEMPhase-0.0.4.tar.gz
+[2024-04-13 11:40:39] INFO root fetch - processPackages [agenta]: Downloading https://files.pythonhosted.org/packages/e1/b3/694bb4fe67f0b63ef67836f5924bdc436dfb590d7e7da0824cbbc4b71853/agenta-0.8.4.tar.gz
+[2024-04-13 11:40:39] INFO root fetch - processPackages [agenta]: Downloading https://files.pythonhosted.org/packages/f7/a1/73689fd1faf7fbbd3985f8ed9673e4784bae27b1789d6fe5f7e4f001ed89/agenta-0.9.0.tar.gz
+[2024-04-13 11:40:39] INFO root fetch - processPackages [WPEMPhase]: Downloading https://files.pythonhosted.org/packages/a4/36/a9f692a998d7bb6c79fa81d7e706954848522f904433e5376c4587937e5a/WPEMPhase-0.0.5.tar.gz
+[2024-04-13 11:40:39] INFO root fetch - processPackages [agenta]: executing diffoscope
+[2024-04-13 11:40:39] INFO root fetch - processPackages [agenta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agenta-0.8.4.tar.gz tmp/agenta-0.9.0.tar.gz --markdown 20240413/a/agenta/0.8.4-0.9.0/README.md --exclude *.pyd
+[2024-04-13 11:40:39] INFO root fetch - processPackages [WPEMPhase]: executing diffoscope
+[2024-04-13 11:40:39] INFO root fetch - processPackages [WPEMPhase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/WPEMPhase-0.0.4.tar.gz tmp/WPEMPhase-0.0.5.tar.gz --markdown 20240413/W/WPEMPhase/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-13 11:40:40] INFO root fetch - processPackages [agenta]: Remove: archive file [/home/abi/fetcher/tmp/agenta-0.8.4.tar.gz]
+[2024-04-13 11:40:40] INFO root fetch - processPackages [agenta]: Remove: archive file [/home/abi/fetcher/tmp/agenta-0.9.0.tar.gz]
+[2024-04-13 11:40:40] INFO root fetch - main [MainThread]: End processing [agenta]: success
+[2024-04-13 11:40:40] INFO root fetch - processPackages [WPEMPhase]: Remove: archive file [/home/abi/fetcher/tmp/WPEMPhase-0.0.4.tar.gz]
+[2024-04-13 11:40:40] INFO root fetch - processPackages [WPEMPhase]: Remove: archive file [/home/abi/fetcher/tmp/WPEMPhase-0.0.5.tar.gz]
+[2024-04-13 11:40:40] INFO root fetch - main [MainThread]: End processing [WPEMPhase]: success
+[2024-04-13 11:40:40] INFO root fetch - main [MainThread]: Store serial: [22750926]
