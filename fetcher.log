@@ -7952,3 +7952,18 @@
 [2024-04-13 06:45:39] INFO root fetch - processPackages [llama-index-packs-raft-dataset]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_packs_raft_dataset-0.1.4.tar.gz]
 [2024-04-13 06:45:39] INFO root fetch - main [MainThread]: End processing [llama-index-packs-raft-dataset]: success
 [2024-04-13 06:45:39] INFO root fetch - main [MainThread]: Store serial: [22749496]
+[2024-04-13 06:47:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749496]
+[2024-04-13 06:47:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 06:47:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llama-index-vector-stores-couchbase
+[2024-04-13 06:47:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: geotils
+[2024-04-13 06:47:48] INFO root fetch - processPackages [geotils]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-04-13 06:47:48] INFO root fetch - processPackages [geotils]: Downloading https://files.pythonhosted.org/packages/d5/c0/f34ce1b43b9269ebf2cbd6de8aed7d1b842b0c7ef21679a6399a54df78e2/geotils-0.1.7.tar.gz
+[2024-04-13 06:47:48] WARNING root fetch - processPackages [llama-index-vector-stores-couchbase]: Skipping, unable to determine old version
+[2024-04-13 06:47:48] INFO root fetch - main [MainThread]: End processing [llama-index-vector-stores-couchbase] error
+[2024-04-13 06:47:49] INFO root fetch - processPackages [geotils]: Downloading https://files.pythonhosted.org/packages/f1/10/c11a3b3c0b6dac465221a45c74cc8524cd2080f0ecc7d359b57155a8b976/geotils-0.1.9.tar.gz
+[2024-04-13 06:47:49] INFO root fetch - processPackages [geotils]: executing diffoscope
+[2024-04-13 06:47:49] INFO root fetch - processPackages [geotils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geotils-0.1.7.tar.gz tmp/geotils-0.1.9.tar.gz --markdown 20240413/g/geotils/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-04-13 06:47:49] INFO root fetch - processPackages [geotils]: Remove: archive file [/home/abi/fetcher/tmp/geotils-0.1.7.tar.gz]
+[2024-04-13 06:47:49] INFO root fetch - processPackages [geotils]: Remove: archive file [/home/abi/fetcher/tmp/geotils-0.1.9.tar.gz]
+[2024-04-13 06:47:49] INFO root fetch - main [MainThread]: End processing [geotils]: success
+[2024-04-13 06:47:49] INFO root fetch - main [MainThread]: Store serial: [22749505]
