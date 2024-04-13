@@ -16726,3 +16726,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 18:28:15] INFO root fetch - processPackages [ovos-skill-naptime]: Remove: archive file [/home/abi/fetcher/tmp/ovos_skill_naptime-0.2.3a4-py3-none-any.whl.zip]
 [2024-04-13 18:28:15] INFO root fetch - main [MainThread]: End processing [ovos-skill-naptime]: success
 [2024-04-13 18:28:15] INFO root fetch - main [MainThread]: Store serial: [22753164]
+[2024-04-13 18:30:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753164]
+[2024-04-13 18:30:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 18:30:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: argsreq
+[2024-04-13 18:30:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyxplora-api
+[2024-04-13 18:30:24] INFO root fetch - processPackages [argsreq]: New version: [2.0] Old Version: [1.8]
+[2024-04-13 18:30:24] INFO root fetch - processPackages [pyxplora-api]: New version: [2.9.0] Old Version: [2.8.3]
+[2024-04-13 18:30:24] INFO root fetch - processPackages [argsreq]: Downloading https://files.pythonhosted.org/packages/e0/c1/9c40977087d89b83b28ab9d5f671e1c40fcdda1a7bfe3075d4d99588c2a8/argsreq-1.8.tar.gz
+[2024-04-13 18:30:24] INFO root fetch - processPackages [pyxplora-api]: Downloading https://files.pythonhosted.org/packages/66/14/df10aa3ffab103e9711c943d55e8f146dbf2cd108374411512a0def8c1bb/pyxplora_api-2.8.3.tar.gz
+[2024-04-13 18:30:25] INFO root fetch - processPackages [argsreq]: Downloading https://files.pythonhosted.org/packages/a4/20/001bc3ba1ec7dbc8d86636328899a90b335efe66b3143657172b6dacf912/argsreq-2.0.tar.gz
+[2024-04-13 18:30:25] INFO root fetch - processPackages [argsreq]: executing diffoscope
+[2024-04-13 18:30:25] INFO root fetch - processPackages [argsreq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argsreq-1.8.tar.gz tmp/argsreq-2.0.tar.gz --markdown 20240413/a/argsreq/1.8-2.0/README.md --exclude *.pyd
+[2024-04-13 18:30:25] INFO root fetch - processPackages [pyxplora-api]: Downloading https://files.pythonhosted.org/packages/76/fb/473bfea1d77929439a25dce556a7ebeebcca650c71ade471bf09022df0e1/pyxplora_api-2.9.0.tar.gz
+[2024-04-13 18:30:25] INFO root fetch - processPackages [pyxplora-api]: executing diffoscope
+[2024-04-13 18:30:25] INFO root fetch - processPackages [pyxplora-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxplora_api-2.8.3.tar.gz tmp/pyxplora_api-2.9.0.tar.gz --markdown 20240413/p/pyxplora-api/2.8.3-2.9.0/README.md --exclude *.pyd
+[2024-04-13 18:30:25] INFO root fetch - processPackages [argsreq]: Remove: archive file [/home/abi/fetcher/tmp/argsreq-1.8.tar.gz]
+[2024-04-13 18:30:25] INFO root fetch - processPackages [argsreq]: Remove: archive file [/home/abi/fetcher/tmp/argsreq-2.0.tar.gz]
+[2024-04-13 18:30:25] INFO root fetch - main [MainThread]: End processing [argsreq]: success
+[2024-04-13 18:30:26] INFO root fetch - processPackages [pyxplora-api]: Remove: archive file [/home/abi/fetcher/tmp/pyxplora_api-2.8.3.tar.gz]
+[2024-04-13 18:30:26] INFO root fetch - processPackages [pyxplora-api]: Remove: archive file [/home/abi/fetcher/tmp/pyxplora_api-2.9.0.tar.gz]
+[2024-04-13 18:30:26] INFO root fetch - main [MainThread]: End processing [pyxplora-api]: success
+[2024-04-13 18:30:26] INFO root fetch - main [MainThread]: Store serial: [22753170]
