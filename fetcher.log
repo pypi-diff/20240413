@@ -11111,3 +11111,33 @@
 [2024-04-13 10:48:27] INFO root fetch - processPackages [speech_user_interface]: Remove: archive file [/home/abi/fetcher/tmp/speech_user_interface-0.1.9.tar.gz]
 [2024-04-13 10:48:27] INFO root fetch - main [MainThread]: End processing [speech_user_interface]: success
 [2024-04-13 10:48:27] INFO root fetch - main [MainThread]: Store serial: [22750671]
+[2024-04-13 10:50:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750671]
+[2024-04-13 10:50:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 10:50:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfp-nightly
+[2024-04-13 10:50:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AgentlyCmd
+[2024-04-13 10:50:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: contact-local
+[2024-04-13 10:50:36] INFO root fetch - processPackages [AgentlyCmd]: New version: [0.0.0.1a4] Old Version: [0.0.0.1a3]
+[2024-04-13 10:50:36] INFO root fetch - processPackages [contact-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 10:50:36] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2024-04-13 10:50:36] INFO root fetch - processPackages [AgentlyCmd]: Downloading https://files.pythonhosted.org/packages/89/51/b30c1b54bf0a5153cde107163112b27a75895294c58a4cd6251490538199/AgentlyCmd-0.0.0.1a3.tar.gz
+[2024-04-13 10:50:36] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/be/16/ebf16b1094e104257af6265eee53833e4f737ef6d11426d959009fa9952a/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl
+[2024-04-13 10:50:36] INFO root fetch - processPackages [contact-local]: Downloading https://files.pythonhosted.org/packages/75/64/f3f752681a48297a9101e7de65d41056da1800a0fbd5a27df6e29dd07b37/contact-local-0.0.8.tar.gz
+[2024-04-13 10:50:36] INFO root fetch - processPackages [AgentlyCmd]: Downloading https://files.pythonhosted.org/packages/19/0c/d411e5a5f0531fafe576a94a7d4fe833fcf3c046810eb4311bb085705e95/AgentlyCmd-0.0.0.1a4.tar.gz
+[2024-04-13 10:50:36] INFO root fetch - processPackages [AgentlyCmd]: executing diffoscope
+[2024-04-13 10:50:36] INFO root fetch - processPackages [AgentlyCmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AgentlyCmd-0.0.0.1a3.tar.gz tmp/AgentlyCmd-0.0.0.1a4.tar.gz --markdown 20240413/A/AgentlyCmd/0.0.0.1a3-0.0.0.1a4/README.md --exclude *.pyd
+[2024-04-13 10:50:37] INFO root fetch - processPackages [contact-local]: Downloading https://files.pythonhosted.org/packages/ac/77/272714857d28dc1134b82bfb3d430920fe69a296e6c0ff88f036b594474b/contact-local-0.0.9.tar.gz
+[2024-04-13 10:50:37] INFO root fetch - processPackages [contact-local]: executing diffoscope
+[2024-04-13 10:50:37] INFO root fetch - processPackages [contact-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-local-0.0.8.tar.gz tmp/contact-local-0.0.9.tar.gz --markdown 20240413/c/contact-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 10:50:37] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/f1/98/c1f5a754a26ea1f08e3558803ffb67dd65482de4f6bfadc5415573cd3cb7/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl
+[2024-04-13 10:50:37] INFO root fetch - processPackages [AgentlyCmd]: Remove: archive file [/home/abi/fetcher/tmp/AgentlyCmd-0.0.0.1a3.tar.gz]
+[2024-04-13 10:50:37] INFO root fetch - processPackages [AgentlyCmd]: Remove: archive file [/home/abi/fetcher/tmp/AgentlyCmd-0.0.0.1a4.tar.gz]
+[2024-04-13 10:50:37] INFO root fetch - main [MainThread]: End processing [AgentlyCmd]: success
+[2024-04-13 10:50:37] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2024-04-13 10:50:37] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20240413/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/README.md --exclude *.pyd
+[2024-04-13 10:50:37] INFO root fetch - processPackages [contact-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-local-0.0.8.tar.gz]
+[2024-04-13 10:50:37] INFO root fetch - processPackages [contact-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-local-0.0.9.tar.gz]
+[2024-04-13 10:50:37] INFO root fetch - main [MainThread]: End processing [contact-local]: success
+[2024-04-13 10:50:40] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip]
+[2024-04-13 10:50:40] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
+[2024-04-13 10:50:40] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2024-04-13 10:50:40] INFO root fetch - main [MainThread]: Store serial: [22750679]
