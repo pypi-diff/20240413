@@ -11487,3 +11487,36 @@
 [2024-04-13 11:16:51] INFO root fetch - processPackages [athina]: Remove: archive file [/home/abi/fetcher/tmp/athina-1.2.9.tar.gz]
 [2024-04-13 11:16:51] INFO root fetch - main [MainThread]: End processing [athina]: success
 [2024-04-13 11:16:51] INFO root fetch - main [MainThread]: Store serial: [22750835]
+[2024-04-13 11:18:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750835]
+[2024-04-13 11:18:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 11:18:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tbp-nightly
+[2024-04-13 11:18:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gemini-ai-app-downloader
+[2024-04-13 11:18:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: konickname
+[2024-04-13 11:18:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: runem
+[2024-04-13 11:18:59] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2024-04-13 11:19:00] INFO root fetch - processPackages [runem]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 11:19:00] WARNING root fetch - processPackages [konickname]: Skipping, unable to determine old version
+[2024-04-13 11:19:00] INFO root fetch - main [MainThread]: End processing [konickname] error
+[2024-04-13 11:19:00] INFO root fetch - processPackages [gemini-ai-app-downloader]: New version: [1] Old Version: [0.5]
+[2024-04-13 11:19:00] INFO root fetch - processPackages [tbp-nightly]: Downloading https://files.pythonhosted.org/packages/b9/6c/43a589e5ab1d1b961e5780e41057576c7abd5bf16d3f871d8ef4ebdaf461/tbp-nightly-2.9.0a20221129.tar.gz
+[2024-04-13 11:19:00] INFO root fetch - processPackages [gemini-ai-app-downloader]: Downloading https://files.pythonhosted.org/packages/42/e7/84e31d4d3138e5e41df676c454a3283409ff2ad5cf6b1d39ab766506f914/gemini_ai_app_downloader-0.5.tar.gz
+[2024-04-13 11:19:00] INFO root fetch - processPackages [runem]: Downloading https://files.pythonhosted.org/packages/28/65/fdfa792de2f6558551fe264a3436e1af27d1a73979e3ad0dfc39e21f23f0/runem-0.0.8.tar.gz
+[2024-04-13 11:19:00] INFO root fetch - processPackages [tbp-nightly]: Downloading https://files.pythonhosted.org/packages/2e/31/c611af28c0d42c7cbb86781523f94e57796654fd8b7a7049e8a6db2eecf3/tbp-nightly-2.9.0a20221130.tar.gz
+[2024-04-13 11:19:00] INFO root fetch - processPackages [gemini-ai-app-downloader]: Downloading https://files.pythonhosted.org/packages/60/6a/bdae1837e38a895025517f74db63f5f8ad92de2791f5c3ff8278693fd88c/gemini_ai_app_downloader-1.tar.gz
+[2024-04-13 11:19:00] INFO root fetch - processPackages [runem]: Downloading https://files.pythonhosted.org/packages/6a/6d/bf8eaf2c99dcc17e3bfe15180ab5a59e05aab03c392c2b67617613e61e5c/runem-0.0.9.tar.gz
+[2024-04-13 11:19:00] INFO root fetch - processPackages [gemini-ai-app-downloader]: executing diffoscope
+[2024-04-13 11:19:00] INFO root fetch - processPackages [gemini-ai-app-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gemini_ai_app_downloader-0.5.tar.gz tmp/gemini_ai_app_downloader-1.tar.gz --markdown 20240413/g/gemini-ai-app-downloader/0.5-1/README.md --exclude *.pyd
+[2024-04-13 11:19:00] INFO root fetch - processPackages [runem]: executing diffoscope
+[2024-04-13 11:19:00] INFO root fetch - processPackages [runem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runem-0.0.8.tar.gz tmp/runem-0.0.9.tar.gz --markdown 20240413/r/runem/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 11:19:00] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2024-04-13 11:19:00] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20240413/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/README.md --exclude *.pyd
+[2024-04-13 11:19:01] INFO root fetch - processPackages [gemini-ai-app-downloader]: Remove: archive file [/home/abi/fetcher/tmp/gemini_ai_app_downloader-0.5.tar.gz]
+[2024-04-13 11:19:01] INFO root fetch - processPackages [gemini-ai-app-downloader]: Remove: archive file [/home/abi/fetcher/tmp/gemini_ai_app_downloader-1.tar.gz]
+[2024-04-13 11:19:01] INFO root fetch - main [MainThread]: End processing [gemini-ai-app-downloader]: success
+[2024-04-13 11:19:01] INFO root fetch - processPackages [runem]: Remove: archive file [/home/abi/fetcher/tmp/runem-0.0.8.tar.gz]
+[2024-04-13 11:19:01] INFO root fetch - processPackages [runem]: Remove: archive file [/home/abi/fetcher/tmp/runem-0.0.9.tar.gz]
+[2024-04-13 11:19:01] INFO root fetch - main [MainThread]: End processing [runem]: success
+[2024-04-13 11:19:02] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221129.tar.gz]
+[2024-04-13 11:19:02] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221130.tar.gz]
+[2024-04-13 11:19:02] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2024-04-13 11:19:02] INFO root fetch - main [MainThread]: Store serial: [22750849]
