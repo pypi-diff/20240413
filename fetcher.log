@@ -16759,3 +16759,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 18:32:36] INFO root fetch - processPackages [graylint]: Remove: archive file [/home/abi/fetcher/tmp/graylint-1.1.0.tar.gz]
 [2024-04-13 18:32:36] INFO root fetch - main [MainThread]: End processing [graylint]: success
 [2024-04-13 18:32:36] INFO root fetch - main [MainThread]: Store serial: [22753173]
+[2024-04-13 18:34:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753173]
+[2024-04-13 18:34:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 18:34:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kkpyai
+[2024-04-13 18:34:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dune-rivals
+[2024-04-13 18:34:44] INFO root fetch - processPackages [dune-rivals]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-13 18:34:44] INFO root fetch - processPackages [kkpyai]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-04-13 18:34:44] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/49/08/d6688552c5e0beacbad702fc5169a561e60f5d4573afadc30034774b9c38/dune_rivals-0.2.8.tar.gz
+[2024-04-13 18:34:44] INFO root fetch - processPackages [kkpyai]: Downloading https://files.pythonhosted.org/packages/b7/23/60569189fc20a36e5084182c3ef51f209a6719d80c5e17d2add0fe8cc477/kkpyai-0.5.2.tar.gz
+[2024-04-13 18:34:45] INFO root fetch - processPackages [kkpyai]: Downloading https://files.pythonhosted.org/packages/fb/0a/8600f15051980ea0b28f39bbf59f3f4c7cd24a0ba0d6890402b12c66119a/kkpyai-0.5.3.tar.gz
+[2024-04-13 18:34:45] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/cb/d8/ed0880127df8295a92a4b9d6227081348a235d0fadb5eda4d837c8e1062a/dune_rivals-0.2.9.tar.gz
+[2024-04-13 18:34:45] INFO root fetch - processPackages [kkpyai]: executing diffoscope
+[2024-04-13 18:34:45] INFO root fetch - processPackages [kkpyai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyai-0.5.2.tar.gz tmp/kkpyai-0.5.3.tar.gz --markdown 20240413/k/kkpyai/0.5.2-0.5.3/README.md --exclude *.pyd
+[2024-04-13 18:34:45] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-13 18:34:45] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.2.8.tar.gz tmp/dune_rivals-0.2.9.tar.gz --markdown 20240413/d/dune-rivals/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-13 18:34:45] INFO root fetch - processPackages [kkpyai]: Remove: archive file [/home/abi/fetcher/tmp/kkpyai-0.5.2.tar.gz]
+[2024-04-13 18:34:45] INFO root fetch - processPackages [kkpyai]: Remove: archive file [/home/abi/fetcher/tmp/kkpyai-0.5.3.tar.gz]
+[2024-04-13 18:34:45] INFO root fetch - main [MainThread]: End processing [kkpyai]: success
+[2024-04-13 18:34:45] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.2.8.tar.gz]
+[2024-04-13 18:34:45] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.2.9.tar.gz]
+[2024-04-13 18:34:45] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-13 18:34:45] INFO root fetch - main [MainThread]: Store serial: [22753179]
