@@ -7001,3 +7001,11 @@
 [2024-04-13 04:33:05] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.9.zip]
 [2024-04-13 04:33:05] INFO root fetch - main [MainThread]: End processing [sbcli-mig]: success
 [2024-04-13 04:33:05] INFO root fetch - main [MainThread]: Store serial: [22748995]
+[2024-04-13 04:35:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748995]
+[2024-04-13 04:35:15] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 04:35:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: siliconcompiler
+[2024-04-13 04:35:15] INFO root fetch - processPackages [siliconcompiler]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-04-13 04:35:16] INFO root fetch - processPackages [siliconcompiler]: Downloading https://files.pythonhosted.org/packages/a8/9e/5a4bc1cc4a24cd9394b181819bbc3e7094009e594403bc9bc0abb5147ff4/siliconcompiler-0.9.6-cp39-cp39-win_amd64.whl
+[2024-04-13 04:35:16] WARNING root fetch - processPackages [siliconcompiler]: Skipping package: exceeds size limit 37222537>=10485760
+[2024-04-13 04:35:16] INFO root fetch - main [MainThread]: End processing [siliconcompiler] error
+[2024-04-13 04:35:16] INFO root fetch - main [MainThread]: Store serial: [22749034]
