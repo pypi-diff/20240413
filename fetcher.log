@@ -18997,3 +18997,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 21:12:19] INFO root fetch - processPackages [pytest-sphinx]: Remove: archive file [/home/abi/fetcher/tmp/pytest_sphinx-0.6.3.tar.gz]
 [2024-04-13 21:12:19] INFO root fetch - main [MainThread]: End processing [pytest-sphinx]: success
 [2024-04-13 21:12:19] INFO root fetch - main [MainThread]: Store serial: [22754176]
+[2024-04-13 21:14:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754176]
+[2024-04-13 21:14:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 21:14:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pylibvirt
+[2024-04-13 21:14:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cosmopy
+[2024-04-13 21:14:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dialog-lib
+[2024-04-13 21:14:27] INFO root fetch - processPackages [dialog-lib]: New version: [0.0.1.7] Old Version: [0.0.1.6]
+[2024-04-13 21:14:27] INFO root fetch - processPackages [pylibvirt]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 21:14:27] INFO root fetch - processPackages [cosmopy]: New version: [3.6] Old Version: [3.5.5]
+[2024-04-13 21:14:28] INFO root fetch - processPackages [dialog-lib]: Downloading https://files.pythonhosted.org/packages/78/dd/72df2fec7fc03a437cd8f5e206fd7ea23860a3a631a694c1c690312313e6/dialog_lib-0.0.1.6.tar.gz
+[2024-04-13 21:14:28] INFO root fetch - processPackages [pylibvirt]: Downloading https://files.pythonhosted.org/packages/d6/64/c2d18f0dc8799d590f1cbaef18bf9e9a032b26a40ec350ae5c6f58c03acb/pylibvirt-0.0.8.tar.gz
+[2024-04-13 21:14:28] INFO root fetch - processPackages [cosmopy]: Downloading https://files.pythonhosted.org/packages/a8/89/14632b54c9c9cf0bb67a0f22dd32b1201db08c6ae4bc7904cfb1a214a361/cosmopy-3.5.5.tar.gz
+[2024-04-13 21:14:28] INFO root fetch - processPackages [dialog-lib]: Downloading https://files.pythonhosted.org/packages/0b/7b/1408ca259ecf464092440488897bfe92e57e490dc4645954db681416e82a/dialog_lib-0.0.1.7.tar.gz
+[2024-04-13 21:14:28] INFO root fetch - processPackages [dialog-lib]: executing diffoscope
+[2024-04-13 21:14:28] INFO root fetch - processPackages [dialog-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dialog_lib-0.0.1.6.tar.gz tmp/dialog_lib-0.0.1.7.tar.gz --markdown 20240413/d/dialog-lib/0.0.1.6-0.0.1.7/README.md --exclude *.pyd
+[2024-04-13 21:14:28] INFO root fetch - processPackages [pylibvirt]: Downloading https://files.pythonhosted.org/packages/ae/2f/c364edadb061b3568162a97e4f0ea522955323182e50bc1d210cbaa940d4/pylibvirt-0.0.9.tar.gz
+[2024-04-13 21:14:28] INFO root fetch - processPackages [pylibvirt]: executing diffoscope
+[2024-04-13 21:14:28] INFO root fetch - processPackages [pylibvirt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylibvirt-0.0.8.tar.gz tmp/pylibvirt-0.0.9.tar.gz --markdown 20240413/p/pylibvirt/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 21:14:28] INFO root fetch - processPackages [cosmopy]: Downloading https://files.pythonhosted.org/packages/fa/86/655e86e19255b26b9537460883b078fe0118a8bf3b92930a5b1595ab9b6c/cosmopy-3.6.tar.gz
+[2024-04-13 21:14:28] INFO root fetch - processPackages [cosmopy]: executing diffoscope
+[2024-04-13 21:14:28] INFO root fetch - processPackages [cosmopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cosmopy-3.5.5.tar.gz tmp/cosmopy-3.6.tar.gz --markdown 20240413/c/cosmopy/3.5.5-3.6/README.md --exclude *.pyd
+[2024-04-13 21:14:29] INFO root fetch - processPackages [dialog-lib]: Remove: archive file [/home/abi/fetcher/tmp/dialog_lib-0.0.1.6.tar.gz]
+[2024-04-13 21:14:29] INFO root fetch - processPackages [dialog-lib]: Remove: archive file [/home/abi/fetcher/tmp/dialog_lib-0.0.1.7.tar.gz]
+[2024-04-13 21:14:29] INFO root fetch - main [MainThread]: End processing [dialog-lib]: success
+[2024-04-13 21:14:29] INFO root fetch - processPackages [pylibvirt]: Remove: archive file [/home/abi/fetcher/tmp/pylibvirt-0.0.8.tar.gz]
+[2024-04-13 21:14:29] INFO root fetch - processPackages [pylibvirt]: Remove: archive file [/home/abi/fetcher/tmp/pylibvirt-0.0.9.tar.gz]
+[2024-04-13 21:14:29] INFO root fetch - main [MainThread]: End processing [pylibvirt]: success
+[2024-04-13 21:14:29] INFO root fetch - processPackages [cosmopy]: Remove: archive file [/home/abi/fetcher/tmp/cosmopy-3.5.5.tar.gz]
+[2024-04-13 21:14:29] INFO root fetch - processPackages [cosmopy]: Remove: archive file [/home/abi/fetcher/tmp/cosmopy-3.6.tar.gz]
+[2024-04-13 21:14:29] INFO root fetch - main [MainThread]: End processing [cosmopy]: success
+[2024-04-13 21:14:29] INFO root fetch - main [MainThread]: Store serial: [22754186]
