@@ -13652,3 +13652,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:24:15] INFO root fetch - processPackages [gmcapsule]: Remove: archive file [/home/abi/fetcher/tmp/gmcapsule-0.7.0.tar.gz]
 [2024-04-13 14:24:15] INFO root fetch - main [MainThread]: End processing [gmcapsule]: success
 [2024-04-13 14:24:15] INFO root fetch - main [MainThread]: Store serial: [22751695]
+[2024-04-13 14:26:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751695]
+[2024-04-13 14:26:24] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 14:26:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easyencryption
+[2024-04-13 14:26:24] INFO root fetch - processPackages [easyencryption]: New version: [0.2.0.0] Old Version: [0.1.8.9]
+[2024-04-13 14:26:24] INFO root fetch - processPackages [easyencryption]: Downloading https://files.pythonhosted.org/packages/1d/8c/e005a41a4717af23b9d31b93a852065485d4031583df545ae98b6582a883/easyencryption-0.1.8.9.tar.gz
+[2024-04-13 14:26:24] INFO root fetch - processPackages [easyencryption]: Downloading https://files.pythonhosted.org/packages/c2/6f/60aa9a3ec34817b8192a5ea5c879c09470ec3db330cae5bd3307663c14db/easyencryption-0.2.tar.gz
+[2024-04-13 14:26:24] INFO root fetch - processPackages [easyencryption]: executing diffoscope
+[2024-04-13 14:26:24] INFO root fetch - processPackages [easyencryption]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyencryption-0.1.8.9.tar.gz tmp/easyencryption-0.2.tar.gz --markdown 20240413/e/easyencryption/0.1.8.9-0.2.0.0/README.md --exclude *.pyd
+[2024-04-13 14:26:25] INFO root fetch - processPackages [easyencryption]: Remove: archive file [/home/abi/fetcher/tmp/easyencryption-0.1.8.9.tar.gz]
+[2024-04-13 14:26:25] INFO root fetch - processPackages [easyencryption]: Remove: archive file [/home/abi/fetcher/tmp/easyencryption-0.2.tar.gz]
+[2024-04-13 14:26:25] INFO root fetch - main [MainThread]: End processing [easyencryption]: success
+[2024-04-13 14:26:25] INFO root fetch - main [MainThread]: Store serial: [22751698]
