@@ -15980,3 +15980,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 17:20:10] INFO root fetch - processPackages [pulsar-client]: Remove: archive file [/home/abi/fetcher/tmp/pulsar_client-3.5.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip]
 [2024-04-13 17:20:10] INFO root fetch - main [MainThread]: End processing [pulsar-client]: success
 [2024-04-13 17:20:10] INFO root fetch - main [MainThread]: Store serial: [22752859]
+[2024-04-13 17:22:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752859]
+[2024-04-13 17:22:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 17:22:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langalf
+[2024-04-13 17:22:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: asmr-spider
+[2024-04-13 17:22:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: literal-dict
+[2024-04-13 17:22:19] WARNING root fetch - processPackages [langalf]: Skipping, unable to determine old version
+[2024-04-13 17:22:19] INFO root fetch - main [MainThread]: End processing [langalf] error
+[2024-04-13 17:22:19] INFO root fetch - processPackages [asmr-spider]: New version: [0.2.2b1] Old Version: [0.2.1]
+[2024-04-13 17:22:19] INFO root fetch - processPackages [literal-dict]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-13 17:22:19] INFO root fetch - processPackages [literal-dict]: Downloading https://files.pythonhosted.org/packages/13/3b/95a071a9a68d5d9925cdf3c777f0683c600660289386e6c106b5e10fcd07/literal_dict-1.0.0.tar.gz
+[2024-04-13 17:22:19] INFO root fetch - processPackages [asmr-spider]: Downloading https://files.pythonhosted.org/packages/fc/87/e1f1f743ec319a760a984849e1edb945fed426a126cabda135902ee2b2f9/asmr_spider-0.2.1.tar.gz
+[2024-04-13 17:22:20] INFO root fetch - processPackages [asmr-spider]: Downloading https://files.pythonhosted.org/packages/1d/94/f10cbb01ee3a5190049228e7306c2ab6ee5d06a9969da38f804b304b6f81/asmr_spider-0.2.2b1.tar.gz
+[2024-04-13 17:22:20] INFO root fetch - processPackages [literal-dict]: Downloading https://files.pythonhosted.org/packages/1d/3c/db0ff30a23d9f378516270fdf0f6d48c6b8bceabe86a25048b43bcdf0541/literal_dict-1.0.1.tar.gz
+[2024-04-13 17:22:20] INFO root fetch - processPackages [asmr-spider]: executing diffoscope
+[2024-04-13 17:22:20] INFO root fetch - processPackages [asmr-spider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asmr_spider-0.2.1.tar.gz tmp/asmr_spider-0.2.2b1.tar.gz --markdown 20240413/a/asmr-spider/0.2.1-0.2.2b1/README.md --exclude *.pyd
+[2024-04-13 17:22:20] INFO root fetch - processPackages [literal-dict]: executing diffoscope
+[2024-04-13 17:22:20] INFO root fetch - processPackages [literal-dict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/literal_dict-1.0.0.tar.gz tmp/literal_dict-1.0.1.tar.gz --markdown 20240413/l/literal-dict/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-13 17:22:20] INFO root fetch - processPackages [asmr-spider]: Remove: archive file [/home/abi/fetcher/tmp/asmr_spider-0.2.1.tar.gz]
+[2024-04-13 17:22:20] INFO root fetch - processPackages [asmr-spider]: Remove: archive file [/home/abi/fetcher/tmp/asmr_spider-0.2.2b1.tar.gz]
+[2024-04-13 17:22:20] INFO root fetch - main [MainThread]: End processing [asmr-spider]: success
+[2024-04-13 17:22:20] INFO root fetch - processPackages [literal-dict]: Remove: archive file [/home/abi/fetcher/tmp/literal_dict-1.0.0.tar.gz]
+[2024-04-13 17:22:20] INFO root fetch - processPackages [literal-dict]: Remove: archive file [/home/abi/fetcher/tmp/literal_dict-1.0.1.tar.gz]
+[2024-04-13 17:22:20] INFO root fetch - main [MainThread]: End processing [literal-dict]: success
+[2024-04-13 17:22:20] INFO root fetch - main [MainThread]: Store serial: [22752886]
