@@ -7300,3 +7300,33 @@
 [2024-04-13 05:30:05] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz]
 [2024-04-13 05:30:05] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
 [2024-04-13 05:30:05] INFO root fetch - main [MainThread]: Store serial: [22749189]
+[2024-04-13 05:32:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749189]
+[2024-04-13 05:32:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 05:32:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sbcli-mig
+[2024-04-13 05:32:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: brave-torch
+[2024-04-13 05:32:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qlever
+[2024-04-13 05:32:13] INFO root fetch - processPackages [sbcli-mig]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-13 05:32:13] INFO root fetch - processPackages [qlever]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-04-13 05:32:13] INFO root fetch - processPackages [sbcli-mig]: Downloading https://files.pythonhosted.org/packages/06/2f/2b2f1cfa7b91365cf5cd645c5967a8e8a8bd7f1c8e89f91d7e43e2aefc87/sbcli-mig-1.0.8.zip
+[2024-04-13 05:32:13] INFO root fetch - processPackages [qlever]: Downloading https://files.pythonhosted.org/packages/41/64/90e4d387f98bf4ad8f8dcb98626bfe6f2f0bbeda4c8712792a95963fbc6b/qlever-0.4.2-py3-none-any.whl
+[2024-04-13 05:32:13] INFO root fetch - processPackages [brave-torch]: New version: [4.7.9] Old Version: [4.7.8]
+[2024-04-13 05:32:14] INFO root fetch - processPackages [brave-torch]: Downloading https://files.pythonhosted.org/packages/97/32/67a8b2872dff6647362139b2ea84097fa719098120ffc587356d092d9cd7/brave_torch-4.7.8.tar.gz
+[2024-04-13 05:32:14] INFO root fetch - processPackages [qlever]: Downloading https://files.pythonhosted.org/packages/90/28/0d3c8a820d698ba68cedc51c333a8026c34243f443e2c85abef24be9ff95/qlever-0.4.3-py3-none-any.whl
+[2024-04-13 05:32:14] INFO root fetch - processPackages [sbcli-mig]: Downloading https://files.pythonhosted.org/packages/4b/15/9c1afe915f08547ce582aeae079f597b2a173df003109bcd1d0f0bbf037e/sbcli-mig-1.0.9.zip
+[2024-04-13 05:32:14] INFO root fetch - processPackages [qlever]: executing diffoscope
+[2024-04-13 05:32:14] INFO root fetch - processPackages [qlever]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qlever-0.4.2-py3-none-any.whl.zip tmp/qlever-0.4.3-py3-none-any.whl.zip --markdown 20240413/q/qlever/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-04-13 05:32:14] INFO root fetch - processPackages [sbcli-mig]: executing diffoscope
+[2024-04-13 05:32:14] INFO root fetch - processPackages [sbcli-mig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbcli-mig-1.0.8.zip tmp/sbcli-mig-1.0.9.zip --markdown 20240413/s/sbcli-mig/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-13 05:32:14] INFO root fetch - processPackages [brave-torch]: Downloading https://files.pythonhosted.org/packages/bb/12/8b9ebe67ad9f7c4d74e31638e2fcbd5eb65f95c35c77a41bf3c42208dcb1/brave_torch-4.7.9.tar.gz
+[2024-04-13 05:32:14] INFO root fetch - processPackages [brave-torch]: executing diffoscope
+[2024-04-13 05:32:14] INFO root fetch - processPackages [brave-torch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brave_torch-4.7.8.tar.gz tmp/brave_torch-4.7.9.tar.gz --markdown 20240413/b/brave-torch/4.7.8-4.7.9/README.md --exclude *.pyd
+[2024-04-13 05:32:14] INFO root fetch - processPackages [qlever]: Remove: archive file [/home/abi/fetcher/tmp/qlever-0.4.2-py3-none-any.whl.zip]
+[2024-04-13 05:32:14] INFO root fetch - processPackages [qlever]: Remove: archive file [/home/abi/fetcher/tmp/qlever-0.4.3-py3-none-any.whl.zip]
+[2024-04-13 05:32:14] INFO root fetch - main [MainThread]: End processing [qlever]: success
+[2024-04-13 05:32:15] INFO root fetch - processPackages [brave-torch]: Remove: archive file [/home/abi/fetcher/tmp/brave_torch-4.7.8.tar.gz]
+[2024-04-13 05:32:15] INFO root fetch - processPackages [brave-torch]: Remove: archive file [/home/abi/fetcher/tmp/brave_torch-4.7.9.tar.gz]
+[2024-04-13 05:32:15] INFO root fetch - main [MainThread]: End processing [brave-torch]: success
+[2024-04-13 05:32:15] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.8.zip]
+[2024-04-13 05:32:15] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.9.zip]
+[2024-04-13 05:32:15] INFO root fetch - main [MainThread]: End processing [sbcli-mig]: success
+[2024-04-13 05:32:15] INFO root fetch - main [MainThread]: Store serial: [22749199]
