@@ -8906,3 +8906,24 @@
 [2024-04-13 08:17:01] INFO root fetch - processPackages [pulumi-libvirt]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_libvirt-0.4.6a1712987373.tar.gz]
 [2024-04-13 08:17:01] INFO root fetch - main [MainThread]: End processing [pulumi-libvirt]: success
 [2024-04-13 08:17:01] INFO root fetch - main [MainThread]: Store serial: [22749829]
+[2024-04-13 08:19:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749829]
+[2024-04-13 08:19:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 08:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-hcloud
+[2024-04-13 08:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-auditlog
+[2024-04-13 08:19:10] INFO root fetch - processPackages [pulumi-hcloud]: New version: [1.9.0a1657117726] Old Version: [1.9.0a1654086467]
+[2024-04-13 08:19:10] INFO root fetch - processPackages [odoo-addon-auditlog]: New version: [17.0.1.0.0.2] Old Version: [16.0.2.1.0]
+[2024-04-13 08:19:10] INFO root fetch - processPackages [odoo-addon-auditlog]: Downloading https://files.pythonhosted.org/packages/f8/7d/4dae503037304fb43ffe588848aaef2946e025213bad39fdf41c7ddfff4e/odoo_addon_auditlog-16.0.2.1.0-py3-none-any.whl
+[2024-04-13 08:19:10] INFO root fetch - processPackages [pulumi-hcloud]: Downloading https://files.pythonhosted.org/packages/9e/22/c81b563f1969f4bcdaa7c4060d0d67a0d9deb4bc415487e125f459e269e7/pulumi_hcloud-1.9.0a1654086467.tar.gz
+[2024-04-13 08:19:11] INFO root fetch - processPackages [odoo-addon-auditlog]: Downloading https://files.pythonhosted.org/packages/c2/39/3db2ce2cdf26fd51cb68e8385f0c3ee6eeff1cee774c8d673fc2466e533f/odoo_addon_auditlog-17.0.1.0.0.2-py3-none-any.whl
+[2024-04-13 08:19:11] INFO root fetch - processPackages [pulumi-hcloud]: Downloading https://files.pythonhosted.org/packages/de/c3/b526f6942ee390fb3e0e080d961419b28ee26cada0150934184297ffeb15/pulumi_hcloud-1.9.0a1657117726.tar.gz
+[2024-04-13 08:19:11] INFO root fetch - processPackages [odoo-addon-auditlog]: executing diffoscope
+[2024-04-13 08:19:11] INFO root fetch - processPackages [odoo-addon-auditlog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_auditlog-16.0.2.1.0-py3-none-any.whl.zip tmp/odoo_addon_auditlog-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240413/o/odoo-addon-auditlog/16.0.2.1.0-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-04-13 08:19:11] INFO root fetch - processPackages [pulumi-hcloud]: executing diffoscope
+[2024-04-13 08:19:11] INFO root fetch - processPackages [pulumi-hcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_hcloud-1.9.0a1654086467.tar.gz tmp/pulumi_hcloud-1.9.0a1657117726.tar.gz --markdown 20240413/p/pulumi-hcloud/1.9.0a1654086467-1.9.0a1657117726/README.md --exclude *.pyd
+[2024-04-13 08:19:12] INFO root fetch - processPackages [pulumi-hcloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_hcloud-1.9.0a1654086467.tar.gz]
+[2024-04-13 08:19:12] INFO root fetch - processPackages [pulumi-hcloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_hcloud-1.9.0a1657117726.tar.gz]
+[2024-04-13 08:19:12] INFO root fetch - main [MainThread]: End processing [pulumi-hcloud]: success
+[2024-04-13 08:19:12] INFO root fetch - processPackages [odoo-addon-auditlog]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_auditlog-16.0.2.1.0-py3-none-any.whl.zip]
+[2024-04-13 08:19:12] INFO root fetch - processPackages [odoo-addon-auditlog]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_auditlog-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-04-13 08:19:12] INFO root fetch - main [MainThread]: End processing [odoo-addon-auditlog]: success
+[2024-04-13 08:19:12] INFO root fetch - main [MainThread]: Store serial: [22749834]
