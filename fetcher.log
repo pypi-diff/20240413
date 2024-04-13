@@ -13879,3 +13879,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:41:39] INFO root fetch - processPackages [faster-translate]: Remove: archive file [/home/abi/fetcher/tmp/faster_translate-0.1.3.tar.gz]
 [2024-04-13 14:41:39] INFO root fetch - main [MainThread]: End processing [faster-translate]: success
 [2024-04-13 14:41:39] INFO root fetch - main [MainThread]: Store serial: [22751795]
+[2024-04-13 14:43:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751795]
+[2024-04-13 14:43:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 14:43:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wansuite
+[2024-04-13 14:43:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bump-my-version
+[2024-04-13 14:43:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sardana
+[2024-04-13 14:43:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyqwe-extra-dotenv
+[2024-04-13 14:43:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: arion-library
+[2024-04-13 14:43:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: diaspora-event-sdk
+[2024-04-13 14:43:48] INFO root fetch - processPackages [wansuite]: New version: [2.4] Old Version: [2.3]
+[2024-04-13 14:43:48] INFO root fetch - processPackages [arion-library]: New version: [1.1rc46.dev46] Old Version: [1.1rc45.dev45]
+[2024-04-13 14:43:48] INFO root fetch - processPackages [diaspora-event-sdk]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-13 14:43:48] INFO root fetch - processPackages [pyqwe-extra-dotenv]: New version: [0.2.1] Old Version: [0.1.0]
+[2024-04-13 14:43:48] INFO root fetch - processPackages [arion-library]: Downloading https://files.pythonhosted.org/packages/a7/20/d38aedda221010ebae85533f4ad5ac5cbb5238feb6179fa892efa975bafe/arion_library-1.1rc45.dev45.tar.gz
+[2024-04-13 14:43:48] INFO root fetch - processPackages [wansuite]: Downloading https://files.pythonhosted.org/packages/7f/38/00f22bc5f16207cc740e4823e39a7e51b17066ec6ef303c9d3384a9144fc/wansuite-2.3.tar.gz
+[2024-04-13 14:43:48] INFO root fetch - processPackages [sardana]: New version: [3.4.4] Old Version: [3.4.3]
+[2024-04-13 14:43:48] INFO root fetch - processPackages [bump-my-version]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-13 14:43:48] INFO root fetch - processPackages [pyqwe-extra-dotenv]: Downloading https://files.pythonhosted.org/packages/2f/80/e32e486048d4bc98d80fcaa4e109c1220ca2ad340914fc8ebf9a15c375bb/pyqwe_extra_dotenv-0.1.0.tar.gz
+[2024-04-13 14:43:48] INFO root fetch - processPackages [sardana]: Downloading https://files.pythonhosted.org/packages/18/0b/cb9c15a1330bcb204f40a781c00b3d8d009118010e823c7c3de499464d1d/sardana-3.4.3.tar.gz
+[2024-04-13 14:43:48] INFO root fetch - processPackages [diaspora-event-sdk]: Downloading https://files.pythonhosted.org/packages/52/ff/2b1d98a5065592b8e02d2fafbe44e52b073f9bf6fe2024e09619648648b3/diaspora-event-sdk-0.2.2.tar.gz
+[2024-04-13 14:43:48] INFO root fetch - processPackages [bump-my-version]: Downloading https://files.pythonhosted.org/packages/f8/34/e274cf63e2ef75cc3861078cd12992e1c20dc2d82fc9cb0fe006f777fb25/bump-my-version-0.9.2.tar.gz
+[2024-04-13 14:43:48] INFO root fetch - processPackages [arion-library]: Downloading https://files.pythonhosted.org/packages/0b/6f/a47b28fc7c832e64f4995e0c469de33e1949961bf3cc4e13ed58a942b8ee/arion_library-1.1rc46.dev46.tar.gz
+[2024-04-13 14:43:48] INFO root fetch - processPackages [wansuite]: Downloading https://files.pythonhosted.org/packages/7d/98/a0fd0d1df4f2e5e24478e221f488ab5c72b3f24142bd00a0b2d46bdce082/wansuite-2.4.tar.gz
+[2024-04-13 14:43:48] WARNING root fetch - processPackages [sardana]: Skipping package: exceeds size limit 13383152>=10485760
+[2024-04-13 14:43:48] INFO root fetch - main [MainThread]: End processing [sardana] error
+[2024-04-13 14:43:48] INFO root fetch - processPackages [arion-library]: executing diffoscope
+[2024-04-13 14:43:48] INFO root fetch - processPackages [arion-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arion_library-1.1rc45.dev45.tar.gz tmp/arion_library-1.1rc46.dev46.tar.gz --markdown 20240413/a/arion-library/1.1rc45.dev45-1.1rc46.dev46/README.md --exclude *.pyd
+[2024-04-13 14:43:48] INFO root fetch - processPackages [wansuite]: executing diffoscope
+[2024-04-13 14:43:48] INFO root fetch - processPackages [wansuite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wansuite-2.3.tar.gz tmp/wansuite-2.4.tar.gz --markdown 20240413/w/wansuite/2.3-2.4/README.md --exclude *.pyd
+[2024-04-13 14:43:48] INFO root fetch - processPackages [diaspora-event-sdk]: Downloading https://files.pythonhosted.org/packages/0e/00/56d541e0775c050c8d842976593bb495e75387e258c6a0cad04c5c387bbc/diaspora-event-sdk-0.2.3.tar.gz
+[2024-04-13 14:43:49] INFO root fetch - processPackages [bump-my-version]: Downloading https://files.pythonhosted.org/packages/d1/bf/1073462633f6c6eb43459c515faed3a75effe1cd42098a5f2e28a3613a18/bump-my-version-0.9.3.tar.gz
+[2024-04-13 14:43:49] INFO root fetch - processPackages [pyqwe-extra-dotenv]: Downloading https://files.pythonhosted.org/packages/5d/41/481d33be593602c15cc3d8a716e0ea3a2315acbddd0048d7382ecc9a8ead/pyqwe_extra_dotenv-0.2.1.tar.gz
+[2024-04-13 14:43:49] INFO root fetch - processPackages [diaspora-event-sdk]: executing diffoscope
+[2024-04-13 14:43:49] INFO root fetch - processPackages [diaspora-event-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diaspora-event-sdk-0.2.2.tar.gz tmp/diaspora-event-sdk-0.2.3.tar.gz --markdown 20240413/d/diaspora-event-sdk/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-13 14:43:49] INFO root fetch - processPackages [pyqwe-extra-dotenv]: executing diffoscope
+[2024-04-13 14:43:49] INFO root fetch - processPackages [pyqwe-extra-dotenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqwe_extra_dotenv-0.1.0.tar.gz tmp/pyqwe_extra_dotenv-0.2.1.tar.gz --markdown 20240413/p/pyqwe-extra-dotenv/0.1.0-0.2.1/README.md --exclude *.pyd
+[2024-04-13 14:43:49] INFO root fetch - processPackages [bump-my-version]: executing diffoscope
+[2024-04-13 14:43:49] INFO root fetch - processPackages [bump-my-version]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bump-my-version-0.9.2.tar.gz tmp/bump-my-version-0.9.3.tar.gz --markdown 20240413/b/bump-my-version/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-13 14:43:49] INFO root fetch - processPackages [wansuite]: Remove: archive file [/home/abi/fetcher/tmp/wansuite-2.3.tar.gz]
+[2024-04-13 14:43:49] INFO root fetch - processPackages [wansuite]: Remove: archive file [/home/abi/fetcher/tmp/wansuite-2.4.tar.gz]
+[2024-04-13 14:43:49] INFO root fetch - main [MainThread]: End processing [wansuite]: success
+[2024-04-13 14:43:49] INFO root fetch - processPackages [arion-library]: Remove: archive file [/home/abi/fetcher/tmp/arion_library-1.1rc45.dev45.tar.gz]
+[2024-04-13 14:43:49] INFO root fetch - processPackages [arion-library]: Remove: archive file [/home/abi/fetcher/tmp/arion_library-1.1rc46.dev46.tar.gz]
+[2024-04-13 14:43:49] INFO root fetch - main [MainThread]: End processing [arion-library]: success
+[2024-04-13 14:43:49] INFO root fetch - processPackages [pyqwe-extra-dotenv]: Remove: archive file [/home/abi/fetcher/tmp/pyqwe_extra_dotenv-0.1.0.tar.gz]
+[2024-04-13 14:43:49] INFO root fetch - processPackages [pyqwe-extra-dotenv]: Remove: archive file [/home/abi/fetcher/tmp/pyqwe_extra_dotenv-0.2.1.tar.gz]
+[2024-04-13 14:43:49] INFO root fetch - main [MainThread]: End processing [pyqwe-extra-dotenv]: success
+[2024-04-13 14:43:49] INFO root fetch - processPackages [diaspora-event-sdk]: Remove: archive file [/home/abi/fetcher/tmp/diaspora-event-sdk-0.2.2.tar.gz]
+[2024-04-13 14:43:49] INFO root fetch - processPackages [diaspora-event-sdk]: Remove: archive file [/home/abi/fetcher/tmp/diaspora-event-sdk-0.2.3.tar.gz]
+[2024-04-13 14:43:49] INFO root fetch - main [MainThread]: End processing [diaspora-event-sdk]: success
+[2024-04-13 14:43:50] INFO root fetch - processPackages [bump-my-version]: Remove: archive file [/home/abi/fetcher/tmp/bump-my-version-0.9.2.tar.gz]
+[2024-04-13 14:43:50] INFO root fetch - processPackages [bump-my-version]: Remove: archive file [/home/abi/fetcher/tmp/bump-my-version-0.9.3.tar.gz]
+[2024-04-13 14:43:50] INFO root fetch - main [MainThread]: End processing [bump-my-version]: success
+[2024-04-13 14:43:50] INFO root fetch - main [MainThread]: Store serial: [22751813]
