@@ -13371,3 +13371,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 13:51:40] INFO root fetch - processPackages [get-rankings]: Remove: archive file [/home/abi/fetcher/tmp/get_rankings-0.9.tar.gz]
 [2024-04-13 13:51:40] INFO root fetch - main [MainThread]: End processing [get-rankings]: success
 [2024-04-13 13:51:40] INFO root fetch - main [MainThread]: Store serial: [22751576]
+[2024-04-13 13:53:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751576]
+[2024-04-13 13:53:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 13:53:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pancho
+[2024-04-13 13:53:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bsl40494773
+[2024-04-13 13:53:49] INFO root fetch - processPackages [pancho]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-13 13:53:49] WARNING root fetch - processPackages [bsl40494773]: Skipping, unable to determine old version
+[2024-04-13 13:53:49] INFO root fetch - main [MainThread]: End processing [bsl40494773] error
+[2024-04-13 13:53:49] INFO root fetch - processPackages [pancho]: Downloading https://files.pythonhosted.org/packages/bf/c8/9acab71c3702181c94d28c1b99c5b439563940f54232365385153e680098/pancho-1.0.0.tar.gz
+[2024-04-13 13:53:49] INFO root fetch - processPackages [pancho]: Downloading https://files.pythonhosted.org/packages/fd/a0/061a382344cce1be4517cf6cea5355fa8c6a2d48ac404e1e3c8b9baf421a/pancho-1.0.1.tar.gz
+[2024-04-13 13:53:50] INFO root fetch - processPackages [pancho]: executing diffoscope
+[2024-04-13 13:53:50] INFO root fetch - processPackages [pancho]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pancho-1.0.0.tar.gz tmp/pancho-1.0.1.tar.gz --markdown 20240413/p/pancho/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-13 13:53:50] INFO root fetch - processPackages [pancho]: Remove: archive file [/home/abi/fetcher/tmp/pancho-1.0.0.tar.gz]
+[2024-04-13 13:53:50] INFO root fetch - processPackages [pancho]: Remove: archive file [/home/abi/fetcher/tmp/pancho-1.0.1.tar.gz]
+[2024-04-13 13:53:50] INFO root fetch - main [MainThread]: End processing [pancho]: success
+[2024-04-13 13:53:50] INFO root fetch - main [MainThread]: Store serial: [22751585]
