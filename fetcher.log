@@ -11956,3 +11956,24 @@
 [2024-04-13 12:04:46] WARNING root fetch - processPackages [Web3-Model]: Skipping, unable to determine old version
 [2024-04-13 12:04:46] INFO root fetch - main [MainThread]: End processing [Web3-Model] error
 [2024-04-13 12:04:46] INFO root fetch - main [MainThread]: Store serial: [22751032]
+[2024-04-13 12:06:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751032]
+[2024-04-13 12:06:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 12:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wizata-dsapi
+[2024-04-13 12:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wwpdb.apps.workmanager
+[2024-04-13 12:06:55] INFO root fetch - processPackages [wwpdb.apps.workmanager]: New version: [0.25] Old Version: [0.24.dev1]
+[2024-04-13 12:06:55] INFO root fetch - processPackages [wizata-dsapi]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-13 12:06:55] INFO root fetch - processPackages [wwpdb.apps.workmanager]: Downloading https://files.pythonhosted.org/packages/5b/09/25201fd744fa5d55c624ae2f586037dd0282c0af3f176151de252ad400ce/wwpdb.apps.workmanager-0.24.dev1.tar.gz
+[2024-04-13 12:06:55] INFO root fetch - processPackages [wizata-dsapi]: Downloading https://files.pythonhosted.org/packages/f1/0a/0508b1f02ec8c24958430101972d9c902439dc9f16329d030ce8517ea7be/wizata-dsapi-0.4.8.tar.gz
+[2024-04-13 12:06:55] INFO root fetch - processPackages [wwpdb.apps.workmanager]: Downloading https://files.pythonhosted.org/packages/2e/d0/66ca05447487bc0a23488177d8b9101d5912a1a16bd993a84ab398208e1e/wwpdb.apps.workmanager-0.25.tar.gz
+[2024-04-13 12:06:55] INFO root fetch - processPackages [wizata-dsapi]: Downloading https://files.pythonhosted.org/packages/8d/db/a0ae202d1e8bb1b56d320058ac8bef6d9f6ec02eb54e2cc69f637e04a601/wizata-dsapi-0.4.9.tar.gz
+[2024-04-13 12:06:55] INFO root fetch - processPackages [wwpdb.apps.workmanager]: executing diffoscope
+[2024-04-13 12:06:55] INFO root fetch - processPackages [wwpdb.apps.workmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.apps.workmanager-0.24.dev1.tar.gz tmp/wwpdb.apps.workmanager-0.25.tar.gz --markdown 20240413/w/wwpdb.apps.workmanager/0.24.dev1-0.25/README.md --exclude *.pyd
+[2024-04-13 12:06:55] INFO root fetch - processPackages [wizata-dsapi]: executing diffoscope
+[2024-04-13 12:06:55] INFO root fetch - processPackages [wizata-dsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizata-dsapi-0.4.8.tar.gz tmp/wizata-dsapi-0.4.9.tar.gz --markdown 20240413/w/wizata-dsapi/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-13 12:06:56] INFO root fetch - processPackages [wizata-dsapi]: Remove: archive file [/home/abi/fetcher/tmp/wizata-dsapi-0.4.8.tar.gz]
+[2024-04-13 12:06:56] INFO root fetch - processPackages [wizata-dsapi]: Remove: archive file [/home/abi/fetcher/tmp/wizata-dsapi-0.4.9.tar.gz]
+[2024-04-13 12:06:56] INFO root fetch - main [MainThread]: End processing [wizata-dsapi]: success
+[2024-04-13 12:06:56] INFO root fetch - processPackages [wwpdb.apps.workmanager]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.apps.workmanager-0.24.dev1.tar.gz]
+[2024-04-13 12:06:56] INFO root fetch - processPackages [wwpdb.apps.workmanager]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.apps.workmanager-0.25.tar.gz]
+[2024-04-13 12:06:56] INFO root fetch - main [MainThread]: End processing [wwpdb.apps.workmanager]: success
+[2024-04-13 12:06:56] INFO root fetch - main [MainThread]: Store serial: [22751038]
