@@ -20589,3 +20589,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 23:25:59] INFO root fetch - processPackages [pulumi-artifactory]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_artifactory-6.6.0a1713041216.tar.gz]
 [2024-04-13 23:25:59] INFO root fetch - main [MainThread]: End processing [pulumi-artifactory]: success
 [2024-04-13 23:25:59] INFO root fetch - main [MainThread]: Store serial: [22754920]
+[2024-04-13 23:28:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754920]
+[2024-04-13 23:28:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 23:28:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: VideoOpinionMining
+[2024-04-13 23:28:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: resamp
+[2024-04-13 23:28:07] INFO root fetch - processPackages [VideoOpinionMining]: New version: [1.2] Old Version: [1.1]
+[2024-04-13 23:28:07] INFO root fetch - processPackages [resamp]: New version: [1.6.8] Old Version: [1.6.7.4]
+[2024-04-13 23:28:08] INFO root fetch - processPackages [VideoOpinionMining]: Downloading https://files.pythonhosted.org/packages/43/c0/eaa38fa99e653f0408e1acfc95ae94d7f0fca7ab34f6554c87c3dd86a731/VideoOpinionMining-1.1.tar.gz
+[2024-04-13 23:28:08] INFO root fetch - processPackages [resamp]: Downloading https://files.pythonhosted.org/packages/10/09/5fb924ae81574a8a12edd11339bcb1169c7ba8ec61138743a92799a78596/resamp-1.6.7.4.tar.gz
+[2024-04-13 23:28:08] INFO root fetch - processPackages [resamp]: Downloading https://files.pythonhosted.org/packages/1e/91/dec7edb65cf4c14277f4afb15d48bc745e460402bfbbd2e8f31aedbcb574/resamp-1.6.8.tar.gz
+[2024-04-13 23:28:08] INFO root fetch - processPackages [VideoOpinionMining]: Downloading https://files.pythonhosted.org/packages/6e/88/932176897b4455908cb658a78df7d8b83b41daf5932615493fdd54c24a60/videoopinionmining-1.2.tar.gz
+[2024-04-13 23:28:08] INFO root fetch - processPackages [VideoOpinionMining]: executing diffoscope
+[2024-04-13 23:28:08] INFO root fetch - processPackages [VideoOpinionMining]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VideoOpinionMining-1.1.tar.gz tmp/videoopinionmining-1.2.tar.gz --markdown 20240413/V/VideoOpinionMining/1.1-1.2/README.md --exclude *.pyd
+[2024-04-13 23:28:08] INFO root fetch - processPackages [resamp]: executing diffoscope
+[2024-04-13 23:28:08] INFO root fetch - processPackages [resamp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resamp-1.6.7.4.tar.gz tmp/resamp-1.6.8.tar.gz --markdown 20240413/r/resamp/1.6.7.4-1.6.8/README.md --exclude *.pyd
+[2024-04-13 23:28:09] INFO root fetch - processPackages [VideoOpinionMining]: Remove: archive file [/home/abi/fetcher/tmp/VideoOpinionMining-1.1.tar.gz]
+[2024-04-13 23:28:09] INFO root fetch - processPackages [VideoOpinionMining]: Remove: archive file [/home/abi/fetcher/tmp/videoopinionmining-1.2.tar.gz]
+[2024-04-13 23:28:09] INFO root fetch - main [MainThread]: End processing [VideoOpinionMining]: success
+[2024-04-13 23:28:09] INFO root fetch - processPackages [resamp]: Remove: archive file [/home/abi/fetcher/tmp/resamp-1.6.7.4.tar.gz]
+[2024-04-13 23:28:09] INFO root fetch - processPackages [resamp]: Remove: archive file [/home/abi/fetcher/tmp/resamp-1.6.8.tar.gz]
+[2024-04-13 23:28:09] INFO root fetch - main [MainThread]: End processing [resamp]: success
+[2024-04-13 23:28:09] INFO root fetch - main [MainThread]: Store serial: [22754926]
