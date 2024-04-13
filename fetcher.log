@@ -13195,3 +13195,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 13:40:34] INFO root fetch - processPackages [aiavatar]: Remove: archive file [/home/abi/fetcher/tmp/aiavatar-0.4.4-py3-none-any.whl.zip]
 [2024-04-13 13:40:34] INFO root fetch - main [MainThread]: End processing [aiavatar]: success
 [2024-04-13 13:40:34] INFO root fetch - main [MainThread]: Store serial: [22751490]
+[2024-04-13 13:42:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751490]
+[2024-04-13 13:42:43] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 13:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: getcp
+[2024-04-13 13:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: imas-tools
+[2024-04-13 13:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: getcp
+[2024-04-13 13:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyqpanda
+[2024-04-13 13:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mkdocs-ledger
+[2024-04-13 13:42:43] INFO root fetch - processPackages [getcp]: New version: [1.0.22] Old Version: [1.0.21]
+[2024-04-13 13:42:43] WARNING root fetch - processPackages [imas-tools]: Skipping, unable to determine old version
+[2024-04-13 13:42:43] INFO root fetch - main [MainThread]: End processing [imas-tools] error
+[2024-04-13 13:42:43] INFO root fetch - processPackages [getcp]: New version: [1.0.22] Old Version: [1.0.21]
+[2024-04-13 13:42:43] INFO root fetch - processPackages [getcp]: Downloading https://files.pythonhosted.org/packages/6c/7d/a5f8e672fa9f2606c1dc3b2b3da1657833a53cab0a197f1621fe999fc7be/getcp-1.0.21.tar.gz
+[2024-04-13 13:42:43] WARNING root fetch - processPackages [mkdocs-ledger]: Skipping, unable to determine old version
+[2024-04-13 13:42:43] INFO root fetch - main [MainThread]: End processing [mkdocs-ledger] error
+[2024-04-13 13:42:43] INFO root fetch - processPackages [getcp]: Downloading https://files.pythonhosted.org/packages/6c/7d/a5f8e672fa9f2606c1dc3b2b3da1657833a53cab0a197f1621fe999fc7be/getcp-1.0.21.tar.gz
+[2024-04-13 13:42:43] INFO root fetch - processPackages [pyqpanda]: New version: [3.8.3.3] Old Version: [3.8.3.2]
+[2024-04-13 13:42:43] INFO root fetch - processPackages [getcp]: Downloading https://files.pythonhosted.org/packages/00/2e/14e8a0116984bf01880f99179e9387af60d4e8c27c88b622359f5252bb55/getcp-1.0.22.tar.gz
+[2024-04-13 13:42:43] INFO root fetch - processPackages [getcp]: Downloading https://files.pythonhosted.org/packages/00/2e/14e8a0116984bf01880f99179e9387af60d4e8c27c88b622359f5252bb55/getcp-1.0.22.tar.gz
+[2024-04-13 13:42:43] INFO root fetch - processPackages [pyqpanda]: Downloading https://files.pythonhosted.org/packages/ca/35/4ae34a097de310381c083c4b4c593f753e7b28604780b0709d247f518d4d/pyqpanda-3.8.3.2-cp39-none-win_amd64.whl
+[2024-04-13 13:42:44] INFO root fetch - processPackages [getcp]: executing diffoscope
+[2024-04-13 13:42:44] INFO root fetch - processPackages [getcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getcp-1.0.21.tar.gz tmp/getcp-1.0.22.tar.gz --markdown 20240413/g/getcp/1.0.21-1.0.22/README.md --exclude *.pyd
+[2024-04-13 13:42:44] INFO root fetch - processPackages [getcp]: executing diffoscope
+[2024-04-13 13:42:44] INFO root fetch - processPackages [getcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getcp-1.0.21.tar.gz tmp/getcp-1.0.22.tar.gz --markdown 20240413/g/getcp/1.0.21-1.0.22/README.md --exclude *.pyd
+[2024-04-13 13:42:44] INFO root fetch - processPackages [getcp]: Remove: archive file [/home/abi/fetcher/tmp/getcp-1.0.21.tar.gz]
+[2024-04-13 13:42:44] INFO root fetch - processPackages [getcp]: Remove: archive file [/home/abi/fetcher/tmp/getcp-1.0.22.tar.gz]
+[2024-04-13 13:42:44] INFO root fetch - main [MainThread]: End processing [getcp]: success
+[2024-04-13 13:42:44] INFO root fetch - main [MainThread]: End processing [getcp]: success
+[2024-04-13 13:42:44] INFO root fetch - processPackages [pyqpanda]: Downloading https://files.pythonhosted.org/packages/e5/c9/9ed9fe6c84199837fc001c1dd5a70a1b13c317ef1c8933cf6986e5c17915/pyqpanda-3.8.3.3-cp39-none-win_amd64.whl
+[2024-04-13 13:42:46] INFO root fetch - processPackages [pyqpanda]: executing diffoscope
+[2024-04-13 13:42:46] INFO root fetch - processPackages [pyqpanda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqpanda-3.8.3.2-cp39-none-win_amd64.whl.zip tmp/pyqpanda-3.8.3.3-cp39-none-win_amd64.whl.zip --markdown 20240413/p/pyqpanda/3.8.3.2-3.8.3.3/README.md --exclude *.pyd
+[2024-04-13 13:42:47] INFO root fetch - processPackages [pyqpanda]: Remove: archive file [/home/abi/fetcher/tmp/pyqpanda-3.8.3.2-cp39-none-win_amd64.whl.zip]
+[2024-04-13 13:42:47] INFO root fetch - processPackages [pyqpanda]: Remove: archive file [/home/abi/fetcher/tmp/pyqpanda-3.8.3.3-cp39-none-win_amd64.whl.zip]
+[2024-04-13 13:42:47] INFO root fetch - main [MainThread]: End processing [pyqpanda]: success
+[2024-04-13 13:42:47] INFO root fetch - main [MainThread]: Store serial: [22751517]
