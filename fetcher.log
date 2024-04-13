@@ -7009,3 +7009,20 @@
 [2024-04-13 04:35:16] WARNING root fetch - processPackages [siliconcompiler]: Skipping package: exceeds size limit 37222537>=10485760
 [2024-04-13 04:35:16] INFO root fetch - main [MainThread]: End processing [siliconcompiler] error
 [2024-04-13 04:35:16] INFO root fetch - main [MainThread]: Store serial: [22749034]
+[2024-04-13 04:37:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749034]
+[2024-04-13 04:37:24] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 04:39:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749039]
+[2024-04-13 04:39:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 04:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lambdapdk
+[2024-04-13 04:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coreai-sdk
+[2024-04-13 04:39:30] WARNING root fetch - processPackages [coreai-sdk]: Skipping, unable to determine old version
+[2024-04-13 04:39:30] INFO root fetch - main [MainThread]: End processing [coreai-sdk] error
+[2024-04-13 04:39:30] INFO root fetch - processPackages [lambdapdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 04:39:30] INFO root fetch - processPackages [lambdapdk]: Downloading https://files.pythonhosted.org/packages/83/1c/0a32b11d9c3ba227d9a3767b9a6d08d55e31e8f869cdfca8d78ceffe2798/lambdapdk-0.1.8.tar.gz
+[2024-04-13 04:39:31] INFO root fetch - processPackages [lambdapdk]: Downloading https://files.pythonhosted.org/packages/5a/8d/15f55433498bc8f979ec4f83f1e09a8e67ddd5be5e876ca548433cfe45d4/lambdapdk-0.1.9.tar.gz
+[2024-04-13 04:39:31] INFO root fetch - processPackages [lambdapdk]: executing diffoscope
+[2024-04-13 04:39:31] INFO root fetch - processPackages [lambdapdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lambdapdk-0.1.8.tar.gz tmp/lambdapdk-0.1.9.tar.gz --markdown 20240413/l/lambdapdk/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 04:39:31] INFO root fetch - processPackages [lambdapdk]: Remove: archive file [/home/abi/fetcher/tmp/lambdapdk-0.1.8.tar.gz]
+[2024-04-13 04:39:31] INFO root fetch - processPackages [lambdapdk]: Remove: archive file [/home/abi/fetcher/tmp/lambdapdk-0.1.9.tar.gz]
+[2024-04-13 04:39:31] INFO root fetch - main [MainThread]: End processing [lambdapdk]: success
+[2024-04-13 04:39:31] INFO root fetch - main [MainThread]: Store serial: [22749047]
