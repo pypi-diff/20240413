@@ -7338,3 +7338,37 @@
 [2024-04-13 05:36:29] WARNING root fetch - processPackages [tiffx]: Skipping, unable to determine old version
 [2024-04-13 05:36:29] INFO root fetch - main [MainThread]: End processing [tiffx] error
 [2024-04-13 05:36:29] INFO root fetch - main [MainThread]: Store serial: [22749202]
+[2024-04-13 05:38:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749202]
+[2024-04-13 05:38:37] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 05:40:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749202]
+[2024-04-13 05:40:43] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-13 05:42:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749202]
+[2024-04-13 05:42:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 05:42:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langchain_zhipu
+[2024-04-13 05:42:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lib-dt-computer-vision
+[2024-04-13 05:42:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: paaster
+[2024-04-13 05:42:50] INFO root fetch - processPackages [langchain_zhipu]: New version: [4.1.0] Old Version: [4.0.9]
+[2024-04-13 05:42:50] INFO root fetch - processPackages [paaster]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-13 05:42:50] INFO root fetch - processPackages [lib-dt-computer-vision]: New version: [0.1.8] Old Version: [0.1.6]
+[2024-04-13 05:42:50] INFO root fetch - processPackages [paaster]: Downloading https://files.pythonhosted.org/packages/55/fd/85a58b7167c609a879d42929a1bb6eb3fbf42171f5aed5de5b4b4ede5be7/paaster-1.1.8.tar.gz
+[2024-04-13 05:42:50] INFO root fetch - processPackages [langchain_zhipu]: Downloading https://files.pythonhosted.org/packages/0e/f6/11e3365235522ecf2908e95023a0cd2ee1443970466975dc198d2cd2136a/langchain_zhipu-4.0.9.tar.gz
+[2024-04-13 05:42:50] INFO root fetch - processPackages [lib-dt-computer-vision]: Downloading https://files.pythonhosted.org/packages/33/36/04b9ffb0b24b695cee0de19fe2dc0e9d75124b241fef059e8b72457e0fb1/lib-dt-computer-vision-0.1.6.tar.gz
+[2024-04-13 05:42:50] INFO root fetch - processPackages [paaster]: Downloading https://files.pythonhosted.org/packages/42/a6/a7cd20397267ae0ea7a89f3fa19fabeaf39eb6de877d08ba432681207d21/paaster-1.1.9.tar.gz
+[2024-04-13 05:42:50] INFO root fetch - processPackages [langchain_zhipu]: Downloading https://files.pythonhosted.org/packages/f4/6c/d33e7370b181b10446f9dfeeaf8577427d091e6f30b5d51b40dd5f616ad1/langchain_zhipu-4.1.0.tar.gz
+[2024-04-13 05:42:50] INFO root fetch - processPackages [paaster]: executing diffoscope
+[2024-04-13 05:42:50] INFO root fetch - processPackages [paaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paaster-1.1.8.tar.gz tmp/paaster-1.1.9.tar.gz --markdown 20240413/p/paaster/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-13 05:42:50] INFO root fetch - processPackages [langchain_zhipu]: executing diffoscope
+[2024-04-13 05:42:50] INFO root fetch - processPackages [langchain_zhipu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_zhipu-4.0.9.tar.gz tmp/langchain_zhipu-4.1.0.tar.gz --markdown 20240413/l/langchain_zhipu/4.0.9-4.1.0/README.md --exclude *.pyd
+[2024-04-13 05:42:50] INFO root fetch - processPackages [lib-dt-computer-vision]: Downloading https://files.pythonhosted.org/packages/c1/8b/66a3d2ed8690047bfce5f91a7faefffc8925948d69e9b5ad5dc6e3b14ff1/lib-dt-computer-vision-0.1.8.tar.gz
+[2024-04-13 05:42:51] INFO root fetch - processPackages [lib-dt-computer-vision]: executing diffoscope
+[2024-04-13 05:42:51] INFO root fetch - processPackages [lib-dt-computer-vision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-dt-computer-vision-0.1.6.tar.gz tmp/lib-dt-computer-vision-0.1.8.tar.gz --markdown 20240413/l/lib-dt-computer-vision/0.1.6-0.1.8/README.md --exclude *.pyd
+[2024-04-13 05:42:51] INFO root fetch - processPackages [paaster]: Remove: archive file [/home/abi/fetcher/tmp/paaster-1.1.8.tar.gz]
+[2024-04-13 05:42:51] INFO root fetch - processPackages [paaster]: Remove: archive file [/home/abi/fetcher/tmp/paaster-1.1.9.tar.gz]
+[2024-04-13 05:42:51] INFO root fetch - main [MainThread]: End processing [paaster]: success
+[2024-04-13 05:42:51] INFO root fetch - processPackages [langchain_zhipu]: Remove: archive file [/home/abi/fetcher/tmp/langchain_zhipu-4.0.9.tar.gz]
+[2024-04-13 05:42:51] INFO root fetch - processPackages [langchain_zhipu]: Remove: archive file [/home/abi/fetcher/tmp/langchain_zhipu-4.1.0.tar.gz]
+[2024-04-13 05:42:51] INFO root fetch - main [MainThread]: End processing [langchain_zhipu]: success
+[2024-04-13 05:42:51] INFO root fetch - processPackages [lib-dt-computer-vision]: Remove: archive file [/home/abi/fetcher/tmp/lib-dt-computer-vision-0.1.6.tar.gz]
+[2024-04-13 05:42:51] INFO root fetch - processPackages [lib-dt-computer-vision]: Remove: archive file [/home/abi/fetcher/tmp/lib-dt-computer-vision-0.1.8.tar.gz]
+[2024-04-13 05:42:51] INFO root fetch - main [MainThread]: End processing [lib-dt-computer-vision]: success
+[2024-04-13 05:42:51] INFO root fetch - main [MainThread]: Store serial: [22749210]
