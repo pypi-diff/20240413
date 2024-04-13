@@ -11670,3 +11670,15 @@
 [2024-04-13 11:36:18] INFO root fetch - processPackages [pyqie]: Remove: archive file [/home/abi/fetcher/tmp/pyqie-0.0.2-cp37-abi3-win_amd64.whl.zip]
 [2024-04-13 11:36:18] INFO root fetch - main [MainThread]: End processing [pyqie]: success
 [2024-04-13 11:36:18] INFO root fetch - main [MainThread]: Store serial: [22750914]
+[2024-04-13 11:38:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750914]
+[2024-04-13 11:38:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 11:38:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: parsee-core
+[2024-04-13 11:38:28] INFO root fetch - processPackages [parsee-core]: New version: [0.1.4.5] Old Version: [0.1.4.3]
+[2024-04-13 11:38:28] INFO root fetch - processPackages [parsee-core]: Downloading https://files.pythonhosted.org/packages/3b/fa/6adb558d0d69574fab123b58d79857c6997762cbb309b26b0852185fe0a2/parsee_core-0.1.4.3.tar.gz
+[2024-04-13 11:38:29] INFO root fetch - processPackages [parsee-core]: Downloading https://files.pythonhosted.org/packages/92/1f/24e8d2e74c3a6f1aa634d094200892cb28f68ceb7848b635a2ff2306458e/parsee_core-0.1.4.5.tar.gz
+[2024-04-13 11:38:29] INFO root fetch - processPackages [parsee-core]: executing diffoscope
+[2024-04-13 11:38:29] INFO root fetch - processPackages [parsee-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsee_core-0.1.4.3.tar.gz tmp/parsee_core-0.1.4.5.tar.gz --markdown 20240413/p/parsee-core/0.1.4.3-0.1.4.5/README.md --exclude *.pyd
+[2024-04-13 11:38:30] INFO root fetch - processPackages [parsee-core]: Remove: archive file [/home/abi/fetcher/tmp/parsee_core-0.1.4.3.tar.gz]
+[2024-04-13 11:38:30] INFO root fetch - processPackages [parsee-core]: Remove: archive file [/home/abi/fetcher/tmp/parsee_core-0.1.4.5.tar.gz]
+[2024-04-13 11:38:30] INFO root fetch - main [MainThread]: End processing [parsee-core]: success
+[2024-04-13 11:38:30] INFO root fetch - main [MainThread]: Store serial: [22750917]
