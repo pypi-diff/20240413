@@ -14759,3 +14759,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 15:51:26] INFO root fetch - processPackages [pyppbox]: Remove: archive file [/home/abi/fetcher/tmp/pyppbox-3.6b2.tar.gz]
 [2024-04-13 15:51:26] INFO root fetch - main [MainThread]: End processing [pyppbox]: success
 [2024-04-13 15:51:26] INFO root fetch - main [MainThread]: Store serial: [22752282]
+[2024-04-13 15:53:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752282]
+[2024-04-13 15:53:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 15:53:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: maestral-qt
+[2024-04-13 15:53:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: maestral-cocoa
+[2024-04-13 15:53:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kellyapi
+[2024-04-13 15:53:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hermitage
+[2024-04-13 15:53:35] INFO root fetch - processPackages [kellyapi]: New version: [0.0.1.1] Old Version: [0.0.1]
+[2024-04-13 15:53:35] INFO root fetch - processPackages [hermitage]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 15:53:35] INFO root fetch - processPackages [maestral-qt]: New version: [1.9.3.dev1] Old Version: [1.9.3.dev0]
+[2024-04-13 15:53:35] INFO root fetch - processPackages [maestral-cocoa]: New version: [1.9.3.dev1] Old Version: [1.9.3.dev0]
+[2024-04-13 15:53:35] INFO root fetch - processPackages [kellyapi]: Downloading https://files.pythonhosted.org/packages/29/c0/b633a22fa675e561e2696f596d590d9f76fdcbebde22beedd3a00093ef61/kellyapi-0.0.1.tar.gz
+[2024-04-13 15:53:35] INFO root fetch - processPackages [hermitage]: Downloading https://files.pythonhosted.org/packages/a4/86/760aa2c3ebb9a31f17c0b85cf6ac96063ab0341c014b15bf88da382236b1/hermitage-0.1.1.tar.gz
+[2024-04-13 15:53:35] INFO root fetch - processPackages [maestral-cocoa]: Downloading https://files.pythonhosted.org/packages/22/6b/eb7173c7be358e5bae13552e58b783e2634cc7df108dfaafedf54ac921f6/maestral-cocoa-1.9.3.dev0.tar.gz
+[2024-04-13 15:53:35] INFO root fetch - processPackages [maestral-qt]: Downloading https://files.pythonhosted.org/packages/ca/5b/d8caa1031c80b11cdc29014e2b46417b7ccd70492ae2a21baa20fc151ad4/maestral-qt-1.9.3.dev0.tar.gz
+[2024-04-13 15:53:35] INFO root fetch - processPackages [kellyapi]: Downloading https://files.pythonhosted.org/packages/be/0a/8b6147c75248ccd4035d21a3a44b488254e967b4940c03b258348106ccbf/kellyapi-0.0.1.1.tar.gz
+[2024-04-13 15:53:35] INFO root fetch - processPackages [hermitage]: Downloading https://files.pythonhosted.org/packages/07/76/f7746f4d9953ca0fe3cfdf2f322352bd65d208b32bdf5447d7529064ff0b/hermitage-0.1.2.tar.gz
+[2024-04-13 15:53:35] INFO root fetch - processPackages [kellyapi]: executing diffoscope
+[2024-04-13 15:53:35] INFO root fetch - processPackages [kellyapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kellyapi-0.0.1.tar.gz tmp/kellyapi-0.0.1.1.tar.gz --markdown 20240413/k/kellyapi/0.0.1-0.0.1.1/README.md --exclude *.pyd
+[2024-04-13 15:53:36] INFO root fetch - processPackages [hermitage]: executing diffoscope
+[2024-04-13 15:53:36] INFO root fetch - processPackages [hermitage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hermitage-0.1.1.tar.gz tmp/hermitage-0.1.2.tar.gz --markdown 20240413/h/hermitage/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-13 15:53:36] INFO root fetch - processPackages [maestral-cocoa]: Downloading https://files.pythonhosted.org/packages/33/f9/875f6a506ac5d04c75df1058fb4ddc097c7f17f7844674be004f774116d3/maestral_cocoa-1.9.3.dev1.tar.gz
+[2024-04-13 15:53:36] INFO root fetch - processPackages [maestral-cocoa]: executing diffoscope
+[2024-04-13 15:53:36] INFO root fetch - processPackages [maestral-cocoa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestral-cocoa-1.9.3.dev0.tar.gz tmp/maestral_cocoa-1.9.3.dev1.tar.gz --markdown 20240413/m/maestral-cocoa/1.9.3.dev0-1.9.3.dev1/README.md --exclude *.pyd
+[2024-04-13 15:53:36] INFO root fetch - processPackages [hermitage]: Remove: archive file [/home/abi/fetcher/tmp/hermitage-0.1.1.tar.gz]
+[2024-04-13 15:53:36] INFO root fetch - processPackages [hermitage]: Remove: archive file [/home/abi/fetcher/tmp/hermitage-0.1.2.tar.gz]
+[2024-04-13 15:53:36] INFO root fetch - main [MainThread]: End processing [hermitage]: success
+[2024-04-13 15:53:36] INFO root fetch - processPackages [kellyapi]: Remove: archive file [/home/abi/fetcher/tmp/kellyapi-0.0.1.tar.gz]
+[2024-04-13 15:53:36] INFO root fetch - processPackages [kellyapi]: Remove: archive file [/home/abi/fetcher/tmp/kellyapi-0.0.1.1.tar.gz]
+[2024-04-13 15:53:36] INFO root fetch - main [MainThread]: End processing [kellyapi]: success
+[2024-04-13 15:53:36] INFO root fetch - processPackages [maestral-qt]: Downloading https://files.pythonhosted.org/packages/60/bb/867f31892f82fb99c9fae8cf6afcd087c1875aceb49b6b96e0319ee6e647/maestral_qt-1.9.3.dev1.tar.gz
+[2024-04-13 15:53:36] INFO root fetch - processPackages [maestral-qt]: executing diffoscope
+[2024-04-13 15:53:36] INFO root fetch - processPackages [maestral-qt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestral-qt-1.9.3.dev0.tar.gz tmp/maestral_qt-1.9.3.dev1.tar.gz --markdown 20240413/m/maestral-qt/1.9.3.dev0-1.9.3.dev1/README.md --exclude *.pyd
+[2024-04-13 15:53:37] INFO root fetch - processPackages [maestral-cocoa]: Remove: archive file [/home/abi/fetcher/tmp/maestral-cocoa-1.9.3.dev0.tar.gz]
+[2024-04-13 15:53:37] INFO root fetch - processPackages [maestral-cocoa]: Remove: archive file [/home/abi/fetcher/tmp/maestral_cocoa-1.9.3.dev1.tar.gz]
+[2024-04-13 15:53:37] INFO root fetch - main [MainThread]: End processing [maestral-cocoa]: success
+[2024-04-13 15:53:37] INFO root fetch - processPackages [maestral-qt]: Remove: archive file [/home/abi/fetcher/tmp/maestral-qt-1.9.3.dev0.tar.gz]
+[2024-04-13 15:53:37] INFO root fetch - processPackages [maestral-qt]: Remove: archive file [/home/abi/fetcher/tmp/maestral_qt-1.9.3.dev1.tar.gz]
+[2024-04-13 15:53:37] INFO root fetch - main [MainThread]: End processing [maestral-qt]: success
+[2024-04-13 15:53:37] INFO root fetch - main [MainThread]: Store serial: [22752298]
