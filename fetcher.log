@@ -15216,3 +15216,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:22:01] WARNING root fetch - processPackages [template-dict]: Skipping, unable to determine old version
 [2024-04-13 16:22:01] INFO root fetch - main [MainThread]: End processing [template-dict] error
 [2024-04-13 16:22:01] INFO root fetch - main [MainThread]: Store serial: [22752477]
+[2024-04-13 16:24:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752477]
+[2024-04-13 16:24:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 16:24:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: HSJworld
+[2024-04-13 16:24:10] WARNING root fetch - processPackages [HSJworld]: Skipping, unable to determine old version
+[2024-04-13 16:24:10] INFO root fetch - main [MainThread]: End processing [HSJworld] error
+[2024-04-13 16:24:10] INFO root fetch - main [MainThread]: Store serial: [22752481]
