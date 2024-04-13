@@ -12807,3 +12807,38 @@
 [2024-04-13 13:12:22] INFO root fetch - processPackages [localstack-core]: Remove: archive file [/home/abi/fetcher/tmp/localstack-core-3.3.1.dev20240412141820.tar.gz]
 [2024-04-13 13:12:22] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
 [2024-04-13 13:12:22] INFO root fetch - main [MainThread]: Store serial: [22751331]
+[2024-04-13 13:14:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751331]
+[2024-04-13 13:14:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 13:14:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-core-cpp
+[2024-04-13 13:14:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chuangliang
+[2024-04-13 13:14:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tb-nightly
+[2024-04-13 13:14:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: machineroom
+[2024-04-13 13:14:30] INFO root fetch - processPackages [chuangliang]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 13:14:30] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2024-04-13 13:14:31] INFO root fetch - processPackages [chuangliang]: Downloading https://files.pythonhosted.org/packages/af/79/a5db2fbc5ddab2e5abcf2123a7f1782688d53c409c4f06d88f618648684b/chuangliang-0.0.8.tar.gz
+[2024-04-13 13:14:31] INFO root fetch - processPackages [bigdl-core-cpp]: New version: [2.5.0b20240413] Old Version: [2.5.0b20240411]
+[2024-04-13 13:14:31] INFO root fetch - processPackages [machineroom]: New version: [0.45.0] Old Version: [0.44.9]
+[2024-04-13 13:14:31] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/cc/bf/76bb32cf070e37f4b777ed5596c5d082fb60a1bfc06e9463401d07021a8a/tb_nightly-2.9.0a20220501-py3-none-any.whl
+[2024-04-13 13:14:31] INFO root fetch - processPackages [bigdl-core-cpp]: Downloading https://files.pythonhosted.org/packages/4d/11/0b27425ed7f9e99b3056a9483e236225f11793feb22b262e2d51c5d91962/bigdl_core_cpp-2.5.0b20240411-py3-none-win_amd64.whl
+[2024-04-13 13:14:31] INFO root fetch - processPackages [chuangliang]: Downloading https://files.pythonhosted.org/packages/a3/8a/501568e72e49a8074d50ff13bcde70a6f46cf1738e5eeb1ea445a58a8934/chuangliang-0.0.9.tar.gz
+[2024-04-13 13:14:31] WARNING root fetch - processPackages [bigdl-core-cpp]: Skipping package: exceeds size limit 55032588>=10485760
+[2024-04-13 13:14:31] INFO root fetch - main [MainThread]: End processing [bigdl-core-cpp] error
+[2024-04-13 13:14:31] INFO root fetch - processPackages [machineroom]: Downloading https://files.pythonhosted.org/packages/d5/75/ba405ecbf321cdd3277a98028191a3c1f459cffc87609348f5defe7ecaca/machineroom-0.44.9.tar.gz
+[2024-04-13 13:14:31] INFO root fetch - processPackages [chuangliang]: executing diffoscope
+[2024-04-13 13:14:31] INFO root fetch - processPackages [chuangliang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chuangliang-0.0.8.tar.gz tmp/chuangliang-0.0.9.tar.gz --markdown 20240413/c/chuangliang/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 13:14:31] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/68/8e/03bca092830a4abf26a80c7387b02478c5f948656cb79d63c1bffab65c00/tb_nightly-2.9.0a20220502-py3-none-any.whl
+[2024-04-13 13:14:31] INFO root fetch - processPackages [machineroom]: Downloading https://files.pythonhosted.org/packages/08/36/f51cb07178c19b182de86646fb9acf28bcb0ed157873516c295d86b511b2/machineroom-0.45.0.tar.gz
+[2024-04-13 13:14:31] INFO root fetch - processPackages [machineroom]: executing diffoscope
+[2024-04-13 13:14:31] INFO root fetch - processPackages [machineroom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/machineroom-0.44.9.tar.gz tmp/machineroom-0.45.0.tar.gz --markdown 20240413/m/machineroom/0.44.9-0.45.0/README.md --exclude *.pyd
+[2024-04-13 13:14:31] INFO root fetch - processPackages [chuangliang]: Remove: archive file [/home/abi/fetcher/tmp/chuangliang-0.0.8.tar.gz]
+[2024-04-13 13:14:31] INFO root fetch - processPackages [chuangliang]: Remove: archive file [/home/abi/fetcher/tmp/chuangliang-0.0.9.tar.gz]
+[2024-04-13 13:14:31] INFO root fetch - main [MainThread]: End processing [chuangliang]: success
+[2024-04-13 13:14:31] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2024-04-13 13:14:31] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20240413/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/README.md --exclude *.pyd
+[2024-04-13 13:14:32] INFO root fetch - processPackages [machineroom]: Remove: archive file [/home/abi/fetcher/tmp/machineroom-0.44.9.tar.gz]
+[2024-04-13 13:14:32] INFO root fetch - processPackages [machineroom]: Remove: archive file [/home/abi/fetcher/tmp/machineroom-0.45.0.tar.gz]
+[2024-04-13 13:14:32] INFO root fetch - main [MainThread]: End processing [machineroom]: success
+[2024-04-13 13:14:33] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip]
+[2024-04-13 13:14:33] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
+[2024-04-13 13:14:33] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2024-04-13 13:14:33] INFO root fetch - main [MainThread]: Store serial: [22751341]
