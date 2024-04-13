@@ -6849,3 +6849,15 @@
 [2024-04-13 04:09:12] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.12a1712896039.tar.gz]
 [2024-04-13 04:09:12] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
 [2024-04-13 04:09:12] INFO root fetch - main [MainThread]: Store serial: [22748951]
+[2024-04-13 04:11:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748951]
+[2024-04-13 04:11:20] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 04:11:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iam-actions
+[2024-04-13 04:11:21] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20240412] Old Version: [1.2.20240411]
+[2024-04-13 04:11:21] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/0d/0a/4d2a86ac7c78f9c02e4c7bd63f99cc0e2d2e4233637f14f67ac33bbaba67/iam_actions-1.2.20240411.tar.gz
+[2024-04-13 04:11:21] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/37/05/38e23eadceba25f4780f54ac352e3ec3ace376b0bc900be876497c3dacee/iam_actions-1.2.20240412.tar.gz
+[2024-04-13 04:11:21] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2024-04-13 04:11:21] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20240411.tar.gz tmp/iam_actions-1.2.20240412.tar.gz --markdown 20240413/i/iam-actions/1.2.20240411-1.2.20240412/README.md --exclude *.pyd
+[2024-04-13 04:11:26] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240411.tar.gz]
+[2024-04-13 04:11:26] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240412.tar.gz]
+[2024-04-13 04:11:26] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2024-04-13 04:11:26] INFO root fetch - main [MainThread]: Store serial: [22748954]
