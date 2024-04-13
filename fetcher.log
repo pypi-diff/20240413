@@ -17782,3 +17782,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:56:21] INFO root fetch - processPackages [polars-lts-cpu]: Remove: archive file [/home/abi/fetcher/tmp/polars_lts_cpu-0.20.9.tar.gz]
 [2024-04-13 19:56:21] INFO root fetch - main [MainThread]: End processing [polars-lts-cpu]: success
 [2024-04-13 19:56:21] INFO root fetch - main [MainThread]: Store serial: [22753685]
+[2024-04-13 19:58:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753685]
+[2024-04-13 19:58:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 19:58:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vagrant-creator
+[2024-04-13 19:58:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: invest-guard
+[2024-04-13 19:58:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tsk-monster
+[2024-04-13 19:58:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tsk-monster
+[2024-04-13 19:58:30] INFO root fetch - processPackages [tsk-monster]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-13 19:58:30] INFO root fetch - processPackages [tsk-monster]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-13 19:58:31] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/73/c5/f70b05ae7198a153ab6be059c80817dd229c595b8aeb280796e49181b486/tsk_monster-0.0.4.tar.gz
+[2024-04-13 19:58:31] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/73/c5/f70b05ae7198a153ab6be059c80817dd229c595b8aeb280796e49181b486/tsk_monster-0.0.4.tar.gz
+[2024-04-13 19:58:31] INFO root fetch - processPackages [vagrant-creator]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-13 19:58:31] INFO root fetch - processPackages [invest-guard]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-13 19:58:31] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/c6/c5/aedaba04b4ec1b87b4b1db4f3fed841bd96d27bc9203cf88e7883b7da07f/tsk_monster-0.0.5.tar.gz
+[2024-04-13 19:58:31] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/c6/c5/aedaba04b4ec1b87b4b1db4f3fed841bd96d27bc9203cf88e7883b7da07f/tsk_monster-0.0.5.tar.gz
+[2024-04-13 19:58:31] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/4b/9c/dbd7a0b0827b73782e9d2cac2d85d6748041c259666e0d9c6eddb690d2e7/invest_guard-0.1.0.tar.gz
+[2024-04-13 19:58:31] INFO root fetch - processPackages [vagrant-creator]: Downloading https://files.pythonhosted.org/packages/99/ef/e861ecab04e328104a3becdd349f3715ad2326677b8112e62daf58322e82/vagrant-creator-0.0.5.tar.gz
+[2024-04-13 19:58:31] INFO root fetch - processPackages [tsk-monster]: executing diffoscope
+[2024-04-13 19:58:31] INFO root fetch - processPackages [tsk-monster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsk_monster-0.0.4.tar.gz tmp/tsk_monster-0.0.5.tar.gz --markdown 20240413/t/tsk-monster/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-13 19:58:31] INFO root fetch - processPackages [tsk-monster]: executing diffoscope
+[2024-04-13 19:58:31] INFO root fetch - processPackages [tsk-monster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsk_monster-0.0.4.tar.gz tmp/tsk_monster-0.0.5.tar.gz --markdown 20240413/t/tsk-monster/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-13 19:58:31] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/73/cc/d3769d64f4a9767300eb88c34ed96d18a8cf7a062f91c434c763bf31db9b/invest_guard-0.1.1.tar.gz
+[2024-04-13 19:58:31] INFO root fetch - processPackages [vagrant-creator]: Downloading https://files.pythonhosted.org/packages/89/86/6f171f7ef3327683a937c640c5fa37bf732c4e9a12fbd9f5b3f13afff8ed/vagrant-creator-0.0.6.tar.gz
+[2024-04-13 19:58:31] INFO root fetch - processPackages [invest-guard]: executing diffoscope
+[2024-04-13 19:58:31] INFO root fetch - processPackages [invest-guard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invest_guard-0.1.0.tar.gz tmp/invest_guard-0.1.1.tar.gz --markdown 20240413/i/invest-guard/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-13 19:58:31] INFO root fetch - processPackages [vagrant-creator]: executing diffoscope
+[2024-04-13 19:58:31] INFO root fetch - processPackages [vagrant-creator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vagrant-creator-0.0.5.tar.gz tmp/vagrant-creator-0.0.6.tar.gz --markdown 20240413/v/vagrant-creator/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-13 19:58:31] INFO root fetch - processPackages [tsk-monster]: Remove: archive file [/home/abi/fetcher/tmp/tsk_monster-0.0.4.tar.gz]
+[2024-04-13 19:58:31] INFO root fetch - processPackages [tsk-monster]: Remove: archive file [/home/abi/fetcher/tmp/tsk_monster-0.0.5.tar.gz]
+[2024-04-13 19:58:31] INFO root fetch - main [MainThread]: End processing [tsk-monster]: success
+[2024-04-13 19:58:32] INFO root fetch - main [MainThread]: End processing [tsk-monster]: success
+[2024-04-13 19:58:32] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest_guard-0.1.0.tar.gz]
+[2024-04-13 19:58:32] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest_guard-0.1.1.tar.gz]
+[2024-04-13 19:58:32] INFO root fetch - main [MainThread]: End processing [invest-guard]: success
+[2024-04-13 19:58:32] INFO root fetch - processPackages [vagrant-creator]: Remove: archive file [/home/abi/fetcher/tmp/vagrant-creator-0.0.5.tar.gz]
+[2024-04-13 19:58:32] INFO root fetch - processPackages [vagrant-creator]: Remove: archive file [/home/abi/fetcher/tmp/vagrant-creator-0.0.6.tar.gz]
+[2024-04-13 19:58:32] INFO root fetch - main [MainThread]: End processing [vagrant-creator]: success
+[2024-04-13 19:58:32] INFO root fetch - main [MainThread]: Store serial: [22753706]
