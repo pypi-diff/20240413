@@ -18488,3 +18488,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 20:31:13] INFO root fetch - processPackages [dekvenv]: Remove: archive file [/home/abi/fetcher/tmp/dekvenv-0.1.9.tar.gz]
 [2024-04-13 20:31:13] INFO root fetch - main [MainThread]: End processing [dekvenv]: success
 [2024-04-13 20:31:13] INFO root fetch - main [MainThread]: Store serial: [22753962]
+[2024-04-13 20:33:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753962]
+[2024-04-13 20:33:22] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-13 20:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: objd
+[2024-04-13 20:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: web-sand
+[2024-04-13 20:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dune-rivals
+[2024-04-13 20:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pipez
+[2024-04-13 20:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mcnets
+[2024-04-13 20:33:22] INFO root fetch - processPackages [objd]: New version: [3] Old Version: [2]
+[2024-04-13 20:33:22] INFO root fetch - processPackages [dune-rivals]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-13 20:33:22] INFO root fetch - processPackages [web-sand]: New version: [4.1.0] Old Version: [4.0.2]
+[2024-04-13 20:33:22] INFO root fetch - processPackages [mcnets]: New version: [2.0.6] Old Version: [2.0.5]
+[2024-04-13 20:33:22] INFO root fetch - processPackages [objd]: Downloading https://files.pythonhosted.org/packages/f1/a0/d2ac18314344841f6541ad040b2e5cb1839527e129d6fe38f8cf57d48d60/objd-2.tar.gz
+[2024-04-13 20:33:22] INFO root fetch - processPackages [pipez]: New version: [0.0.9] Old Version: [0.0.81]
+[2024-04-13 20:33:22] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/1e/02/b6477a76a35120470d15aa1b0de11fe78b1b27d6ab8232551c23e1c53f3e/dune_rivals-0.3.1.tar.gz
+[2024-04-13 20:33:22] INFO root fetch - processPackages [web-sand]: Downloading https://files.pythonhosted.org/packages/97/c3/9b5f29010f514e7e135c5a594b8f6ee927e473652a8b35250dfa69c7ba8a/web_sand-4.0.2.tar.gz
+[2024-04-13 20:33:22] INFO root fetch - processPackages [mcnets]: Downloading https://files.pythonhosted.org/packages/64/6f/9c3152b9c6c2a143c18e03168693a5752de96d1f5dc6a47a1347c1028ba7/mcnets-2.0.5.tar.gz
+[2024-04-13 20:33:22] INFO root fetch - processPackages [pipez]: Downloading https://files.pythonhosted.org/packages/83/22/e481c4f6dd17b57e99bc0ebc54442db76cb33acfa823450eda9a0ee06a9f/pipez-0.0.81.tar.gz
+[2024-04-13 20:33:23] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/d4/3e/57bce13714578a049eee77fbe5da09b621b2788595a9b374a296eb27f048/dune_rivals-0.3.2.tar.gz
+[2024-04-13 20:33:23] INFO root fetch - processPackages [objd]: Downloading https://files.pythonhosted.org/packages/2e/2f/996dab8e04adb3e9fc7fadd164be39e959429e4fe1f12edac1220431b01e/objd-3.tar.gz
+[2024-04-13 20:33:23] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-13 20:33:23] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.3.1.tar.gz tmp/dune_rivals-0.3.2.tar.gz --markdown 20240413/d/dune-rivals/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-13 20:33:23] INFO root fetch - processPackages [mcnets]: Downloading https://files.pythonhosted.org/packages/c5/af/da1baaf33a8d7b506480e59dd7c3f5ac818199422aa061a59f51c1686c94/mcnets-2.0.6.tar.gz
+[2024-04-13 20:33:23] INFO root fetch - processPackages [objd]: executing diffoscope
+[2024-04-13 20:33:23] INFO root fetch - processPackages [objd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/objd-2.tar.gz tmp/objd-3.tar.gz --markdown 20240413/o/objd/2-3/README.md --exclude *.pyd
+[2024-04-13 20:33:23] INFO root fetch - processPackages [pipez]: Downloading https://files.pythonhosted.org/packages/a3/7b/b75e90898c1b52cbcd0b17ad4595e5ed0f6d4554e94be045c641282bc131/pipez-0.0.9.tar.gz
+[2024-04-13 20:33:23] INFO root fetch - processPackages [pipez]: executing diffoscope
+[2024-04-13 20:33:23] INFO root fetch - processPackages [pipez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipez-0.0.81.tar.gz tmp/pipez-0.0.9.tar.gz --markdown 20240413/p/pipez/0.0.81-0.0.9/README.md --exclude *.pyd
+[2024-04-13 20:33:23] INFO root fetch - processPackages [mcnets]: executing diffoscope
+[2024-04-13 20:33:23] INFO root fetch - processPackages [mcnets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcnets-2.0.5.tar.gz tmp/mcnets-2.0.6.tar.gz --markdown 20240413/m/mcnets/2.0.5-2.0.6/README.md --exclude *.pyd
+[2024-04-13 20:33:23] INFO root fetch - processPackages [web-sand]: Downloading https://files.pythonhosted.org/packages/c7/d3/0cdba9346fc2ddf1379341f318df531bcf70fb93aa4d989321795d91bef7/web_sand-4.1.0.tar.gz
+[2024-04-13 20:33:23] INFO root fetch - processPackages [web-sand]: executing diffoscope
+[2024-04-13 20:33:23] INFO root fetch - processPackages [web-sand]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web_sand-4.0.2.tar.gz tmp/web_sand-4.1.0.tar.gz --markdown 20240413/w/web-sand/4.0.2-4.1.0/README.md --exclude *.pyd
+[2024-04-13 20:33:23] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.1.tar.gz]
+[2024-04-13 20:33:23] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.2.tar.gz]
+[2024-04-13 20:33:23] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-13 20:33:23] INFO root fetch - processPackages [objd]: Remove: archive file [/home/abi/fetcher/tmp/objd-2.tar.gz]
+[2024-04-13 20:33:23] INFO root fetch - processPackages [objd]: Remove: archive file [/home/abi/fetcher/tmp/objd-3.tar.gz]
+[2024-04-13 20:33:23] INFO root fetch - main [MainThread]: End processing [objd]: success
+[2024-04-13 20:33:24] INFO root fetch - processPackages [mcnets]: Remove: archive file [/home/abi/fetcher/tmp/mcnets-2.0.5.tar.gz]
+[2024-04-13 20:33:24] INFO root fetch - processPackages [mcnets]: Remove: archive file [/home/abi/fetcher/tmp/mcnets-2.0.6.tar.gz]
+[2024-04-13 20:33:24] INFO root fetch - main [MainThread]: End processing [mcnets]: success
+[2024-04-13 20:33:24] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.81.tar.gz]
+[2024-04-13 20:33:24] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.9.tar.gz]
+[2024-04-13 20:33:24] INFO root fetch - main [MainThread]: End processing [pipez]: success
+[2024-04-13 20:33:24] INFO root fetch - processPackages [web-sand]: Remove: archive file [/home/abi/fetcher/tmp/web_sand-4.0.2.tar.gz]
+[2024-04-13 20:33:24] INFO root fetch - processPackages [web-sand]: Remove: archive file [/home/abi/fetcher/tmp/web_sand-4.1.0.tar.gz]
+[2024-04-13 20:33:24] INFO root fetch - main [MainThread]: End processing [web-sand]: success
+[2024-04-13 20:33:24] INFO root fetch - main [MainThread]: Store serial: [22753977]
