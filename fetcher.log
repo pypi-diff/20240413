@@ -15438,3 +15438,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:37:18] INFO root fetch - processPackages [line-bot-sdk]: Remove: archive file [/home/abi/fetcher/tmp/line-bot-sdk-3.9.0.tar.gz]
 [2024-04-13 16:37:18] INFO root fetch - main [MainThread]: End processing [line-bot-sdk]: success
 [2024-04-13 16:37:18] INFO root fetch - main [MainThread]: Store serial: [22752553]
+[2024-04-13 16:39:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752553]
+[2024-04-13 16:39:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 16:39:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mrml
+[2024-04-13 16:39:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crawlist
+[2024-04-13 16:39:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: furtheredge
+[2024-04-13 16:39:27] INFO root fetch - processPackages [crawlist]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-13 16:39:27] INFO root fetch - processPackages [furtheredge]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-13 16:39:28] INFO root fetch - processPackages [crawlist]: Downloading https://files.pythonhosted.org/packages/17/a1/31f87e09d7883006b20e7f24a23b0692f3e7a3b6bba195db1dd12239e0f4/crawlist-0.0.2.tar.gz
+[2024-04-13 16:39:28] INFO root fetch - processPackages [mrml]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-13 16:39:28] INFO root fetch - processPackages [furtheredge]: Downloading https://files.pythonhosted.org/packages/35/e7/e945aab15f8aaadeb2a53dfbb972ff7e7ec48fd591fb7668b15fcf5e94b0/furtheredge-0.0.1.tar.gz
+[2024-04-13 16:39:28] INFO root fetch - processPackages [crawlist]: Downloading https://files.pythonhosted.org/packages/0f/af/bbde2fda2dacdb362c90d0524597b34371b19cf107e2d367027742400b6a/crawlist-0.0.3.tar.gz
+[2024-04-13 16:39:28] INFO root fetch - processPackages [mrml]: Downloading https://files.pythonhosted.org/packages/df/79/578665226919e0d5f480879e681e9ae1ce12c08eab75acbaf42c2f0152f8/mrml-0.1.7.tar.gz
+[2024-04-13 16:39:28] INFO root fetch - processPackages [crawlist]: executing diffoscope
+[2024-04-13 16:39:28] INFO root fetch - processPackages [crawlist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crawlist-0.0.2.tar.gz tmp/crawlist-0.0.3.tar.gz --markdown 20240413/c/crawlist/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-13 16:39:28] INFO root fetch - processPackages [furtheredge]: Downloading https://files.pythonhosted.org/packages/42/ef/80865f6aa6b834bfa81cfcde9af04bcee7e25f7cdff2dcc33752e2a47bcf/furtheredge-0.0.2.tar.gz
+[2024-04-13 16:39:28] INFO root fetch - processPackages [furtheredge]: executing diffoscope
+[2024-04-13 16:39:28] INFO root fetch - processPackages [furtheredge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furtheredge-0.0.1.tar.gz tmp/furtheredge-0.0.2.tar.gz --markdown 20240413/f/furtheredge/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-13 16:39:28] INFO root fetch - processPackages [mrml]: Downloading https://files.pythonhosted.org/packages/ac/13/169cc9da7395fa198b34039b2270f48b209e598a335aacda1049e0b01260/mrml-0.1.8.tar.gz
+[2024-04-13 16:39:28] INFO root fetch - processPackages [mrml]: executing diffoscope
+[2024-04-13 16:39:28] INFO root fetch - processPackages [mrml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mrml-0.1.7.tar.gz tmp/mrml-0.1.8.tar.gz --markdown 20240413/m/mrml/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-13 16:39:29] INFO root fetch - processPackages [furtheredge]: Remove: archive file [/home/abi/fetcher/tmp/furtheredge-0.0.1.tar.gz]
+[2024-04-13 16:39:29] INFO root fetch - processPackages [furtheredge]: Remove: archive file [/home/abi/fetcher/tmp/furtheredge-0.0.2.tar.gz]
+[2024-04-13 16:39:29] INFO root fetch - main [MainThread]: End processing [furtheredge]: success
+[2024-04-13 16:39:29] INFO root fetch - processPackages [crawlist]: Remove: archive file [/home/abi/fetcher/tmp/crawlist-0.0.2.tar.gz]
+[2024-04-13 16:39:29] INFO root fetch - processPackages [crawlist]: Remove: archive file [/home/abi/fetcher/tmp/crawlist-0.0.3.tar.gz]
+[2024-04-13 16:39:29] INFO root fetch - main [MainThread]: End processing [crawlist]: success
+[2024-04-13 16:39:30] INFO root fetch - processPackages [mrml]: Remove: archive file [/home/abi/fetcher/tmp/mrml-0.1.7.tar.gz]
+[2024-04-13 16:39:30] INFO root fetch - processPackages [mrml]: Remove: archive file [/home/abi/fetcher/tmp/mrml-0.1.8.tar.gz]
+[2024-04-13 16:39:30] INFO root fetch - main [MainThread]: End processing [mrml]: success
+[2024-04-13 16:39:30] INFO root fetch - main [MainThread]: Store serial: [22752609]
