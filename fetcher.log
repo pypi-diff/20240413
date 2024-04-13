@@ -7566,3 +7566,28 @@
 [2024-04-13 06:06:31] INFO root fetch - processPackages [llama-index-llms-predibase]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_llms_predibase-0.1.4.tar.gz]
 [2024-04-13 06:06:31] INFO root fetch - main [MainThread]: End processing [llama-index-llms-predibase]: success
 [2024-04-13 06:06:31] INFO root fetch - main [MainThread]: Store serial: [22749268]
+[2024-04-13 06:08:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749268]
+[2024-04-13 06:08:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 06:08:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: composabl-core-dev
+[2024-04-13 06:08:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opendp
+[2024-04-13 06:08:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MaSSP-DS-2024
+[2024-04-13 06:08:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: composabl-cli-dev
+[2024-04-13 06:08:40] INFO root fetch - processPackages [opendp]: New version: [0.9.2b20240207001] Old Version: [0.9.2a20240411001]
+[2024-04-13 06:08:40] INFO root fetch - processPackages [composabl-cli-dev]: New version: [0.8.0.dev9] Old Version: [0.8.0.dev6]
+[2024-04-13 06:08:40] INFO root fetch - processPackages [opendp]: Downloading https://files.pythonhosted.org/packages/ed/f6/7757054730cf53bd4b8dd7880c1c2da97f39f3de942be8a6233026f6d58b/opendp-0.9.2a20240411001-py3-none-any.whl
+[2024-04-13 06:08:40] INFO root fetch - processPackages [composabl-cli-dev]: Downloading https://files.pythonhosted.org/packages/d5/b9/11fd9112091b8548d9b8fcbf58f48a6d09c00d9bd49b1c25636873971c2b/composabl_cli_dev-0.8.0.dev6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-13 06:08:40] WARNING root fetch - processPackages [MaSSP-DS-2024]: Skipping, unable to determine old version
+[2024-04-13 06:08:40] INFO root fetch - main [MainThread]: End processing [MaSSP-DS-2024] error
+[2024-04-13 06:08:40] INFO root fetch - processPackages [composabl-core-dev]: New version: [0.8.0.dev9] Old Version: [0.8.0.dev6]
+[2024-04-13 06:08:40] WARNING root fetch - processPackages [opendp]: Skipping package: exceeds size limit 36076926>=10485760
+[2024-04-13 06:08:40] INFO root fetch - main [MainThread]: End processing [opendp] error
+[2024-04-13 06:08:40] INFO root fetch - processPackages [composabl-core-dev]: Downloading https://files.pythonhosted.org/packages/4a/a0/fae4202dc7e27017437fbafdfdb9257b93f97fc3d65b2bca67f173871cab/composabl_core_dev-0.8.0.dev6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-13 06:08:40] WARNING root fetch - processPackages [composabl-core-dev]: Skipping package: exceeds size limit 21365442>=10485760
+[2024-04-13 06:08:40] INFO root fetch - main [MainThread]: End processing [composabl-core-dev] error
+[2024-04-13 06:08:40] INFO root fetch - processPackages [composabl-cli-dev]: Downloading https://files.pythonhosted.org/packages/7a/63/cb2a64c643c2bf337f7f624895969ab1444fad77d056db19bebd8ab5a022/composabl_cli_dev-0.8.0.dev9-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-13 06:08:40] INFO root fetch - processPackages [composabl-cli-dev]: executing diffoscope
+[2024-04-13 06:08:40] INFO root fetch - processPackages [composabl-cli-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composabl_cli_dev-0.8.0.dev6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/composabl_cli_dev-0.8.0.dev9-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240413/c/composabl-cli-dev/0.8.0.dev6-0.8.0.dev9/README.md --exclude *.pyd
+[2024-04-13 06:08:44] INFO root fetch - processPackages [composabl-cli-dev]: Remove: archive file [/home/abi/fetcher/tmp/composabl_cli_dev-0.8.0.dev6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-13 06:08:44] INFO root fetch - processPackages [composabl-cli-dev]: Remove: archive file [/home/abi/fetcher/tmp/composabl_cli_dev-0.8.0.dev9-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-13 06:08:44] INFO root fetch - main [MainThread]: End processing [composabl-cli-dev]: success
+[2024-04-13 06:08:44] INFO root fetch - main [MainThread]: Store serial: [22749291]
