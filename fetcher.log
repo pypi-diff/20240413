@@ -10949,3 +10949,30 @@
 [2024-04-13 10:35:16] WARNING root fetch - processPackages [argsreq]: Skipping, unable to determine old version
 [2024-04-13 10:35:16] INFO root fetch - main [MainThread]: End processing [argsreq] error
 [2024-04-13 10:35:16] INFO root fetch - main [MainThread]: Store serial: [22750561]
+[2024-04-13 10:37:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750561]
+[2024-04-13 10:37:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 10:37:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Agently-cmd
+[2024-04-13 10:37:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: speech_user_interface
+[2024-04-13 10:37:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: istr-python
+[2024-04-13 10:37:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cns
+[2024-04-13 10:37:25] WARNING root fetch - processPackages [Agently-cmd]: Skipping, unable to determine old version
+[2024-04-13 10:37:25] INFO root fetch - main [MainThread]: End processing [Agently-cmd] error
+[2024-04-13 10:37:25] INFO root fetch - processPackages [speech_user_interface]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-13 10:37:25] INFO root fetch - processPackages [cns]: New version: [1.8.33] Old Version: [1.8.32]
+[2024-04-13 10:37:25] WARNING root fetch - processPackages [istr-python]: Skipping, unable to determine old version
+[2024-04-13 10:37:25] INFO root fetch - main [MainThread]: End processing [istr-python] error
+[2024-04-13 10:37:25] INFO root fetch - processPackages [speech_user_interface]: Downloading https://files.pythonhosted.org/packages/60/82/96b66993f1e9daf6b4d191072cd78585b8edc9f46338a742a9b8018a5e2e/speech_user_interface-0.1.7.tar.gz
+[2024-04-13 10:37:26] INFO root fetch - processPackages [cns]: Downloading https://files.pythonhosted.org/packages/8a/14/cbc386f293b6b701bb23ea153c793f3abd10c6aa9696f056742bd30a9baa/cns-1.8.32-py3-none-any.whl
+[2024-04-13 10:37:26] INFO root fetch - processPackages [speech_user_interface]: Downloading https://files.pythonhosted.org/packages/97/bf/c7dfece81eb0a124cfa9feb33850aade26fa06da0334d6f84ad80c8ce2cf/speech_user_interface-0.1.8.tar.gz
+[2024-04-13 10:37:26] INFO root fetch - processPackages [speech_user_interface]: executing diffoscope
+[2024-04-13 10:37:26] INFO root fetch - processPackages [speech_user_interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speech_user_interface-0.1.7.tar.gz tmp/speech_user_interface-0.1.8.tar.gz --markdown 20240413/s/speech_user_interface/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-13 10:37:26] INFO root fetch - processPackages [cns]: Downloading https://files.pythonhosted.org/packages/f6/eb/1f226f7c4543ecaccac282e1b9b8b5c1acb531b04205e9812bc47d243435/cns-1.8.33-py3-none-any.whl
+[2024-04-13 10:37:26] INFO root fetch - processPackages [cns]: executing diffoscope
+[2024-04-13 10:37:26] INFO root fetch - processPackages [cns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cns-1.8.32-py3-none-any.whl.zip tmp/cns-1.8.33-py3-none-any.whl.zip --markdown 20240413/c/cns/1.8.32-1.8.33/README.md --exclude *.pyd
+[2024-04-13 10:37:26] INFO root fetch - processPackages [speech_user_interface]: Remove: archive file [/home/abi/fetcher/tmp/speech_user_interface-0.1.7.tar.gz]
+[2024-04-13 10:37:26] INFO root fetch - processPackages [speech_user_interface]: Remove: archive file [/home/abi/fetcher/tmp/speech_user_interface-0.1.8.tar.gz]
+[2024-04-13 10:37:26] INFO root fetch - main [MainThread]: End processing [speech_user_interface]: success
+[2024-04-13 10:37:27] INFO root fetch - processPackages [cns]: Remove: archive file [/home/abi/fetcher/tmp/cns-1.8.32-py3-none-any.whl.zip]
+[2024-04-13 10:37:27] INFO root fetch - processPackages [cns]: Remove: archive file [/home/abi/fetcher/tmp/cns-1.8.33-py3-none-any.whl.zip]
+[2024-04-13 10:37:27] INFO root fetch - main [MainThread]: End processing [cns]: success
+[2024-04-13 10:37:27] INFO root fetch - main [MainThread]: Store serial: [22750578]
