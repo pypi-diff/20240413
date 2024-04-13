@@ -6471,3 +6471,24 @@
 [2024-04-13 03:21:57] WARNING root fetch - processPackages [multiplierz]: Skipping package: exceeds size limit 18776608>=10485760
 [2024-04-13 03:21:57] INFO root fetch - main [MainThread]: End processing [multiplierz] error
 [2024-04-13 03:21:57] INFO root fetch - main [MainThread]: Store serial: [22748812]
+[2024-04-13 03:24:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22748812]
+[2024-04-13 03:24:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 03:24:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypreql-nlp
+[2024-04-13 03:24:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lamini
+[2024-04-13 03:24:07] INFO root fetch - processPackages [lamini]: New version: [2.1.6] Old Version: [2.1.5a6]
+[2024-04-13 03:24:07] INFO root fetch - processPackages [lamini]: Downloading https://files.pythonhosted.org/packages/1a/23/182004da9b559a447543baf4836622b4880b2135275f5443e00d13c6961c/lamini-2.1.5a6-119-py3-none-any.whl
+[2024-04-13 03:24:07] INFO root fetch - processPackages [pypreql-nlp]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 03:24:08] INFO root fetch - processPackages [pypreql-nlp]: Downloading https://files.pythonhosted.org/packages/59/c6/a8a53247e6f49aa856d7321d493f36d7c0b06634db06f2687d6d3a2a6c78/pypreql-nlp-0.0.8.tar.gz
+[2024-04-13 03:24:08] INFO root fetch - processPackages [lamini]: Downloading https://files.pythonhosted.org/packages/fe/39/1141274eefecadca9841cf57df3b7d547c3421e979e8a40c8f0c6d5511b9/lamini-2.1.6-120-py3-none-any.whl
+[2024-04-13 03:24:08] INFO root fetch - processPackages [pypreql-nlp]: Downloading https://files.pythonhosted.org/packages/75/31/b75d3a74248ae21827dccb016fe9addad4a1807980784b2d8e6bfebf0f78/pypreql-nlp-0.0.9.tar.gz
+[2024-04-13 03:24:08] INFO root fetch - processPackages [lamini]: executing diffoscope
+[2024-04-13 03:24:08] INFO root fetch - processPackages [lamini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamini-2.1.5a6-119-py3-none-any.whl.zip tmp/lamini-2.1.6-120-py3-none-any.whl.zip --markdown 20240413/l/lamini/2.1.5a6-2.1.6/README.md --exclude *.pyd
+[2024-04-13 03:24:08] INFO root fetch - processPackages [pypreql-nlp]: executing diffoscope
+[2024-04-13 03:24:08] INFO root fetch - processPackages [pypreql-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypreql-nlp-0.0.8.tar.gz tmp/pypreql-nlp-0.0.9.tar.gz --markdown 20240413/p/pypreql-nlp/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 03:24:09] INFO root fetch - processPackages [pypreql-nlp]: Remove: archive file [/home/abi/fetcher/tmp/pypreql-nlp-0.0.8.tar.gz]
+[2024-04-13 03:24:09] INFO root fetch - processPackages [pypreql-nlp]: Remove: archive file [/home/abi/fetcher/tmp/pypreql-nlp-0.0.9.tar.gz]
+[2024-04-13 03:24:09] INFO root fetch - main [MainThread]: End processing [pypreql-nlp]: success
+[2024-04-13 03:24:09] INFO root fetch - processPackages [lamini]: Remove: archive file [/home/abi/fetcher/tmp/lamini-2.1.5a6-119-py3-none-any.whl.zip]
+[2024-04-13 03:24:09] INFO root fetch - processPackages [lamini]: Remove: archive file [/home/abi/fetcher/tmp/lamini-2.1.6-120-py3-none-any.whl.zip]
+[2024-04-13 03:24:09] INFO root fetch - main [MainThread]: End processing [lamini]: success
+[2024-04-13 03:24:09] INFO root fetch - main [MainThread]: Store serial: [22748817]
