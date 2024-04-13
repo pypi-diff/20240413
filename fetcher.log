@@ -13977,3 +13977,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:48:10] INFO root fetch - processPackages [ds20kdb-avt]: Remove: archive file [/home/abi/fetcher/tmp/ds20kdb-avt-1.0.4.tar.gz]
 [2024-04-13 14:48:10] INFO root fetch - main [MainThread]: End processing [ds20kdb-avt]: success
 [2024-04-13 14:48:10] INFO root fetch - main [MainThread]: Store serial: [22751834]
+[2024-04-13 14:50:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751834]
+[2024-04-13 14:50:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 14:50:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: parsee-core
+[2024-04-13 14:50:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chartgpt
+[2024-04-13 14:50:19] INFO root fetch - processPackages [parsee-core]: New version: [0.1.4.6] Old Version: [0.1.4.5]
+[2024-04-13 14:50:19] INFO root fetch - processPackages [parsee-core]: Downloading https://files.pythonhosted.org/packages/92/1f/24e8d2e74c3a6f1aa634d094200892cb28f68ceb7848b635a2ff2306458e/parsee_core-0.1.4.5.tar.gz
+[2024-04-13 14:50:19] INFO root fetch - processPackages [chartgpt]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-13 14:50:20] INFO root fetch - processPackages [chartgpt]: Downloading https://files.pythonhosted.org/packages/66/07/41fbd18f8589e347fe451418088d21ddf2bab2eb7b64489dcc81f80763fc/chartgpt-0.0.6.tar.gz
+[2024-04-13 14:50:20] INFO root fetch - processPackages [parsee-core]: Downloading https://files.pythonhosted.org/packages/ae/fd/51d857dfce00213b1cbc0a57101775f1f7591d4bbb4ec72c307ab1884690/parsee_core-0.1.4.6.tar.gz
+[2024-04-13 14:50:20] INFO root fetch - processPackages [parsee-core]: executing diffoscope
+[2024-04-13 14:50:20] INFO root fetch - processPackages [parsee-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsee_core-0.1.4.5.tar.gz tmp/parsee_core-0.1.4.6.tar.gz --markdown 20240413/p/parsee-core/0.1.4.5-0.1.4.6/README.md --exclude *.pyd
+[2024-04-13 14:50:20] INFO root fetch - processPackages [chartgpt]: Downloading https://files.pythonhosted.org/packages/05/c8/375e9fbd9dee93f54fd5d0e3e85ac9533b55d18f1c0d5c4a81315e6b28a4/chartgpt-0.0.7.tar.gz
+[2024-04-13 14:50:20] INFO root fetch - processPackages [parsee-core]: Remove: archive file [/home/abi/fetcher/tmp/parsee_core-0.1.4.5.tar.gz]
+[2024-04-13 14:50:20] INFO root fetch - processPackages [parsee-core]: Remove: archive file [/home/abi/fetcher/tmp/parsee_core-0.1.4.6.tar.gz]
+[2024-04-13 14:50:20] INFO root fetch - main [MainThread]: End processing [parsee-core]: success
+[2024-04-13 14:50:20] INFO root fetch - processPackages [chartgpt]: executing diffoscope
+[2024-04-13 14:50:20] INFO root fetch - processPackages [chartgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chartgpt-0.0.6.tar.gz tmp/chartgpt-0.0.7.tar.gz --markdown 20240413/c/chartgpt/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-13 14:50:21] INFO root fetch - processPackages [chartgpt]: Remove: archive file [/home/abi/fetcher/tmp/chartgpt-0.0.6.tar.gz]
+[2024-04-13 14:50:21] INFO root fetch - processPackages [chartgpt]: Remove: archive file [/home/abi/fetcher/tmp/chartgpt-0.0.7.tar.gz]
+[2024-04-13 14:50:21] INFO root fetch - main [MainThread]: End processing [chartgpt]: success
+[2024-04-13 14:50:21] INFO root fetch - main [MainThread]: Store serial: [22751843]
