@@ -15753,3 +15753,114 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 17:11:04] INFO root fetch - processPackages [hepai]: Remove: archive file [/home/abi/fetcher/tmp/hepai-1.1.2.tar.gz]
 [2024-04-13 17:11:04] INFO root fetch - main [MainThread]: End processing [hepai]: success
 [2024-04-13 17:11:04] INFO root fetch - main [MainThread]: Store serial: [22752760]
+[2024-04-13 17:13:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752760]
+[2024-04-13 17:13:13] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2024-04-13 17:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: polyaxon
+[2024-04-13 17:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: haupt
+[2024-04-13 17:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: polyaxon-sdk
+[2024-04-13 17:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lbkit
+[2024-04-13 17:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: snake-environment
+[2024-04-13 17:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: simo-zwave
+[2024-04-13 17:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: furtheredge
+[2024-04-13 17:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pycityagent
+[2024-04-13 17:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: postfinancex
+[2024-04-13 17:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: jammy
+[2024-04-13 17:13:13] INFO root fetch - processPackages [furtheredge]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-13 17:13:13] INFO root fetch - processPackages [snake-environment]: New version: [0.2.6] Old Version: [0.2.4]
+[2024-04-13 17:13:13] INFO root fetch - processPackages [pycityagent]: New version: [1.1.6] Old Version: [1.1.5]
+[2024-04-13 17:13:13] INFO root fetch - processPackages [lbkit]: New version: [0.5.5] Old Version: [0.5.3]
+[2024-04-13 17:13:13] WARNING root fetch - processPackages [postfinancex]: Skipping, unable to determine old version
+[2024-04-13 17:13:13] INFO root fetch - processPackages [postfinancex]: Start processing: langalf
+[2024-04-13 17:13:13] INFO root fetch - main [MainThread]: End processing [postfinancex] error
+[2024-04-13 17:13:13] INFO root fetch - processPackages [furtheredge]: Downloading https://files.pythonhosted.org/packages/b3/99/3abaa02f00811575c48f69d504318d36a2533b599b4f085c32fc6bc82f7a/furtheredge-0.0.4.tar.gz
+[2024-04-13 17:13:14] INFO root fetch - processPackages [haupt]: New version: [2.1.6rc0] Old Version: [2.1.6]
+[2024-04-13 17:13:14] INFO root fetch - processPackages [simo-zwave]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-13 17:13:14] INFO root fetch - processPackages [polyaxon]: New version: [2.1.6rc0] Old Version: [2.1.6]
+[2024-04-13 17:13:14] INFO root fetch - processPackages [pycityagent]: Downloading https://files.pythonhosted.org/packages/bb/53/842b00e80dbf3b91a77ac6398dac35ae15941432f263c9a0b264775d59a8/pycityagent-1.1.5.tar.gz
+[2024-04-13 17:13:14] INFO root fetch - processPackages [snake-environment]: Downloading https://files.pythonhosted.org/packages/77/e5/eae15030479018640c05b9a934bb634dff72d22ecbabf9c7b6a09bc1406a/snake_environment-0.2.4.tar.gz
+[2024-04-13 17:13:14] INFO root fetch - processPackages [jammy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 17:13:14] INFO root fetch - processPackages [polyaxon-sdk]: New version: [2.1.6rc0] Old Version: [2.1.6]
+[2024-04-13 17:13:14] WARNING root fetch - processPackages [langalf]: Skipping, unable to determine old version
+[2024-04-13 17:13:14] INFO root fetch - processPackages [langalf]: Start processing: pwrpy
+[2024-04-13 17:13:14] INFO root fetch - main [MainThread]: End processing [langalf] error
+[2024-04-13 17:13:14] INFO root fetch - processPackages [lbkit]: Downloading https://files.pythonhosted.org/packages/f9/fc/63b3ac65e0988a53c409335aa48662cc702facd40bdb0d8b929b3691c16b/lbkit-0.5.3.tar.gz
+[2024-04-13 17:13:14] INFO root fetch - processPackages [polyaxon]: Downloading https://files.pythonhosted.org/packages/1b/99/3176f97bc9e87ea269f8bf6806e840baa34d93a3b583c2e9b16e3f45db2d/polyaxon-2.1.6.tar.gz
+[2024-04-13 17:13:14] INFO root fetch - processPackages [haupt]: Downloading https://files.pythonhosted.org/packages/35/3b/7db1cc127586d1f7ad1ba0d1123e334aab0ff6aac0a68ec7c7f3659c893e/haupt-2.1.6.tar.gz
+[2024-04-13 17:13:14] INFO root fetch - processPackages [pwrpy]: New version: [5.0.1] Old Version: [1.1.4]
+[2024-04-13 17:13:14] INFO root fetch - processPackages [polyaxon-sdk]: Downloading https://files.pythonhosted.org/packages/83/ea/5b94650432f0b2b852c3bd3244947d4d25dcdb436c21c275af5ff446eecd/polyaxon-sdk-2.1.6.tar.gz
+[2024-04-13 17:13:14] INFO root fetch - processPackages [pycityagent]: Downloading https://files.pythonhosted.org/packages/a7/dd/e005d105c3f838ed28eae4318407992edc013ad1cf3e9644d0fe9f20a99b/pycityagent-1.1.6.tar.gz
+[2024-04-13 17:13:14] INFO root fetch - processPackages [simo-zwave]: Downloading https://files.pythonhosted.org/packages/0b/1a/4d31b21ed5651d29b8c539053284690160e04dd9067e4e940abb591ec09d/simo-zwave-1.0.6.tar.gz
+[2024-04-13 17:13:14] INFO root fetch - processPackages [jammy]: Downloading https://files.pythonhosted.org/packages/c9/fb/465ed333f5925034516e3985a883ef46f2d54621cb6b9d7d88aaed34c95f/jammy-0.1.8.tar.gz
+[2024-04-13 17:13:14] INFO root fetch - processPackages [furtheredge]: Downloading https://files.pythonhosted.org/packages/cf/a3/211a96fa9b395a55f0f2212b818d56df1234734b97156af469db3c7c1ce4/furtheredge-0.0.5.tar.gz
+[2024-04-13 17:13:14] INFO root fetch - processPackages [pycityagent]: executing diffoscope
+[2024-04-13 17:13:14] INFO root fetch - processPackages [pycityagent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycityagent-1.1.5.tar.gz tmp/pycityagent-1.1.6.tar.gz --markdown 20240413/p/pycityagent/1.1.5-1.1.6/README.md --exclude *.pyd
+[2024-04-13 17:13:14] INFO root fetch - processPackages [furtheredge]: executing diffoscope
+[2024-04-13 17:13:14] INFO root fetch - processPackages [furtheredge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furtheredge-0.0.4.tar.gz tmp/furtheredge-0.0.5.tar.gz --markdown 20240413/f/furtheredge/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-13 17:13:14] INFO root fetch - processPackages [snake-environment]: Downloading https://files.pythonhosted.org/packages/c9/e7/29cd2303a6c5f5fb74879e6353320edcc5814909dc665f88372c85312f2b/snake_environment-0.2.6.tar.gz
+[2024-04-13 17:13:14] INFO root fetch - processPackages [pwrpy]: Downloading https://files.pythonhosted.org/packages/06/b1/b3323371c4c1b2811c10223bd31abf5e73975df210c9d2b3abd636968426/pwrpy-1.1.4.tar.gz
+[2024-04-13 17:13:14] INFO root fetch - processPackages [lbkit]: Downloading https://files.pythonhosted.org/packages/7d/25/5ae764c82b7f948d81871b6204a728988676e84e0b41c337562e5ddeeac8/lbkit-0.5.5.tar.gz
+[2024-04-13 17:13:14] INFO root fetch - processPackages [simo-zwave]: Downloading https://files.pythonhosted.org/packages/bb/44/81a737f146a4acf5574b4afadd86edfa71f21d7c520a384f8fd40617be45/simo_zwave-1.0.7.tar.gz
+[2024-04-13 17:13:14] INFO root fetch - processPackages [snake-environment]: executing diffoscope
+[2024-04-13 17:13:14] INFO root fetch - processPackages [snake-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snake_environment-0.2.4.tar.gz tmp/snake_environment-0.2.6.tar.gz --markdown 20240413/s/snake-environment/0.2.4-0.2.6/README.md --exclude *.pyd
+[2024-04-13 17:13:14] INFO root fetch - processPackages [polyaxon]: Downloading https://files.pythonhosted.org/packages/00/6a/4058b55900744059019c62453d2d98ba795c166c11e7921c71d35ca0513e/polyaxon-2.1.6rc0.tar.gz
+[2024-04-13 17:13:14] INFO root fetch - processPackages [polyaxon-sdk]: Downloading https://files.pythonhosted.org/packages/6d/ff/6c55daead18666071b7aa6435bd8dae5ecc7072daf780d9c81bf35060b80/polyaxon-sdk-2.1.6rc0.tar.gz
+[2024-04-13 17:13:14] INFO root fetch - processPackages [lbkit]: executing diffoscope
+[2024-04-13 17:13:14] INFO root fetch - processPackages [lbkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbkit-0.5.3.tar.gz tmp/lbkit-0.5.5.tar.gz --markdown 20240413/l/lbkit/0.5.3-0.5.5/README.md --exclude *.pyd
+[2024-04-13 17:13:14] INFO root fetch - processPackages [simo-zwave]: executing diffoscope
+[2024-04-13 17:13:14] INFO root fetch - processPackages [simo-zwave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simo-zwave-1.0.6.tar.gz tmp/simo_zwave-1.0.7.tar.gz --markdown 20240413/s/simo-zwave/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-13 17:13:14] INFO root fetch - processPackages [polyaxon]: executing diffoscope
+[2024-04-13 17:13:14] INFO root fetch - processPackages [polyaxon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polyaxon-2.1.6.tar.gz tmp/polyaxon-2.1.6rc0.tar.gz --markdown 20240413/p/polyaxon/2.1.6-2.1.6rc0/README.md --exclude *.pyd
+[2024-04-13 17:13:14] INFO root fetch - processPackages [polyaxon-sdk]: executing diffoscope
+[2024-04-13 17:13:14] INFO root fetch - processPackages [polyaxon-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polyaxon-sdk-2.1.6.tar.gz tmp/polyaxon-sdk-2.1.6rc0.tar.gz --markdown 20240413/p/polyaxon-sdk/2.1.6-2.1.6rc0/README.md --exclude *.pyd
+[2024-04-13 17:13:14] INFO root fetch - processPackages [pwrpy]: Downloading https://files.pythonhosted.org/packages/b1/23/a7150be3906cbd956c0b3da48ab63368caa80fd4b3c01a2220c58f8e1212/pwrpy-5.0.1.tar.gz
+[2024-04-13 17:13:14] INFO root fetch - processPackages [haupt]: Downloading https://files.pythonhosted.org/packages/12/58/d40a9a775d40dc8d8f27e06deb7b4a51fa53e8a27432cb95b2ca39bb1b53/haupt-2.1.6rc0.tar.gz
+[2024-04-13 17:13:15] INFO root fetch - processPackages [pwrpy]: executing diffoscope
+[2024-04-13 17:13:15] INFO root fetch - processPackages [pwrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pwrpy-1.1.4.tar.gz tmp/pwrpy-5.0.1.tar.gz --markdown 20240413/p/pwrpy/1.1.4-5.0.1/README.md --exclude *.pyd
+[2024-04-13 17:13:15] INFO root fetch - processPackages [jammy]: Downloading https://files.pythonhosted.org/packages/bf/79/2d8d15d3e065bb7a39a673d2bbefe9d0374e7fc703f009d31eece23c6c19/jammy-0.1.9.tar.gz
+[2024-04-13 17:13:15] INFO root fetch - processPackages [jammy]: executing diffoscope
+[2024-04-13 17:13:15] INFO root fetch - processPackages [jammy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jammy-0.1.8.tar.gz tmp/jammy-0.1.9.tar.gz --markdown 20240413/j/jammy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 17:13:15] INFO root fetch - processPackages [haupt]: executing diffoscope
+[2024-04-13 17:13:15] INFO root fetch - processPackages [haupt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haupt-2.1.6.tar.gz tmp/haupt-2.1.6rc0.tar.gz --markdown 20240413/h/haupt/2.1.6-2.1.6rc0/README.md --exclude *.pyd
+[2024-04-13 17:13:15] INFO root fetch - processPackages [furtheredge]: Remove: archive file [/home/abi/fetcher/tmp/furtheredge-0.0.4.tar.gz]
+[2024-04-13 17:13:15] INFO root fetch - processPackages [furtheredge]: Remove: archive file [/home/abi/fetcher/tmp/furtheredge-0.0.5.tar.gz]
+[2024-04-13 17:13:15] INFO root fetch - processPackages [furtheredge]: Start processing: sampa
+[2024-04-13 17:13:15] INFO root fetch - main [MainThread]: End processing [furtheredge]: success
+[2024-04-13 17:13:15] INFO root fetch - processPackages [pycityagent]: Remove: archive file [/home/abi/fetcher/tmp/pycityagent-1.1.5.tar.gz]
+[2024-04-13 17:13:15] INFO root fetch - processPackages [pycityagent]: Remove: archive file [/home/abi/fetcher/tmp/pycityagent-1.1.6.tar.gz]
+[2024-04-13 17:13:15] INFO root fetch - processPackages [pycityagent]: Start processing: irt-test
+[2024-04-13 17:13:15] INFO root fetch - main [MainThread]: End processing [pycityagent]: success
+[2024-04-13 17:13:15] WARNING root fetch - processPackages [sampa]: Skipping, unable to determine old version
+[2024-04-13 17:13:15] INFO root fetch - main [MainThread]: End processing [sampa] error
+[2024-04-13 17:13:15] INFO root fetch - processPackages [snake-environment]: Remove: archive file [/home/abi/fetcher/tmp/snake_environment-0.2.4.tar.gz]
+[2024-04-13 17:13:15] INFO root fetch - processPackages [snake-environment]: Remove: archive file [/home/abi/fetcher/tmp/snake_environment-0.2.6.tar.gz]
+[2024-04-13 17:13:15] INFO root fetch - main [MainThread]: End processing [snake-environment]: success
+[2024-04-13 17:13:15] INFO root fetch - processPackages [irt-test]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 17:13:15] INFO root fetch - processPackages [lbkit]: Remove: archive file [/home/abi/fetcher/tmp/lbkit-0.5.3.tar.gz]
+[2024-04-13 17:13:15] INFO root fetch - processPackages [lbkit]: Remove: archive file [/home/abi/fetcher/tmp/lbkit-0.5.5.tar.gz]
+[2024-04-13 17:13:15] INFO root fetch - main [MainThread]: End processing [lbkit]: success
+[2024-04-13 17:13:15] INFO root fetch - processPackages [simo-zwave]: Remove: archive file [/home/abi/fetcher/tmp/simo-zwave-1.0.6.tar.gz]
+[2024-04-13 17:13:15] INFO root fetch - processPackages [simo-zwave]: Remove: archive file [/home/abi/fetcher/tmp/simo_zwave-1.0.7.tar.gz]
+[2024-04-13 17:13:15] INFO root fetch - main [MainThread]: End processing [simo-zwave]: success
+[2024-04-13 17:13:15] INFO root fetch - processPackages [pwrpy]: Remove: archive file [/home/abi/fetcher/tmp/pwrpy-1.1.4.tar.gz]
+[2024-04-13 17:13:15] INFO root fetch - processPackages [pwrpy]: Remove: archive file [/home/abi/fetcher/tmp/pwrpy-5.0.1.tar.gz]
+[2024-04-13 17:13:15] INFO root fetch - main [MainThread]: End processing [pwrpy]: success
+[2024-04-13 17:13:16] INFO root fetch - processPackages [irt-test]: Downloading https://files.pythonhosted.org/packages/51/49/f7883139d439999b847b06efdd9def81f29b8457c53cab86cab7b2f21956/irt_test-0.1.1.tar.gz
+[2024-04-13 17:13:16] INFO root fetch - processPackages [irt-test]: Downloading https://files.pythonhosted.org/packages/83/74/50b548490c523b2c40d17e4617c2f47bf4b6137c7dbabca3d7956847c3ba/irt_test-0.1.2.tar.gz
+[2024-04-13 17:13:16] INFO root fetch - processPackages [irt-test]: executing diffoscope
+[2024-04-13 17:13:16] INFO root fetch - processPackages [irt-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irt_test-0.1.1.tar.gz tmp/irt_test-0.1.2.tar.gz --markdown 20240413/i/irt-test/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-13 17:13:16] INFO root fetch - processPackages [jammy]: Remove: archive file [/home/abi/fetcher/tmp/jammy-0.1.8.tar.gz]
+[2024-04-13 17:13:16] INFO root fetch - processPackages [jammy]: Remove: archive file [/home/abi/fetcher/tmp/jammy-0.1.9.tar.gz]
+[2024-04-13 17:13:16] INFO root fetch - main [MainThread]: End processing [jammy]: success
+[2024-04-13 17:13:16] INFO root fetch - processPackages [irt-test]: Remove: archive file [/home/abi/fetcher/tmp/irt_test-0.1.1.tar.gz]
+[2024-04-13 17:13:16] INFO root fetch - processPackages [irt-test]: Remove: archive file [/home/abi/fetcher/tmp/irt_test-0.1.2.tar.gz]
+[2024-04-13 17:13:16] INFO root fetch - main [MainThread]: End processing [irt-test]: success
+[2024-04-13 17:13:17] INFO root fetch - processPackages [polyaxon]: Remove: archive file [/home/abi/fetcher/tmp/polyaxon-2.1.6.tar.gz]
+[2024-04-13 17:13:17] INFO root fetch - processPackages [polyaxon]: Remove: archive file [/home/abi/fetcher/tmp/polyaxon-2.1.6rc0.tar.gz]
+[2024-04-13 17:13:17] INFO root fetch - main [MainThread]: End processing [polyaxon]: success
+[2024-04-13 17:13:18] INFO root fetch - processPackages [polyaxon-sdk]: Remove: archive file [/home/abi/fetcher/tmp/polyaxon-sdk-2.1.6.tar.gz]
+[2024-04-13 17:13:18] INFO root fetch - processPackages [polyaxon-sdk]: Remove: archive file [/home/abi/fetcher/tmp/polyaxon-sdk-2.1.6rc0.tar.gz]
+[2024-04-13 17:13:18] INFO root fetch - main [MainThread]: End processing [polyaxon-sdk]: success
+[2024-04-13 17:13:33] INFO root fetch - processPackages [haupt]: Remove: archive file [/home/abi/fetcher/tmp/haupt-2.1.6.tar.gz]
+[2024-04-13 17:13:33] INFO root fetch - processPackages [haupt]: Remove: archive file [/home/abi/fetcher/tmp/haupt-2.1.6rc0.tar.gz]
+[2024-04-13 17:13:33] INFO root fetch - main [MainThread]: End processing [haupt]: success
+[2024-04-13 17:13:33] INFO root fetch - main [MainThread]: Store serial: [22752804]
