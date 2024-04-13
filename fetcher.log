@@ -8636,3 +8636,24 @@
 [2024-04-13 07:59:19] INFO root fetch - processPackages [fb-tools]: Remove: archive file [/home/abi/fetcher/tmp/fb_tools-2.5.1.tar.gz]
 [2024-04-13 07:59:19] INFO root fetch - main [MainThread]: End processing [fb-tools]: success
 [2024-04-13 07:59:19] INFO root fetch - main [MainThread]: Store serial: [22749721]
+[2024-04-13 08:01:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749721]
+[2024-04-13 08:01:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 08:01:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clfutils4r
+[2024-04-13 08:01:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: haedream
+[2024-04-13 08:01:29] INFO root fetch - processPackages [haedream]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 08:01:29] INFO root fetch - processPackages [clfutils4r]: New version: [1.0.0] Old Version: [0.0.3]
+[2024-04-13 08:01:29] INFO root fetch - processPackages [clfutils4r]: Downloading https://files.pythonhosted.org/packages/f8/2a/0fed9f895e424b7f9846640ed86f3f1c833c8b4dc27193f505d10924f346/clfutils4r-0.0.3.tar.gz
+[2024-04-13 08:01:29] INFO root fetch - processPackages [haedream]: Downloading https://files.pythonhosted.org/packages/20/90/0fc15a708265ed1672ff7ad64868e6fd624f41d0e1dfcb893fe801d50e0f/haedream-0.0.8.tar.gz
+[2024-04-13 08:01:30] INFO root fetch - processPackages [clfutils4r]: Downloading https://files.pythonhosted.org/packages/ef/10/1326fe8acfe91b15c23782f11bb65db1c1515ac12abcab77187aba0dc96b/clfutils4r-1.0.0.tar.gz
+[2024-04-13 08:01:30] INFO root fetch - processPackages [haedream]: Downloading https://files.pythonhosted.org/packages/60/bb/85f13d71e99cfe06e715134b0b96cb050e5c6cf1d6a43b1439b0b686f82a/haedream-0.0.9.tar.gz
+[2024-04-13 08:01:30] INFO root fetch - processPackages [haedream]: executing diffoscope
+[2024-04-13 08:01:30] INFO root fetch - processPackages [haedream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haedream-0.0.8.tar.gz tmp/haedream-0.0.9.tar.gz --markdown 20240413/h/haedream/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 08:01:30] INFO root fetch - processPackages [clfutils4r]: executing diffoscope
+[2024-04-13 08:01:30] INFO root fetch - processPackages [clfutils4r]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clfutils4r-0.0.3.tar.gz tmp/clfutils4r-1.0.0.tar.gz --markdown 20240413/c/clfutils4r/0.0.3-1.0.0/README.md --exclude *.pyd
+[2024-04-13 08:01:30] INFO root fetch - processPackages [haedream]: Remove: archive file [/home/abi/fetcher/tmp/haedream-0.0.8.tar.gz]
+[2024-04-13 08:01:30] INFO root fetch - processPackages [haedream]: Remove: archive file [/home/abi/fetcher/tmp/haedream-0.0.9.tar.gz]
+[2024-04-13 08:01:30] INFO root fetch - main [MainThread]: End processing [haedream]: success
+[2024-04-13 08:01:30] INFO root fetch - processPackages [clfutils4r]: Remove: archive file [/home/abi/fetcher/tmp/clfutils4r-0.0.3.tar.gz]
+[2024-04-13 08:01:30] INFO root fetch - processPackages [clfutils4r]: Remove: archive file [/home/abi/fetcher/tmp/clfutils4r-1.0.0.tar.gz]
+[2024-04-13 08:01:30] INFO root fetch - main [MainThread]: End processing [clfutils4r]: success
+[2024-04-13 08:01:30] INFO root fetch - main [MainThread]: Store serial: [22749728]
