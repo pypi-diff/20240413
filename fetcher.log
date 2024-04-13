@@ -14028,3 +14028,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:52:31] INFO root fetch - processPackages [everywhereml]: Remove: archive file [/home/abi/fetcher/tmp/everywhereml-0.2.9.tar.gz]
 [2024-04-13 14:52:31] INFO root fetch - main [MainThread]: End processing [everywhereml]: success
 [2024-04-13 14:52:31] INFO root fetch - main [MainThread]: Store serial: [22751853]
+[2024-04-13 14:54:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751853]
+[2024-04-13 14:54:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 14:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bestdori-api
+[2024-04-13 14:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libcaes-python
+[2024-04-13 14:54:40] INFO root fetch - processPackages [bestdori-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 14:54:40] INFO root fetch - processPackages [libcaes-python]: New version: [20240413] Old Version: [20240114]
+[2024-04-13 14:54:40] INFO root fetch - processPackages [bestdori-api]: Downloading https://files.pythonhosted.org/packages/81/fd/cfb845fb249267b8cd7573748f153416613ff4d92557b0588175d0ffa06c/bestdori_api-0.1.8.tar.gz
+[2024-04-13 14:54:40] INFO root fetch - processPackages [libcaes-python]: Downloading https://files.pythonhosted.org/packages/ba/17/bbca9e8a020a47f9dfcab3c254dc5290eb6bdcb18217953a0a1f99e6936f/libcaes-python-20240114.tar.gz
+[2024-04-13 14:54:40] INFO root fetch - processPackages [bestdori-api]: Downloading https://files.pythonhosted.org/packages/e8/c6/efff1f1ea01c0bd24d5e120c25cc983a43678412b030542c4a6cfffdd9ea/bestdori_api-0.1.9.tar.gz
+[2024-04-13 14:54:41] INFO root fetch - processPackages [libcaes-python]: Downloading https://files.pythonhosted.org/packages/ca/cb/c0ca79f1027b1a178a950d801ca22071a63f0a6164f87db4d6122d675e5d/libcaes-python-20240413.tar.gz
+[2024-04-13 14:54:41] INFO root fetch - processPackages [bestdori-api]: executing diffoscope
+[2024-04-13 14:54:41] INFO root fetch - processPackages [bestdori-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bestdori_api-0.1.8.tar.gz tmp/bestdori_api-0.1.9.tar.gz --markdown 20240413/b/bestdori-api/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 14:54:41] INFO root fetch - processPackages [libcaes-python]: executing diffoscope
+[2024-04-13 14:54:41] INFO root fetch - processPackages [libcaes-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libcaes-python-20240114.tar.gz tmp/libcaes-python-20240413.tar.gz --markdown 20240413/l/libcaes-python/20240114-20240413/README.md --exclude *.pyd
+[2024-04-13 14:54:41] INFO root fetch - processPackages [bestdori-api]: Remove: archive file [/home/abi/fetcher/tmp/bestdori_api-0.1.8.tar.gz]
+[2024-04-13 14:54:41] INFO root fetch - processPackages [bestdori-api]: Remove: archive file [/home/abi/fetcher/tmp/bestdori_api-0.1.9.tar.gz]
+[2024-04-13 14:54:41] INFO root fetch - main [MainThread]: End processing [bestdori-api]: success
+[2024-04-13 14:54:43] INFO root fetch - processPackages [libcaes-python]: Remove: archive file [/home/abi/fetcher/tmp/libcaes-python-20240114.tar.gz]
+[2024-04-13 14:54:43] INFO root fetch - processPackages [libcaes-python]: Remove: archive file [/home/abi/fetcher/tmp/libcaes-python-20240413.tar.gz]
+[2024-04-13 14:54:43] INFO root fetch - main [MainThread]: End processing [libcaes-python]: success
+[2024-04-13 14:54:43] INFO root fetch - main [MainThread]: Store serial: [22751860]
