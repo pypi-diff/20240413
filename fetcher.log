@@ -19742,3 +19742,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 22:18:35] INFO root fetch - processPackages [dlrepo]: Remove: archive file [/home/abi/fetcher/tmp/dlrepo-0.8.tar.gz]
 [2024-04-13 22:18:35] INFO root fetch - main [MainThread]: End processing [dlrepo]: success
 [2024-04-13 22:18:35] INFO root fetch - main [MainThread]: Store serial: [22754549]
+[2024-04-13 22:20:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754549]
+[2024-04-13 22:20:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 22:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyplotlib
+[2024-04-13 22:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ScriptCollection
+[2024-04-13 22:20:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: volts
+[2024-04-13 22:20:44] INFO root fetch - processPackages [pyplotlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 22:20:44] INFO root fetch - processPackages [ScriptCollection]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-04-13 22:20:44] INFO root fetch - processPackages [volts]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-13 22:20:44] INFO root fetch - processPackages [pyplotlib]: Downloading https://files.pythonhosted.org/packages/28/bb/58ba19c8fed8024ef2c0efd0523dded73560d64857fcd7916d35aa6aa8af/pyplotlib-0.0.8.tar.gz
+[2024-04-13 22:20:44] INFO root fetch - processPackages [ScriptCollection]: Downloading https://files.pythonhosted.org/packages/94/6a/9f7c695146680fa3c59ffe6929ee98ec36dcb44c263994d81dadb25a0d27/ScriptCollection-3.4.8-py3-none-any.whl
+[2024-04-13 22:20:44] INFO root fetch - processPackages [volts]: Downloading https://files.pythonhosted.org/packages/89/ee/3ea54f9cb1be29ff8a79c564039960e735126e0c2641cf6b7f0f9415653c/volts-1.1.0.tar.gz
+[2024-04-13 22:20:44] INFO root fetch - processPackages [pyplotlib]: Downloading https://files.pythonhosted.org/packages/8b/f8/1cec6ba77c9aee645ad1564c6fe928db135b36bec387a9574c6422edd191/pyplotlib-0.0.9.tar.gz
+[2024-04-13 22:20:44] INFO root fetch - processPackages [ScriptCollection]: Downloading https://files.pythonhosted.org/packages/6d/e3/446a963e5eb78b0db6864a3444a71c28fe53b596c32c44cd82de0caeb1ff/ScriptCollection-3.4.9-py3-none-any.whl
+[2024-04-13 22:20:44] INFO root fetch - processPackages [pyplotlib]: executing diffoscope
+[2024-04-13 22:20:44] INFO root fetch - processPackages [pyplotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyplotlib-0.0.8.tar.gz tmp/pyplotlib-0.0.9.tar.gz --markdown 20240413/p/pyplotlib/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 22:20:44] INFO root fetch - processPackages [ScriptCollection]: executing diffoscope
+[2024-04-13 22:20:44] INFO root fetch - processPackages [ScriptCollection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ScriptCollection-3.4.8-py3-none-any.whl.zip tmp/ScriptCollection-3.4.9-py3-none-any.whl.zip --markdown 20240413/S/ScriptCollection/3.4.8-3.4.9/README.md --exclude *.pyd
+[2024-04-13 22:20:45] INFO root fetch - processPackages [volts]: Downloading https://files.pythonhosted.org/packages/72/83/e8d2aca0845118f5bf338a542fa39533ba1a77dc4b533407f43343bd9d77/volts-1.1.1.tar.gz
+[2024-04-13 22:20:45] INFO root fetch - processPackages [volts]: executing diffoscope
+[2024-04-13 22:20:45] INFO root fetch - processPackages [volts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/volts-1.1.0.tar.gz tmp/volts-1.1.1.tar.gz --markdown 20240413/v/volts/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-13 22:20:45] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.8.tar.gz]
+[2024-04-13 22:20:45] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.9.tar.gz]
+[2024-04-13 22:20:45] INFO root fetch - main [MainThread]: End processing [pyplotlib]: success
+[2024-04-13 22:20:45] INFO root fetch - processPackages [ScriptCollection]: Remove: archive file [/home/abi/fetcher/tmp/ScriptCollection-3.4.8-py3-none-any.whl.zip]
+[2024-04-13 22:20:45] INFO root fetch - processPackages [ScriptCollection]: Remove: archive file [/home/abi/fetcher/tmp/ScriptCollection-3.4.9-py3-none-any.whl.zip]
+[2024-04-13 22:20:45] INFO root fetch - main [MainThread]: End processing [ScriptCollection]: success
+[2024-04-13 22:20:48] INFO root fetch - processPackages [volts]: Remove: archive file [/home/abi/fetcher/tmp/volts-1.1.0.tar.gz]
+[2024-04-13 22:20:48] INFO root fetch - processPackages [volts]: Remove: archive file [/home/abi/fetcher/tmp/volts-1.1.1.tar.gz]
+[2024-04-13 22:20:48] INFO root fetch - main [MainThread]: End processing [volts]: success
+[2024-04-13 22:20:48] INFO root fetch - main [MainThread]: Store serial: [22754560]
