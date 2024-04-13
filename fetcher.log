@@ -9399,3 +9399,36 @@
 [2024-04-13 08:49:50] WARNING root fetch - processPackages [ctis]: Skipping, unable to determine old version
 [2024-04-13 08:49:50] INFO root fetch - main [MainThread]: End processing [ctis] error
 [2024-04-13 08:49:50] INFO root fetch - main [MainThread]: Store serial: [22749979]
+[2024-04-13 08:51:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749979]
+[2024-04-13 08:51:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-13 08:51:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chainlit1
+[2024-04-13 08:51:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mns-scheduler
+[2024-04-13 08:51:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-opsgenie
+[2024-04-13 08:51:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-okta
+[2024-04-13 08:51:58] WARNING root fetch - processPackages [chainlit1]: Skipping, unable to determine old version
+[2024-04-13 08:51:58] INFO root fetch - main [MainThread]: End processing [chainlit1] error
+[2024-04-13 08:51:58] INFO root fetch - processPackages [mns-scheduler]: New version: [1.0.2.2] Old Version: [1.0.2.1]
+[2024-04-13 08:51:58] INFO root fetch - processPackages [pulumi-opsgenie]: New version: [1.4.0a1712989139] Old Version: [1.4.0a1712729271]
+[2024-04-13 08:51:58] INFO root fetch - processPackages [pulumi-okta]: New version: [4.9.0a1712988805] Old Version: [4.9.0a1712755730]
+[2024-04-13 08:51:58] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/52/87/1c5ed218eeac56605686f8e3c367fe3959896547c0380212e5858d5c4a32/mns-scheduler-1.0.2.1.tar.gz
+[2024-04-13 08:51:59] INFO root fetch - processPackages [pulumi-opsgenie]: Downloading https://files.pythonhosted.org/packages/e1/71/e587463e026b7522829fd0c43d1ebb41a352eae790057c99916957defb60/pulumi_opsgenie-1.4.0a1712729271.tar.gz
+[2024-04-13 08:51:59] INFO root fetch - processPackages [pulumi-okta]: Downloading https://files.pythonhosted.org/packages/87/8f/7b733c647d04f2e1b5af90a4b1a6e4e3f467ef3bc194793aca403da3c6bc/pulumi_okta-4.9.0a1712755730.tar.gz
+[2024-04-13 08:51:59] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/90/17/e114386e918ce0e2eaab56fff512329cb3bd3629282a7d4b03cf040f5756/mns-scheduler-1.0.2.2.tar.gz
+[2024-04-13 08:51:59] INFO root fetch - processPackages [pulumi-opsgenie]: Downloading https://files.pythonhosted.org/packages/f9/45/8cc711c33041a352cfc43c44baacd3c4bbf9c30041f4ccedcf7d75bb830c/pulumi_opsgenie-1.4.0a1712989139.tar.gz
+[2024-04-13 08:51:59] INFO root fetch - processPackages [mns-scheduler]: executing diffoscope
+[2024-04-13 08:51:59] INFO root fetch - processPackages [mns-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns-scheduler-1.0.2.1.tar.gz tmp/mns-scheduler-1.0.2.2.tar.gz --markdown 20240413/m/mns-scheduler/1.0.2.1-1.0.2.2/README.md --exclude *.pyd
+[2024-04-13 08:51:59] INFO root fetch - processPackages [pulumi-okta]: Downloading https://files.pythonhosted.org/packages/11/e8/d351777de691a2366b433f3f97057343848699a1b9bf0ba2797044fd8097/pulumi_okta-4.9.0a1712988805-py3-none-any.whl
+[2024-04-13 08:51:59] INFO root fetch - processPackages [pulumi-opsgenie]: executing diffoscope
+[2024-04-13 08:51:59] INFO root fetch - processPackages [pulumi-opsgenie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_opsgenie-1.4.0a1712729271.tar.gz tmp/pulumi_opsgenie-1.4.0a1712989139.tar.gz --markdown 20240413/p/pulumi-opsgenie/1.4.0a1712729271-1.4.0a1712989139/README.md --exclude *.pyd
+[2024-04-13 08:52:00] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.2.1.tar.gz]
+[2024-04-13 08:52:00] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.2.2.tar.gz]
+[2024-04-13 08:52:00] INFO root fetch - main [MainThread]: End processing [mns-scheduler]: success
+[2024-04-13 08:52:00] INFO root fetch - processPackages [pulumi-opsgenie]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_opsgenie-1.4.0a1712729271.tar.gz]
+[2024-04-13 08:52:00] INFO root fetch - processPackages [pulumi-opsgenie]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_opsgenie-1.4.0a1712989139.tar.gz]
+[2024-04-13 08:52:00] INFO root fetch - main [MainThread]: End processing [pulumi-opsgenie]: success
+[2024-04-13 08:52:00] INFO root fetch - processPackages [pulumi-okta]: executing diffoscope
+[2024-04-13 08:52:00] INFO root fetch - processPackages [pulumi-okta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_okta-4.9.0a1712755730.tar.gz tmp/pulumi_okta-4.9.0a1712988805-py3-none-any.whl.zip --markdown 20240413/p/pulumi-okta/4.9.0a1712755730-4.9.0a1712988805/README.md --exclude *.pyd
+[2024-04-13 08:52:00] INFO root fetch - processPackages [pulumi-okta]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_okta-4.9.0a1712755730.tar.gz]
+[2024-04-13 08:52:00] INFO root fetch - processPackages [pulumi-okta]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_okta-4.9.0a1712988805-py3-none-any.whl.zip]
+[2024-04-13 08:52:00] INFO root fetch - main [MainThread]: End processing [pulumi-okta]: success
+[2024-04-13 08:52:00] INFO root fetch - main [MainThread]: Store serial: [22749990]
