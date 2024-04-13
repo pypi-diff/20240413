@@ -15551,3 +15551,20 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 16:54:38] INFO root fetch - processPackages [emo-market-base]: Remove: archive file [/home/abi/fetcher/tmp/emo_market_base-0.0.4.tar.gz]
 [2024-04-13 16:54:38] INFO root fetch - main [MainThread]: End processing [emo-market-base]: success
 [2024-04-13 16:54:38] INFO root fetch - main [MainThread]: Store serial: [22752675]
+[2024-04-13 16:56:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22752675]
+[2024-04-13 16:56:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 16:56:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: furtheredge
+[2024-04-13 16:56:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deeplc
+[2024-04-13 16:56:47] INFO root fetch - processPackages [furtheredge]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-13 16:56:47] INFO root fetch - processPackages [deeplc]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-04-13 16:56:47] INFO root fetch - processPackages [furtheredge]: Downloading https://files.pythonhosted.org/packages/ba/e0/d385217fda0af63d9cf601bbb1a25c1206a785c4ef7a80cb9e511646beac/furtheredge-0.0.3.tar.gz
+[2024-04-13 16:56:47] INFO root fetch - processPackages [deeplc]: Downloading https://files.pythonhosted.org/packages/c2/f5/fb0c474a3b8c0d08aadd17c054603a1ec5c56914331740631e9621f11d77/deeplc-2.2.8.tar.gz
+[2024-04-13 16:56:47] WARNING root fetch - processPackages [deeplc]: Skipping package: exceeds size limit 32146856>=10485760
+[2024-04-13 16:56:47] INFO root fetch - main [MainThread]: End processing [deeplc] error
+[2024-04-13 16:56:47] INFO root fetch - processPackages [furtheredge]: Downloading https://files.pythonhosted.org/packages/b3/99/3abaa02f00811575c48f69d504318d36a2533b599b4f085c32fc6bc82f7a/furtheredge-0.0.4.tar.gz
+[2024-04-13 16:56:47] INFO root fetch - processPackages [furtheredge]: executing diffoscope
+[2024-04-13 16:56:47] INFO root fetch - processPackages [furtheredge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furtheredge-0.0.3.tar.gz tmp/furtheredge-0.0.4.tar.gz --markdown 20240413/f/furtheredge/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-13 16:56:48] INFO root fetch - processPackages [furtheredge]: Remove: archive file [/home/abi/fetcher/tmp/furtheredge-0.0.3.tar.gz]
+[2024-04-13 16:56:48] INFO root fetch - processPackages [furtheredge]: Remove: archive file [/home/abi/fetcher/tmp/furtheredge-0.0.4.tar.gz]
+[2024-04-13 16:56:48] INFO root fetch - main [MainThread]: End processing [furtheredge]: success
+[2024-04-13 16:56:48] INFO root fetch - main [MainThread]: Store serial: [22752681]
