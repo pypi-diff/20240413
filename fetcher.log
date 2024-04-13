@@ -13932,3 +13932,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 14:43:50] INFO root fetch - processPackages [bump-my-version]: Remove: archive file [/home/abi/fetcher/tmp/bump-my-version-0.9.3.tar.gz]
 [2024-04-13 14:43:50] INFO root fetch - main [MainThread]: End processing [bump-my-version]: success
 [2024-04-13 14:43:50] INFO root fetch - main [MainThread]: Store serial: [22751813]
+[2024-04-13 14:45:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22751813]
+[2024-04-13 14:45:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 14:45:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PYield
+[2024-04-13 14:45:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arion-library
+[2024-04-13 14:45:59] INFO root fetch - processPackages [arion-library]: New version: [1.1rc50.dev50] Old Version: [1.1rc48.dev48]
+[2024-04-13 14:45:59] INFO root fetch - processPackages [PYield]: New version: [0.6.0] Old Version: [0.5.1]
+[2024-04-13 14:45:59] INFO root fetch - processPackages [arion-library]: Downloading https://files.pythonhosted.org/packages/a4/f8/5db993eb1e5f3d5ddf74d245da54e76f9a3be6a1d05d8dd2a04ca7eb7d2a/arion_library-1.1rc48.dev48.tar.gz
+[2024-04-13 14:45:59] INFO root fetch - processPackages [PYield]: Downloading https://files.pythonhosted.org/packages/ec/21/f02fb65137c0d0447f9235338bee99700147c9c8eb0f97b105f86f484c9c/pyield-0.5.1.tar.gz
+[2024-04-13 14:45:59] INFO root fetch - processPackages [PYield]: Downloading https://files.pythonhosted.org/packages/5f/ae/9f1a89e6bd42d4cef7f55f2beb1cc4a43c2f0132195375f641b77ff9e4ac/pyield-0.6.0.tar.gz
+[2024-04-13 14:45:59] INFO root fetch - processPackages [arion-library]: Downloading https://files.pythonhosted.org/packages/e8/28/31d6106d29b4c0c6997f385454993e1864521709d99fa715007788febeb1/arion_library-1.1rc50.dev50.tar.gz
+[2024-04-13 14:45:59] INFO root fetch - processPackages [PYield]: executing diffoscope
+[2024-04-13 14:45:59] INFO root fetch - processPackages [PYield]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyield-0.5.1.tar.gz tmp/pyield-0.6.0.tar.gz --markdown 20240413/P/PYield/0.5.1-0.6.0/README.md --exclude *.pyd
+[2024-04-13 14:45:59] INFO root fetch - processPackages [arion-library]: executing diffoscope
+[2024-04-13 14:45:59] INFO root fetch - processPackages [arion-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arion_library-1.1rc48.dev48.tar.gz tmp/arion_library-1.1rc50.dev50.tar.gz --markdown 20240413/a/arion-library/1.1rc48.dev48-1.1rc50.dev50/README.md --exclude *.pyd
+[2024-04-13 14:46:00] INFO root fetch - processPackages [arion-library]: Remove: archive file [/home/abi/fetcher/tmp/arion_library-1.1rc48.dev48.tar.gz]
+[2024-04-13 14:46:00] INFO root fetch - processPackages [arion-library]: Remove: archive file [/home/abi/fetcher/tmp/arion_library-1.1rc50.dev50.tar.gz]
+[2024-04-13 14:46:00] INFO root fetch - main [MainThread]: End processing [arion-library]: success
+[2024-04-13 14:46:00] INFO root fetch - processPackages [PYield]: Remove: archive file [/home/abi/fetcher/tmp/pyield-0.5.1.tar.gz]
+[2024-04-13 14:46:00] INFO root fetch - processPackages [PYield]: Remove: archive file [/home/abi/fetcher/tmp/pyield-0.6.0.tar.gz]
+[2024-04-13 14:46:00] INFO root fetch - main [MainThread]: End processing [PYield]: success
+[2024-04-13 14:46:00] INFO root fetch - main [MainThread]: Store serial: [22751819]
