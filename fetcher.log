@@ -19117,3 +19117,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 21:21:02] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.5.4-py3-none-any.whl.zip]
 [2024-04-13 21:21:02] INFO root fetch - main [MainThread]: End processing [rio-ui]: success
 [2024-04-13 21:21:02] INFO root fetch - main [MainThread]: Store serial: [22754218]
+[2024-04-13 21:23:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754218]
+[2024-04-13 21:23:10] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 21:23:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: web3mt
+[2024-04-13 21:23:11] WARNING root fetch - processPackages [web3mt]: Skipping, unable to determine old version
+[2024-04-13 21:23:11] INFO root fetch - main [MainThread]: End processing [web3mt] error
+[2024-04-13 21:23:11] INFO root fetch - main [MainThread]: Store serial: [22754225]
