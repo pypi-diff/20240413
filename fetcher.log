@@ -7026,3 +7026,11 @@
 [2024-04-13 04:39:31] INFO root fetch - processPackages [lambdapdk]: Remove: archive file [/home/abi/fetcher/tmp/lambdapdk-0.1.9.tar.gz]
 [2024-04-13 04:39:31] INFO root fetch - main [MainThread]: End processing [lambdapdk]: success
 [2024-04-13 04:39:31] INFO root fetch - main [MainThread]: Store serial: [22749047]
+[2024-04-13 04:41:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749047]
+[2024-04-13 04:41:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 04:41:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gradio-huggingfacehub-search
+[2024-04-13 04:41:40] INFO root fetch - processPackages [gradio-huggingfacehub-search]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-13 04:41:40] INFO root fetch - processPackages [gradio-huggingfacehub-search]: Downloading https://files.pythonhosted.org/packages/23/89/4d53bbd059a73cedffe6fbb63ef464d7bc3661af1f1d42798f8257180582/gradio_huggingfacehub_search-0.0.4.tar.gz
+[2024-04-13 04:41:40] WARNING root fetch - processPackages [gradio-huggingfacehub-search]: Skipping package: exceeds size limit 93257378>=10485760
+[2024-04-13 04:41:40] INFO root fetch - main [MainThread]: End processing [gradio-huggingfacehub-search] error
+[2024-04-13 04:41:40] INFO root fetch - main [MainThread]: Store serial: [22749050]
