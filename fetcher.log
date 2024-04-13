@@ -18323,3 +18323,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 20:20:21] INFO root fetch - processPackages [altscore]: Remove: archive file [/home/abi/fetcher/tmp/altscore-0.1.99.tar.gz]
 [2024-04-13 20:20:21] INFO root fetch - main [MainThread]: End processing [altscore]: success
 [2024-04-13 20:20:21] INFO root fetch - main [MainThread]: Store serial: [22753898]
+[2024-04-13 20:22:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753898]
+[2024-04-13 20:22:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 20:22:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wristwatch
+[2024-04-13 20:22:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tavern
+[2024-04-13 20:22:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: matchms
+[2024-04-13 20:22:30] INFO root fetch - processPackages [tavern]: New version: [3.0.0a4] Old Version: [3.0.0a3]
+[2024-04-13 20:22:30] INFO root fetch - processPackages [tavern]: Downloading https://files.pythonhosted.org/packages/a3/db/ab2be39cb5781c103f4def2f9b25c4d893715942732c14c151e91920690c/tavern-3.0.0a3.tar.gz
+[2024-04-13 20:22:30] INFO root fetch - processPackages [matchms]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-04-13 20:22:30] WARNING root fetch - processPackages [wristwatch]: Skipping, unable to determine old version
+[2024-04-13 20:22:30] INFO root fetch - main [MainThread]: End processing [wristwatch] error
+[2024-04-13 20:22:31] INFO root fetch - processPackages [tavern]: Downloading https://files.pythonhosted.org/packages/0a/8e/abdae3e120acd1b71650199b36e2f7916bbba974fe9ea56978f45016eab0/tavern-3.0.0a4.tar.gz
+[2024-04-13 20:22:31] INFO root fetch - processPackages [matchms]: Downloading https://files.pythonhosted.org/packages/94/f9/e417fc6b3d303bae0c45dd2a090977a0eaac69a7676ae6d9adf3125c53e7/matchms-0.9.1.tar.gz
+[2024-04-13 20:22:31] INFO root fetch - processPackages [tavern]: executing diffoscope
+[2024-04-13 20:22:31] INFO root fetch - processPackages [tavern]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tavern-3.0.0a3.tar.gz tmp/tavern-3.0.0a4.tar.gz --markdown 20240413/t/tavern/3.0.0a3-3.0.0a4/README.md --exclude *.pyd
+[2024-04-13 20:22:31] INFO root fetch - processPackages [matchms]: Downloading https://files.pythonhosted.org/packages/a0/1f/afe76be976e1b3c3551112bf8a1ffff8624c26e9e230720c15c9138f7e6a/matchms-0.9.2.tar.gz
+[2024-04-13 20:22:31] INFO root fetch - processPackages [matchms]: executing diffoscope
+[2024-04-13 20:22:31] INFO root fetch - processPackages [matchms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matchms-0.9.1.tar.gz tmp/matchms-0.9.2.tar.gz --markdown 20240413/m/matchms/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-04-13 20:22:32] INFO root fetch - processPackages [matchms]: Remove: archive file [/home/abi/fetcher/tmp/matchms-0.9.1.tar.gz]
+[2024-04-13 20:22:32] INFO root fetch - processPackages [matchms]: Remove: archive file [/home/abi/fetcher/tmp/matchms-0.9.2.tar.gz]
+[2024-04-13 20:22:32] INFO root fetch - main [MainThread]: End processing [matchms]: success
+[2024-04-13 20:22:32] INFO root fetch - processPackages [tavern]: Remove: archive file [/home/abi/fetcher/tmp/tavern-3.0.0a3.tar.gz]
+[2024-04-13 20:22:32] INFO root fetch - processPackages [tavern]: Remove: archive file [/home/abi/fetcher/tmp/tavern-3.0.0a4.tar.gz]
+[2024-04-13 20:22:32] INFO root fetch - main [MainThread]: End processing [tavern]: success
+[2024-04-13 20:22:32] INFO root fetch - main [MainThread]: Store serial: [22753909]
