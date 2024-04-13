@@ -2191,3 +2191,56 @@
 [2024-04-13 02:19:37] INFO root fetch - processPackages [gcp-scraper]: Remove: archive file [/home/abi/fetcher/tmp/gcp-scraper-3.6.8.tar.gz]
 [2024-04-13 02:19:37] INFO root fetch - main [MainThread]: End processing [gcp-scraper]: success
 [2024-04-13 02:19:37] INFO root fetch - main [MainThread]: Store serial: [22747284]
+[2024-04-13 02:21:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22747284]
+[2024-04-13 02:21:46] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 02:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: slipcover
+[2024-04-13 02:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-tweet-queue
+[2024-04-13 02:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NEURON-nightly
+[2024-04-13 02:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: amazon-sagemaker-sql-execution
+[2024-04-13 02:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: crowbar-package-manager
+[2024-04-13 02:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xian-contracting
+[2024-04-13 02:21:46] INFO root fetch - processPackages [xian-contracting]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 02:21:46] INFO root fetch - processPackages [cdk-tweet-queue]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-13 02:21:46] INFO root fetch - processPackages [xian-contracting]: Downloading https://files.pythonhosted.org/packages/79/5f/e34290b9289af36a2b1424936d2ce931469d9bd83c738d1cc3e94f17e153/xian_contracting-0.1.1.tar.gz
+[2024-04-13 02:21:46] INFO root fetch - processPackages [slipcover]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-13 02:21:46] INFO root fetch - processPackages [crowbar-package-manager]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-13 02:21:46] INFO root fetch - processPackages [amazon-sagemaker-sql-execution]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-13 02:21:46] INFO root fetch - processPackages [NEURON-nightly]: New version: [9.0a1.dev214] Old Version: [9.0a1.dev212]
+[2024-04-13 02:21:46] INFO root fetch - processPackages [cdk-tweet-queue]: Downloading https://files.pythonhosted.org/packages/f2/a9/33fbe548cea174e015412108a563be3bbbdacbb6982d1ef6bf71d4abb509/cdk-tweet-queue-2.0.98.tar.gz
+[2024-04-13 02:21:46] INFO root fetch - processPackages [slipcover]: Downloading https://files.pythonhosted.org/packages/a0/bc/61a4cd40011e151203ffc4cb68b208fcb600e30ae954ea80b70f8ad6264c/slipcover-1.0.7.tar.gz
+[2024-04-13 02:21:46] INFO root fetch - processPackages [amazon-sagemaker-sql-execution]: Downloading https://files.pythonhosted.org/packages/44/52/3fc1cfb41c730cc9c3e6285282ff94b77a856a0901567d0d9cf18eff31b2/amazon-sagemaker-sql-execution-0.1.3.tar.gz
+[2024-04-13 02:21:46] INFO root fetch - processPackages [crowbar-package-manager]: Downloading https://files.pythonhosted.org/packages/c7/b5/26cc6e1cc2fb21b1350edf24f11812958025c2fbe6578fcfe41827966ab6/crowbar_package_manager-0.1.7.tar.gz
+[2024-04-13 02:21:47] INFO root fetch - processPackages [NEURON-nightly]: Downloading https://files.pythonhosted.org/packages/e2/fe/2eb852ad83d2d3068b85e1cd950e85f239c87a87133d4a8e5c6055682289/NEURON_nightly-9.0a1.dev212-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-13 02:21:47] INFO root fetch - processPackages [cdk-tweet-queue]: Downloading https://files.pythonhosted.org/packages/b9/df/ffba41b66fc7796cb2c763da82c2012cc28d0708e1dcb7775c98d3d9e491/cdk-tweet-queue-2.0.99.tar.gz
+[2024-04-13 02:21:47] WARNING root fetch - processPackages [NEURON-nightly]: Skipping package: exceeds size limit 17257606>=10485760
+[2024-04-13 02:21:47] INFO root fetch - main [MainThread]: End processing [NEURON-nightly] error
+[2024-04-13 02:21:47] INFO root fetch - processPackages [xian-contracting]: Downloading https://files.pythonhosted.org/packages/e8/76/cff1a1b735123eb1ee7db53c0da2e631a17f449c160c9cae38bc5a9a96a4/xian_contracting-0.1.2.tar.gz
+[2024-04-13 02:21:47] INFO root fetch - processPackages [xian-contracting]: executing diffoscope
+[2024-04-13 02:21:47] INFO root fetch - processPackages [xian-contracting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xian_contracting-0.1.1.tar.gz tmp/xian_contracting-0.1.2.tar.gz --markdown 20240413/x/xian-contracting/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-13 02:21:47] INFO root fetch - processPackages [cdk-tweet-queue]: executing diffoscope
+[2024-04-13 02:21:47] INFO root fetch - processPackages [cdk-tweet-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-tweet-queue-2.0.98.tar.gz tmp/cdk-tweet-queue-2.0.99.tar.gz --markdown 20240413/c/cdk-tweet-queue/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-04-13 02:21:47] INFO root fetch - processPackages [slipcover]: Downloading https://files.pythonhosted.org/packages/22/88/9101ef8c2f63a1a13d4df4d3ca2762f255dc00a65c6703aa5257325404b2/slipcover-1.0.8.tar.gz
+[2024-04-13 02:21:47] INFO root fetch - processPackages [crowbar-package-manager]: Downloading https://files.pythonhosted.org/packages/63/97/4cb1d2617c5619e7148f9ac7c4a014fba249dc920ead6cc4d17a0b3b8359/crowbar_package_manager-0.1.8.tar.gz
+[2024-04-13 02:21:47] INFO root fetch - processPackages [amazon-sagemaker-sql-execution]: Downloading https://files.pythonhosted.org/packages/f4/b0/8ff8259358187b2e57a6961a3fa526e85f5fa320a9a86e1fcd6d217cdd5d/amazon_sagemaker_sql_execution-0.1.4.tar.gz
+[2024-04-13 02:21:47] INFO root fetch - processPackages [slipcover]: executing diffoscope
+[2024-04-13 02:21:47] INFO root fetch - processPackages [slipcover]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slipcover-1.0.7.tar.gz tmp/slipcover-1.0.8.tar.gz --markdown 20240413/s/slipcover/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-04-13 02:21:47] INFO root fetch - processPackages [crowbar-package-manager]: executing diffoscope
+[2024-04-13 02:21:47] INFO root fetch - processPackages [crowbar-package-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crowbar_package_manager-0.1.7.tar.gz tmp/crowbar_package_manager-0.1.8.tar.gz --markdown 20240413/c/crowbar-package-manager/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-13 02:21:47] INFO root fetch - processPackages [amazon-sagemaker-sql-execution]: executing diffoscope
+[2024-04-13 02:21:47] INFO root fetch - processPackages [amazon-sagemaker-sql-execution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amazon-sagemaker-sql-execution-0.1.3.tar.gz tmp/amazon_sagemaker_sql_execution-0.1.4.tar.gz --markdown 20240413/a/amazon-sagemaker-sql-execution/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-13 02:21:47] INFO root fetch - processPackages [cdk-tweet-queue]: Remove: archive file [/home/abi/fetcher/tmp/cdk-tweet-queue-2.0.98.tar.gz]
+[2024-04-13 02:21:47] INFO root fetch - processPackages [cdk-tweet-queue]: Remove: archive file [/home/abi/fetcher/tmp/cdk-tweet-queue-2.0.99.tar.gz]
+[2024-04-13 02:21:47] INFO root fetch - main [MainThread]: End processing [cdk-tweet-queue]: success
+[2024-04-13 02:21:48] INFO root fetch - processPackages [crowbar-package-manager]: Remove: archive file [/home/abi/fetcher/tmp/crowbar_package_manager-0.1.7.tar.gz]
+[2024-04-13 02:21:48] INFO root fetch - processPackages [crowbar-package-manager]: Remove: archive file [/home/abi/fetcher/tmp/crowbar_package_manager-0.1.8.tar.gz]
+[2024-04-13 02:21:48] INFO root fetch - main [MainThread]: End processing [crowbar-package-manager]: success
+[2024-04-13 02:21:48] INFO root fetch - processPackages [slipcover]: Remove: archive file [/home/abi/fetcher/tmp/slipcover-1.0.7.tar.gz]
+[2024-04-13 02:21:48] INFO root fetch - processPackages [slipcover]: Remove: archive file [/home/abi/fetcher/tmp/slipcover-1.0.8.tar.gz]
+[2024-04-13 02:21:48] INFO root fetch - main [MainThread]: End processing [slipcover]: success
+[2024-04-13 02:21:48] INFO root fetch - processPackages [xian-contracting]: Remove: archive file [/home/abi/fetcher/tmp/xian_contracting-0.1.1.tar.gz]
+[2024-04-13 02:21:48] INFO root fetch - processPackages [xian-contracting]: Remove: archive file [/home/abi/fetcher/tmp/xian_contracting-0.1.2.tar.gz]
+[2024-04-13 02:21:48] INFO root fetch - main [MainThread]: End processing [xian-contracting]: success
+[2024-04-13 02:21:48] INFO root fetch - processPackages [amazon-sagemaker-sql-execution]: Remove: archive file [/home/abi/fetcher/tmp/amazon-sagemaker-sql-execution-0.1.3.tar.gz]
+[2024-04-13 02:21:48] INFO root fetch - processPackages [amazon-sagemaker-sql-execution]: Remove: archive file [/home/abi/fetcher/tmp/amazon_sagemaker_sql_execution-0.1.4.tar.gz]
+[2024-04-13 02:21:48] INFO root fetch - main [MainThread]: End processing [amazon-sagemaker-sql-execution]: success
+[2024-04-13 02:21:48] INFO root fetch - main [MainThread]: Store serial: [22747319]
