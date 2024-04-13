@@ -18347,3 +18347,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 20:22:32] INFO root fetch - processPackages [tavern]: Remove: archive file [/home/abi/fetcher/tmp/tavern-3.0.0a4.tar.gz]
 [2024-04-13 20:22:32] INFO root fetch - main [MainThread]: End processing [tavern]: success
 [2024-04-13 20:22:32] INFO root fetch - main [MainThread]: Store serial: [22753909]
+[2024-04-13 20:24:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753909]
+[2024-04-13 20:24:40] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-13 20:24:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: musical_games
+[2024-04-13 20:24:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: invest-guard
+[2024-04-13 20:24:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: maadsbml
+[2024-04-13 20:24:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: whishow
+[2024-04-13 20:24:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyplotlib
+[2024-04-13 20:24:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: impactpy
+[2024-04-13 20:24:40] INFO root fetch - processPackages [musical_games]: New version: [0.6.1] Old Version: [0.5.2]
+[2024-04-13 20:24:40] INFO root fetch - processPackages [invest-guard]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-13 20:24:40] INFO root fetch - processPackages [impactpy]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-13 20:24:41] INFO root fetch - processPackages [pyplotlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 20:24:41] INFO root fetch - processPackages [whishow]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-13 20:24:41] INFO root fetch - processPackages [musical_games]: Downloading https://files.pythonhosted.org/packages/6a/af/afc0d2cb8b1fa576f0c3dbf0dc39c5cac44bb0da7232f2892f752c6b5536/musical_games-0.5.2.tar.gz
+[2024-04-13 20:24:41] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/73/cc/d3769d64f4a9767300eb88c34ed96d18a8cf7a062f91c434c763bf31db9b/invest_guard-0.1.1.tar.gz
+[2024-04-13 20:24:41] INFO root fetch - processPackages [maadsbml]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-04-13 20:24:41] INFO root fetch - processPackages [impactpy]: Downloading https://files.pythonhosted.org/packages/38/ae/874781978b6b7434d62f511983b288bf55ff327a3a2ec2c19887bf8eb6ed/impactpy-0.0.3.tar.gz
+[2024-04-13 20:24:41] INFO root fetch - processPackages [pyplotlib]: Downloading https://files.pythonhosted.org/packages/28/bb/58ba19c8fed8024ef2c0efd0523dded73560d64857fcd7916d35aa6aa8af/pyplotlib-0.0.8.tar.gz
+[2024-04-13 20:24:41] INFO root fetch - processPackages [whishow]: Downloading https://files.pythonhosted.org/packages/f1/ad/313729dc3ad5b4e27fda3dcf77b0e45ae42fc2d416064597857e769b856e/whishow-0.1.0-py2.py3-none-any.whl
+[2024-04-13 20:24:41] INFO root fetch - processPackages [maadsbml]: Downloading https://files.pythonhosted.org/packages/ee/fc/da090005b18a32cfbe091f8c04a25c14935349b30620803cc1f590af3b51/maadsbml-1.3.8.tar.gz
+[2024-04-13 20:24:41] INFO root fetch - processPackages [musical_games]: Downloading https://files.pythonhosted.org/packages/a3/51/aac83c3b2f792754cf33d51465d0c528b921ec7af05ca668a2d4ff9fec3b/musical_games-0.6.1.tar.gz
+[2024-04-13 20:24:41] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/b8/c1/ada893d5221b014b167ec1772f32f3efe6597300ceee3d6a18791e803a7d/invest_guard-0.1.2.tar.gz
+[2024-04-13 20:24:41] INFO root fetch - processPackages [impactpy]: Downloading https://files.pythonhosted.org/packages/3e/90/6055d2476ee9f1ff4959648093360a00f1e4d6a74c287f51b9db41a25c74/impactpy-0.0.4.tar.gz
+[2024-04-13 20:24:41] INFO root fetch - processPackages [musical_games]: executing diffoscope
+[2024-04-13 20:24:41] INFO root fetch - processPackages [musical_games]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musical_games-0.5.2.tar.gz tmp/musical_games-0.6.1.tar.gz --markdown 20240413/m/musical_games/0.5.2-0.6.1/README.md --exclude *.pyd
+[2024-04-13 20:24:41] INFO root fetch - processPackages [invest-guard]: executing diffoscope
+[2024-04-13 20:24:41] INFO root fetch - processPackages [invest-guard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invest_guard-0.1.1.tar.gz tmp/invest_guard-0.1.2.tar.gz --markdown 20240413/i/invest-guard/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-13 20:24:41] INFO root fetch - processPackages [impactpy]: executing diffoscope
+[2024-04-13 20:24:41] INFO root fetch - processPackages [impactpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/impactpy-0.0.3.tar.gz tmp/impactpy-0.0.4.tar.gz --markdown 20240413/i/impactpy/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-13 20:24:41] INFO root fetch - processPackages [whishow]: Downloading https://files.pythonhosted.org/packages/f2/b7/a1f5d247cbd55ca7046c014fe5ac2c4ff585a4110e907280ce6a3e78795e/whishow-0.2.0-py2.py3-none-any.whl
+[2024-04-13 20:24:41] INFO root fetch - processPackages [maadsbml]: Downloading https://files.pythonhosted.org/packages/f6/59/27faaa61d0d9f23502ac39fb89135a3c2220a684be5312873e9d462ccda7/maadsbml-1.3.9.tar.gz
+[2024-04-13 20:24:41] INFO root fetch - processPackages [pyplotlib]: Downloading https://files.pythonhosted.org/packages/8b/f8/1cec6ba77c9aee645ad1564c6fe928db135b36bec387a9574c6422edd191/pyplotlib-0.0.9.tar.gz
+[2024-04-13 20:24:41] INFO root fetch - processPackages [maadsbml]: executing diffoscope
+[2024-04-13 20:24:41] INFO root fetch - processPackages [maadsbml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maadsbml-1.3.8.tar.gz tmp/maadsbml-1.3.9.tar.gz --markdown 20240413/m/maadsbml/1.3.8-1.3.9/README.md --exclude *.pyd
+[2024-04-13 20:24:41] INFO root fetch - processPackages [pyplotlib]: executing diffoscope
+[2024-04-13 20:24:41] INFO root fetch - processPackages [pyplotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyplotlib-0.0.8.tar.gz tmp/pyplotlib-0.0.9.tar.gz --markdown 20240413/p/pyplotlib/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 20:24:41] INFO root fetch - processPackages [whishow]: executing diffoscope
+[2024-04-13 20:24:41] INFO root fetch - processPackages [whishow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whishow-0.1.0-py2.py3-none-any.whl.zip tmp/whishow-0.2.0-py2.py3-none-any.whl.zip --markdown 20240413/w/whishow/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-13 20:24:42] INFO root fetch - processPackages [impactpy]: Remove: archive file [/home/abi/fetcher/tmp/impactpy-0.0.3.tar.gz]
+[2024-04-13 20:24:42] INFO root fetch - processPackages [impactpy]: Remove: archive file [/home/abi/fetcher/tmp/impactpy-0.0.4.tar.gz]
+[2024-04-13 20:24:42] INFO root fetch - main [MainThread]: End processing [impactpy]: success
+[2024-04-13 20:24:42] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest_guard-0.1.1.tar.gz]
+[2024-04-13 20:24:42] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest_guard-0.1.2.tar.gz]
+[2024-04-13 20:24:42] INFO root fetch - main [MainThread]: End processing [invest-guard]: success
+[2024-04-13 20:24:42] INFO root fetch - processPackages [whishow]: Remove: archive file [/home/abi/fetcher/tmp/whishow-0.1.0-py2.py3-none-any.whl.zip]
+[2024-04-13 20:24:42] INFO root fetch - processPackages [whishow]: Remove: archive file [/home/abi/fetcher/tmp/whishow-0.2.0-py2.py3-none-any.whl.zip]
+[2024-04-13 20:24:42] INFO root fetch - main [MainThread]: End processing [whishow]: success
+[2024-04-13 20:24:42] INFO root fetch - processPackages [maadsbml]: Remove: archive file [/home/abi/fetcher/tmp/maadsbml-1.3.8.tar.gz]
+[2024-04-13 20:24:42] INFO root fetch - processPackages [maadsbml]: Remove: archive file [/home/abi/fetcher/tmp/maadsbml-1.3.9.tar.gz]
+[2024-04-13 20:24:42] INFO root fetch - main [MainThread]: End processing [maadsbml]: success
+[2024-04-13 20:24:42] INFO root fetch - processPackages [musical_games]: Remove: archive file [/home/abi/fetcher/tmp/musical_games-0.5.2.tar.gz]
+[2024-04-13 20:24:42] INFO root fetch - processPackages [musical_games]: Remove: archive file [/home/abi/fetcher/tmp/musical_games-0.6.1.tar.gz]
+[2024-04-13 20:24:42] INFO root fetch - main [MainThread]: End processing [musical_games]: success
+[2024-04-13 20:24:42] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.8.tar.gz]
+[2024-04-13 20:24:42] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.9.tar.gz]
+[2024-04-13 20:24:42] INFO root fetch - main [MainThread]: End processing [pyplotlib]: success
+[2024-04-13 20:24:42] INFO root fetch - main [MainThread]: Store serial: [22753926]
