@@ -16900,3 +16900,20 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 18:47:46] INFO root fetch - processPackages [piwiPre]: Remove: archive file [/home/abi/fetcher/tmp/piwiPre-0.8.5.tar.gz]
 [2024-04-13 18:47:46] INFO root fetch - main [MainThread]: End processing [piwiPre]: success
 [2024-04-13 18:47:46] INFO root fetch - main [MainThread]: Store serial: [22753229]
+[2024-04-13 18:49:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753229]
+[2024-04-13 18:49:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 18:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simo
+[2024-04-13 18:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyweatherfr
+[2024-04-13 18:49:54] INFO root fetch - processPackages [pyweatherfr]: New version: [4.2.0] Old Version: [4.1.2]
+[2024-04-13 18:49:54] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/d6/55/6fc4b4186f5eebf3e022f7fb12fcf1c1e24cab5c835dca51fe4b2ee3c3b0/pyweatherfr-4.1.2.tar.gz
+[2024-04-13 18:49:54] INFO root fetch - processPackages [simo]: New version: [2.0.6] Old Version: [2.0.5]
+[2024-04-13 18:49:55] INFO root fetch - processPackages [simo]: Downloading https://files.pythonhosted.org/packages/8b/67/79988d0b09a270f7be24e1b50655ed81675eab058cdfc1b24813ef022ab9/simo-2.0.5.tar.gz
+[2024-04-13 18:49:55] WARNING root fetch - processPackages [simo]: Skipping package: exceeds size limit 20481861>=10485760
+[2024-04-13 18:49:55] INFO root fetch - main [MainThread]: End processing [simo] error
+[2024-04-13 18:49:55] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/d4/ed/b2480f372c5739adc8018190dd3887de1428494b51fe526057460f369bcf/pyweatherfr-4.2.0.tar.gz
+[2024-04-13 18:49:55] INFO root fetch - processPackages [pyweatherfr]: executing diffoscope
+[2024-04-13 18:49:55] INFO root fetch - processPackages [pyweatherfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyweatherfr-4.1.2.tar.gz tmp/pyweatherfr-4.2.0.tar.gz --markdown 20240413/p/pyweatherfr/4.1.2-4.2.0/README.md --exclude *.pyd
+[2024-04-13 18:49:55] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-4.1.2.tar.gz]
+[2024-04-13 18:49:55] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-4.2.0.tar.gz]
+[2024-04-13 18:49:55] INFO root fetch - main [MainThread]: End processing [pyweatherfr]: success
+[2024-04-13 18:49:55] INFO root fetch - main [MainThread]: Store serial: [22753235]
