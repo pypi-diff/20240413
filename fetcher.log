@@ -17039,3 +17039,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 18:58:36] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.9-py3-none-any.whl.zip]
 [2024-04-13 18:58:36] INFO root fetch - main [MainThread]: End processing [modal]: success
 [2024-04-13 18:58:36] INFO root fetch - main [MainThread]: Store serial: [22753274]
+[2024-04-13 19:00:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753274]
+[2024-04-13 19:00:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 19:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snake-environment
+[2024-04-13 19:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: imagespec-fast-builder
+[2024-04-13 19:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: heatmap_cli
+[2024-04-13 19:00:45] INFO root fetch - processPackages [imagespec-fast-builder]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-13 19:00:45] INFO root fetch - processPackages [snake-environment]: New version: [0.3.3] Old Version: [0.3.0]
+[2024-04-13 19:00:45] INFO root fetch - processPackages [imagespec-fast-builder]: Downloading https://files.pythonhosted.org/packages/de/4b/7890e10e1d8a2279b4a8ec0af4d3235da72bb8d22bf3e491c6877afdb9b0/imagespec_fast_builder-0.0.8.tar.gz
+[2024-04-13 19:00:45] INFO root fetch - processPackages [heatmap_cli]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-13 19:00:45] INFO root fetch - processPackages [snake-environment]: Downloading https://files.pythonhosted.org/packages/f4/ca/f4826c6ec4261f5e01379dbf0f2e447183e12de1f91bc2f0dc941a0fda2c/snake_environment-0.3.0.tar.gz
+[2024-04-13 19:00:45] INFO root fetch - processPackages [heatmap_cli]: Downloading https://files.pythonhosted.org/packages/89/3e/1667a0d6257328a7ee164f2d02fa5cb906e15b8317152b4e5b6389990a48/heatmap_cli-0.9.2.tar.gz
+[2024-04-13 19:00:45] INFO root fetch - processPackages [imagespec-fast-builder]: Downloading https://files.pythonhosted.org/packages/c8/75/7e3164426e0b736b45eb6d77ae8d7700f5e72939323729342cb54d7dcf69/imagespec_fast_builder-0.0.9.tar.gz
+[2024-04-13 19:00:45] INFO root fetch - processPackages [snake-environment]: Downloading https://files.pythonhosted.org/packages/bb/63/3b7a91a625d32aa121508874e05b8f71502478f5906216e5e6e8e3402101/snake_environment-0.3.3.tar.gz
+[2024-04-13 19:00:45] INFO root fetch - processPackages [imagespec-fast-builder]: executing diffoscope
+[2024-04-13 19:00:45] INFO root fetch - processPackages [imagespec-fast-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imagespec_fast_builder-0.0.8.tar.gz tmp/imagespec_fast_builder-0.0.9.tar.gz --markdown 20240413/i/imagespec-fast-builder/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-13 19:00:45] INFO root fetch - processPackages [snake-environment]: executing diffoscope
+[2024-04-13 19:00:45] INFO root fetch - processPackages [snake-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snake_environment-0.3.0.tar.gz tmp/snake_environment-0.3.3.tar.gz --markdown 20240413/s/snake-environment/0.3.0-0.3.3/README.md --exclude *.pyd
+[2024-04-13 19:00:45] INFO root fetch - processPackages [heatmap_cli]: Downloading https://files.pythonhosted.org/packages/cc/a1/f410c7350b196bcf8384439baacdbf7e8db2363ac46eb6d4872308462d8e/heatmap_cli-0.9.3.tar.gz
+[2024-04-13 19:00:46] INFO root fetch - processPackages [heatmap_cli]: executing diffoscope
+[2024-04-13 19:00:46] INFO root fetch - processPackages [heatmap_cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heatmap_cli-0.9.2.tar.gz tmp/heatmap_cli-0.9.3.tar.gz --markdown 20240413/h/heatmap_cli/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-13 19:00:46] INFO root fetch - processPackages [imagespec-fast-builder]: Remove: archive file [/home/abi/fetcher/tmp/imagespec_fast_builder-0.0.8.tar.gz]
+[2024-04-13 19:00:46] INFO root fetch - processPackages [imagespec-fast-builder]: Remove: archive file [/home/abi/fetcher/tmp/imagespec_fast_builder-0.0.9.tar.gz]
+[2024-04-13 19:00:46] INFO root fetch - main [MainThread]: End processing [imagespec-fast-builder]: success
+[2024-04-13 19:00:46] INFO root fetch - processPackages [snake-environment]: Remove: archive file [/home/abi/fetcher/tmp/snake_environment-0.3.0.tar.gz]
+[2024-04-13 19:00:46] INFO root fetch - processPackages [snake-environment]: Remove: archive file [/home/abi/fetcher/tmp/snake_environment-0.3.3.tar.gz]
+[2024-04-13 19:00:46] INFO root fetch - main [MainThread]: End processing [snake-environment]: success
+[2024-04-13 19:00:46] INFO root fetch - processPackages [heatmap_cli]: Remove: archive file [/home/abi/fetcher/tmp/heatmap_cli-0.9.2.tar.gz]
+[2024-04-13 19:00:46] INFO root fetch - processPackages [heatmap_cli]: Remove: archive file [/home/abi/fetcher/tmp/heatmap_cli-0.9.3.tar.gz]
+[2024-04-13 19:00:46] INFO root fetch - main [MainThread]: End processing [heatmap_cli]: success
+[2024-04-13 19:00:46] INFO root fetch - main [MainThread]: Store serial: [22753283]
