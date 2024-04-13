@@ -17151,3 +17151,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 19:07:17] INFO root fetch - processPackages [annexremote]: Remove: archive file [/home/abi/fetcher/tmp/annexremote-1.6.5.tar.gz]
 [2024-04-13 19:07:17] INFO root fetch - main [MainThread]: End processing [annexremote]: success
 [2024-04-13 19:07:17] INFO root fetch - main [MainThread]: Store serial: [22753307]
+[2024-04-13 19:09:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22753307]
+[2024-04-13 19:09:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 19:09:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py3d
+[2024-04-13 19:09:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NNSOM
+[2024-04-13 19:09:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pnu-portstreelint
+[2024-04-13 19:09:26] INFO root fetch - processPackages [pnu-portstreelint]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-04-13 19:09:26] INFO root fetch - processPackages [pnu-portstreelint]: Downloading https://files.pythonhosted.org/packages/93/06/6b6a8ea4bff715713b16e4fcfd36517a5e4729dbdd580be58275970634c5/pnu-portstreelint-1.3.0.tar.gz
+[2024-04-13 19:09:26] INFO root fetch - processPackages [NNSOM]: New version: [1.6.1] Old Version: [1.5.9]
+[2024-04-13 19:09:26] INFO root fetch - processPackages [py3d]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 19:09:26] INFO root fetch - processPackages [py3d]: Downloading https://files.pythonhosted.org/packages/ed/a9/a05c44c1c9aa694e130c9d19cdc9859cfe777d1cd54002e7af34b37a840d/py3d-0.1.8.tar.gz
+[2024-04-13 19:09:26] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/29/00/0098614ab1f72a2f9c0ebb8567fc70c5ec5fe7d444bfc91fa01d34472544/nnsom-1.5.9.tar.gz
+[2024-04-13 19:09:26] INFO root fetch - processPackages [pnu-portstreelint]: Downloading https://files.pythonhosted.org/packages/08/ff/69422bda0fb0cd7329356d5dec2a64e0d153623f474a4d989913cb23eb24/pnu_portstreelint-1.4.0.tar.gz
+[2024-04-13 19:09:26] INFO root fetch - processPackages [pnu-portstreelint]: executing diffoscope
+[2024-04-13 19:09:26] INFO root fetch - processPackages [pnu-portstreelint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pnu-portstreelint-1.3.0.tar.gz tmp/pnu_portstreelint-1.4.0.tar.gz --markdown 20240413/p/pnu-portstreelint/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-04-13 19:09:26] INFO root fetch - processPackages [py3d]: Downloading https://files.pythonhosted.org/packages/6f/e8/f37aed7244bfb8dde96399a57b78193b3257dc10559f13dfea723db768d4/py3d-0.1.9.tar.gz
+[2024-04-13 19:09:26] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/69/46/e4c939701598dcfb605aa109851306088b2fc3b2073df83d7033ea734dd0/nnsom-1.6.1.tar.gz
+[2024-04-13 19:09:26] INFO root fetch - processPackages [py3d]: executing diffoscope
+[2024-04-13 19:09:26] INFO root fetch - processPackages [py3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3d-0.1.8.tar.gz tmp/py3d-0.1.9.tar.gz --markdown 20240413/p/py3d/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 19:09:27] INFO root fetch - processPackages [NNSOM]: executing diffoscope
+[2024-04-13 19:09:27] INFO root fetch - processPackages [NNSOM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnsom-1.5.9.tar.gz tmp/nnsom-1.6.1.tar.gz --markdown 20240413/N/NNSOM/1.5.9-1.6.1/README.md --exclude *.pyd
+[2024-04-13 19:09:27] INFO root fetch - processPackages [pnu-portstreelint]: Remove: archive file [/home/abi/fetcher/tmp/pnu-portstreelint-1.3.0.tar.gz]
+[2024-04-13 19:09:27] INFO root fetch - processPackages [pnu-portstreelint]: Remove: archive file [/home/abi/fetcher/tmp/pnu_portstreelint-1.4.0.tar.gz]
+[2024-04-13 19:09:27] INFO root fetch - main [MainThread]: End processing [pnu-portstreelint]: success
+[2024-04-13 19:09:27] INFO root fetch - processPackages [py3d]: Remove: archive file [/home/abi/fetcher/tmp/py3d-0.1.8.tar.gz]
+[2024-04-13 19:09:27] INFO root fetch - processPackages [py3d]: Remove: archive file [/home/abi/fetcher/tmp/py3d-0.1.9.tar.gz]
+[2024-04-13 19:09:27] INFO root fetch - main [MainThread]: End processing [py3d]: success
+[2024-04-13 19:09:27] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.5.9.tar.gz]
+[2024-04-13 19:09:27] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.6.1.tar.gz]
+[2024-04-13 19:09:27] INFO root fetch - main [MainThread]: End processing [NNSOM]: success
+[2024-04-13 19:09:27] INFO root fetch - main [MainThread]: Store serial: [22753316]
