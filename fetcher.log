@@ -7889,3 +7889,15 @@
 [2024-04-13 06:39:08] INFO root fetch - processPackages [PyPyNum]: Remove: archive file [/home/abi/fetcher/tmp/PyPyNum-1.8.0.tar.gz]
 [2024-04-13 06:39:08] INFO root fetch - main [MainThread]: End processing [PyPyNum]: success
 [2024-04-13 06:39:08] INFO root fetch - main [MainThread]: Store serial: [22749473]
+[2024-04-13 06:41:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22749473]
+[2024-04-13 06:41:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-13 06:41:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pybureaucrat
+[2024-04-13 06:41:18] INFO root fetch - processPackages [pybureaucrat]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-13 06:41:18] INFO root fetch - processPackages [pybureaucrat]: Downloading https://files.pythonhosted.org/packages/81/27/d524dfdc2bd3950eeeea6068a45357224f829fc759bd9a70eb97c3db0fbb/pybureaucrat-1.0.6.tar.gz
+[2024-04-13 06:41:18] INFO root fetch - processPackages [pybureaucrat]: Downloading https://files.pythonhosted.org/packages/c4/f2/601d88bc221d82e4954d6abd928d473195d95e6e901e70450942a84be4b0/pybureaucrat-1.0.7.tar.gz
+[2024-04-13 06:41:18] INFO root fetch - processPackages [pybureaucrat]: executing diffoscope
+[2024-04-13 06:41:18] INFO root fetch - processPackages [pybureaucrat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybureaucrat-1.0.6.tar.gz tmp/pybureaucrat-1.0.7.tar.gz --markdown 20240413/p/pybureaucrat/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-13 06:41:19] INFO root fetch - processPackages [pybureaucrat]: Remove: archive file [/home/abi/fetcher/tmp/pybureaucrat-1.0.6.tar.gz]
+[2024-04-13 06:41:19] INFO root fetch - processPackages [pybureaucrat]: Remove: archive file [/home/abi/fetcher/tmp/pybureaucrat-1.0.7.tar.gz]
+[2024-04-13 06:41:19] INFO root fetch - main [MainThread]: End processing [pybureaucrat]: success
+[2024-04-13 06:41:19] INFO root fetch - main [MainThread]: Store serial: [22749476]
