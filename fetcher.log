@@ -9600,3 +9600,33 @@
 [2024-04-13 09:02:59] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip]
 [2024-04-13 09:02:59] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2024-04-13 09:02:59] INFO root fetch - main [MainThread]: Store serial: [22750051]
+[2024-04-13 09:05:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22750051]
+[2024-04-13 09:05:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-13 09:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-slack
+[2024-04-13 09:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-l10n-ec-base
+[2024-04-13 09:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-random
+[2024-04-13 09:05:08] INFO root fetch - processPackages [odoo-addon-l10n-ec-base]: New version: [17.0.1.0.1] Old Version: [17.0.1.0.0.6]
+[2024-04-13 09:05:08] INFO root fetch - processPackages [pulumi-slack]: New version: [0.4.5a1712990346] Old Version: [0.4.5a1712729963]
+[2024-04-13 09:05:08] INFO root fetch - processPackages [pulumi-random]: New version: [4.9.0a1674773801] Old Version: [4.9.0a1673556316]
+[2024-04-13 09:05:08] INFO root fetch - processPackages [pulumi-slack]: Downloading https://files.pythonhosted.org/packages/e7/fe/4b799a63422412051517bd8909bfff79aac3fd4370071f930324794cc3a5/pulumi_slack-0.4.5a1712729963.tar.gz
+[2024-04-13 09:05:08] INFO root fetch - processPackages [odoo-addon-l10n-ec-base]: Downloading https://files.pythonhosted.org/packages/65/7f/585fb0b767c0fc8cb92d636b4864f6cc57bf9e81eb52e411ce0c1328c619/odoo_addon_l10n_ec_base-17.0.1.0.0.6-py3-none-any.whl
+[2024-04-13 09:05:08] INFO root fetch - processPackages [pulumi-random]: Downloading https://files.pythonhosted.org/packages/e3/37/2cc13bf17f327e646e4b225d9a662c398da5ae064fbaaf071b5093d9200d/pulumi_random-4.9.0a1673556316.tar.gz
+[2024-04-13 09:05:09] INFO root fetch - processPackages [pulumi-slack]: Downloading https://files.pythonhosted.org/packages/15/3c/48f230f227dcd73044c6b006e4dc7363a1b5ba6f9efe42325c11f5682696/pulumi_slack-0.4.5a1712990346.tar.gz
+[2024-04-13 09:05:09] INFO root fetch - processPackages [odoo-addon-l10n-ec-base]: Downloading https://files.pythonhosted.org/packages/9b/23/642f1a4ac748c02545164a3b28f436caa91170bfd111b855428e6e76314d/odoo_addon_l10n_ec_base-17.0.1.0.1-py3-none-any.whl
+[2024-04-13 09:05:09] INFO root fetch - processPackages [pulumi-random]: Downloading https://files.pythonhosted.org/packages/60/4b/3fbb36b8ea6ee761180821419350808d93a817d302404b35a787b0e12917/pulumi_random-4.9.0a1674773801.tar.gz
+[2024-04-13 09:05:09] INFO root fetch - processPackages [pulumi-slack]: executing diffoscope
+[2024-04-13 09:05:09] INFO root fetch - processPackages [pulumi-slack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_slack-0.4.5a1712729963.tar.gz tmp/pulumi_slack-0.4.5a1712990346.tar.gz --markdown 20240413/p/pulumi-slack/0.4.5a1712729963-0.4.5a1712990346/README.md --exclude *.pyd
+[2024-04-13 09:05:09] INFO root fetch - processPackages [odoo-addon-l10n-ec-base]: executing diffoscope
+[2024-04-13 09:05:09] INFO root fetch - processPackages [odoo-addon-l10n-ec-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ec_base-17.0.1.0.0.6-py3-none-any.whl.zip tmp/odoo_addon_l10n_ec_base-17.0.1.0.1-py3-none-any.whl.zip --markdown 20240413/o/odoo-addon-l10n-ec-base/17.0.1.0.0.6-17.0.1.0.1/README.md --exclude *.pyd
+[2024-04-13 09:05:09] INFO root fetch - processPackages [pulumi-random]: executing diffoscope
+[2024-04-13 09:05:09] INFO root fetch - processPackages [pulumi-random]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_random-4.9.0a1673556316.tar.gz tmp/pulumi_random-4.9.0a1674773801.tar.gz --markdown 20240413/p/pulumi-random/4.9.0a1673556316-4.9.0a1674773801/README.md --exclude *.pyd
+[2024-04-13 09:05:09] INFO root fetch - processPackages [pulumi-slack]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_slack-0.4.5a1712729963.tar.gz]
+[2024-04-13 09:05:09] INFO root fetch - processPackages [pulumi-slack]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_slack-0.4.5a1712990346.tar.gz]
+[2024-04-13 09:05:09] INFO root fetch - main [MainThread]: End processing [pulumi-slack]: success
+[2024-04-13 09:05:09] INFO root fetch - processPackages [pulumi-random]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_random-4.9.0a1673556316.tar.gz]
+[2024-04-13 09:05:09] INFO root fetch - processPackages [pulumi-random]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_random-4.9.0a1674773801.tar.gz]
+[2024-04-13 09:05:09] INFO root fetch - main [MainThread]: End processing [pulumi-random]: success
+[2024-04-13 09:05:09] INFO root fetch - processPackages [odoo-addon-l10n-ec-base]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ec_base-17.0.1.0.0.6-py3-none-any.whl.zip]
+[2024-04-13 09:05:09] INFO root fetch - processPackages [odoo-addon-l10n-ec-base]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ec_base-17.0.1.0.1-py3-none-any.whl.zip]
+[2024-04-13 09:05:09] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ec-base]: success
+[2024-04-13 09:05:09] INFO root fetch - main [MainThread]: Store serial: [22750060]
