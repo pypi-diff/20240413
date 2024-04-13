@@ -19772,3 +19772,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-13 22:20:48] INFO root fetch - processPackages [volts]: Remove: archive file [/home/abi/fetcher/tmp/volts-1.1.1.tar.gz]
 [2024-04-13 22:20:48] INFO root fetch - main [MainThread]: End processing [volts]: success
 [2024-04-13 22:20:48] INFO root fetch - main [MainThread]: Store serial: [22754560]
+[2024-04-13 22:22:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22754560]
+[2024-04-13 22:22:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-13 22:22:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tina4-python
+[2024-04-13 22:22:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yamlscript
+[2024-04-13 22:22:56] INFO root fetch - processPackages [yamlscript]: New version: [0.1.56] Old Version: [0.1.55]
+[2024-04-13 22:22:56] INFO root fetch - processPackages [tina4-python]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-13 22:22:56] INFO root fetch - processPackages [tina4-python]: Downloading https://files.pythonhosted.org/packages/61/79/4a27baf2c4da4707b63d581b639414c73fb68a3d702236356a9929e6ff99/tina4_python-0.1.8.tar.gz
+[2024-04-13 22:22:56] INFO root fetch - processPackages [yamlscript]: Downloading https://files.pythonhosted.org/packages/4e/1b/20a2168e25f1ac6c53ecef42e790cf7f718ef8f0ff971a5e2a50613c4a5f/yamlscript-0.1.55.tar.gz
+[2024-04-13 22:22:57] INFO root fetch - processPackages [tina4-python]: Downloading https://files.pythonhosted.org/packages/24/2e/2593f1dbdfcf6fb7c1c21b890b7f8e264fcee760b48d5ceb7680112de137/tina4_python-0.1.9.tar.gz
+[2024-04-13 22:22:57] INFO root fetch - processPackages [yamlscript]: Downloading https://files.pythonhosted.org/packages/8f/54/ae127711fe14c31505ced83dbf378bc3ba61559cb2f19a63e5d8ed1afa19/yamlscript-0.1.56.tar.gz
+[2024-04-13 22:22:57] INFO root fetch - processPackages [tina4-python]: executing diffoscope
+[2024-04-13 22:22:57] INFO root fetch - processPackages [tina4-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tina4_python-0.1.8.tar.gz tmp/tina4_python-0.1.9.tar.gz --markdown 20240413/t/tina4-python/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-13 22:22:57] INFO root fetch - processPackages [yamlscript]: executing diffoscope
+[2024-04-13 22:22:57] INFO root fetch - processPackages [yamlscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240413:/home/abi/fetcher/20240413:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yamlscript-0.1.55.tar.gz tmp/yamlscript-0.1.56.tar.gz --markdown 20240413/y/yamlscript/0.1.55-0.1.56/README.md --exclude *.pyd
+[2024-04-13 22:22:57] INFO root fetch - processPackages [yamlscript]: Remove: archive file [/home/abi/fetcher/tmp/yamlscript-0.1.55.tar.gz]
+[2024-04-13 22:22:57] INFO root fetch - processPackages [yamlscript]: Remove: archive file [/home/abi/fetcher/tmp/yamlscript-0.1.56.tar.gz]
+[2024-04-13 22:22:57] INFO root fetch - main [MainThread]: End processing [yamlscript]: success
+[2024-04-13 22:22:57] INFO root fetch - processPackages [tina4-python]: Remove: archive file [/home/abi/fetcher/tmp/tina4_python-0.1.8.tar.gz]
+[2024-04-13 22:22:57] INFO root fetch - processPackages [tina4-python]: Remove: archive file [/home/abi/fetcher/tmp/tina4_python-0.1.9.tar.gz]
+[2024-04-13 22:22:57] INFO root fetch - main [MainThread]: End processing [tina4-python]: success
+[2024-04-13 22:22:57] INFO root fetch - main [MainThread]: Store serial: [22754565]
